@@ -1,0 +1,64 @@
+{
+  "name": "ionai",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@calcom/embed-react": "^1.5.2",
+    "@emailjs/browser": "^4.4.1",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^13.5.0",
+    "aos": "^2.3.4",
+    "autoprefixer": "^10.4.21",
+    "cloudinary": "^2.6.1",
+    "emailjs-com": "^3.2.0",
+    "framer-motion": "^6.5.1",
+    "postcss": "^8.5.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^5.5.0",
+    "react-router-dom": "^6.10.0",
+    "react-scripts": "5.0.1",
+    "recharts": "^2.15.3",
+    "swiper": "^12.0.3",
+    "tailwindcss": "^3.3.3",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "node vercel-build.js",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "serve": "npx serve -s build",
+    "lint": "eslint src/**/*.{js,jsx}",
+    "format": "prettier --write \"src/**/*.{js,jsx,css}\""
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "clean-css-cli": "^5.6.2",
+    "eslint": "^8.53.0",
+    "imagemin-cli": "^7.0.0",
+    "prettier": "^3.1.0",
+    "serve": "^14.2.1",
+    "source-map-explorer": "^2.5.3",
+    "terser": "^5.24.0"
+  }
+}
