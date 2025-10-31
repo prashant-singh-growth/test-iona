@@ -15,7 +15,7 @@ if (process.env.NODE_ENV === 'development') {
     </React.StrictMode>
   );
 } else {
-  // ✅ Make sure HelmetProvider wraps App here too
+
   root.render(
     <HelmetProvider>
       <App />

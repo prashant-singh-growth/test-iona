@@ -27,7 +27,7 @@ export default function ResponsiveGridLines() {
 
     return () => window.removeEventListener("resize", calculateGrid);
   }, []);
- const gradientReplacement = [10, 97, 20, 47, 93, 70, 100, 90, 20, 40];
+ const gradientReplacement = [10, 97, 30, 47, 93, 70, 100, 90, 20, 40];
 
 
   // Custom gradient lines (8–10 total)

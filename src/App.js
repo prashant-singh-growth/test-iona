@@ -30,6 +30,7 @@ const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
 const CookiePolicy = lazy(() => import("./pages/CookiePolicy"));
 const TermsOfService = lazy(() => import("./pages/TermsOfService"));
 const Landingpage = lazy(()=> import("./pages/Landingpages"))
+const ThankYouPage = lazy(()=> import('./pages/ThankYou'))
 
 
 // Scroll to top on route change
@@ -116,6 +117,7 @@ const AnimatedRoutes = () => {
         <Route path="/cookies" element={<PageTransition><CookiePolicy /></PageTransition>} />
         <Route path="/terms" element={<PageTransition><TermsOfService /></PageTransition>} />
         <Route path="/end-to-end-hiring-solution-for-enterprises" element={<PageTransition><Landingpage/></PageTransition>} />
+        <Route path="/thank-you" element={<PageTransition><ThankYouPage/></PageTransition>} />
         <Route
           path="*"
           element={

@@ -114,7 +114,7 @@ function Landingpages() {
   ];
 
   return (
-    <div className="w-full font-lora">
+    <div className="w-full font-lora" id="form">
      
             <Helmet>
         <title>iona.ai: AI-Powered End-to-End Hiring & Onboarding Solution</title>
@@ -127,13 +127,13 @@ function Landingpages() {
        
       <header className="w-full px-5 md:px-10 lg:px-[90px] grid place-items-center fixed top-0 h-[100px] bg-white z-50">
         <div className="w-full max-w-[1440px] flex flex-row justify-between items-center">
-           <a href="/"><img
+       <img
               src="/assets/pages/landingpage/iona-logo.png"
               className="w-28"
-              alt=""
-            /></a>
+              alt="iona-logo"
+            />
             <a
-          href="/"
+          href="#form"
           className="bg-primary px-5 py-3 text-[14px] text-white flex flex-row space-x-2 rounded hover:scale-95 ease-in-out duration-150"
         >
           <span>Schedule  a Demo</span>{" "}
@@ -204,10 +204,10 @@ function Landingpages() {
           })}
         </div>
         <a
-          href="/"
+          href="#form"
           className="bg-primary px-5 py-3 text-[14px] text-white flex flex-row space-x-2 rounded hover:scale-95 ease-in-out duration-150"
         >
-          <span>Explore Products</span>{" "}
+          <span>Schedule a Demo</span>{" "}
           <svg
             width="20"
             height="20"
@@ -263,10 +263,10 @@ function Landingpages() {
           })}
         </div>
            <a
-          href="/"
+          href="#form"
           className="bg-primary px-5 py-3 text-[14px] text-white flex flex-row space-x-2 rounded hover:scale-95 ease-in-out duration-150"
         >
-          <span>Book  a Demo</span>{" "}
+          <span>Schedule a Demo</span>{" "}
           <svg
             width="20"
             height="20"
@@ -383,7 +383,7 @@ function Landingpages() {
       <h2 className="text-3xl md:text-4xl lg:text-[40px] lg:leading-[50px] text-white font-lora font-bold md:font-semibold text-center ">Ready to scale your hiring process on autopilot?</h2>
       <p className="text-base text-white font-lora text-center pt-6 pb-12">Get started today and automate 100% of your recruitment from sourcing to onboarding with background verification and a 100% data accuracy guarantee and zero compliance issues, all at scale?</p>
          <a
-          href="/"
+          href="#form"
           className="bg-white px-5 py-3 text-[14px] text-primary flex flex-row space-x-2 rounded hover:scale-95 ease-in-out duration-150"
         >
           <span>Schedule  a Demo</span>{" "}
@@ -411,12 +411,12 @@ function Landingpages() {
         <div className="w-full  px-5  md:px-10 lg:px-[90px] justify-center items-center  ">
           <div className="w-full max-w-[1440px] gap-5 md:gap-0  flex flex-col md:flex-row justify-between pb-3 mx-auto">
           <div className="flex flex-col w-full max-w-[400px] space-y-5">
-           <a href="/">
+          
             <img
               src="/assets/pages/landingpage/iona-logo.png"
               className="w-28"
               alt="iona-logo"
-            /></a>
+            />
             <p className="text-base text-primary font-lora">
               "iona.ai is a full-service AI-powered recruitment platform that
               automates the entire hiring process—saving time, reducing costs,
@@ -426,19 +426,19 @@ function Landingpages() {
           </div>
           <div className="w-fit flex flex-row justify-center items-center space-x-5 mt-auto">
             <a
-              href="/"
+              href="https://www.facebook.com/ionaai/" target="_blank" rel="noopener noreferrer"
               className="md:text-2xl text-xl bg-white w-10 h-10 md:w-14 md:h-14 ease-in-out duration-150 rounded-full grid place-items-center text-primary hover:bg-primary hover:text-white"
             >
               <FaFacebookF />
             </a>
             <a
-              href="/"
+              href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"
               className="md:text-2xl text-xl bg-white w-10 h-10 md:w-14 md:h-14 ease-in-out duration-150 rounded-full grid place-items-center text-primary hover:bg-primary hover:text-white"
             >
               <FaInstagram />
             </a>
             <a
-              href="/"
+              href="https://www.linkedin.com/company/iona-ai/" target="_blank" rel="noopener noreferrer"
               className="md:text-2xl text-xl bg-white w-10 h-10 md:w-14 md:h-14 ease-in-out duration-150 rounded-full grid place-items-center text-primary hover:bg-primary hover:text-white"
             >
               <FaLinkedinIn />

@@ -17,14 +17,13 @@ const Home = memo(() => {
    
   return (
     <div className="bg-background text-primaryText">
-       <Helmet>
-            <title>iona.ai: AI-Powered End-to-End Hiring & Onboarding Solution</title>
-            <meta
-              name="description"
-              content="ionai - Elevating Experiences with AI"
-            />
-            <link rel="canonical" href="/end-to-end-hiring-solution-for-enterprises"/>
-          </Helmet>
+      <Helmet>
+          <title>iona.ai: AI-Powered End-to-End Hiring & Onboarding Solution</title>
+          <meta
+            name="description"
+            content="ionai - Elevating Experiences with AI"
+          />
+        </Helmet>
       {/* Hero Section with Carousel */}
       <section className="relative overflow-hidden">
         <HeroCarousel />
