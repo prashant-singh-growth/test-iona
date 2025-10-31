@@ -10,14 +10,21 @@ import CaseStudiesSection from "../components/CaseStudiesSection";
 import TestimonialsSection from "../components/TestimonialsSection";
 import FAQSection from "../components/FAQSection";
 import CTASection from "../components/CTASection";
-
+import { Helmet } from "react-helmet-async";
 
 // Main component optimized with React.memo
 const Home = memo(() => {
    
   return (
     <div className="bg-background text-primaryText">
-    
+       <Helmet>
+            <title>iona.ai: AI-Powered End-to-End Hiring & Onboarding Solution</title>
+            <meta
+              name="description"
+              content="ionai - Elevating Experiences with AI"
+            />
+            <link rel="canonical" href="/end-to-end-hiring-solution-for-enterprises"/>
+          </Helmet>
       {/* Hero Section with Carousel */}
       <section className="relative overflow-hidden">
         <HeroCarousel />

@@ -4,7 +4,7 @@ import ChangingGradientText from "../components/LandingPage/ChangingGradientText
 import LogoSlider from "../components/LandingPage/LogoSlider";
 import FormLandingPage from "../components/LandingPage/FormLandingPage";
 import TestimonialSlider from "../components/LandingPage/TestimonialSlider";
-// import { Helmet } from "react-helmet-async";
+import { Helmet } from "react-helmet-async";
 function Landingpages() {
   const solutionListJson = [
     {
@@ -116,14 +116,14 @@ function Landingpages() {
   return (
     <div className="w-full font-lora">
      
-            {/* <Helmet>
+            <Helmet>
         <title>iona.ai: AI-Powered End-to-End Hiring & Onboarding Solution</title>
         <meta
           name="description"
           content="Streamline your hiring with iona.ai. Automate recruitment, ensure compliance, and onboard at scale. Request a demo today!"
         />
         <link rel="canonical" href="/end-to-end-hiring-solution-for-enterprises"/>
-      </Helmet> */}
+      </Helmet>
        
       <header className="w-full px-5 md:px-10 lg:px-[90px] grid place-items-center fixed top-0 h-[100px] bg-white z-50">
         <div className="w-full max-w-[1440px] flex flex-row justify-between items-center">
