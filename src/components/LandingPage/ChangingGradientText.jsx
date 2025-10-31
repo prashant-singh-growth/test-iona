@@ -3,9 +3,8 @@ import React, { useState, useEffect } from "react";
 const ChangingGradientText = () => {
   const texts = [
     "Onboards 90% Faster",
-    "Boosts Team Efficiency",
-    "Streamlines Operations",
-    "Simplifies HR Workflows",
+    "Cuts 50% Operation Costs",
+    "Works 100% Smarter",
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);

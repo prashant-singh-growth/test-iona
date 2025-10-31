@@ -29,7 +29,8 @@ const ScheduleDemo = lazy(() => import("./pages/ScheduleDemo"));
 const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
 const CookiePolicy = lazy(() => import("./pages/CookiePolicy"));
 const TermsOfService = lazy(() => import("./pages/TermsOfService"));
-const LandingPage = lazy(()=> import('./pages/Landingpage'))
+const Landingpage = lazy(()=> import("./pages/Landingpages"))
+
 
 // Scroll to top on route change
 const ScrollToTop = () => {
@@ -114,7 +115,7 @@ const AnimatedRoutes = () => {
         <Route path="/privacy" element={<PageTransition><PrivacyPolicy /></PageTransition>} />
         <Route path="/cookies" element={<PageTransition><CookiePolicy /></PageTransition>} />
         <Route path="/terms" element={<PageTransition><TermsOfService /></PageTransition>} />
-        <Route path="/landing" element={<PageTransition><LandingPage /></PageTransition>} />
+        <Route path="/end-to-end-hiring-solution-for-enterprises" element={<PageTransition><Landingpage/></PageTransition>} />
         <Route
           path="*"
           element={
@@ -175,7 +176,7 @@ function AppWrapper() {
 
 function AppContent() {
   const location = useLocation();
-  const hideNavbarRoutes = ["/landing"];
+  const hideNavbarRoutes = ["/end-to-end-hiring-solution-for-enterprises"];
   const shouldHideNavbar = hideNavbarRoutes.includes(location.pathname);
 
   return (

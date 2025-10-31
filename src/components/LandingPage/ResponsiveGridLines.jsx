@@ -27,6 +27,11 @@ export default function ResponsiveGridLines() {
 
     return () => window.removeEventListener("resize", calculateGrid);
   }, []);
+ const gradientReplacement = [10, 97, 20, 47, 93, 70, 100, 90, 20, 40];
+
+
+  // Custom gradient lines (8–10 total)
+  const gradientLines = Array.from({ length: 10 });
 
   return (
     <section
@@ -51,6 +56,21 @@ export default function ResponsiveGridLines() {
           className="absolute left-0 w-full border-t border-[#EAEAEA]"
           style={{
             top: `${(i * 100) / grid.rows}%`,
+          }}
+        ></div>
+      ))}
+
+      {/* Gradient Horizontal Lines (8–10 only) */}
+      {gradientLines.map((_, i) => (
+        <div
+          key={`gh-${i}`}
+          className={`absolute min-h-[2px] w-10 md:w-[70px] rounded-md  `}
+          style={{
+            top: `${i * 57}px`,
+            left: `${gradientReplacement[i]}%`, // spacing between gradient lines
+            background:
+              "linear-gradient(270.02deg, #2A2564 6.76%, #007BC3 28%, #007BC3 64.63%, #2A2564 80.16%)",
+           
           }}
         ></div>
       ))}
