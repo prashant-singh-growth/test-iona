@@ -9,6 +9,7 @@ import StatsSection from "../components/StatsSection";
 import CaseStudiesSection from "../components/CaseStudiesSection";
 import TestimonialsSection from "../components/TestimonialsSection";
 import FAQSection from "../components/FAQSection";
+import CTASection from "../components/CTASection";
 
 
 // Main component optimized with React.memo
