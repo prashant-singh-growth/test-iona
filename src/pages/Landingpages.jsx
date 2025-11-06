@@ -13,7 +13,7 @@ import CTASection from "../components/HomePage/CTASection";
 import { NavLink } from "react-router-dom";
 function Landingpages() {
   return (
-    <div className="w-full font-lora" id="form">
+    <div className="w-full font-lora theme-lora-font" id="form">
       <SeoHeader
         title={"iona.ai: AI-Powered End-to-End Hiring & Onboarding Solution"}
         description={
@@ -31,7 +31,7 @@ function Landingpages() {
           />
           <a
             href="#form"
-            className="bg-primary px-5 py-3 text-[14px] text-white flex flex-row space-x-2 rounded hover:scale-95 ease-in-out duration-150"
+            className="bg-primary font-medium font-lora px-5 py-3 text-[14px] text-white flex flex-row space-x-2 rounded hover:scale-95 ease-in-out duration-150"
           >
             <span>Schedule a Demo</span>{" "}
             <svg

@@ -35,7 +35,7 @@ const Home = memo(() => {
   ];
 
   return (
-    <div className="bg-white text-primaryText">
+    <div className="bg-white text-primaryText theme-lora-font">
       <SeoHeader
         title={" iona.ai: AI-Powered End-to-End Hiring & Onboarding Solution"}
         description={"ionai - Elevating Experiences with AI"}

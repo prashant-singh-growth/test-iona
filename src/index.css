@@ -191,3 +191,16 @@ p, .secondary-text {
 .animate-scroll-logo:hover {
   animation-play-state: paused;
 }
+
+.theme-lora-font h1,
+.theme-lora-font h2,
+.theme-lora-font h3,
+.theme-lora-font h4,
+.theme-lora-font h5,
+.theme-lora-font h6,
+.theme-lora-font p,
+.theme-lora-font a,
+.theme-lora-font button {
+  @apply !font-lora;
+}
+

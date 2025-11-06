@@ -137,7 +137,7 @@ function Footer() {
                     placeholder="Email address"
                     className="bg-white font-normal rounded-lg w-full py-2 px-6 text-primary text-base outline-none font-lora placeholder:text-[#D6D6D6] border border-transparent focus-within:border-primary"
                   />
-                  <button className="bg-primary w-fit px-5 py-3 text-[14px] text-white flex flex-row space-x-2 rounded hover:scale-95 ease-in-out duration-150">
+                  <button className="bg-primary font-lora font-medium w-fit px-5 py-3 text-[14px] text-white flex flex-row space-x-2 rounded hover:scale-95 ease-in-out duration-150">
                     <span>Subscribe</span>
                     <svg
                       width="20"
@@ -165,10 +165,10 @@ function Footer() {
         <div className="w-full border-t border-[#C9C9C9] my-4 mt-[60px]"></div>
         <div className="w-full px-5 md:px-10 lg:px-[90px] flex justify-center items-center">
           <div className="w-full max-w-[1440px] flex flex-col gap-4 md:flex-row justify-between">
-            <p className="text-xs text-black">
+            <p className="text-xs text-black font-lora">
               Copyright © {new Date().getFullYear()} | All rights reserved.
             </p>
-            <p className="text-xs text-black">
+            <p className="text-xs text-black font-lora">
               <Link to="/privacy">Privacy policy</Link> |{" "}
               <Link to="/terms">Terms & conditions</Link> |{" "}
               <Link to="/cookies">Cookie Policy</Link>
