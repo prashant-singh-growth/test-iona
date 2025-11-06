@@ -30,7 +30,7 @@ export default function LogoSlider() {
               key={i}
               src={logo}
               alt={`logo-${i}`}
-              className="h-8 md:h-10 grayscale hover:grayscale-0 transition-all flex-none"
+              className="h-8 md:h-10  transition-all flex-none"
             />
           ))}
         </div>

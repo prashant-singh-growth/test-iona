@@ -36,7 +36,7 @@ export default function ResponsiveGridLines() {
   return (
     <section
       ref={sectionRef}
-      className="absolute inset-0 w-full h-full overflow-hidden pointer-events-none"
+      className="absolute inset-0 w-full h-full overflow-hidden pointer-events-none border-b border-[#EAEAEA]"
     >
       {/* Vertical Lines */}
       {Array.from({ length: grid.cols }).map((_, i) => (

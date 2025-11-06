@@ -3,9 +3,9 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from "react-route
 import { AnimatePresence, motion } from "framer-motion";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
 import { enforceHTTPS } from "./utils/security";
+import Header from "./components/Layout/Header";
+import Footer from "./components/Layout/Footer";
 
 // Lazy load components
 const Home = lazy(() => import("./pages/Home"));
@@ -185,8 +185,8 @@ function AppContent() {
     <>
       <ScrollToTop />
       <div className="flex flex-col min-h-screen overflow-hidden">
-        {!shouldHideNavbar && <Navbar />}
-        <main className="flex-grow">
+        {!shouldHideNavbar && <Header />}
+        <main className="flex-grow pt-12">
           <Suspense fallback={<Loading />}>
             <AnimatedRoutes />
           </Suspense>

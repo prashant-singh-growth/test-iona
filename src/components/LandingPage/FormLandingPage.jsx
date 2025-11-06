@@ -1,16 +1,14 @@
 import React, { useEffect, useState } from "react";
-
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function FormLandingPage() {
   const [formData, setFormData] = useState({
-    firstname: "",
-    lastname: "",
+    full_name: "",
     email: "",
     phone: "",
-    company: "",
     seniority: "",
     functional_area: "",
-    num_employees: "",
     utm_source: "",
     utm_medium: "",
     utm_campaign: "",
@@ -21,11 +19,10 @@ export default function FormLandingPage() {
 
   const [status, setStatus] = useState({ loading: false, success: null, error: null });
 
- 
   const portalId = "146385824";
   const formId = "eae9697d-396b-4497-88c0-49fd58c6bc13";
 
- 
+  // Capture UTM and tracking parameters
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
     const updates = {};
@@ -39,40 +36,62 @@ export default function FormLandingPage() {
     setFormData((prev) => ({ ...prev, ...updates }));
   }, []);
 
-  // Input change handler
+  // Handle input changes with restrictions
   const handleChange = (e) => {
-    setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+    const { name, value } = e.target;
+
+    // Restrict phone to 10 digits
+    if (name === "phone") {
+      if (/^\d*$/.test(value) && value.length <= 10) {
+        setFormData((prev) => ({ ...prev, [name]: value }));
+      }
+      return;
+    }
+
+    setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  // Form validation
+  // Validate form
   const validateForm = () => {
-    const required = [
-      "firstname",
-      "lastname",
-      "email",
-      "phone",
-      "company",
-      "seniority",
-      "functional_area",
-      "num_employees",
-    ];
+    const required = ["full_name", "email", "phone", "seniority", "functional_area"];
 
     for (let field of required) {
       if (!formData[field]?.trim()) {
-        alert(`Please fill in ${field.replace("_", " ")}`);
+       
+         toast.error(`Please fill in ${field.replace("_", " ")}`)
         return false;
       }
     }
 
+    // Basic email validation
     if (!/\S+@\S+\.\S+/.test(formData.email)) {
-      alert("Please enter a valid email address.");
+      toast.error('Please enter a valid email address.')
+     
+      return false;
+    }
+
+    // Block personal email domains
+    const personalDomains = [
+      "gmail.com",
+      "yahoo.com",
+      "hotmail.com",
+      "outlook.com",
+      "rediffmail.com",
+      "aol.com",
+      "icloud.com",
+      "protonmail.com",
+    ];
+    const emailDomain = formData.email.split("@")[1]?.toLowerCase();
+    if (personalDomains.includes(emailDomain)) {
+      toast.error("Please use your company email address (not a personal email).")
+     
       return false;
     }
 
     return true;
   };
 
-  // Submit handler
+  // Handle submit
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!validateForm()) return;
@@ -98,14 +117,11 @@ export default function FormLandingPage() {
       if (response.ok) {
         setStatus({ loading: false, success: "✅ Thank you! Form submitted successfully.", error: null });
         setFormData({
-          firstname: "",
-          lastname: "",
+          full_name: "",
           email: "",
           phone: "",
-          company: "",
           seniority: "",
           functional_area: "",
-          num_employees: "",
           utm_source: "",
           utm_medium: "",
           utm_campaign: "",
@@ -113,9 +129,7 @@ export default function FormLandingPage() {
           gclid: "",
           fbclid: "",
         });
-       
-          window.location.href = "/thank-you";
-    
+        window.location.href = "/thank-you";
       } else {
         throw new Error("HubSpot submission failed. Please check your form settings.");
       }
@@ -126,19 +140,15 @@ export default function FormLandingPage() {
 
   return (
     <div className="w-full bg-[#FEFEFD] border-[#C9C9C9] border shadow-[0px_4px_19.1px_0px_#00000040] rounded-lg relative overflow-hidden">
-    
-
+      <ToastContainer position="top-right" autoClose="4000"/>
       <form onSubmit={handleSubmit} className="p-5 py-10 md:p-10 flex flex-col space-y-9">
-        <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="w-full grid grid-cols-1  gap-6">
           {[
-            { name: "firstname", placeholder: "First Name" },
-            { name: "lastname", placeholder: "Last Name" },
-            { name: "email", placeholder: "Enter your Work Email", type: "email", col: 2 },
-            { name: "phone", placeholder: "Phone Number" },
-            { name: "company", placeholder: "Company Name" },
+            { name: "full_name", placeholder: "Full Name" },
+            { name: "email", placeholder: "Enter your Work Email", type: "email",  },
+            { name: "phone", placeholder: "Phone Number", type: "tel", maxLength: 12 },
             { name: "seniority", placeholder: "Seniority" },
-            { name: "functional_area", placeholder: "Functional Area" },
-            { name: "num_employees", placeholder: "Number of Employees", col: 2 },
+            { name: "functional_area", placeholder: "Functional Area",  },
           ].map((field) => (
             <input
               key={field.name}
@@ -147,15 +157,14 @@ export default function FormLandingPage() {
               placeholder={field.placeholder}
               value={formData[field.name]}
               onChange={handleChange}
+              onWheel={(e) => e.target.blur()}
               required
-              className={`border-[#D6D6D6] border rounded-lg px-3 py-2 text-sm text-primary placeholder:text-[#808080] font-lora ${
-                field.col === 2 ? "md:col-span-2" : ""
-              }`}
+              className={`border-[#D6D6D6] border rounded-lg px-3 py-2 text-sm text-primary placeholder:text-[#808080] font-lora `}
             />
           ))}
         </div>
 
-        {/* Hidden fields for tracking */}
+        {/* Hidden UTM Fields */}
         {["utm_source", "utm_medium", "utm_campaign", "utm_term", "gclid", "fbclid"].map((field) => (
           <input key={field} type="hidden" name={field} value={formData[field]} />
         ))}

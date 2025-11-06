@@ -1,0 +1,89 @@
+import solutionListJson from "../Data/SolutionList.json"
+
+function SolutionSection() {
+  return (
+   <section className="w-full  flex flex-col py-[60px] px-5 md:px-10 lg:px-[90px] justify-center items-center space-y-10">
+        <div className="w-full max-w-[1440px] flex flex-col  justify-center items-center space-y-10">
+          <div className="flex flex-col max-w-[826px] justify-center items-center space-y-4">
+            <h2 className="text-3xl md:text-4xl lg:text-[40px] lg:leading-[50px] text-[#2A2564] font-bold md:font-semibold text-center font-lora">
+              iona.ai - The Complete Solution for Precision Hiring at Scale
+            </h2>
+            <p className="text-base text-[#2A2564] text-center font-lora">
+              From recruitment to employee engagement — helping you streamline
+              your entire hiring journey with a 100% automated process while
+              maintaining 100% data accuracy guarantee and zero compliance
+              issues.
+            </p>
+          </div>
+          <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
+            {solutionListJson.map((item, i) => {
+              return (
+                <div
+                  key={i}
+                  className="w-full flex h-full  flex-col gap-y-4 md:gap-y-5 lg:gap-y-[30px]"
+                >
+                  <div className="w-full bg-black relative z-0 py-10 px-3 ">
+                    <p
+                      className="w-[70%] absolute left-5 bottom-5 text-xl font-semibold text-white text-left font-lora"
+                      dangerouslySetInnerHTML={{ __html: item.title }}
+                    />
+                    <img
+                      src={`/assets/pages/landingpage/${item.imgurl}.svg`}
+                      alt=""
+                      className="h-28  ml-auto"
+                    />
+                  </div>
+                  <p className="text-base text-black">{item.description}</p>
+                  <a
+                    href="#form"
+                    className="mt-auto font-lora w-fit text-[14px] text-[#252525] flex flex-row space-x-2   ease-in-out duration-150 border-b border-[#252525] pb-2 group"
+                  >
+                    <span>Learn More</span>{" "}
+                    <svg
+                      width="14"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="group-hover:translate-x-1 ease-linear duration-150"
+                    >
+                      <path
+                        d="M4.16669 10H15.8334M15.8334 10L10.8334 5M15.8334 10L10.8334 15"
+                        stroke="#252525"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              );
+            })}
+          </div>
+          <a
+            href="#form"
+            className="bg-primary font-lora px-5 py-3 text-[14px] text-white flex flex-row space-x-2 rounded hover:scale-95 ease-in-out duration-150"
+          >
+            <span>Explore Products</span>{" "}
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4.16669 10H15.8334M15.8334 10L10.8334 5M15.8334 10L10.8334 15"
+                stroke="#FCFCFC"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+        </div>
+      </section>
+  )
+}
+
+export default SolutionSection

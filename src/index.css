@@ -32,9 +32,9 @@ body {
 }
 
 /* Fix for page content being hidden under fixed navbar */
-main {
-  padding-top: 80px; /* Add padding to all main content to prevent it from hiding behind navbar */
-}
+/* main {
+  padding-top: 80px; 
+} */
 
 /* Additional spacing for page headings */
 main > div > section:first-child,

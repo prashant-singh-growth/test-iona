@@ -1,0 +1,56 @@
+[
+    {
+        "imgurl": "NovaCount",
+        "title": "NovaCount – <br/> Headcount Planning and Monitoring",
+        "description": "Plan and track your workforce effortlessly, with real-time visibility into headcount, budgets, and forecasts.",
+        "url": "/"
+    },
+    {
+        "imgurl": "NovaAssist",
+        "title": "NovaAssist – <br/> Recruiter Co-Pilot",
+        "description": "Automates candidate sourcing, screening, and shortlisting, which saves time and ensures you never miss top talent.",
+        "url": "/"
+    },
+    {
+        "imgurl": "NovaTrack",
+        "title": "NovaTrack –<br/> NextGen Application <br/> Tracking System",
+        "description": "Seamlessly track and manage candidates through their journey with a state-of-the-art ATS from application to hire.",
+        "url": "/"
+    },
+    {
+        "imgurl": "NovaStart",
+        "title": "NovaStart –<br/> Pre-Boarding of New Hires",
+        "description": "Streamlines the pre-boarding process for new hires, preparing them for Day 1 with all essential onboarding tasks.",
+        "url": "/"
+    },
+    {
+        "imgurl": "NovaDoc",
+        "title": "NovaDoc –<br/> Documentation of New Hires",
+        "description": "Automates all documentation needs for new hires, eliminating manual chasing of documents and enhancing compliance.",
+        "url": "/"
+    },
+    {
+        "imgurl": "NovaEngage",
+        "title": "NovaEngage –<br/> Engagement of New Hires",
+        "description": "Engages new hires even before Day 1, setting the tone for a positive and engaging employee journey.",
+        "url": "/"
+    },
+    {
+        "imgurl": "NovaTrain",
+        "title": "NovaTrain –<br/> Mandatory Trainings and Induction of New Hires",
+        "description": "Automates mandatory training assignments and induction processes, which reduces manual effort and ensures compliance with training requirements.",
+        "url": "/"
+    },
+    {
+        "imgurl": "NovaVerify",
+        "title": "NovaVerify –<br/> Background Verifications of New Hires",
+        "description": "Streamlines and automates background checks, speeding up the verification process for a quicker hiring experience.",
+        "url": "/"
+    },
+    {
+        "imgurl": "NovaConnect",
+        "title": "NovaConnect –<br/> Premium WhatsApp-Based Support",
+        "description": "Provides real-time, premium support via WhatsApp, answering questions, resolving issues, and keeping the hiring process moving smoothly.",
+        "url": "/"
+    }
+]
