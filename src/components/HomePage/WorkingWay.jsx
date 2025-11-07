@@ -13,7 +13,7 @@ function WorkingWay() {
             </p>
           </div>
           <img
-            src="/assets/pages/homepage/iona-way.avif"
+            src="/assets/pages/homepage/iona-way.webp"
             alt="iona-way"
             title="iona-way"
             className="w-full max-w-[1100px]"

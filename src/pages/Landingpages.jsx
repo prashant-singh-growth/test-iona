@@ -11,6 +11,7 @@ import ResultSection from "../components/LandingPage/ResultSection";
 import CertificationSection from "../components/HomePage/CertificationSection";
 import CTASection from "../components/HomePage/CTASection";
 import { NavLink } from "react-router-dom";
+import SolutionSection from "../components/HomePage/SolutionSection";
 function Landingpages() {
   return (
     <div className="w-full font-lora theme-lora-font" id="form">
@@ -31,7 +32,7 @@ function Landingpages() {
           />
           <a
             href="#form"
-            className="bg-primary font-medium font-lora px-5 py-3 text-[14px] text-white flex flex-row space-x-2 rounded hover:scale-95 ease-in-out duration-150"
+            className="bg-primary font-bold leading-5 font-lora px-5 py-3 text-[14px] text-white flex flex-row space-x-2 rounded hover:scale-95 ease-in-out duration-150"
           >
             <span>Schedule a Demo</span>{" "}
             <svg
@@ -53,7 +54,7 @@ function Landingpages() {
         </div>
       </header>
       <section className="w-full h-fit relative px-5 md:px-10 lg:px-[90px] py-16 lg:py-20 flex flex-col justify-center items-center">
-        <ResponsiveGridLines />
+        <ResponsiveGridLines gradientReplacement={[10, 97, 30, 47, 93, 70, 100, 90, 20, 40]} />
         <div className="w-full max-w-[100vw] lg:max-w-[1440px] grid lg:grid-cols-2 relative z-10 gap-10">
           <div className="w-full max-w-[100vw]">
             <ChangingGradientText />
@@ -66,6 +67,7 @@ function Landingpages() {
           <FormLandingPage />
         </div>
       </section>
+     
       <section className="w-full bg-[#f3f3f5] flex flex-col py-[60px] px-5 md:px-10 lg:px-[90px] justify-center items-center space-y-10">
         <div className="w-full max-w-[1440px] flex flex-col  justify-center items-center space-y-10">
           <div className="flex flex-col max-w-[826px] justify-center items-center space-y-4">
@@ -104,7 +106,7 @@ function Landingpages() {
           </div>
           <a
             href="#form"
-            className="bg-primary px-5 py-3 text-[14px] text-white flex flex-row space-x-2 rounded hover:scale-95 ease-in-out duration-150"
+            className="bg-primary px-5 font-bold leading-5 py-3 text-[14px] text-white flex flex-row space-x-2 rounded hover:scale-95 ease-in-out duration-150"
           >
             <span>Schedule a Demo</span>{" "}
             <svg

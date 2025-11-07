@@ -86,7 +86,7 @@ function WhyUsSection({ ctaText, ctaUrl }) {
      
         <a
           href={ctaUrl ? ctaUrl : "#form"}
-          className="bg-primary px-5 py-3 text-[14px] text-white flex flex-row space-x-2 rounded hover:scale-95 ease-in-out duration-150"
+          className="bg-primary px-5 py-3 font-bold leading-5 text-[14px] text-white flex flex-row space-x-2 rounded hover:scale-95 ease-in-out duration-150"
         >
           <span>{ctaText ? ctaText : "Schedule a Demo"}</span>
           <svg

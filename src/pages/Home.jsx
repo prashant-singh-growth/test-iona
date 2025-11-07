@@ -49,14 +49,24 @@ const Home = memo(() => {
           Trusted by leading brands and customers
         </p>
         <div className="flex  gap-5 whitespace-nowrap max-w-[80vw] md:max-w-full flex-wrap justify-start">
-          {[...logos].map((logo, i) => (
-            <img
-              key={i}
-              src={logo}
-              alt={`logo-${i}`}
-              className="  transition-all w-fit h-10 px-5 py-2 md:h-16 md:px-[34px] md:py-[14px] border-[#D6D6D6] border rounded md:rounded-[20px]"
-            />
-          ))}
+        {[...logos].map((logo, i) => (
+  <img
+    key={i}
+    src={logo}
+    alt={`logo-${i}`}
+    className="
+      transition-all 
+      w-fit 
+      h-8 sm:h-10 md:h-14 lg:h-16
+      px-3 sm:px-4 md:px-6 lg:px-[34px]
+      py-1.5 sm:py-2 md:py-3 lg:py-[14px]
+      border border-[#D6D6D6]
+      rounded-md sm:rounded-lg md:rounded-xl lg:rounded-[20px]
+      object-contain
+    "
+  />
+))}
+
         </div>
       </section>
       {/* how we work */}
@@ -64,11 +74,11 @@ const Home = memo(() => {
       {/* working way */}
       <WorkingWay />
       {/* complate solution section */}
-      <SolutionSection/>
+      <SolutionSection ctaurl="/contact" isLinkActive={true}/>
 
       {/* cta */}
       <section className="w-full bg-[#150D37] overflow-hidden">
-        <div className="w-full relative py-16 grid place-items-center px-5 md:px-8">
+        <div className="w-full relative py-16 grid place-items-center px-5 md:px-8 lg:px-[90px]">
           <img
             src="/assets/pages/landingpage/bg-cta-1.png"
             alt=""
@@ -80,8 +90,8 @@ const Home = memo(() => {
             </h2>
 
             <a
-              href="#form"
-              className="bg-white px-5 py-3 text-[14px] text-primary flex flex-row space-x-2 rounded hover:scale-95 ease-in-out duration-150"
+              href="/scheduledemo"
+              className="bg-white px-5 py-3 font-bold leading-5 text-[14px] text-primary flex flex-row space-x-2 rounded hover:scale-95 ease-in-out duration-150"
             >
               <span>Schedule a Demo</span>{" "}
               <svg
@@ -104,7 +114,7 @@ const Home = memo(() => {
         </div>
       </section>
       {/* why us section */}
-      <WhyUsSection ctaText="Book a Demo" ctaUrl="/"/>
+      <WhyUsSection ctaText="Book a Demo" ctaUrl="/scheduledemo"/>
       {/* result Section */}
       <ResultSection/>
       {/* certification section */}
@@ -112,7 +122,7 @@ const Home = memo(() => {
       {/* testimonial section */}
       <TestimonialSlider/>
       {/* cta section */}
-      <CTASection ctaUrl={"/"}/>
+      <CTASection ctaUrl={"/scheduledemo"}/>
       {/* case-study section */}
       <CaseStudySection/>
       {/* faq section */}

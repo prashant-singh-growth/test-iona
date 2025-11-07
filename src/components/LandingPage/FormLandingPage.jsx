@@ -172,7 +172,7 @@ export default function FormLandingPage() {
         <button
           type="submit"
           disabled={status.loading}
-          className="bg-primary px-5 py-3 text-[14px] text-white flex items-center justify-center space-x-2 rounded hover:scale-95 transition duration-150 w-fit"
+          className="bg-primary px-5 py-3 font-bold leading-5 text-[14px] text-white flex items-center justify-center space-x-2 rounded hover:scale-95 transition duration-150 w-fit"
         >
           {status.loading ? "Submitting..." : "Schedule a Demo"}
         </button>

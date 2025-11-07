@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 function CTASection({title,description,ctaText,ctaUrl}) {
   return (
@@ -8,8 +9,8 @@ function CTASection({title,description,ctaText,ctaUrl}) {
     <div className="w-full flex flex-col justify-center items-center relative z-10 max-w-5xl ">
       <h2 className="text-3xl md:text-4xl lg:text-[40px] lg:leading-[50px] text-white font-lora font-bold md:font-semibold text-center ">{title ? title : "Ready to scale your hiring process on autopilot?"}</h2>
       <p className="text-base text-white font-lora text-center pt-6 pb-12">{description ? description : "Get started today and automate 100% of your recruitment from sourcing to onboarding with background verification and a 100% data accuracy guarantee and zero compliance issues, all at scale?"}</p>
-         <a
-          href={ctaUrl ?  ctaUrl : "#form"}
+         <NavLink
+          to={ctaUrl ? ctaUrl : "#form"}
           className="bg-white px-5 py-3 text-[14px] text-primary flex flex-row space-x-2 rounded hover:scale-95 ease-in-out duration-150"
         >
           <span>{ctaText ? ctaText : "Schedule  a Demo"}</span>{" "}
@@ -29,7 +30,7 @@ function CTASection({title,description,ctaText,ctaUrl}) {
               stroke-linejoin="round"
             />
           </svg>
-        </a>
+        </NavLink>
     </div>
   </div>
 </section>

@@ -10,10 +10,11 @@ function HowWeWork() {
             </h2>
           </div>
            <img
-            src="/assets/pages/homepage/banner-2.avif"
+            src="/assets/pages/homepage/banner-2.webp"
             alt="how iona work"
             title="how iona work"
-            className="w-full max-w-[1100px]"
+            className="w-full max-w-[1100px] object-contain"
+            loading='lazy'
           />
         </div>
       </section>

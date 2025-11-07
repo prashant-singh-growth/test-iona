@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 
-export default function ResponsiveGridLines() {
+export default function ResponsiveGridLines({gradientReplacement}) {
   const sectionRef = useRef(null);
   const [grid, setGrid] = useState({ cols: 0, rows: 0 });
 
@@ -27,7 +27,7 @@ export default function ResponsiveGridLines() {
 
     return () => window.removeEventListener("resize", calculateGrid);
   }, []);
- const gradientReplacement = [10, 97, 30, 47, 93, 70, 100, 90, 20, 40];
+
 
 
   // Custom gradient lines (8–10 total)
@@ -61,10 +61,10 @@ export default function ResponsiveGridLines() {
       ))}
 
       {/* Gradient Horizontal Lines (8–10 only) */}
-      {gradientLines.map((_, i) => (
+      {gradientReplacement && gradientLines.map((_, i) => (
         <div
           key={`gh-${i}`}
-          className={`absolute min-h-[2px] w-10 md:w-[70px] rounded-md  `}
+          className={`absolute min-h-[2px] w-10 md:w-[70px] rounded-md hidden lg:block  `}
           style={{
             top: `${i * 57}px`,
             left: `${gradientReplacement[i]}%`, // spacing between gradient lines

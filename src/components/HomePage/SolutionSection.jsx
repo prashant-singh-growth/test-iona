@@ -1,8 +1,8 @@
 import solutionListJson from "../Data/SolutionList.json"
 
-function SolutionSection() {
+function SolutionSection({ctatext,ctaurl,isLinkActive}) {
   return (
-   <section className="w-full  flex flex-col py-[60px] px-5 md:px-10 lg:px-[90px] justify-center items-center space-y-10">
+   <section id="solution" className="w-full  flex flex-col py-[60px] px-5 md:px-10 lg:px-[90px] justify-center items-center space-y-10">
         <div className="w-full max-w-[1440px] flex flex-col  justify-center items-center space-y-10">
           <div className="flex flex-col max-w-[826px] justify-center items-center space-y-4">
             <h2 className="text-3xl md:text-4xl lg:text-[40px] lg:leading-[50px] text-[#2A2564] font-bold md:font-semibold text-center font-lora">
@@ -34,9 +34,10 @@ function SolutionSection() {
                     />
                   </div>
                   <p className="text-base text-black">{item.description}</p>
-                  <a
-                    href="#form"
-                    className="mt-auto font-lora w-fit text-[14px] text-[#252525] flex flex-row space-x-2   ease-in-out duration-150 border-b border-[#252525] pb-2 group"
+               {isLinkActive && (
+                   <a
+                    href={item.url}
+                    className="mt-auto font-lora font-medium w-fit text-[14px] leading-5 text-[#252525] flex flex-row space-x-2   ease-in-out duration-150 border-b border-[#252525] pb-2 group"
                   >
                     <span>Learn More</span>{" "}
                     <svg
@@ -56,15 +57,16 @@ function SolutionSection() {
                       />
                     </svg>
                   </a>
+               )}
                 </div>
               );
             })}
           </div>
           <a
-            href="#form"
-            className="bg-primary font-lora px-5 py-3 text-[14px] text-white flex flex-row space-x-2 rounded hover:scale-95 ease-in-out duration-150"
+            href={ctaurl ? ctaurl : "#form"}
+            className="bg-primary font-bold leading-5 font-lora px-5 py-3 text-[14px] text-white flex flex-row space-x-2 rounded hover:scale-95 ease-in-out duration-150"
           >
-            <span>Explore Products</span>{" "}
+            <span>{ctatext ? ctatext : "Explore Products"}</span>{" "}
             <svg
               width="20"
               height="20"

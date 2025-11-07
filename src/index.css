@@ -203,7 +203,5 @@ p, .secondary-text {
 .theme-lora-font button {
   @apply !font-lora;
 }
-.theme-lora-font a{
-  @apply !font-medium;
-}
+
 

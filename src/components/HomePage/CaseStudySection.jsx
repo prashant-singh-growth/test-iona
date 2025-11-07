@@ -10,28 +10,28 @@ function CaseStudySection() {
 
   const caseStudies = [
     {
-      image: "/assets/pages/homepage/case-study.avif",
+      image: "/assets/pages/homepage/case-study.webp",
       title: "Learn how iona.ai Simplified Hiring For A Leading Consumer Brand",
       description:
         '"Our manual hiring process couldn\'t keep up with the volume, making it hard to track key metrics like interviews, selection ratios, and offer rejections. We chose iona.ai for its simplicity, cost-effectiveness, and customization options. The analytics fetched from iona.ai allow my team to work quickly and more efficiently."',
       author: "AGM-HR, a fast-growing consumer brand in India",
-      link: "/",
+      link: "/casestudies",
     },
     {
-      image: "/assets/pages/homepage/case-study.avif",
+      image: "/assets/pages/homepage/case-study.webp",
       title: "How iona.ai Accelerated Onboarding for a Tech Giant",
       description:
         '"iona.ai automated document verification and compliance workflows, cutting onboarding time by 60%. HR teams now focus on engagement instead of paperwork."',
       author: "HR Head, Global SaaS Company",
-      link: "/",
+      link: "/casestudies",
     },
     {
-      image: "/assets/pages/homepage/case-study.avif",
+      image: "/assets/pages/homepage/case-study.webp",
       title: "Smarter Compliance for a Financial Services Company",
       description:
         '"With iona.ai, our compliance accuracy went from 85% to 99%, ensuring smooth audits and error-free onboarding every single time."',
       author: "VP-HR, Finance Enterprise",
-      link: "/",
+      link: "/casestudies",
     },
   ];
 
@@ -79,7 +79,8 @@ function CaseStudySection() {
                 <img
                   src={item.image}
                   alt={item.title}
-                  className="w-full rounded-md"
+                  className="w-full rounded-md object-contain"
+                  loading="lazy"
                 />
                 <h3 className="text-white text-xl md:text-2xl font-medium line-clamp-2 font-lora my-3 md:my-5">
                   {item.title}
