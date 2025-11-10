@@ -90,7 +90,7 @@ const Home = memo(() => {
             </h2>
 
             <a
-              href="/schedule-demo"
+              href="/contact"
               className="bg-white flex-none px-5 w-fit py-3 font-bold leading-5 text-[14px] text-primary flex flex-row space-x-2 rounded hover:scale-95 ease-in-out duration-150"
             >
               <span >Schedule a Demo</span>{" "}
@@ -115,7 +115,7 @@ const Home = memo(() => {
         </div>
       </section>
       {/* why us section */}
-      <WhyUsSection ctaText="Book a Demo" ctaUrl="/schedule-demo"/>
+      <WhyUsSection ctaText="Book a Demo" ctaUrl="/contact"/>
       {/* result Section */}
       <ResultSection/>
       {/* certification section */}
@@ -123,7 +123,7 @@ const Home = memo(() => {
       {/* testimonial section */}
       <TestimonialSlider/>
       {/* cta section */}
-      <CTASection ctaUrl={"/schedule-demo"}/>
+      <CTASection ctaUrl={"/contact"}/>
       {/* case-study section */}
       <CaseStudySection/>
       {/* faq section */}
