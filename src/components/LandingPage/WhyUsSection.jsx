@@ -44,7 +44,7 @@ function WhyUsSection({ ctaText, ctaUrl }) {
     }
 ]
   return (
-    <section className="w-full bg-white flex flex-col py-16 md:py-[100px] px-5 md:px-10 lg:px-[90px] justify-center items-center space-y-10">
+    <section className="w-full bg-white flex flex-col py-16 md:py-[100px] px-5 md:px-10 slg:px-[60px] lg:px-[90px] justify-center items-center space-y-10">
       <div className="w-full max-w-[1440px] flex flex-col justify-center items-center space-y-10">
         {/* --- Heading --- */}
         <div className="flex flex-col max-w-[826px] justify-center items-center space-y-4">
@@ -59,7 +59,7 @@ function WhyUsSection({ ctaText, ctaUrl }) {
         </div>
 
         {/* --- Cards Grid --- */}
-        <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 slg:grid-cols-3 gap-8 slg:gap-8 lg:gap-12">
           {WhyChooseJson.map((item, i) => (
             <div
               key={i}
@@ -73,10 +73,10 @@ function WhyUsSection({ ctaText, ctaUrl }) {
                 />
               </div>
               <p
-                className="text-[22px] leading-[30px] font-semibold text-left font-lora mt-3 md:mt-4 lg:mt-[26px]"
+                className="text-[22px] leading-[30px] font-semibold text-left font-lora mt-3 md:mt-4 slg:mt-4 lg:mt-[26px]"
                 dangerouslySetInnerHTML={{ __html: item.title }}
               />
-              <p className="text-base text-[#677D64] mt-2 md:mt-4 lg:mt-[24px] font-lora">
+              <p className="text-base text-[#677D64] mt-2 md:mt-4 slg:mt-4 lg:mt-[24px] font-lora">
                 {item.description}
               </p>
             </div>

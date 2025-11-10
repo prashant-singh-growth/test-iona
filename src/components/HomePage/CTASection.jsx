@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 function CTASection({title,description,ctaText,ctaUrl}) {
   return (
   <section className="w-full bg-[#150D37] overflow-hidden">
-  <div className="w-full relative py-16 grid place-items-center px-5 md:px-8">
+  <div className="w-full relative py-16 grid place-items-center px-5 md:px-10 slg:px-[60px] lg:px-[90px]">
     <img src="/assets/pages/landingpage/bg-cta-1.png" alt="" className="absolute inset-0 min-w-[1200px] lg:min-w-full lg:max-w-full"/>
     <div className="w-full flex flex-col justify-center items-center relative z-10 max-w-5xl ">
       <h2 className="text-3xl md:text-4xl lg:text-[40px] lg:leading-[50px] text-white font-lora font-bold md:font-semibold text-center ">{title ? title : "Ready to scale your hiring process on autopilot?"}</h2>

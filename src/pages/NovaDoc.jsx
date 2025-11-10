@@ -80,7 +80,7 @@ const NovaDoc = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.6 }}
             >
-              <Link to="/scheduledemo">
+              <Link to="/schedule-demo">
               <motion.button 
                 className="bg-accent hover:bg-accent-dark text-white px-6 py-3 rounded-lg font-medium transition-colors relative overflow-hidden"
                 whileHover={{ scale: 1.05 }}
@@ -405,7 +405,7 @@ const NovaDoc = () => {
             <p className="text-xl mb-8">
               When every minute matters, Nova Doc ensures none are wasted.
             </p>
-            <Link to="/scheduledemo">
+            <Link to="/schedule-demo">
               <motion.button 
                 className="bg-white text-accent px-8 py-3 rounded-lg font-medium transition-colors inline-flex items-center"
                 whileHover={{ scale: 1.05, boxShadow: "0 10px 25px rgba(0, 0, 0, 0.1)" }}

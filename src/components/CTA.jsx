@@ -101,7 +101,7 @@ const CTA = () => {
               whileTap="tap"
             >
               <Link
-                to="/scheduledemo"
+                to="/schedule-demo"
                 className="bg-purple-gradient text-white px-8 py-4 rounded-xl text-md font-medium flex items-center gap-2 justify-center mx-auto w-fit"
               >
                 <span>Schedule a Demo</span>

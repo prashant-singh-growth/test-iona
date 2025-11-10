@@ -78,7 +78,7 @@ const Home = memo(() => {
 
       {/* cta */}
       <section className="w-full bg-[#150D37] overflow-hidden">
-        <div className="w-full relative py-16 grid place-items-center px-5 md:px-8 lg:px-[90px]">
+        <div className="w-full relative py-16 grid place-items-center px-5 md:px-8 slg:px-[60px] lg:px-[90px]">
           <img
             src="/assets/pages/landingpage/bg-cta-1.png"
             alt=""
@@ -90,11 +90,12 @@ const Home = memo(() => {
             </h2>
 
             <a
-              href="/scheduledemo"
-              className="bg-white px-5 py-3 font-bold leading-5 text-[14px] text-primary flex flex-row space-x-2 rounded hover:scale-95 ease-in-out duration-150"
+              href="/schedule-demo"
+              className="bg-white flex-none px-5 w-fit py-3 font-bold leading-5 text-[14px] text-primary flex flex-row space-x-2 rounded hover:scale-95 ease-in-out duration-150"
             >
-              <span>Schedule a Demo</span>{" "}
+              <span >Schedule a Demo</span>{" "}
               <svg
+              
                 width="20"
                 height="20"
                 viewBox="0 0 20 20"
@@ -114,7 +115,7 @@ const Home = memo(() => {
         </div>
       </section>
       {/* why us section */}
-      <WhyUsSection ctaText="Book a Demo" ctaUrl="/scheduledemo"/>
+      <WhyUsSection ctaText="Book a Demo" ctaUrl="/schedule-demo"/>
       {/* result Section */}
       <ResultSection/>
       {/* certification section */}
@@ -122,7 +123,7 @@ const Home = memo(() => {
       {/* testimonial section */}
       <TestimonialSlider/>
       {/* cta section */}
-      <CTASection ctaUrl={"/scheduledemo"}/>
+      <CTASection ctaUrl={"/schedule-demo"}/>
       {/* case-study section */}
       <CaseStudySection/>
       {/* faq section */}

@@ -14,21 +14,21 @@ function Header() {
       name: "Product",
       key: "product",
       links: [
-        { label: "NovaCount", url: "/find" },
-        { label: "NovaAssist", url: "/novaassist" },
-        { label: "NovaTrack", url: "/speedboard" },
-        { label: "NovaStart", url: "/novastart" },
-        { label: "NovaDoc", url: "/novadoc" },
-        { label: "NovaEngage", url: "/novaengage" },
-        { label: "NovaTrain", url: "/trainplus" },
-        { label: "NovaVerify", url: "/novaverify" },
+        { label: "NovaCount", url: "/solutions/novacount" },
+        { label: "NovaAssist", url: "/solutions/novaassist" },
+        { label: "NovaTrack", url: "/solutions/speedboard" },
+        { label: "NovaStart", url: "/solutions/novastart" },
+        { label: "NovaDoc", url: "/solutions/novadoc" },
+        { label: "NovaEngage", url: "/solutions/novaengage" },
+        { label: "NovaTrain", url: "/solutions/trainplus" },
+        { label: "NovaVerify", url: "/solutions/novaverify" },
         { label: "NovaConnect", url: "/novaconnect" },
       ],
     },
     {
       type: "link",
       name: "Case Studies",
-      url: "/casestudies",
+      url: "/case-studies",
     },
     {
       type: "dropdown",
@@ -44,7 +44,7 @@ function Header() {
   ];
 
   return (
-    <header className="w-full bg-white/80 backdrop-blur-md fixed top-0 z-50 grid place-items-center px-5 md:px-10 lg:px-[90px] border-b border-gray-100 shadow-sm">
+    <header className="w-full bg-white/80 backdrop-blur-md fixed top-0 z-50 grid place-items-center px-5 md:px-10 slg:px-[60px] lg:px-[90px] border-b border-gray-100 shadow-sm">
       <div className="w-full max-w-[1440px] flex justify-between items-center py-3">
         {/* Logo */}
         <Link to="/" className="w-fit">
@@ -122,8 +122,8 @@ function Header() {
 
         {/* CTA Button */}
         <Link
-          to="/scheduledemo"
-          className="hidden lg:flex bg-primary px-5 py-3 font-bold leading-5 space-x-2 font-lora text-[14px] text-white rounded-lg shadow hover:shadow-md hover:scale-95 transition-transform duration-200"
+          to="/schedule-demo"
+          className="hidden lg:flex flex-none bg-primary px-5 py-3 font-bold leading-5 space-x-2 font-lora text-[14px] text-white rounded-lg shadow hover:shadow-md hover:scale-95 transition-transform duration-200"
         >
           <span>Schedule a Demo</span>
           <svg
@@ -226,8 +226,8 @@ function Header() {
 
             {/* CTA in Mobile */}
             <Link
-              to="/scheduledemo"
-              className="bg-primary flex font-lora  space-x-2 flex-row px-4 font-bold leading-5 w-fit gap-2 text-white text-center py-3 rounded-lg text-[14px] shadow hover:shadow-md hover:scale-[0.98] transition-all duration-200"
+              to="/schedule-demo"
+              className="bg-primary flex font-lora flex-none  space-x-2 flex-row px-4 font-bold leading-5 w-fit gap-2 text-white text-center py-3 rounded-lg text-[14px] shadow hover:shadow-md hover:scale-[0.98] transition-all duration-200"
             >
               <span>Schedule a Demo</span>
               <svg

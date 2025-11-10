@@ -17,7 +17,7 @@ const CTASection = memo(() => {
             Contact Us
           </Link>
           <Link 
-            to="/scheduledemo"
+            to="/schedule-demo"
             className="bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg font-medium hover:bg-white/10 transition-colors inline-block"
           >
             Schedule Demo

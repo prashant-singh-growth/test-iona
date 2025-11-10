@@ -15,31 +15,31 @@ function Footer() {
     {
       title: "Platform",
       links: [
-        { placeHolder: "NovaCount", url: "/find" },
-        { placeHolder: "NovaAssist", url: "/novaassist" },
-        { placeHolder: "NovaTrack", url: "/speedboard" },
+        { placeHolder: "NovaCount", url: "/solutions/novacount" },
+        { placeHolder: "NovaAssist", url: "/solutions/novaassist" },
+        { placeHolder: "NovaTrack", url: "/solutions/speedboard" },
       ],
     },
     {
       title: "",
       links: [
-        { placeHolder: "NovaStart", url: "/novastart" },
-        { placeHolder: "NovaDoc", url: "/novadoc" },
-        { placeHolder: "NovaEngage", url: "/novaengage" },
+        { placeHolder: "NovaStart", url: "/solutions/novastart" },
+        { placeHolder: "NovaDoc", url: "/solutions/novadoc" },
+        { placeHolder: "NovaEngage", url: "/solutions/novaengage" },
       ],
     },
     {
       title: "",
       links: [
-        { placeHolder: "NovaTrain", url: "/trainplus" },
-        { placeHolder: "NovaVerify", url: "/novaverify" },
+        { placeHolder: "NovaTrain", url: "/solutions/trainplus" },
+        { placeHolder: "NovaVerify", url: "/solutions/novaverify" },
         { placeHolder: "NovaConnect", url: "/novaconnect" },
       ],
     },
     {
       title: "Resources",
       links: [
-        { placeHolder: "Case Study", url: "/casestudies" },
+        { placeHolder: "Case Study", url: "/case-studies" },
         { placeHolder: "Blog", url: "/blogs" },
         { placeHolder: "Videos", url: "/videos" },
       ],
@@ -47,7 +47,7 @@ function Footer() {
   ];
   return (
     <footer className="w-full flex flex-col justify-center items-center bg-themeGray py-10 lg:py-20">
-      <div className="w-full px-5 md:px-10 lg:px-[90px] justify-center items-center">
+      <div className="w-full px-5 md:px-10 slg:px-[60px] lg:px-[90px] justify-center items-center">
         <div className="w-full max-w-[1440px] grid grid-cols-1 md:grid-cols-7 mx-auto gap-10">
           {/* ---- Left Section ---- */}
           <div className="flex flex-col w-full max-w-[400px] gap-5 col-span-3 h-full">
@@ -60,19 +60,13 @@ function Footer() {
                 />
               </Link>
               <p className="text-base text-primary font-lora">
-                "iona.ai is a full-service AI-powered recruitment platform that
-                automates the entire hiring process—saving time, reducing costs,
-                and ensuring 100% data accuracy. Trusted by enterprises for
-                scalable, high-volume hiring."
+                       "Trusted by enterprises for scalable, high-volume hiring.<br></br>iona.ai is a full-service AI-powered recruitment platform that automates the entire hiring process—saving time, reducing costs, and ensuring 100% data accuracy."
               </p>
             </div>
 
             <div className="w-fit flex flex-row justify-center items-center space-x-5 lg:mt-auto">
               {[
-                {
-                  icon: <FaFacebookF />,
-                  url: "https://www.facebook.com/ionaai/",
-                },
+                
                 {
                   icon: <FaLinkedinIn />,
                   url: "https://www.linkedin.com/company/iona-ai/",
@@ -157,7 +151,7 @@ function Footer() {
 
       {/* ---- Bottom Section ---- */}
       <div className="w-full border-t border-[#C9C9C9] my-4 mt-[60px]"></div>
-      <div className="w-full px-5 md:px-10 lg:px-[90px] flex justify-center items-center">
+      <div className="w-full px-5 md:px-10 slg:px-[60px] lg:px-[90px] flex justify-center items-center">
         <div className="w-full max-w-[1440px] flex flex-col gap-4 md:flex-row justify-between">
           <p className="text-xs text-black font-lora">
             Copyright © {new Date().getFullYear()} | All rights reserved.

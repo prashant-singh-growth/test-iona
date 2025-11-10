@@ -239,49 +239,49 @@ const Navbar = () => {
                     <DropdownLink 
                       title="NovaCount" 
                       description="Headcount Planning and Monitoring"
-                      path="/find"
+                      path="/solutions/novacount"
                       onClick={() => setShowSolutions(false)}
                     />
                     <DropdownLink 
                       title="NovaAssist" 
                       description="Recruiter Co-Pilot"
-                      path="/novaassist"
+                      path="/solutions/novaassist"
                       onClick={() => setShowSolutions(false)}
                     />
                     <DropdownLink 
                       title="NovaTrack" 
                       description="NextGen Application Tracking System"
-                      path="/speedboard"
+                      path="/solutions/speedboard"
                       onClick={() => setShowSolutions(false)}
                     />
                     <DropdownLink 
                       title="NovaStart" 
                       description="Pre-Boarding of New Hires"
-                      path="/novastart"
+                      path="/solutions/novastart"
                       onClick={() => setShowSolutions(false)}
                     />
                     <DropdownLink 
                       title="NovaDoc" 
                       description="Documentation of New Hires"
-                      path="/novadoc"
+                      path="/solutions/novadoc"
                       onClick={() => setShowSolutions(false)}
                     />
                     <DropdownLink 
                       title="NovaEngage" 
                       description="Engagement of New Hires"
-                      path="/novaengage"
+                      path="/solutions/novaengage"
                       onClick={() => setShowSolutions(false)}
                     />
                     <DropdownLink 
                       title="NovaTrain" 
                       description="Mandatory Trainings and Induction of New Hires"
-                      path="/trainplus"
+                      path="/solutions/trainplus"
                       onClick={() => setShowSolutions(false)}
                     />
                     <DropdownLink 
                       title="NovaVerify" 
                       description="Background Verifications of New Hires"
-                      path="/novaverify"
+                      path="/solutions/novaverify"
                       onClick={() => setShowSolutions(false)}
                     />
                     <DropdownLink 
@@ -341,7 +341,7 @@ const Navbar = () => {
                     <DropdownLink 
                       title="Case Studies" 
                       description="Success stories and implementations"
-                      path="/casestudies"
+                      path="/case-studies"
                       onClick={() => setShowKnowledgeHub(false)}
                     />
                     <DropdownLink 
@@ -372,7 +372,7 @@ const Navbar = () => {
             whileTap="tap"
           >
             <Link
-              to="/scheduledemo"
+              to="/schedule-demo"
               className="bg-purple-gradient text-white px-5 py-2.5 rounded-xl text-sm font-medium transition-all flex items-center gap-2 group"
             >
               <span>SCHEDULE A DEMO</span>
@@ -463,14 +463,14 @@ const Navbar = () => {
                           exit={{ height: 0, opacity: 0 }}
                           transition={{ duration: 0.3 }}
                         >
-                          <MobileNavItem label="NovaCount" path="/find" isSubmenu />
-                          <MobileNavItem label="NovaAssist" path="/novaassist" isSubmenu />
-                          <MobileNavItem label="NovaTrack" path="/speedboard" isSubmenu />
-                          <MobileNavItem label="NovaStart" path="/novastart" isSubmenu />
-                          <MobileNavItem label="NovaDoc" path="/novadoc" isSubmenu />
-                          <MobileNavItem label="NovaEngage" path="/novaengage" isSubmenu />
-                          <MobileNavItem label="NovaTrain" path="/trainplus" isSubmenu />
-                          <MobileNavItem label="NovaVerify" path="/novaverify" isSubmenu />
+                          <MobileNavItem label="NovaCount" path="/solutions/novacount" isSubmenu />
+                          <MobileNavItem label="NovaAssist" path="/solutions/novaassist" isSubmenu />
+                          <MobileNavItem label="NovaTrack" path="/solutions/speedboard" isSubmenu />
+                          <MobileNavItem label="NovaStart" path="/solutions/novastart" isSubmenu />
+                          <MobileNavItem label="NovaDoc" path="/solutions/novadoc" isSubmenu />
+                          <MobileNavItem label="NovaEngage" path="/solutions/novaengage" isSubmenu />
+                          <MobileNavItem label="NovaTrain" path="/solutions/trainplus" isSubmenu />
+                          <MobileNavItem label="NovaVerify" path="/solutions/novaverify" isSubmenu />
                           <MobileNavItem label="NovaConnect" path="/novaconnect" isSubmenu />
                         </motion.ul>
                       )}
@@ -501,7 +501,7 @@ const Navbar = () => {
                           transition={{ duration: 0.3 }}
                         >
                           <MobileNavItem label="BLOGS" path="/blogs" isSubmenu />
-                          <MobileNavItem label="CASE STUDIES" path="/casestudies" isSubmenu />
+                          <MobileNavItem label="CASE STUDIES" path="/case-studies" isSubmenu />
                           <MobileNavItem label="VIDEOS" path="/videos" isSubmenu />
                         </motion.ul>
                       )}
@@ -518,7 +518,7 @@ const Navbar = () => {
                       whileTap="tap"
                     >
                       <Link
-                        to="/scheduledemo"
+                        to="/schedule-demo"
                         className="bg-purple-gradient text-white px-4 py-3 rounded-xl text-sm font-medium hover:shadow-hover transition-all w-full flex items-center justify-center gap-2"
                         onMouseEnter={preloadScheduleDemo}
                       >

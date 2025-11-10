@@ -368,7 +368,7 @@ function CaseStudies() {
               <div className="mt-8 border-t border-gray-200 pt-6">
                 <h3 className="text-xl font-bold mb-4">Do you want to be the Next Success Story?</h3>
                 <div className="flex space-x-4">
-                  <Link to="/scheduledemo" className="bg-accent hover:bg-accent-dark text-white px-6 py-3 rounded-lg transition-colors">Book a Demo</Link>
+                  <Link to="/schedule-demo" className="bg-accent hover:bg-accent-dark text-white px-6 py-3 rounded-lg transition-colors">Book a Demo</Link>
                   <Link to="/contact" className="border-2 border-accent text-accent px-6 py-3 rounded-lg hover:bg-accent/5 transition-colors">Schedule a Call</Link>
                 </div>
               </div>

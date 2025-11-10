@@ -201,7 +201,7 @@ function Vids() {
               <div className="mt-4 border-t border-gray-200 pt-6">
                 <h3 className="text-xl font-bold mb-4">Want to see our platform in action?</h3>
                 <div className="flex space-x-4">
-                  <Link to="/scheduledemo" className="bg-purple-gradient text-white px-6 py-2 rounded-lg">Schedule a Demo</Link>
+                  <Link to="/schedule-demo" className="bg-purple-gradient text-white px-6 py-2 rounded-lg">Schedule a Demo</Link>
                   <Link to="/contact" className="border border-primary text-primary px-6 py-2 rounded-lg">Contact Us</Link>
                 </div>
               </div>

@@ -1,8 +1,8 @@
 import solutionListJson from "../Data/SolutionList.json"
 
-function SolutionSection({ctatext,ctaurl,isLinkActive}) {
+function SolutionSection({ctatext,ctaurl,isLinkActive,bgcolor}) {
   return (
-   <section id="solution" className="w-full  flex flex-col py-[60px] px-5 md:px-10 lg:px-[90px] justify-center items-center space-y-10">
+   <section id="solution" className={`w-full ${bgcolor}  flex flex-col py-[60px] px-5 md:px-10 slg:px-[60px] lg:px-[90px] justify-center items-center space-y-10`}>
         <div className="w-full max-w-[1440px] flex flex-col  justify-center items-center space-y-10">
           <div className="flex flex-col max-w-[826px] justify-center items-center space-y-4">
             <h2 className="text-3xl md:text-4xl lg:text-[40px] lg:leading-[50px] text-[#2A2564] font-bold md:font-semibold text-center font-lora">
@@ -15,21 +15,21 @@ function SolutionSection({ctatext,ctaurl,isLinkActive}) {
               issues.
             </p>
           </div>
-          <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
+          <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 slg: xl:gap-12">
             {solutionListJson.map((item, i) => {
               return (
                 <div
                   key={i}
-                  className="w-full flex h-full  flex-col gap-y-4 md:gap-y-5 lg:gap-y-[30px]"
+                  className="w-full flex h-full  flex-col gap-y-4 md:gap-y-5 xl:gap-y-[30px]"
                 >
                   <div className="w-full bg-black relative z-0 py-10 px-3 ">
                     <p
-                      className="w-[70%] absolute left-5 bottom-5 text-xl font-semibold text-white text-left font-lora"
+                      className="w-[70%] absolute left-5 bottom-5  text-xl slg:text-lg font-semibold text-white text-left font-lora"
                       dangerouslySetInnerHTML={{ __html: item.title }}
                     />
                     <img
                       src={`/assets/pages/landingpage/${item.imgurl}.svg`}
-                      alt=""
+                      alt={item.imgurl}
                       className="h-28  ml-auto"
                     />
                   </div>

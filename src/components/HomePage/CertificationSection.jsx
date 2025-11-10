@@ -2,7 +2,7 @@ import React from "react";
 
 function CertificationSection() {
   return (
-    <section className="w-full bg-themeGray flex flex-col py-12 lg:py-20 px-5 md:px-10 lg:px-[90px] justify-center items-center">
+    <section className="w-full bg-themeGray flex flex-col py-12 lg:py-20  px-5 md:px-10 slg:px-[60px] lg:px-[90px] justify-center items-center">
       <div className="w-full max-w-[1440px] grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-[80px] place-content-between">
         {/* Left Text Section */}
         <div className="w-full flex flex-col space-y-5">

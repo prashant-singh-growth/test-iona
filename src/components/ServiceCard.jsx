@@ -6,8 +6,8 @@ import { memo } from "react";
 const ServiceCard = memo(({ icon, title, description, image }) => {
   // Determine the correct route and hash for each solution
   let linkTo = "/";
-  if (icon === "1") linkTo = "/find#genai";
-  else if (icon === "2") linkTo = "/novaassist";
+  if (icon === "1") linkTo = "/solutions/novacount#gen";
+  else if (icon === "2") linkTo = "/solutions/novaassist";
   else if (icon === "3") linkTo = "/novatrack";
   else if (icon === "4") linkTo = "/novaengage#engagement";
   else if (icon === "5") linkTo = "/novaverify#verification";

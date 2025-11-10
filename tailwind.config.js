@@ -68,6 +68,10 @@ module.exports = {
           '2xl': '1.5rem',
           '3xl': '2rem',
         },
+        screens : {
+         slg: { max: "1200px",min:'900px' },
+         ssm: { max: "500px",min:'400px' },
+        }
       },
     },
     plugins: [],

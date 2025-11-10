@@ -6,7 +6,7 @@ import FormLandingPage from "../components/LandingPage/FormLandingPage";
 import TestimonialSlider from "../components/utils/TestimonialSlider";
 import WhyUsSection from "../components/LandingPage/WhyUsSection";
 import SeoHeader from "../components/utils/SeoHeader";
-import solutionListJson from "../components/Data/SolutionList.json";
+
 import ResultSection from "../components/LandingPage/ResultSection";
 import CertificationSection from "../components/HomePage/CertificationSection";
 import CTASection from "../components/HomePage/CTASection";
@@ -23,7 +23,7 @@ function Landingpages() {
         canonical={"/end-to-end-hiring-solution-for-enterprises"}
       />
 
-      <header className="w-full px-5 md:px-10 lg:px-[90px] grid place-items-center fixed top-0 h-[100px] bg-white z-50">
+      <header className="w-full px-5 md:px-10 slg:px-[60px] lg:px-[90px] grid place-items-center fixed top-0 h-[100px] bg-white z-50">
         <div className="w-full max-w-[1440px] flex flex-row justify-between items-center">
           <img
             src="/assets/pages/landingpage/iona-logo.png"
@@ -53,7 +53,7 @@ function Landingpages() {
           </a>
         </div>
       </header>
-      <section className="w-full h-fit relative px-5 md:px-10 lg:px-[90px] py-16 lg:py-20 flex flex-col justify-center items-center">
+      <section className="w-full h-fit relative px-5 md:px-10 slg:px-[60px] lg:px-[90px] py-16 lg:py-20 flex flex-col justify-center items-center">
         <ResponsiveGridLines gradientReplacement={[10, 97, 30, 47, 93, 70, 100, 90, 20, 40]} />
         <div className="w-full max-w-[100vw] lg:max-w-[1440px] grid lg:grid-cols-2 relative z-10 gap-10">
           <div className="w-full max-w-[100vw]">
@@ -67,66 +67,8 @@ function Landingpages() {
           <FormLandingPage />
         </div>
       </section>
-     
-      <section className="w-full bg-[#f3f3f5] flex flex-col py-[60px] px-5 md:px-10 lg:px-[90px] justify-center items-center space-y-10">
-        <div className="w-full max-w-[1440px] flex flex-col  justify-center items-center space-y-10">
-          <div className="flex flex-col max-w-[826px] justify-center items-center space-y-4">
-            <h2 className="text-3xl md:text-4xl lg:text-[40px] lg:leading-[50px] text-[#2A2564] font-bold md:font-semibold text-center ">
-              iona.ai - The Complete Solution for Precision Hiring at Scale
-            </h2>
-            <p className="text-base text-[#2A2564] text-center">
-              From recruitment to employee engagement — helping you streamline
-              your entire hiring journey with a 100% automated process while
-              maintaining 100% data accuracy guarantee and zero compliance
-              issues.
-            </p>
-          </div>
-          <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
-            {solutionListJson.map((item, i) => {
-              return (
-                <div
-                  key={i}
-                  className="w-full flex flex-col space-y-4 md:space-y-5 lg:space-y-[30px]"
-                >
-                  <div className="w-full bg-black relative z-0 py-10 px-3 ">
-                    <p
-                      className="w-[70%] absolute left-5 bottom-5 text-xl font-semibold text-white text-left font-lora"
-                      dangerouslySetInnerHTML={{ __html: item.title }}
-                    />
-                    <img
-                      src={`/assets/pages/landingpage/${item.imgurl}.svg`}
-                      alt=""
-                      className="h-28  ml-auto"
-                    />
-                  </div>
-                  <p className="text-base text-black">{item.description}</p>
-                </div>
-              );
-            })}
-          </div>
-          <a
-            href="#form"
-            className="bg-primary px-5 font-bold leading-5 py-3 text-[14px] text-white flex flex-row space-x-2 rounded hover:scale-95 ease-in-out duration-150"
-          >
-            <span>Schedule a Demo</span>{" "}
-            <svg
-              width="20"
-              height="20"
-              viewBox="0 0 20 20"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M4.16669 10H15.8334M15.8334 10L10.8334 5M15.8334 10L10.8334 15"
-                stroke="#FCFCFC"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </a>
-        </div>
-      </section>
+     <SolutionSection bgcolor={'bg-[#f3f3f5]'} ctatext={'Schedule a Demo'} ctaurl={'#form'}/>
+    
       {/* why us Section */}
       <WhyUsSection />
       {/* result section */}
@@ -148,21 +90,11 @@ function Landingpages() {
                 alt="iona-logo"
               />
               <p className="text-base text-primary font-lora">
-                "iona.ai is a full-service AI-powered recruitment platform that
-                automates the entire hiring process—saving time, reducing costs,
-                and ensuring 100% data accuracy. Trusted by enterprises for
-                scalable, high-volume hiring."
+                "Trusted by enterprises for scalable, high-volume hiring.<br></br>iona.ai is a full-service AI-powered recruitment platform that automates the entire hiring process—saving time, reducing costs, and ensuring 100% data accuracy."
               </p>
             </div>
             <div className="w-fit flex flex-row justify-center items-center space-x-5 mt-auto">
-              <a
-                href="https://www.facebook.com/ionaai/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="md:text-2xl text-xl bg-white w-10 h-10 md:w-14 md:h-14 ease-in-out duration-150 rounded-full grid place-items-center text-primary hover:bg-primary hover:text-white"
-              >
-                <FaFacebookF />
-              </a>
+             
              
               <a
                 href="https://www.linkedin.com/company/iona-ai/"
@@ -176,7 +108,7 @@ function Landingpages() {
           </div>
         </div>
         <div className="w-full border-t border-[#C9C9C9] my-4"></div>
-        <div className="w-full px-5 md:px-10 lg:px-[90px] flex  justify-center items-center">
+        <div className="w-full px-5 md:px-10 slg:px-[60px] lg:px-[90px] flex  justify-center items-center">
           <div className="w-full max-w-[1440px]  flex flex-col gap-4 md:flex-row justify-between ">
             <p className="text-xs text-black">
               Copyright © {new Date().getFullYear()} | All right reserved.

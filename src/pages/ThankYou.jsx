@@ -4,7 +4,7 @@ import { IoMdCheckmarkCircleOutline } from 'react-icons/io'
 
 function ThankYou() {
   return (
-<div className="w-full h-screen px-5 md:px-10 lg:px-[90px] flex flex-col justify-center items-center bg-primary">
+<div className="w-full h-screen px-5 md:px-10 slg:px-[60px] lg:px-[90px] flex flex-col justify-center items-center bg-primary">
   <Helmet>
     <title>Thank You | iona.ai</title>
     <meta name='description' content='Thank You | iona.ai' />

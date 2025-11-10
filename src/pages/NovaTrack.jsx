@@ -80,7 +80,7 @@ const NovaTrack = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.6 }}
             >
-              <Link to="/scheduledemo">
+              <Link to="/schedule-demo">
               <motion.button 
                 className="bg-accent hover:bg-accent-dark text-white px-6 py-3 rounded-lg font-medium transition-colors relative overflow-hidden"
                 whileHover={{ scale: 1.05 }}
@@ -341,7 +341,7 @@ const NovaTrack = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            <Link to="/scheduledemo">
+            <Link to="/schedule-demo">
               <motion.button
                 className="bg-white text-accent hover:bg-gray-100 px-10 py-4 rounded-lg font-medium text-lg shadow-lg transition-colors relative overflow-hidden"
                 whileHover={{ scale: 1.05 }}
@@ -425,7 +425,7 @@ const NovaTrack = () => {
           >
             Discover how Nova Track can transform your recruitment operations.
           </motion.p>
-          <Link to="/scheduledemo">
+          <Link to="/schedule-demo">
             <motion.button 
               className="bg-white text-accent px-8 py-3 rounded-lg font-medium transition-colors hover:bg-gray-100 relative overflow-hidden"
               whileHover={{ scale: 1.05 }}

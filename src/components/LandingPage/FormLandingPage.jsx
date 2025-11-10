@@ -145,7 +145,7 @@ export default function FormLandingPage() {
         <div className="w-full grid grid-cols-1  gap-6">
           {[
             { name: "full_name", placeholder: "Full Name" },
-            { name: "email", placeholder: "Enter your Work Email", type: "email",  },
+            { name: "email", placeholder: "Enter Your Work Email", type: "email",  },
             { name: "phone", placeholder: "Phone Number", type: "tel", maxLength: 12 },
             { name: "seniority", placeholder: "Seniority" },
             { name: "functional_area", placeholder: "Functional Area",  },

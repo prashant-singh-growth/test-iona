@@ -80,7 +80,7 @@ const NovaAssist = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.6 }}
             >
-              <Link to="/scheduledemo">
+              <Link to="/schedule-demo">
                 <motion.button 
                   className="bg-white text-accent px-8 py-3 rounded-lg font-medium transition-colors hover:bg-gray-100"
                   whileHover={{ scale: 1.05 }}
@@ -375,7 +375,7 @@ const NovaAssist = () => {
             <p className="text-xl mb-8">
               Your team's silent strength. Your new hires' warmest welcome. Your co-pilot for everything.
             </p>
-            <Link to="/scheduledemo">
+            <Link to="/schedule-demo">
               <motion.button 
                 className="bg-white text-accent px-8 py-3 rounded-lg font-medium transition-colors inline-flex items-center"
                 whileHover={{ scale: 1.05, boxShadow: "0 10px 25px rgba(0, 0, 0, 0.1)" }}

@@ -80,7 +80,7 @@ const NovaCount = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.6 }}
             >
-              <Link to="/scheduledemo">
+              <Link to="/schedule-demo">
               <motion.button 
                 className="bg-accent hover:bg-accent-dark text-white px-6 py-3 rounded-lg font-medium transition-colors relative overflow-hidden"
                 whileHover={{ scale: 1.05 }}
@@ -337,7 +337,7 @@ const NovaCount = () => {
           >
             Transform your workforce planning with AI-driven clarity and control.
           </motion.p>
-          <Link to="/scheduledemo">
+          <Link to="/schedule-demo">
             <motion.button 
               className="bg-white text-accent px-8 py-3 rounded-lg font-medium transition-colors hover:bg-gray-100 relative overflow-hidden"
               whileHover={{ scale: 1.05 }}
@@ -446,7 +446,7 @@ const NovaCount = () => {
           >
             Discover how Nova Count can transform your high-volume hiring process.
           </motion.p>
-          <Link to="/scheduledemo">
+          <Link to="/schedule-demo">
             <motion.button 
               className="bg-white text-accent px-8 py-3 rounded-lg font-medium transition-colors hover:bg-gray-100 relative overflow-hidden"
               whileHover={{ scale: 1.05 }}

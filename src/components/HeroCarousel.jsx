@@ -41,7 +41,7 @@ const HeroCarousel = () => {
   const handleDemoClick = (e) => {
     e.preventDefault();
     preloadScheduleDemo().then(() => {
-      navigate("/scheduledemo");
+      navigate("/schedule-demo");
     });
   };
 
@@ -104,7 +104,7 @@ const HeroCarousel = () => {
             animate="animate"
           >
             <Link 
-              to="/scheduledemo" 
+              to="/schedule-demo" 
               onClick={handleDemoClick}
               onMouseEnter={preloadScheduleDemo} 
               className="z-10 relative w-full sm:w-auto"
@@ -118,7 +118,7 @@ const HeroCarousel = () => {
               </motion.button>
             </Link>
             
-            <Link to="/find" className="z-10 relative w-full sm:w-auto">
+            <Link to="/solutions/novacount" className="z-10 relative w-full sm:w-auto">
               <motion.button 
                 className="bg-white text-accent px-6 py-3 rounded-lg font-medium transition-colors w-full"
                 whileHover={{ scale: 1.05 }}

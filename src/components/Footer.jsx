@@ -126,14 +126,14 @@ const Footer = () => {
           <FooterColumn
             title="Solutions"
             links={[
-              { name: "NovaCount", path: "/find"},
-              { name: "NovaAssist", path: "/novaassist" },
-              { name: "NovaTrack", path: "/speedboard" },
-              { name: "NovaStart", path: "/novastart" },
-              { name: "NovaDoc", path: "/novadoc" },
-              { name: "NovaEngage", path: "/novaengage" },
-              { name: "NovaTrain", path: "/trainplus" },
-              { name: "NovaVerify", path: "/novaverify" },
+              { name: "NovaCount", path: "/solutions/novacount"},
+              { name: "NovaAssist", path: "/solutions/novaassist" },
+              { name: "NovaTrack", path: "/solutions/speedboard" },
+              { name: "NovaStart", path: "/solutions/novastart" },
+              { name: "NovaDoc", path: "/solutions/novadoc" },
+              { name: "NovaEngage", path: "/solutions/novaengage" },
+              { name: "NovaTrain", path: "/solutions/trainplus" },
+              { name: "NovaVerify", path: "/solutions/novaverify" },
               { name: "NovaConnect", path: "/novaconnect" },
             ]}
             variants={itemVariants}

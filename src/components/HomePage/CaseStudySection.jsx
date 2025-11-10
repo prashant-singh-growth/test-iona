@@ -15,7 +15,7 @@ function CaseStudySection() {
       description:
         '"Our manual hiring process couldn\'t keep up with the volume, making it hard to track key metrics like interviews, selection ratios, and offer rejections. We chose iona.ai for its simplicity, cost-effectiveness, and customization options. The analytics fetched from iona.ai allow my team to work quickly and more efficiently."',
       author: "AGM-HR, a fast-growing consumer brand in India",
-      link: "/casestudies",
+      link: "/case-studies",
     },
     {
       image: "/assets/pages/homepage/case-study.webp",
@@ -23,7 +23,7 @@ function CaseStudySection() {
       description:
         '"iona.ai automated document verification and compliance workflows, cutting onboarding time by 60%. HR teams now focus on engagement instead of paperwork."',
       author: "HR Head, Global SaaS Company",
-      link: "/casestudies",
+      link: "/case-studies",
     },
     {
       image: "/assets/pages/homepage/case-study.webp",
@@ -31,12 +31,12 @@ function CaseStudySection() {
       description:
         '"With iona.ai, our compliance accuracy went from 85% to 99%, ensuring smooth audits and error-free onboarding every single time."',
       author: "VP-HR, Finance Enterprise",
-      link: "/casestudies",
+      link: "/case-studies",
     },
   ];
 
   return (
-    <section className="w-full bg-white flex flex-col py-10 lg:py-20 pl-5 md:pl-10 lg:pl-[90px] md:pr-10 pr-5 lg:pr-0 justify-center items-center space-y-10">
+    <section className="w-full bg-white flex flex-col py-10 lg:py-20 pl-5 md:pl-10 slg:pl-[60px] lg:pl-[90px] md:pr-10 pr-5 lg:pr-0 justify-center items-center space-y-10">
       {/* --- Header --- */}
      <div className="w-full max-w-[1440px] flex flex-col justify-center items-center gap-10">
        <div className="flex flex-col max-w-[826px] justify-center items-center space-y-4 text-center md:pr-10">
@@ -75,7 +75,7 @@ function CaseStudySection() {
         >
           {caseStudies.map((item, index) => (
             <SwiperSlide key={index}>
-              <div className="w-full flex flex-col bg-[#160E38] p-5 md:p-10 rounded-md  h-full min-h-[450px]  md:min-h-[520px] lg:min-h-[550px]">
+              <div className="w-full flex flex-col bg-[#160E38] p-5 md:p-10 rounded-md  h-full min-h-[450px]   md:min-h-[520px] lg:min-h-[550px]">
                 <img
                   src={item.image}
                   alt={item.title}

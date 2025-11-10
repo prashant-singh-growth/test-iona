@@ -6,6 +6,7 @@ import "aos/dist/aos.css";
 import { enforceHTTPS } from "./utils/security";
 import Header from "./components/Layout/Header";
 import Footer from "./components/Layout/Footer";
+import RedirectHandler from "./components/utils/RedirectHandler";
 
 // Lazy load components
 const Home = lazy(() => import("./pages/Home"));
@@ -99,20 +100,20 @@ const AnimatedRoutes = () => {
           }
         />
         <Route path="/contact" element={<PageTransition><Contact /></PageTransition>} />
-        <Route path="/scheduledemo" element={<PageTransition><ScheduleDemo /></PageTransition>} />
-        <Route path="/find" element={<PageTransition><NovaCount /></PageTransition>} />
-        <Route path="/novaassist" element={<PageTransition><NovaAssist /></PageTransition>} />
-        <Route path="/speedboard" element={<PageTransition><NovaTrack /></PageTransition>} />
+        <Route path="/schedule-demo" element={<PageTransition><ScheduleDemo /></PageTransition>} />
+        <Route path="/solutions/novacount" element={<PageTransition><NovaCount /></PageTransition>} />
+        <Route path="/solutions/novaassist" element={<PageTransition><NovaAssist /></PageTransition>} />
+        <Route path="/solutions/speedboard" element={<PageTransition><NovaTrack /></PageTransition>} />
         <Route path="/novatrack" element={<PageTransition><NovaTrack /></PageTransition>} />
-        <Route path="/novastart" element={<PageTransition><NovaStart /></PageTransition>} />
-        <Route path="/novadoc" element={<PageTransition><NovaDoc /></PageTransition>} />
-        <Route path="/trainplus" element={<PageTransition><NovaTrain /></PageTransition>} />
-        <Route path="/novaengage" element={<PageTransition><NovaEngage /></PageTransition>} />
-        <Route path="/novaverify" element={<PageTransition><NovaVerify /></PageTransition>} />
+        <Route path="/solutions/novastart" element={<PageTransition><NovaStart /></PageTransition>} />
+        <Route path="/solutions/novadoc" element={<PageTransition><NovaDoc /></PageTransition>} />
+        <Route path="/solutions/trainplus" element={<PageTransition><NovaTrain /></PageTransition>} />
+        <Route path="/solutions/novaengage" element={<PageTransition><NovaEngage /></PageTransition>} />
+        <Route path="/solutions/novaverify" element={<PageTransition><NovaVerify /></PageTransition>} />
         <Route path="/novaconnect" element={<PageTransition><NovaConnect /></PageTransition>} />
         <Route path="/blogs" element={<PageTransition><Blogs /></PageTransition>} />
         <Route path="/videos" element={<PageTransition><Vids /></PageTransition>} />
-        <Route path="/casestudies" element={<PageTransition><CaseStudies /></PageTransition>} />
+        <Route path="/case-studies" element={<PageTransition><CaseStudies /></PageTransition>} />
         <Route path="/privacy" element={<PageTransition><PrivacyPolicy /></PageTransition>} />
         <Route path="/cookies" element={<PageTransition><CookiePolicy /></PageTransition>} />
         <Route path="/terms" element={<PageTransition><TermsOfService /></PageTransition>} />
@@ -183,6 +184,7 @@ function AppContent() {
 
   return (
     <>
+    <RedirectHandler/>
       <ScrollToTop />
       <div className="flex flex-col min-h-screen overflow-hidden">
         {!shouldHideNavbar && <Header />}

@@ -46,7 +46,7 @@ function TestimonialSlider() {
 
   return (
     <section className="w-full bg-white flex flex-col py-10 justify-center items-center">
-      <div className="w-full px-5 md:px-10 lg:px-[90px] lg:max-w-[1440px] mx-auto text-center">
+      <div className="w-full px-5 md:px-10 slg:px-[60px] lg:px-[90px] lg:max-w-[1440px] mx-auto text-center">
         {/* Title */}
         <h2 className="text-3xl md:text-4xl lg:text-[40px] lg:leading-[50px] text-[#2A2564] font-bold mb-10">
           Listen to Our Customer Experiences
@@ -74,14 +74,14 @@ function TestimonialSlider() {
             {testimonials.map((item, i) => (
               <SwiperSlide
                 key={i}
-                className="flex flex-col justify-between border border-[#869085] rounded bg-white  shadow-sm transition-all duration-300  p-5 md:p-6 lg:px-8 lg:py-10 h-full min-h-[450px] lg:min-h-[320px]"
+                className="flex flex-col justify-between border border-[#869085] rounded bg-white  shadow-sm transition-all duration-300  p-5  sm:p-6 sm:px-8 lg:py-10 h-full min-h-[450px] ssm:min-h-[350px] sm:min-h-[300px] md:min-h-[480px] lg:min-h-[320px]"
               >
                 <div className="flex items-start gap-4 mb-4">
-                  <img
+                  {/* <img
                     src={`/assets/pages/landingpage/${item.headshoturl}`}
                     alt={item.company}
                     className="w-10 h-10 rounded-full object-cover"
-                  />
+                  /> */}
                   <div className="text-left">
                     <p className="text-base font-bold text-black/80 font-lora">
                       {item.position}
