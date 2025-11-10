@@ -1,6 +1,6 @@
 import React from "react";
 import "./css/HowWeWork.css";
-import { GiClick } from "react-icons/gi";
+
 
 function HowWeWork() {
   return (

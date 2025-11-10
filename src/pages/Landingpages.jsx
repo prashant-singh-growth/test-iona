@@ -1,4 +1,4 @@
-import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
+import {  FaLinkedinIn } from "react-icons/fa";
 import ResponsiveGridLines from "../components/utils/ResponsiveGridLines";
 import ChangingGradientText from "../components/LandingPage/ChangingGradientText";
 import LogoSlider from "../components/LandingPage/LogoSlider";

@@ -1,5 +1,5 @@
 import React from "react";
-import { FaFacebookF, FaLinkedinIn } from "react-icons/fa6";
+import {  FaLinkedinIn } from "react-icons/fa6";
 import { Link, NavLink } from "react-router-dom";
 
 function Footer() {
