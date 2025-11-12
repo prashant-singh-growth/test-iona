@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { ToastContainer, toast } from "react-toastify";
+import {  toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 export default function FormLandingPage() {
@@ -42,7 +42,7 @@ export default function FormLandingPage() {
 
     // Restrict phone to 10 digits
     if (name === "phone") {
-      if (/^\d*$/.test(value) && value.length <= 10) {
+      if (/^\d*$/.test(value) && value.length <= 12) {
         setFormData((prev) => ({ ...prev, [name]: value }));
       }
       return;
@@ -140,7 +140,7 @@ export default function FormLandingPage() {
 
   return (
     <div className="w-full bg-[#FEFEFD] border-[#C9C9C9] border shadow-[0px_4px_19.1px_0px_#00000040] rounded-lg relative overflow-hidden">
-      <ToastContainer position="top-right" autoClose="4000"/>
+      
       <form onSubmit={handleSubmit} className="p-5 py-10 md:p-10 flex flex-col space-y-9">
         <div className="w-full grid grid-cols-1  gap-6">
           {[
@@ -168,7 +168,8 @@ export default function FormLandingPage() {
         {["utm_source", "utm_medium", "utm_campaign", "utm_term", "gclid", "fbclid"].map((field) => (
           <input key={field} type="hidden" name={field} value={formData[field]} />
         ))}
-
+<div className="flex flex-col space-y-2">
+ 
         <button
           type="submit"
           disabled={status.loading}
@@ -176,6 +177,8 @@ export default function FormLandingPage() {
         >
           {status.loading ? "Submitting..." : "Schedule a Demo"}
         </button>
+         <p className="text-[10px] !font-sans  text-black">*Ideal for 5000+ Employee Size Orgs*</p>
+</div>
 
         {status.success && <p className="text-green-600 text-center">{status.success}</p>}
         {status.error && <p className="text-red-600 text-center">{status.error}</p>}

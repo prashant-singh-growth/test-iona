@@ -1,5 +1,5 @@
 import React from 'react'
-import ResponsiveGridLines from '../utils/ResponsiveGridLines'
+import ResponsiveGridLines from '../../utils/ResponsiveGridLines'
 
 function HomeBanner() {
   return (

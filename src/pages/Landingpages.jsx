@@ -1,17 +1,17 @@
 import {  FaLinkedinIn } from "react-icons/fa";
 import ResponsiveGridLines from "../components/utils/ResponsiveGridLines";
-import ChangingGradientText from "../components/LandingPage/ChangingGradientText";
-import LogoSlider from "../components/LandingPage/LogoSlider";
-import FormLandingPage from "../components/LandingPage/FormLandingPage";
+import ChangingGradientText from "../components/Pages/LandingPage/ChangingGradientText";
+import LogoSlider from "../components/Pages/LandingPage/LogoSlider";
+import FormLandingPage from "../components/Pages/LandingPage/FormLandingPage";
 import TestimonialSlider from "../components/utils/TestimonialSlider";
-import WhyUsSection from "../components/LandingPage/WhyUsSection";
+import WhyUsSection from "../components/Pages/LandingPage/WhyUsSection";
 import SeoHeader from "../components/utils/SeoHeader";
 
-import ResultSection from "../components/LandingPage/ResultSection";
-import CertificationSection from "../components/HomePage/CertificationSection";
-import CTASection from "../components/HomePage/CTASection";
+import ResultSection from "../components/Pages/LandingPage/ResultSection";
+import CertificationSection from "../components/Pages/HomePage/CertificationSection";
+import CTASection from "../components/Pages/HomePage/CTASection";
 import { NavLink } from "react-router-dom";
-import SolutionSection from "../components/HomePage/SolutionSection";
+import SolutionSection from "../components/Pages/HomePage/SolutionSection";
 function Landingpages() {
   return (
     <div className="w-full font-lora theme-lora-font" id="form">

@@ -18,7 +18,7 @@ function CaseStudySection() {
       link: "/case-studies",
     },
     {
-      image: "/assets/pages/homepage/case-study.webp",
+      image: "/assets/pages/homepage/case-study-2.webp",
       title: "How iona.ai Accelerated Onboarding for a Tech Giant",
       description:
         '"iona.ai automated document verification and compliance workflows, cutting onboarding time by 60%. HR teams now focus on engagement instead of paperwork."',
@@ -26,7 +26,7 @@ function CaseStudySection() {
       link: "/case-studies",
     },
     {
-      image: "/assets/pages/homepage/case-study.webp",
+      image: "/assets/pages/homepage/case-study-3.webp",
       title: "Smarter Compliance for a Financial Services Company",
       description:
         '"With iona.ai, our compliance accuracy went from 85% to 99%, ensuring smooth audits and error-free onboarding every single time."',

@@ -10,11 +10,9 @@
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^13.5.0",
     "aos": "^2.3.4",
-    "autoprefixer": "^10.4.21",
     "cloudinary": "^2.6.1",
     "emailjs-com": "^3.2.0",
     "framer-motion": "^6.5.1",
-    "postcss": "^8.5.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet-async": "^2.0.5",
@@ -24,7 +22,6 @@
     "react-toastify": "^11.0.5",
     "recharts": "^2.15.3",
     "swiper": "^12.0.3",
-    "tailwindcss": "^3.3.3",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -55,13 +52,16 @@
     ]
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.22",
     "clean-css-cli": "^5.6.2",
     "eslint": "^8.53.0",
     "imagemin-cli": "^7.0.0",
+    "postcss": "^8.5.6",
     "postcss-nesting": "^13.0.2",
     "prettier": "^3.1.0",
     "serve": "^14.2.1",
     "source-map-explorer": "^2.5.3",
+    "tailwindcss": "^3.4.18",
     "terser": "^5.24.0"
   }
 }

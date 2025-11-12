@@ -63,7 +63,7 @@ function FAQSection() {
           transition={{ duration: 0.6, ease: "easeOut" }}
           viewport={{ once: true, amount: 0.2 }}
         >
-          Frequently asked questions.
+          Frequently asked questions
         </motion.h2>
 
         {/* FAQ items */}

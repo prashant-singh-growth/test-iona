@@ -10,18 +10,18 @@ import { memo } from "react";
 // import TestimonialsSection from "../components/TestimonialsSection";
 // import FAQSection from "../components/FAQSection";
 // import CTASection from "../components/CTASection";
-import HomeBanner from "../components/HomePage/HomeBanner";
+import HomeBanner from "../components/Pages/HomePage/HomeBanner";
 import SeoHeader from "../components/utils/SeoHeader";
-import HowWeWork from "../components/HomePage/HowWeWork";
-import WorkingWay from "../components/HomePage/WorkingWay";
-import SolutionSection from "../components/HomePage/SolutionSection";
-import WhyUsSection from "../components/LandingPage/WhyUsSection";
-import ResultSection from "../components/LandingPage/ResultSection";
-import CertificationSection from "../components/HomePage/CertificationSection";
+import HowWeWork from "../components/Pages/HomePage/HowWeWork";
+import WorkingWay from "../components/Pages/HomePage/WorkingWay";
+import SolutionSection from "../components/Pages/HomePage/SolutionSection";
+import WhyUsSection from "../components/Pages/LandingPage/WhyUsSection";
+import ResultSection from "../components/Pages/LandingPage/ResultSection";
+import CertificationSection from "../components/Pages/HomePage/CertificationSection";
 import TestimonialSlider from "../components/utils/TestimonialSlider";
-import CTASection from "../components/HomePage/CTASection";
-import FAQSection from "../components/HomePage/FAQSection";
-import CaseStudySection from "../components/HomePage/CaseStudySection";
+import CTASection from "../components/Pages/HomePage/CTASection";
+import FAQSection from "../components/Pages/HomePage/FAQSection";
+import CaseStudySection from "../components/Pages/HomePage/CaseStudySection";
 
 // Main component optimized with React.memo
 const Home = memo(() => {

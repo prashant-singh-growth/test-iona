@@ -1,9 +1,11 @@
 import React from 'react'
 
-function ResultSection() {
+function ResultSection({headShow = true}) {
+
   return (
     <section className="w-full bg-white flex flex-col py-10 lg:py-20 px-5 md:px-10 slg:px-[60px] lg:px-[90px] justify-center items-center space-y-10">
-        <div className="flex flex-col max-w-[826px] justify-center items-center space-y-4">
+        {headShow && (
+          <div className="flex flex-col max-w-[826px] justify-center items-center space-y-4">
           <h2 className="text-3xl md:text-4xl lg:text-[40px] lg:leading-[50px] text-[#2A2564] font-bold md:font-semibold text-center  ">
             Results that Empower Businesses
           </h2>
@@ -11,6 +13,7 @@ function ResultSection() {
            100,000+ elevated experiences delivered & 1.5 million + accurate automated documentation performed.
           </p>
         </div>
+        )}
         <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 slg:grid-cols-4 lg:grid-cols-6 gap-8 lg:gap-12 max-w-[1440px]">
           {[
             {

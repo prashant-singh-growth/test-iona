@@ -4,9 +4,11 @@ import { AnimatePresence, motion } from "framer-motion";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { enforceHTTPS } from "./utils/security";
-import Header from "./components/Layout/Header";
-import Footer from "./components/Layout/Footer";
+
 import RedirectHandler from "./components/utils/RedirectHandler";
+import Header from "./components/Layout/Header"
+import Footer from "./components/Layout/Footer"
+import { ToastContainer } from "react-toastify";
 
 // Lazy load components
 const Home = lazy(() => import("./pages/Home"));
@@ -31,8 +33,8 @@ const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
 const CookiePolicy = lazy(() => import("./pages/CookiePolicy"));
 const TermsOfService = lazy(() => import("./pages/TermsOfService"));
 const Landingpage = lazy(()=> import("./pages/Landingpages"))
-const ThankYouPage = lazy(()=> import('./pages/ThankYou'))
-
+const ThankYouPage = lazy(()=> import('./pages/ThankYou'));
+const SolutionPage = lazy(()=> import('./pages/SolutionPage'));
 
 // Scroll to top on route change
 const ScrollToTop = () => {
@@ -119,6 +121,7 @@ const AnimatedRoutes = () => {
         <Route path="/terms" element={<PageTransition><TermsOfService /></PageTransition>} />
         <Route path="/end-to-end-hiring-solution-for-enterprises" element={<PageTransition><Landingpage/></PageTransition>} />
         <Route path="/thank-you" element={<PageTransition><ThankYouPage/></PageTransition>} />
+        <Route path="/solutions" element={<PageTransition><SolutionPage/></PageTransition>} />
         <Route
           path="*"
           element={
@@ -185,6 +188,7 @@ function AppContent() {
   return (
     <>
     <RedirectHandler/>
+    <ToastContainer position="top-right" autoClose="4000"/>
       <ScrollToTop />
       <div className="flex flex-col min-h-screen overflow-hidden">
         {!shouldHideNavbar && <Header />}
