@@ -1,15 +1,4 @@
 import { memo } from "react";
-
-// Import the extracted components
-// import HeroCarousel from "../components/HeroCarousel";
-// import PartnerSection from "../components/PartnerSection";
-// import SolutionsSection from "../components/SolutionsSection";
-// import BenefitsSection from "../components/BenefitsSection";
-// import StatsSection from "../components/StatsSection";
-// import CaseStudiesSection from "../components/CaseStudiesSection";
-// import TestimonialsSection from "../components/TestimonialsSection";
-// import FAQSection from "../components/FAQSection";
-// import CTASection from "../components/CTASection";
 import HomeBanner from "../components/Pages/HomePage/HomeBanner";
 import SeoHeader from "../components/utils/SeoHeader";
 import HowWeWork from "../components/Pages/HomePage/HowWeWork";
@@ -25,9 +14,7 @@ import CaseStudySection from "../components/Pages/HomePage/CaseStudySection";
 
 import { homeFaqList } from "../components/Data/FaqData";
 import FAQComponent from "../components/utils/FAQComponent";
-
-// Main component optimized with React.memo
-const Home = memo(() => {
+const HomePage = memo(() => {
   const logos = [
     "/assets/pages/landingpage/metropolis.png",
     "/assets/pages/landingpage/fab.png",
@@ -40,8 +27,8 @@ const Home = memo(() => {
   return (
     <div className="bg-white text-primaryText theme-lora-font">
       <SeoHeader
-        title={" iona.ai: AI-Powered End-to-End Hiring & Onboarding Solution"}
-        description={"ionai - Elevating Experiences with AI"}
+        title={" Purposeful Hiring Powered by AI & Human Insight | IONA AI"}
+        description={"Discover IONA AI’s intelligent hiring solutions that merge AI brilliance with human wisdom to make hiring seamless, inclusive, and empowering for women leaders."}
         canonical={"/"}
       />
       {/* banner */}
@@ -132,35 +119,8 @@ const Home = memo(() => {
       {/* faq section */}
 
   <FAQComponent FAQList={homeFaqList}/>
-      {/* <section className="relative overflow-hidden">
-        <HeroCarousel /> */}
-
-      {/* Trusted by section */}
-      {/* <PartnerSection />
-      </section> */}
-
-      {/* Solutions Section */}
-      {/* <SolutionsSection /> */}
-
-      {/* Why clients trust us */}
-      {/* <BenefitsSection /> */}
-
-      {/* Statistics Section */}
-      {/* <StatsSection /> */}
-
-      {/* Case Studies */}
-      {/* <CaseStudiesSection /> */}
-
-      {/* Testimonials */}
-      {/* <TestimonialsSection /> */}
-
-      {/* FAQ Section */}
-      {/* <FAQSection /> */}
-
-      {/* CTA Section */}
-      {/* <CTASection /> */}
+   
     </div>
-  );
-});
+)})
 
-export default Home;
+export default HomePage

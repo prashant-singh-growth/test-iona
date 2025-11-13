@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import React, { useState } from 'react';
+import SeoHeader from "../components/utils/SeoHeader";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -87,6 +88,11 @@ const Contact = () => {
 
   return (
     <div className="bg-background">
+       <SeoHeader
+      title={"Contact IONA AI | Let’s Build the Future of Hiring"}
+      description={"Get in touch with the IONA AI team to explore solutions, partnerships, or demos. Together, let’s make hiring more purposeful, inclusive, and intelligent."}
+     
+      />
       {/* Hero Section */}
       <div className="bg-lightGray py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

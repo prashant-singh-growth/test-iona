@@ -11,7 +11,8 @@ import Footer from "./components/Layout/Footer"
 import { ToastContainer } from "react-toastify";
 
 // Lazy load components
-const Home = lazy(() => import("./pages/Home"));
+// const Home = lazy(() => import("./pages/Home"));
+const Home = lazy(() => import("./pages/HomePage"));
 const AboutSection = lazy(() => import("./pages/AboutSection"));
 const Highlights = lazy(() => import("./components/Highlights"));
 const CTA = lazy(() => import("./components/CTA"));

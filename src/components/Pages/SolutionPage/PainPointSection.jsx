@@ -133,21 +133,21 @@ function PainPointSection() {
   ];
   return (
     <section className="w-full bg-white flex flex-col py-12 lg:py-20  px-5 md:px-10 slg:px-[60px] lg:px-[90px] justify-center items-center">
-      <div className="w-full max-w-[1440px] grid grid-cols-1 lg:grid-cols-3 gap-12  place-content-between">
-        <div className="w-full flex flex-col">
-          <h2 className="text-4xl font-bold md:text-5xl leading-tight slg:text-5xl lg:text-[54px] lg:leading-[60px] text-primary text-left">
+      <div className="w-full max-w-[1440px] grid grid-cols-1 lg:grid-cols-3 gap-y-12 lg:gap-12  place-content-between place-items-center lg:place-items-start">
+        <div className="w-full max-w-[750px] lg:max-w-full flex flex-col  ">
+          <h2 className="text-3xl md:text-4xl font-bold leading-tight slg:text-5xl lg:text-[54px] lg:leading-[60px] text-primary text-center lg:text-left">
             Pain Points for High-Volume Hiring
           </h2>
-          <p className="text-base font-lora text-primary font-normal mt-5">
+          <p className="text-base font-lora text-primary font-normal mt-5 text-center lg:text-left">
             From manual sourcing and lengthy background checks to tedious
             onboarding processes, hiring 100+ employees each month is a
             challenge that drains time and resources.
           </p>
         </div>
-        <div className="w-full grid grid-cols-2 col-span-2 gap-10 ">
+        <div className="w-full grid grid-cols-1 sm:grid-cols-2 col-span-2 gap-10 ">
           {painPointList.map((item, i) => (
             <div key={i} className="w-full flex flex-col gap-2 justify-start">
-              <div className="flex flex-row items-center gap-3 w-[80%]">
+              <div className="flex flex-row items-center gap-3 md:w-[85%] lg:w-[80%]">
                 <div
                   className="w-fit"
                   dangerouslySetInnerHTML={{ __html: item.icon }}

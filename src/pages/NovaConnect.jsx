@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import MobileFeatureCard from "../components/MobileFeatureCard";
+import SeoHeader from "../components/utils/SeoHeader";
 
 const FeatureCard = ({ emoji, title, description, delay }) => {
   return (
@@ -49,6 +50,11 @@ const NovaConnect = () => {
 
   return (
     <div className="flex flex-col items-center overflow-x-hidden">
+       <SeoHeader
+      title={"Contact IONA AI | Let’s Build the Future of Hiring"}
+      description={"Get in touch with the IONA AI team to explore solutions, partnerships, or demos. Together, let’s make hiring more purposeful, inclusive, and intelligent."}
+     
+      />
       {/* Hero Section */}
       <section className="w-full bg-purple-gradient text-white py-16">
         <div className="max-w-6xl mx-auto px-6 flex flex-col items-center text-center">

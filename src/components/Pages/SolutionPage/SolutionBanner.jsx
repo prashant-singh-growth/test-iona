@@ -4,9 +4,10 @@ import ResponsiveGridLines from '../../utils/ResponsiveGridLines'
 
 function SolutionBanner() {
   return (
-    <section className="w-full h-fit relative px-5 md:px-10 slg:px-[60px] lg:px-[90px]  pb-16 md:py-16 lg:py-20 lg:pb-0  flex flex-col justify-center items-center">
+   <section className="w-full h-fit relative px-5 md:px-10 slg:px-[60px] lg:px-[90px] !pt-20 md:py-16 lg:py-20 sm:!pb-0 lg:!pt-24  flex flex-col justify-center items-center">
+
            <ResponsiveGridLines gradientReplacement={[10, 37, 50, 47, 93, 70, 100, 90, 50, 40]} />
-           <div className="w-full max-w-[100vw] lg:max-w-[1440px] grid lg:grid-cols-2 place-items-center relative z-10 gap-10 lg:gap-0">
+           <div className="w-full max-w-[100vw] lg:max-w-[1440px] grid lg:grid-cols-2 place-items-center  z-10 gap-10 lg:gap-0 relative lg:pb-20">
              <div className="w-full max-w-[100vw]">
                <h1 className="text-4xl font-bold md:text-5xl leading-tight slg:text-5xl lg:text-[58px] lg:leading-[64px] text-black/80 flex flex-col text-left ">
                 Comprehensive AI Suite for Hiring at Scale for Enterprises
@@ -62,7 +63,7 @@ function SolutionBanner() {
              <img
                src="/assets/pages/solutionpage/solutionbanner.webp"
                alt="home banner"
-               className=" w-full  object-contain "
+               className="  object-contain w-full slg:relative  lg:absolute slg:w-[100%] lg:w-[62%] xl:w-[60%] lg:bottom-0 lg:right-0"
                loading='lazy'
              />
            </div>

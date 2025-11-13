@@ -4,6 +4,9 @@ import ResultSection from '../components/Pages/LandingPage/ResultSection'
 import PainPointSection from '../components/Pages/SolutionPage/PainPointSection'
 import ChallengesSection from '../components/Pages/SolutionPage/ChallengesSection'
 import CompleteSolutionSection from '../components/Pages/SolutionPage/CompleteSolutionSection'
+import CTASection from '../components/Pages/HomePage/CTASection'
+import FAQComponent from '../components/utils/FAQComponent'
+import { solutionFaqList } from '../components/Data/FaqData'
 
 function SolutionPage() {
   return (
@@ -13,6 +16,8 @@ function SolutionPage() {
   <PainPointSection/>
   <ChallengesSection/>
   <CompleteSolutionSection/>
+   <CTASection ctaUrl={"/contact"}/>
+   <FAQComponent FAQList={solutionFaqList} />
   </>
   )
 }
