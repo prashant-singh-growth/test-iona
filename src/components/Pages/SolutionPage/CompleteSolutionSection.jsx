@@ -128,7 +128,7 @@ const solutionCardData = [
       "Real-time updates for candidates",
       "Instant issue resolution",
     ],
-    btnURL: "/solutions/novaconnect",
+    btnURL: "/novaconnect",
     image: "novaconnect.webp",
   },
 ];
@@ -199,7 +199,7 @@ function CompleteSolutionSection() {
                       ))}
                     </ul>
                     <NavLink
-                      to={item.btnURL}
+                      to={`/solutions${item.btnURL}`}
                       className="bg-transparent w-fit border-white border px-5 py-3 text-[14px] text-white  flex flex-row space-x-2 rounded hover:scale-95 ease-in-out duration-150 mt-10"
                     >
                       <span>Learn More</span>{" "}
@@ -223,7 +223,7 @@ function CompleteSolutionSection() {
                   <img
                     src="/assets/pages/solutionpage/novacount.webp"
                     alt=""
-                    className="w-full max-w-[471px] hidden lg:block"
+                    className="w-full max-w-[471px] object-contain hidden lg:block"
                   />
                 </div>
               ))}
@@ -259,7 +259,7 @@ function CompleteSolutionSection() {
                       <img
                         src="/assets/pages/solutionpage/novacount.webp"
                         alt=""
-                        className="w-full max-w-[400px]  block lg:hidden pt-4"
+                        className="w-full max-w-[400px] object-contain block lg:hidden pt-4"
                       />
                       <p className="font-lora text-[#FBFBFB] text-base pt-3 pb-2">
                         {item.description}
@@ -271,7 +271,7 @@ function CompleteSolutionSection() {
                         ))}
                       </ul>
                       <NavLink
-                        to={item.btnURL}
+                        to={`/solutions${item.btnURL}`}
                         className="bg-transparent w-fit border-white border px-5 py-3 text-[14px] text-white  flex flex-row space-x-2 rounded hover:scale-95 ease-in-out duration-150 mt-6"
                       >
                         <span>Learn More</span>{" "}
@@ -292,11 +292,7 @@ function CompleteSolutionSection() {
                         </svg>
                       </NavLink>
                     </div>
-                    <img
-                      src="/assets/pages/solutionpage/novacount.webp"
-                      alt=""
-                      className="w-full max-w-[471px] hidden lg:block"
-                    />
+                  
                   </div>
                 </div>
               </div>
