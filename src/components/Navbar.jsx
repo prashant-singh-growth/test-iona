@@ -287,7 +287,7 @@ const Navbar = () => {
                     <DropdownLink 
                       title="NovaConnect" 
                       description="Premium WhatsApp based support"
-                      path="/novaconnect"
+                      path="/solutions/novaconnect"
                       onClick={() => setShowSolutions(false)}
                     />
                   </motion.div>
@@ -471,7 +471,7 @@ const Navbar = () => {
                           <MobileNavItem label="NovaEngage" path="/solutions/novaengage" isSubmenu />
                           <MobileNavItem label="NovaTrain" path="/solutions/trainplus" isSubmenu />
                           <MobileNavItem label="NovaVerify" path="/solutions/novaverify" isSubmenu />
-                          <MobileNavItem label="NovaConnect" path="/novaconnect" isSubmenu />
+                          <MobileNavItem label="NovaConnect" path="/solutions/novaconnect" isSubmenu />
                         </motion.ul>
                       )}
                     </AnimatePresence>

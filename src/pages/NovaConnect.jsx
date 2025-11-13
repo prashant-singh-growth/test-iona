@@ -51,8 +51,8 @@ const NovaConnect = () => {
   return (
     <div className="flex flex-col items-center overflow-x-hidden">
        <SeoHeader
-      title={"Contact IONA AI | Let’s Build the Future of Hiring"}
-      description={"Get in touch with the IONA AI team to explore solutions, partnerships, or demos. Together, let’s make hiring more purposeful, inclusive, and intelligent."}
+      title={"NovaConnect | AI-Powered Hiring by Iona AI"}
+      description={"Discover NovaConnect by Iona.ai — an AI-driven solution that simplifies, humanizes, and accelerates your talent engagement journey."}
      
       />
       {/* Hero Section */}

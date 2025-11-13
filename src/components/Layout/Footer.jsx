@@ -33,7 +33,7 @@ function Footer() {
       links: [
         { placeHolder: "NovaTrain", url: "/solutions/trainplus" },
         { placeHolder: "NovaVerify", url: "/solutions/novaverify" },
-        { placeHolder: "NovaConnect", url: "/novaconnect" },
+        { placeHolder: "NovaConnect", url: "/solutions/novaconnect" },
       ],
     },
     {

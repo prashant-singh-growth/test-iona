@@ -22,7 +22,7 @@ function Header() {
         { label: "NovaEngage", url: "/solutions/novaengage" },
         { label: "NovaTrain", url: "/solutions/trainplus" },
         { label: "NovaVerify", url: "/solutions/novaverify" },
-        { label: "NovaConnect", url: "/novaconnect" },
+        { label: "NovaConnect", url: "/solutions/novaconnect" },
       ],
     },
     {

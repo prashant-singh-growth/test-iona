@@ -134,7 +134,7 @@ const Footer = () => {
               { name: "NovaEngage", path: "/solutions/novaengage" },
               { name: "NovaTrain", path: "/solutions/trainplus" },
               { name: "NovaVerify", path: "/solutions/novaverify" },
-              { name: "NovaConnect", path: "/novaconnect" },
+              { name: "NovaConnect", path: "/solutions/novaconnect" },
             ]}
             variants={itemVariants}
           />

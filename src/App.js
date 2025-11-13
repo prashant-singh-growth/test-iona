@@ -113,7 +113,7 @@ const AnimatedRoutes = () => {
         <Route path="/solutions/trainplus" element={<PageTransition><NovaTrain /></PageTransition>} />
         <Route path="/solutions/novaengage" element={<PageTransition><NovaEngage /></PageTransition>} />
         <Route path="/solutions/novaverify" element={<PageTransition><NovaVerify /></PageTransition>} />
-        <Route path="/novaconnect" element={<PageTransition><NovaConnect /></PageTransition>} />
+        <Route path="/solutions/novaconnect" element={<PageTransition><NovaConnect /></PageTransition>} />
         <Route path="/blogs" element={<PageTransition><Blogs /></PageTransition>} />
         <Route path="/videos" element={<PageTransition><Vids /></PageTransition>} />
         <Route path="/case-studies" element={<PageTransition><CaseStudies /></PageTransition>} />

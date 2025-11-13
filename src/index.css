@@ -203,5 +203,7 @@ p, .secondary-text {
 .theme-lora-font button {
   @apply !font-lora;
 }
-
+*{
+  scroll-margin-top: 80px;
+}
 
