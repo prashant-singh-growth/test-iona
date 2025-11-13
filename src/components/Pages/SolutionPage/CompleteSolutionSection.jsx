@@ -185,7 +185,7 @@ function CompleteSolutionSection() {
                       {item.title}
                     </h4>
                     <img
-                      src="/assets/pages/solutionpage/novacount.webp"
+                      src="/assets/pages/solutionpage/Novacount.webp"
                       alt=""
                       className="w-full max-w-[400px]  block lg:hidden pt-6"
                     />
@@ -221,7 +221,7 @@ function CompleteSolutionSection() {
                     </NavLink>
                   </div>
                   <img
-                    src="/assets/pages/solutionpage/novacount.webp"
+                    src="/assets/pages/solutionpage/Novacount.webp"
                     alt=""
                     className="w-full max-w-[471px] object-contain hidden lg:block"
                   />
@@ -257,7 +257,7 @@ function CompleteSolutionSection() {
                         {item.title}
                       </h4>
                       <img
-                        src="/assets/pages/solutionpage/novacount.webp"
+                        src="/assets/pages/solutionpage/Novacount.webp"
                         alt=""
                         className="w-full max-w-[400px] object-contain block lg:hidden pt-4"
                       />
