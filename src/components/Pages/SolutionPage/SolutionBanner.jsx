@@ -61,9 +61,9 @@ function SolutionBanner() {
                </div>
              </div>
              <img
-               src="/assets/pages/solutionpage/solutionbanner.webp"
+               src="/assets/pages/solutionpage/solutionBanner.webp"
                alt="home banner"
-               className="  object-contain w-full slg:relative  lg:absolute slg:w-[100%] lg:w-[62%] xl:w-[60%] lg:bottom-0 lg:right-0"
+               className="object-contain w-full slg:relative  lg:absolute slg:w-[100%] lg:w-[62%] xl:w-[60%] lg:bottom-0 lg:right-0"
                loading='lazy'
              />
            </div>
