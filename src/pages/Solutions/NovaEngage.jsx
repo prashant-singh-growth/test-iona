@@ -1,59 +1,59 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import MobileFeatureCard from "../components/MobileFeatureCard";
-import SeoHeader from "../components/utils/SeoHeader";
+import MobileFeatureCard from "../../components/MobileFeatureCard";
+import SeoHeader from "../../components/utils/SeoHeader";
 
-const preloadScheduleDemo = () => {
-  return import("./ScheduleDemo");
-};
+const NovaEngage = () => {
+  const preloadScheduleDemo = () => {
+    return import("../ScheduleDemo");
+  };
 
-const FeatureCard = ({ emoji, title, description, delay }) => {
-  return (
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, delay }}
-      viewport={{ once: true, margin: "-20%" }}
-      className="bg-gradient-to-br from-white to-purple-50 rounded-xl p-5 text-center border-2 border-accent shadow-md w-[30%] hover:shadow-lg"
-      whileHover={{ 
-        y: -8, 
-        boxShadow: "0 15px 30px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
-        transition: { duration: 0.3 }
-      }}
-    >
-      <motion.div 
-        className="flex justify-center mb-2"
-        whileHover={{ scale: 1.1 }}
-        transition={{ duration: 0.3 }}
+  const FeatureCard = ({ emoji, title, description, delay }) => {
+    return (
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay }}
+        viewport={{ once: true, margin: "-20%" }}
+        className="bg-gradient-to-br from-white to-purple-50 rounded-xl p-5 text-center border-2 border-accent shadow-md w-[30%] hover:shadow-lg"
+        whileHover={{ 
+          y: -8, 
+          boxShadow: "0 15px 30px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
+          transition: { duration: 0.3 }
+        }}
       >
-        <div className="text-3xl mb-1 bg-accent/10 p-3 rounded-full">{emoji}</div>
+        <motion.div 
+          className="flex justify-center mb-2"
+          whileHover={{ scale: 1.1 }}
+          transition={{ duration: 0.3 }}
+        >
+          <div className="text-3xl mb-1 bg-accent/10 p-3 rounded-full">{emoji}</div>
+        </motion.div>
+        <h3 className="text-lg font-semibold mb-1">{title}</h3>
+        <p className="text-secondaryText text-sm">{description}</p>
       </motion.div>
-      <h3 className="text-lg font-semibold mb-1">{title}</h3>
-      <p className="text-secondaryText text-sm">{description}</p>
-    </motion.div>
-  );
-};
+    );
+  };
 
-const ConnectorLine = ({ delay = 0, vertical = false, length = "100%" }) => {
-  return (
-    <motion.div
-      initial={{ scaleY: vertical ? 0 : 1, scaleX: vertical ? 1 : 0, originY: 0 }}
-      whileInView={{ scaleY: 1, scaleX: 1 }}
-      transition={{ duration: 0.3, delay }}
-      viewport={{ once: true, margin: "-20%" }}
-      className={`bg-accent ${vertical ? "w-[3px] h-16" : "h-[3px] w-full"}`}
-      style={vertical ? { height: length } : { width: length }}
-    />
-  );
-};
+  const ConnectorLine = ({ delay = 0, vertical = false, length = "100%" }) => {
+    return (
+      <motion.div
+        initial={{ scaleY: vertical ? 0 : 1, scaleX: vertical ? 1 : 0, originY: 0 }}
+        whileInView={{ scaleY: 1, scaleX: 1 }}
+        transition={{ duration: 0.3, delay }}
+        viewport={{ once: true, margin: "-20%" }}
+        className={`bg-accent ${vertical ? "w-[3px] h-16" : "h-[3px] w-full"}`}
+        style={vertical ? { height: length } : { width: length }}
+      />
+    );
+  };
 
-const NovaCount = () => {
   return (
     <div className="flex flex-col items-center overflow-x-hidden">
-      <SeoHeader
-      title={"NovaCount | Smart Workforce Analytics by IONA AI"}
-      description={"Track, analyze, and optimize workforce efficiency with NovaCount. Empower HR teams with data-driven insights for transparent and smarter decision-making."}
-      canonical={"/solutions/novacount"}
+       <SeoHeader
+      title={"NovaEngage | Empower Employee Engagement with IONA AI"}
+      description={"Enhance culture and retention with NovaEngage. Harness AI insights to strengthen communication, motivation, and inclusion across your organization."}
+     
       />
       {/* Hero Section */}
       <section className="w-full bg-purple-gradient text-white py-16">
@@ -70,7 +70,7 @@ const NovaCount = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.2 }}
             >
-              Illuminate Your Headcount Planning and Monitoring in High-Volume
+              Your Silent Partner in Curating Exceptional Candidate Experiences
             </motion.h1>
             <motion.p 
               className="text-xl mb-8"
@@ -78,7 +78,7 @@ const NovaCount = () => {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.7, delay: 0.4 }}
             >
-              Say goodbye to spreadsheets and guesswork. Nova Count delivers real-time clarity and control over your workforce planning with AI-powered insights.
+              From one-click applications to timely follow-ups, Nova Engage gives high-volume hiring a human touch that top talent can feel.
             </motion.p>
             <motion.div 
               className="flex flex-col sm:flex-row gap-4 justify-center"
@@ -129,10 +129,10 @@ const NovaCount = () => {
             viewport={{ once: true }}
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Own Your Headcount Goals
+              Engagement That Scales, Customized for Your Hiring Flow
             </h2>
             <p className="text-secondaryText max-w-3xl mx-auto">
-              Stop letting spreadsheets and guesswork slow you down.
+              Nova Engage gives every candidate personalized attention—even when you're hiring thousands.
             </p>
           </motion.div>
 
@@ -150,11 +150,11 @@ const NovaCount = () => {
             >
               <ul className="space-y-3">
                 {[
-                  "Break free from manual processes and uncertainty.",
-                  "Empower teams with data-driven headcount planning.",
-                  "Seamlessly involve hiring managers and finance teams in planning workflows",
-                  "Track open requisitions and candidate pipeline movement in real time",
-                  "AI-powered alerts to identify and resolve bottlenecks early"
+                  "Automate personalized communications at scale with intelligent engagement",
+                  "Gather insights with intelligent feedback collection throughout candidate journey",
+                  "Decrease time-to-fill with smoother candidate experiences and touch points",
+                  "Nurture talent relationships from first click to first day on the job",
+                  "Proven to increase conversion rates by up to 35% through meaningful engagement"
                 ].map((item, index) => (
                   <motion.li 
                     key={index}
@@ -177,50 +177,58 @@ const NovaCount = () => {
       {/* Capabilities Section */}
       <section className="w-full py-16 bg-gray-50">
         <div className="max-w-6xl mx-auto px-6">
-          <motion.div 
-            className="text-center mb-12"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-          >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Capabilities that Drive Hiring Excellence</h2>
-            <p className="text-secondaryText max-w-3xl mx-auto">
-              Streamlined tools to transform your headcount planning process
-            </p>
-          </motion.div>
+          <div className="text-center mb-12">
+            <motion.h2 
+              className="text-3xl md:text-4xl font-bold mb-4"
+              initial={{ opacity: 0, y: -10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+            >
+              Built for scale, powered by AI
+            </motion.h2>
+            <motion.p 
+              className="text-secondaryText max-w-3xl mx-auto"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              viewport={{ once: true }}
+            >
+              Comprehensive tools to enhance employee engagement and improve retention
+            </motion.p>
+          </div>
 
           <div className="flex flex-col items-center">
             {/* Mobile View */}
             <div className="w-full md:hidden">
               <MobileFeatureCard 
-                emoji="🤝"
-                title="Collaborative Planning"
-                description="Involve hiring managers and finance teams in planning process"
+                emoji="💬"
+                title="Intelligent Content Delivery"
+                description="Send company stories, team intros, and culture videos straight to WhatsApp. Bite-sized and mobile-friendly, made to inform and excite."
                 delay={0.1}
               />
               <MobileFeatureCard 
-                emoji="📊"
-                title="Dynamic Monitoring"
-                description="Track requisitions and candidate movement in real time"
+                emoji="🎯"
+                title="Personalized Engagement"
+                description="Tailor content and communication based on candidate preferences and role requirements"
                 delay={0.2}
               />
               <MobileFeatureCard 
-                emoji="🔍"
-                title="Proactive Bottleneck Identification"
-                description="AI-powered alerts flag potential delays before they impact goals"
+                emoji="📱"
+                title="WhatsApp Integration"
+                description="Seamless communication through the world's most popular messaging platform"
                 delay={0.3}
               />
               <MobileFeatureCard 
-                emoji="📈"
-                title="Real-Time Analytics"
-                description="Get instant insights into your hiring pipeline and make data-driven decisions"
+                emoji="📊"
+                title="Engagement Analytics"
+                description="Track and measure the effectiveness of your engagement strategies"
                 delay={0.4}
               />
               <MobileFeatureCard 
-                emoji="🎯"
-                title="Goal Tracking"
-                description="Monitor progress against hiring targets and adjust strategies in real-time"
+                emoji="🤖"
+                title="AI-Powered Responses"
+                description="Instant, accurate answers to candidate questions, available 24/7"
                 delay={0.5}
               />
             </div>
@@ -246,10 +254,10 @@ const NovaCount = () => {
                     whileHover={{ scale: 1.1 }}
                     transition={{ duration: 0.3 }}
                   >
-                    <div className="text-4xl mb-1 bg-accent/10 p-3 rounded-full">🤝</div>
+                    <div className="text-4xl mb-1 bg-accent/10 p-3 rounded-full">💬</div>
                   </motion.div>
-                  <h3 className="text-xl font-semibold mb-1">Collaborative Planning</h3>
-                  <p className="text-secondaryText text-sm">Involve hiring managers and finance teams in planning process</p>
+                  <h3 className="text-xl font-semibold mb-1">Intelligent Content Delivery</h3>
+                  <p className="text-secondaryText text-sm">Send company stories, team intros, and culture videos straight to WhatsApp. Bite-sized and mobile-friendly, made to inform and excite.</p>
                 </motion.div>
               </div>
 
@@ -274,17 +282,17 @@ const NovaCount = () => {
 
               {/* Second Level Nodes */}
               <div className="flex justify-between mt-4 mb-16">
-                <FeatureCard
-                  emoji="📊"
-                  title="Dynamic Monitoring"
-                  description="Track requisitions and candidate movement in real time"
+                <FeatureCard 
+                  emoji="🎯" 
+                  title="Personalized Engagement" 
+                  description="Tailor content and communication based on candidate preferences and role requirements"
                   delay={0.25}
                 />
 
-                <FeatureCard
-                  emoji="🔍"
-                  title="Proactive Bottleneck Identification"
-                  description="AI-powered alerts flag potential delays before they impact goals"
+                <FeatureCard 
+                  emoji="📱" 
+                  title="WhatsApp Integration" 
+                  description="Seamless communication through the world's most popular messaging platform"
                   delay={0.3}
                 />
               </div>
@@ -305,17 +313,17 @@ const NovaCount = () => {
 
               {/* Bottom Level Nodes */}
               <div className="flex justify-between mt-4">
-                <FeatureCard
-                  emoji="📈"
-                  title="Real-Time Analytics"
-                  description="Get instant insights into your hiring pipeline and make data-driven decisions"
+                <FeatureCard 
+                  emoji="📊" 
+                  title="Engagement Analytics" 
+                  description="Track and measure the effectiveness of your engagement strategies"
                   delay={0.45}
                 />
 
-                <FeatureCard
-                  emoji="🎯"
-                  title="Goal Tracking"
-                  description="Monitor progress against hiring targets and adjust strategies in real-time"
+                <FeatureCard 
+                  emoji="🤖" 
+                  title="AI-Powered Responses" 
+                  description="Instant, accurate answers to candidate questions, available 24/7"
                   delay={0.5}
                 />
               </div>
@@ -324,111 +332,65 @@ const NovaCount = () => {
         </div>
       </section>
 
-      {/* CTA Middle Section */}
+      {/* Dashboard Section */}
       <section className="w-full py-16 bg-purple-gradient text-white">
-        <motion.div 
-          className="max-w-3xl mx-auto px-6 text-center"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-        >
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Upscale Your Hiring to the Next Level</h2>
-          <motion.p 
-            className="mb-8"
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            viewport={{ once: true }}
-          >
-            Transform your workforce planning with AI-driven clarity and control.
-          </motion.p>
-          <Link to="/schedule-demo">
-            <motion.button 
-              className="bg-white text-accent px-8 py-3 rounded-lg font-medium transition-colors hover:bg-gray-100 relative overflow-hidden"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.98 }}
-            >
-              <motion.span 
-                className="absolute inset-0 bg-black opacity-0 hover:opacity-5 transition-opacity"
-                whileHover={{ opacity: 0.05 }}
-              />
-              Request Your Personalized Demo
-            </motion.button>
-          </Link>
-        </motion.div>
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">From Offer to Onboarded with Zero Drop-offs</h2>
+            <p className="max-w-3xl mx-auto">
+              Turn new hires into Day-One believers.
+            </p>
+          </div>
+
+          <div className="flex justify-center">
+            <Link to="/schedule-demo">
+              <motion.button
+                className="bg-white text-accent hover:bg-gray-100 px-10 py-4 rounded-lg font-medium text-lg shadow-lg transition-colors"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.98 }}
+              >
+                Request a Personalized Demo
+              </motion.button>
+            </Link>
+          </div>
+        </div>
       </section>
 
-      {/* How it Works Section */}
+      {/* Testimonials Section */}
       <section className="w-full py-16 bg-white">
         <div className="max-w-6xl mx-auto px-6">
-          <motion.div 
-            className="text-center mb-12"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-          >
+          <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">How does it Work?</h2>
             <p className="text-secondaryText max-w-3xl mx-auto">
-              A seamless process to integrate data, customize workflows, and drive actionable hiring insights.
+              See how Nova Engage transforms employee engagement through key touchpoints
             </p>
-          </motion.div>
+          </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                title: "Integrate and Sync",
-                items: [
-                  "Connect Nova Count to your ATS and HRIS in just minutes, centralizing requisitions, approvals, and candidate data.",
-                  "Automatic data synchronization ensures your headcount plan always reflects the latest hiring activity.",
-                  "Eliminate manual imports and reduce errors for seamless workflow integration."
-                ]
-              },
-              {
-                title: "Customize and Configure",
-                items: [
-                  "Define roles, targets, and approval workflows tailored to your organization's needs.",
-                  "Personalize dashboards to highlight key metrics, alerts, and growth scenarios that matter most.",
-                  "Establish threshold-driven notifications so you're always ahead of potential bottlenecks."
-                ]
-              },
-              {
-                title: "Analyze and Act",
-                items: [
-                  "Leverage AI-driven forecasts to anticipate headcount needs across multiple growth scenarios.",
-                  "Visualize progress on dynamic dashboards, track real-time pipeline movement, and drill into critical metrics.",
-                  "Empower stakeholders with actionable insights that drive data-informed decisions and keep hiring on target."
-                ]
-              }
-            ].map((section, index) => (
-              <motion.div 
-                key={index}
-                className="bg-gray-50 p-6 rounded-xl hover:shadow-md transition-shadow"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                viewport={{ once: true }}
-                whileHover={{ y: -5 }}
-              >
-                <h3 className="text-xl font-semibold mb-2">{section.title}</h3>
-                <ul className="space-y-3">
-                  {section.items.map((item, itemIndex) => (
-                    <motion.li 
-                      key={itemIndex}
-                      className="flex items-start"
-                      initial={{ opacity: 0, x: -10 }}
-                      whileInView={{ opacity: 1, x: 0 }}
-                      transition={{ duration: 0.4, delay: 0.3 + itemIndex * 0.1 }}
-                      viewport={{ once: true }}
-                    >
-                      <span className="text-accent mr-2">•</span>
-                      <span>{item}</span>
-                    </motion.li>
-                  ))}
-                </ul>
-              </motion.div>
-            ))}
+            <div className="bg-gray-50 p-6 rounded-xl">
+                <div>
+                <h3 className="font-semibold">Accept & Activate</h3>
+                <p className="text-secondaryText mb-4">
+                  As soon as a candidate accepts the offer, Nova Engage kicks in. They receive a curated stream of cultural, team, and value-based content over familiar channels like WhatsApp or email.
+                </p>
+              </div>
+            </div>
+            <div className="bg-gray-50 p-6 rounded-xl">
+                <div>
+                <h3 className="font-semibold">Score & Signal</h3>
+                <p className="text-secondaryText mb-4">
+                  AI monitors interaction who's watching, reading, and responding. Engagement scores are updated in real-time to signal warmth or risk.
+                </p>
+              </div>
+            </div>
+            <div className="bg-gray-50 p-6 rounded-xl">
+                <div>
+                <h3 className="font-semibold">Human Touchpoint</h3>
+                <p className="text-secondaryText mb-4">
+                  Candidates with low engagement are flagged for personal follow-ups. Our team or yours connects, resolves concerns, and re-energizes commitment.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -442,7 +404,7 @@ const NovaCount = () => {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Illuminate Your Planning?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Transform Your Candidate Experience?</h2>
           <motion.p 
             className="mb-8"
             initial={{ opacity: 0 }}
@@ -450,7 +412,7 @@ const NovaCount = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            Discover how Nova Count can transform your high-volume hiring process.
+            See how Nova Engage can help you turn applicants into excited new hires.
           </motion.p>
           <Link to="/schedule-demo">
             <motion.button 
@@ -471,4 +433,4 @@ const NovaCount = () => {
   );
 };
 
-export default NovaCount; 
+export default NovaEngage; 

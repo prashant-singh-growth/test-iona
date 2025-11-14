@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 const ChangingGradientText = () => {
   const texts = [
     "Onboards 90% Faster",
-    "Cuts 50% Operation Costs",
+    "Cuts 50% operational Costs",
     "Works 100% Smarter",
   ];
 

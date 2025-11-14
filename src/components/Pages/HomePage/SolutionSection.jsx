@@ -50,7 +50,7 @@ const solutionListJson = [
     {
         "imgurl": "NovaConnect",
         "title": "NovaConnect –<br/> Premium WhatsApp-Based Support",
-        "description": "Provides real-time, premium support via WhatsApp, answering questions, resolving issues, and keeping the hiring process moving smoothly.",
+        "description": "Provides real-time, premium support via WhatsApp, answering questions, resolving issues, and keeping the hiring process smooth.",
         "url": "/solutions/novaconnect"
     }
 ]

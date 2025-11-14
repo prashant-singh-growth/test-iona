@@ -14,15 +14,9 @@ import CaseStudySection from "../components/Pages/HomePage/CaseStudySection";
 
 import { homeFaqList } from "../components/Data/FaqData";
 import FAQComponent from "../components/utils/FAQComponent";
+import ClientBadgeSection from "../components/Pages/HomePage/ClientBadgeSection";
 const HomePage = memo(() => {
-  const logos = [
-    "/assets/pages/landingpage/metropolis.png",
-    "/assets/pages/landingpage/fab.png",
-    "/assets/pages/landingpage/ness.png",
-    "/assets/pages/landingpage/hdfc.png",
-    "/assets/pages/landingpage/birla-sun.png",
-    "/assets/pages/landingpage/aditya.png",
-  ];
+ 
 
   return (
     <div className="bg-white text-primaryText theme-lora-font">
@@ -34,31 +28,7 @@ const HomePage = memo(() => {
       {/* banner */}
       <HomeBanner />
       {/* client badge */}
-      <section className="w-full flex flex-col mt-[60px] overflow-hidden gap-5 justify-center items-center px-5 md:px-10">
-        <p className="text-sm font-normal font-sora text-center text-[#808080] font-lora">
-          Trusted by leading brands and customers
-        </p>
-        <div className="flex  gap-5 whitespace-nowrap max-w-[80vw] md:max-w-full flex-wrap justify-start">
-        {[...logos].map((logo, i) => (
-  <img
-    key={i}
-    src={logo}
-    alt={`logo-${i}`}
-    className="
-      transition-all 
-      w-fit 
-      h-8 sm:h-10 md:h-14 lg:h-16
-      px-3 sm:px-4 md:px-6 lg:px-[34px]
-      py-1.5 sm:py-2 md:py-3 lg:py-[14px]
-      border border-[#D6D6D6]
-      rounded-md sm:rounded-lg md:rounded-xl lg:rounded-[20px]
-      object-contain
-    "
-  />
-))}
-
-        </div>
-      </section>
+      <ClientBadgeSection/>
       {/* how we work */}
       <HowWeWork />
       {/* working way */}

@@ -17,15 +17,15 @@ const AboutSection = lazy(() => import("./pages/AboutSection"));
 const Highlights = lazy(() => import("./components/Highlights"));
 const CTA = lazy(() => import("./components/CTA"));
 const Contact = lazy(() => import("./pages/Contact"));
-const NovaCount = lazy(() => import("./pages/NovaCount"));
-const NovaAssist = lazy(() => import("./pages/NovaAssist"));
-const NovaTrack = lazy(() => import("./pages/NovaTrack"));
-const NovaStart = lazy(() => import("./pages/NovaStart"));
-const NovaDoc = lazy(() => import("./pages/NovaDoc"));
-const NovaTrain = lazy(() => import("./pages/NovaTrain"));
-const NovaEngage = lazy(() => import("./pages/NovaEngage"));
-const NovaVerify = lazy(() => import("./pages/NovaVerify"));
-const NovaConnect = lazy(() => import("./pages/NovaConnect"));
+const NovaCount = lazy(() => import("./pages/Solutions/NovaCount"));
+const NovaAssist = lazy(() => import("./pages/Solutions/NovaAssist"));
+const NovaTrack = lazy(() => import("./pages/Solutions/NovaTrack"));
+const NovaStart = lazy(() => import("./pages/Solutions/NovaStart"));
+const NovaDoc = lazy(() => import("./pages/Solutions/NovaDoc"));
+const NovaTrain = lazy(() => import("./pages/Solutions/NovaTrain"));
+const NovaEngage = lazy(() => import("./pages/Solutions/NovaEngage"));
+const NovaVerify = lazy(() => import("./pages/Solutions/NovaVerify"));
+const NovaConnect = lazy(() => import("./pages/Solutions/NovaConnect"));
 const Blogs = lazy(() => import("./pages/Blogs"));
 const CaseStudies = lazy(() => import("./pages/CaseStudies"));
 const Vids = lazy(() => import("./pages/Vids"));
@@ -33,9 +33,10 @@ const ScheduleDemo = lazy(() => import("./pages/ScheduleDemo"));
 const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
 const CookiePolicy = lazy(() => import("./pages/CookiePolicy"));
 const TermsOfService = lazy(() => import("./pages/TermsOfService"));
-const Landingpage = lazy(()=> import("./pages/Landingpages"))
+const Landingpage = lazy(()=> import("./pages/Landing/Landingpages"))
 const ThankYouPage = lazy(()=> import('./pages/ThankYou'));
 const SolutionPage = lazy(()=> import('./pages/SolutionPage'));
+const SecLandingPage = lazy(()=> import('./pages/Landing/SecLandingPage'));
 
 // Scroll to top on route change
 const ScrollToTop = () => {
@@ -123,6 +124,7 @@ const AnimatedRoutes = () => {
         <Route path="/end-to-end-hiring-solution-for-enterprises" element={<PageTransition><Landingpage/></PageTransition>} />
         <Route path="/thank-you" element={<PageTransition><ThankYouPage/></PageTransition>} />
         <Route path="/solutions" element={<PageTransition><SolutionPage/></PageTransition>} />
+        <Route path="/lp" element={<PageTransition><SecLandingPage/></PageTransition>} />
         <Route
           path="*"
           element={
@@ -183,7 +185,7 @@ function AppWrapper() {
 
 function AppContent() {
   const location = useLocation();
-  const hideNavbarRoutes = ["/end-to-end-hiring-solution-for-enterprises"];
+  const hideNavbarRoutes = ["/end-to-end-hiring-solution-for-enterprises","/lp"];
   const shouldHideNavbar = hideNavbarRoutes.includes(location.pathname);
 
   return (

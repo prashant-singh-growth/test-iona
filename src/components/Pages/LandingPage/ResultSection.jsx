@@ -3,14 +3,14 @@ import React from 'react'
 function ResultSection({headShow = true}) {
 
   return (
-    <section className="w-full bg-white flex flex-col py-10 lg:py-20 px-5 md:px-10 slg:px-[60px] lg:px-[90px] justify-center items-center space-y-10">
+    <section className="w-full bg-white flex flex-col pb-10 lg:pt-0 lg:pb-20 px-5 md:px-10 slg:px-[60px] lg:px-[90px] justify-center items-center space-y-10">
         {headShow && (
           <div className="flex flex-col max-w-[826px] justify-center items-center space-y-4">
           <h2 className="text-3xl md:text-4xl lg:text-[40px] lg:leading-[50px] text-[#2A2564] font-bold md:font-semibold text-center  ">
             Results that Empower Businesses
           </h2>
           <p className="text-base text-[#2A2564] text-center font-lora">
-           100,000+ elevated experiences delivered & 1.5 million + accurate automated documentation performed.
+           100,000+ elevated experiences delivered & 1.5 million+ accurate automated documentation performed.
           </p>
         </div>
         )}

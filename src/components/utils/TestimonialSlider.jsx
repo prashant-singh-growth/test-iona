@@ -20,7 +20,7 @@ function TestimonialSlider() {
       position: "Senior Officer",
       company: "Leading UAE Bank",
       testimony:
-        "Partnering with IONA.AI has elevated our background verification process end-to-end. Their approach is detailed, reliable, and consistently precise—every check, from criminal records to employment history, is handled with care and clarity. With seamless workflows and quick turnaround times, we've been able to onboard top talent faster and with greater confidence.",
+        "Partnering with iona.ai has elevated our background verification process end-to-end. Their approach is detailed, reliable, and consistently precise—every check, from criminal records to employment history, is handled with care and clarity. With seamless workflows and quick turnaround times, we've been able to onboard top talent faster and with greater confidence.",
     },
     {
       headshoturl: "client.jpg",

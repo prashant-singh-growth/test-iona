@@ -1,11 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import MobileFeatureCard from "../components/MobileFeatureCard";
-import SeoHeader from "../components/utils/SeoHeader";
-
-const preloadScheduleDemo = () => {
-  return import("./ScheduleDemo");
-};
+import MobileFeatureCard from "../../components/MobileFeatureCard";
+import SeoHeader from "../../components/utils/SeoHeader";
 
 const FeatureCard = ({ emoji, title, description, delay }) => {
   return (
@@ -47,13 +43,17 @@ const ConnectorLine = ({ delay = 0, vertical = false, length = "100%" }) => {
   );
 };
 
-const NovaAssist = () => {
+const NovaVerify = () => {
+  const preloadScheduleDemo = () => {
+    return import("../ScheduleDemo");
+  };
+
   return (
     <div className="flex flex-col items-center overflow-x-hidden">
         <SeoHeader
-      title={"NovaAssist | AI-Powered Recruitment Assistant by IONA AI"}
-      description={"Simplify hiring with NovaAssist—your intelligent virtual recruiter. Automate tasks, enhance candidate engagement, and focus on meaningful human connections."}
-      canonical={"/solutions/novaassist"}
+      title={"NovaVerify | Smart Candidate Verification by IONA AI"}
+      description={"Ensure authenticity and trust in hiring with NovaVerify. Leverage AI-driven verification to validate credentials, background, and candidate integrity."}
+     
       />
       {/* Hero Section */}
       <section className="w-full bg-purple-gradient text-white py-16">
@@ -70,7 +70,7 @@ const NovaAssist = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.2 }}
             >
-              Never Fly Solo Again! Your Intelligent Hiring Co-Pilot is Here!
+              Effortless Trust, Unrivaled Speed in High-Volume Background Checks
             </motion.h1>
             <motion.p 
               className="text-xl mb-8"
@@ -78,7 +78,7 @@ const NovaAssist = () => {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.7, delay: 0.4 }}
             >
-              Imagine having an always-on, exceptionally trained partner woven directly into your daily workflow: that's Nova Assist.
+              Powered by the clarity of Iona and the automation brilliance of Nova, this is background verification as it should be: fast, seamless, cost-effective and fully managed.
             </motion.p>
             <motion.div 
               className="flex flex-col sm:flex-row gap-4 justify-center"
@@ -87,22 +87,31 @@ const NovaAssist = () => {
               transition={{ duration: 0.7, delay: 0.6 }}
             >
               <Link to="/schedule-demo">
-                <motion.button 
-                  className="bg-white text-accent px-8 py-3 rounded-lg font-medium transition-colors hover:bg-gray-100"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.98 }}
-                >
-                  Book a Demo
-                </motion.button>
+              <motion.button 
+                className="bg-accent hover:bg-accent-dark text-white px-6 py-3 rounded-lg font-medium transition-colors relative overflow-hidden"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                onMouseEnter={preloadScheduleDemo}
+              >
+                <motion.span 
+                  className="absolute inset-0 bg-white opacity-0 hover:opacity-10 transition-opacity"
+                  whileHover={{ opacity: 0.1 }}
+                />
+                Book a Demo
+              </motion.button>
               </Link>
-              <Link to="/contact">
-                <motion.button 
-                  className="bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg font-medium transition-colors hover:bg-white/10"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.98 }}
-                >
-                  Contact Sales
-                </motion.button>
+              <Link to="/#solutions">
+              <motion.button 
+                className="bg-white text-accent px-6 py-3 rounded-lg font-medium transition-colors relative overflow-hidden"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <motion.span 
+                  className="absolute inset-0 bg-black opacity-0 hover:opacity-5 transition-opacity"
+                  whileHover={{ opacity: 0.05 }}
+                />
+                Explore Solutions
+              </motion.button>
               </Link>
             </motion.div>
           </motion.div>
@@ -120,10 +129,10 @@ const NovaAssist = () => {
             viewport={{ once: true }}
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Why Nova Assist Is More Than Just an AI Tool
+              Say Goodbye to BGV Headaches, Forever
             </h2>
             <p className="text-secondaryText max-w-3xl mx-auto">
-              When hiring moves fast, you need more than just dashboards.
+              Manual processes, scattered vendors, and SLA firefighting don't scale but your hiring needs do.
             </p>
           </motion.div>
 
@@ -141,10 +150,11 @@ const NovaAssist = () => {
             >
               <ul className="space-y-3">
                 {[
-                  "Nova Assist isn't just a chatbot. It's your AI-powered, insight-driven teammate, designed to guide you from requisition to onboarding, and every moment in between.",
-                  "Nova Assist blends natural language intelligence with deep HR context, delivering real-time support, insights, and decisions, no search bars, no delays.",
-                  "Whether you're recruiting, onboarding, or tracking strategy; just ask.",
-                  "Nova Assist is woven into your Nova Suite, ready to guide every stakeholder: recruiters, HR teams, new hires, and leaders."
+                  "Eliminate vendor management, system integrations, and manual tracking completely",
+                  "Reduce background verification turnaround times and costs across the board",
+                  "Deliver a superior candidate experience that keeps top talent engaged throughout",
+                  "Free your team to focus on strategic hiring instead of administrative tasks",
+                  "Maintain compliance and security standards with automated verification protocols"
                 ].map((item, index) => (
                   <motion.li 
                     key={index}
@@ -174,43 +184,57 @@ const NovaAssist = () => {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Intelligent Support at Every Hiring Touchpoint</h2>
-            <p className="text-secondaryText max-w-3xl mx-auto">
-              Always-On Hiring Intelligence
-            </p>
+            <motion.h2 
+              className="text-3xl md:text-4xl font-bold mb-4"
+              initial={{ opacity: 0, y: -10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+            >
+              Built for High-Volume. Designed for Peace of Mind.
+            </motion.h2>
+            <motion.p 
+              className="text-secondaryText max-w-3xl mx-auto"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              viewport={{ once: true }}
+            >
+              Comprehensive tools to streamline your entire verification and compliance process
+            </motion.p>
           </motion.div>
 
           <div className="flex flex-col items-center">
             {/* Mobile View */}
             <div className="w-full md:hidden">
               <MobileFeatureCard 
-                emoji="🔄"
-                title="Around-the-Clock AI Assistance"
-                description="Access immediate answers to your questions anytime, ensuring no delays in your recruitment journey."
+                emoji="🔍"
+                title="Automated Background Checks"
+                description="Streamlined verification process that handles criminal records, employment history, and education verification"
                 delay={0.1}
               />
               <MobileFeatureCard 
-                emoji="🧩"
-                title="Seamless System Integration"
-                description="Nova Assist plugs into your Nova Suite and existing workflows, making it part of your daily rhythm, not a separate app to learn."
+                emoji="📝"
+                title="Document Verification"
+                description="AI-powered document analysis to verify identity documents, certifications, and professional licenses"
                 delay={0.2}
               />
               <MobileFeatureCard 
-                emoji="⚡"
-                title="Strategic Insights, On Demand"
-                description="HR leaders can ask questions like 'What's our hiring pipeline vs. target for Q3?' and get instant, actionable dashboards."
+                emoji="🌐"
+                title="Global Compliance"
+                description="Automated compliance checks across different jurisdictions and regulatory requirements"
                 delay={0.3}
               />
               <MobileFeatureCard 
-                emoji="📱"
-                title="Your Co-Pilot Across the Talent Lifecycle"
-                description="From requisition to onboarding, Nova Assist is your silent partner in every HR moment. It anticipates needs, removes friction, and keeps your hiring journey on course."
+                emoji="📊"
+                title="Real-Time Status Tracking"
+                description="Monitor verification progress and receive instant notifications when checks are complete"
                 delay={0.4}
               />
               <MobileFeatureCard 
-                emoji="🌱"
-                title="Empowering New Hires from Day One"
-                description="Overwhelmed employees can ask: 'Where's the leave policy?' or 'Who's my reporting manager?' and get real-time answers; no waiting, no confusion."
+                emoji="🔒"
+                title="Secure Data Handling"
+                description="Enterprise-grade security with end-to-end encryption and strict data privacy controls"
                 delay={0.5}
               />
             </div>
@@ -236,10 +260,10 @@ const NovaAssist = () => {
                     whileHover={{ scale: 1.1 }}
                     transition={{ duration: 0.3 }}
                   >
-                    <div className="text-4xl mb-1 bg-accent/10 p-3 rounded-full">🔄</div>
+                    <div className="text-4xl mb-1 bg-accent/10 p-3 rounded-full">🔍</div>
                   </motion.div>
-                  <h3 className="text-xl font-semibold mb-1">Around-the-Clock AI Assistance</h3>
-                  <p className="text-secondaryText text-sm">Access immediate answers to your questions anytime, ensuring no delays in your recruitment journey.</p>
+                  <h3 className="text-xl font-semibold mb-1">Automated Background Checks</h3>
+                  <p className="text-secondaryText text-sm">Streamlined verification process that handles criminal records, employment history, and education verification</p>
                 </motion.div>
               </div>
 
@@ -265,16 +289,16 @@ const NovaAssist = () => {
               {/* Second Level Nodes */}
               <div className="flex justify-between mt-4 mb-16">
                 <FeatureCard 
-                  emoji="🧩" 
-                  title="Seamless System Integration" 
-                  description="Nova Assist plugs into your Nova Suite and existing workflows, making it part of your daily rhythm, not a separate app to learn."
+                  emoji="📝" 
+                  title="Document Verification" 
+                  description="AI-powered document analysis to verify identity documents, certifications, and professional licenses"
                   delay={0.25}
                 />
 
                 <FeatureCard 
-                  emoji="⚡" 
-                  title="Strategic Insights, On Demand" 
-                  description="HR leaders can ask questions like 'What's our hiring pipeline vs. target for Q3?' and get instant, actionable dashboards."
+                  emoji="🌐" 
+                  title="Global Compliance" 
+                  description="Automated compliance checks across different jurisdictions and regulatory requirements"
                   delay={0.3}
                 />
               </div>
@@ -296,16 +320,16 @@ const NovaAssist = () => {
               {/* Bottom Level Nodes */}
               <div className="flex justify-between mt-4">
                 <FeatureCard 
-                  emoji="📱" 
-                  title="Your Co-Pilot Across the Talent Lifecycle" 
-                  description="From requisition to onboarding, Nova Assist is your silent partner in every HR moment. It anticipates needs, removes friction, and keeps your hiring journey on course."
+                  emoji="📊" 
+                  title="Real-Time Status Tracking" 
+                  description="Monitor verification progress and receive instant notifications when checks are complete"
                   delay={0.45}
                 />
 
                 <FeatureCard 
-                  emoji="🌱" 
-                  title="Empowering New Hires from Day One" 
-                  description="Overwhelmed employees can ask: 'Where's the leave policy?' or 'Who's my reporting manager?' and get real-time answers; no waiting, no confusion."
+                  emoji="🔒" 
+                  title="Secure Data Handling" 
+                  description="Enterprise-grade security with end-to-end encryption and strict data privacy controls"
                   delay={0.5}
                 />
               </div>
@@ -314,53 +338,92 @@ const NovaAssist = () => {
         </div>
       </section>
 
-      {/* Benefits Section */}
-      <section className="w-full py-16 bg-white">
+      {/* Dashboard Section */}
+      <section className="w-full py-16 bg-purple-gradient text-white">
         <div className="max-w-6xl mx-auto px-6">
           <motion.div 
-            className="text-center mb-16"
+            className="text-center mb-12"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Your Smartest Hire Isn't a Person; It's Nova Assist
-            </h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">High-Volume Hiring Deserves High-Velocity Trust.</h2>
+            <p className="max-w-3xl mx-auto">
+              We make background verification invisible, so your best hires show up, not slow down.
+            </p>
+          </motion.div>
+
+          <motion.div 
+            className="flex justify-center"
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            viewport={{ once: true }}
+          >
+            <Link to="/schedule-demo">
+              <motion.button
+                className="bg-white text-accent hover:bg-gray-100 px-10 py-4 rounded-lg font-medium text-lg shadow-lg transition-colors relative overflow-hidden"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.98 }}
+              >
+                <motion.span 
+                  className="absolute inset-0 bg-black opacity-0 hover:opacity-5 transition-opacity"
+                  whileHover={{ opacity: 0.05 }}
+                />
+                Request a Personalized Demo
+              </motion.button>
+            </Link>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section className="w-full py-16 bg-white">
+        <div className="max-w-6xl mx-auto px-6">
+          <motion.div 
+            className="text-center mb-12"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">How does it work?</h2>
             <p className="text-secondaryText max-w-3xl mx-auto">
-              Always-on. Insight-rich. Built to guide every step of your hiring journey.
+              Nova Verify simplifies and streamlines your background verification process, ensuring you get trustworthy results with minimal effort.
             </p>
           </motion.div>
 
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                title: "Instantly Integrated Into Your Workflow",
-                description: "Nova Assist plugs directly into your hiring tools and systems. No new logins, no learning curve; just instant support. Start getting intelligent answers the moment you need them."
+                title: "Seamless Setup and Integration",
+                description: "Get started quickly by integrating Nova Verify into your existing hiring systems. With minimal setup, you can start verifying candidates without disruptions to your workflow."
               },
               {
-                title: "24/7 Agentic AI Support",
-                description: "Ask anything from requisition insights to candidate status updates. Nova delivers precise, real-time responses in natural language. It's like having a recruitment analyst by your side 24/7."
+                title: "AI-Driven Automation and Real-Time Tracking",
+                description: "Once integrated, Nova Verify automates the entire BGV process, from submission to completion. Enjoy real-time updates, keeping your team informed and on track."
               },
               {
-                title: "Grows with Your Team",
-                description: "For nuanced or complex cases, expert help steps in. Our team understands hiring pressures and responds fast. You get the perfect blend of AI speed and human empathy."
+                title: "Tailored Solutions with Provider Flexibility",
+                description: "Choose the right background check providers for each candidate, role, or location. Nova Verify lets you easily switch providers as needed, ensuring maximum efficiency and cost savings."
               }
             ].map((item, index) => (
               <motion.div 
                 key={index}
-                className="bg-gray-50 p-8 rounded-xl shadow-sm"
+                className="bg-gray-50 p-6 rounded-xl hover:shadow-md transition-shadow"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.2 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                whileHover={{ 
-                  y: -5,
-                  boxShadow: "0 10px 25px -5px rgba(0, 0, 0, 0.1)"
-                }}
+                whileHover={{ y: -5 }}
               >
-                <h3 className="text-xl font-bold mb-4">{item.title}</h3>
-                <p className="text-secondaryText">{item.description}</p>
+                <div>
+                  <h3 className="font-semibold">{item.title}</h3>
+                </div>
+                <p className="text-secondaryText mb-4">
+                  {item.description}
+                </p>
               </motion.div>
             ))}
           </div>
@@ -369,36 +432,40 @@ const NovaAssist = () => {
 
       {/* CTA Section */}
       <section className="w-full py-16 bg-purple-gradient text-white">
-        <div className="max-w-6xl mx-auto px-6 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+        <motion.div 
+          className="max-w-3xl mx-auto px-6 text-center"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Say Goodbye to BGV Chaos</h2>
+          <motion.p 
+            className="mb-8"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
-            className="max-w-3xl mx-auto"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Transform the Way You Hire with Nova Assist.</h2>
-            <p className="text-xl mb-8">
-              Your team's silent strength. Your new hires' warmest welcome. Your co-pilot for everything.
-            </p>
-            <Link to="/schedule-demo">
-              <motion.button 
-                className="bg-white text-accent px-8 py-3 rounded-lg font-medium transition-colors inline-flex items-center"
-                whileHover={{ scale: 1.05, boxShadow: "0 10px 25px rgba(0, 0, 0, 0.1)" }}
-                whileTap={{ scale: 0.95 }}
-                onMouseEnter={preloadScheduleDemo}
-              >
-                <span>Book a Demo</span>
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
-                  <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
-                </svg>
-              </motion.button>
-            </Link>
-          </motion.div>
-        </div>
+            Experience faster, frictionless background verification with Nova Verify.
+          </motion.p>
+          <Link to="/schedule-demo">
+            <motion.button 
+              className="bg-white text-accent px-8 py-3 rounded-lg font-medium transition-colors hover:bg-gray-100 relative overflow-hidden"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.98 }}
+            >
+              <motion.span 
+                className="absolute inset-0 bg-black opacity-0 hover:opacity-5 transition-opacity"
+                whileHover={{ opacity: 0.05 }}
+              />
+              Request a Demo Now
+            </motion.button>
+          </Link>
+        </motion.div>
       </section>
     </div>
   );
 };
 
-export default NovaAssist; 
+export default NovaVerify; 

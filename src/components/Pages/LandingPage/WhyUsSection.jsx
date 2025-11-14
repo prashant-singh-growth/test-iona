@@ -40,7 +40,7 @@ function WhyUsSection({ ctaText, ctaUrl }) {
     {
         "image": "roi",
         "title": "Faster <br/> ROI",
-        "description": "Cut HR overhead and get employees productive faster with automated workflows and smarter processes."
+        "description": "Cuts HR overhead and expedite employee readiness with automated workflows and smarter processes."
     }
 ]
   return (
@@ -54,7 +54,7 @@ function WhyUsSection({ ctaText, ctaUrl }) {
           <p className="text-base text-[#2A2564] text-center font-lora">
             Automating onboarding and verifications saves up to 90% of time and
             costs on recurring (admin-heavy) HR operations, enabling efficient
-            hiring and scalable growth without increasing budget.
+            hiring and scalable growth without increasing the budget.
           </p>
         </div>
 

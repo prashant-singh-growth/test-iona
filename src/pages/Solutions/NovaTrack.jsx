@@ -1,11 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import MobileFeatureCard from "../components/MobileFeatureCard";
-import SeoHeader from "../components/utils/SeoHeader";
-
-const preloadScheduleDemo = () => {
-  return import("./ScheduleDemo");
-};
+import MobileFeatureCard from "../../components/MobileFeatureCard";
+import SeoHeader from "../../components/utils/SeoHeader";
 
 const FeatureCard = ({ emoji, title, description, delay }) => {
   return (
@@ -47,13 +43,17 @@ const ConnectorLine = ({ delay = 0, vertical = false, length = "100%" }) => {
   );
 };
 
-const NovaDoc = () => {
+const NovaTrack = () => {
+  const preloadScheduleDemo = () => {
+    return import("../ScheduleDemo");
+  };
+
   return (
     <div className="flex flex-col items-center overflow-x-hidden">
-        <SeoHeader
-      title={"NovaDoc | Intelligent Document Management by IONA AI"}
-      description={"Automate, organize, and verify hiring documentation effortlessly. NovaDoc ensures accuracy, compliance, and security across your recruitment workflows."}
-     
+       <SeoHeader
+      title={"SpeedBoard | Accelerate Hiring Decisions with IONA AI"}
+      description={"SpeedBoard streamlines candidate evaluations and hiring workflows. Make faster, smarter hiring decisions powered by real-time AI insights and collaboration."}
+      canonical={"/solutions/speedboard"}
       />
       {/* Hero Section */}
       <section className="w-full bg-purple-gradient text-white py-16">
@@ -70,7 +70,7 @@ const NovaDoc = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.2 }}
             >
-              Onboarding at Warp Speed
+              Transform Candidate Tracking from Spreadsheet Chaos to Strategic Asset
             </motion.h1>
             <motion.p 
               className="text-xl mb-8"
@@ -78,7 +78,7 @@ const NovaDoc = () => {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.7, delay: 0.4 }}
             >
-              Say goodbye to paperwork delays and hello to instant, accurate, AI-powered documentation. Nova Doc redefines high-volume onboarding.
+              Nova Track delivers real-time visibility and control across your entire candidate pipeline, turning hiring data into clear action.
             </motion.p>
             <motion.div 
               className="flex flex-col sm:flex-row gap-4 justify-center"
@@ -100,7 +100,7 @@ const NovaDoc = () => {
                 Book a Demo
               </motion.button>
               </Link>
-              <Link to="/contact">
+              <Link to="/#solutions">
               <motion.button 
                 className="bg-white text-accent px-6 py-3 rounded-lg font-medium transition-colors relative overflow-hidden"
                 whileHover={{ scale: 1.05 }}
@@ -110,7 +110,7 @@ const NovaDoc = () => {
                   className="absolute inset-0 bg-black opacity-0 hover:opacity-5 transition-opacity"
                   whileHover={{ opacity: 0.05 }}
                 />
-                Contact Sales
+                Explore Solutions
               </motion.button>
               </Link>
             </motion.div>
@@ -129,10 +129,10 @@ const NovaDoc = () => {
             viewport={{ once: true }}
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Why Nova Doc Is More Than Just Paperwork Automation
+              Chaos to Clarity: One Pipeline, Complete Visibility
             </h2>
             <p className="text-secondaryText max-w-3xl mx-auto">
-              In high-volume hiring, time is talent. Every wasted minute is a missed opportunity.
+              High-volume hiring requires more than just a traditional ATS—it demands true pipeline intelligence.
             </p>
           </motion.div>
 
@@ -150,11 +150,11 @@ const NovaDoc = () => {
             >
               <ul className="space-y-3">
                 {[
-                  "Nova Doc transforms new hire documentation from a painful bottleneck into a seamless, lightning-fast experience—for HR and new hires alike.",
-                  "Built on First Principles, powered by intelligent automation, and designed with human clarity, it's the only solution that bends to your onboarding needs without breaking a sweat.",
-                  "No downloads. No confusion.",
-                  "Mobile-first, ultra-fast documentation",
-                  "Human-backed, AI-driven support at scale"
+                  "Track candidates across every stage, channel, and touchpoint with complete visibility",
+                  "Surface hidden opportunities and obstacles with intelligent insights in real-time",
+                  "Break free from manual tracking processes and spreadsheet chaos",
+                  "Gain clarity across your entire candidate pipeline with unified data",
+                  "Inform hiring strategies with real performance analytics and predictive insights"
                 ].map((item, index) => (
                   <motion.li 
                     key={index}
@@ -184,9 +184,9 @@ const NovaDoc = () => {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Unmatched Features for Seamless Onboarding Documentation</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">The Complete Candidate Tracking Solution</h2>
             <p className="text-secondaryText max-w-3xl mx-auto">
-              Nova Doc brings intelligent automation to every step of your documentation process
+              Powerful tools that transform how you manage your recruitment pipeline
             </p>
           </motion.div>
 
@@ -194,33 +194,33 @@ const NovaDoc = () => {
             {/* Mobile View */}
             <div className="w-full md:hidden">
               <MobileFeatureCard 
-                emoji="📱"
-                title="Mobile-First Document Collection"
-                description="New hires can complete all documentation securely from their smartphone—no apps, just a clean weblink."
+                emoji="📊"
+                title="Unified Pipeline Intelligence"
+                description="Track every candidate from application to offer with a single integrated view that surfaces what matters most, when it matters."
                 delay={0.1}
               />
               <MobileFeatureCard 
-                emoji="🧠"
-                title="AI-Powered Form Assistance"
-                description="Complex statutory forms become simple with real-time AI guidance, ensuring data accuracy"
+                emoji="⚡"
+                title="Seamless ATS Integration"
+                description="Connect with any ATS system in minutes, not months, to create a holistic view of your candidates without disrupting existing workflows."
                 delay={0.2}
               />
               <MobileFeatureCard 
-                emoji="📄"
-                title="Instant Policy Reviews"
-                description="Company policies, NDAs, and documents are reviewed and accepted with a single tap"
+                emoji="🔍"
+                title="Advanced Pipeline Analytics"
+                description="Transform raw hiring data into actionable insights with custom dashboards highlighting bottlenecks, conversion rates, and performance metrics."
                 delay={0.3}
               />
               <MobileFeatureCard 
-                emoji="🪪"
-                title="KYC & ID Generation in Minutes"
-                description="From secure KYC completion to automated ID card generation, everything done instantly"
+                emoji="📱"
+                title="Mobile-First Tracking"
+                description="Access real-time pipeline data anywhere with intuitive mobile dashboards designed for on-the-go recruiting teams and hiring managers."
                 delay={0.4}
               />
               <MobileFeatureCard 
-                emoji="✅"
-                title="100% Accuracy, 0% Risk"
-                description="Meticulously built to ensure legal compliance and data accuracy, every time"
+                emoji="🤖"
+                title="AI-Powered Predictions"
+                description="Forecast hiring timeline accuracy, identify at-risk candidates, and receive proactive suggestions to optimize your pipeline performance."
                 delay={0.5}
               />
             </div>
@@ -246,10 +246,10 @@ const NovaDoc = () => {
                     whileHover={{ scale: 1.1 }}
                     transition={{ duration: 0.3 }}
                   >
-                    <div className="text-4xl mb-1 bg-accent/10 p-3 rounded-full">📱</div>
+                    <div className="text-4xl mb-1 bg-accent/10 p-3 rounded-full">📊</div>
                   </motion.div>
-                  <h3 className="text-xl font-semibold mb-1">Mobile-First Document Collection</h3>
-                  <p className="text-secondaryText text-sm">New hires can complete all documentation securely from their smartphone—no apps, just a clean weblink.</p>
+                  <h3 className="text-xl font-semibold mb-1">Unified Pipeline Intelligence</h3>
+                  <p className="text-secondaryText text-sm">Track every candidate from application to offer with a single integrated view that surfaces what matters most, when it matters.</p>
                 </motion.div>
               </div>
 
@@ -274,18 +274,18 @@ const NovaDoc = () => {
 
               {/* Second Level Nodes */}
               <div className="flex justify-between mt-4 mb-16">
-                <FeatureCard 
-                  emoji="🧠" 
-                  title="AI-Powered Form Assistance" 
-                  description="Complex statutory forms become simple with real-time AI guidance, ensuring data accuracy"
-                  delay={0.3}
+                <FeatureCard
+                  emoji="⚡"
+                  title="End-to-End Workflow Automation"
+                  description="From screening questionnaires to interview reminders, routine tasks run themselves. Your team gets back hours every week to build relationships."
+                  delay={0.25}
                 />
 
-                <FeatureCard 
-                  emoji="📄" 
-                  title="Instant Policy Reviews" 
-                  description="Company policies, NDAs, and documents are reviewed and accepted with a single tap"
-                  delay={0.4}
+                <FeatureCard
+                  emoji="🔍"
+                  title="Advanced Pipeline Analytics"
+                  description="Transform raw hiring data into actionable insights with custom dashboards highlighting bottlenecks, conversion rates, and performance metrics."
+                  delay={0.3}
                 />
               </div>
 
@@ -305,18 +305,18 @@ const NovaDoc = () => {
 
               {/* Bottom Level Nodes */}
               <div className="flex justify-between mt-4">
-                <FeatureCard 
-                  emoji="🪪" 
-                  title="KYC & ID Generation in Minutes" 
-                  description="From secure KYC completion to automated ID card generation, everything done instantly"
-                  delay={0.5}
+                <FeatureCard
+                  emoji="��"
+                  title="Mobile-First Tracking"
+                  description="Access real-time pipeline data anywhere with intuitive mobile dashboards designed for on-the-go recruiting teams and hiring managers."
+                  delay={0.45}
                 />
 
-                <FeatureCard 
-                  emoji="✅" 
-                  title="100% Accuracy, 0% Risk" 
-                  description="Meticulously built to ensure legal compliance and data accuracy, every time"
-                  delay={0.6}
+                <FeatureCard
+                  emoji="🤖"
+                  title="AI-Powered Predictions"
+                  description="Forecast hiring timeline accuracy, identify at-risk candidates, and receive proactive suggestions to optimize your pipeline performance."
+                  delay={0.5}
                 />
               </div>
             </div>
@@ -324,111 +324,131 @@ const NovaDoc = () => {
         </div>
       </section>
 
-      {/* Benefits Section */}
-      <section className="w-full py-16 bg-white">
+      {/* Real-time Dashboard Section */}
+      <section className="w-full py-16 bg-purple-gradient text-white">
         <div className="max-w-6xl mx-auto px-6">
           <motion.div 
-            className="text-center mb-16"
+            className="text-center mb-12"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              How It Works – 3 Ways Nova Doc Reclaims Time
-            </h2>
-            <p className="text-secondaryText max-w-3xl mx-auto">
-              Nova Doc doesn't just digitize documents—it transforms the onboarding experience for your people
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Real-Time Intelligence at Your Fingertips</h2>
+            <p className="max-w-3xl mx-auto">
+              Monitor your pipeline metrics as they happen, not after it's too late to act.
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            <motion.div 
-              className="bg-gray-50 p-8 rounded-xl shadow-sm"
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6 }}
-              viewport={{ once: true }}
-              whileHover={{ 
-                y: -5,
-                boxShadow: "0 10px 25px -5px rgba(0, 0, 0, 0.1)"
-              }}
-            >
-              <h3 className="text-xl font-bold mb-4"> Effortless, App-Free Onboarding</h3>
-              <p className="text-secondaryText">
-                New hires receive a secure weblink to upload documents, complete forms, and review policies—no downloads needed.
-              </p>
-            </motion.div>
-
-            <motion.div 
-              className="bg-gray-50 p-8 rounded-xl shadow-sm"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              viewport={{ once: true }}
-              whileHover={{ 
-                y: -5,
-                boxShadow: "0 10px 25px -5px rgba(0, 0, 0, 0.1)"
-              }}
-            >
-              <h3 className="text-xl font-bold mb-4"> Smart AI + Human Backup</h3>
-              <p className="text-secondaryText">
-                AI handles accuracy and speed, while our real onboarding experts support edge cases and queries in real-time.
-              </p>
-            </motion.div>
-
-            <motion.div 
-              className="bg-gray-50 p-8 rounded-xl shadow-sm"
-              initial={{ opacity: 0, x: 20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: 0.4 }}
-              viewport={{ once: true }}
-              whileHover={{ 
-                y: -5,
-                boxShadow: "0 10px 25px -5px rgba(0, 0, 0, 0.1)"
-              }}
-            >
-              <h3 className="text-xl font-bold mb-4"> Configurable & Compliant from Day One</h3>
-              <p className="text-secondaryText">
-                Adapt the system to your documentation flow while maintaining full compliance and oversight.
-              </p>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="w-full py-16 bg-purple-gradient text-white">
-        <div className="max-w-6xl mx-auto px-6 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+          <motion.div 
+            className="flex justify-center"
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
             viewport={{ once: true }}
-            className="max-w-3xl mx-auto"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Nova Doc: Save Time, Reduce Errors, Delight New Hires.</h2>
-            <p className="text-xl mb-8">
-              When every minute matters, Nova Doc ensures none are wasted.
-            </p>
             <Link to="/schedule-demo">
-              <motion.button 
-                className="bg-white text-accent px-8 py-3 rounded-lg font-medium transition-colors inline-flex items-center"
-                whileHover={{ scale: 1.05, boxShadow: "0 10px 25px rgba(0, 0, 0, 0.1)" }}
-                whileTap={{ scale: 0.95 }}
-                onMouseEnter={preloadScheduleDemo}
+              <motion.button
+                className="bg-white text-accent hover:bg-gray-100 px-10 py-4 rounded-lg font-medium text-lg shadow-lg transition-colors relative overflow-hidden"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.98 }}
               >
-                <span>Book a Demo</span>
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
-                  <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
-                </svg>
+                <motion.span 
+                  className="absolute inset-0 bg-black opacity-0 hover:opacity-5 transition-opacity"
+                  whileHover={{ opacity: 0.05 }}
+                />
+                Request a Personalized Demo
               </motion.button>
             </Link>
           </motion.div>
         </div>
       </section>
+
+      {/* How it Works Section */}
+      <section className="w-full py-16 bg-white">
+        <div className="max-w-6xl mx-auto px-6">
+          <motion.div 
+            className="text-center mb-12"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">How Nova Track Works</h2>
+            <p className="text-secondaryText max-w-3xl mx-auto">
+              A three-step approach to transforming your candidate tracking experience
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {[
+              {
+                title: "Connect & Integrate",
+                description: "Plug Nova Track into your existing systems through our easy-to-use connectors and APIs. We'll collect all candidate data into one central hub without disrupting your current workflows."
+              },
+              {
+                title: "Visualize & Analyze",
+                description: "See your entire pipeline at a glance with customizable dashboards that highlight what matters most to your team—from conversion rates to bottlenecks and everything in between."
+              },
+              {
+                title: "Optimize & Improve",
+                description: "Act on intelligent recommendations to improve pipeline efficiency. Identify which sources deliver quality candidates, where drop-offs occur, and how to accelerate time-to-hire."
+              }
+            ].map((item, index) => (
+              <motion.div 
+                key={index} 
+                className="bg-gray-50 p-6 rounded-xl hover:shadow-md transition-shadow"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                whileHover={{ y: -5 }}
+              >
+                <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
+                <p className="text-secondaryText mb-4">{item.description}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Final CTA Section */}
+      <section className="w-full py-16 bg-purple-gradient text-white">
+        <motion.div 
+          className="max-w-3xl mx-auto px-6 text-center"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready for Total Pipeline Clarity?</h2>
+          <motion.p 
+            className="mb-8"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            viewport={{ once: true }}
+          >
+            Discover how Nova Track can transform your recruitment operations.
+          </motion.p>
+          <Link to="/schedule-demo">
+            <motion.button 
+              className="bg-white text-accent px-8 py-3 rounded-lg font-medium transition-colors hover:bg-gray-100 relative overflow-hidden"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.98 }}
+            >
+              <motion.span 
+                className="absolute inset-0 bg-black opacity-0 hover:opacity-5 transition-opacity"
+                whileHover={{ opacity: 0.05 }}
+              />
+              Request a Demo
+            </motion.button>
+          </Link>
+        </motion.div>
+      </section>
     </div>
   );
 };
 
-export default NovaDoc; 
+export default NovaTrack;
+  

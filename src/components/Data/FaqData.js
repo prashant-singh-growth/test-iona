@@ -65,7 +65,7 @@ export const solutionFaqList = [
   {
     question: "How does iona.ai support onboarding for large numbers of new hires?",
     answer:
-      "iona automates the entire onboarding process, including document collection, task management, and training assignments, making it easy to onboard hundreds of employees quickly and efficiently without sacrificing accuracy or compliance."
+      "iona.ai automates the entire onboarding process, including document collection, task management, and training assignments, making it easy to onboard hundreds of employees quickly and efficiently without sacrificing accuracy or compliance."
   },
   {
     question: "How does iona.ai help reduce recruitment costs?",

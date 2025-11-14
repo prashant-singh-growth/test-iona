@@ -27,7 +27,8 @@ module.exports = {
           error: "#EF4444",
           info: "#3B82F6",
           primary:"#2A2564",
-          themeGray:"#f3f3f5"
+          themeGray:"#f3f3f5",
+          darkVoilet:"#160E38"
         },
         backgroundImage: {
           'main-gradient': 'linear-gradient(180deg, #f8f9fb 0%, #ffffff 100%)',
@@ -69,7 +70,7 @@ module.exports = {
           '3xl': '2rem',
         },
         screens : {
-         slg: { max: "1200px",min:'900px' },
+         slg: { max: "1250px",min:'900px' },
          ssm: { max: "500px",min:'400px' },
         }
       },

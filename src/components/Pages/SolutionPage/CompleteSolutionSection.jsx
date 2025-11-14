@@ -25,7 +25,7 @@ const solutionCardData = [
       "Quick insights into recruitment needs",
     ],
     btnURL: "/novacount",
-    image: "novacount.webp",
+    image: "1.webp",
   },
   {
     tabName: "NovaAssist",
@@ -38,7 +38,7 @@ const solutionCardData = [
       "Integration with HR tools",
     ],
     btnURL: "/novaassist",
-    image: "novaassist.webp",
+    image: "2.webp",
   },
   {
     tabName: "NovaTrack",
@@ -51,7 +51,7 @@ const solutionCardData = [
       "Real-time candidate progress tracking",
     ],
     btnURL: "/novatrack",
-    image: "novatrack.webp",
+    image: "3.webp",
   },
   {
     tabName: "NovaStart",
@@ -64,7 +64,7 @@ const solutionCardData = [
       "Instant preparation for Day 1",
     ],
     btnURL: "/novastart",
-    image: "novastart.webp",
+    image: "4.webp",
   },
   {
     tabName: "NovaDoc",
@@ -77,7 +77,7 @@ const solutionCardData = [
       "Ensure compliance and timely document collection",
     ],
     btnURL: "/novadoc",
-    image: "novadoc.webp",
+    image: "5.webp",
   },
   {
     tabName: "NovaEngage",
@@ -90,7 +90,7 @@ const solutionCardData = [
       "Builds excitement and sets the tone for Day 1",
     ],
     btnURL: "/novaengage",
-    image: "novaengage.webp",
+    image: "6.webp",
   },
   {
     tabName: "NovaTrain",
@@ -103,7 +103,7 @@ const solutionCardData = [
       "Reduce manual effort and compliance risk",
     ],
     btnURL: "/novatrain",
-    image: "novatrain.webp",
+    image: "7.webp",
   },
   {
     tabName: "NovaVerify",
@@ -116,7 +116,7 @@ const solutionCardData = [
       "Fast processing and instant results",
     ],
     btnURL: "/novaverify",
-    image: "novaverify.webp",
+    image: "8.webp",
   },
   {
     tabName: "NovaConnect",
@@ -129,7 +129,7 @@ const solutionCardData = [
       "Instant issue resolution",
     ],
     btnURL: "/novaconnect",
-    image: "novaconnect.webp",
+    image: "9.webp",
   },
 ];
 
@@ -155,12 +155,12 @@ function CompleteSolutionSection() {
         </div>
 
         <div className="w-full bg-transparent sm:bg-[#160E381A] rounded-[14px] sm:border border-[#F1EEE3] sm:px-5 sm:py-10 flex flex-col gap-5">
-          <div className="w-full hidden sm:grid md:grid-cols-5 lg:grid-cols-9 lg:rounded-[14px] overflow-hidden gap-[1px]">
+          <div className="w-full hidden sm:grid md:grid-cols-5 slg:grid-cols-7 lg:grid-cols-9 lg:rounded-[14px] overflow-hidden gap-[1px]">
             {solutionButtonList.map((btn, ind) => (
               <button
                 key={ind}
                 onClick={() => setActiveTabFunc(btn)}
-                className={`w-full font-lora font-bold text-lg py-3 hover:text-white hover:bg-[#160E38] text-center px-2 transition-all duration-200 ${
+                className={`w-full font-lora font-bold text-base slg:text-sm lg:text-sm xl:text-base py-3 hover:text-white hover:bg-[#160E38] text-center slg:px-1 px-2 transition-all duration-200 ${
                   activeTab === btn
                     ? "text-white bg-[#160E38]"
                     : "bg-[#160E381A] text-[#636262]"
@@ -185,8 +185,8 @@ function CompleteSolutionSection() {
                       {item.title}
                     </h4>
                     <img
-                      src="/assets/pages/solutionpage/Novacount.webp"
-                      alt=""
+                      src={`/assets/pages/solutionpage/${item.image}`}
+                      alt={item.tabName}
                       className="w-full max-w-[400px]  block lg:hidden pt-6"
                     />
                     <p className="font-lora text-[#FBFBFB] text-base pt-5 pb-4">
@@ -221,8 +221,8 @@ function CompleteSolutionSection() {
                     </NavLink>
                   </div>
                   <img
-                    src="/assets/pages/solutionpage/Novacount.webp"
-                    alt=""
+                    src={`/assets/pages/solutionpage/${item.image}`}
+                    alt={item.tabName}
                     className="w-full max-w-[471px] object-contain hidden lg:block"
                   />
                 </div>
@@ -257,8 +257,8 @@ function CompleteSolutionSection() {
                         {item.title}
                       </h4>
                       <img
-                        src="/assets/pages/solutionpage/Novacount.webp"
-                        alt=""
+                         src={`/assets/pages/solutionpage/${item.image}`}
+                        alt={item.tabName}
                         className="w-full max-w-[400px] object-contain block lg:hidden pt-4"
                       />
                       <p className="font-lora text-[#FBFBFB] text-base pt-3 pb-2">

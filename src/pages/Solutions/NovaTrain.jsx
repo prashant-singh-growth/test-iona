@@ -1,7 +1,11 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import MobileFeatureCard from "../components/MobileFeatureCard";
-import SeoHeader from "../components/utils/SeoHeader";
+import MobileFeatureCard from "../../components/MobileFeatureCard";
+import SeoHeader from "../../components/utils/SeoHeader";
+
+const preloadScheduleDemo = () => {
+  return import("../ScheduleDemo");
+};
 
 const FeatureCard = ({ emoji, title, description, delay }) => {
   return (
@@ -43,16 +47,12 @@ const ConnectorLine = ({ delay = 0, vertical = false, length = "100%" }) => {
   );
 };
 
-const NovaConnect = () => {
-  const preloadScheduleDemo = () => {
-    return import("./ScheduleDemo");
-  };
-
+const NovaTrain = () => {
   return (
     <div className="flex flex-col items-center overflow-x-hidden">
-       <SeoHeader
-      title={"NovaConnect | AI-Powered Hiring by Iona AI"}
-      description={"Discover NovaConnect by Iona.ai — an AI-driven solution that simplifies, humanizes, and accelerates your talent engagement journey."}
+        <SeoHeader
+      title={"TrainPlus | AI-Driven Learning & Development by IONA AI"}
+      description={"Upskill your workforce with TrainPlus. Deliver adaptive, personalized learning experiences powered by AI for continuous growth and performance excellence."}
      
       />
       {/* Hero Section */}
@@ -70,7 +70,7 @@ const NovaConnect = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.2 }}
             >
-              Experience Support at the Speed of Thought, Personalized for Every Touchpoint.
+              Train Before They Clock In
             </motion.h1>
             <motion.p 
               className="text-xl mb-8"
@@ -78,7 +78,7 @@ const NovaConnect = () => {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.7, delay: 0.4 }}
             >
-              Your always-on partner for faster resolutions, smoother onboarding, and human-first assistance, powered by intelligent automation and real expertise.
+              Nova Train delivers mandatory training before Day One—fast, audit-ready, and 100% compliant.
             </motion.p>
             <motion.div 
               className="flex flex-col sm:flex-row gap-4 justify-center"
@@ -87,31 +87,31 @@ const NovaConnect = () => {
               transition={{ duration: 0.7, delay: 0.6 }}
             >
               <Link to="/schedule-demo">
-              <motion.button 
-                className="bg-accent hover:bg-accent-dark text-white px-6 py-3 rounded-lg font-medium transition-colors relative overflow-hidden"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                onMouseEnter={preloadScheduleDemo}
-              >
-                <motion.span 
-                  className="absolute inset-0 bg-white opacity-0 hover:opacity-10 transition-opacity"
-                  whileHover={{ opacity: 0.1 }}
-                />
-                Book a Demo
-              </motion.button>
+                <motion.button 
+                  className="bg-accent hover:bg-accent-dark text-white px-6 py-3 rounded-lg font-medium transition-colors relative overflow-hidden"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  onMouseEnter={preloadScheduleDemo}
+                >
+                  <motion.span 
+                    className="absolute inset-0 bg-white opacity-0 hover:opacity-10 transition-opacity"
+                    whileHover={{ opacity: 0.1 }}
+                  />
+                  Request a Personalized Demo
+                </motion.button>
               </Link>
               <Link to="/#solutions">
-              <motion.button 
-                className="bg-white text-accent px-6 py-3 rounded-lg font-medium transition-colors relative overflow-hidden"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <motion.span 
-                  className="absolute inset-0 bg-black opacity-0 hover:opacity-5 transition-opacity"
-                  whileHover={{ opacity: 0.05 }}
-                />
-                Explore Solutions
-              </motion.button>
+                <motion.button 
+                  className="bg-white text-accent px-6 py-3 rounded-lg font-medium transition-colors relative overflow-hidden"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  <motion.span 
+                    className="absolute inset-0 bg-black opacity-0 hover:opacity-5 transition-opacity"
+                    whileHover={{ opacity: 0.05 }}
+                  />
+                  Explore Solutions
+                </motion.button>
               </Link>
             </motion.div>
           </motion.div>
@@ -129,10 +129,10 @@ const NovaConnect = () => {
             viewport={{ once: true }}
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Why Nova Connect Is More Than Just Support
+              Why Nova Train is a Game-Changer for High-Volume Onboarding
             </h2>
             <p className="text-secondaryText max-w-3xl mx-auto">
-              When every second counts, your team deserves more than a ticketing system.
+              In high-volume hiring, speed is leverage. What if your new hires showed up fully trained on their very first day?
             </p>
           </motion.div>
 
@@ -150,11 +150,11 @@ const NovaConnect = () => {
             >
               <ul className="space-y-3">
                 {[
-                  "Deliver real-time support with human warmth and AI-powered precision",
-                  "Seamlessly integrate with your existing Nova Suite ecosystem for unified support",
-                  "Guide new hires personally with proactive touchpoints before their first day",
-                  "Provide multi-channel support via email, WhatsApp, or voice based on preference",
-                  "Reduce time-to-resolution with instant responses to common questions and concerns"
+                  "Nova Train turns mandatory learning into a competitive advantage.",
+                  "It reimagines how you deliver training—smart, simple, and scalable.",
+                  "Built from First Principles and powered by Nova's AI-driven automation.",
+                  "Eliminates manual coordination, enhances engagement, and guarantees compliance.",
+                  "All this happens before your new hire even walks through the door."
                 ].map((item, index) => (
                   <motion.li 
                     key={index}
@@ -184,9 +184,9 @@ const NovaConnect = () => {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Unmatched Features for Seamless Talent Acquisition Support</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Unmatched Features That Make Nova Train</h2>
             <p className="text-secondaryText max-w-3xl mx-auto">
-              Comprehensive tools to connect your systems and unify your HR data ecosystem
+              From compliance to confidence, Nova Train makes every training session count—at any hiring scale.
             </p>
           </motion.div>
 
@@ -194,33 +194,33 @@ const NovaConnect = () => {
             {/* Mobile View */}
             <div className="w-full md:hidden">
               <MobileFeatureCard 
-                emoji="🤝"
-                title="Smart Candidate Matching"
-                description="AI-powered matching that connects candidates with the right opportunities based on skills, experience, and preferences"
+                emoji="🎓"
+                title="Day Zero Productivity"
+                description="New hires complete mandatory training in the pre-joining phase"
                 delay={0.1}
               />
               <MobileFeatureCard 
                 emoji="💬"
-                title="Automated Engagement"
-                description="Personalized communication workflows that keep candidates engaged throughout the hiring process"
+                title="Chatbot-Guided Learning"
+                description="Our intelligent chatbot delivers SCORM-compliant training modules and answers queries in real time"
                 delay={0.2}
               />
               <MobileFeatureCard 
-                emoji="📱"
-                title="Mobile-First Experience"
-                description="Seamless mobile interface that allows candidates to apply, track status, and communicate on the go"
+                emoji="🛡️"
+                title="Audit-Ready Compliance"
+                description="Every module, assessment, and certification is tracked, timestamped, and securely stored"
                 delay={0.3}
               />
               <MobileFeatureCard 
-                emoji="📊"
-                title="Real-Time Analytics"
-                description="Comprehensive dashboards and insights to track candidate engagement and optimize your hiring process"
+                emoji="📚"
+                title="Bite-Sized Learning"
+                description="Engaging microlearning modules with built-in assessments and automated certification"
                 delay={0.4}
               />
               <MobileFeatureCard 
-                emoji="🔄"
-                title="Seamless Integration"
-                description="Easy integration with your existing ATS and HR systems for a unified hiring experience"
+                emoji="📊"
+                title="Engagement Insights"
+                description="Real-time analytics on module completion and attention spans to spot red flags"
                 delay={0.5}
               />
             </div>
@@ -246,10 +246,10 @@ const NovaConnect = () => {
                     whileHover={{ scale: 1.1 }}
                     transition={{ duration: 0.3 }}
                   >
-                    <div className="text-4xl mb-1 bg-accent/10 p-3 rounded-full">🤝</div>
+                    <div className="text-4xl mb-1 bg-accent/10 p-3 rounded-full">🎓</div>
                   </motion.div>
-                  <h3 className="text-xl font-semibold mb-1">Smart Candidate Matching</h3>
-                  <p className="text-secondaryText text-sm">AI-powered matching that connects candidates with the right opportunities based on skills, experience, and preferences</p>
+                  <h3 className="text-xl font-semibold mb-1">Day Zero Productivity</h3>
+                  <p className="text-secondaryText text-sm">New hires complete mandatory training in the pre-joining phase</p>
                 </motion.div>
               </div>
 
@@ -276,15 +276,15 @@ const NovaConnect = () => {
               <div className="flex justify-between mt-4 mb-16">
                 <FeatureCard 
                   emoji="💬" 
-                  title="Automated Engagement" 
-                  description="Personalized communication workflows that keep candidates engaged throughout the hiring process"
+                  title="Chatbot-Guided Learning" 
+                  description="Our intelligent chatbot delivers SCORM-compliant training modules and answers queries in real time"
                   delay={0.25}
                 />
 
                 <FeatureCard 
-                  emoji="📱" 
-                  title="Mobile-First Experience" 
-                  description="Seamless mobile interface that allows candidates to apply, track status, and communicate on the go"
+                  emoji="🛡️" 
+                  title="Audit-Ready Compliance" 
+                  description="Every module, assessment, and certification is tracked, timestamped, and securely stored"
                   delay={0.3}
                 />
               </div>
@@ -306,16 +306,16 @@ const NovaConnect = () => {
               {/* Bottom Level Nodes */}
               <div className="flex justify-between mt-4">
                 <FeatureCard 
-                  emoji="📊" 
-                  title="Real-Time Analytics" 
-                  description="Comprehensive dashboards and insights to track candidate engagement and optimize your hiring process"
+                  emoji="📚" 
+                  title="Bite-Sized Learning" 
+                  description="Engaging microlearning modules with built-in assessments and automated certification"
                   delay={0.45}
                 />
 
                 <FeatureCard 
-                  emoji="🔄" 
-                  title="Seamless Integration" 
-                  description="Easy integration with your existing ATS and HR systems for a unified hiring experience"
+                  emoji="📊" 
+                  title="Engagement Insights" 
+                  description="Real-time analytics on module completion and attention spans to spot red flags"
                   delay={0.5}
                 />
               </div>
@@ -324,43 +324,39 @@ const NovaConnect = () => {
         </div>
       </section>
 
-      {/* Dashboard Section */}
+      {/* CTA Middle Section */}
       <section className="w-full py-16 bg-purple-gradient text-white">
-        <div className="max-w-6xl mx-auto px-6">
-          <motion.div 
-            className="text-center mb-12"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+        <motion.div 
+          className="max-w-3xl mx-auto px-6 text-center"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Support Meets Scale</h2>
+          <motion.p 
+            className="mb-8"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Support You Can Feel.</h2>
-            <p className="max-w-3xl mx-auto">
-              Try Nova Connect and experience the most human support system ever built into a hiring suite.
-            </p>
-          </motion.div>
-          <motion.div 
-            className="flex justify-center"
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            viewport={{ once: true }}
-          >
-            <Link to="/schedule-demo">
-              <motion.button
-                className="bg-white text-accent hover:bg-gray-100 px-10 py-4 rounded-lg font-medium text-lg shadow-lg transition-colors relative overflow-hidden"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.98 }}
-              >
-                <motion.span 
-                  className="absolute inset-0 bg-black opacity-0 hover:opacity-5 transition-opacity"
-                  whileHover={{ opacity: 0.05 }}
-                />
-                Request a Personalized Demo
-              </motion.button>
-            </Link>
-          </motion.div>
-        </div>
+            From compliance to confidence, Nova Train makes every training session count—at any hiring scale.
+          </motion.p>
+          <Link to="/schedule-demo">
+            <motion.button 
+              className="bg-white text-accent px-8 py-3 rounded-lg font-medium transition-colors hover:bg-gray-100 relative overflow-hidden"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.98 }}
+            >
+              <motion.span 
+                className="absolute inset-0 bg-black opacity-0 hover:opacity-5 transition-opacity"
+                whileHover={{ opacity: 0.05 }}
+              />
+              Request Your Personalized Demo
+            </motion.button>
+          </Link>
+        </motion.div>
       </section>
 
       {/* How it Works Section */}
@@ -373,27 +369,39 @@ const NovaConnect = () => {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">How does it Work</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">How It Works – 3 Ways Nova Train Transforms Training</h2>
             <p className="text-secondaryText max-w-3xl mx-auto">
-              Ways Nova Connect makes your life easier:
+              A seamless process to deliver, track, and perfect pre-joining training.
             </p>
           </motion.div>
 
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                title: "Seamless Onboarding Integration",
-                description: "With a single click, your team gains access to Nova Connect, which instantly integrates with your workflow, offering hassle-free support at every step. From the first interaction to ongoing assistance, it's designed to be as smooth as possible."
+                title: "Pre-Day One Learning",
+                items: [
+                  "Assign mandatory modules right after offer acceptance—cutting idle time between offer and start date.",
+                  "Provide clear, structured learning paths customized to each role and department.",
+                  "Enable completion of compliance requirements before the employee's first day on the job."
+                ]
               },
               {
-                title: "Instant AI-Powered Help",
-                description: "Our intelligent AI system, available 24/7, provides quick answers to common queries, reducing delays in the onboarding process. It handles basic questions while ensuring that your new hires always have the support they need."
+                title: "AI-Led, Human-Centered",
+                items: [
+                  "Chatbot assistance creates a frictionless learning experience that feels natural and engaging.",
+                  "Intelligent system answers questions and provides guidance throughout the training process.",
+                  "Balance automation with personal touch to ensure high engagement and completion rates."
+                ]
               },
               {
-                title: "Human Expertise When Needed",
-                description: "For more complex issues, our dedicated support team steps in to provide personalized, expert help. Whether it's resolving technical concerns or addressing emotional support for new hires, our team is here to ensure everything runs smoothly."
+                title: "Complete Visibility, Zero Admin",
+                items: [
+                  "Training scores, certifications, and audit trails are auto-recorded—freeing up your HR team.",
+                  "Real-time dashboards show completion rates and identify potential issues before day one.",
+                  "Automated reminders and notifications ensure timely completion without manual follow-up."
+                ]
               }
-            ].map((item, index) => (
+            ].map((section, index) => (
               <motion.div 
                 key={index}
                 className="bg-gray-50 p-6 rounded-xl hover:shadow-md transition-shadow"
@@ -403,19 +411,29 @@ const NovaConnect = () => {
                 viewport={{ once: true }}
                 whileHover={{ y: -5 }}
               >
-                <div>
-                  <h3 className="font-semibold">{item.title}</h3>
-                </div>
-                <p className="text-secondaryText mb-4">
-                  {item.description}
-                </p>
+                <h3 className="text-xl font-semibold mb-2">{section.title}</h3>
+                <ul className="space-y-3">
+                  {section.items.map((item, itemIndex) => (
+                    <motion.li 
+                      key={itemIndex}
+                      className="flex items-start"
+                      initial={{ opacity: 0, x: -10 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      transition={{ duration: 0.4, delay: 0.3 + itemIndex * 0.1 }}
+                      viewport={{ once: true }}
+                    >
+                      <span className="text-accent mr-2">•</span>
+                      <span>{item}</span>
+                    </motion.li>
+                  ))}
+                </ul>
               </motion.div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* Final CTA Section */}
       <section className="w-full py-16 bg-purple-gradient text-white">
         <motion.div 
           className="max-w-3xl mx-auto px-6 text-center"
@@ -424,7 +442,7 @@ const NovaConnect = () => {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Transform your talent onboarding journey with Nova Connect.</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Nova Train: Make Every Minute Before Day One Count</h2>
           <motion.p 
             className="mb-8"
             initial={{ opacity: 0 }}
@@ -432,7 +450,7 @@ const NovaConnect = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            Experience instant, personalized support that empowers your new hires and your team.
+            Reimagine compliance, boost productivity, and never chase a training certificate again.
           </motion.p>
           <Link to="/schedule-demo">
             <motion.button 
@@ -444,7 +462,7 @@ const NovaConnect = () => {
                 className="absolute inset-0 bg-black opacity-0 hover:opacity-5 transition-opacity"
                 whileHover={{ opacity: 0.05 }}
               />
-              Book a Demo
+              Request a Personalized Demo
             </motion.button>
           </Link>
         </motion.div>
@@ -453,4 +471,4 @@ const NovaConnect = () => {
   );
 };
 
-export default NovaConnect; 
+export default NovaTrain; 

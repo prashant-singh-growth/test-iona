@@ -1,7 +1,11 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import MobileFeatureCard from "../components/MobileFeatureCard";
-import SeoHeader from "../components/utils/SeoHeader";
+import MobileFeatureCard from "../../components/MobileFeatureCard";
+import SeoHeader from "../../components/utils/SeoHeader";
+
+const preloadScheduleDemo = () => {
+  return import("../ScheduleDemo");
+};
 
 const FeatureCard = ({ emoji, title, description, delay }) => {
   return (
@@ -43,16 +47,12 @@ const ConnectorLine = ({ delay = 0, vertical = false, length = "100%" }) => {
   );
 };
 
-const NovaVerify = () => {
-  const preloadScheduleDemo = () => {
-    return import("./ScheduleDemo");
-  };
-
+const NovaStart = () => {
   return (
     <div className="flex flex-col items-center overflow-x-hidden">
         <SeoHeader
-      title={"NovaVerify | Smart Candidate Verification by IONA AI"}
-      description={"Ensure authenticity and trust in hiring with NovaVerify. Leverage AI-driven verification to validate credentials, background, and candidate integrity."}
+      title={"NovaStart | Seamless Onboarding Automation by IONA AI"}
+      description={"Transform onboarding with NovaStart. Deliver personalized, efficient, and delightful experiences that set employees up for success from day one."}
      
       />
       {/* Hero Section */}
@@ -70,7 +70,7 @@ const NovaVerify = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.2 }}
             >
-              Effortless Trust, Unrivaled Speed in High-Volume Background Checks
+              Own the Offer. Outpace the Competition.
             </motion.h1>
             <motion.p 
               className="text-xl mb-8"
@@ -78,7 +78,7 @@ const NovaVerify = () => {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.7, delay: 0.4 }}
             >
-              Powered by the clarity of Iona and the automation brilliance of Nova, this is background verification as it should be: fast, seamless, cost-effective and fully managed.
+              In high-volume hiring, the real race begins after the "yes." Nova Start ensures you win it—faster, smarter, and at scale.
             </motion.p>
             <motion.div 
               className="flex flex-col sm:flex-row gap-4 justify-center"
@@ -100,7 +100,7 @@ const NovaVerify = () => {
                 Book a Demo
               </motion.button>
               </Link>
-              <Link to="/#solutions">
+              <Link to="/contact">
               <motion.button 
                 className="bg-white text-accent px-6 py-3 rounded-lg font-medium transition-colors relative overflow-hidden"
                 whileHover={{ scale: 1.05 }}
@@ -110,7 +110,7 @@ const NovaVerify = () => {
                   className="absolute inset-0 bg-black opacity-0 hover:opacity-5 transition-opacity"
                   whileHover={{ opacity: 0.05 }}
                 />
-                Explore Solutions
+                Contact Sales
               </motion.button>
               </Link>
             </motion.div>
@@ -129,10 +129,10 @@ const NovaVerify = () => {
             viewport={{ once: true }}
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Say Goodbye to BGV Headaches, Forever
+              Why Nova Start Is More Than Just Offer Management
             </h2>
             <p className="text-secondaryText max-w-3xl mx-auto">
-              Manual processes, scattered vendors, and SLA firefighting don't scale but your hiring needs do.
+              The gap between selection and acceptance is where you either close or lose top talent.
             </p>
           </motion.div>
 
@@ -150,11 +150,11 @@ const NovaVerify = () => {
             >
               <ul className="space-y-3">
                 {[
-                  "Eliminate vendor management, system integrations, and manual tracking completely",
-                  "Reduce background verification turnaround times and costs across the board",
-                  "Deliver a superior candidate experience that keeps top talent engaged throughout",
-                  "Free your team to focus on strategic hiring instead of administrative tasks",
-                  "Maintain compliance and security standards with automated verification protocols"
+                  "Nova Start transforms this critical stage into a strategic advantage—eliminating delays, automating complexity, and turning offer management into your most efficient asset.",
+                  "While others chase approvals and get stuck in manual workflows, you move with clarity, speed, and confidence.",
+                  "Designed for high-volume hiring at scale",
+                  "AI-enhanced, precision-led workflows",
+                  "Built with a First Principles understanding of talent urgency"
                 ].map((item, index) => (
                   <motion.li 
                     key={index}
@@ -184,57 +184,43 @@ const NovaVerify = () => {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <motion.h2 
-              className="text-3xl md:text-4xl font-bold mb-4"
-              initial={{ opacity: 0, y: -10 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              viewport={{ once: true }}
-            >
-              Built for High-Volume. Designed for Peace of Mind.
-            </motion.h2>
-            <motion.p 
-              className="text-secondaryText max-w-3xl mx-auto"
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              viewport={{ once: true }}
-            >
-              Comprehensive tools to streamline your entire verification and compliance process
-            </motion.p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Unmatched Features for Winning High-Volume Talent Fast</h2>
+            <p className="text-secondaryText max-w-3xl mx-auto">
+              Nova Start brings intelligent offer management to every stage of your hiring process
+            </p>
           </motion.div>
 
           <div className="flex flex-col items-center">
             {/* Mobile View */}
             <div className="w-full md:hidden">
               <MobileFeatureCard 
-                emoji="🔍"
-                title="Automated Background Checks"
-                description="Streamlined verification process that handles criminal records, employment history, and education verification"
+                emoji="💬"
+                title="Smart, Streamlined Negotiations"
+                description="Real-time access to market data and candidate expectations for faster, more informed negotiations"
                 delay={0.1}
               />
               <MobileFeatureCard 
-                emoji="📝"
-                title="Document Verification"
-                description="AI-powered document analysis to verify identity documents, certifications, and professional licenses"
+                emoji="📨"
+                title="Frictionless Offer Delivery"
+                description="Send secure, user-friendly offer letters that candidates can review and accept instantly"
                 delay={0.2}
               />
               <MobileFeatureCard 
-                emoji="🌐"
-                title="Global Compliance"
-                description="Automated compliance checks across different jurisdictions and regulatory requirements"
+                emoji="📁"
+                title="Built-In Compliance, Scaled"
+                description="Ensure every offer meets legal and internal standards automatically, even across thousands of candidates"
                 delay={0.3}
               />
               <MobileFeatureCard 
                 emoji="📊"
-                title="Real-Time Status Tracking"
-                description="Monitor verification progress and receive instant notifications when checks are complete"
+                title="Real-Time Offer Tracking"
+                description="Monitor every offer in flight, flag delays, and take proactive action before talent slips away"
                 delay={0.4}
               />
               <MobileFeatureCard 
-                emoji="🔒"
-                title="Secure Data Handling"
-                description="Enterprise-grade security with end-to-end encryption and strict data privacy controls"
+                emoji="🎯"
+                title="Automated Follow-ups"
+                description="Keep candidates engaged with timely reminders and updates throughout the offer process"
                 delay={0.5}
               />
             </div>
@@ -260,10 +246,10 @@ const NovaVerify = () => {
                     whileHover={{ scale: 1.1 }}
                     transition={{ duration: 0.3 }}
                   >
-                    <div className="text-4xl mb-1 bg-accent/10 p-3 rounded-full">🔍</div>
+                    <div className="text-4xl mb-1 bg-accent/10 p-3 rounded-full">💬</div>
                   </motion.div>
-                  <h3 className="text-xl font-semibold mb-1">Automated Background Checks</h3>
-                  <p className="text-secondaryText text-sm">Streamlined verification process that handles criminal records, employment history, and education verification</p>
+                  <h3 className="text-xl font-semibold mb-1">Smart, Streamlined Negotiations</h3>
+                  <p className="text-secondaryText text-sm">Real-time access to market data and candidate expectations for faster, more informed negotiations</p>
                 </motion.div>
               </div>
 
@@ -289,16 +275,16 @@ const NovaVerify = () => {
               {/* Second Level Nodes */}
               <div className="flex justify-between mt-4 mb-16">
                 <FeatureCard 
-                  emoji="📝" 
-                  title="Document Verification" 
-                  description="AI-powered document analysis to verify identity documents, certifications, and professional licenses"
+                  emoji="📨" 
+                  title="Frictionless Offer Delivery" 
+                  description="Send secure, user-friendly offer letters that candidates can review and accept instantly"
                   delay={0.25}
                 />
 
                 <FeatureCard 
-                  emoji="🌐" 
-                  title="Global Compliance" 
-                  description="Automated compliance checks across different jurisdictions and regulatory requirements"
+                  emoji="📁" 
+                  title="Built-In Compliance, Scaled" 
+                  description="Ensure every offer meets legal and internal standards automatically, even across thousands of candidates"
                   delay={0.3}
                 />
               </div>
@@ -321,15 +307,15 @@ const NovaVerify = () => {
               <div className="flex justify-between mt-4">
                 <FeatureCard 
                   emoji="📊" 
-                  title="Real-Time Status Tracking" 
-                  description="Monitor verification progress and receive instant notifications when checks are complete"
+                  title="Real-Time Offer Tracking" 
+                  description="Monitor every offer in flight, flag delays, and take proactive action before talent slips away"
                   delay={0.45}
                 />
 
                 <FeatureCard 
-                  emoji="🔒" 
-                  title="Secure Data Handling" 
-                  description="Enterprise-grade security with end-to-end encryption and strict data privacy controls"
+                  emoji="🎯" 
+                  title="Automated Follow-ups" 
+                  description="Keep candidates engaged with timely reminders and updates throughout the offer process"
                   delay={0.5}
                 />
               </div>
@@ -338,134 +324,111 @@ const NovaVerify = () => {
         </div>
       </section>
 
-      {/* Dashboard Section */}
-      <section className="w-full py-16 bg-purple-gradient text-white">
-        <div className="max-w-6xl mx-auto px-6">
-          <motion.div 
-            className="text-center mb-12"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-          >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">High-Volume Hiring Deserves High-Velocity Trust.</h2>
-            <p className="max-w-3xl mx-auto">
-              We make background verification invisible, so your best hires show up, not slow down.
-            </p>
-          </motion.div>
-
-          <motion.div 
-            className="flex justify-center"
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            viewport={{ once: true }}
-          >
-            <Link to="/schedule-demo">
-              <motion.button
-                className="bg-white text-accent hover:bg-gray-100 px-10 py-4 rounded-lg font-medium text-lg shadow-lg transition-colors relative overflow-hidden"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.98 }}
-              >
-                <motion.span 
-                  className="absolute inset-0 bg-black opacity-0 hover:opacity-5 transition-opacity"
-                  whileHover={{ opacity: 0.05 }}
-                />
-                Request a Personalized Demo
-              </motion.button>
-            </Link>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Testimonials Section */}
+      {/* Benefits Section */}
       <section className="w-full py-16 bg-white">
         <div className="max-w-6xl mx-auto px-6">
           <motion.div 
-            className="text-center mb-12"
+            className="text-center mb-16"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">How does it work?</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              How It Works – 3 Ways Nova Start Accelerates Success
+            </h2>
             <p className="text-secondaryText max-w-3xl mx-auto">
-              Nova Verify simplifies and streamlines your background verification process, ensuring you get trustworthy results with minimal effort.
+              Nova Start isn't just fast—it's intelligent, compliant, and built to help you win talent when it matters most
             </p>
           </motion.div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                title: "Seamless Setup and Integration",
-                description: "Get started quickly by integrating Nova Verify into your existing hiring systems. With minimal setup, you can start verifying candidates without disruptions to your workflow."
-              },
-              {
-                title: "AI-Driven Automation and Real-Time Tracking",
-                description: "Once integrated, Nova Verify automates the entire BGV process, from submission to completion. Enjoy real-time updates, keeping your team informed and on track."
-              },
-              {
-                title: "Tailored Solutions with Provider Flexibility",
-                description: "Choose the right background check providers for each candidate, role, or location. Nova Verify lets you easily switch providers as needed, ensuring maximum efficiency and cost savings."
-              }
-            ].map((item, index) => (
-              <motion.div 
-                key={index}
-                className="bg-gray-50 p-6 rounded-xl hover:shadow-md transition-shadow"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                viewport={{ once: true }}
-                whileHover={{ y: -5 }}
-              >
-                <div>
-                  <h3 className="font-semibold">{item.title}</h3>
-                </div>
-                <p className="text-secondaryText mb-4">
-                  {item.description}
-                </p>
-              </motion.div>
-            ))}
+            <motion.div 
+              className="bg-gray-50 p-8 rounded-xl shadow-sm"
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+              whileHover={{ 
+                y: -5,
+                boxShadow: "0 10px 25px -5px rgba(0, 0, 0, 0.1)"
+              }}
+            >
+              <h3 className="text-xl font-bold mb-4"> One-Click Offer Generation</h3>
+              <p className="text-secondaryText">
+                From internal approvals to letter generation, Nova Start collapses complex processes into a single, streamlined flow.
+              </p>
+            </motion.div>
+
+            <motion.div 
+              className="bg-gray-50 p-8 rounded-xl shadow-sm"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              viewport={{ once: true }}
+              whileHover={{ 
+                y: -5,
+                boxShadow: "0 10px 25px -5px rgba(0, 0, 0, 0.1)"
+              }}
+            >
+              <h3 className="text-xl font-bold mb-4"> Automated, Adaptive Workflows</h3>
+              <p className="text-secondaryText">
+                The system learns and evolves with your organization—helping you scale without losing accuracy or speed.
+              </p>
+            </motion.div>
+
+            <motion.div 
+              className="bg-gray-50 p-8 rounded-xl shadow-sm"
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              viewport={{ once: true }}
+              whileHover={{ 
+                y: -5,
+                boxShadow: "0 10px 25px -5px rgba(0, 0, 0, 0.1)"
+              }}
+            >
+              <h3 className="text-xl font-bold mb-4"> Clarity at Every Stage</h3>
+              <p className="text-secondaryText">
+                Get instant visibility into offer status, bottlenecks, and drop-off risks—so you can act, not react.
+              </p>
+            </motion.div>
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
       <section className="w-full py-16 bg-purple-gradient text-white">
-        <motion.div 
-          className="max-w-3xl mx-auto px-6 text-center"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-        >
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Say Goodbye to BGV Chaos</h2>
-          <motion.p 
-            className="mb-8"
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
+        <div className="max-w-6xl mx-auto px-6 text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
             viewport={{ once: true }}
+            className="max-w-3xl mx-auto"
           >
-            Experience faster, frictionless background verification with Nova Verify.
-          </motion.p>
-          <Link to="/schedule-demo">
-            <motion.button 
-              className="bg-white text-accent px-8 py-3 rounded-lg font-medium transition-colors hover:bg-gray-100 relative overflow-hidden"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.98 }}
-            >
-              <motion.span 
-                className="absolute inset-0 bg-black opacity-0 hover:opacity-5 transition-opacity"
-                whileHover={{ opacity: 0.05 }}
-              />
-              Request a Demo Now
-            </motion.button>
-          </Link>
-        </motion.div>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">In High-Volume Hiring, Speed Wins. Nova Start Helps You Win Faster.</h2>
+            <p className="text-xl mb-8">
+              Own the offer. Secure the hire. Stay ahead of the competition.
+            </p>
+            <Link to="/schedule-demo">
+              <motion.button 
+                className="bg-white text-accent px-8 py-3 rounded-lg font-medium transition-colors inline-flex items-center"
+                whileHover={{ scale: 1.05, boxShadow: "0 10px 25px rgba(0, 0, 0, 0.1)" }}
+                whileTap={{ scale: 0.95 }}
+                onMouseEnter={preloadScheduleDemo}
+              >
+                <span>Book a Demo</span>
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                  <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                </svg>
+              </motion.button>
+            </Link>
+          </motion.div>
+        </div>
       </section>
     </div>
   );
 };
 
-export default NovaVerify; 
+export default NovaStart; 

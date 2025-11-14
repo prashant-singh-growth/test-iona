@@ -126,7 +126,7 @@ const Contact = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid md:grid-cols-2 gap-12">
           {/* Contact Info */}
-          <div className="bg-white p-8 rounded-lg shadow-custom relative overflow-hidden" data-aos="fade-right">
+          <div className="bg-white p-8 rounded-lg shadow-custom relative overflow-hidden" >
             {/* Background GIF */}
             <div className="absolute inset-0 z-0 opacity-10">
               <img
@@ -194,7 +194,7 @@ const Contact = () => {
           </div>
 
           {/* Form */}
-          <div className="bg-white p-8 rounded-lg shadow-custom" data-aos="fade-left">
+          <div className="bg-white p-8 rounded-lg shadow-custom" >
             <h2 className="text-2xl font-bold mb-6">Send Us a Message</h2>
 
             <form className="space-y-6" onSubmit={handleSubmit}>
