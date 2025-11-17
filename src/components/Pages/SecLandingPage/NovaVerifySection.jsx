@@ -87,7 +87,7 @@ function NovaVerifySection() {
             talent. Faster turnaround time.
           </p>
           <a
-            href="/contact"
+              href="#form"
             className="bg-primary px-4 py-2.5 font-bold leading-5 md:px-5 md:py-3 w-fit text-[14px] text-white flex flex-row space-x-2 rounded hover:scale-95 ease-in-out duration-150"
           >
             <span>Explore Modules</span>{" "}

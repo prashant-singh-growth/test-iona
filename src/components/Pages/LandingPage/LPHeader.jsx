@@ -2,7 +2,7 @@ import React from 'react'
 
 function LPHeader() {
   return (
-   <header className="w-full px-5 md:px-10 slg:px-[60px] lg:px-[90px] grid place-items-center fixed top-0 h-[100px] bg-white z-50">
+   <header className="w-full px-5 md:px-10 slg:px-[60px] lg:px-[90px] grid place-items-center fixed top-0 h-[80px] bg-white z-50">
           <div className="w-full max-w-[1440px] flex flex-row justify-between items-center">
             <img
               src="/assets/pages/landingpage/iona-logo.png"

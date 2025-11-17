@@ -16,8 +16,8 @@ function LandingPageBanner() {
                  Eliminate 100% of the background verification headaches and administration, cut operational costs, and onboard verified talent faster than ever before.
                 </p>
                 <div className="w-full flex flex-col sm:flex-row justify-between md:justify-start gap-5 mt-8 md:mt-12 lg:mt-12 slg:mt-10 ">
-                  <Link
-                    to="/contact"
+                  <a
+                    href="#form"
                     className="bg-primary px-4 py-2.5 font-bold leading-5 md:px-5 md:py-3 w-fit text-[14px] text-white flex flex-row space-x-2 rounded hover:scale-95 ease-in-out duration-150"
                   >
                     <span>Explore Modules</span>{" "}
@@ -36,9 +36,9 @@ function LandingPageBanner() {
                         stroke-linejoin="round"
                       />
                     </svg>
-                  </Link>
+                  </a>
                   <a
-                    href="#solution"
+                      href="#form"
                     className="border-primary font-bold leading-5 border w-fit bg-white px-4 py-2.5 md:px-5 md:py-3 text-[14px] text-primary flex flex-row space-x-2 rounded hover:scale-95 ease-in-out duration-150"
                   >
                     <span>Book a Demo</span>{" "}

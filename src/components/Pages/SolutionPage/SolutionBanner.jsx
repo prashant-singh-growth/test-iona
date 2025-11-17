@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 function SolutionBanner() {
   return (
-   <section className="w-full h-fit relative px-5 md:px-10 slg:px-[60px] lg:px-[90px] !pt-20 md:py-16 lg:py-20 sm:!pb-0 lg:!pt-24  flex flex-col justify-center items-center">
+   <section className="w-full h-fit relative px-5 md:px-10 slg:px-[60px] lg:px-[90px] !pt-20 md:py-16 lg:py-20 sm:!pb-0 lg:!pt-24  flex flex-col justify-center items-center ">
 
            <ResponsiveGridLines gradientReplacement={[10, 37, 50, 47, 93, 70, 100, 90, 50, 40]} />
            <div className="w-full max-w-[100vw] lg:max-w-[1440px] grid lg:grid-cols-2 place-items-center  z-10 gap-10 lg:gap-0 relative lg:pb-20">

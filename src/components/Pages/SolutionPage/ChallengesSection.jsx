@@ -8,7 +8,7 @@ const challengesList = [
 </svg>`,
     Title: "AI-Powered Sourcing </br> & Screening",
     Description:
-      "iona’s AI automatically sources candidates based on your job requirements and analyzes resumes to identify the best-fit applicants.",
+      "iona.ai automatically sources candidates based on your job requirements and analyzes resumes to identify the best-fit applicants.",
   },
   {
     Icon: `<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -40,7 +40,7 @@ const challengesList = [
 `,
     Title: "Fast & Accurate </br> Background Verification",
     Description:
-      "iona automates the background verification process, instantly verifying qualifications, employment history, and other key details while ensuring 100% compliance.",
+      "iona.ai automates the background verification process, instantly verifying qualifications, employment history, and other key details while ensuring 100% compliance.",
   },
   {
     Icon: `<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -51,7 +51,7 @@ const challengesList = [
 `,
     Title: "Seamless </br> Onboarding",
     Description:
-      "iona streamlines onboarding with automated document collection, task management, and compliance checks, ensuring new hires are ready to work faster.",
+      "iona.ai streamlines onboarding with automated document collection, task management, and compliance checks, ensuring new hires are ready to work faster.",
   },
 ];
 function ChallengesSection() {

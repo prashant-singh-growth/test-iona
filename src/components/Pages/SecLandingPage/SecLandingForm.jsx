@@ -22,9 +22,10 @@ function SecLandingForm() {
     success: null,
     error: null,
   });
+<script src="https://js-eu1.hsforms.net/forms/embed/146385824.js" defer></script>
 
   const portalId = "146385824";
-  const formId = "eae9697d-396b-4497-88c0-49fd58c6bc13";
+  const formId = "111e8b76-43a5-4b9c-a3d8-3516917d2932";
 
   // Capture UTM and tracking parameters
   useEffect(() => {
