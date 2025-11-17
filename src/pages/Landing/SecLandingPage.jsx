@@ -23,14 +23,14 @@ function SecLandingPage() {
     <LandingPageBanner/>
     <ClientBadgeSection/>
     <NovaFixesSection/>
-    {/* <NovaVerifySection/> */}
-{/* <CertificationSection/>
+    <NovaVerifySection/>
+<CertificationSection/>
 <CustomersExperienceSection/>
     <CTASection
     title={"Ready to solve your background check hassles?"}
     description={"Get started today and automate 100% of your recruitment from sourcing to onboarding with background verification and a 100% data accuracy guarantee."}
     />
-    <LPFooter/> */}
+    <LPFooter/>
    </div>
   )
 }

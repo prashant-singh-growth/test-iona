@@ -1,6 +1,5 @@
-import React from 'react'
+
 import ResponsiveGridLines from '../../utils/ResponsiveGridLines'
-import { Link } from 'react-router-dom'
 import SecLandingForm from './SecLandingForm'
 
 function LandingPageBanner() {
