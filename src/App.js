@@ -185,7 +185,7 @@ function AppWrapper() {
 
 function AppContent() {
   const location = useLocation();
-  const hideNavbarRoutes = ["/end-to-end-hiring-solution-for-enterprises","/lp"];
+  const hideNavbarRoutes = ["/end-to-end-hiring-solution-for-enterprises","/automated-background-verification"];
   const shouldHideNavbar = hideNavbarRoutes.includes(location.pathname);
 
   return (
