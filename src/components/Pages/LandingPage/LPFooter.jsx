@@ -1,6 +1,6 @@
 import React from 'react'
 import { FaLinkedinIn } from 'react-icons/fa6'
-import { NavLink } from 'react-router-dom'
+// import { NavLink } from 'react-router-dom'
 
 function LPFooter() {
   return (
@@ -37,11 +37,11 @@ function LPFooter() {
             <p className="text-xs text-black">
               Copyright © {new Date().getFullYear()} | All right reserved.
             </p>
-            <p className="text-xs text-black">
+            {/* <p className="text-xs text-black">
               <NavLink to="/privacy">Privacy policy</NavLink> |{" "}
               <NavLink to="/terms">Terms & conditions</NavLink> |{" "}
               <NavLink to="/cookies">Cookie Policy</NavLink>
-            </p>
+            </p> */}
           </div>
         </div>
       </footer>
