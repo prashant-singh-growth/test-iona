@@ -13,7 +13,7 @@ function ClientBadgeSection() {
         <p className="text-sm font-normal font-sora text-center text-[#808080] font-lora">
           Trusted by leading brands and customers
         </p>
-        <div className="flex  gap-5 whitespace-nowrap max-w-[80vw] md:max-w-full flex-wrap justify-start">
+        <div className="flex  gap-5 whitespace-nowrap   flex-wrap justify-center items-center">
         {[...logos].map((logo, i) => (
 <img
   key={i}
@@ -21,7 +21,7 @@ function ClientBadgeSection() {
   alt={`logo-${i}`}
   className="
     transition-all
-    h-12 sm:h-10 md:h-14 lg:h-16
+    h-10 sm:h-10 md:h-14 lg:h-16
     px-3 sm:px-4 md:px-6 lg:px-[34px]
     py-1.5 sm:py-2 md:py-3 lg:py-[14px]
     border border-[#D6D6D6]
