@@ -15,21 +15,23 @@ function ClientBadgeSection() {
         </p>
         <div className="flex  gap-5 whitespace-nowrap max-w-[80vw] md:max-w-full flex-wrap justify-start">
         {[...logos].map((logo, i) => (
-  <img
-    key={i}
-    src={logo}
-    alt={`logo-${i}`}
-    className="
-      transition-all 
-      w-fit 
-      h-8 sm:h-10 md:h-14 lg:h-16
-      px-3 sm:px-4 md:px-6 lg:px-[34px]
-      py-1.5 sm:py-2 md:py-3 lg:py-[14px]
-      border border-[#D6D6D6]
-      rounded-md sm:rounded-lg md:rounded-xl lg:rounded-[20px]
-      object-contain
-    "
-  />
+<img
+  key={i}
+  src={logo}
+  alt={`logo-${i}`}
+  className="
+    transition-all
+    h-12 sm:h-10 md:h-14 lg:h-16
+    px-3 sm:px-4 md:px-6 lg:px-[34px]
+    py-1.5 sm:py-2 md:py-3 lg:py-[14px]
+    border border-[#D6D6D6]
+    rounded-md sm:rounded-lg md:rounded-xl lg:rounded-[20px]
+    object-contain
+
+    w-auto max-w-max inline-block 
+  "
+/>
+
 ))}
 
         </div>
