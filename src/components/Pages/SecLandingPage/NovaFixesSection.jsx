@@ -1,4 +1,6 @@
 import React from "react";
+import { FaCheck } from "react-icons/fa6";
+import { VscClose } from "react-icons/vsc";
 const novaFixesList = [
     {
         icon:` <svg
@@ -250,14 +252,19 @@ function NovaFixesSection() {
         </div>
         <div className="w-full grid grid-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-5">
           {novaFixesList.map((list,ind)=>(
-            <div key={ind} className="w-full bg-white flex flex-col gap-4 py-[22px] px-[32px] border-2 border-[#160E381A] rounded-[12px]">
+            <div key={ind} className="w-full hover:shadow-md ease-linear duration-150 hover:-translate-y-1 hover:scale-[0.98] bg-white flex flex-col gap-4 py-[22px] px-[20px] border-2 border-[#160E381A] rounded-[12px]">
             <div className="flex gap-2 flex-row border-b border-[#160E381A] pb-3 items-center">
              <div className="w-10" dangerouslySetInnerHTML={{__html:list.icon}} />
               <h3 className="text-base font-lora text-darkVoilet font-medium" dangerouslySetInnerHTML={{__html:list.title}}/>
             </div>
-            <p className="text-xs font-lora text-[#5A4E7A] leading-5">
+           
+            <div className="flex flex-row gap-1">
+              <VscClose className="text-xs  text-red-700 flex-none mt-1"/>
+              <p className="text-xs font-lora text-[#5A4E7A]  leading-5">
             {list.description}
             </p>
+            </div>
+            
             <svg
               className="w-full"
               viewBox="0 0 239 20"
@@ -317,7 +324,11 @@ function NovaFixesSection() {
                 </linearGradient>
               </defs>
             </svg>
-            <p className="text-xs font-lora text-darkVoilet leading-5">{list.details}</p>
+            <div className="flex flex-row gap-1">
+              <FaCheck  className="text-xs  text-green-700 flex-none mt-1"/>
+             <p className="text-xs font-lora text-darkVoilet leading-5">{list.details}</p>
+            </div>
+            
           </div>
           ))}
         </div>
