@@ -1,8 +1,11 @@
 import React from "react";
-import {  FaLinkedinIn } from "react-icons/fa6";
-import { Link, NavLink } from "react-router-dom";
+import { FaLinkedinIn } from "react-icons/fa6";
+import { useLocation } from "react-router-dom";
 
 function Footer() {
+  const location = useLocation();
+  const currentPath = location.pathname;
+
   const footerLinks = [
     {
       title: "Company",
@@ -45,28 +48,32 @@ function Footer() {
       ],
     },
   ];
+
   return (
     <footer className="w-full flex flex-col justify-center items-center bg-themeGray py-10 lg:py-20">
       <div className="w-full px-5 md:px-10 slg:px-[60px] lg:px-[90px] justify-center items-center">
         <div className="w-full max-w-[1440px] grid grid-cols-1 md:grid-cols-7 mx-auto gap-10">
+
           {/* ---- Left Section ---- */}
           <div className="flex flex-col w-full max-w-[400px] gap-5 col-span-3 h-full">
             <div className="flex flex-col gap-5">
-              <Link to="/" className="w-fit">
+              <a href="/" className="w-fit">
                 <img
                   src="/assets/pages/landingpage/iona-logo.png"
                   className="w-28"
                   alt="iona-logo"
                 />
-              </Link>
+              </a>
               <p className="text-base text-primary font-lora">
-                       "Trusted by enterprises for scalable, high-volume hiring.<br></br>iona.ai is a full-service AI-powered recruitment platform that automates the entire hiring process—saving time, reducing costs, and ensuring 100% data accuracy."
+                "Trusted by enterprises for scalable, high-volume hiring.<br />
+                iona.ai is a full-service AI-powered recruitment platform that
+                automates the entire hiring process—saving time, reducing costs,
+                and ensuring 100% data accuracy."
               </p>
             </div>
 
             <div className="w-fit flex flex-row justify-center items-center space-x-5 lg:mt-auto">
               {[
-                
                 {
                   icon: <FaLinkedinIn />,
                   url: "https://www.linkedin.com/company/iona-ai/",
@@ -89,25 +96,33 @@ function Footer() {
           <div className="w-full col-span-4 flex flex-col h-full">
             <div className="w-full grid gap-5 grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
               {footerLinks.map((section, index) => (
-                <div key={index} className={`flex flex-col  ${section.title ? "gap-6" : "gap-0 -mt-2 sm:mt-0"} sm:gap-6`}>
+                <div
+                  key={index}
+                  className={`flex flex-col ${
+                    section.title ? "gap-6" : "gap-0 -mt-2 sm:mt-0"
+                  } sm:gap-6`}
+                >
                   <p
-                    className={`text-xl font-medium font-lora text-[#0D0D0D] ${section.title ? "" : "md:h-[28px]"}`}
+                    className={`text-xl font-medium font-lora text-[#0D0D0D] ${
+                      section.title ? "" : "md:h-[28px]"
+                    }`}
                   >
-                    {section.title ? section.title : ""}
+                    {section.title}
                   </p>
+
                   <div className="flex flex-col gap-3">
                     {section.links.map((link, idx) => (
-                      <NavLink
+                      <a
                         key={idx}
-                        to={link.url}
-                        className={({ isActive }) =>
-                          `text-base font-lora  font-medium ease-linear duration-150 hover:translate-x-1 hover:text-primary w-fit ${
-                            isActive ? "text-primary   " : "text-[#808080]"
-                          }`
-                        }
+                        href={link.url}
+                        className={`text-base font-lora font-medium ease-linear duration-150 hover:translate-x-1 hover:text-primary w-fit ${
+                          currentPath === link.url
+                            ? "text-primary"
+                            : "text-[#808080]"
+                        }`}
                       >
                         {link.placeHolder}
-                      </NavLink>
+                      </a>
                     ))}
                   </div>
                 </div>
@@ -115,10 +130,11 @@ function Footer() {
             </div>
 
             {/* ---- Newsletter ---- */}
-            <div className="w-full flex flex-col gap-3 md:gap-7  mt-6 md:mt-12">
+            <div className="w-full flex flex-col gap-3 md:gap-7 mt-6 md:mt-12">
               <h3 className="font-lora text-primary text-xl">
                 Subscribe Our Newsletter.
               </h3>
+
               <div className="flex flex-col md:flex-row gap-3 md:gap-5 w-full max-w-[550px]">
                 <input
                   type="email"
@@ -151,16 +167,37 @@ function Footer() {
 
       {/* ---- Bottom Section ---- */}
       <div className="w-full border-t border-[#C9C9C9] my-4 mt-[60px]"></div>
+
       <div className="w-full px-5 md:px-10 slg:px-[60px] lg:px-[90px] flex justify-center items-center">
         <div className="w-full max-w-[1440px] flex flex-col gap-4 md:flex-row justify-between">
+
           <p className="text-xs text-black font-lora">
             Copyright © {new Date().getFullYear()} | All rights reserved.
           </p>
+
           <p className="text-xs text-black font-lora">
-            <Link to="/privacy">Privacy policy</Link> |{" "}
-            <Link to="/terms">Terms & conditions</Link> |{" "}
-            <Link to="/cookies">Cookie Policy</Link>
+            <a
+              href="/privacy"
+              className={currentPath === "/privacy" ? "text-primary" : ""}
+            >
+              Privacy policy
+            </a>{" "}
+            |{" "}
+            <a
+              href="/terms"
+              className={currentPath === "/terms" ? "text-primary" : ""}
+            >
+              Terms & conditions
+            </a>{" "}
+            |{" "}
+            <a
+              href="/cookies"
+              className={currentPath === "/cookies" ? "text-primary" : ""}
+            >
+              Cookie Policy
+            </a>
           </p>
+
         </div>
       </div>
     </footer>

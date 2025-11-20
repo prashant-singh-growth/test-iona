@@ -1,13 +1,17 @@
 import React, { useState } from "react";
 import { IoChevronDown, IoMenu, IoClose } from "react-icons/io5";
-import { Link, NavLink } from "react-router-dom";
+import {  useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 
 function Header() {
   const [activeDropdown, setActiveDropdown] = useState(null);
   const [menuOpen, setMenuOpen] = useState(false);
 
-  // ✅ Single unified array for all nav links
+  // Detect current route for active class
+  const location = useLocation();
+  const currentPath = location.pathname;
+
+  // Navigation links
   const navLinks = [
     {
       type: "dropdown",
@@ -25,11 +29,7 @@ function Header() {
         { label: "NovaConnect", url: "/solutions/novaconnect" },
       ],
     },
-    {
-      type: "link",
-      name: "Case Studies",
-      url: "/case-studies",
-    },
+    { type: "link", name: "Case Studies", url: "/case-studies" },
     {
       type: "dropdown",
       name: "Resources",
@@ -46,14 +46,15 @@ function Header() {
   return (
     <header className="w-full bg-white/80 backdrop-blur-md fixed top-0 z-50 grid place-items-center px-5 md:px-10 slg:px-[60px] lg:px-[90px] border-b border-gray-100 shadow-sm">
       <div className="w-full max-w-[1440px] flex justify-between items-center py-3">
+
         {/* Logo */}
-        <Link to="/" className="w-fit">
+        <a href="/" className="w-fit">
           <img
             src={`${process.env.PUBLIC_URL}/assets/iona-ai-logo.png`}
             alt="Iona AI Logo"
             className="h-14"
           />
-        </Link>
+        </a>
 
         {/* Desktop Navigation */}
         <div className="hidden lg:flex flex-row items-center gap-8">
@@ -66,12 +67,15 @@ function Header() {
                 onMouseLeave={() => setActiveDropdown(null)}
               >
                 {item.name}
+
                 <motion.span
                   animate={{ rotate: activeDropdown === item.key ? 180 : 0 }}
                   transition={{ duration: 0.2 }}
                 >
                   <IoChevronDown className="text-lg" />
                 </motion.span>
+
+                {/* Dropdown Menu */}
                 <AnimatePresence>
                   {activeDropdown === item.key && (
                     <motion.div
@@ -86,62 +90,45 @@ function Header() {
                       } z-30`}
                     >
                       {item.links.map((link) => (
-                        <NavLink
+                        <a
                           key={link.url}
-                          to={link.url}
-                           className={({ isActive }) =>
-              `text-base font-lora font-medium  hover:text-primary hover:translate-x-1 transition-all duration-200 border-l-2  hover:border-primary pl-2 ${
-                isActive ? "text-primary translate-x-1 border-primary" : "text-black translate-x-0 border-transparent"
-              }`
-            }
-                         
+                          href={link.url}
+                          className={`text-base font-lora font-medium transition-all duration-200 border-l-2 pl-2 hover:text-primary hover:translate-x-1 ${
+                            currentPath === link.url
+                              ? "text-primary translate-x-1 border-primary"
+                              : "text-black border-transparent"
+                          }`}
                         >
                           {link.label}
-                        </NavLink>
+                        </a>
                       ))}
                     </motion.div>
                   )}
                 </AnimatePresence>
               </div>
             ) : (
-              <NavLink
+              <a
                 key={item.url}
-                to={item.url}
-                 className={({ isActive }) =>
-              `text-base font-lora  border-b-2 font-medium  hover:text-primary hover:border-primary hover:-translate-y-1 transition-all duration-150 ${
-                isActive ? "text-primary border-primary  " : "text-black border-transparent"
-              }`
-            }
-              
+                href={item.url}
+                className={`text-base font-lora border-b-2 font-medium hover:text-primary hover:border-primary transition-all duration-150 ${
+                  currentPath === item.url
+                    ? "text-primary border-primary"
+                    : "text-black border-transparent"
+                }`}
               >
                 {item.name}
-              </NavLink>
+              </a>
             )
           )}
         </div>
 
         {/* CTA Button */}
-        <Link
-          to="/contact"
+        <a
+          href="/contact"
           className="hidden lg:flex flex-none bg-primary px-5 py-3 font-bold leading-5 space-x-2 font-lora text-[14px] text-white rounded-lg shadow hover:shadow-md hover:scale-95 transition-transform duration-200"
         >
           <span>Schedule a Demo</span>
-          <svg
-            width="20"
-            height="20"
-            viewBox="0 0 20 20"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M4.16669 10H15.8334M15.8334 10L10.8334 5M15.8334 10L10.8334 15"
-              stroke="#FCFCFC"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </svg>
-        </Link>
+        </a>
 
         {/* Mobile Menu Button */}
         <div className="lg:hidden">
@@ -189,6 +176,7 @@ function Header() {
                       <IoChevronDown />
                     </motion.span>
                   </button>
+
                   <AnimatePresence>
                     {activeDropdown === item.key && (
                       <motion.div
@@ -199,53 +187,45 @@ function Header() {
                         className="mt-3 grid grid-cols-1 sm:grid-cols-2 gap-2 pl-2"
                       >
                         {item.links.map((link) => (
-                          <Link
-                          onClick={()=>setMenuOpen(false)}
+                          <a
                             key={link.url}
-                            to={link.url}
-                            className="text-[15px] text-black font-medium font-lora hover:text-primary transition-all"
+                            href={link.url}
+                            onClick={() => setMenuOpen(false)}
+                            className={`text-[15px] font-medium font-lora transition-all ${
+                              currentPath === link.url
+                                ? "text-primary"
+                                : "text-black hover:text-primary"
+                            }`}
                           >
                             {link.label}
-                          </Link>
+                          </a>
                         ))}
                       </motion.div>
                     )}
                   </AnimatePresence>
                 </div>
               ) : (
-                <Link
+                <a
                   key={item.url}
-                  to={item.url}
-                  
-                  className="block text-base font-lora font-medium text-black hover:text-primary transition-all"
+                  href={item.url}
+                  className={`block text-base font-lora font-medium transition-all ${
+                    currentPath === item.url
+                      ? "text-primary"
+                      : "text-black hover:text-primary"
+                  }`}
                 >
                   {item.name}
-                </Link>
+                </a>
               )
             )}
 
             {/* CTA in Mobile */}
-            <Link
-              to="/contact"
-              className="bg-primary flex font-lora flex-none  space-x-2 flex-row px-4 font-bold leading-5 w-fit gap-2 text-white text-center py-3 rounded-lg text-[14px] shadow hover:shadow-md hover:scale-[0.98] transition-all duration-200"
+            <a
+              href="/contact"
+              className="bg-primary flex font-lora flex-none space-x-2 flex-row px-4 font-bold leading-5 w-fit gap-2 text-white text-center py-3 rounded-lg text-[14px] shadow hover:shadow-md hover:scale-[0.98] transition-all duration-200"
             >
               <span>Schedule a Demo</span>
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 20 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M4.16669 10H15.8334M15.8334 10L10.8334 5M15.8334 10L10.8334 15"
-                  stroke="#FCFCFC"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-            </Link>
+            </a>
           </motion.div>
         )}
       </AnimatePresence>
