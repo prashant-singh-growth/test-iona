@@ -13,20 +13,21 @@ function SectionComparison({ comparison }) {
             {comparison.description}
           </p>
         </div>
-        <div className="w-full min-w-[730px] overflow-x-scroll grid grid-cols-8 lg:grid-cols-3 ">
-          <div className="w-full border-b border-[#B9B8B8] h-fit pt-5 pb-6 lg:pb-10 mt-auto px-5 lg:px-12 col-span-2 lg:col-span-1">
+        <div className="w-full overflow-x-auto max-w-[100vw]">
+        <div className="min-w-max grid grid-cols-[150px_250px_400px] md:grid-cols-3 ">
+          <div className="w-full border-b border-[#B9B8B8] h-fit pt-5 pb-6 lg:pb-10 mt-auto px-5 lg:px-12 ">
             <p className="font-lora text-violet_1 text-xl lg:text-2xl font-medium">
               Feature
             </p>
           </div>
-          <div className="w-full bg-[#F9F9F9] rounded-t-xl border-b pb-6 lg:pb-10 border-[#B9B8B8] h-fit py-10 px-6 lg:px-12 items-end mt-auto col-span-3 lg:col-span-1">
+          <div className="w-full bg-[#F9F9F9] rounded-t-xl border-b pb-6 lg:pb-10 border-[#B9B8B8] h-fit py-10 px-6 lg:px-12 items-end mt-auto ">
             <img
               src={comparison.competitorLogo}
               alt=""
               className="w-[130px] lg:w-[218px]"
             />
           </div>
-          <div className="w-full bg-[#2A2564] rounded-t-lg border-b border-[#B9B8B8] pb-6 lg:pb-10  pt-20 shadow-[0_0_40px_0_#00000059] px-6 lg:px-12 items-end col-span-3 lg:col-span-1">
+          <div className="w-full bg-[#2A2564] rounded-t-lg border-b border-[#B9B8B8] pb-6 lg:pb-10  pt-20 shadow-[0_0_40px_0_#00000059] px-6 lg:px-12 items-end ">
             <img
               src="/assets/pages/casestudy/iona-ai-logo.png"
               alt=""
@@ -35,12 +36,12 @@ function SectionComparison({ comparison }) {
           </div>
           {comparison.rows.map((row, ind) => (
             <React.Fragment key={ind}>
-              <div className="w-full border-b border-[#B9B8B8] pt-8 pb-6 lg:pt-12 lg:pb-10 px-5 lg:px-12 col-span-2 lg:col-span-1">
+              <div className="w-full border-b border-[#B9B8B8] pt-8 pb-6 lg:pt-12 lg:pb-10 px-5 lg:px-12 ">
                 <p className="text-base text-violet_1 font-lora font-semibold">
                   {row.feature} 
                 </p>
               </div>
-              <div className="w-full bg-[#F9F9F9]  border-b border-[#B9B8B8] pt-8 pb-6 lg:pt-12 lg:pb-10 px-5 lg:px-12 flex flex-row justify-start gap-1.5 col-span-3 lg:col-span-1">
+              <div className="w-full bg-[#F9F9F9]  border-b border-[#B9B8B8] pt-8 pb-6 lg:pt-12 lg:pb-10 px-5 lg:px-12 flex flex-row justify-start gap-1.5 ">
                 <svg
                   className="size-4 flex-none mt-1"
                   viewBox="0 0 24 24"
@@ -61,7 +62,7 @@ function SectionComparison({ comparison }) {
                   {row.competitor}
                 </p>
               </div>
-              <div className="w-full bg-[#2A2564]  border-b border-[#B9B8B8] pt-8 pb-6 lg:pt-12 lg:pb-10 px-5 lg:px-12 flex flex-row justify-start gap-1.5 shadow-[0_0_40px_0_#00000059] col-span-3 lg:col-span-1">
+              <div className="w-full bg-[#2A2564]  border-b border-[#B9B8B8] pt-8 pb-6 lg:pt-12 lg:pb-10 px-5 lg:px-12 flex flex-row justify-start gap-1.5 shadow-[0_0_40px_0_#00000059] ">
                 <svg
                   className="size-4 flex-none mt-1"
                   viewBox="0 0 20 20"
@@ -83,6 +84,7 @@ function SectionComparison({ comparison }) {
               </div>
             </React.Fragment>
           ))}
+        </div>
         </div>
       </div>
     </section>
