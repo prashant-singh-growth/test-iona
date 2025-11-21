@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+
 import { memo } from "react";
 
 // Performance optimized CaseStudyCard component
@@ -21,12 +21,12 @@ const CaseStudyCard = memo(({ id, delay }) => (
       <p className="text-secondaryText mb-4">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum magnam, voluptates distinctio.
       </p>
-      <Link to="/case-studies" className="text-accent font-bold flex items-center gap-2 hover:underline">
+      <a href="/case-studies" className="text-accent font-bold flex items-center gap-2 hover:underline">
         LEARN MORE
         <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
         </svg>
-      </Link>
+      </a>
     </div>
   </motion.div>
 ));

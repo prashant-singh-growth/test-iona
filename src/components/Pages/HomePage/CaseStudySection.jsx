@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import { FaLeftLong, FaRightLong } from "react-icons/fa6";
-import { Link } from "react-router-dom";
+
 
 function CaseStudySection() {
   const swiperRef = useRef(null);
@@ -155,8 +155,8 @@ function CaseStudySection() {
           </div>
         </div>
       </div>
-       <Link
-            to={"/case-studies"}
+       <a
+            href={"/case-studies"}
             className="bg-primary font-bold leading-5 font-lora px-5 py-3 text-[14px] text-white flex flex-row space-x-2 rounded hover:scale-95 ease-in-out duration-150"
           >
             <span>See All Case Studies</span>{" "}
@@ -175,7 +175,7 @@ function CaseStudySection() {
                 stroke-linejoin="round"
               />
             </svg>
-          </Link>
+          </a>
      </div>
     </section>
   );

@@ -28,7 +28,9 @@ module.exports = {
           info: "#3B82F6",
           primary:"#2A2564",
           themeGray:"#f3f3f5",
-          darkVoilet:"#160E38"
+          darkVoilet:"#160E38",
+          violet_1:"#02193B",
+          violet_2:"#5A4E7A",
         },
         backgroundImage: {
           'main-gradient': 'linear-gradient(180deg, #f8f9fb 0%, #ffffff 100%)',

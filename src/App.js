@@ -37,6 +37,7 @@ const Landingpage = lazy(()=> import("./pages/Landing/Landingpages"))
 const ThankYouPage = lazy(()=> import('./pages/ThankYou'));
 const SolutionPage = lazy(()=> import('./pages/SolutionPage'));
 const SecLandingPage = lazy(()=> import('./pages/Landing/SecLandingPage'));
+const CaseStudyDynamicPage = lazy(()=> import('./pages/CaseStudy/CaseStudyDynamic'))
 
 // Scroll to top on route change
 const ScrollToTop = () => {
@@ -123,8 +124,12 @@ const AnimatedRoutes = () => {
         <Route path="/terms" element={<PageTransition><TermsOfService /></PageTransition>} />
         <Route path="/end-to-end-hiring-solution-for-enterprises" element={<PageTransition><Landingpage/></PageTransition>} />
         <Route path="/thank-you" element={<PageTransition><ThankYouPage/></PageTransition>} />
+        <Route path="/end-to-end-hiring-solution-for-enterprises/thank-you" element={<PageTransition><ThankYouPage/></PageTransition>} />
         <Route path="/solutions" element={<PageTransition><SolutionPage/></PageTransition>} />
         <Route path="/automated-background-verification" element={<PageTransition><SecLandingPage/></PageTransition>} />
+              <Route path="/automated-background-verification/thank-you" element={<PageTransition><ThankYouPage/></PageTransition>} />
+       
+        <Route path="/:caseStudy" element={<PageTransition><CaseStudyDynamicPage/></PageTransition>} />
         <Route
           path="*"
           element={

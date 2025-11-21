@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+
 import { memo } from "react";
 
 const CaseStudiesSection = memo(() => {
@@ -30,12 +30,12 @@ const CaseStudiesSection = memo(() => {
                 <span className="bg-lightGray text-primaryText text-xs px-3 py-1 rounded-full">95% AI accuracy</span>
                 <span className="bg-lightGray text-primaryText text-xs px-3 py-1 rounded-full">89% cost reduction</span>
               </div>
-              <Link to="/case-studies" className="text-accent font-bold flex items-center gap-2 hover:underline">
+              <a href="/case-studies" className="text-accent font-bold flex items-center gap-2 hover:underline">
                 READ FULL CASE STUDY
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
-              </Link>
+              </a>
             </div>
           </div>
           
@@ -60,12 +60,12 @@ const CaseStudiesSection = memo(() => {
         </div>
         
         <div className="text-center mt-12" data-aos="fade-up" data-aos-delay="400">
-          <Link 
-            to="/case-studies" 
+          <a
+            href="/case-studies" 
             className="bg-accent hover:bg-accent-dark text-white px-6 py-3 rounded-lg font-medium inline-block transition-colors"
           >
             View All Case Studies
-          </Link>
+          </a>
         </div>
       </div>
     </section>

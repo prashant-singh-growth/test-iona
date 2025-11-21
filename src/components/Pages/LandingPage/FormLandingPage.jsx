@@ -129,7 +129,7 @@ export default function FormLandingPage() {
           gclid: "",
           fbclid: "",
         });
-        window.location.href = "/thank-you";
+        window.location.href = "/end-to-end-hiring-solution-for-enterprises/thank-you";
       } else {
         throw new Error("HubSpot submission failed. Please check your form settings.");
       }

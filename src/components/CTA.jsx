@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+
 import { motion } from "framer-motion";
 
 const CTA = () => {
@@ -100,8 +100,8 @@ const CTA = () => {
               whileHover="hover"
               whileTap="tap"
             >
-              <Link
-                to="/schedule-demo"
+              <a
+                href="/schedule-demo"
                 className="bg-purple-gradient text-white px-8 py-4 rounded-xl text-md font-medium flex items-center gap-2 justify-center mx-auto w-fit"
               >
                 <span>Schedule a Demo</span>
@@ -113,7 +113,7 @@ const CTA = () => {
                 >
                   →
                 </motion.span>
-              </Link>
+              </a>
             </motion.div>
           </motion.div>
           

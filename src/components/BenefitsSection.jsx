@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+
 import { memo } from "react";
 import CheckItem from "./CheckItem";
 
@@ -49,12 +49,12 @@ const BenefitsSection = memo(() => {
                 />
               ))}
             </div>
-            <Link 
-              to="/about" 
+            <a
+              href="/about" 
               className="mt-6 sm:mt-8 inline-block bg-accent hover:bg-accent-dark text-white px-6 py-3 rounded-lg font-medium transition-colors"
             >
               Learn About Us
-            </Link>
+            </a>
           </div>
           <div className="w-full lg:w-1/2 mt-8 lg:mt-0" data-aos="fade-left">
             <img 

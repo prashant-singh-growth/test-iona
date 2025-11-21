@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+
 import { memo } from "react";
 
 const CTASection = memo(() => {
@@ -10,18 +10,18 @@ const CTASection = memo(() => {
         Get in touch to explore how NovaSuite's intelligent agentic AI solutions can directly contribute to your success.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center" data-aos="zoom-in" data-aos-delay="200">
-          <Link 
-            to="/contact"
+          <a
+            href="/contact"
             className="bg-white text-accent px-8 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors inline-block"
           >
             Contact Us
-          </Link>
-          <Link 
-            to="/schedule-demo"
+          </a>
+          <a 
+            href="/schedule-demo"
             className="bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg font-medium hover:bg-white/10 transition-colors inline-block"
           >
             Schedule Demo
-          </Link>
+          </a>
         </div>
       </div>
     </section>
