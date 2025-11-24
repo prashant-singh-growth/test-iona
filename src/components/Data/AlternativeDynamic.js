@@ -92,7 +92,7 @@ export const AlternativePagesData = {
       ],
     },
     switch: {
-      title: "Nova Verify: The Fully Managed BGV Powerhouse, Eng",
+      title: "Why Switch from PeopleStrong to iona.ai",
       ctaTitle: "",
       ctaUrl: "",
       card: [
