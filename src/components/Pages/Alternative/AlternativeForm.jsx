@@ -154,7 +154,7 @@ function AlternativeForm() {
           gclid: "",
           fbclid: "",
         });
-        window.location.href = "/automated-background-verification/thank-you";
+        window.location.href = "/thank-you";
       } else {
         throw new Error(
           "HubSpot submission failed. Please check your form settings."
