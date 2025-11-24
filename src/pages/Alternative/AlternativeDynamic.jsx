@@ -37,8 +37,8 @@ function AlternativeDynamic() {
         <CertificationSection/>
         <TestimonialSlider/>
         <CTASection
-        title={"Ready to solve your background check hassles?"}
-        description={"Get started today and automate 100% of your recruitment from sourcing to onboarding with background verification and a 100% data accuracy guarantee."}
+        title={"Switch to a Smarter PeopleStrong Alternative"}
+        description={"Stop juggling with disconnected HR tools. Try iona.ai and see why leading enterprises are choosing it as their preferred PeopleStrong Alternative. Experience end-to-end hiring automation with 100% accuracy and zero compliance risk."}
 
         />
         <FAQComponent FAQList={Alternative.FaqList}/>
