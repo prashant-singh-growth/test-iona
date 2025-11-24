@@ -28,13 +28,13 @@ function SectionWhySwitch({switchData}) {
                 <path
                   d="M1 0L1 162"
                   stroke="#E7DEFE"
-                  stroke-width="2"
-                  stroke-dasharray="8 8"
+                  strokeWidth="2"
+                  strokeDasharray="8 8"
                 />
               </svg>
 
            {card.bullets.map((list,ind)=>(
-               <div className="w-full flex flex-row justify-start items-start sm:items-center gap-3 sm:gap-4 relative z-10">
+               <div key={ind} className="w-full flex flex-row justify-start items-start sm:items-center gap-3 sm:gap-4 relative z-10">
                 <p className={`size-6 sm:size-12  flex-none text-xs  sm:text-lg font-semibold font-lora ${ind > 1 ? "bg-[#E7DEFE] text-[#1A202C]" : "bg-[#160E38] text-white "}   grid place-items-center rounded-full`}>
                   {ind + 1}
                 </p>
@@ -67,9 +67,9 @@ function SectionWhySwitch({switchData}) {
             <path
               d="M4.16669 10H15.8334M15.8334 10L10.8334 5M15.8334 10L10.8334 15"
               stroke="#2A2564"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
           </svg>
         </a>

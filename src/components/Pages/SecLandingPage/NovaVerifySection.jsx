@@ -3,10 +3,10 @@ import React from "react";
 const novaverifyList = [
   {
     icon: `<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M21.3337 28V25.3333C21.3337 23.9188 20.7718 22.5623 19.7716 21.5621C18.7714 20.5619 17.4148 20 16.0003 20H8.00032C6.58584 20 5.22928 20.5619 4.22909 21.5621C3.2289 22.5623 2.66699 23.9188 2.66699 25.3333V28" stroke="white" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M21.333 4.17065C22.4767 4.46715 23.4895 5.13501 24.2126 6.0694C24.9356 7.0038 25.3279 8.15184 25.3279 9.33332C25.3279 10.5148 24.9356 11.6628 24.2126 12.5972C23.4895 13.5316 22.4767 14.1995 21.333 14.496" stroke="white" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M29.333 28V25.3333C29.3321 24.1516 28.9388 23.0037 28.2148 22.0698C27.4908 21.1358 26.4772 20.4688 25.333 20.1733" stroke="white" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M12.0003 14.6667C14.9458 14.6667 17.3337 12.2789 17.3337 9.33333C17.3337 6.38781 14.9458 4 12.0003 4C9.05481 4 6.66699 6.38781 6.66699 9.33333C6.66699 12.2789 9.05481 14.6667 12.0003 14.6667Z" stroke="white" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M21.3337 28V25.3333C21.3337 23.9188 20.7718 22.5623 19.7716 21.5621C18.7714 20.5619 17.4148 20 16.0003 20H8.00032C6.58584 20 5.22928 20.5619 4.22909 21.5621C3.2289 22.5623 2.66699 23.9188 2.66699 25.3333V28" stroke="white" strokeWidth="2.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M21.333 4.17065C22.4767 4.46715 23.4895 5.13501 24.2126 6.0694C24.9356 7.0038 25.3279 8.15184 25.3279 9.33332C25.3279 10.5148 24.9356 11.6628 24.2126 12.5972C23.4895 13.5316 22.4767 14.1995 21.333 14.496" stroke="white" strokeWidth="2.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M29.333 28V25.3333C29.3321 24.1516 28.9388 23.0037 28.2148 22.0698C27.4908 21.1358 26.4772 20.4688 25.333 20.1733" stroke="white" strokeWidth="2.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M12.0003 14.6667C14.9458 14.6667 17.3337 12.2789 17.3337 9.33333C17.3337 6.38781 14.9458 4 12.0003 4C9.05481 4 6.66699 6.38781 6.66699 9.33333C6.66699 12.2789 9.05481 14.6667 12.0003 14.6667Z" stroke="white" strokeWidth="2.25" strokeLinecap="round" strokeLinejoin="round"/>
 </svg>
 
 `,
@@ -15,10 +15,10 @@ const novaverifyList = [
   },
   {
     icon: `<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M16 29.3334V22.6667" stroke="white" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M12 10.6667V2.66675" stroke="white" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M20 10.6667V2.66675" stroke="white" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M24 10.6667V17.3334C24 18.7479 23.4381 20.1045 22.4379 21.1047C21.4377 22.1048 20.0812 22.6667 18.6667 22.6667H13.3333C11.9188 22.6667 10.5623 22.1048 9.5621 21.1047C8.5619 20.1045 8 18.7479 8 17.3334V10.6667H24Z" stroke="white" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M16 29.3334V22.6667" stroke="white" strokeWidth="2.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M12 10.6667V2.66675" stroke="white" strokeWidth="2.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M20 10.6667V2.66675" stroke="white" strokeWidth="2.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M24 10.6667V17.3334C24 18.7479 23.4381 20.1045 22.4379 21.1047C21.4377 22.1048 20.0812 22.6667 18.6667 22.6667H13.3333C11.9188 22.6667 10.5623 22.1048 9.5621 21.1047C8.5619 20.1045 8 18.7479 8 17.3334V10.6667H24Z" stroke="white" strokeWidth="2.25" strokeLinecap="round" strokeLinejoin="round"/>
 </svg>
 
 `,
@@ -27,8 +27,8 @@ const novaverifyList = [
   },
   {
     icon:`<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M16 2.66675V29.3334" stroke="white" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M22.6667 6.66675H12.6667C11.429 6.66675 10.242 7.15841 9.36684 8.03358C8.49167 8.90875 8 10.0957 8 11.3334C8 12.5711 8.49167 13.7581 9.36684 14.6332C10.242 15.5084 11.429 16.0001 12.6667 16.0001H19.3333C20.571 16.0001 21.758 16.4917 22.6332 17.3669C23.5083 18.2421 24 19.4291 24 20.6667C24 21.9044 23.5083 23.0914 22.6332 23.9666C21.758 24.8417 20.571 25.3334 19.3333 25.3334H8" stroke="white" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M16 2.66675V29.3334" stroke="white" strokeWidth="2.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M22.6667 6.66675H12.6667C11.429 6.66675 10.242 7.15841 9.36684 8.03358C8.49167 8.90875 8 10.0957 8 11.3334C8 12.5711 8.49167 13.7581 9.36684 14.6332C10.242 15.5084 11.429 16.0001 12.6667 16.0001H19.3333C20.571 16.0001 21.758 16.4917 22.6332 17.3669C23.5083 18.2421 24 19.4291 24 20.6667C24 21.9044 23.5083 23.0914 22.6332 23.9666C21.758 24.8417 20.571 25.3334 19.3333 25.3334H8" stroke="white" strokeWidth="2.25" strokeLinecap="round" strokeLinejoin="round"/>
 </svg>
 `,
     title:"Immediate Cost Reduction",
@@ -36,10 +36,10 @@ const novaverifyList = [
   },
   {
     icon:`<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M4 16C4 12.8174 5.26428 9.76516 7.51472 7.51472C9.76516 5.26428 12.8174 4 16 4C19.3547 4.01262 22.5747 5.32163 24.9867 7.65333L28 10.6667" stroke="white" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M27.9997 4V10.6667H21.333" stroke="white" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M28 16C28 19.1826 26.7357 22.2348 24.4853 24.4853C22.2348 26.7357 19.1826 28 16 28C12.6453 27.9874 9.42529 26.6784 7.01333 24.3467L4 21.3333" stroke="white" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M10.6667 21.3333H4V27.9999" stroke="white" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M4 16C4 12.8174 5.26428 9.76516 7.51472 7.51472C9.76516 5.26428 12.8174 4 16 4C19.3547 4.01262 22.5747 5.32163 24.9867 7.65333L28 10.6667" stroke="white" strokeWidth="2.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M27.9997 4V10.6667H21.333" stroke="white" strokeWidth="2.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M28 16C28 19.1826 26.7357 22.2348 24.4853 24.4853C22.2348 26.7357 19.1826 28 16 28C12.6453 27.9874 9.42529 26.6784 7.01333 24.3467L4 21.3333" stroke="white" strokeWidth="2.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M10.6667 21.3333H4V27.9999" stroke="white" strokeWidth="2.25" strokeLinecap="round" strokeLinejoin="round"/>
 </svg>
 `,
     title:"Unrestricted Vendor Flexibility",
@@ -47,7 +47,7 @@ const novaverifyList = [
   },
   {
     icon:`<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M5.333 18.6666C5.08068 18.6674 4.83331 18.5967 4.6196 18.4625C4.4059 18.3284 4.23464 18.1364 4.12573 17.9088C4.01682 17.6812 3.97472 17.4273 4.00433 17.1768C4.03394 16.9262 4.13404 16.6892 4.293 16.4932L17.493 2.89323C17.592 2.77893 17.7269 2.7017 17.8756 2.6742C18.0243 2.6467 18.178 2.67058 18.3113 2.7419C18.4446 2.81322 18.5498 2.92775 18.6094 3.0667C18.6691 3.20565 18.6798 3.36076 18.6397 3.50656L16.0797 11.5332C16.0042 11.7353 15.9788 11.9526 16.0058 12.1666C16.0327 12.3805 16.1112 12.5848 16.2345 12.7618C16.3577 12.9388 16.522 13.0832 16.7134 13.1828C16.9047 13.2823 17.1173 13.3339 17.333 13.3332H26.6663C26.9186 13.3324 27.166 13.4031 27.3797 13.5373C27.5934 13.6714 27.7647 13.8634 27.8736 14.091C27.9825 14.3186 28.0246 14.5724 27.995 14.823C27.9654 15.0736 27.8653 15.3106 27.7063 15.5066L14.5063 29.1066C14.4073 29.2208 14.2724 29.2981 14.1237 29.3256C13.975 29.3531 13.8214 29.3292 13.688 29.2579C13.5547 29.1866 13.4496 29.072 13.3899 28.9331C13.3302 28.7941 13.3196 28.639 13.3597 28.4932L15.9197 20.4666C15.9952 20.2645 16.0205 20.0472 15.9935 19.8332C15.9666 19.6192 15.8881 19.415 15.7649 19.238C15.6416 19.061 15.4773 18.9165 15.286 18.817C15.0946 18.7175 14.882 18.6659 14.6663 18.6666H5.333Z" stroke="white" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5.333 18.6666C5.08068 18.6674 4.83331 18.5967 4.6196 18.4625C4.4059 18.3284 4.23464 18.1364 4.12573 17.9088C4.01682 17.6812 3.97472 17.4273 4.00433 17.1768C4.03394 16.9262 4.13404 16.6892 4.293 16.4932L17.493 2.89323C17.592 2.77893 17.7269 2.7017 17.8756 2.6742C18.0243 2.6467 18.178 2.67058 18.3113 2.7419C18.4446 2.81322 18.5498 2.92775 18.6094 3.0667C18.6691 3.20565 18.6798 3.36076 18.6397 3.50656L16.0797 11.5332C16.0042 11.7353 15.9788 11.9526 16.0058 12.1666C16.0327 12.3805 16.1112 12.5848 16.2345 12.7618C16.3577 12.9388 16.522 13.0832 16.7134 13.1828C16.9047 13.2823 17.1173 13.3339 17.333 13.3332H26.6663C26.9186 13.3324 27.166 13.4031 27.3797 13.5373C27.5934 13.6714 27.7647 13.8634 27.8736 14.091C27.9825 14.3186 28.0246 14.5724 27.995 14.823C27.9654 15.0736 27.8653 15.3106 27.7063 15.5066L14.5063 29.1066C14.4073 29.2208 14.2724 29.2981 14.1237 29.3256C13.975 29.3531 13.8214 29.3292 13.688 29.2579C13.5547 29.1866 13.4496 29.072 13.3899 28.9331C13.3302 28.7941 13.3196 28.639 13.3597 28.4932L15.9197 20.4666C15.9952 20.2645 16.0205 20.0472 15.9935 19.8332C15.9666 19.6192 15.8881 19.415 15.7649 19.238C15.6416 19.061 15.4773 18.9165 15.286 18.817C15.0946 18.7175 14.882 18.6659 14.6663 18.6666H5.333Z" stroke="white" strokeWidth="2.25" strokeLinecap="round" strokeLinejoin="round"/>
 </svg>
 `,
     title:"90% Cycle Time Reduction",
@@ -55,10 +55,10 @@ const novaverifyList = [
   },
   {
     icon:`<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M4 4V25.3333C4 26.0406 4.28095 26.7189 4.78105 27.219C5.28115 27.719 5.95942 28 6.66667 28H28" stroke="white" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M24 22.6667V12" stroke="white" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M17.333 22.6665V6.6665" stroke="white" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M10.667 22.6665V18.6665" stroke="white" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M4 4V25.3333C4 26.0406 4.28095 26.7189 4.78105 27.219C5.28115 27.719 5.95942 28 6.66667 28H28" stroke="white" strokeWidth="2.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M24 22.6667V12" stroke="white" strokeWidth="2.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M17.333 22.6665V6.6665" stroke="white" strokeWidth="2.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M10.667 22.6665V18.6665" stroke="white" strokeWidth="2.25" strokeLinecap="round" strokeLinejoin="round"/>
 </svg>
 `,
     title:"Real-Time, Unified Reporting",
@@ -101,9 +101,9 @@ function NovaVerifySection() {
               <path
                 d="M4.16669 10H15.8334M15.8334 10L10.8334 5M15.8334 10L10.8334 15"
                 stroke="#FCFCFC"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
             </svg>
           </a>

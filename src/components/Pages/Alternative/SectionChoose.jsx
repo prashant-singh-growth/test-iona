@@ -33,30 +33,30 @@ function SectionChoose() {
                     <path
                       d="M9 3H4C3.44772 3 3 3.44772 3 4V9C3 9.55228 3.44772 10 4 10H9C9.55228 10 10 9.55228 10 9V4C10 3.44772 9.55228 3 9 3Z"
                       stroke="#160E38"
-                      stroke-width="1.66667"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="1.66667"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                     <path
                       d="M20.0004 3H15.0004C14.4481 3 14.0004 3.44772 14.0004 4V9C14.0004 9.55228 14.4481 10 15.0004 10H20.0004C20.5527 10 21.0004 9.55228 21.0004 9V4C21.0004 3.44772 20.5527 3 20.0004 3Z"
                       stroke="#160E38"
-                      stroke-width="1.66667"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="1.66667"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                     <path
                       d="M20.0004 14H15.0004C14.4481 14 14.0004 14.4477 14.0004 15V20C14.0004 20.5523 14.4481 21 15.0004 21H20.0004C20.5527 21 21.0004 20.5523 21.0004 20V15C21.0004 14.4477 20.5527 14 20.0004 14Z"
                       stroke="#160E38"
-                      stroke-width="1.66667"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="1.66667"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                     <path
                       d="M9 14H4C3.44772 14 3 14.4477 3 15V20C3 20.5523 3.44772 21 4 21H9C9.55228 21 10 20.5523 10 20V15C10 14.4477 9.55228 14 9 14Z"
                       stroke="#160E38"
-                      stroke-width="1.66667"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="1.66667"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                   </svg>
                 </div>

@@ -76,8 +76,8 @@ function SectionComparison({ comparison }) {
                   <path
                     d="M4.75 10.5L8.25 14L15.25 7"
                     stroke="white"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                 </svg>
                 <p className="font-lora text-base text-white">{row.iona}</p>

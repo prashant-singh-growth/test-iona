@@ -25,17 +25,17 @@ const challengesList = [
     Icon: `<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle cx="25" cy="25" r="25" fill="#160E38" fill-opacity="0.2"/>
 <circle cx="25" cy="25" r="21" fill="#160E38"/>
-<path d="M23.0044 33.6311C27.5891 33.6311 31.3057 29.9169 31.3057 25.3352C31.3057 20.7535 27.5891 17.0393 23.0044 17.0393C18.4197 17.0393 14.7031 20.7535 14.7031 25.3352C14.7031 29.9169 18.4197 33.6311 23.0044 33.6311Z" stroke="white" stroke-width="1.40625" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M25.3921 14.3689V17.3858" stroke="white" stroke-width="1.40625" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M20.6167 17.3876V14.3689" stroke="white" stroke-width="1.40625" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M19.5217 14.3689H26.4823" stroke="white" stroke-width="1.40625" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M17.2741 19.3307L16.1826 18.24" stroke="white" stroke-width="1.40625" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M28.7324 19.3307L29.8239 18.24" stroke="white" stroke-width="1.40625" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M37.2969 27.849H34.0525" stroke="white" stroke-width="1.40625" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M37.297 30.7401H32.7422" stroke="white" stroke-width="1.40625" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M37.297 33.6311H30.9802" stroke="white" stroke-width="1.40625" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M23.0045 30.5156C25.8674 30.5156 28.1882 28.1962 28.1882 25.3352C28.1882 22.4741 25.8674 20.1548 23.0045 20.1548C20.1416 20.1548 17.8208 22.4741 17.8208 25.3352C17.8208 28.1962 20.1416 30.5156 23.0045 30.5156Z" stroke="white" stroke-width="1.40625" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M21.3503 25.5356L22.3194 26.504L24.6585 24.1664" stroke="white" stroke-width="1.40625" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M23.0044 33.6311C27.5891 33.6311 31.3057 29.9169 31.3057 25.3352C31.3057 20.7535 27.5891 17.0393 23.0044 17.0393C18.4197 17.0393 14.7031 20.7535 14.7031 25.3352C14.7031 29.9169 18.4197 33.6311 23.0044 33.6311Z" stroke="white" strokeWidth="1.40625" stroke-miterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M25.3921 14.3689V17.3858" stroke="white" strokeWidth="1.40625" stroke-miterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M20.6167 17.3876V14.3689" stroke="white" strokeWidth="1.40625" stroke-miterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M19.5217 14.3689H26.4823" stroke="white" strokeWidth="1.40625" stroke-miterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M17.2741 19.3307L16.1826 18.24" stroke="white" strokeWidth="1.40625" stroke-miterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M28.7324 19.3307L29.8239 18.24" stroke="white" strokeWidth="1.40625" stroke-miterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M37.2969 27.849H34.0525" stroke="white" strokeWidth="1.40625" stroke-miterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M37.297 30.7401H32.7422" stroke="white" strokeWidth="1.40625" stroke-miterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M37.297 33.6311H30.9802" stroke="white" strokeWidth="1.40625" stroke-miterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M23.0045 30.5156C25.8674 30.5156 28.1882 28.1962 28.1882 25.3352C28.1882 22.4741 25.8674 20.1548 23.0045 20.1548C20.1416 20.1548 17.8208 22.4741 17.8208 25.3352C17.8208 28.1962 20.1416 30.5156 23.0045 30.5156Z" stroke="white" strokeWidth="1.40625" stroke-miterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M21.3503 25.5356L22.3194 26.504L24.6585 24.1664" stroke="white" strokeWidth="1.40625" stroke-miterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
 </svg>
 `,
     Title: "Fast & Accurate </br> Background Verification",

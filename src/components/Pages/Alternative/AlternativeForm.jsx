@@ -222,30 +222,17 @@ function AlternativeForm() {
             value={formData[field]}
           />
         ))}
-        <div className="flex flex-col space-y-2">
-          <button
-            type="submit"
-            disabled={status.loading}
-            className="bg-primary px-5 py-3 font-semibold  gap-2 leading-5 text-[14px] text-white flex items-center justify-center space-x-2 rounded hover:scale-95 transition duration-150 w-full"
-          >
-            {status.loading ? "Submitting..." : "Schedule a Demo"}
-            <svg
-              width="20"
-              height="20"
-              viewBox="0 0 20 20"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M4.16669 10H15.8334M15.8334 10L10.8334 5M15.8334 10L10.8334 15"
-                stroke="#FCFCFC"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </button>
-        </div>
+       <div className="flex flex-col space-y-2">
+ 
+        <button
+          type="submit"
+          disabled={status.loading}
+          className="bg-primary px-5 py-3 font-bold leading-5 text-[14px] text-white flex items-center justify-center space-x-2 rounded hover:scale-95 transition duration-150 w-fit"
+        >
+          {status.loading ? "Submitting..." : "Schedule a Demo"}
+        </button>
+         <p className="text-[10px] !font-sans  text-black">*Ideal for 5000+ Employee Size Orgs*</p>
+</div>
 
         {status.success && (
           <p className="text-green-600 text-center">{status.success}</p>
