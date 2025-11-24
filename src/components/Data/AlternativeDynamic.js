@@ -1,4 +1,4 @@
-export const CaseStudyPagesData = {
+export const AlternativePagesData = {
   "peoplestrong-alternative": {
     slug: "peoplestrong-alternative",
     seo: {

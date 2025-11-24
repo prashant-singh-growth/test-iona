@@ -16,9 +16,9 @@ function SectionChoose() {
             Nova Verify: The Fully Managed BGV Powerhouse, Eng
           </h2>
         </div>
-        <div className="w-full grid grid-cols-2">
-          <div className="w-full">
-            <div className="w-full flex flex-col gap-8">
+        <div className="w-full grid grid-cols-1 lg:grid-cols-2">
+          <div className="w-full order-2 lg:order-1">
+            <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-8">
              {
               chooseList.map((list,ind)=>(
                  <div key={ind} className="w-full flex flex-row items-center gap-2">
@@ -67,12 +67,12 @@ function SectionChoose() {
               ))
              }
             </div>
-            <div className="w-fit flex flex-row gap-5 pt-14">
+            <div className="w-fit flex flex-col sm:flex-row gap-5 pt-14">
              <a
               href={"#form"}
               className="bg-white px-5 py-3 flex-none  font-bold leading-5 text-[14px] text-primary flex flex-row space-x-2 rounded hover:scale-95 ease-in-out duration-150"
             >
-              <span>Schedule a Demo</span>
+              <span>Book a Demo</span>
               <svg
                 width="20"
                 height="20"
@@ -91,9 +91,9 @@ function SectionChoose() {
             </a>
             <a
               href={"#form"}
-              className="bg-primary px-5 py-3 flex-none border-2 border-white font-bold leading-5 text-[14px] text-white flex flex-row space-x-2 rounded hover:scale-95 ease-in-out duration-150"
+              className="bg-primary  px-5 py-3 flex-none border-2 border-white font-bold leading-5 text-[14px] text-white flex flex-row space-x-2 rounded hover:scale-95 ease-in-out duration-150"
             >
-              <span>Schedule a Demo</span>
+              <span>Explore Modules</span>
               <svg
                 width="20"
                 height="20"
@@ -113,7 +113,7 @@ function SectionChoose() {
            
           </div>
           </div>
-          <img src="/assets/pages/casestudy/peoplestrong-casestudy.webp" alt="" className="w-full object-contain" />
+          <img src="/assets/pages/casestudy/peoplestrong-casestudy.webp" alt="" className="w-full object-contain order-1 lg:order-2" />
         </div>
       </div>
     </section>

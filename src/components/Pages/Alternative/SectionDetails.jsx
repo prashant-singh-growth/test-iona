@@ -28,7 +28,7 @@ if(!detail) return
               href={"#form"}
               className="bg-white px-5 py-3 flex-none  font-bold leading-5 text-[14px] text-primary flex flex-row space-x-2 rounded hover:scale-95 ease-in-out duration-150"
             >
-              <span>Schedule a Demo</span>
+              <span>Book a Demo</span>
               <svg
                 width="20"
                 height="20"
@@ -49,7 +49,7 @@ if(!detail) return
               href={"#form"}
               className="bg-primary px-5 py-3 flex-none border-2 border-white font-bold leading-5 text-[14px] text-white flex flex-row space-x-2 rounded hover:scale-95 ease-in-out duration-150"
             >
-              <span>Schedule a Demo</span>
+              <span>Explore Modules</span>
               <svg
                 width="20"
                 height="20"

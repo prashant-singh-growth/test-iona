@@ -1,9 +1,10 @@
 import React from 'react'
-import SecLandingForm from '../SecLandingPage/SecLandingForm'
+
 import ResponsiveGridLines from '../../utils/ResponsiveGridLines'
 import LogoSlider from '../LandingPage/LogoSlider'
+import AlternativeForm from './AlternativeForm'
 
-function CaseStudyBanner({banner}) {
+function AlternativeBanner({banner}) {
   return (
      <section className="w-full bg-[#faf7fb] h-fit relative px-5 md:px-10 slg:px-[60px] lg:px-[90px] pt-10 pb-16 md:py-16 lg:py-20 flex flex-col justify-center items-center">
             <ResponsiveGridLines gradientReplacement={[10, 37, 50, 47, 93, 70, 100, 90, 50, 96]} />
@@ -17,10 +18,10 @@ function CaseStudyBanner({banner}) {
                 </p>
               <LogoSlider/>
               </div>
-             <SecLandingForm/>
+           <AlternativeForm/>
             </div>
           </section>
   )
 }
 
-export default CaseStudyBanner
+export default AlternativeBanner

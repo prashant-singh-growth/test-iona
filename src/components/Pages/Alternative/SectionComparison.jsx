@@ -14,7 +14,7 @@ function SectionComparison({ comparison }) {
           </p>
         </div>
         <div className="w-full overflow-x-auto max-w-[100vw]">
-        <div className="min-w-max grid grid-cols-[150px_250px_400px] md:grid-cols-3 ">
+        <div className=" grid grid-cols-[150px_250px_400px] md:!grid-cols-[25%_35%_40%] lg:grid-cols-3 ">
           <div className="w-full border-b border-[#B9B8B8] h-fit pt-5 pb-6 lg:pb-10 mt-auto px-5 lg:px-12 ">
             <p className="font-lora text-violet_1 text-xl lg:text-2xl font-medium">
               Feature
