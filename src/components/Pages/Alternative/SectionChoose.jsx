@@ -13,7 +13,7 @@ function SectionChoose() {
       <div className="w-full max-w-[1440px] flex flex-col  justify-center items-center space-y-10">
         <div className="flex flex-col  justify-center items-center ">
           <h2 className="text-3xl md:text-4xl lg:text-[40px] lg:leading-[50px] text-white font-bold md:font-semibold text-center ">
-            Nova Verify: The Fully Managed BGV Powerhouse, Eng
+            Why Switch from PeopleStrong to iona.ai
           </h2>
         </div>
         <div className="w-full grid grid-cols-1 lg:grid-cols-2">
