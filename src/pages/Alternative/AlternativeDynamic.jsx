@@ -37,9 +37,9 @@ function AlternativeDynamic() {
       <CertificationSection />
       <TestimonialSlider />
       <CTASection
-        title={"Switch to a Smarter PeopleStrong Alternative"}
+        title={AlternativeData.cta.title}
         description={
-          "Stop juggling with disconnected HR tools. Try iona.ai and see why leading enterprises are choosing it as their preferred PeopleStrong Alternative. Experience end-to-end hiring automation with 100% accuracy and zero compliance risk."
+         AlternativeData.cta.description
         }
       />
       <FAQComponent FAQList={AlternativeData.FaqList} />

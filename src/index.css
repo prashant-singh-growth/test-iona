@@ -206,4 +206,6 @@ p, .secondary-text {
 *{
   scroll-margin-top: 80px;
 }
-
+.faq-text b{
+color: black;
+}

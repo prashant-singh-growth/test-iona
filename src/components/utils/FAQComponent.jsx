@@ -65,7 +65,7 @@ function FAQComponent({FAQList}) {
                     animate={{ opacity: 1, height: "auto", y: 0 }}
                     exit={{ opacity: 0, height: 0, y: -5 }}
                     transition={{ duration: 0.35, ease: "easeInOut" }}
-                    className="mt-[15px] text-[#808080] text-base font-lora pl-8 md:pl-10 overflow-hidden"
+                    className="mt-[15px] text-[#808080] text-base font-lora pl-8 md:pl-10 overflow-hidden faq-text"
                     dangerouslySetInnerHTML={{__html:faq.answer}}
                  />
                 )}
