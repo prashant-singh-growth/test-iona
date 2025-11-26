@@ -18,7 +18,7 @@ function SectionWhySwitch({switchData}) {
             </h3>
             <p className="text-base text-[#EAEAEA] font-lora pt-5 pb-7" dangerouslySetInnerHTML={{__html:card.description}}/>
             <div className="w-full flex flex-col bg-white rounded-[12px] p-5 sm:p-8 justify-start items-start gap-5 sm:gap-10 mb-9 relative">
-              <div className="absolute w-0.5 hidden sm:block bg-primary top-10 left-[55px] h-[30%]"></div>
+              <div className="absolute w-0.5 hidden sm:block bg-primary top-10 left-[55px] h-[30%] z-10"></div>
               <svg
                 className="w-0.5 h-[180px] hidden sm:block absolute bottom-14 left-[55px]"
                 viewBox="0 0 2 162"
