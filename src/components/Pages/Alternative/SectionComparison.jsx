@@ -29,7 +29,7 @@ function SectionComparison({ comparison }) {
           </div>
           <div className="w-full bg-[#2A2564] rounded-t-lg border-b border-[#B9B8B8] pb-6 lg:pb-10  pt-20 shadow-[0_0_40px_0_#00000059] px-6 lg:px-12 items-end ">
             <img
-              src="/assets/pages/casestudy/iona-ai-logo.png"
+              src="/assets/pages/Alternative/iona-ai-logo.png"
               alt=""
               className="w-[100px] lg:w-[161px] "
             />

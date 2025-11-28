@@ -2,7 +2,9 @@ import React, { useEffect, useState } from "react";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-function AlternativeForm() {
+
+function CaseStudyForm({pdfurl}) {
+  console.log(pdfurl ,"check")
   const [formData, setFormData] = useState({
     full_name: "",
     email: "",
@@ -26,7 +28,7 @@ function AlternativeForm() {
 
 
   const portalId = "146385824";
-  const formId = "be82be9f-821e-446d-94a1-1def3ed9e5de";
+  const formId = "7ce6e588-ecbe-4416-be8a-db2103cb5829";
 
   // Capture UTM and tracking parameters
   useEffect(() => {
@@ -154,7 +156,12 @@ function AlternativeForm() {
           gclid: "",
           fbclid: "",
         });
-        window.location.href = "/competitor/lead-submit";
+        if (!pdfurl) {
+  toast.error("PDF URL is missing!");
+  return;
+}
+
+window.location.href = pdfurl;
       } else {
         throw new Error(
           "HubSpot submission failed. Please check your form settings."
@@ -172,8 +179,8 @@ function AlternativeForm() {
         className="p-5 py-10 md:p-10 flex flex-col space-y-9"
       >
         <div className="flex flex-col">
-            <h2 className="font-lora font-normal text-3xl text-darkVoilet">Get Started</h2>
-            <p className="text-base font-lora text-[#5A4E7A]">Schedule your personalized demo</p>
+            <h2 className="font-lora font-normal text-3xl text-darkVoilet">Download Success Story</h2>
+       
         </div>
         <div className="w-full grid grid-cols-1  gap-6">
           {[
@@ -227,11 +234,27 @@ function AlternativeForm() {
         <button
           type="submit"
           disabled={status.loading}
-          className="bg-primary px-5 py-3 font-bold leading-5 text-[14px] text-white flex items-center justify-center space-x-2 rounded hover:scale-95 transition duration-150 w-fit"
+          className="bg-primary px-5 py-3 font-bold leading-5 text-[14px] text-white flex items-center justify-center gap-2 rounded hover:scale-95 transition duration-150 w-fit"
         >
-          {status.loading ? "Submitting..." : "Schedule a Demo"}
+          {status.loading ? "Submitting..." : "Download  Case study"}
+           <svg
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            
+          >
+            <path
+              d="M4.16669 10H15.8334M15.8334 10L10.8334 5M15.8334 10L10.8334 15"
+              stroke="#ffffff"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
         </button>
-         <p className="text-[10px] !font-sans  text-black">*Ideal for 5000+ Employee Size Orgs*</p>
+         {/* <p className="text-[10px] !font-sans  text-black">*Ideal for 5000+ Employee Size Orgs*</p> */}
 </div>
 
         {status.success && (
@@ -245,4 +268,4 @@ function AlternativeForm() {
   );
 }
 
-export default AlternativeForm
+export default CaseStudyForm

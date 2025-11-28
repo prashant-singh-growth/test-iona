@@ -41,7 +41,7 @@ description:"Stop juggling with disconnected HR tools. Try iona.ai and see why l
       },
     },
     comparison: {
-      competitorLogo: "/assets/pages/casestudy/peoplestrong.png",
+      competitorLogo: "/assets/pages/Alternative/peoplestrong.png",
       title: "iona.ai vs PeopleStrong : Quick Comparison",
       description:
         "See why Agentic AI-led automation with iona.ai beats traditional HR systems and ranks as the top PeopleStrong alternative in every measurable way.",
@@ -209,7 +209,7 @@ description:"Stop juggling with disconnected HR tools. Try iona.ai and see why l
       },
     },
     comparison: {
-      competitorLogo: "/assets/pages/casestudy/dbox-white-logo.jpg",
+      competitorLogo: "/assets/pages/Alternative/dbox-white-logo.jpg",
       title: "iona.ai vs Darwinbox: Quick Comparison",
       description:
         "See why Agentic AI-led automation with iona.ai beats traditional HCM suites and ranks as the top Darwinbox alternative in every measurable way.",
@@ -368,7 +368,7 @@ description:"Unlock the power of iona.ai’s Managed Service. We blend Agentic A
       },
     },
     comparison: {
-      competitorLogo: "/assets/pages/casestudy/hrone.svg",
+      competitorLogo: "/assets/pages/Alternative/hrone.svg",
       title: "iona.ai vs HROne: Quick Comparison",
       description: "See how iona.ai’s Agentic AI-led automation goes beyond HROne’s HR management framework, turning manual hiring cycles into fully autonomous, outcome-driven systems.",
       rows: [

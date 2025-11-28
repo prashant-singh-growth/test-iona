@@ -1,13 +1,18 @@
 import React, { Suspense, lazy, useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useLocation,
+} from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { enforceHTTPS } from "./utils/security";
 
 import RedirectHandler from "./components/utils/RedirectHandler";
-import Header from "./components/Layout/Header"
-import Footer from "./components/Layout/Footer"
+import Header from "./components/Layout/Header";
+import Footer from "./components/Layout/Footer";
 import { ToastContainer } from "react-toastify";
 
 // Lazy load components
@@ -27,17 +32,25 @@ const NovaEngage = lazy(() => import("./pages/Solutions/NovaEngage"));
 const NovaVerify = lazy(() => import("./pages/Solutions/NovaVerify"));
 const NovaConnect = lazy(() => import("./pages/Solutions/NovaConnect"));
 const Blogs = lazy(() => import("./pages/Blogs"));
-const CaseStudies = lazy(() => import("./pages/CaseStudies"));
+// const CaseStudies = lazy(() => import("./pages/CaseStudies"));
 const Vids = lazy(() => import("./pages/Vids"));
 const ScheduleDemo = lazy(() => import("./pages/ScheduleDemo"));
 const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
 const CookiePolicy = lazy(() => import("./pages/CookiePolicy"));
 const TermsOfService = lazy(() => import("./pages/TermsOfService"));
-const Landingpage = lazy(()=> import("./pages/Landing/Landingpages"))
-const ThankYouPage = lazy(()=> import('./pages/ThankYou'));
-const SolutionPage = lazy(()=> import('./pages/SolutionPage'));
-const SecLandingPage = lazy(()=> import('./pages/Landing/SecLandingPage'));
-const AlternativeDynamicPage = lazy(()=> import('./pages/Alternative/AlternativeDynamic'))
+const Landingpage = lazy(() => import("./pages/Landing/Landingpages"));
+const ThankYouPage = lazy(() => import("./pages/ThankYou"));
+const SolutionPage = lazy(() => import("./pages/SolutionPage"));
+const SecLandingPage = lazy(() => import("./pages/Landing/SecLandingPage"));
+const AlternativeDynamicPage = lazy(
+  () => import("./pages/Alternative/AlternativeDynamic")
+);
+const CaseStudyDynamicPage = lazy(
+  () => import("./pages/case-study/CaseStudyDynamic")
+);
+const CaseStudyLandingPage = lazy(
+  () => import("./pages/case-study/CaseStudyLanding")
+);
 
 // Scroll to top on route change
 const ScrollToTop = () => {
@@ -93,7 +106,14 @@ const AnimatedRoutes = () => {
   return (
     <AnimatePresence mode="wait" initial={false}>
       <Routes location={location} key={location.pathname}>
-        <Route path="/" element={<PageTransition><Home /></PageTransition>} />
+        <Route
+          path="/"
+          element={
+            <PageTransition>
+              <Home />
+            </PageTransition>
+          }
+        />
         <Route
           path="/about"
           element={
@@ -104,40 +124,237 @@ const AnimatedRoutes = () => {
             </PageTransition>
           }
         />
-        <Route path="/contact" element={<PageTransition><Contact /></PageTransition>} />
-        <Route path="/schedule-demo" element={<PageTransition><ScheduleDemo /></PageTransition>} />
-        <Route path="/solutions/novacount" element={<PageTransition><NovaCount /></PageTransition>} />
-        <Route path="/solutions/novaassist" element={<PageTransition><NovaAssist /></PageTransition>} />
-        <Route path="/solutions/speedboard" element={<PageTransition><NovaTrack /></PageTransition>} />
-        <Route path="/novatrack" element={<PageTransition><NovaTrack /></PageTransition>} />
-        <Route path="/solutions/novastart" element={<PageTransition><NovaStart /></PageTransition>} />
-        <Route path="/solutions/novadoc" element={<PageTransition><NovaDoc /></PageTransition>} />
-        <Route path="/solutions/trainplus" element={<PageTransition><NovaTrain /></PageTransition>} />
-        <Route path="/solutions/novaengage" element={<PageTransition><NovaEngage /></PageTransition>} />
-        <Route path="/solutions/novaverify" element={<PageTransition><NovaVerify /></PageTransition>} />
-        <Route path="/solutions/novaconnect" element={<PageTransition><NovaConnect /></PageTransition>} />
-        <Route path="/blogs" element={<PageTransition><Blogs /></PageTransition>} />
-        <Route path="/videos" element={<PageTransition><Vids /></PageTransition>} />
-        <Route path="/case-studies" element={<PageTransition><CaseStudies /></PageTransition>} />
-        <Route path="/privacy" element={<PageTransition><PrivacyPolicy /></PageTransition>} />
-        <Route path="/cookies" element={<PageTransition><CookiePolicy /></PageTransition>} />
-        <Route path="/terms" element={<PageTransition><TermsOfService /></PageTransition>} />
-        <Route path="/end-to-end-hiring-solution-for-enterprises" element={<PageTransition><Landingpage/></PageTransition>} />
-        <Route path="/thank-you" element={<PageTransition><ThankYouPage/></PageTransition>} />
-        <Route path="/end-to-end-hiring-solution-for-enterprises/thank-you" element={<PageTransition><ThankYouPage/></PageTransition>} />
-        <Route path="/solutions" element={<PageTransition><SolutionPage/></PageTransition>} />
-        <Route path="/automated-background-verification" element={<PageTransition><SecLandingPage/></PageTransition>} />
-              <Route path="/automated-background-verification/thank-you" element={<PageTransition><ThankYouPage/></PageTransition>} />
-       
-        <Route path="/:Alternative" element={<PageTransition><AlternativeDynamicPage/></PageTransition>} />
+        <Route
+          path="/contact"
+          element={
+            <PageTransition>
+              <Contact />
+            </PageTransition>
+          }
+        />
+        <Route
+          path="/schedule-demo"
+          element={
+            <PageTransition>
+              <ScheduleDemo />
+            </PageTransition>
+          }
+        />
+        <Route
+          path="/solutions/novacount"
+          element={
+            <PageTransition>
+              <NovaCount />
+            </PageTransition>
+          }
+        />
+        <Route
+          path="/solutions/novaassist"
+          element={
+            <PageTransition>
+              <NovaAssist />
+            </PageTransition>
+          }
+        />
+        <Route
+          path="/solutions/speedboard"
+          element={
+            <PageTransition>
+              <NovaTrack />
+            </PageTransition>
+          }
+        />
+        <Route
+          path="/solutions/novatrack"
+          element={
+            <PageTransition>
+              <NovaTrack />
+            </PageTransition>
+          }
+        />
+        <Route
+          path="/solutions/novastart"
+          element={
+            <PageTransition>
+              <NovaStart />
+            </PageTransition>
+          }
+        />
+        <Route
+          path="/solutions/novadoc"
+          element={
+            <PageTransition>
+              <NovaDoc />
+            </PageTransition>
+          }
+        />
+        <Route
+          path="/solutions/trainplus"
+          element={
+            <PageTransition>
+              <NovaTrain />
+            </PageTransition>
+          }
+        />
+        <Route
+          path="/solutions/novaengage"
+          element={
+            <PageTransition>
+              <NovaEngage />
+            </PageTransition>
+          }
+        />
+        <Route
+          path="/solutions/novaverify"
+          element={
+            <PageTransition>
+              <NovaVerify />
+            </PageTransition>
+          }
+        />
+        <Route
+          path="/solutions/novaconnect"
+          element={
+            <PageTransition>
+              <NovaConnect />
+            </PageTransition>
+          }
+        />
+        <Route
+          path="/blogs"
+          element={
+            <PageTransition>
+              <Blogs />
+            </PageTransition>
+          }
+        />
+        <Route
+          path="/videos"
+          element={
+            <PageTransition>
+              <Vids />
+            </PageTransition>
+          }
+        />
+        <Route
+          path="/case-studies"
+          element={
+            <PageTransition>
+              <CaseStudyLandingPage />
+            </PageTransition>
+          }
+        />
+        <Route
+          path="/case-studies/:casestudy"
+          element={
+            <PageTransition>
+              <CaseStudyDynamicPage />
+            </PageTransition>
+          }
+        />
+        <Route
+          path="/privacy"
+          element={
+            <PageTransition>
+              <PrivacyPolicy />
+            </PageTransition>
+          }
+        />
+        <Route
+          path="/cookies"
+          element={
+            <PageTransition>
+              <CookiePolicy />
+            </PageTransition>
+          }
+        />
+        <Route
+          path="/terms"
+          element={
+            <PageTransition>
+              <TermsOfService />
+            </PageTransition>
+          }
+        />
+        <Route
+          path="/end-to-end-hiring-solution-for-enterprises"
+          element={
+            <PageTransition>
+              <Landingpage />
+            </PageTransition>
+          }
+        />
+        <Route
+          path="/thank-you"
+          element={
+            <PageTransition>
+              <ThankYouPage />
+            </PageTransition>
+          }
+        />
+        <Route
+          path="/end-to-end-hiring-solution-for-enterprises/thank-you"
+          element={
+            <PageTransition>
+              <ThankYouPage />
+            </PageTransition>
+          }
+        />
+        <Route
+          path="/solutions"
+          element={
+            <PageTransition>
+              <SolutionPage />
+            </PageTransition>
+          }
+        />
+        <Route
+          path="/automated-background-verification"
+          element={
+            <PageTransition>
+              <SecLandingPage />
+            </PageTransition>
+          }
+        />
+        <Route
+          path="/automated-background-verification/thank-you"
+          element={
+            <PageTransition>
+              <ThankYouPage />
+            </PageTransition>
+          }
+        />
+        <Route
+          path="/competitor/lead-submit"
+          element={
+            <PageTransition>
+              <ThankYouPage />
+            </PageTransition>
+          }
+        />
+
+        <Route
+          path="/:Alternative"
+          element={
+            <PageTransition>
+              <AlternativeDynamicPage />
+            </PageTransition>
+          }
+        />
         <Route
           path="*"
           element={
             <PageTransition>
               <div className="flex flex-col items-center justify-center min-h-[60vh]">
-                <h1 className="text-4xl font-bold mb-4">404 - Page Not Found</h1>
-                <p className="text-lg mb-8">The page you're looking for doesn't exist.</p>
-                <a href="/" className="btn-primary">Go Home</a>
+                <h1 className="text-4xl font-bold mb-4">
+                  404 - Page Not Found
+                </h1>
+                <p className="text-lg mb-8">
+                  The page you're looking for doesn't exist.
+                </p>
+                <a href="/" className="btn-primary">
+                  Go Home
+                </a>
               </div>
             </PageTransition>
           }
@@ -190,13 +407,16 @@ function AppWrapper() {
 
 function AppContent() {
   const location = useLocation();
-  const hideNavbarRoutes = ["/end-to-end-hiring-solution-for-enterprises","/automated-background-verification"];
+  const hideNavbarRoutes = [
+    "/end-to-end-hiring-solution-for-enterprises",
+    "/automated-background-verification",
+  ];
   const shouldHideNavbar = hideNavbarRoutes.includes(location.pathname);
 
   return (
     <>
-    <RedirectHandler/>
-    <ToastContainer position="top-right" autoClose="4000"/>
+      <RedirectHandler />
+      <ToastContainer position="top-right" autoClose="4000" />
       <ScrollToTop />
       <div className="flex flex-col min-h-screen overflow-hidden">
         {!shouldHideNavbar && <Header />}

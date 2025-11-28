@@ -5,7 +5,7 @@ function SeoHeader({ title, description, canonical }) {
   // Auto-generate canonical URL if not passed
   const defaultCanonical =
     typeof window !== "undefined"
-      ? window.location.origin + window.location.pathname
+      ? window.location.pathname
       : "/";
 
   return (
@@ -25,7 +25,7 @@ function SeoHeader({ title, description, canonical }) {
 
       <link
         rel="canonical"
-        href={canonical ? canonical : defaultCanonical}
+        href={canonical ? `https://www.iona.ai${canonical}` : `https://www.iona.ai${defaultCanonical}`}
       />
     </Helmet>
   );
