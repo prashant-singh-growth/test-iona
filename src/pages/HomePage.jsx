@@ -21,8 +21,8 @@ const HomePage = memo(() => {
   return (
     <div className="bg-white text-primaryText theme-lora-font">
       <SeoHeader
-        title={" Purposeful Hiring Powered by AI & Human Insight | IONA AI"}
-        description={"Discover IONA AI’s intelligent hiring solutions that merge AI brilliance with human wisdom to make hiring seamless, inclusive, and empowering for women leaders."}
+        title={" Purposeful Hiring Powered by AI & Human Insight | iona.ai"}
+        description={"Discover iona.ai’s intelligent hiring solutions that merge AI brilliance with human wisdom to make hiring seamless, inclusive, and empowering for women leaders."}
         canonical={"/"}
       />
       {/* banner */}

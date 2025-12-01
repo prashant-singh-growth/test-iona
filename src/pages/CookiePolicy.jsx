@@ -5,8 +5,8 @@ const CookiePolicy = () => {
   return (
     <div className="bg-background">
        <SeoHeader
-      title={"Cookie Policy | Iona AI"}
-      description={"See how Iona AI uses cookies responsibly to enhance experience, personalize insights, and maintain data clarity."}
+      title={"Cookie Policy | iona.ai"}
+      description={"See how iona.ai uses cookies responsibly to enhance experience, personalize insights, and maintain data clarity."}
      
       />
       {/* Hero Section */}

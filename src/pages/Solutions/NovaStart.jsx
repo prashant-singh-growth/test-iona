@@ -51,7 +51,7 @@ const NovaStart = () => {
   return (
     <div className="flex flex-col items-center overflow-x-hidden">
         <SeoHeader
-      title={"NovaStart | Seamless Onboarding Automation by IONA AI"}
+      title={"NovaStart | Seamless Onboarding Automation by iona.ai"}
       description={"Transform onboarding with NovaStart. Deliver personalized, efficient, and delightful experiences that set employees up for success from day one."}
      
       />

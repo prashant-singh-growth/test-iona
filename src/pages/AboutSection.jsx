@@ -13,7 +13,7 @@ const AboutSection = memo(() => {
     <div className="bg-background">
       <SeoHeader
       title={"About IONA.AI | Redefining Purposeful, Equitable Hiring"}
-      description={"Learn how IONA AI blends First Principles thinking and AI innovation to simplify hiring, foster inclusion, and empower organizations to discover true potential."}
+      description={"Learn how iona.ai blends First Principles thinking and AI innovation to simplify hiring, foster inclusion, and empower organizations to discover true potential."}
       canonical={"/about"}
       />
       {/* Hero Banner */}

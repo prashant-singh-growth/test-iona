@@ -51,7 +51,7 @@ const NovaTrain = () => {
   return (
     <div className="flex flex-col items-center overflow-x-hidden">
         <SeoHeader
-      title={"TrainPlus | AI-Driven Learning & Development by IONA AI"}
+      title={"TrainPlus | AI-Driven Learning & Development by iona.ai"}
       description={"Upskill your workforce with TrainPlus. Deliver adaptive, personalized learning experiences powered by AI for continuous growth and performance excellence."}
      
       />

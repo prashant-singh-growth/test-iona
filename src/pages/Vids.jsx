@@ -11,7 +11,7 @@ function Vids() {
   const videos = [
     {
       id: 1,
-      title: "Do what you love doing! iona AI chatbot will take care of new hire onboarding",
+      title: "Do what you love doing! iona.ai chatbot will take care of new hire onboarding",
       summary: "A comprehensive overview of our AI-driven recruitment solution and its benefits.",
       duration: "0:09",
       thumbnail: "/images/video-1.jpg",
@@ -19,7 +19,7 @@ function Vids() {
     },
     {
       id: 2,
-      title: "iona AI chatbot proactively engages with new hires",
+      title: "iona.ai chatbot proactively engages with new hires",
       summary: "Watch our platform in action as it screens and ranks candidates in real-time.",
       duration: "0:31",
       thumbnail: "/images/video-2.jpg",
@@ -87,8 +87,8 @@ function Vids() {
   return (
     <div className="bg-background min-h-screen">
       <SeoHeader
-      title={"Videos | Learn How IONA AI Transforms Hiring with AI"}
-      description={"Watch demos, expert talks, and customer success stories. See how IONA AI’s intelligent solutions redefine how businesses hire, onboard, and engage talent."}
+      title={"Videos | Learn How iona.ai Transforms Hiring with AI"}
+      description={"Watch demos, expert talks, and customer success stories. See how iona.ai’s intelligent solutions redefine how businesses hire, onboard, and engage talent."}
      
       />
       {/* Hero Section */}

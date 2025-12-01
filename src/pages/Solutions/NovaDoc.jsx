@@ -51,7 +51,7 @@ const NovaDoc = () => {
   return (
     <div className="flex flex-col items-center overflow-x-hidden">
         <SeoHeader
-      title={"NovaDoc | Intelligent Document Management by IONA AI"}
+      title={"NovaDoc | Intelligent Document Management by iona.ai"}
       description={"Automate, organize, and verify hiring documentation effortlessly. NovaDoc ensures accuracy, compliance, and security across your recruitment workflows."}
      
       />

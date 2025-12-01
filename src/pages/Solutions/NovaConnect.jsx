@@ -51,7 +51,7 @@ const NovaConnect = () => {
   return (
     <div className="flex flex-col items-center overflow-x-hidden">
        <SeoHeader
-      title={"NovaConnect | AI-Powered Hiring by Iona AI"}
+      title={"NovaConnect | AI-Powered Hiring by iona.ai"}
       description={"Discover NovaConnect by Iona.ai — an AI-driven solution that simplifies, humanizes, and accelerates your talent engagement journey."}
      
       />

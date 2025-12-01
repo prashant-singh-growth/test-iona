@@ -51,7 +51,7 @@ function Header() {
         <a href="/" className="w-fit">
           <img
             src={`${process.env.PUBLIC_URL}/assets/iona-ai-logo.png`}
-            alt="Iona AI Logo"
+            alt="iona.ai Logo"
             className="h-14"
           />
         </a>

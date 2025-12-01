@@ -5,8 +5,8 @@ const TermsOfService = () => {
   return (
     <div className="bg-background">
        <SeoHeader
-      title={"Terms of Use | Iona AI"}
-      description={"Read Iona AI's Terms of Use to understand our commitment to ethical AI, fairness, and transparency in all hiring solutions."}
+      title={"Terms of Use | iona.ai"}
+      description={"Read iona.ai's Terms of Use to understand our commitment to ethical AI, fairness, and transparency in all hiring solutions."}
      
       />
       {/* Hero Section */}

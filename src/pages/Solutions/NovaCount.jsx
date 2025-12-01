@@ -51,7 +51,7 @@ const NovaCount = () => {
   return (
     <div className="flex flex-col items-center overflow-x-hidden">
       <SeoHeader
-      title={"NovaCount | Smart Workforce Analytics by IONA AI"}
+      title={"NovaCount | Smart Workforce Analytics by iona.ai"}
       description={"Track, analyze, and optimize workforce efficiency with NovaCount. Empower HR teams with data-driven insights for transparent and smarter decision-making."}
       canonical={"/solutions/novacount"}
       />

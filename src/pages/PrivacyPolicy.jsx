@@ -5,7 +5,7 @@ const PrivacyPolicy = () => {
   return (
     <div className="bg-background">
        <SeoHeader
-      title={"Privacy Policy | Iona AI"}
+      title={"Privacy Policy | iona.ai"}
       description={"Learn how Iona.ai protects your data and ensures transparency, security, and trust in every AI-powered hiring experience."}
      
       />

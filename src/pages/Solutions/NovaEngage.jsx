@@ -51,7 +51,7 @@ const NovaEngage = () => {
   return (
     <div className="flex flex-col items-center overflow-x-hidden">
        <SeoHeader
-      title={"NovaEngage | Empower Employee Engagement with IONA AI"}
+      title={"NovaEngage | Empower Employee Engagement with iona.ai"}
       description={"Enhance culture and retention with NovaEngage. Harness AI insights to strengthen communication, motivation, and inclusion across your organization."}
      
       />

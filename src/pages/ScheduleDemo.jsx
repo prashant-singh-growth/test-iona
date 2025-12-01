@@ -141,8 +141,8 @@ const ScheduleDemo = () => {
   return (
     <div className="bg-background min-h-screen">
         <SeoHeader
-      title={"Schedule a Demo | Experience the Power of IONA AI"}
-      description={"Book a personalized demo to see how IONA AI simplifies hiring, automates workflows, and empowers teams to find purpose-driven talent faster."}
+      title={"Schedule a Demo | Experience the Power of iona.ai"}
+      description={"Book a personalized demo to see how iona.ai simplifies hiring, automates workflows, and empowers teams to find purpose-driven talent faster."}
      
       />
       {/* Hero Section - Added proper padding to prevent navbar overlap */}

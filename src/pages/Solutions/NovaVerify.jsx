@@ -51,7 +51,7 @@ const NovaVerify = () => {
   return (
     <div className="flex flex-col items-center overflow-x-hidden">
         <SeoHeader
-      title={"NovaVerify | Smart Candidate Verification by IONA AI"}
+      title={"NovaVerify | Smart Candidate Verification by iona.ai"}
       description={"Ensure authenticity and trust in hiring with NovaVerify. Leverage AI-driven verification to validate credentials, background, and candidate integrity."}
      
       />

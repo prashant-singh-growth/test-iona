@@ -241,8 +241,8 @@ function CaseStudies() {
   return (
     <div className="bg-background min-h-screen">
        <SeoHeader
-      title={"Case Studies | Real Hiring Success Stories by IONA AI"}
-      description={"Explore how leading organizations transformed their hiring with IONA AI. Real-world results that prove the impact of purposeful, AI-powered talent solutions."}
+      title={"Case Studies | Real Hiring Success Stories by iona.ai"}
+      description={"Explore how leading organizations transformed their hiring with iona.ai. Real-world results that prove the impact of purposeful, AI-powered talent solutions."}
      
       />
       {/* Hero Section */}

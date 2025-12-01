@@ -52,7 +52,7 @@ const NovaAssist = () => {
   return (
     <div className="flex flex-col items-center overflow-x-hidden">
         <SeoHeader
-      title={"NovaAssist | AI-Powered Recruitment Assistant by IONA AI"}
+      title={"NovaAssist | AI-Powered Recruitment Assistant by iona.ai"}
       description={"Simplify hiring with NovaAssist—your intelligent virtual recruiter. Automate tasks, enhance candidate engagement, and focus on meaningful human connections."}
       canonical={"/solutions/novaassist"}
       />

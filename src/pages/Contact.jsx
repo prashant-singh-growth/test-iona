@@ -89,8 +89,8 @@ const Contact = () => {
   return (
     <div className="bg-background">
        <SeoHeader
-      title={"Contact IONA AI | Let’s Build the Future of Hiring"}
-      description={"Get in touch with the IONA AI team to explore solutions, partnerships, or demos. Together, let’s make hiring more purposeful, inclusive, and intelligent."}
+      title={"Contact iona.ai | Let’s Build the Future of Hiring"}
+      description={"Get in touch with the iona.ai team to explore solutions, partnerships, or demos. Together, let’s make hiring more purposeful, inclusive, and intelligent."}
      
       />
       {/* Hero Section */}

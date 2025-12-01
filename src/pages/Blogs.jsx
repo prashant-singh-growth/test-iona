@@ -192,8 +192,8 @@ function Blogs() {
   return (
     <div className="bg-background min-h-screen">
         <SeoHeader
-      title={"IONA AI Blog | Insights on AI, Hiring & Inclusion"}
-      description={"Read expert perspectives on AI, hiring innovation, and workplace inclusion. Stay updated with IONA AI’s latest research, trends, and thought leadership."}
+      title={"iona.ai Blog | Insights on AI, Hiring & Inclusion"}
+      description={"Read expert perspectives on AI, hiring innovation, and workplace inclusion. Stay updated with iona.ai’s latest research, trends, and thought leadership."}
      
       />
       {/* Hero Section */}
