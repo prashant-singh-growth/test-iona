@@ -8,6 +8,7 @@ export const CaseStudyJson = {
         },
         PDFurl:`/assets/pages/casestudy/pdf/leading-life-insurance-provider.pdf`,
         image:"/assets/pages/casestudy/1.webp",
+        innerImage:"/assets/pages/casestudy/case-study-1.webp",
         headshot:"From Prospect to Productive Powerhouse",
         title:"How a leading life insurer used iona.ai to transform their hiring process and  achieved 90% faster onboarding for 500+ new hires every month with AI-driven automation.",
         outcome:[
@@ -51,6 +52,7 @@ export const CaseStudyJson = {
         PDFurl:`/assets/pages/casestudy/pdf/leading-consumer-brand.pdf`,
         headshot:"From Manual Chaos to Automated Hiring",
         image:"/assets/pages/casestudy/2.webp",
+        innerImage:"/assets/pages/casestudy/case-study-3.webp",
         title:"How a leading consumer brand used iona.ai to dominate the market, achieving 4X faster JD turnaround time and hiring field service professionals with 100% automated BGV. ",
         outcome:[
             {
@@ -91,6 +93,7 @@ export const CaseStudyJson = {
             description:"Learn how a leading healthcare provider used iona.ai to transform their workforce agility and cut onboarding time by 83% with 95% documentation accuracy."
         },
         image:"/assets/pages/casestudy/3.webp",
+         innerImage:"/assets/pages/casestudy/case-study-2.webp",
         PDFurl:`/assets/pages/casestudy/pdf/healthcare-provider.pdf`,
         headshot:"From Complex Verification Processes to 100% Accuracy",
         title:"How a leading healthcare network transformed its verification process, saved millions in operations, expanded its workforce, and accelerated hiring with iona.ai. ",
@@ -104,7 +107,7 @@ export const CaseStudyJson = {
                 text:"Documentation Accuracy"
             },
             {
-                count:"$2.1 million",
+                count:"$2.1M",
                 text:"Annual Savings"
             },
         ],

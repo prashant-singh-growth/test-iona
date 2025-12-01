@@ -20,11 +20,11 @@ function Header() {
       links: [
         { label: "NovaCount", url: "/solutions/novacount" },
         { label: "NovaAssist", url: "/solutions/novaassist" },
-        { label: "NovaTrack", url: "/solutions/speedboard" },
+        { label: "NovaTrack", url: "/solutions/novatrack" },
         { label: "NovaStart", url: "/solutions/novastart" },
         { label: "NovaDoc", url: "/solutions/novadoc" },
         { label: "NovaEngage", url: "/solutions/novaengage" },
-        { label: "NovaTrain", url: "/solutions/trainplus" },
+        { label: "NovaTrain", url: "/solutions/novatrain" },
         { label: "NovaVerify", url: "/solutions/novaverify" },
         { label: "NovaConnect", url: "/solutions/novaconnect" },
       ],

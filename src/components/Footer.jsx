@@ -128,11 +128,11 @@ const Footer = () => {
             links={[
               { name: "NovaCount", path: "/solutions/novacount"},
               { name: "NovaAssist", path: "/solutions/novaassist" },
-              { name: "NovaTrack", path: "/solutions/speedboard" },
+              { name: "NovaTrack", path: "/solutions/novatrack" },
               { name: "NovaStart", path: "/solutions/novastart" },
               { name: "NovaDoc", path: "/solutions/novadoc" },
               { name: "NovaEngage", path: "/solutions/novaengage" },
-              { name: "NovaTrain", path: "/solutions/trainplus" },
+              { name: "NovaTrain", path: "/solutions/novatrain" },
               { name: "NovaVerify", path: "/solutions/novaverify" },
               { name: "NovaConnect", path: "/solutions/novaconnect" },
             ]}

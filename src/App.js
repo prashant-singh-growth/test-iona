@@ -156,14 +156,14 @@ const AnimatedRoutes = () => {
             </PageTransition>
           }
         />
-        <Route
+        {/* <Route
           path="/solutions/speedboard"
           element={
             <PageTransition>
               <NovaTrack />
             </PageTransition>
           }
-        />
+        /> */}
         <Route
           path="/solutions/novatrack"
           element={
@@ -189,7 +189,7 @@ const AnimatedRoutes = () => {
           }
         />
         <Route
-          path="/solutions/trainplus"
+          path="/solutions/novatrain"
           element={
             <PageTransition>
               <NovaTrain />

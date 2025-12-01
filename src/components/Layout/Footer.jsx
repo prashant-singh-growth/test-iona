@@ -1,5 +1,5 @@
 import React from "react";
-import { FaLinkedinIn } from "react-icons/fa6";
+import { FaLinkedinIn, FaMapLocationDot } from "react-icons/fa6";
 import { useLocation } from "react-router-dom";
 
 function Footer() {
@@ -20,7 +20,7 @@ function Footer() {
       links: [
         { placeHolder: "NovaCount", url: "/solutions/novacount" },
         { placeHolder: "NovaAssist", url: "/solutions/novaassist" },
-        { placeHolder: "NovaTrack", url: "/solutions/speedboard" },
+        { placeHolder: "NovaTrack", url: "/solutions/novatrack" },
       ],
     },
     {
@@ -34,7 +34,7 @@ function Footer() {
     {
       title: "",
       links: [
-        { placeHolder: "NovaTrain", url: "/solutions/trainplus" },
+        { placeHolder: "NovaTrain", url: "/solutions/novatrain" },
         { placeHolder: "NovaVerify", url: "/solutions/novaverify" },
         { placeHolder: "NovaConnect", url: "/solutions/novaconnect" },
       ],
@@ -71,7 +71,11 @@ function Footer() {
                 and ensuring 100% data accuracy."
               </p>
             </div>
+   <div className="w-full flex flex-row gap-2 max-w-[400px] mt-3 border-y border-primary/20 py-5">
+  <FaMapLocationDot className="text-primary text-2xl flex-none" />
+  <p className="text-base font-lora text-primary"><span className="font-bold">Registered Office:</span> <br/> Amazona 36 Top Floor, Eldeco Green Meadows Sector PI Greater Noida 201306 UP</p>
 
+</div>
             <div className="w-fit flex flex-row justify-center items-center space-x-5 lg:mt-auto">
               {[
                 {
@@ -160,6 +164,7 @@ function Footer() {
                   </svg>
                 </button>
               </div>
+           
             </div>
           </div>
         </div>

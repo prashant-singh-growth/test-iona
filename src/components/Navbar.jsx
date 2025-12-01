@@ -251,7 +251,7 @@ const Navbar = () => {
                     <DropdownLink 
                       title="NovaTrack" 
                       description="NextGen Application Tracking System"
-                      path="/solutions/speedboard"
+                      path="/solutions/novatrack"
                       onClick={() => setShowSolutions(false)}
                     />
                     <DropdownLink 
@@ -275,7 +275,7 @@ const Navbar = () => {
                     <DropdownLink 
                       title="NovaTrain" 
                       description="Mandatory Trainings and Induction of New Hires"
-                      path="/solutions/trainplus"
+                      path="/solutions/novatrain"
                       onClick={() => setShowSolutions(false)}
                     />
                     <DropdownLink 
@@ -465,11 +465,11 @@ const Navbar = () => {
                         >
                           <MobileNavItem label="NovaCount" path="/solutions/novacount" isSubmenu />
                           <MobileNavItem label="NovaAssist" path="/solutions/novaassist" isSubmenu />
-                          <MobileNavItem label="NovaTrack" path="/solutions/speedboard" isSubmenu />
+                          <MobileNavItem label="NovaTrack" path="/solutions/novatrack" isSubmenu />
                           <MobileNavItem label="NovaStart" path="/solutions/novastart" isSubmenu />
                           <MobileNavItem label="NovaDoc" path="/solutions/novadoc" isSubmenu />
                           <MobileNavItem label="NovaEngage" path="/solutions/novaengage" isSubmenu />
-                          <MobileNavItem label="NovaTrain" path="/solutions/trainplus" isSubmenu />
+                          <MobileNavItem label="NovaTrain" path="/solutions/novatrain" isSubmenu />
                           <MobileNavItem label="NovaVerify" path="/solutions/novaverify" isSubmenu />
                           <MobileNavItem label="NovaConnect" path="/solutions/novaconnect" isSubmenu />
                         </motion.ul>

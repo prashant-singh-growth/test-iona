@@ -53,7 +53,7 @@ const NovaTrack = () => {
        <SeoHeader
       title={"SpeedBoard | Accelerate Hiring Decisions with IONA AI"}
       description={"SpeedBoard streamlines candidate evaluations and hiring workflows. Make faster, smarter hiring decisions powered by real-time AI insights and collaboration."}
-      canonical={"/solutions/speedboard"}
+      canonical={"/solutions/novatrack"}
       />
       {/* Hero Section */}
       <section className="w-full bg-purple-gradient text-white py-16">

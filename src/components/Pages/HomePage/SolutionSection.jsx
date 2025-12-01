@@ -15,7 +15,7 @@ const solutionListJson = [
         "imgurl": "NovaTrack",
         "title": "NovaTrack –<br/> NextGen Application <br/> Tracking System",
         "description": "Seamlessly track and manage candidates through their journey with a state-of-the-art ATS from application to hire.",
-        "url": "/solutions/speedboard"
+        "url": "/solutions/novatrack"
     },
     {
         "imgurl": "NovaStart",
@@ -39,7 +39,7 @@ const solutionListJson = [
         "imgurl": "NovaTrain",
         "title": "NovaTrain –<br/> Mandatory Trainings and Induction of New Hires",
         "description": "Automates mandatory training assignments and induction processes, which reduces manual effort and ensures compliance with training requirements.",
-        "url": "/solutions/trainplus"
+        "url": "/solutions/novatrain"
     },
     {
         "imgurl": "NovaVerify",

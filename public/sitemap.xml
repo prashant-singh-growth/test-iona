@@ -28,7 +28,7 @@
   </url>
 
   <url>
-    <loc>https://www.iona.ai/solutions/speedboard</loc>
+    <loc>https://www.iona.ai/solutions/novatrack</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
@@ -52,7 +52,7 @@
   </url>
 
   <url>
-    <loc>https://www.iona.ai/solutions/trainplus</loc>
+    <loc>https://www.iona.ai/solutions/novatrain</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
