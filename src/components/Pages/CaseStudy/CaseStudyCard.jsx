@@ -5,7 +5,7 @@ function CaseStudyCard() {
   return (
     <section className="w-full bg-white flex flex-col py-[60px] px-5 md:px-10 slg:px-[60px] lg:px-[90px] justify-center items-center space-y-10">
       <div className="w-full max-w-[1440px] flex flex-col  justify-center items-center space-y-10">
-        <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:grid-rows-2">
+        <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 gap-y-8 sm:grid-rows-2">
           {Object.values(CaseStudyJson).map((item, index) => (
             <div
               key={index}
