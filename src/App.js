@@ -15,6 +15,7 @@ import Header from "./components/Layout/Header";
 import Footer from "./components/Layout/Footer";
 import { ToastContainer } from "react-toastify";
 
+
 // Lazy load components
 // const Home = lazy(() => import("./pages/Home"));
 const Home = lazy(() => import("./pages/HomePage"));
@@ -51,7 +52,9 @@ const CaseStudyDynamicPage = lazy(
 const CaseStudyLandingPage = lazy(
   () => import("./pages/case-study/CaseStudyLanding")
 );
-
+const RecruiterLandingPages = lazy(
+  () => import("./pages/Landing/RecruiterLandingPages")
+);
 // Scroll to top on route change
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -342,6 +345,22 @@ const AnimatedRoutes = () => {
           }
         />
         <Route
+          path="/excel-with-agentic-ai-recruitment-solution"
+          element={
+            <PageTransition>
+              <RecruiterLandingPages />
+            </PageTransition>
+          }
+        />
+          <Route
+          path="/excel-with-agentic-ai-recruitment-solution/thank-you"
+          element={
+            <PageTransition>
+              <ThankYouPage />
+            </PageTransition>
+          }
+        />
+        <Route
           path="*"
           element={
             <PageTransition>
@@ -410,6 +429,7 @@ function AppContent() {
   const hideNavbarRoutes = [
     "/end-to-end-hiring-solution-for-enterprises",
     "/automated-background-verification",
+    "/excel-with-agentic-ai-recruitment-solution"
   ];
   const shouldHideNavbar = hideNavbarRoutes.includes(location.pathname);
 

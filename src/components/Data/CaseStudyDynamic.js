@@ -1,23 +1,23 @@
 export const CaseStudyJson = {
-    "leading-life-insurance-provider":{
-        slug:"leading-life-insurance-provider",
+    "aditya-birla":{
+        slug:"aditya-birla",
         grid:true,
         seo:{
-            title:"Leading Life Insurer | Success Story | iona.ai ",
-            description:"Learn how a leading life insurer used iona.ai to transform their hiring and onboarding experience, enabling 90% faster onboarding and 100% compliance. "
+            title:"Aditya Birla Sun Life Insurance | Success Story | iona.ai  ",
+            description:"Learn how Aditya Birla Sun Life Insurance transformed their hiring and onboarding, enabling 90% faster onboarding and 100% compliance with iona.ai."
         },
-        PDFurl:`/assets/pages/casestudy/pdf/leading-life-insurance-provider.pdf`,
+        PDFurl:`/assets/pages/casestudy/pdf/aditya-birla.pdf`,
         image:"/assets/pages/casestudy/1.webp",
         innerImage:"/assets/pages/casestudy/case-study-1.webp",
         headshot:"From Prospect to Productive Powerhouse",
-        title:"How a leading life insurer used iona.ai to transform their hiring process and  achieved 90% faster onboarding for 500+ new hires every month with AI-driven automation.",
+        title:"How Aditya Birla Sun Life Insurance transformed hiring with iona.ai and achieved 90% faster onboarding.",
         outcome:[
             {
                 count:"90%",
                 text:"AI Document Accuracy"
             },
             {
-                count:"95%",
+                count:"90%",
                 text:"Faster Onboarding"
             },
             {
@@ -27,33 +27,33 @@ export const CaseStudyJson = {
         ],
         customer:{
             position:"HR Director",
-            company:"Leading Insurance Provider",
+            company:"Aditya Birla Sun Life Insurance",
             testimony:"iona.ai has significantly improved the Onboarding process and has been able to deliver with 0% downtime.” Considering this success, we are looking forward to implementing iona.ai for other entities as well.",
           
         },
         aboutClient: [
             {
                 title:"Context and the Challenge",
-                description:"As one of India’s leading life insurers, backed by a major conglomerate and a global financial institution, the company was expanding its presence across 500+ cities. Hiring nearly 500 new sales professionals each month, its manual, vendor-driven onboarding struggled to keep pace, causing delays, inconsistencies, and limited oversight across operations."
+                description:"As one of India’s leading life insurers, backed by a major conglomerate and a global financial institution, Aditya Birla Sun Life Insurance was expanding its presence across 500+ cities. Hiring nearly 500 new sales professionals each month, its manual, vendor-driven onboarding struggled to keep pace, causing delays, inconsistencies, and limited oversight across operations."
             },
             {
                 title:"Approach and the Transformation",
-                description:"By partnering with iona.ai, the insurer redefined how it hires and onboards at scale. Every stage, document submission, verification, and offer generation, was digitized and intelligently managed, enabling faster onboarding, higher accuracy, and a consistent experience across its growing network."
+                description:"By partnering with iona.ai, Aditya Birla Sun Life Insurance redefined how it hires and onboards at scale. Every stage, document submission, verification, and offer generation, was digitized and intelligently managed, enabling faster onboarding, higher accuracy, and a consistent experience across its growing network."
             },
         ]
 
     },
-    "leading-consumer-brand":{
-        slug:"leading-consumer-brand",
+    "hdfc-ergo":{
+        slug:"hdfc-ergo",
         seo:{
-            title:"Leading Consumer Brand | Success Story | iona.ai ",
-            description:"Learn how a leading consumer brand used iona.ai to 4X their hiring, with AI-driven workflows, and 100% compliant and accurate background verification."
+            title:"HDFC Ergo General Insurance | Success Story | iona.ai  ",
+            description:"Learn how HDFC Ergo General Insurance used iona.ai to 4X their hiring, with AI-driven workflows, and 100% compliant and accurate background verification."
         },
-        PDFurl:`/assets/pages/casestudy/pdf/leading-consumer-brand.pdf`,
+        PDFurl:`/assets/pages/casestudy/pdf/hdfc-ergo.pdf`,
         headshot:"From Manual Chaos to Automated Hiring",
         image:"/assets/pages/casestudy/2.webp",
         innerImage:"/assets/pages/casestudy/case-study-3.webp",
-        title:"How a leading consumer brand used iona.ai to dominate the market, achieving 4X faster JD turnaround time and hiring field service professionals with 100% automated BGV. ",
+        title:"Learn how HDFC Ergo - General Insurance achieved 4x faster JD turnaround and 100% automated BGV for field service professionals.",
         outcome:[
             {
                 count:"4X",
@@ -70,33 +70,33 @@ export const CaseStudyJson = {
         ],
         customer:{
             position:"AGM–HR",
-            company:"Leading Consumer Brand in India",
+            company:"HDFC Ergo General Insurance",
             testimony:"Our manual hiring process couldn’t keep up with the volume, making it hard to track key metrics like interviews, selection ratios, and offer rejections. We chose iona.ai for its simplicity, cost-effectiveness, and customization options. The analytics fetched from iona.ai allow my team to work quickly and more efficiently.",
             
         },
          aboutClient: [
           {
                 title:"Context and the Challenge",
-                description:"A fast-growing Indian consumer goods brand was expanding nationwide, relying on hundreds of Feet-on-Street (FOS) hires to power its sales network. But as volumes rose, manual JD creation, resume screening, and interview scheduling couldn’t keep up. With scattered data and no real-time visibility, the HR team struggled to maintain speed, consistency, and hiring quality."
+                description:"As a fast-growing brand, HDFC Ergo General Insurance was expanding nationwide, relying on hundreds of Feet-on-Street (FOS) hires to power its sales network. But as volumes rose, manual JD creation, resume screening, and interview scheduling couldn’t keep up. With scattered data and no real-time visibility, the HR team struggled to maintain speed, consistency, and hiring quality."
             },
             {
                 title:"Approach and the Transformation",
-                description:"Context and the Challenge A fast-growing Indian consumer goods brand was expanding nationwide, relying on hundreds of Feet-on-Street (FOS) hires to power its sales network. But as volumes rose, manual JD creation, resume screening, and interview scheduling couldn’t keep up. With scattered data and no real-time visibility, the HR team struggled to maintain speed, consistency, and hiring quality. Approach and the Transformation Partnering with iona.ai and using its Agentic AI + Human automation, the consumer brand reengineered its recruitment process. Through NovaSuite, an AI-powered hiring platform, the system automated JD creation, simplified resume screening, and coordinated interview scheduling, bringing structure and predictability to high-volume hiring. What was once a fragmented process became an insight-driven operation that matched the pace of the brand’s ambitious growth."
+                description:"Partnering with iona.ai and using its Agentic AI + Human automation, the HDFC Ergo reengineered its recruitment process. Through NovaSuite, an AI-powered hiring platform, the system automated JD creation, simplified resume screening, and coordinated interview scheduling, bringing structure and predictability to high-volume hiring. What was once a fragmented process became an insight-driven operation that matched the pace of HDFC Ergo’s ambitious growth."
             },
         ]
 
     },
-    "healthcare-provider":{
-        slug:"healthcare-provider",
+    "metropolis-healthcare":{
+        slug:"metropolis-healthcare",
         seo:{
-            title:"Leading Healthcare Provider | Success Story | iona.ai ",
-            description:"Learn how a leading healthcare provider used iona.ai to transform their workforce agility and cut onboarding time by 83% with 95% documentation accuracy."
+            title:"Metropolis Healthcare | Success Story | iona.ai  ",
+            description:"Learn how Metropolis Healthcare used iona.ai to transform their workforce agility and cut onboarding time by 83% with 95% documentation accuracy."
         },
         image:"/assets/pages/casestudy/3.webp",
          innerImage:"/assets/pages/casestudy/case-study-2.webp",
-        PDFurl:`/assets/pages/casestudy/pdf/healthcare-provider.pdf`,
+        PDFurl:`/assets/pages/casestudy/pdf/metropolis-healthcare.pdf`,
         headshot:"From Complex Verification Processes to 100% Accuracy",
-        title:"How a leading healthcare network transformed its verification process, saved millions in operations, expanded its workforce, and accelerated hiring with iona.ai. ",
+        title:"How Metropolis Healthcare saved millions, expanded its workforce, and accelerated hiring with iona.ai.",
         outcome:[
             {
                 count:"83%",
@@ -113,18 +113,18 @@ export const CaseStudyJson = {
         ],
         customer:{
             position:"Chief Human Resources Officer",
-            company:"Leading Healthcare Network",
+            company:"Metropolis Healthcare",
             testimony:"What impressed us most was how the system handled the complex regulatory requirements specific to healthcare hiring. We've not only accelerated our hiring timeline but also dramatically improved compliance, which is absolutely critical in our industry. The system has been a game-changer for our expansion plans.",
          
         },
          aboutClient: [
              {
                 title:"Context and the Challenge",
-                description:"A leading healthcare network operating across multiple states was entering a major phase of expansion, growing both its facilities and workforce. However, its recruitment systems couldn’t keep pace with this scale. Manual credential checks, scattered documentation, and uneven compliance reviews led to delays, limited visibility, and higher regulatory risk, making it difficult to hire and onboard essential talent quickly and consistently."
+                description:"As a leading healthcare network, Metropolis Healthcare, operating across multiple states, was entering a major phase of expansion, growing both its facilities and workforce. However, its recruitment systems couldn’t keep pace with this scale. Manual credential checks, scattered documentation, and uneven compliance reviews led to delays, limited visibility, and higher regulatory risk, making it difficult to hire and onboard essential talent quickly and consistently."
             },
             {
                 title:"Approach and the Transformation",
-                description:"To overcome these challenges, the organization adopted iona.ai’s Agentic AI + human-based healthcare recruitment and onboarding platform, designed for compliance-focused operations. The platform brought all hiring activities onto one system, automating credential checks and integrating compliance reviews at every stage. This shift replaced manual follow-ups with precise, data-driven control, helping teams make faster decisions and giving leaders real-time visibility into workforce readiness across all facilities."
+                description:"To overcome these challenges, Metropolis Healthcare adopted iona.ai’s Agentic AI + human-based healthcare recruitment and onboarding platform, designed for compliance-focused operations. The platform brought all hiring activities onto one system, automating credential checks and integrating compliance reviews at every stage. This shift replaced manual follow-ups with precise, data-driven control, helping teams make faster decisions and giving leaders real-time visibility into workforce readiness across all facilities."
             },
         ]
 
