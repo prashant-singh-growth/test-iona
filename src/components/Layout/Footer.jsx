@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaLinkedinIn, FaMapLocationDot } from "react-icons/fa6";
 import { useLocation } from "react-router-dom";
+import { motion, AnimatePresence } from "framer-motion";
 
 function Footer() {
   const location = useLocation();
   const currentPath = location.pathname;
+  const [showAll, setShowAll] = useState(false);
 
   const footerLinks = [
     {
@@ -21,19 +23,9 @@ function Footer() {
         { placeHolder: "NovaCount", url: "/solutions/novacount" },
         { placeHolder: "NovaAssist", url: "/solutions/novaassist" },
         { placeHolder: "NovaTrack", url: "/solutions/novatrack" },
-      ],
-    },
-    {
-      title: "",
-      links: [
         { placeHolder: "NovaStart", url: "/solutions/novastart" },
         { placeHolder: "NovaDoc", url: "/solutions/novadoc" },
         { placeHolder: "NovaEngage", url: "/solutions/novaengage" },
-      ],
-    },
-    {
-      title: "",
-      links: [
         { placeHolder: "NovaTrain", url: "/solutions/novatrain" },
         { placeHolder: "NovaVerify", url: "/solutions/novaverify" },
         { placeHolder: "NovaConnect", url: "/solutions/novaconnect" },
@@ -45,6 +37,21 @@ function Footer() {
         { placeHolder: "Case Study", url: "/case-studies" },
         { placeHolder: "Blog", url: "/blogs" },
         { placeHolder: "Videos", url: "/videos" },
+      ],
+    },
+    {
+      title: "Usecases",
+      links: [
+        { placeHolder: "Backrground Verification", url: "/automated-background-verification" },
+        { placeHolder: "Hiring Solution", url: "/end-to-end-hiring-solution-for-enterprises" },
+      ],
+    },
+    {
+      title: "Compare",
+      links: [
+        { placeHolder: "PeopleStrong", url: "/peoplestrong-alternative" },
+        { placeHolder: "Darwinbox", url: "/darwinbox-alternative" },
+        { placeHolder: "HROne", url: "/hrone-alternative" },
       ],
     },
   ];
@@ -66,16 +73,19 @@ function Footer() {
               </a>
               <p className="text-base text-primary font-lora">
                 "Trusted by enterprises for scalable, high-volume hiring.<br />
-                iona.ai is a full-service AI-powered recruitment platform that
-                automates the entire hiring process—saving time, reducing costs,
-                and ensuring 100% data accuracy."
+                iona.ai is a full-service AI-powered recruitment platform that automates
+                the entire hiring process—saving time, reducing costs, and ensuring 100% data accuracy."
               </p>
             </div>
-   <div className="w-full flex flex-row gap-2 max-w-[400px] mt-3 border-y border-primary/20 py-5">
-  <FaMapLocationDot className="text-primary text-2xl flex-none" />
-  <p className="text-base font-lora text-primary"><span className="font-bold">Registered Office:</span> <br/> Amazona 36 Top Floor, Eldeco Green Meadows Sector PI Greater Noida 201306 UP</p>
 
-</div>
+            <div className="w-full flex flex-row gap-2 max-w-[400px] mt-3 border-y border-primary/20 py-5">
+              <FaMapLocationDot className="text-primary text-2xl flex-none" />
+              <p className="text-base font-lora text-primary">
+                <span className="font-bold">Registered Office:</span> <br/>
+                Amazona 36 Top Floor, Eldeco Green Meadows Sector PI Greater Noida 201306 UP
+              </p>
+            </div>
+
             <div className="w-fit flex flex-row justify-center items-center space-x-5 lg:mt-auto">
               {[
                 {
@@ -96,48 +106,64 @@ function Footer() {
             </div>
           </div>
 
-          {/* ---- Right Section (Dynamic) ---- */}
+          {/* ---- Right Section ---- */}
           <div className="w-full col-span-4 flex flex-col h-full">
             <div className="w-full grid gap-5 grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
-              {footerLinks.map((section, index) => (
-                <div
-                  key={index}
-                  className={`flex flex-col ${
-                    section.title ? "gap-6" : "gap-0 -mt-2 sm:mt-0"
-                  } sm:gap-6`}
-                >
-                  <p
-                    className={`text-xl font-medium font-lora text-[#0D0D0D] ${
-                      section.title ? "" : "md:h-[28px]"
-                    }`}
-                  >
-                    {section.title}
-                  </p>
 
-                  <div className="flex flex-col gap-3">
-                    {section.links.map((link, idx) => (
-                      <a
-                        key={idx}
-                        href={link.url}
-                        className={`text-base font-lora font-medium ease-linear duration-150 hover:translate-x-1 hover:text-primary w-fit ${
-                          currentPath === link.url
-                            ? "text-primary"
-                            : "text-[#808080]"
-                        }`}
-                      >
-                        {link.placeHolder}
-                      </a>
-                    ))}
+              {footerLinks.map((section, index) => {
+                
+                const shouldShowButton = section.links.length > 3;
+                const visibleLinks = showAll ? section.links : section.links.slice(0, 3);
+
+                return (
+                  <div
+                    key={index}
+                    className={`flex flex-col ${section.title ? "gap-6" : "gap-0 -mt-2 sm:mt-0"} sm:gap-6`}
+                  >
+                    <p className="text-xl font-medium font-lora text-[#0D0D0D]">{section.title}</p>
+
+                    <div className="flex flex-col gap-3">
+                      <AnimatePresence>
+                        {visibleLinks.map((link, idx) => (
+                          <motion.a
+  key={idx}
+  href={link.url}
+  initial={{ opacity: 0, scale: 0.9 }}
+  animate={{ opacity: 1, scale: 1 }}
+  transition={{ 
+    duration: 0.35, 
+    type: "spring", 
+    stiffness: 200, 
+    damping: 18 
+  }}
+  className={`text-base font-lora font-medium ease-linear duration-150 hover:translate-x-1 hover:text-primary w-fit ${
+    currentPath === link.url ? "text-primary" : "text-[#808080]"
+  }`}
+>
+  {link.placeHolder}
+</motion.a>
+
+                        ))}
+                      </AnimatePresence>
+
+                      {shouldShowButton && (
+                        <button
+                          onClick={() => setShowAll(!showAll)}
+                          className="text-sm text-primary mt-1 font-lora hover:underline mr-auto" 
+                        >
+                          {showAll ? "Show Less" : "View All"}
+                        </button>
+                      )}
+                    </div>
                   </div>
-                </div>
-              ))}
+                );
+              })}
+
             </div>
 
             {/* ---- Newsletter ---- */}
             <div className="w-full flex flex-col gap-3 md:gap-7 mt-6 md:mt-12">
-              <h3 className="font-lora text-primary text-xl">
-                Subscribe Our Newsletter.
-              </h3>
+              <h3 className="font-lora text-primary text-xl">Subscribe Our Newsletter.</h3>
 
               <div className="flex flex-col md:flex-row gap-3 md:gap-5 w-full max-w-[550px]">
                 <input
@@ -164,45 +190,25 @@ function Footer() {
                   </svg>
                 </button>
               </div>
-           
             </div>
           </div>
         </div>
       </div>
 
-      {/* ---- Bottom Section ---- */}
+      {/* ---- Bottom ---- */}
       <div className="w-full border-t border-[#C9C9C9] my-4 mt-[60px]"></div>
 
       <div className="w-full px-5 md:px-10 slg:px-[60px] lg:px-[90px] flex justify-center items-center">
         <div className="w-full max-w-[1440px] flex flex-col gap-4 md:flex-row justify-between">
-
           <p className="text-xs text-black font-lora">
             Copyright © {new Date().getFullYear()} | All rights reserved.
           </p>
 
           <p className="text-xs text-black font-lora">
-            <a
-              href="/privacy"
-              className={currentPath === "/privacy" ? "text-primary" : ""}
-            >
-              Privacy policy
-            </a>{" "}
-            |{" "}
-            <a
-              href="/terms"
-              className={currentPath === "/terms" ? "text-primary" : ""}
-            >
-              Terms & conditions
-            </a>{" "}
-            |{" "}
-            <a
-              href="/cookies"
-              className={currentPath === "/cookies" ? "text-primary" : ""}
-            >
-              Cookie Policy
-            </a>
+            <a href="/privacy" className={currentPath === "/privacy" ? "text-primary" : ""}>Privacy policy</a> |
+            <a href="/terms" className={currentPath === "/terms" ? "text-primary" : ""}> Terms & conditions</a> |
+            <a href="/cookies" className={currentPath === "/cookies" ? "text-primary" : ""}> Cookie Policy</a>
           </p>
-
         </div>
       </div>
     </footer>

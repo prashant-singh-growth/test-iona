@@ -16,7 +16,7 @@ function RecruiterLandingPages() {
       title={"Excel with Agentic AI for Smarter Recruitment | iona.ai"}
       description={"Resolve recruitment pain points with Agentic AI. Automate CV parsing, candidate matching, and more for faster, smarter hiring. Start free today!"}
       />
-      <LPHeader/>
+      <LPHeader ctaText={"Get Started its Free"}/>
     <RecruiterBanner/>
         <ClientBadgeSection/>
         <DetailSectionDynamic
