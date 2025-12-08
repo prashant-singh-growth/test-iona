@@ -345,7 +345,7 @@ const AnimatedRoutes = () => {
           }
         />
         <Route
-          path="/excel-with-agentic-ai-recruitment-solution"
+          path="/agentic-ai-recruiters-sheet"
           element={
             <PageTransition>
               <RecruiterLandingPages />
@@ -353,7 +353,7 @@ const AnimatedRoutes = () => {
           }
         />
           <Route
-          path="/excel-with-agentic-ai-recruitment-solution/thank-you"
+          path="/agentic-ai-recruiters-sheet/thank-you"
           element={
             <PageTransition>
               <ThankYouPage />
@@ -429,7 +429,7 @@ function AppContent() {
   const hideNavbarRoutes = [
     "/end-to-end-hiring-solution-for-enterprises",
     "/automated-background-verification",
-    "/excel-with-agentic-ai-recruitment-solution"
+    "/agentic-ai-recruiters-sheet"
   ];
   const shouldHideNavbar = hideNavbarRoutes.includes(location.pathname);
 

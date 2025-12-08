@@ -130,7 +130,7 @@ function RecruiterForm() {
            gclid: "",
            fbclid: "",
          });
-         window.location.href = "/excel-with-agentic-ai-recruitment-solution/thank-you";
+         window.location.href = "/agentic-ai-recruiters-sheet/thank-you";
        } else {
          throw new Error("HubSpot submission failed. Please check your form settings.");
        }

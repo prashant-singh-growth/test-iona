@@ -8,6 +8,7 @@ export default function LogoSlider() {
     "/assets/pages/landingpage/hdfc.png",
     "/assets/pages/landingpage/birla.png",
     "/assets/pages/landingpage/aditya.png",
+     "/assets/pages/landingpage/birla-opus-logo.svg",
   ];
 
   return (

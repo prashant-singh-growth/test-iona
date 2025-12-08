@@ -6,6 +6,7 @@ import React from 'react'
     "/assets/pages/landingpage/hdfc.png",
     "/assets/pages/landingpage/birla-sun.png",
     "/assets/pages/landingpage/aditya.png",
+    "/assets/pages/landingpage/birla-opus-logo.svg",
   ];
 function ClientBadgeSection() {
   return (
