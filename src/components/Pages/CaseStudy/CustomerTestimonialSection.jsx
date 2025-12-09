@@ -14,11 +14,11 @@ function CustomerTestimonialSection({testimony}) {
         <div className="w-full flex flex-col bg-[#FAF9FC] border-l-4 border-darkVoilet rounded-xl p-9 gap-6">
             <p className='text-base text-black font-lora'>“{testimony?.testimony}"</p>
             <div className="flex items-start gap-4 ">
-                  {/* <img
-                    src={`/assets/pages/landingpage/client.jpg`}
-                    alt=''
-                    className="w-10 h-10 rounded-full object-cover"
-                  /> */}
+                  <img
+                    src={testimony?.logo}
+                    alt= {testimony?.company}
+                    className="w-10 h-10 rounded-full object-cover "
+                  />
                   <div className="text-left">
                     <p className="text-base font-bold text-black/80 font-lora">
                     {testimony?.position},

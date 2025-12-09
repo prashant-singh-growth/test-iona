@@ -149,9 +149,9 @@ const Contact = () => {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-semibold">Address</h3>
+                    <h3 className="font-semibold">Registered Office</h3>
                     <p className="text-secondaryText">
-                      NW1, London, UK<br />
+                      Amazona 36 Top Floor, Eldeco Green Meadows Sector PI Greater Noida 201306 UP<br />
                     </p>
                   </div>
                 </div>
@@ -307,7 +307,7 @@ const Contact = () => {
         <div className="bg-white p-2 rounded-lg shadow-custom" data-aos="fade-up">
           <div className="aspect-video w-full rounded-lg overflow-hidden">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.1590587233192!2d-0.14278002341711117!3d51.53934971539477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761ae3dc8c0037%3A0x87e6f1c08a4c8f1a!2s33A%20Camden%20High%20St%2C%20London%20NW1%207JE%2C%20UK!5e0!3m2!1sen!2sus!4v1686754828183!5m2!1sen!2sus"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3772.2259546659784!2d77.53452947577901!3d28.469061525754352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cc02002e98e9b%3A0x4f5a018bdc67e302!2sEldeco%20Green%20Meadows%2C%20Pi%20I%20%26%20II%2C%20Greater%20Noida%2C%20Uttar%20Pradesh%20201315!5e1!3m2!1sen!2sin!4v1765253834711!5m2!1sen!2sin"
               width="100%"
               height="100%"
               style={{ border: 0 }}

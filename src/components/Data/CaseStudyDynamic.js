@@ -29,6 +29,7 @@ export const CaseStudyJson = {
             position:"HR Director",
             company:"Aditya Birla Sun Life Insurance",
             testimony:"iona.ai has significantly improved the Onboarding process and has been able to deliver with 0% downtime.” Considering this success, we are looking forward to implementing iona.ai for other entities as well.",
+            logo:"/assets/pages/casestudy/aditya.webp"
           
         },
         aboutClient: [
@@ -72,6 +73,7 @@ export const CaseStudyJson = {
             position:"AGM–HR",
             company:"HDFC Ergo General Insurance",
             testimony:"Our manual hiring process couldn’t keep up with the volume, making it hard to track key metrics like interviews, selection ratios, and offer rejections. We chose iona.ai for its simplicity, cost-effectiveness, and customization options. The analytics fetched from iona.ai allow my team to work quickly and more efficiently.",
+             logo:"/assets/pages/casestudy/hdfc.webp"
             
         },
          aboutClient: [
@@ -115,6 +117,7 @@ export const CaseStudyJson = {
             position:"Chief Human Resources Officer",
             company:"Metropolis Healthcare",
             testimony:"What impressed us most was how the system handled the complex regulatory requirements specific to healthcare hiring. We've not only accelerated our hiring timeline but also dramatically improved compliance, which is absolutely critical in our industry. The system has been a game-changer for our expansion plans.",
+            logo:"/assets/pages/casestudy/client-3.webp"
          
         },
          aboutClient: [
