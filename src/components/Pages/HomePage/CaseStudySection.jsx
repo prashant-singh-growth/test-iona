@@ -76,7 +76,7 @@ function CaseStudySection() {
         >
           {caseStudies.map((item, index) => (
             <SwiperSlide key={index}>
-              <div className="w-full flex flex-col bg-[#160E38] p-5 md:p-10 rounded-md  h-full min-h-[450px]   md:min-h-[520px] lg:min-h-[550px]">
+              <div className="w-full flex flex-col bg-[#160E38] p-5 md:p-10 rounded-md  h-full min-h-[430px]   md:min-h-[480px] lg:min-h-[520px]">
                 <img
                   src={item.image}
                   alt={item.title}
