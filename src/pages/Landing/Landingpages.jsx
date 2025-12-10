@@ -14,6 +14,7 @@ import CTASection from "../../components/Pages/HomePage/CTASection";
 import SolutionSection from "../../components/Pages/HomePage/SolutionSection";
 import LPHeader from "../../components/Pages/LandingPage/LPHeader";
 import LPFooter from "../../components/Pages/LandingPage/LPFooter";
+import CaseStudySection from "../../components/Pages/HomePage/CaseStudySection";
 function Landingpages() {
   return (
     <div className="w-full font-lora theme-lora-font" id="form">
@@ -45,7 +46,8 @@ function Landingpages() {
       {/* why us Section */}
       <WhyUsSection />
       {/* result section */}
-      <ResultSection />
+      <ResultSection pb={false} />
+      <CaseStudySection/>
       {/* certification section */}
       <CertificationSection />
       {/* testimonial section */}

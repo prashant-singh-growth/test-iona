@@ -14,7 +14,7 @@ function CaseStudySection() {
       image: "/assets/pages/homepage/case-study.webp",
       title: "About the Client: A Legacy of Trust, Poised for Unprecedented Expansion",
       description:
-        '"A distinguished Indian life insurance provider, forged from the robust partnership of a prominent Indian conglomerate and a globally recognized financial services organization, has been a cornerstone of India\'s burgeoning life insurance sector for over a decade. With a formidable presence spanning over 500 cities and a network of more than 560 branches, the client ensures unwavering accessibility to a diverse portfolio of life insurance solutions."',
+        '"How Aditya Birla Sun Life Insurance transformed hiring with iona.ai and achieved 90% faster onboarding."',
       author: "HR Director, Leading Insurance Provider",
       link: "/case-studies",
     },
@@ -22,7 +22,7 @@ function CaseStudySection() {
       image: "/assets/pages/homepage/case-study-2.webp",
       title: "Transforming Recruitment: How iona.ai Is Simplifying Hiring For A Leading Consumer Brand",
       description:
-        '"A homegrown powerhouse in the Indian consumer goods space, the client is on a meteoric rise. With an ever-expanding distribution footprint, the brand is racing to become the second-largest in its category nationwide. To support this scale, they rely on a vast network of FOS associates, the face of the brand who drive dealer relationships and customer connections daily. Their ability to hire hundreds of field professionals every month is vital to achieving market dominance."',
+        '"Learn how HDFC Ergo - General Insurance achieved 4x faster JD turnaround and 100% automated BGV for field service professionals."',
       author: "AGM-HR, a fast-growing consumer brand in India",
       link: "/case-studies",
     },
@@ -30,7 +30,7 @@ function CaseStudySection() {
       image: "/assets/pages/homepage/case-study-3.webp",
       title: "Scaling with Precision",
       description:
-        '"A rapidly expanding healthcare network with 28 facilities across three states was undertaking an ambitious growth initiative. Their five-year plan included opening 15 new specialized care centers and expanding their workforce by over 4,000 healthcare professionals, including specialized nurses, physicians, technicians, and administrative staff."',
+        '"How Metropolis Healthcare saved millions, expanded its workforce, and accelerated hiring with "',
       author: "Chief Human Resources Officer",
       link: "/case-studies",
     },

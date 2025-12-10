@@ -2,6 +2,7 @@ import React, { useState, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
+import { FaUserAlt } from "react-icons/fa";
 
 function TestimonialSlider() {
   const swiperRef = useRef(null);
@@ -9,28 +10,28 @@ function TestimonialSlider() {
 
   const testimonials = [
     {
-      headshoturl: "client.jpg",
+      headshoturl: "aditya.webp",
       position: "HR Talent Acquisition",
       company: "Leading Life Insurance Company",
       testimony:
         "Following iona.ai's technology has streamlined our onboarding process, even in a high-volume hiring setup. The system handles scale effortlessly and has significantly reduced our offer letter turnaround time. iona.ai's support team brings a rare blend of speed, precision, and reliability. Their partnership goes beyond tech—they work closely with our HR team to drive adoption through hands-on training and support. This collaboration has been key to our success.",
     },
     {
-      headshoturl: "client.jpg",
+      headshoturl: "",
       position: "Senior Officer",
       company: "Leading UAE Bank",
       testimony:
         "Partnering with iona.ai has elevated our background verification process end-to-end. Their approach is detailed, reliable, and consistently precise—every check, from criminal records to employment history, is handled with care and clarity. With seamless workflows and quick turnaround times, we've been able to onboard top talent faster and with greater confidence.",
     },
     {
-      headshoturl: "client.jpg",
+      headshoturl: "client-3.webp",
       position: "Chief Human Resources Officer",
       company: "Fast-growing Consumer Brand in India",
       testimony:
         "What impressed us most was how the system handled complex regulatory requirements specific to healthcare hiring. We've not only accelerated our hiring timeline but dramatically improved compliance, which is absolutely critical in our industry.",
     },
     {
-      headshoturl: "client.jpg",
+      headshoturl: "hdfc.webp",
       position: "HR Director",
       company: "Leading Insurance Provider",
       testimony:
@@ -77,11 +78,17 @@ function TestimonialSlider() {
                 className="flex flex-col justify-between border border-[#869085] rounded bg-white  shadow-sm transition-all duration-300  p-5  sm:p-6 sm:px-8 lg:py-10 h-full min-h-[450px] ssm:min-h-[350px] sm:min-h-[300px] md:min-h-[480px] lg:min-h-[320px]"
               >
                 <div className="flex items-start gap-4 mb-4">
-                  {/* <img
-                    src={`/assets/pages/landingpage/${item.headshoturl}`}
+                 {item.headshoturl ?  (
+                  item.headshoturl === "hdfc.webp" ?  <div className="w-10 h-10 rounded-full grid place-items-center bg-[#D91E29]"><img
+                  src={`/assets/pages/casestudy/${item.headshoturl}`}
+                     alt={item.company}
+                    className={`w-8 h-fit  object-contain  `}
+                  /></div> : <img
+                    src={`/assets/pages/casestudy/${item.headshoturl}`}
                     alt={item.company}
                     className="w-10 h-10 rounded-full object-cover"
-                  /> */}
+                  />
+                 ) : <div className="size-10 grid place-items-center border border-black rounded-full"><FaUserAlt className="text-black text-xl" /></div>}
                   <div className="text-left">
                     <p className="text-base font-bold text-black/80 font-lora">
                       {item.position}
