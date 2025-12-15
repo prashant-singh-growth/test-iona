@@ -227,7 +227,7 @@ function Header() {
             )}
    <a
           href="/agentic-ai-recruiters-sheet"
-          className="hidden lg:flex  flex-none  px-5 py-2 font-bold leading-5  font-lora text-[14px] text-primary border border-primary rounded-lg shadow hover:shadow-md hover:scale-95 transition-transform duration-200"
+          className="flex  flex-none  px-5 py-2 font-bold leading-5  font-lora text-[14px] text-primary border border-primary rounded-lg shadow hover:shadow-md hover:scale-95 transition-transform duration-200"
         >
           <span>Agentic AI Recruiter</span>
           <span className="text-[10px] leading-[10px] h-fit  font-lora  font-bold ml-1 rounded-sm -translate-y-[2px]">Beta</span>
