@@ -44,8 +44,8 @@ function Header() {
   ];
 
   return (
-    <header className="w-full bg-white/80 backdrop-blur-md fixed top-0 z-50 grid place-items-center px-5 md:px-10 slg:px-[60px] lg:px-[90px] border-b border-gray-100 shadow-sm">
-      <div className="w-full max-w-[1440px] flex justify-between items-center py-3">
+    <header className="w-full bg-white/80 backdrop-blur-md fixed  top-0 z-50 grid place-items-center px-5 md:px-10 slg:px-[60px] lg:px-[90px] border-b border-gray-100 shadow-sm">
+      <div className="w-full max-w-[1440px] flex justify-between gap-5 items-center py-3">
 
         {/* Logo */}
         <a href="/" className="w-fit">
@@ -120,6 +120,12 @@ function Header() {
               </a>
             )
           )}
+            <a
+          href="/agentic-ai-recruiters-sheet"
+          className="hidden lg:flex flex-none  px-5 py-2 font-bold leading-5 space-x-2 font-lora text-[14px] text-primary border border-primary rounded-lg shadow hover:shadow-md hover:scale-95 transition-transform duration-200"
+        >
+          <span>Agentic AI</span>
+        </a>
         </div>
 
         {/* CTA Button */}
@@ -218,7 +224,12 @@ function Header() {
                 </a>
               )
             )}
-
+  <a
+          href="/agentic-ai-recruiters-sheet"
+          className="flex flex-none w-fit  px-5 py-2 font-bold leading-5 space-x-2 font-lora text-[14px] text-primary border border-primary rounded-lg shadow hover:shadow-md hover:scale-95 transition-transform duration-200"
+        >
+          <span>Agentic AI</span>
+        </a>
             {/* CTA in Mobile */}
             <a
               href="/contact"
