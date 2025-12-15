@@ -124,7 +124,7 @@ function Header() {
           href="/agentic-ai-recruiters-sheet"
           className="hidden lg:flex flex-none  px-5 py-2 font-bold leading-5 space-x-2 font-lora text-[14px] text-primary border border-primary rounded-lg shadow hover:shadow-md hover:scale-95 transition-transform duration-200"
         >
-          <span>Agentic AI</span>
+          <span>Agentic AI Recruiter</span>
         </a>
         </div>
 
@@ -228,7 +228,7 @@ function Header() {
           href="/agentic-ai-recruiters-sheet"
           className="flex flex-none w-fit  px-5 py-2 font-bold leading-5 space-x-2 font-lora text-[14px] text-primary border border-primary rounded-lg shadow hover:shadow-md hover:scale-95 transition-transform duration-200"
         >
-          <span>Agentic AI</span>
+          <span>Agentic AI Recruiter</span>
         </a>
             {/* CTA in Mobile */}
             <a
