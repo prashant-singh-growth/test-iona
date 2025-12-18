@@ -2,9 +2,9 @@ export const AlternativePagesData = {
   "peoplestrong-alternative": {
     slug: "peoplestrong-alternative",
     seo: {
-      title: "PeopleStrong vs iona.ai | Automated Hiring Platform",
+      title: "Best PeopleStrong Alternative | AI-Driven Hiring Platform | iona.ai",
       description:
-        "Looking for a strong PeopleStrong alternative? Compare PeopleStrong and iona.ai, and see why enterprises choose iona. Book a demo. 100% compliant hiring.",
+        "Looking for a PeopleStrong alternative? iona.ai delivers smarter hiring automation, faster workflows, and AI-driven recruitment insights.",
     },
      cta:{
 title:"Switch to a Smarter PeopleStrong Alternative",
@@ -178,9 +178,9 @@ description:"Stop juggling with disconnected HR tools. Try iona.ai and see why l
   "darwinbox-alternative": {
     slug: "darwinbox-alternative",
     seo: {
-      title: "Darwinbox vs. iona.ai: Best Darwinbox Alternative",
+      title: "Best Darwinbox Alternative for Enterprise Hiring | iona.ai",
       description:
-        " Looking for a strong Darwinbox alternative? Compare Darwinbox and iona.ai, and see why enterprises choose iona.ai for faster, compliant, and automated hiring.",
+        "iona.ai is a powerful Darwinbox alternative offering agentic AI-based hiring, verification, and recruitment automation for enterprises.",
     },
    cta:{
 title:"Switch to a Smarter Darwinbox Alternative",
@@ -342,8 +342,8 @@ description:"Stop juggling with disconnected HR tools. Try iona.ai and see why l
   "hrone-alternative": {
     slug: "hrone-alternative",
     seo: {
-      title: "HROne vs iona.ai | Best HROne Alternative",
-      description: "Looking for best HROne alternative? Compare HROne and iona.ai to find the right platform for high-volume hiring—Automate hiring with 90% faster results.",
+      title: "Best HRone Alternative for Smart Hiring Automation | iona.ai",
+      description: "Switch to iona.ai, a modern HRone alternative built for enterprise hiring automation, AI screening, and faster recruitment decisions.",
     },
      cta:{
 title:"Looking for a Better Alternative to HROne",

@@ -78,8 +78,7 @@ const HomePage = memo(() => {
       <WhyUsSection ctaText="Book a Demo" ctaUrl="/contact"/>
       {/* result Section */}
       <ResultSection/>
-      {/* certification section */}
-      <CertificationSection/>
+    
       {/* testimonial section */}
       <TestimonialSlider/>
       {/* cta section */}
@@ -89,7 +88,8 @@ const HomePage = memo(() => {
       {/* faq section */}
 
   <FAQComponent FAQList={homeFaqList}/>
-   
+     {/* certification section */}
+      <CertificationSection/>
     </div>
 )})
 

@@ -7,10 +7,15 @@ import CompleteSolutionSection from '../components/Pages/SolutionPage/CompleteSo
 import CTASection from '../components/Pages/HomePage/CTASection'
 import FAQComponent from '../components/utils/FAQComponent'
 import { solutionFaqList } from '../components/Data/FaqData'
+import SeoHeader from '../components/utils/SeoHeader'
 
 function SolutionPage() {
   return (
   <>
+  <SeoHeader
+  title={"AI-Powered Hiring Solutions for Enterprises | iona.ai"}
+  description={"Explore iona.ai’s enterprise hiring solutions—from talent sourcing to automated background verification—built with advanced agentic AI."}
+  />
   <SolutionBanner/>
   <ResultSection headShow={false}/>
   <PainPointSection/>

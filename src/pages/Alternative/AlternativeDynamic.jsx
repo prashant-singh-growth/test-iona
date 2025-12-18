@@ -34,7 +34,6 @@ function AlternativeDynamic() {
       <SectionDifference />
       <ResultSection />
       <SectionChoose />
-      <CertificationSection />
       <TestimonialSlider />
       <CTASection
         title={AlternativeData.cta.title}
@@ -43,6 +42,7 @@ function AlternativeDynamic() {
         }
       />
       <FAQComponent FAQList={AlternativeData.FaqList} />
+       <CertificationSection />
     </div>
   );
 }

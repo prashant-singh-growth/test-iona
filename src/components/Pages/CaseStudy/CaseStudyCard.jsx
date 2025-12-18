@@ -5,20 +5,25 @@ function CaseStudyCard() {
   return (
     <section className="w-full bg-white flex flex-col py-[60px] px-5 md:px-10 slg:px-[60px] lg:px-[90px] justify-center items-center space-y-10">
       <div className="w-full max-w-[1440px] flex flex-col  justify-center items-center space-y-10">
-        <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 gap-y-8 sm:grid-rows-2">
+        <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 gap-y-8 ">
           {Object.values(CaseStudyJson).map((item, index) => (
             <div
               key={index}
-              className={`w-full ${item.grid ? "sm:col-span-2 sm:row-span-2" : "sm:col-span-1 sm:row-span-1"} flex flex-col gap-8`}
+              className={`w-full ${item.grid ? "sm:col-span-2 " : "sm:col-span-1 "} flex flex-col gap-8`}
             >
-              <img
+             <div className="w-full relative">
+               <img
                 src={item.image}
                 alt={item.title}
                 className="w-full object-contain"
               />
+               <div className="absolute top-2 lg:top-4 right-2 lg:right-4 p-2 rounded-md bg-darkVoilet">
+                  <img src={`${item.customer.logo}`} alt="logo" className="h-6 lg:h-8 rounded-md  object-contain " />
+              </div>
+             </div>
 
               <p className="text-black text-xl font-lora font-normal line-clamp-3">
-                {item.title}
+                {item?.cardTitle}
               </p>
 
               <a

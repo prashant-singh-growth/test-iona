@@ -10,12 +10,17 @@ function CTAWithForm() {
       <div className="w-full max-w-[100vw] lg:max-w-[1440px] grid lg:grid-cols-2 place-items-center relative z-10 gap-10">
                 <div className="w-full max-w-[100vw]">
                   <h2 className="text-3xl md:text-4xl lg:text-[40px] lg:leading-[50px] text-white font-bold md:font-semibold ">
-                   Ready to Fill Reqs Faster? Do it in Less than 60 Seconds
+                   {/* Ready to Fill Reqs Faster? Do it in Less than 60 Seconds */}
+                   Are You an Enterprise
+Looking to Automate
+End-to-End HR
+Processes?
                   </h2>
                   <p className="text-base font-lora text-white font-normal mt-5">
-                  Get your free account, see the difference immediately, and begin elevating your recruiting experiences with Agentic AI-powered candidate tracking.
+                  {/* Get your free account, see the difference immediately, and begin elevating your recruiting experiences with Agentic AI-powered candidate tracking. */}
+                  Enable high-volume hiring without compromise – accuracy and control built in. Schedule a demo to learn more.
                   </p>
-                  <div className="w-full flex flex-col sm:flex-row justify-between md:justify-start gap-5 mt-8 md:mt-12 lg:mt-12 slg:mt-10 ">
+                  {/* <div className="w-full flex flex-col sm:flex-row justify-between md:justify-start gap-5 mt-8 md:mt-12 lg:mt-12 slg:mt-10 ">
                   
                     <a
                       href="#form"
@@ -38,7 +43,7 @@ function CTAWithForm() {
                         />
                       </svg>
                     </a>
-                  </div>
+                  </div> */}
                 </div>
               <RecruiterForm/>
               </div>

@@ -1,6 +1,6 @@
 import React from 'react'
 import CaseStudyDynamicBanner from '../../components/Pages/CaseStudy/CaseStudyDynamicBanner'
-import CustomerTestimonialSection from '../../components/Pages/CaseStudy/CustomerTestimonialSection'
+// import CustomerTestimonialSection from '../../components/Pages/CaseStudy/CustomerTestimonialSection'
 import AboutClientSection from "../../components/Pages/CaseStudy/AboutClientSection"
 import CTASection from '../../components/Pages/CaseStudy/CTASection'
 import { useParams } from 'react-router-dom'
@@ -22,7 +22,7 @@ function CaseStudyDynamic() {
       />
 
         <CaseStudyDynamicBanner banner={casestudyData}/>
-        <CustomerTestimonialSection testimony={casestudyData.customer}/>
+        {/* <CustomerTestimonialSection testimony={casestudyData.customer}/> */}
         <AboutClientSection about={casestudyData}/>
         <CTASection/>
            {/* <CaseStudyPDF/> */}

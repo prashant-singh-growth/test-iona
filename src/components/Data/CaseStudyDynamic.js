@@ -1,16 +1,17 @@
 export const CaseStudyJson = {
     "aditya-birla":{
         slug:"aditya-birla",
-        grid:true,
+        grid:false,
         seo:{
-            title:"Aditya Birla Sun Life Insurance | Success Story | iona.ai  ",
-            description:"Learn how Aditya Birla Sun Life Insurance transformed their hiring and onboarding, enabling 90% faster onboarding and 100% compliance with iona.ai."
+            title:"Aditya Birla Case Study | Enterprise Hiring with iona.ai",
+            description:"See how Aditya Birla Group streamlined enterprise hiring and background verification using iona.ais agentic hiring platform."
         },
         PDFurl:`/assets/pages/casestudy/pdf/aditya-birla.pdf`,
-        image:"/assets/pages/casestudy/1.webp",
+        image:"/assets/pages/casestudy/case-1.webp",
         innerImage:"/assets/pages/casestudy/case-study-1.webp",
         headshot:"From Prospect to Productive Powerhouse",
-        title:"How Aditya Birla Sun Life Insurance transformed hiring with iona.ai and achieved 90% faster onboarding.",
+        title:`How <span style='color:#A01314;'>Aditya Birla Sun Life Insurance</span> transformed hiring with iona.ai and achieved 90% faster onboarding.`,
+        cardTitle:`How Aditya Birla Sun Life Insurance transformed hiring with iona.ai and achieved 90% faster onboarding.`,
         outcome:[
             {
                 count:"90%",
@@ -47,14 +48,16 @@ export const CaseStudyJson = {
     "hdfc-ergo":{
         slug:"hdfc-ergo",
         seo:{
-            title:"HDFC Ergo General Insurance | Success Story | iona.ai  ",
-            description:"Learn how HDFC Ergo General Insurance used iona.ai to 4X their hiring, with AI-driven workflows, and 100% compliant and accurate background verification."
+            title:"HDFC ERGO Case Study | AI-Powered Hiring by iona.ai",
+            description:"Learn how HDFC ERGO optimized recruitment speed and accuracy using iona.ai’s automated, AI-driven hiring solutions."
         },
         PDFurl:`/assets/pages/casestudy/pdf/hdfc-ergo.pdf`,
         headshot:"From Manual Chaos to Automated Hiring",
         image:"/assets/pages/casestudy/2.webp",
         innerImage:"/assets/pages/casestudy/case-study-3.webp",
-        title:"Learn how HDFC Ergo - General Insurance achieved 4x faster JD turnaround and 100% automated BGV for field service professionals.",
+        title:"Learn how <span style='color:#E41E26;' >HDFC Ergo</span> - General Insurance achieved 4x faster JD turnaround and 100% automated BGV for field service professionals.",
+        cardTitle:"Learn how HDFC Ergo - General Insurance achieved 4x faster JD turnaround and 100% automated BGV for field service professionals.",
+     
         outcome:[
             {
                 count:"4X",
@@ -91,14 +94,16 @@ export const CaseStudyJson = {
     "metropolis-healthcare":{
         slug:"metropolis-healthcare",
         seo:{
-            title:"Metropolis Healthcare | Success Story | iona.ai  ",
-            description:"Learn how Metropolis Healthcare used iona.ai to transform their workforce agility and cut onboarding time by 83% with 95% documentation accuracy."
+            title:"Metropolis Healthcare Case Study | Hiring Automation with iona.ai",
+            description:"Discover how Metropolis Healthcare improved hiring efficiency and compliance using iona.ai’s enterprise recruitment automation."
         },
         image:"/assets/pages/casestudy/3.webp",
          innerImage:"/assets/pages/casestudy/case-study-2.webp",
         PDFurl:`/assets/pages/casestudy/pdf/metropolis-healthcare.pdf`,
         headshot:"From Complex Verification Processes to 100% Accuracy",
-        title:"How Metropolis Healthcare saved millions, expanded its workforce, and accelerated hiring with iona.ai.",
+        title:"How <span style='color:#00984A;'>Metropolis Healthcare</span> saved millions, expanded its workforce, and accelerated hiring with iona.ai.",
+        cardTitle:"How Metropolis Healthcare saved millions, expanded its workforce, and accelerated hiring with iona.ai.",
+     
         outcome:[
             {
                 count:"83%",

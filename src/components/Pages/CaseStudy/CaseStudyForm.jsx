@@ -198,6 +198,7 @@ window.location.href = pdfurl;
             },
             { name: "seniority", placeholder: "Seniority" },
             { name: "functional_area", placeholder: "Functional Area" },
+            { name: "interest_in_demo", placeholder: "Interest in Demo" },
           ].map((field) => (
             <input
               key={field.name}

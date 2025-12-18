@@ -13,8 +13,8 @@ function RecruiterLandingPages() {
   return (
     <div className='bg-white'>
       <SeoHeader
-      title={"Excel with Agentic AI for Smarter Recruitment | iona.ai"}
-      description={"Resolve recruitment pain points with Agentic AI. Automate CV parsing, candidate matching, and more for faster, smarter hiring. Start free today!"}
+      title={"Agentic AI Recruiter’s Sheet | Smarter Hiring with iona.ai"}
+      description={"The Recruiter’s Sheet by iona.ai uses agentic AI to streamline hiring workflows, manage candidates efficiently, and accelerate recruitment decisions."}
       />
       <LPHeader ctaText={"Get Started its Free"}/>
     <RecruiterBanner/>

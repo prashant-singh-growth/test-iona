@@ -19,9 +19,9 @@ function Landingpages() {
   return (
     <div className="w-full font-lora theme-lora-font" id="form">
       <SeoHeader
-        title={"iona.ai: AI-Powered End-to-End Hiring & Onboarding Solution"}
+        title={"End-to-End Hiring Solution for Enterprises | iona.ai"}
         description={
-          "Streamline your hiring with iona.ai. Automate recruitment, ensure compliance, and onboard at scale. Request a demo today!"
+          "iona.ai offers an end-to-end enterprise hiring solution covering sourcing, screening, interviews, verification, and onboarding—powered by agentic AI."
         }
         canonical={"/end-to-end-hiring-solution-for-enterprises"}
       />
@@ -47,13 +47,15 @@ function Landingpages() {
       <WhyUsSection />
       {/* result section */}
       <ResultSection pb={false} />
+           <TestimonialSlider />
       <CaseStudySection/>
-      {/* certification section */}
-      <CertificationSection />
+     
       {/* testimonial section */}
-      <TestimonialSlider />
+ 
       {/* cta section */}
       <CTASection />
+       {/* certification section */}
+      <CertificationSection />
       {/* footer */}
      <LPFooter/>
     </div>

@@ -7,16 +7,17 @@ import LPHeader from '../../components/Pages/LandingPage/LPHeader'
 import LPFooter from '../../components/Pages/LandingPage/LPFooter'
 import CTASection from '../../components/Pages/HomePage/CTASection'
 import CertificationSection from '../../components/Pages/SecLandingPage/CertificationSection'
-import CustomersExperienceSection from '../../components/Pages/SecLandingPage/CustomersExperienceSection'
+// import CustomersExperienceSection from '../../components/Pages/SecLandingPage/CustomersExperienceSection'
 import SeoHeader from '../../components/utils/SeoHeader'
+import TestimonialSlider from '../../components/utils/TestimonialSlider'
 
 
 function SecLandingPage() {
   return (
    <div className="bg-white theme-lora-font">
     <SeoHeader
-    title={"Automated Background Verification Tool | Nova Verify"}
-    description={"Automate background verification with Nova Verify by iona.ai. Cut costs, eliminate manual work, and onboard verified talent 90% faster."}
+    title={"Automated Employee Background Verification | iona.ai"}
+    description={"Automate employee background verification with iona.ai. Faster checks, higher accuracy, and enterprise-grade compliance for high-volume hiring."}
 
     />
     <LPHeader/>
@@ -24,12 +25,13 @@ function SecLandingPage() {
     <ClientBadgeSection/>
     <NovaFixesSection/>
     <NovaVerifySection/>
-<CertificationSection/>
-<CustomersExperienceSection/>
+ <TestimonialSlider />
+{/* <CustomersExperienceSection/> */}
     <CTASection
     title={"Ready to solve your background check hassles?"}
     description={"Get started today and automate 100% of your recruitment from sourcing to onboarding with background verification and a 100% data accuracy guarantee."}
     />
+    <CertificationSection/>
     <LPFooter/>
    </div>
   )
