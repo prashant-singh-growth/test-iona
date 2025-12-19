@@ -17,6 +17,7 @@ function CaseStudyForm({pdfurl}) {
     utm_term: "",
     gclid: "",
     fbclid: "",
+    interest_in_demo:"",
   });
 
   const [status, setStatus] = useState({
@@ -198,7 +199,7 @@ window.location.href = pdfurl;
             },
             { name: "seniority", placeholder: "Seniority" },
             { name: "functional_area", placeholder: "Functional Area" },
-            { name: "interest_in_demo", placeholder: "Interest in Demo" },
+            
           ].map((field) => (
             <input
               key={field.name}
@@ -212,6 +213,17 @@ window.location.href = pdfurl;
               className={`border-[#D6D6D6] border rounded-lg px-3 py-2 text-sm text-primary placeholder:text-[#808080] font-lora `}
             />
           ))}
+           <select
+    name="interest_in_demo"
+    value={formData.interest_in_demo}
+    onChange={handleChange}
+    required
+    className="border-[#D6D6D6] border rounded-lg px-3 py-2 text-sm text-primary font-lora"
+  >
+    <option value="" disabled>Are you interested?</option>
+    <option value="Yes">Yes</option>
+    <option value="No">No</option>
+  </select>
         </div>
 
         {/* Hidden UTM Fields */}

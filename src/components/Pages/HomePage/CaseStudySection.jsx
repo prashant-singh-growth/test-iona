@@ -35,7 +35,7 @@ function CaseStudySection() {
         'How Metropolis Healthcare saved millions, expanded its workforce, and accelerated hiring with',
       author: "Chief Human Resources Officer",
       link: "/case-studies",
-      logo:"client-3.webp"
+      logo:"metropolis.webp"
     },
   ];
 
@@ -79,16 +79,16 @@ function CaseStudySection() {
         >
           {caseStudies.map((item, index) => (
             <SwiperSlide key={index}>
-              <div className="w-full flex text-white flex-col bg-[#160E38] p-5 md:p-10 rounded-md  h-full min-h-[320px]   md:min-h-[410px] lg:min-h-[520px]">
+              <div className="w-full flex text-white flex-col bg-[#160E38] p-5 md:p-10 rounded-md  h-full min-h-[280px]   md:min-h-[410px] lg:min-h-[520px]">
                <div className="w-full relative">
                  <img
                   src={item.image}
                   alt={item.title}
-                  className="w-full rounded-md object-contain"
+                  className="w-full hidden sm:block rounded-md object-contain"
                   loading="lazy"
                 />
-              <div className="absolute top-2 lg:top-4 right-2 lg:right-4 p-1 sm:p-2 rounded-md bg-darkVoilet">
-                  <img src={`/assets/pages/casestudy/${item.logo}`} alt="logo" className="h-4 sm:h-5 lg:h-8 rounded-md  object-contain " />
+              <div className="sm:absolute top-2 lg:top-4 right-2 lg:right-4 p-1  sm:rounded-md bg-darkVoilet">
+                  <img src={`/assets/pages/casestudy/${item.logo}`} alt="logo" className={`${item.logo === "aditya.webp" ? "w-16 lg:w-24": item.logo === "hdfc.webp" ? "h-8 lg:h-10":"h-8 lg:h-10"} sm:rounded-md  object-contain `} />
               </div>
                </div>
                 <h3 className="text-white text-xl md:text-2xl font-medium  font-lora my-3 md:my-5 line-clamp-4  ">
