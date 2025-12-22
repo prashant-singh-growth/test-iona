@@ -84,12 +84,12 @@ function CaseStudySection() {
                  <img
                   src={item.image}
                   alt={item.title}
-                  className="w-full hidden sm:block rounded-md object-contain"
+                  className="w-full  rounded-md object-contain"
                   loading="lazy"
                 />
-              <div className="sm:absolute top-2 lg:top-4 right-2 lg:right-4 p-1  sm:rounded-md bg-darkVoilet">
+              {/* <div className="sm:absolute top-2 lg:top-4 right-2 lg:right-4 p-1  sm:rounded-md bg-darkVoilet">
                   <img src={`/assets/pages/casestudy/${item.logo}`} alt="logo" className={`${item.logo === "aditya.webp" ? "w-16 lg:w-24": item.logo === "hdfc.webp" ? "h-8 lg:h-10":"h-8 lg:h-10"} sm:rounded-md  object-contain `} />
-              </div>
+              </div> */}
                </div>
                 <h3 className="text-white text-xl md:text-2xl font-medium  font-lora my-3 md:my-5 line-clamp-4  ">
                    {item.description}
