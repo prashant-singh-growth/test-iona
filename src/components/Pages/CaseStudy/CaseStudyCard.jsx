@@ -17,9 +17,9 @@ function CaseStudyCard() {
             </div>
 
             <a href="/case-studies/aditya-birla" className="w-full flex flex-col col-span-4 bg-[#B11D1D] relative p-3 rounded-[4px_12px_12px_4px] group">
-              <div className="absolute left-3 top-0 h-full w-[3px]  bg-[#00000026] ">
+              {/* <div className="absolute left-3 top-0 h-full w-[3px]  bg-[#00000026] "> */}
                 {" "}
-              </div>
+              {/* </div> */}
               <div  className="ml-auto ease-linear duration-150 group-hover:translate-x-1 group-hover:-translate-y-1">
                 <svg
                   width="11"
@@ -54,9 +54,9 @@ function CaseStudyCard() {
             </div>
 
             <a href="/case-studies/metropolis-healthcare" className="w-full flex flex-col col-span-4 bg-[#13984A] relative p-3 rounded-[4px_12px_12px_4px] group">
-              <div className="absolute left-3 top-0 h-full w-[3px]  bg-[#00000026] ">
+              {/* <div className="absolute left-3 top-0 h-full w-[3px]  bg-[#00000026] "> */}
                 {" "}
-              </div>
+              {/* </div> */}
               <div  className="ml-auto ease-linear duration-150 group-hover:translate-x-1 group-hover:-translate-y-1">
                 <svg
                   width="11"
@@ -91,9 +91,9 @@ function CaseStudyCard() {
             </div>
 
            <a href="/case-studies/hdfc-ergo" className="w-full flex flex-col col-span-4 bg-[#E41F28] relative p-3 rounded-[4px_12px_12px_4px] group">
-              <div className="absolute left-3 top-0 h-full w-[3px]  bg-[#00000026] ">
+              {/* <div className="absolute left-3 top-0 h-full w-[3px]  bg-[#00000026] ">
                 {" "}
-              </div>
+              </div> */}
               <div  className="ml-auto ease-linear duration-150 group-hover:translate-x-1 group-hover:-translate-y-1">
                 <svg
                   width="11"
