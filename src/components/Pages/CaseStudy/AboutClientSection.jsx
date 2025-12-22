@@ -267,9 +267,9 @@ function AboutClientSection({ about }) {
             ))}
           </div>
          <div className="w-full lg:col-span-4 rounded-[20px] overflow-hidden relative">
-            <div className="absolute top-3 sm:top-4 right-3 sm:right-4 p-2 rounded-md bg-darkVoilet">
+            {/* <div className="absolute top-3 sm:top-4 right-3 sm:right-4 p-2 rounded-md bg-darkVoilet">
                   <img src={`${about?.customer?.logo}`} alt="logo" className="h-6 sm:h-10  rounded-md  object-contain " />
-              </div>
+              </div> */}
            <img
             src={about?.innerImage}
             alt={about?.innerImage || "iona.ai"}
