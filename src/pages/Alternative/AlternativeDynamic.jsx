@@ -19,7 +19,7 @@ function AlternativeDynamic() {
   const { Alternative } = useParams();
   const AlternativeData = AlternativePagesData[Alternative];
 
-  if (!AlternativeData) return <h1>Case Study Not Found</h1>;
+  if (!AlternativeData) return ;
 
   return (
     <div>

@@ -16,7 +16,7 @@ function RecruiterLandingPages() {
       title={"Agentic AI Recruiter’s Sheet | Smarter Hiring with iona.ai"}
       description={"The Recruiter’s Sheet by iona.ai uses agentic AI to streamline hiring workflows, manage candidates efficiently, and accelerate recruitment decisions."}
       />
-      <LPHeader ctaText={"Get Started its Free"}/>
+      <LPHeader ctaText={"Get Started its Free"} ctaLink="/signup"/>
     <RecruiterBanner/>
         <ClientBadgeSection/>
         <DetailSectionDynamic

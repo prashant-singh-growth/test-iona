@@ -55,6 +55,12 @@ const CaseStudyLandingPage = lazy(
 const RecruiterLandingPages = lazy(
   () => import("./pages/Landing/RecruiterLandingPages")
 );
+const SignUpPages = lazy(
+  () => import("./pages/Signup")
+);
+const LoginPages = lazy(
+  () => import("./pages/Login")
+);
 // Scroll to top on route change
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -360,6 +366,22 @@ const AnimatedRoutes = () => {
             </PageTransition>
           }
         />
+          <Route
+          path="/signup"
+          element={
+            <PageTransition>
+              <SignUpPages />
+            </PageTransition>
+          }
+        />
+          <Route
+          path="/login"
+          element={
+            <PageTransition>
+              <LoginPages/>
+            </PageTransition>
+          }
+        />
         <Route
           path="*"
           element={
@@ -429,7 +451,8 @@ function AppContent() {
   const hideNavbarRoutes = [
     "/end-to-end-hiring-solution-for-enterprises",
     "/automated-background-verification",
-    "/agentic-ai-recruiters-sheet"
+    "/agentic-ai-recruiters-sheet",
+    // "/signup"
   ];
   const shouldHideNavbar = hideNavbarRoutes.includes(location.pathname);
 

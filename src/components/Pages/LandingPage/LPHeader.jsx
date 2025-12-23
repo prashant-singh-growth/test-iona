@@ -1,6 +1,6 @@
 import React from 'react'
 
-function LPHeader({ctaText}) {
+function LPHeader({ctaText,ctaLink}) {
   return (
    <header className="w-full px-5 md:px-10 slg:px-[60px] lg:px-[90px] grid place-items-center fixed top-0 h-[80px] bg-white z-50">
           <div className="w-full max-w-[1440px] flex flex-row justify-between items-center">
@@ -10,7 +10,7 @@ function LPHeader({ctaText}) {
               alt="iona-logo"
             />
             <a
-              href="#form"
+              href={ctaLink ? ctaLink : "#form"}
               className="bg-primary font-bold leading-5 font-lora px-5 py-3 text-[14px] text-white flex flex-row space-x-2 rounded hover:scale-95 ease-in-out duration-150"
             >
               <span>{ctaText ? ctaText : "Schedule a Demo"}</span>{" "}
