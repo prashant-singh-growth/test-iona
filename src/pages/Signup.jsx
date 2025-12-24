@@ -10,7 +10,7 @@ function Signup() {
         {/* Logo / Brand */}
         <div className="text-center">
           <h1 className="text-3xl font-bold text-gray-900 font-lora">
-            Sign up for <span className="text-primary">iona.ai</span>
+            Sign up for <span className="text-primary">iona.ai's Recruiters Sheet</span>
           </h1>
           <p className="text-gray-500 mt-2 text-sm font-lora">
             Join using your LinkedIn account
