@@ -30,7 +30,7 @@ function Signup() {
         {/* Divider */}
         <div className="flex items-center gap-3">
           <span className="flex-1 h-px bg-gray-200" />
-          <span className="text-xs text-gray-400 font-lora">No password required</span>
+          <span className="text-xs text-gray-400 font-lora">Made for HR & Talent Acquisition Team's</span>
           <span className="flex-1 h-px bg-gray-200" />
         </div>
 
@@ -38,7 +38,7 @@ function Signup() {
         <ul className="text-sm text-gray-600 space-y-2 font-lora">
           <li>✔️ One-click signup</li>
           <li>✔️ Secure LinkedIn authentication</li>
-          <li>✔️ No spam or hidden charges</li>
+          <li>✔️ it's Free Forever</li>
         </ul>
 
         {/* Footer */}
