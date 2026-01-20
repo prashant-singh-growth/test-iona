@@ -2,7 +2,7 @@ import React from "react";
 
 function AboutClientSection({ about }) {
   return (
-    <section className="w-full bg-white flex flex-col pt-[60px] pb-[60px] px-5 md:px-10 slg:px-[60px] lg:px-[90px] justify-center items-center space-y-10">
+    <section className="w-full bg-white flex flex-col pb-[60px] px-5 md:px-10 slg:px-[60px] lg:px-[90px] justify-center items-center space-y-10">
       <div className="w-full max-w-[1440px] flex flex-col  justify-center items-center space-y-10">
         <div className="flex flex-col max-w-[822px] justify-center items-center ">
           <h2 className="text-3xl md:text-4xl lg:text-[40px] lg:leading-[50px] text-[#2A2564] font-bold md:font-semibold text-center ">
@@ -266,16 +266,11 @@ function AboutClientSection({ about }) {
               </div>
             ))}
           </div>
-         <div className="w-full lg:col-span-4 rounded-[20px] overflow-hidden relative">
-            {/* <div className="absolute top-3 sm:top-4 right-3 sm:right-4 p-2 rounded-md bg-darkVoilet">
-                  <img src={`${about?.customer?.logo}`} alt="logo" className="h-6 sm:h-10  rounded-md  object-contain " />
-              </div> */}
-           <img
+          <img
             src={about?.innerImage}
             alt={about?.innerImage || "iona.ai"}
-            className="w-full  object-contain "
+            className="w-full lg:col-span-4 object-contain rounded-[20px]"
           />
-         </div>
         </div>
       </div>
     </section>

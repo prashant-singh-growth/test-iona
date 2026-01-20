@@ -15,7 +15,9 @@ function CaseStudyDynamicBanner({banner}) {
           <p className="text-lg font-lora text-primary font-normal mt-5">
             {banner?.headshot}
           </p>
-          <h1 className="text-4xl font-semibold font-lora   lg:leading-[50px] text-[#2A2564]  text-left " dangerouslySetInnerHTML={{__html: banner?.title}}/>
+          <h1 className="text-4xl font-semibold font-lora   lg:leading-[50px] text-[#2A2564] flex flex-col text-left ">
+           {banner?.title}
+          </h1>
           <div className="w-full bg-darkVoilet rounded-xl py-5 px-10 flex flex-col justify-center items-center mt-10 gap-9">
             <p className="text-lg font-lora text-white font-normal ">Outcome</p>
             <div className="w-full grid gap-5 gap-y-8 grid-cols-1 sm:grid-cols-3 ">

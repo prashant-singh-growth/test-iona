@@ -6,7 +6,8 @@ import SeoHeader from '../../components/utils/SeoHeader'
 function CaseStudyLanding() {
   return (
     <div>
-      <SeoHeader
+        <SeoHeader
+      
       title={"Enterprise Hiring Case Studies | iona.ai Success Stories"}
       description={"Discover how leading enterprises use iona.ai to transform hiring, reduce turnaround time, and improve recruitment efficiency."}
       />

@@ -14,28 +14,25 @@ function CaseStudySection() {
       image: "/assets/pages/homepage/case-study.webp",
       title: "About the Client: A Legacy of Trust, Poised for Unprecedented Expansion",
       description:
-        'How Aditya Birla Sun Life Insurance transformed hiring with iona.ai and achieved 90% faster onboarding.',
+        '"How Aditya Birla Sun Life Insurance transformed hiring with iona.ai and achieved 90% faster onboarding."',
       author: "HR Director, Leading Insurance Provider",
       link: "/case-studies",
-      logo:"aditya.webp"
     },
     {
       image: "/assets/pages/homepage/case-study-2.webp",
       title: "Transforming Recruitment: How iona.ai Is Simplifying Hiring For A Leading Consumer Brand",
       description:
-        'Learn how HDFC Ergo - General Insurance achieved 4x faster JD turnaround and 100% automated BGV for field service professionals.',
+        '"Learn how HDFC Ergo - General Insurance achieved 4x faster JD turnaround and 100% automated BGV for field service professionals."',
       author: "AGM-HR, a fast-growing consumer brand in India",
       link: "/case-studies",
-      logo:"hdfc.webp"
     },
     {
       image: "/assets/pages/homepage/case-study-3.webp",
       title: "Scaling with Precision",
       description:
-        'How Metropolis Healthcare saved millions, expanded its workforce, and accelerated hiring with',
+        '"How Metropolis Healthcare saved millions, expanded its workforce, and accelerated hiring with "',
       author: "Chief Human Resources Officer",
       link: "/case-studies",
-      logo:"metropolis.webp"
     },
   ];
 
@@ -54,7 +51,7 @@ function CaseStudySection() {
       </div>
 
       {/* --- Swiper Slider --- */}
-      <div className="w-full flex flex-col gap-5 md:gap-10 ">
+      <div className="w-full flex flex-col gap-10 ">
         
        <div className="w-full relative">
         <div className="w-[15%] lg:w-[20%] right-0 md:-right-1 lg:right-0 xl:-right-2 hidden md:block h-full top-0 absolute bg-gradient-to-r to-white from-transparent z-10 "></div>
@@ -79,31 +76,26 @@ function CaseStudySection() {
         >
           {caseStudies.map((item, index) => (
             <SwiperSlide key={index}>
-              <div className="w-full flex text-white flex-col bg-[#160E38] p-5 md:p-10 rounded-md  h-full min-h-[280px]   md:min-h-[410px] lg:min-h-[520px]">
-               <div className="w-full relative">
-                 <img
+              <div className="w-full flex flex-col bg-[#160E38] p-5 md:p-10 rounded-md  h-full min-h-[430px]   md:min-h-[480px] lg:min-h-[520px]">
+                <img
                   src={item.image}
                   alt={item.title}
-                  className="w-full  rounded-md object-contain"
+                  className="w-full rounded-md object-contain"
                   loading="lazy"
                 />
-              {/* <div className="sm:absolute top-2 lg:top-4 right-2 lg:right-4 p-1  sm:rounded-md bg-darkVoilet">
-                  <img src={`/assets/pages/casestudy/${item.logo}`} alt="logo" className={`${item.logo === "aditya.webp" ? "w-16 lg:w-24": item.logo === "hdfc.webp" ? "h-8 lg:h-10":"h-8 lg:h-10"} sm:rounded-md  object-contain `} />
-              </div> */}
-               </div>
-                <h3 className="text-white text-xl md:text-2xl font-medium  font-lora my-3 md:my-5 line-clamp-4  ">
-                   {item.description}
+                <h3 className="text-white text-xl md:text-2xl font-medium line-clamp-2 font-lora my-3 md:my-5  lg:line-clamp-1">
+                  {item.title}
                 </h3>
-                {/* <p className="text-base font-normal text-white font-lora line-clamp-4 lg:line-clamp-3">
+                <p className="text-base font-normal text-white font-lora line-clamp-4 lg:line-clamp-3">
                   {item.description}
-                </p> */}
+                </p>
                 <div className="w-full flex flex-row justify-between gap-5 items-center mt-auto pt-7 flex-wrap">
-                  {/* <p className="text-base font-normal text-white font-lora">
+                  <p className="text-base font-normal text-white font-lora">
                     {item.author}
-                  </p> */}
+                  </p>
                   <a
                     href={item.link}
-                    className="bg-white ml-auto font-lora px-4 py-2 sm:px-5 sm:py-3 text-[14px] text-primary flex flex-row space-x-2 rounded hover:scale-95 ease-in-out duration-150"
+                    className="bg-white font-lora px-5 py-3 text-[14px] text-primary flex flex-row space-x-2 rounded hover:scale-95 ease-in-out duration-150"
                   >
                     <span>View Full Case Study</span>
                     <svg

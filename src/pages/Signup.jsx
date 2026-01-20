@@ -1,10 +1,14 @@
 import React from "react";
 import { FaLinkedinIn } from "react-icons/fa";
+import SeoHeader from "../components/utils/SeoHeader";
 
 function Signup() {
   return (
     <div className="w-full  h-screen flex items-center justify-center bg-primary px-4">
+       <SeoHeader
+      title={"Signup | iona.ai"}
       
+      description={"Signup | iona.ai"}/>
       <div className="w-full max-w-[420px] bg-white rounded-2xl shadow-2xl p-8 flex flex-col gap-6">
         
         {/* Logo / Brand */}

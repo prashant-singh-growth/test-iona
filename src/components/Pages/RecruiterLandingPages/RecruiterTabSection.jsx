@@ -17,7 +17,7 @@ const solutionCardData = [
       "<b>Automatic Data Extraction</b> : Instantly pull all key candidate details. ",
       "<b>Smart Accuracy</b> :  Enjoy support for multiple file formats and built-in smart duplicate detection."
     ],
-    btnURL: "/novacount",
+    btnURL: "/signup",
     image: "3.webp",
   },
   {
@@ -30,7 +30,7 @@ const solutionCardData = [
       "<b>Powerful Organization:</b> Save unlimited custom views and use advanced filtering and sorting. ",
     
     ],
-    btnURL: "/novaassist",
+    btnURL: "/signup",
     image: "1.webp",
   },
   {
@@ -42,7 +42,7 @@ const solutionCardData = [
       "<b>Flexible Output:</b> Export to Excel, CSV, or PDF instantly.",
       "<b>Custom Templates:</b> Use customizable templates and automatically include notes and attachments. ",
     ],
-    btnURL: "/novatrack",
+    btnURL: "/signup",
     image: "2.webp",
   },
  
@@ -113,7 +113,7 @@ function RecruiterTabSection() {
                        ))}
                      </ul>
                      <a
-                      href="#form"
+                      href={item.btnURL}
                        className="bg-transparent w-fit border-white border px-5 py-3 text-[14px] text-white  flex flex-row space-x-2 rounded hover:scale-95 ease-in-out duration-150 mt-10"
                      >
                        <span>Get Started - it's Free</span>{" "}
@@ -183,7 +183,7 @@ function RecruiterTabSection() {
                          ))}
                        </ul>
                        <a
-                         href="#form"
+                         href={item.btnURL}
                          className="bg-transparent w-fit border-white border px-5 py-3 text-[14px] text-white  flex flex-row space-x-2 rounded hover:scale-95 ease-in-out duration-150 mt-6"
                        >
                          <span>Get Started - it's Free</span>{" "}

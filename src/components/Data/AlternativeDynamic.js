@@ -2,13 +2,15 @@ export const AlternativePagesData = {
   "peoplestrong-alternative": {
     slug: "peoplestrong-alternative",
     seo: {
-      title: "Best PeopleStrong Alternative | AI-Driven Hiring Platform | iona.ai",
+      title:
+        "Best PeopleStrong Alternative | AI-Driven Hiring Platform | iona.ai",
       description:
         "Looking for a PeopleStrong alternative? iona.ai delivers smarter hiring automation, faster workflows, and AI-driven recruitment insights.",
     },
-     cta:{
-title:"Switch to a Smarter PeopleStrong Alternative",
-description:"Stop juggling with disconnected HR tools. Try iona.ai and see why leading enterprises are choosing it as their preferred PeopleStrong Alternative. Experience end-to-end hiring automation with 100% accuracy and zero compliance risk.",
+    cta: {
+      title: "Switch to a Smarter PeopleStrong Alternative",
+      description:
+        "Stop juggling with disconnected HR tools. Try iona.ai and see why leading enterprises are choosing it as their preferred PeopleStrong Alternative. Experience end-to-end hiring automation with 100% accuracy and zero compliance risk.",
     },
     banner: {
       title: "Looking for a Better Alternative to PeopleStrong?",
@@ -182,9 +184,10 @@ description:"Stop juggling with disconnected HR tools. Try iona.ai and see why l
       description:
         "iona.ai is a powerful Darwinbox alternative offering agentic AI-based hiring, verification, and recruitment automation for enterprises.",
     },
-   cta:{
-title:"Switch to a Smarter Darwinbox Alternative",
-description:"Stop juggling with disconnected HR tools. Try iona.ai and see why leading enterprises are choosing it as their preferred darwinbox Alternative. Experience end-to-end hiring automation with 100% accuracy and zero compliance risk.",
+    cta: {
+      title: "Switch to a Smarter Darwinbox Alternative",
+      description:
+        "Stop juggling with disconnected HR tools. Try iona.ai and see why leading enterprises are choosing it as their preferred darwinbox Alternative. Experience end-to-end hiring automation with 100% accuracy and zero compliance risk.",
     },
     banner: {
       title: "Looking for a Better Alternative to Darwinbox?",
@@ -272,18 +275,22 @@ description:"Stop juggling with disconnected HR tools. Try iona.ai and see why l
       card: [
         {
           heading: "Darwinbox: Built for HR. Not for High-Volume Hiring.",
-          description: "Darwinbox is a strong HRMS built to manage the entire employee lifecycle.",
+          description:
+            "Darwinbox is a strong HRMS built to manage the entire employee lifecycle.",
           bullets: [
             "Hiring and onboarding are just one module of the HCM suite.",
             "Not an autonomous end‑to‑end hiring agent pipeline.",
             "Positioned for full-scale enterprise digital HR transformation, which typically involves longer implementation cycles.",
-            "Complex pricing models make it difficult to understand the total cost involved. "
+            "Complex pricing models make it difficult to understand the total cost involved. ",
           ],
-          bottomNote: "It’s reliable for HR management. But when you need <b>thousands of hires, zero errors, and instant onboarding</b>, you hit its limits.",
+          bottomNote:
+            "It’s reliable for HR management. But when you need <b>thousands of hires, zero errors, and instant onboarding</b>, you hit its limits.",
         },
         {
-          heading: "iona.ai: Purpose-Built for Automated Enterprise-Grade Hiring",
-          description: "iona.ai was designed to solve exactly what legacy HR suites can’t — <b>speed, accuracy, and compliance at scale</b>.",
+          heading:
+            "iona.ai: Purpose-Built for Automated Enterprise-Grade Hiring",
+          description:
+            "iona.ai was designed to solve exactly what legacy HR suites can’t — <b>speed, accuracy, and compliance at scale</b>.",
           bullets: [
             "<b>90% faster onboarding time</b> with automated workflows.",
             "<b>100% accuracy and zero compliance issues</b> through verified document capture..",
@@ -296,62 +303,67 @@ description:"Stop juggling with disconnected HR tools. Try iona.ai and see why l
       ],
     },
     FaqList: [
-  {
-    question: "What makes iona.ai different?",
-    answer:
-      "Other vendors sell you a tool and walk away. We offer a unique promise: a <b>100% outcome guarantee</b>. This is possible because iona.ai isn't just a tool; it's an agent. Our true Agentic AI, backed by a human-in-the-loop, autonomously runs the process—making us a true partner who owns the outcome."
-  },
-  {
-    question: "How does iona.ai ensure compliance with industry regulations?",
-    answer:
-      "iona.ai adheres to <b>ISO 27001</b>, <b>GDPR</b>, and other regulatory standards, ensuring secure data handling, real-time compliance checks, and zero errors in documentation."
-  },
-  {
-    question: "Can iona.ai integrate with my existing HR tools?",
-    answer:
-      "Yes, iona.ai seamlessly integrates with your HRMS, ATS, payroll systems, and other HR tools, creating a unified onboarding and recruitment experience."
-  },
-  {
-    question: "How does iona.ai handle high-volume hiring for global enterprises?",
-    answer:
-      "iona.ai is designed for scalability, automating every step of the recruitment process, enabling high-volume hiring across multiple regions with zero delays and <b>100% accuracy</b>."
-  },
-  {
-    question: "Do I need other HR tools or recruiters to use iona.ai?",
-    answer:
-      "No. iona.ai is designed to replace legacy ATS systems and manual workflows. The autonomous system handles sourcing, evaluation, offer issuance, and pre-boarding—freeing HR teams to focus on strategic work."
-  },
-  {
-    question: "What results can enterprises expect after deploying iona.ai?",
-    answer:
-      "Enterprises using iona.ai experience dramatically faster hiring cycles, lower cost-per-hire, error-free compliance, and a fully automated, predictable hiring pipeline. Real-world deployments have shown <b>90% faster onboarding</b> and <b>90% reduction in costs</b>."
-  },
-  {
-    question: "How secure is candidate data within iona.ai?",
-    answer:
-      "iona.ai follows enterprise-grade security protocols, including encryption at rest and in transit, role-based access controls, and GDPR/ISO-compliant data handling—ensuring candidate and organisational data remain fully protected."
-  },
-  {
-    question: "Can iona.ai handle thousands of hires simultaneously?",
-    answer:
-      "Yes. NovaSuite is built for high-volume enterprise hiring, capable of processing and tracking thousands of candidates in parallel while maintaining speed, accuracy, and compliance."
-  }
-]
-
+      {
+        question: "What makes iona.ai different?",
+        answer:
+          "Other vendors sell you a tool and walk away. We offer a unique promise: a <b>100% outcome guarantee</b>. This is possible because iona.ai isn't just a tool; it's an agent. Our true Agentic AI, backed by a human-in-the-loop, autonomously runs the process—making us a true partner who owns the outcome.",
+      },
+      {
+        question:
+          "How does iona.ai ensure compliance with industry regulations?",
+        answer:
+          "iona.ai adheres to <b>ISO 27001</b>, <b>GDPR</b>, and other regulatory standards, ensuring secure data handling, real-time compliance checks, and zero errors in documentation.",
+      },
+      {
+        question: "Can iona.ai integrate with my existing HR tools?",
+        answer:
+          "Yes, iona.ai seamlessly integrates with your HRMS, ATS, payroll systems, and other HR tools, creating a unified onboarding and recruitment experience.",
+      },
+      {
+        question:
+          "How does iona.ai handle high-volume hiring for global enterprises?",
+        answer:
+          "iona.ai is designed for scalability, automating every step of the recruitment process, enabling high-volume hiring across multiple regions with zero delays and <b>100% accuracy</b>.",
+      },
+      {
+        question: "Do I need other HR tools or recruiters to use iona.ai?",
+        answer:
+          "No. iona.ai is designed to replace legacy ATS systems and manual workflows. The autonomous system handles sourcing, evaluation, offer issuance, and pre-boarding—freeing HR teams to focus on strategic work.",
+      },
+      {
+        question:
+          "What results can enterprises expect after deploying iona.ai?",
+        answer:
+          "Enterprises using iona.ai experience dramatically faster hiring cycles, lower cost-per-hire, error-free compliance, and a fully automated, predictable hiring pipeline. Real-world deployments have shown <b>90% faster onboarding</b> and <b>90% reduction in costs</b>.",
+      },
+      {
+        question: "How secure is candidate data within iona.ai?",
+        answer:
+          "iona.ai follows enterprise-grade security protocols, including encryption at rest and in transit, role-based access controls, and GDPR/ISO-compliant data handling—ensuring candidate and organisational data remain fully protected.",
+      },
+      {
+        question: "Can iona.ai handle thousands of hires simultaneously?",
+        answer:
+          "Yes. NovaSuite is built for high-volume enterprise hiring, capable of processing and tracking thousands of candidates in parallel while maintaining speed, accuracy, and compliance.",
+      },
+    ],
   },
   "hrone-alternative": {
     slug: "hrone-alternative",
     seo: {
       title: "Best HRone Alternative for Smart Hiring Automation | iona.ai",
-      description: "Switch to iona.ai, a modern HRone alternative built for enterprise hiring automation, AI screening, and faster recruitment decisions.",
+      description:
+        "Switch to iona.ai, a modern HRone alternative built for enterprise hiring automation, AI screening, and faster recruitment decisions.",
     },
-     cta:{
-title:"Looking for a Better Alternative to HROne",
-description:"Unlock the power of iona.ai’s Managed Service. We blend Agentic AI with human expertise to automate high-volume hiring, saving time and cutting costs.",
+    cta: {
+      title: "Looking for a Better Alternative to HROne",
+      description:
+        "Unlock the power of iona.ai’s Managed Service. We blend Agentic AI with human expertise to automate high-volume hiring, saving time and cutting costs.",
     },
     banner: {
-    title:"Looking for a Better Alternative to HROne?",
-description:"Unlock the power of iona.ai’s Managed Service. We blend Agentic AI with human expertise to automate high-volume hiring, saving time and cutting costs.",
+      title: "Looking for a Better Alternative to HROne?",
+      description:
+        "Unlock the power of iona.ai’s Managed Service. We blend Agentic AI with human expertise to automate high-volume hiring, saving time and cutting costs.",
       page: "hrone-alternative",
     },
     details: {
@@ -360,9 +372,12 @@ description:"Unlock the power of iona.ai’s Managed Service. We blend Agentic A
       description: `As teams grow, hiring often becomes the most challenging process to keep under control. While HROne brings structure to HR operations,  iona.ai delivers a truly autonomous hiring journey, powered by Agentic AI and guided by Human Expertise as a Managed Service. We guarantee 90% faster onboarding and 100% compliance without adding to your overhead.`,
       cta: {
         title: "Tired of a Generalist HRM Platform?",
-        description: "HROne is an all-in-one HRM platform that does what most HR teams expect: it centralises payroll, attendance, and performance into one organised system.  While it supports basic recruitment workflows, hiring at scale needs intelligent sourcing and autonomous candidate engagement. This requires systems that can make decisions, and dynamically source, qualify, and engage candidates to meet changing hiring needs and goals.",
-        sub_title: "You need an intelligent engine that guarantees results, and here is iona.ai. ",
-        sub_description: "iona.ai eliminates the complexity of end-to-end talent acquisition by combining <b>Human Expertise with Agentic AI</b>, transforming 90% of administrative and operational headaches into a seamless, autonomous machine.",
+        description:
+          "HROne is an all-in-one HRM platform that does what most HR teams expect: it centralises payroll, attendance, and performance into one organised system.  While it supports basic recruitment workflows, hiring at scale needs intelligent sourcing and autonomous candidate engagement. This requires systems that can make decisions, and dynamically source, qualify, and engage candidates to meet changing hiring needs and goals.",
+        sub_title:
+          "You need an intelligent engine that guarantees results, and here is iona.ai. ",
+        sub_description:
+          "iona.ai eliminates the complexity of end-to-end talent acquisition by combining <b>Human Expertise with Agentic AI</b>, transforming 90% of administrative and operational headaches into a seamless, autonomous machine.",
         cta_1_url: "",
         cta_2_url: "",
       },
@@ -370,55 +385,57 @@ description:"Unlock the power of iona.ai’s Managed Service. We blend Agentic A
     comparison: {
       competitorLogo: "/assets/pages/Alternative/hrone.svg",
       title: "iona.ai vs HROne: Quick Comparison",
-      description: "See how iona.ai’s Agentic AI-led automation goes beyond HROne’s HR management framework, turning manual hiring cycles into fully autonomous, outcome-driven systems.",
+      description:
+        "See how iona.ai’s Agentic AI-led automation goes beyond HROne’s HR management framework, turning manual hiring cycles into fully autonomous, outcome-driven systems.",
       rows: [
-  {
-    feature: "Core Focus",
-    competitor: "Comprehensive HR suite to automate routine administrative tasks",
-    iona: "End-to-end hiring (Headcount Planning & Monitoring → ATS → Screening → Onboarding → Background Verification → Training)",
-  },
-  {
-    feature: "Implementation Time",
-    competitor: "Phased implementation and manual setup",
-    iona: "Go live in weeks with plug-and-play modules",
-  },
-  {
-    feature: "Background Verification",
-    competitor: "Relies on 3rd-party integrations",
-    iona: "100% fully automated and managed; iona.ai handles vendors & candidates seamlessly with zero HR Ops required",
-  },
-  {
-    feature: "Automation Depth",
-    competitor: "Limited automation for high-volume hiring",
-    iona: "Fully autonomous hiring agents that execute end-to-end workflows",
-  },
-  {
-    feature: "Candidate Experience",
-    competitor: "Static communication and form-based engagement",
-    iona: "Conversational AI that engages candidates instantly",
-  },
-  {
-    feature: "Compliance & Accuracy",
-    competitor: "Manual dependency and compliance errors",
-    iona: "100% paperless, automated, and guaranteed error-free compliance",
-  },
-  {
-    feature: "Analytics & Insights",
-    competitor: "Operational dashboards for HR, workforce, and payroll",
-    iona: "Predictive hiring insights, ROI modelling, and high-volume operational metrics with full customisation",
-  },
-  {
-    feature: "Scalability",
-    competitor: "Enterprise-capable HR platform, but mainly HR lifecycle-focused",
-    iona: "3000+ hires/month with only a 5-member HR team",
-  },
-  {
-    feature: "Cost Efficiency",
-    competitor: "Subscription-based pricing",
-    iona: "High ROI with outcome-based service at a fraction of the cost of traditional HR software",
-  }
-]
-
+        {
+          feature: "Core Focus",
+          competitor:
+            "Comprehensive HR suite to automate routine administrative tasks",
+          iona: "End-to-end hiring (Headcount Planning & Monitoring → ATS → Screening → Onboarding → Background Verification → Training)",
+        },
+        {
+          feature: "Implementation Time",
+          competitor: "Phased implementation and manual setup",
+          iona: "Go live in weeks with plug-and-play modules",
+        },
+        {
+          feature: "Background Verification",
+          competitor: "Relies on 3rd-party integrations",
+          iona: "100% fully automated and managed; iona.ai handles vendors & candidates seamlessly with zero HR Ops required",
+        },
+        {
+          feature: "Automation Depth",
+          competitor: "Limited automation for high-volume hiring",
+          iona: "Fully autonomous hiring agents that execute end-to-end workflows",
+        },
+        {
+          feature: "Candidate Experience",
+          competitor: "Static communication and form-based engagement",
+          iona: "Conversational AI that engages candidates instantly",
+        },
+        {
+          feature: "Compliance & Accuracy",
+          competitor: "Manual dependency and compliance errors",
+          iona: "100% paperless, automated, and guaranteed error-free compliance",
+        },
+        {
+          feature: "Analytics & Insights",
+          competitor: "Operational dashboards for HR, workforce, and payroll",
+          iona: "Predictive hiring insights, ROI modelling, and high-volume operational metrics with full customisation",
+        },
+        {
+          feature: "Scalability",
+          competitor:
+            "Enterprise-capable HR platform, but mainly HR lifecycle-focused",
+          iona: "3000+ hires/month with only a 5-member HR team",
+        },
+        {
+          feature: "Cost Efficiency",
+          competitor: "Subscription-based pricing",
+          iona: "High ROI with outcome-based service at a fraction of the cost of traditional HR software",
+        },
+      ],
     },
     switch: {
       title: "Why Switch from HROne to iona.ai",
@@ -427,17 +444,21 @@ description:"Unlock the power of iona.ai’s Managed Service. We blend Agentic A
       card: [
         {
           heading: "HROne: Built for HR. Not for High-Volume Hiring.",
-          description: "HROne does a great job at what it’s designed for — running core HR operations, but not hiring at a scale. </b>HR teams often face:",
+          description:
+            "HROne does a great job at what it’s designed for — running core HR operations, but not hiring at a scale. </b>HR teams often face:",
           bullets: [
             "<B>Task-level automation</B>, where key hiring actions still depend on manual HR effort.",
             "<b>Third-party reliance</b> for verification, assessments, and compliance checks.",
-            "<b>Linear onboarding processes</b> that can’t keep pace with high-volume recruitment."
+            "<b>Linear onboarding processes</b> that can’t keep pace with high-volume recruitment.",
           ],
-          bottomNote: "Simplifying core HR operations is essential. But to hire fast and at scale, without the manual drag, you need a system built for intelligent hiring from the ground up.",
+          bottomNote:
+            "Simplifying core HR operations is essential. But to hire fast and at scale, without the manual drag, you need a system built for intelligent hiring from the ground up.",
         },
-       {
-          heading: "iona.ai: Purpose-Built for Automated Enterprise-Grade Hiring",
-          description: "iona.ai was designed to solve exactly what legacy HR suites can’t — <b>speed, accuracy, and compliance at scale</b>.",
+        {
+          heading:
+            "iona.ai: Purpose-Built for Automated Enterprise-Grade Hiring",
+          description:
+            "iona.ai was designed to solve exactly what legacy HR suites can’t — <b>speed, accuracy, and compliance at scale</b>.",
           bullets: [
             "<b>90% faster onboarding time</b> with automated workflows.",
             "<b>100% accuracy and zero compliance issues</b> through verified document capture..",
@@ -450,47 +471,458 @@ description:"Unlock the power of iona.ai’s Managed Service. We blend Agentic A
       ],
     },
     FaqList: [
-  {
-    question: "What makes iona.ai different?",
-    answer:
-      "Other vendors sell you a tool and walk away. We offer a unique promise: a 100% outcome guarantee. This is possible because iona.ai isn't just a tool; it's an agent. Our true agentic AI, backed by a human-in-the-loop, autonomously runs the process—making us a true partner who owns the outcome.",
+      {
+        question: "What makes iona.ai different?",
+        answer:
+          "Other vendors sell you a tool and walk away. We offer a unique promise: a 100% outcome guarantee. This is possible because iona.ai isn't just a tool; it's an agent. Our true agentic AI, backed by a human-in-the-loop, autonomously runs the process—making us a true partner who owns the outcome.",
+      },
+      {
+        question:
+          "How does iona.ai ensure compliance with industry regulations?",
+        answer:
+          "iona.ai adheres to ISO 27001, GDPR, and other regulatory standards, ensuring secure data handling, real-time compliance checks, and zero errors in documentation.",
+      },
+      {
+        question: "Can iona.ai integrate with my existing HR tools?",
+        answer:
+          "Yes, iona.ai seamlessly integrates with your HRMS, ATS, payroll systems, and other HR tools, creating a unified onboarding and recruitment experience.",
+      },
+      {
+        question:
+          "How does iona.ai handle high-volume hiring for global enterprises?",
+        answer:
+          "iona.ai is designed for scalability, automating every step of the recruitment process, enabling high-volume hiring across multiple regions with zero delays and 100% accuracy.",
+      },
+      {
+        question: "Do I need other HR tools or recruiters to use iona.ai?",
+        answer:
+          "No. iona.ai replaces legacy ATS systems and manual workflows. The autonomous system manages sourcing, evaluation, offer issuance, and pre-boarding—freeing HR teams to focus on high-priority strategic initiatives.",
+      },
+      {
+        question:
+          "What results can enterprises expect after deploying iona.ai?",
+        answer:
+          "Enterprises using iona.ai experience dramatically faster hiring cycles, lower cost-per-hire, error-free compliance, and a predictable automated hiring pipeline. Real deployments show 90% faster onboarding and a 90% reduction in hiring costs.",
+      },
+      {
+        question: "How secure is candidate data within iona.ai?",
+        answer:
+          "iona.ai follows enterprise-grade security protocols, including encryption at rest and in transit, role-based access controls, and GDPR/ISO-compliant data handling—ensuring candidate and organisational data remain fully protected.",
+      },
+      {
+        question: "Can iona.ai handle thousands of hires simultaneously?",
+        answer:
+          "Yes. NovaSuite is built for high-volume enterprise hiring, capable of processing thousands of candidates in parallel while maintaining speed, accuracy, and compliance.",
+      },
+    ],
   },
-  {
-    question: "How does iona.ai ensure compliance with industry regulations?",
-    answer:
-      "iona.ai adheres to ISO 27001, GDPR, and other regulatory standards, ensuring secure data handling, real-time compliance checks, and zero errors in documentation.",
+  "rapidhr-alternative": {
+    slug: "rapidhr-alternative",
+    seo: {
+      title: "",
+      description: "",
+    },
+    cta: {
+      title: "Looking for a Better Alternative to RapidHR",
+      description:
+        "Unlock the power of iona.ai’s Managed Service. We blend Agentic AI with human expertise to automate high-volume hiring, saving time and cutting costs.",
+    },
+    banner: {
+      title: "Looking for a Better Alternative to RapidHR?",
+      description:
+        "Unlock the power of iona.ai’s Managed Service. We blend Agentic AI with human expertise to automate high-volume hiring, saving time and cutting costs.",
+      page: "rapidhr-alternative",
+    },
+    details: {
+      headshot: "Best RapidHR Alternative",
+      title: "RapidHR vs iona.ai: The Smarter Choice for End-to-End Hiring",
+      description: `Scaling your hiring requires more than just HR software. While <b>Rapid HR</b> focuses on payroll and attendance, <b>iona.ai</b>  transforms hiring with <b>Agentic AI</b> and <b>Human Expertise</b> as a Managed Service. We guarantee <b>90% faster onboarding, 100% compliance</b>, and zero overhead — all with smarter, more efficient hiring.`,
+      cta: {
+        title: "Still Relying on All-in-One HR Management Systems?",
+        description:
+          "<b>Rapid HR</b> is a comprehensive <b>Human Resource Management (HRM)</b> suite, handling everything from payroll to employee performance. But when you're focused on scaling a <b>high-performance hiring process</b>—whether it's for a salesforce, frontline team, or large operations—you need more than just a broad HR solution.",
+        sub_title:
+          "You need an intelligent RapidHR alternative that guarantees results, and here is iona.ai.",
+        sub_description:
+          "<b>iona.ai</b> specializes in <b>autonomous talent acquisition</b>, combining <b>Agentic AI with Human Expertise</b>. It simplifies and automates 90% of the hiring process, turning the complexities of talent acquisition into a seamless, efficient workflow that guarantees fast, scalable results.",
+        cta_1_url: "",
+        cta_2_url: "",
+      },
+    },
+    comparison: {
+      competitorLogo: "/assets/pages/Alternative/Logo-RapidHR.svg",
+      title: "iona.ai vs RapidHR: Quick Comparison",
+      description:
+        "See why Agentic AI-led automation with iona.ai beats traditional HRM systems and ranks as the top RapidHR alternative in every measurable way.",
+      rows: [
+        {
+          feature: "Core Focus",
+          competitor:
+            "HR management system focused on administrative tasks (payroll, attendance, compliance)",
+          iona: "End-to-end hiring (Headcount Planning & Monitoring → ATS → Screening → Onboarding → Background Verification → Training)",
+        },
+        {
+          feature: "Purpose",
+          competitor:
+            "Focused on HR management for administrative tasks (payroll, attendance, compliance)",
+          iona: "Built exclusively for high-volume, high-speed hiring pipelines",
+        },
+        {
+          feature: "Background Verification",
+          competitor:
+            "Manual or semi-automated, often requires HR teams to manage vendors",
+          iona: "100% fully automated and managed. Clients do not need any HR Ops at their end as iona.ai manages background verification vendors and candidates seamlessly.",
+        },
+        {
+          feature: "Automation Depth",
+          competitor: "Basic automation, mostly for administrative tasks",
+          iona: "Fully autonomous hiring agents that execute end-to-end workflows",
+        },
+        {
+          feature: "Candidate Experience",
+          competitor:
+            "Offers mobile apps for candidate management and engagement",
+          iona: "Conversational AI that engages candidates instantly",
+        },
+        {
+          feature: "Compliance & Accuracy",
+          competitor: "Requires manual oversight for compliance and accuracy",
+          iona: "100% paperless, automated, and guaranteed error-free compliance",
+        },
+        {
+          feature: "Analytics & Insights",
+          competitor:
+            "Basic reporting and analytics, AI recommendations, limited to administrative tasks",
+          iona: "With the flexibility to customise and incorporate unique client needs, iona.ai offers predictive hiring insights, ROI modelling, and high-volume metrics.",
+        },
+        {
+          feature: "Scalability",
+          competitor: "Typically designed for small to medium teams",
+          iona: "3000+ hires/month with a 5-member HR team.",
+        },
+        {
+          feature: "Cost Efficiency",
+          competitor:
+            "Subscription-based pricing model, suited for core HR management tasks",
+          iona: "High ROI and clients get full outcome-based service at a fraction of the cost of expensive software.",
+        },
+      ],
+    },
+    switch: {
+      title: "Why Switch from RapidHR to Iona.ai",
+      ctaTitle: "",
+      ctaUrl: "",
+      card: [
+        {
+          heading: "RapidHR: Built for HR Admin, Not High-Volume Hiring",
+          description:
+            "While <b>RapidHR</b> is a solid HRMS, it's not optimized for high-volume, fast-paced recruitment. Enterprises often face:",
+          bullets: [
+            "Limited automation and reliance on manual intervention for recruitment processes.",
+            "Fragmented workflows across HR tasks such as payroll, attendance, and hiring.",
+            "Slower candidate engagement due to a lack of advanced AI-powered automation.",
+            "Not built for bulk or high-scale hiring, limiting scalability.",
+          ],
+          bottomNote:
+            "It's reliable for managing HR functions, but struggles when you need to scale hiring with speed, precision, and efficiency.",
+        },
+        {
+          heading:
+            "iona.ai: Purpose-Built for Automated Enterprise-Grade Hiring",
+          description:
+            "iona.ai was designed to solve exactly what legacy HR suites can’t — <b>speed, accuracy, and compliance at scale</b>.",
+          bullets: [
+            "<b>90% faster onboarding time</b> with automated workflows.",
+            "<b>100% accuracy and zero compliance issues</b> through verified document capture..",
+            "Designed for 3000+ hires/month handled by a 5-person HR team.",
+            "Built-in compliance checks aligned with GDPR, CCPA, and regional labor laws. 100% compliance",
+          ],
+          bottomNote:
+            "Every part of the process — from candidate sourcing to background verification — runs through intelligent <b>Agentic AI</b>, ensuring flawless execution without manual effort.",
+        },
+      ],
+    },
+    FaqList: [
+      {
+        question: "What makes iona.ai different?",
+        answer:
+          "Other vendors sell you a tool and walk away. We offer a unique promise: a 100% outcome guarantee. This is possible because iona.ai isn't just a tool; it's an agent. Our true agentic AI, backed by a human-in-the-loop, autonomously runs the process—making us a true partner who owns the outcome.",
+      },
+      {
+        question:
+          "How does iona.ai ensure compliance with industry regulations?",
+        answer:
+          "iona.ai adheres to ISO 27001, GDPR, and other regulatory standards, ensuring secure data handling, real-time compliance checks, and zero errors in documentation.",
+      },
+      {
+        question: "Can iona.ai integrate with my existing HR tools?",
+        answer:
+          "Yes, iona.ai seamlessly integrates with your HRMS, ATS, payroll systems, and other HR tools, creating a unified onboarding and recruitment experience.",
+      },
+      {
+        question:
+          "How does iona.ai handle high-volume hiring for global enterprises?",
+        answer:
+          "iona.ai is designed for scalability, automating every step of the recruitment process, enabling high-volume hiring across multiple regions with zero delays and 100% accuracy.",
+      },
+      {
+        question: "Do I need other HR tools or recruiters to use iona.ai?",
+        answer:
+          "No. iona.ai replaces legacy ATS systems and manual workflows. The autonomous system manages sourcing, evaluation, offer issuance, and pre-boarding—freeing HR teams to focus on high-priority strategic initiatives.",
+      },
+      {
+        question:
+          "What results can enterprises expect after deploying iona.ai?",
+        answer:
+          "Enterprises using iona.ai experience dramatically faster hiring cycles, lower cost-per-hire, error-free compliance, and a predictable automated hiring pipeline. Real deployments show 90% faster onboarding and a 90% reduction in hiring costs.",
+      },
+      {
+        question: "How secure is candidate data within iona.ai?",
+        answer:
+          "iona.ai follows enterprise-grade security protocols, including encryption at rest and in transit, role-based access controls, and GDPR/ISO-compliant data handling—ensuring candidate and organisational data remain fully protected.",
+      },
+      {
+        question: "Can iona.ai handle thousands of hires simultaneously?",
+        answer:
+          "Yes. NovaSuite is built for high-volume enterprise hiring, capable of processing thousands of candidates in parallel while maintaining speed, accuracy, and compliance.",
+      },
+    ],
   },
-  {
-    question: "Can iona.ai integrate with my existing HR tools?",
-    answer:
-      "Yes, iona.ai seamlessly integrates with your HRMS, ATS, payroll systems, and other HR tools, creating a unified onboarding and recruitment experience.",
+  "keka-alternative": {
+    slug: "keka-alternative",
+    seo: {
+      title: "",
+      description: "",
+    },
+    cta: {
+      title: "Looking for a Better Alternative to Keka",
+      description:
+        "Unlock the power of iona.ai’s Managed Service. We blend Agentic AI with human expertise to automate high-volume hiring, saving time and cutting costs.",
+    },
+    banner: {
+      title: "Looking for a Better Alternative to Keka?",
+      description:
+        "Unlock the power of iona.ai’s Managed Service. We blend Agentic AI with human expertise to automate high-volume hiring, saving time and cutting costs.",
+      page: "keka-alternative",
+    },
+    details: {
+      headshot: "Best Keka Alternative",
+      title: "Keka vs iona.ai: The Smarter Choice for End-to-End Hiring",
+      description: `Employee experience starts with a great HRMS, but high-volume growth requires a dedicated engine. While <b>Keka</b> streamlines your culture, payroll, and internal workflows, <b>iona.ai</b> transforms hiring with Agentic AI and human expertise as a fully managed service. We deliver <b>90% faster onboarding, 100% compliance</b>, and <b>zero operational overhead</b>—so you can hire at scale, without friction.`,
+      cta: {
+        title: "Still Relying on Traditional HR Platforms?",
+        description:
+          "<b>Keka</b> is a robust HR platform built to handle payroll and automate internal HR operations. It works well for managing employees once they’re onboarded. But when the goal is to <b>scale hiring at speed</b>—for frontline teams, salesforces, or large operational roles—HR-first platforms fall short.",
+        sub_title:
+          "You need a better Keka Software alternative that guarantees results, and here is iona.ai.",
+        sub_description:
+          "iona.ai powers <b>autonomous hiring</b> with <b>Agentic AI</b> and <b>human expertise</b>. It automates <b>90%</b> of recruitment workflows, delivering faster onboarding and scalable hiring without operational overhead.",
+        cta_1_url: "",
+        cta_2_url: "",
+      },
+    },
+    comparison: {
+      competitorLogo: "/assets/pages/Alternative/keka-logo.svg",
+      title: "iona.ai vs Keka: Quick Comparison",
+      description:
+        "See why Agentic AI-led automation with iona.ai beats traditional HR platforms and ranks as the Best Keka alternative in every measurable way.",
+      rows: [
+        {
+          feature: "Core Focus",
+          competitor:
+            "HR Platform covering payroll, attendance, performance, and employee lifecycle",
+          iona: "End-to-end hiring (Headcount Planning & Monitoring → ATS → Screening → Onboarding → Background Verification → Training)",
+        },
+        {
+          feature: "Purpose",
+          competitor: "Designed to manage employees after onboarding",
+          iona: "Built exclusively for high-volume, high-speed hiring pipelines",
+        },
+        {
+          feature: "Background Verification",
+          competitor:
+            "Requires third-party integrations and manual HR coordination",
+          iona: "100% fully automated and managed. Clients do not need any HR Ops at their end as iona.ai manages background verification vendors and candidates seamlessly.",
+        },
+        {
+          feature: "Automation Depth",
+          competitor:
+            "Workflow-based automation for HR tasks; recruitment involves manual steps",
+          iona: "Fully autonomous hiring agents that execute end-to-end workflows",
+        },
+        {
+          feature: "Candidate Experience",
+          competitor: "Form-based applications and standard ATS interactions",
+          iona: "Conversational AI that engages candidates instantly",
+        },
+        {
+          feature: "Compliance & Accuracy",
+          competitor: "HR-led compliance dependent on correct manual inputs",
+          iona: "100% paperless, automated, and guaranteed error-free compliance",
+        },
+        {
+          feature: "Analytics & Insights",
+          competitor: "Standard HR and payroll reports",
+          iona: "With the flexibility to customise and incorporate unique client needs, iona.ai offers predictive hiring insights, ROI modelling, and high-volume metrics.",
+        },
+        {
+          feature: "Scalability",
+          competitor:
+            "Suitable for steady hiring; HR effort increases with volume",
+          iona: "3000+ hires/month with a 5-member HR team.",
+        },
+        {
+          feature: "Cost Efficiency",
+          competitor:
+            "Subscription-based pricing model, suited for core HR management tasks",
+          iona: "High ROI and clients get full outcome-based service at a fraction of the cost of expensive software.",
+        },
+      ],
+    },
+    switch: {
+      title: "Why Switch from Keka to iona.ai",
+      ctaTitle: "",
+      ctaUrl: "",
+      card: [
+        {
+          heading: "Keka: Built for HR Operations, Not High-Volume Hiring",
+          description:
+            "While <b>Keka</b> excels in managing employee records, payroll, and performance, it’s not built for scaling recruitment at speed. Enterprises often face:",
+          bullets: [
+            "Hiring and onboarding are just parts of a larger HR suite.",
+            "No autonomous, end-to-end hiring pipeline.",
+            "Longer implementation cycles due to HR transformation focus.",
+            "Complex pricing models can be hard to estimate.",
+          ],
+          bottomNote:
+            "It’s an excellent tool for HR management, but when it comes to fast, high-volume hiring, it doesn't meet the demands of modern enterprises.",
+        },
+        {
+          heading:
+            "iona.ai: Purpose-Built for Automated Enterprise-Grade Hiring",
+          description:
+            "iona.ai was designed to solve exactly what legacy HR suites can’t — <b>speed, accuracy, and compliance at scale</b>.",
+          bullets: [
+            "<b>90% faster onboarding time</b> with automated workflows.",
+            "<b>100% accuracy and zero compliance issues</b> through verified document capture..",
+            "Designed for 3000+ hires/month handled by a 5-person HR team.",
+            "Built-in compliance checks aligned with GDPR, CCPA, and regional labor laws. 100% compliance",
+          ],
+          bottomNote:
+            "Every part of the process — from candidate sourcing to background verification — runs through intelligent <b>Agentic AI</b>, ensuring flawless execution without manual effort.",
+        },
+      ],
+    },
+    FaqList: [
+      {
+        question: "What makes iona.ai different?",
+        answer:
+          "Other vendors sell you a tool and walk away. We offer a unique promise: a 100% outcome guarantee. This is possible because iona.ai isn't just a tool; it's an agent. Our true agentic AI, backed by a human-in-the-loop, autonomously runs the process—making us a true partner who owns the outcome.",
+      },
+      {
+        question:
+          "How does iona.ai ensure compliance with industry regulations?",
+        answer:
+          "iona.ai adheres to ISO 27001, GDPR, and other regulatory standards, ensuring secure data handling, real-time compliance checks, and zero errors in documentation.",
+      },
+      {
+        question: "Can iona.ai integrate with my existing HR tools?",
+        answer:
+          "Yes, iona.ai seamlessly integrates with your HRMS, ATS, payroll systems, and other HR tools, creating a unified onboarding and recruitment experience.",
+      },
+      {
+        question:
+          "How does iona.ai handle high-volume hiring for global enterprises?",
+        answer:
+          "iona.ai is designed for scalability, automating every step of the recruitment process, enabling high-volume hiring across multiple regions with zero delays and 100% accuracy.",
+      },
+      {
+        question: "Do I need other HR tools or recruiters to use iona.ai?",
+        answer:
+          "No. iona.ai replaces legacy ATS systems and manual workflows. The autonomous system manages sourcing, evaluation, offer issuance, and pre-boarding—freeing HR teams to focus on high-priority strategic initiatives.",
+      },
+      {
+        question:
+          "What results can enterprises expect after deploying iona.ai?",
+        answer:
+          "Enterprises using iona.ai experience dramatically faster hiring cycles, lower cost-per-hire, error-free compliance, and a predictable automated hiring pipeline. Real deployments show 90% faster onboarding and a 90% reduction in hiring costs.",
+      },
+      {
+        question: "How secure is candidate data within iona.ai?",
+        answer:
+          "iona.ai follows enterprise-grade security protocols, including encryption at rest and in transit, role-based access controls, and GDPR/ISO-compliant data handling—ensuring candidate and organisational data remain fully protected.",
+      },
+      {
+        question: "Can iona.ai handle thousands of hires simultaneously?",
+        answer:
+          "Yes. NovaSuite is built for high-volume enterprise hiring, capable of processing thousands of candidates in parallel while maintaining speed, accuracy, and compliance.",
+      },
+    ],
   },
-  {
-    question: "How does iona.ai handle high-volume hiring for global enterprises?",
-    answer:
-      "iona.ai is designed for scalability, automating every step of the recruitment process, enabling high-volume hiring across multiple regions with zero delays and 100% accuracy.",
-  },
-  {
-    question: "Do I need other HR tools or recruiters to use iona.ai?",
-    answer:
-      "No. iona.ai replaces legacy ATS systems and manual workflows. The autonomous system manages sourcing, evaluation, offer issuance, and pre-boarding—freeing HR teams to focus on high-priority strategic initiatives.",
-  },
-  {
-    question: "What results can enterprises expect after deploying iona.ai?",
-    answer:
-      "Enterprises using iona.ai experience dramatically faster hiring cycles, lower cost-per-hire, error-free compliance, and a predictable automated hiring pipeline. Real deployments show 90% faster onboarding and a 90% reduction in hiring costs.",
-  },
-  {
-    question: "How secure is candidate data within iona.ai?",
-    answer:
-      "iona.ai follows enterprise-grade security protocols, including encryption at rest and in transit, role-based access controls, and GDPR/ISO-compliant data handling—ensuring candidate and organisational data remain fully protected.",
-  },
-  {
-    question: "Can iona.ai handle thousands of hires simultaneously?",
-    answer:
-      "Yes. NovaSuite is built for high-volume enterprise hiring, capable of processing thousands of candidates in parallel while maintaining speed, accuracy, and compliance.",
-  }
-]
-
-  },
+  // "": {
+  //   slug: "",
+  //   seo: {
+  //     title: "",
+  //     description: "",
+  //   },
+  //   cta: {
+  //     title: "",
+  //     description: "",
+  //   },
+  //   banner: {
+  //     title: "",
+  //     description: "",
+  //     page: "",
+  //   },
+  //   details: {
+  //     headshot: "",
+  //     title: "",
+  //     description: ``,
+  //     cta: {
+  //       title: "",
+  //       description: "",
+  //       sub_title: "",
+  //       sub_description: "",
+  //       cta_1_url: "",
+  //       cta_2_url: "",
+  //     },
+  //   },
+  //   comparison: {
+  //     competitorLogo: "/assets/pages/Alternative/hrone.svg",
+  //     title: "",
+  //     description: "",
+  //     rows: [
+  //       {
+  //         feature: "",
+  //         competitor: "",
+  //         iona: "",
+  //       },
+  //     ],
+  //   },
+  //   switch: {
+  //     title: "",
+  //     ctaTitle: "",
+  //     ctaUrl: "",
+  //     card: [
+  //       {
+  //         heading: "",
+  //         description: "",
+  //         bullets: [],
+  //         bottomNote: "",
+  //       },
+  //       {
+  //         heading: "",
+  //         description: "",
+  //         bullets: [],
+  //         bottomNote: "",
+  //       },
+  //     ],
+  //   },
+  //   FaqList: [
+  //     {
+  //       question: "",
+  //       answer: "",
+  //     },
+  //   ],
+  // },
 };
