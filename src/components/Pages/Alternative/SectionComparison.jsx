@@ -24,7 +24,7 @@ function SectionComparison({ comparison }) {
             <img
               src={comparison.competitorLogo}
               alt=""
-              className="w-[130px] lg:w-[218px]"
+              className="h-10 md:h-12"
             />
           </div>
           <div className="w-full bg-[#2A2564] rounded-t-lg border-b border-[#B9B8B8] pb-6 lg:pb-10  pt-20 shadow-[0_0_40px_0_#00000059] px-6 lg:px-12 items-end ">
