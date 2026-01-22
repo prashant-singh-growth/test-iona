@@ -2,6 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import { motion, useScroll, useSpring } from "framer-motion";
 import { blogListJson } from "../../components/Data/BlogDynamic";
+import SeoHeader from "../../components/utils/SeoHeader";
 
 function BlogSinglePages() {
   const { blog } = useParams();
@@ -16,7 +17,10 @@ function BlogSinglePages() {
 
   return (
     <main className="bg-white min-h-screen  text-[#160E38] font-lora">
-     
+     <SeoHeader
+     title={blogData.seo.title}
+     description={blogData.seo.description}
+     />
       <motion.div
         className="fixed top-0 left-0 right-0 h-1 bg-darkVoilet z-50 origin-left"
         style={{ scaleX }}
