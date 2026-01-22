@@ -9,7 +9,8 @@ function HomeBanner() {
         <div className="w-full max-w-[100vw] lg:max-w-[1440px] grid lg:grid-cols-2 place-items-center relative z-10 gap-10">
           <div className="w-full max-w-[100vw]">
             <h1 className="text-4xl font-bold md:text-5xl leading-tight slg:text-5xl lg:text-[58px] lg:leading-[64px] text-black/80 flex flex-col text-left ">
-              Supercharging Enterprise Hiring at Scale with Agentic AI
+              Supercharging Enterprise Hiring at Scale with AI Solutions
+
             </h1>
             <p className="text-base font-lora text-primary font-normal mt-5">
               Automate your hiring from start to finish—background checks,
@@ -63,7 +64,7 @@ function HomeBanner() {
           </div>
           <img
             src="/assets/pages/homepage/home-banner.webp"
-            alt="home banner"
+            alt="AI-Powered hiring Solutions"
             className=" w-full object-contain "
             loading='lazy'
           />

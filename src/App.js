@@ -32,7 +32,7 @@ const NovaTrain = lazy(() => import("./pages/Solutions/NovaTrain"));
 const NovaEngage = lazy(() => import("./pages/Solutions/NovaEngage"));
 const NovaVerify = lazy(() => import("./pages/Solutions/NovaVerify"));
 const NovaConnect = lazy(() => import("./pages/Solutions/NovaConnect"));
-const Blogs = lazy(() => import("./pages/Blogs"));
+// const Blogs = lazy(() => import("./pages/Blogs"));
 // const CaseStudies = lazy(() => import("./pages/CaseStudies"));
 const Vids = lazy(() => import("./pages/Vids"));
 const ScheduleDemo = lazy(() => import("./pages/ScheduleDemo"));
@@ -61,6 +61,8 @@ const SignUpPages = lazy(
 const LoginPages = lazy(
   () => import("./pages/Login")
 );
+const BlogLandingPage = lazy(()=> import("./pages/Blog/BlogLandingPages"))
+const BlogSinglePage = lazy(()=> import("./pages/Blog/BlogSinglePages"))
 // Scroll to top on route change
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -230,10 +232,18 @@ const AnimatedRoutes = () => {
           }
         />
         <Route
-          path="/blogs"
+          path="/blog"
           element={
             <PageTransition>
-              <Blogs />
+              <BlogLandingPage />
+            </PageTransition>
+          }
+        />
+        <Route
+          path="/blog/:blog"
+          element={
+            <PageTransition>
+              <BlogSinglePage/>
             </PageTransition>
           }
         />

@@ -9,6 +9,7 @@ export const CaseStudyJson = {
         PDFurl:`/assets/pages/casestudy/pdf/aditya-birla.pdf`,
         image:"/assets/pages/casestudy/1.webp",
         innerImage:"/assets/pages/casestudy/case-study-1.webp",
+        altText:"Aditya Birla hiring transformation case study",
         headshot:"From Prospect to Productive Powerhouse",
         title:"How Aditya Birla Sun Life Insurance transformed hiring with iona.ai and achieved 90% faster onboarding.",
         outcome:[
@@ -54,6 +55,7 @@ export const CaseStudyJson = {
         headshot:"From Manual Chaos to Automated Hiring",
         image:"/assets/pages/casestudy/2.webp",
         innerImage:"/assets/pages/casestudy/case-study-3.webp",
+        altText:"HDFC Ergo hiring automation case study",
         title:"Learn how HDFC Ergo - General Insurance achieved 4x faster JD turnaround and 100% automated BGV for field service professionals.",
         outcome:[
             {
@@ -96,6 +98,7 @@ export const CaseStudyJson = {
         },
         image:"/assets/pages/casestudy/3.webp",
          innerImage:"/assets/pages/casestudy/case-study-2.webp",
+         altText:"Metropolis Healthcare hiring transformation with iona.ai",
         PDFurl:`/assets/pages/casestudy/pdf/metropolis-healthcare.pdf`,
         headshot:"From Complex Verification Processes to 100% Accuracy",
         title:"How Metropolis Healthcare saved millions, expanded its workforce, and accelerated hiring with iona.ai.",

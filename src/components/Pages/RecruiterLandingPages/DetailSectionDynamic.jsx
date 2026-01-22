@@ -1,6 +1,6 @@
 import React from 'react'
 
-function DetailSectionDynamic({title,description,imageURL}) {
+function DetailSectionDynamic({title,description,imageURL,altText}) {
   return (
      <section  className="w-full bg-white flex flex-col py-10 lg:py-16 px-5 md:px-10 slg:px-[60px] lg:px-[90px] justify-center items-center">
           <div className="w-full max-w-[1440px] flex flex-col justify-center items-center gap-[50px]">
@@ -12,7 +12,7 @@ function DetailSectionDynamic({title,description,imageURL}) {
                {description}
               </p>
             </div>
-    {imageURL && <img src={imageURL} alt='iona.ai' className='w-full object-contain ' loading='lazy'/>}
+    {imageURL && <img src={imageURL} alt={altText ? altText : 'Agentic AI Recruiter’s Sheet'} className='w-full object-contain ' loading='lazy'/>}
             
           </div>
         </section>

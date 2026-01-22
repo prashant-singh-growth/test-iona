@@ -268,7 +268,7 @@ function AboutClientSection({ about }) {
           </div>
           <img
             src={about?.innerImage}
-            alt={about?.innerImage || "iona.ai"}
+            alt={about?.altText || "iona.ai"}
             className="w-full lg:col-span-4 object-contain rounded-[20px]"
           />
         </div>

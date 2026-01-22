@@ -70,7 +70,7 @@ const NovaConnect = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.2 }}
             >
-              Experience Support at the Speed of Thought, Personalized for Every Touchpoint.
+          Experience AI-Powered Support at the Speed of Thought
             </motion.h1>
             <motion.p 
               className="text-xl mb-8"

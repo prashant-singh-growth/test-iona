@@ -113,7 +113,7 @@ function SectionChoose() {
            
           </div>
           </div>
-          <img src="/assets/pages/Alternative/peoplestrong-casestudy.webp" alt="" className="w-full object-contain order-1 lg:order-2" />
+          <img src="/assets/pages/Alternative/peoplestrong-casestudy.webp" alt="Best Enterprise Hiring Solution" className="w-full object-contain order-1 lg:order-2" />
         </div>
       </div>
     </section>

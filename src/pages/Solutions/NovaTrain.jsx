@@ -51,8 +51,8 @@ const NovaTrain = () => {
   return (
     <div className="flex flex-col items-center overflow-x-hidden">
         <SeoHeader
-      title={"TrainPlus | AI-Driven Learning & Development by iona.ai"}
-      description={"Upskill your workforce with TrainPlus. Deliver adaptive, personalized learning experiences powered by AI for continuous growth and performance excellence."}
+      title={"NovaTrain | Pre-Day-One Training & Compliance by iona.ai"}
+      description={"Transform pre-day-one learning with NovaTrain. AI-driven, SCORM-compliant modules, chatbot guidance, and audit-ready tracking for high-volume hiring compliance."}
      
       />
       {/* Hero Section */}
@@ -70,7 +70,7 @@ const NovaTrain = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.2 }}
             >
-              Train Before They Clock In
+              New Hire Training Before They Clock In
             </motion.h1>
             <motion.p 
               className="text-xl mb-8"

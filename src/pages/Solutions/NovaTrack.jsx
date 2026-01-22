@@ -51,8 +51,8 @@ const NovaTrack = () => {
   return (
     <div className="flex flex-col items-center overflow-x-hidden">
        <SeoHeader
-      title={"SpeedBoard | Accelerate Hiring Decisions with iona.ai"}
-      description={"SpeedBoard streamlines candidate evaluations and hiring workflows. Make faster, smarter hiring decisions powered by real-time AI insights and collaboration."}
+      title={"NovaTrack | Candidate Tracking System for Hiring Teams"}
+      description={"Centralize candidate status with NovaTrack. Track applicants across stages and channels, remove spreadsheet chaos, and make faster, data-driven hiring decisions."}
       canonical={"/solutions/novatrack"}
       />
       {/* Hero Section */}

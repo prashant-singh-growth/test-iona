@@ -63,7 +63,7 @@ function SolutionBanner() {
              </div>
              <img
                src="/assets/pages/solutionpage/solutionBanner.webp"
-               alt="home banner"
+               alt="hiring suite"
                className="object-contain w-full slg:relative  lg:absolute slg:w-[100%] lg:w-[62%] xl:w-[59%] lg:bottom-0 lg:right-0"
                loading='lazy'
              />

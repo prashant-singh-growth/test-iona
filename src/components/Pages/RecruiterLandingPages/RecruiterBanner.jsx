@@ -45,7 +45,7 @@ function RecruiterBanner() {
             </div>
             <img
               src="/assets/pages/landingpage/recruit.webp"
-              alt="home banner"
+              alt="applicant tracking system"
               className=" w-full object-contain "
               loading='lazy'
             />

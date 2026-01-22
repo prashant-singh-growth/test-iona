@@ -51,8 +51,8 @@ const NovaDoc = () => {
   return (
     <div className="flex flex-col items-center overflow-x-hidden">
         <SeoHeader
-      title={"NovaDoc | Intelligent Document Management by iona.ai"}
-      description={"Automate, organize, and verify hiring documentation effortlessly. NovaDoc ensures accuracy, compliance, and security across your recruitment workflows."}
+      title={"NovaDoc | AI-Powered Onboarding Documentation at Scale"}
+      description={"Accelerate high-volume onboarding with NovaDoc. AI-powered, mobile-first documentation that ensures accuracy, compliance, and zero paperwork delays."}
      
       />
       {/* Hero Section */}
@@ -70,7 +70,7 @@ const NovaDoc = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.2 }}
             >
-              Onboarding at Warp Speed
+             AI-Powered Onboarding at Warp Speed
             </motion.h1>
             <motion.p 
               className="text-xl mb-8"

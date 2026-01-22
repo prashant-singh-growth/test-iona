@@ -70,7 +70,7 @@ const NovaEngage = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.2 }}
             >
-              Your Silent Partner in Curating Exceptional Candidate Experiences
+              Your Intelligent Partner in Curating Exceptional Candidate Engagement
             </motion.h1>
             <motion.p 
               className="text-xl mb-8"

@@ -12,6 +12,7 @@ function CaseStudySection() {
   const caseStudies = [
     {
       image: "/assets/pages/homepage/case-study.webp",
+      alt:"enterprise hiring solutions",
       title: "About the Client: A Legacy of Trust, Poised for Unprecedented Expansion",
       description:
         '"How Aditya Birla Sun Life Insurance transformed hiring with iona.ai and achieved 90% faster onboarding."',
@@ -20,6 +21,7 @@ function CaseStudySection() {
     },
     {
       image: "/assets/pages/homepage/case-study-2.webp",
+          alt:"enterprise hiring solutions",
       title: "Transforming Recruitment: How iona.ai Is Simplifying Hiring For A Leading Consumer Brand",
       description:
         '"Learn how HDFC Ergo - General Insurance achieved 4x faster JD turnaround and 100% automated BGV for field service professionals."',
@@ -28,6 +30,7 @@ function CaseStudySection() {
     },
     {
       image: "/assets/pages/homepage/case-study-3.webp",
+        alt:"enterprise hiring solutions",
       title: "Scaling with Precision",
       description:
         '"How Metropolis Healthcare saved millions, expanded its workforce, and accelerated hiring with "',
@@ -79,7 +82,7 @@ function CaseStudySection() {
               <div className="w-full flex flex-col bg-[#160E38] p-5 md:p-10 rounded-md  h-full min-h-[430px]   md:min-h-[480px] lg:min-h-[520px]">
                 <img
                   src={item.image}
-                  alt={item.title}
+                  alt={item.alt}
                   className="w-full rounded-md object-contain"
                   loading="lazy"
                 />

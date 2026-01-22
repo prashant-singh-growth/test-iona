@@ -70,7 +70,7 @@ const NovaVerify = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.2 }}
             >
-              Effortless Trust, Unrivaled Speed in High-Volume Background Checks
+              Effortless Trust, Unrivaled Speed in High-Volume Background Verification
             </motion.h1>
             <motion.p 
               className="text-xl mb-8"
