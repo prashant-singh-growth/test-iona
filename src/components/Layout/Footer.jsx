@@ -35,7 +35,7 @@ function Footer() {
       title: "Resources",
       links: [
         { placeHolder: "Case Study", url: "/case-studies" },
-        { placeHolder: "Blog", url: "/blogs" },
+        { placeHolder: "Blog", url: "/blog" },
         { placeHolder: "Videos", url: "/videos" },
       ],
     },

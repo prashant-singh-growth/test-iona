@@ -35,7 +35,7 @@ function Header() {
       name: "Resources",
       key: "resources",
       links: [
-        { label: "Blogs", url: "/blogs" },
+        { label: "Blogs", url: "/blog" },
         { label: "Videos", url: "/videos" },
       ],
     },

@@ -335,7 +335,7 @@ const Navbar = () => {
                     <DropdownLink 
                       title="Blogs" 
                       description="Latest insights and articles"
-                      path="/blogs"
+                      path="/blog"
                       onClick={() => setShowKnowledgeHub(false)}
                     />
                     <DropdownLink 
@@ -500,7 +500,7 @@ const Navbar = () => {
                           exit={{ height: 0, opacity: 0 }}
                           transition={{ duration: 0.3 }}
                         >
-                          <MobileNavItem label="BLOGS" path="/blogs" isSubmenu />
+                          <MobileNavItem label="BLOGS" path="/blog" isSubmenu />
                           <MobileNavItem label="CASE STUDIES" path="/case-studies" isSubmenu />
                           <MobileNavItem label="VIDEOS" path="/videos" isSubmenu />
                         </motion.ul>
