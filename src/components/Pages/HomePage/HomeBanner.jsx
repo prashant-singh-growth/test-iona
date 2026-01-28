@@ -13,7 +13,7 @@ function HomeBanner() {
 
             </h1>
             <p className="text-base font-lora text-primary font-normal mt-5">
-             Complete Hiring automation with <a href="/" className="font-medium underline">iona.ai</a> - from background checks, document verification, and digital onboarding. Ensure 100% accuracy and zero compliance issues, guaranteed!
+             Complete Hiring automation with iona.ai - from background checks, document verification, and digital onboarding. Ensure 100% accuracy and zero compliance issues, guaranteed!
             </p>
             <div className="w-full flex flex-col sm:flex-row justify-between md:justify-start gap-5 mt-8 md:mt-12 lg:mt-12 slg:mt-10 ">
               <Link
