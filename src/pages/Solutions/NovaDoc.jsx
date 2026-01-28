@@ -150,11 +150,11 @@ const NovaDoc = () => {
             >
               <ul className="space-y-3">
                 {[
-                  "Nova Doc transforms new hire documentation from a painful bottleneck into a seamless, lightning-fast experience—for HR and new hires alike.",
+                  "Nova Doc transforms new hire documentation from a painful bottleneck into a seamless, lightning-fast digital onboarding experience for HR and new hires alike.",
                   "Built on First Principles, powered by intelligent automation, and designed with human clarity, it's the only solution that bends to your onboarding needs without breaking a sweat.",
                   "No downloads. No confusion.",
                   "Mobile-first, ultra-fast documentation",
-                  "Human-backed, AI-driven support at scale"
+                  "Human-backed, <a href='/solutions/novaconnect' className='underline'>AI-driven support</a> at scale"
                 ].map((item, index) => (
                   <motion.li 
                     key={index}
@@ -165,7 +165,7 @@ const NovaDoc = () => {
                     viewport={{ once: true }}
                   >
                     <span className="text-accent mr-2">✓</span>
-                    <span>{item}</span>
+                    <span className="link-wrapper" dangerouslySetInnerHTML={{__html:item}}></span>
                   </motion.li>
                 ))}
               </ul>
@@ -186,7 +186,7 @@ const NovaDoc = () => {
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Unmatched Features for Seamless Onboarding Documentation</h2>
             <p className="text-secondaryText max-w-3xl mx-auto">
-              Nova Doc brings intelligent automation to every step of your documentation process
+             Nova Doc brings intelligent onboarding automation to every step of your documentation process.
             </p>
           </motion.div>
 

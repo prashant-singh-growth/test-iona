@@ -25,7 +25,7 @@ const FeatureCard = ({ emoji, title, description, delay }) => {
         <div className="text-3xl mb-1 bg-accent/10 p-3 rounded-full">{emoji}</div>
       </motion.div>
       <h3 className="text-lg font-semibold mb-1">{title}</h3>
-      <p className="text-secondaryText text-sm">{description}</p>
+      <p className="text-secondaryText text-sm link-wrapper" dangerouslySetInnerHTML={{__html:description}}></p>
     </motion.div>
   );
 };
@@ -78,7 +78,7 @@ const NovaConnect = () => {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.7, delay: 0.4 }}
             >
-              Your always-on partner for faster resolutions, smoother onboarding, and human-first assistance, powered by intelligent automation and real expertise.
+             Your always-on support partner for faster resolutions, smoother onboarding, and human-first assistance, powered by intelligent automation and real expertise.
             </motion.p>
             <motion.div 
               className="flex flex-col sm:flex-row gap-4 justify-center"
@@ -150,7 +150,7 @@ const NovaConnect = () => {
             >
               <ul className="space-y-3">
                 {[
-                  "Deliver real-time support with human warmth and AI-powered precision",
+                  "Deliver real-time AI support assistance with human warmth and precision",
                   "Seamlessly integrate with your existing Nova Suite ecosystem for unified support",
                   "Guide new hires personally with proactive touchpoints before their first day",
                   "Provide multi-channel support via email, WhatsApp, or voice based on preference",
@@ -202,7 +202,7 @@ const NovaConnect = () => {
               <MobileFeatureCard 
                 emoji="💬"
                 title="Automated Engagement"
-                description="Personalized communication workflows that keep candidates engaged throughout the hiring process"
+                description="Personalized communication automation workflows that keep candidates engaged throughout the hiring process."
                 delay={0.2}
               />
               <MobileFeatureCard 
@@ -308,7 +308,7 @@ const NovaConnect = () => {
                 <FeatureCard 
                   emoji="📊" 
                   title="Real-Time Analytics" 
-                  description="Comprehensive dashboards and insights to track candidate engagement and optimize your hiring process"
+                  description="Comprehensive dashboards and insights to track <a className='underline font-bold' href='/solutions/novaengage'>candidate engagement</a>  and optimize your hiring process"
                   delay={0.45}
                 />
 
@@ -386,7 +386,7 @@ const NovaConnect = () => {
                 description: "With a single click, your team gains access to Nova Connect, which instantly integrates with your workflow, offering hassle-free support at every step. From the first interaction to ongoing assistance, it's designed to be as smooth as possible."
               },
               {
-                title: "Instant AI-Powered Help",
+                title: "Instant AI-Powered Assistance",
                 description: "Our intelligent AI system, available 24/7, provides quick answers to common queries, reducing delays in the onboarding process. It handles basic questions while ensuring that your new hires always have the support they need."
               },
               {

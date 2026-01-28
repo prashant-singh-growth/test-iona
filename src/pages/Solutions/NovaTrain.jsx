@@ -129,7 +129,7 @@ const NovaTrain = () => {
             viewport={{ once: true }}
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Why Nova Train is a Game-Changer for High-Volume Onboarding
+              Why Nova Train is a Game-Changer for High-Volume Onboarding Training
             </h2>
             <p className="text-secondaryText max-w-3xl mx-auto">
               In high-volume hiring, speed is leverage. What if your new hires showed up fully trained on their very first day?
@@ -151,7 +151,7 @@ const NovaTrain = () => {
               <ul className="space-y-3">
                 {[
                   "Nova Train turns mandatory learning into a competitive advantage.",
-                  "It reimagines how you deliver training—smart, simple, and scalable.",
+                  "It reimagines how you deliver onboarding training—smart, simple, and scalable.",
                   "Built from First Principles and powered by Nova's AI-driven automation.",
                   "Eliminates manual coordination, enhances engagement, and guarantees compliance.",
                   "All this happens before your new hire even walks through the door."
@@ -184,7 +184,7 @@ const NovaTrain = () => {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Unmatched Features That Make Nova Train</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Powerful Features Built into NovaTrain</h2>
             <p className="text-secondaryText max-w-3xl mx-auto">
               From compliance to confidence, Nova Train makes every training session count—at any hiring scale.
             </p>
@@ -371,7 +371,7 @@ const NovaTrain = () => {
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-4">How It Works – 3 Ways Nova Train Transforms Training</h2>
             <p className="text-secondaryText max-w-3xl mx-auto">
-              A seamless process to deliver, track, and perfect pre-joining training.
+              A seamless process to deliver, track, and perfect pre-onboarding training.
             </p>
           </motion.div>
 
@@ -388,7 +388,7 @@ const NovaTrain = () => {
               {
                 title: "AI-Led, Human-Centered",
                 items: [
-                  "Chatbot assistance creates a frictionless learning experience that feels natural and engaging.",
+                  "Chatbot <a href='/solutions/novaassist'>assistance</a> creates a frictionless learning experience that feels natural and engaging.",
                   "Intelligent system answers questions and provides guidance throughout the training process.",
                   "Balance automation with personal touch to ensure high engagement and completion rates."
                 ]
@@ -423,7 +423,7 @@ const NovaTrain = () => {
                       viewport={{ once: true }}
                     >
                       <span className="text-accent mr-2">•</span>
-                      <span>{item}</span>
+                      <span className="link-wrapper" dangerouslySetInnerHTML={{__html:item}}></span>
                     </motion.li>
                   ))}
                 </ul>

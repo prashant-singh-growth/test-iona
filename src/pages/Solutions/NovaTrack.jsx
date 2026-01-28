@@ -78,7 +78,7 @@ const NovaTrack = () => {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.7, delay: 0.4 }}
             >
-              Nova Track delivers real-time visibility and control across your entire candidate pipeline, turning hiring data into clear action.
+          NovaTrack is a powerful candidate tracking system that delivers real-time visibility and control across the entire recruitment pipeline, turning hiring data into clear action.
             </motion.p>
             <motion.div 
               className="flex flex-col sm:flex-row gap-4 justify-center"
@@ -132,7 +132,7 @@ const NovaTrack = () => {
               Chaos to Clarity: One Pipeline, Complete Visibility
             </h2>
             <p className="text-secondaryText max-w-3xl mx-auto">
-              High-volume hiring requires more than just a traditional ATS—it demands true pipeline intelligence.
+             High-volume hiring requires more than a traditional ATS—it demands a modern applicant tracking system with true pipeline intelligence.
             </p>
           </motion.div>
 
@@ -384,7 +384,7 @@ const NovaTrack = () => {
             {[
               {
                 title: "Connect & Integrate",
-                description: "Plug Nova Track into your existing systems through our easy-to-use connectors and APIs. We'll collect all candidate data into one central hub without disrupting your current workflows."
+                description: "Plug Nova Track into your existing systems through our easy-to-use connectors and APIs. We'll collect all applicant data into one central hub without disrupting your current workflows."
               },
               {
                 title: "Visualize & Analyze",

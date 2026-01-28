@@ -209,3 +209,6 @@ p, .secondary-text {
 .faq-text b{
 color: black;
 }
+.link-wrapper a{
+@apply !underline;
+}

@@ -152,9 +152,9 @@ const NovaVerify = () => {
                 {[
                   "Eliminate vendor management, system integrations, and manual tracking completely",
                   "Reduce background verification turnaround times and costs across the board",
-                  "Deliver a superior candidate experience that keeps top talent engaged throughout",
+                  "Deliver a <a href='/solutions/novaengage' className='!underline'>superior candidate experience</a>  that keeps top talent engaged throughout",
                   "Free your team to focus on strategic hiring instead of administrative tasks",
-                  "Maintain compliance and security standards with automated verification protocols"
+                  "Maintain compliance and security standards with automated background verification protocols."
                 ].map((item, index) => (
                   <motion.li 
                     key={index}
@@ -165,7 +165,7 @@ const NovaVerify = () => {
                     viewport={{ once: true }}
                   >
                     <span className="text-accent mr-2">✓</span>
-                    <span>{item}</span>
+                    <span className="link-wrapper" dangerouslySetInnerHTML={{__html:item}}></span>
                   </motion.li>
                 ))}
               </ul>
@@ -200,7 +200,7 @@ const NovaVerify = () => {
               transition={{ duration: 0.5, delay: 0.1 }}
               viewport={{ once: true }}
             >
-              Comprehensive tools to streamline your entire verification and compliance process
+             Comprehensive AI-powered background verification software to streamline your entire compliance and screening process.
             </motion.p>
           </motion.div>
 

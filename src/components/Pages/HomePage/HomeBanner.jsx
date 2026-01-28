@@ -9,13 +9,11 @@ function HomeBanner() {
         <div className="w-full max-w-[100vw] lg:max-w-[1440px] grid lg:grid-cols-2 place-items-center relative z-10 gap-10">
           <div className="w-full max-w-[100vw]">
             <h1 className="text-4xl font-bold md:text-5xl leading-tight slg:text-5xl lg:text-[58px] lg:leading-[64px] text-black/80 flex flex-col text-left ">
-              Supercharging Enterprise Hiring at Scale with AI Solutions
+             Supercharging Enterprise Hiring at Scale with AI Solutions
 
             </h1>
             <p className="text-base font-lora text-primary font-normal mt-5">
-              Automate your hiring from start to finish—background checks,
-              document verification, onboarding—ensuring 100% accuracy and zero
-              compliance issues, guaranteed!
+             Complete Hiring automation with <a href="/" className="font-medium underline">iona.ai</a> - from background checks, document verification, and digital onboarding. Ensure 100% accuracy and zero compliance issues, guaranteed!
             </p>
             <div className="w-full flex flex-col sm:flex-row justify-between md:justify-start gap-5 mt-8 md:mt-12 lg:mt-12 slg:mt-10 ">
               <Link

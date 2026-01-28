@@ -61,13 +61,10 @@ function SolutionSection({ctatext,ctaurl,isLinkActive,bgcolor}) {
         <div className="w-full max-w-[1440px] flex flex-col  justify-center items-center space-y-10">
           <div className="flex flex-col max-w-[826px] justify-center items-center space-y-4">
             <h2 className="text-3xl md:text-4xl lg:text-[40px] lg:leading-[50px] text-[#2A2564] font-bold md:font-semibold text-center font-lora">
-              iona.ai - The Complete Solution for Precision Hiring at Scale
+              iona.ai – The AI-Powered Hiring Solution for Precision at Scale
             </h2>
             <p className="text-base text-[#2A2564] text-center font-lora">
-              From recruitment to employee engagement — helping you streamline
-              your entire hiring journey with a 100% automated process while
-              maintaining 100% data accuracy guarantee and zero compliance
-              issues.
+            From recruitment to <a href="/solutions/novaengage" className="font-medium underline">employee engagement</a> — helping you streamline your entire hiring journey with a 100% automated process while maintaining 100% data accuracy guarantee and zero compliance issues.
             </p>
           </div>
           <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 slg: xl:gap-12">

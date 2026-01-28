@@ -46,7 +46,7 @@ const HomePage = memo(() => {
           />
           <div className="w-full flex flex-col gap-7 lg:flex-row justify-between items-center relative z-10 max-w-[1440px] ">
             <h2 className="text-3xl md:text-4xl lg:text-[40px] lg:leading-[50px] text-white font-lora font-bold md:font-semibold text-center lg:text-left max-w-[912px]">
-              Unlock the Power of Precision-based Automated Hiring
+             Unlock the Power of Government-Approved Hiring Automation Software
             </h2>
 
             <a

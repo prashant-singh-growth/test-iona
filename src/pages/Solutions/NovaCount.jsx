@@ -78,7 +78,7 @@ const NovaCount = () => {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.7, delay: 0.4 }}
             >
-              Say goodbye to spreadsheets and guesswork. Nova Count delivers real-time clarity and control over your workforce planning with AI-powered insights.
+              Say goodbye to spreadsheets and guesswork. NovaCount is a headcount planning software that delivers real-time clarity and data-driven insights through AI-powered workforce analytics.
             </motion.p>
             <motion.div 
               className="flex flex-col sm:flex-row gap-4 justify-center"
@@ -341,7 +341,7 @@ const NovaCount = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            Transform your workforce planning with AI-driven clarity and control.
+           Transform your workforce planning and analytics using AI-driven intelligence.
           </motion.p>
           <Link to="/schedule-demo">
             <motion.button 
@@ -380,8 +380,8 @@ const NovaCount = () => {
               {
                 title: "Integrate and Sync",
                 items: [
-                  "Connect Nova Count to your ATS and HRIS in just minutes, centralizing requisitions, approvals, and candidate data.",
-                  "Automatic data synchronization ensures your headcount plan always reflects the latest hiring activity.",
+                  "Connect Nova Count to your <a href='/solutions/novatrack' className='!underline'>ATS</a> and HRIS in just minutes, centralizing requisitions, approvals, and candidate data.",
+                  "Automatic data synchronization ensures your headcount planning always reflects the latest hiring activity.",
                   "Eliminate manual imports and reduce errors for seamless workflow integration."
                 ]
               },
@@ -423,7 +423,7 @@ const NovaCount = () => {
                       viewport={{ once: true }}
                     >
                       <span className="text-accent mr-2">•</span>
-                      <span>{item}</span>
+                      <span className="link-wrapper" dangerouslySetInnerHTML={{__html:item}}/>
                     </motion.li>
                   ))}
                 </ul>

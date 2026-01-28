@@ -52,9 +52,7 @@ function WhyUsSection({ ctaText, ctaUrl }) {
             Why Enterprises Choose iona.ai?
           </h2>
           <p className="text-base text-[#2A2564] text-center font-lora">
-            Automating onboarding and verifications saves up to 90% of time and
-            costs on recurring (admin-heavy) HR operations, enabling efficient
-            hiring and scalable growth without increasing the budget.
+          Automating onboarding and verifications with AI-powered hiring saves up to 90% of time and costs on recurring, admin-heavy HR operations, enabling efficient workflows and scalable growth without increasing the budget.
           </p>
         </div>
 
