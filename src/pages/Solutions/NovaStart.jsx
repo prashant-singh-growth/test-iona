@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import MobileFeatureCard from "../../components/MobileFeatureCard";
 import SeoHeader from "../../components/utils/SeoHeader";
+import { Helmet } from "react-helmet-async";
 
 const preloadScheduleDemo = () => {
   return import("../ScheduleDemo");
@@ -55,6 +56,46 @@ const NovaStart = () => {
       description={"Automate high-volume offer management with NovaStart. An intelligent offer workflow software that accelerates approvals, ensures compliance, and secures top talent faster."}
      
       />
+      <Helmet>
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.iona.ai/solutions/novastart" />
+<meta property="og:title" content="NovaStart | AI Offer Management for High-Volume Hiring" />
+<meta property="og:description" content="Automate high-volume offer management with NovaStart. An intelligent offer workflow software that accelerates approvals, ensures compliance, and secures top talent faster." />
+<meta property="og:image" content="https://www.iona.ai/assets/pages/landingpage/iona-logo.png" />
+
+
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://www.iona.ai/solutions/novastart" />
+<meta property="twitter:title" content="NovaStart | AI Offer Management for High-Volume Hiring" />
+<meta property="twitter:description" content="Automate high-volume offer management with NovaStart. An intelligent offer workflow software that accelerates approvals, ensures compliance, and secures top talent faster." />
+<meta property="twitter:image" content="https://www.iona.ai/assets/pages/landingpage/iona-logo.png" />
+
+      </Helmet>
+      <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "NovaStart | AI Offer Management for High-Volume Hiring",
+      "url": "https://www.iona.ai/solutions/novastart",
+      "description": "Automate high-volume offer management with NovaStart. An intelligent offer workflow software that accelerates approvals, ensures compliance, and secures top talent faster.",
+      "applicationCategory": "HumanResourcesApplication",
+      "operatingSystem": "Web",
+      "publisher": {
+        "@type": "Organization",
+        "name": "iona.ai",
+        "url": "https://www.iona.ai/"
+      },
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "INR",
+        "url": "https://www.iona.ai/solutions/novastart"
+      }
+    })
+  }}
+/>
+
       {/* Hero Section */}
       <section className="w-full bg-purple-gradient text-white py-16">
         <div className="max-w-6xl mx-auto px-6 flex flex-col items-center text-center">

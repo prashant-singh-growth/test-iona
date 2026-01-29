@@ -27,6 +27,7 @@ function SeoHeader({ title, description, canonical }) {
         rel="canonical"
         href={canonical ? `https://www.iona.ai${canonical}` : defaultCanonical}
       />
+     
     </Helmet>
   );
 }

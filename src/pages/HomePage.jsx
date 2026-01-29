@@ -15,6 +15,7 @@ import CaseStudySection from "../components/Pages/HomePage/CaseStudySection";
 import { homeFaqList } from "../components/Data/FaqData";
 import FAQComponent from "../components/utils/FAQComponent";
 import ClientBadgeSection from "../components/Pages/HomePage/ClientBadgeSection";
+import { Helmet } from "react-helmet-async";
 const HomePage = memo(() => {
  
 
@@ -25,6 +26,101 @@ const HomePage = memo(() => {
         description={"Discover iona.ai’s intelligent hiring solutions that merge AI brilliance with human wisdom to make hiring seamless, inclusive, and empowering for women leaders."}
         canonical={"/"}
       />
+ <Helmet>
+ 
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.iona.ai/" />
+<meta property="og:title" content="Purposeful Hiring Powered by AI & Human Insight | iona.ai" />
+<meta property="og:description" content="Discover iona.ai's intelligent hiring solutions that merge AI brilliance with human wisdom to make hiring seamless, inclusive, and empowering for women leaders." />
+<meta property="og:image" content="https://iona.ai/assets/pages/homepage/home-banner.webp" />
+
+
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://www.iona.ai/" />
+<meta property="twitter:title" content="Purposeful Hiring Powered by AI & Human Insight | iona.ai" />
+<meta property="twitter:description" content="Discover iona.ai's intelligent hiring solutions that merge AI brilliance with human wisdom to make hiring seamless, inclusive, and empowering for women leaders." />
+<meta property="twitter:image" content="https://iona.ai/assets/pages/homepage/home-banner.webp" />
+
+ </Helmet>
+   <script
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{
+      __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "@id": "https://www.iona.ai/#software",
+        "name": "iona.ai",
+        "url": "https://www.iona.ai/",
+        "image": "https://www.iona.ai/assets/pages/homepage/home-banner.webp",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web",
+        "priceRange": "₹₹₹",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "INR",
+          "availability": "https://schema.org/InStock"
+        },
+        "sameAs": [
+          "https://www.facebook.com/ionaai/",
+          "https://www.linkedin.com/company/iona-ai",
+          "https://www.youtube.com/@ionaai-k5v"
+        ],
+        "publisher": {
+          "@type": "Organization",
+          "name": "iona.ai",
+          "url": "https://www.iona.ai/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.iona.ai/assets/logo.png"
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+91-99990-92887",
+            "contactType": "sales",
+            "email": "amit@iona.ai",
+            "areaServed": {
+              "@type": "Country",
+              "name": "India"
+            }
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Amazona 36, Top Floor, Eldeco Green Meadows, Sector PI",
+            "addressLocality": "Greater Noida",
+            "addressRegion": "Uttar Pradesh",
+            "postalCode": "201306",
+            "addressCountry": "IN"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 28.4744,
+            "longitude": 77.503
+          },
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+              ],
+              "opens": "09:00",
+              "closes": "19:00"
+            }
+          ]
+        }
+      })
+    }}
+  />
+<Helmet>
+  
+</Helmet>
+
+
+
+   
       {/* banner */}
       <HomeBanner />
       {/* client badge */}

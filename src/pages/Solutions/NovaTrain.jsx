@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import MobileFeatureCard from "../../components/MobileFeatureCard";
 import SeoHeader from "../../components/utils/SeoHeader";
+import { Helmet } from "react-helmet-async";
 
 const preloadScheduleDemo = () => {
   return import("../ScheduleDemo");
@@ -55,6 +56,45 @@ const NovaTrain = () => {
       description={"Transform pre-day-one learning with NovaTrain. AI-driven, SCORM-compliant modules, chatbot guidance, and audit-ready tracking for high-volume hiring compliance."}
      
       />
+      <Helmet>
+        <meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.iona.ai/solutions/novatrain" />
+<meta property="og:title" content="NovaTrain | Pre-Day-One Training & Compliance by iona.ai" />
+<meta property="og:description" content="Transform pre-day-one learning with NovaTrain. AI-driven, SCORM-compliant modules, chatbot guidance, and audit-ready tracking for high-volume hiring compliance." />
+<meta property="og:image" content="https://www.iona.ai/assets/pages/landingpage/iona-logo.png" />
+
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://www.iona.ai/solutions/novatrain" />
+<meta property="twitter:title" content="NovaTrain | Pre-Day-One Training & Compliance by iona.ai" />
+<meta property="twitter:description" content="Transform pre-day-one learning with NovaTrain. AI-driven, SCORM-compliant modules, chatbot guidance, and audit-ready tracking for high-volume hiring compliance." />
+<meta property="twitter:image" content="https://www.iona.ai/assets/pages/landingpage/iona-logo.png" />
+
+      </Helmet>
+      <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "NovaTrain | Pre-Day-One Training & Compliance by iona.ai",
+      "url": "https://www.iona.ai/solutions/novatrain",
+      "description": "Transform pre-day-one learning with NovaTrain. AI-driven, SCORM-compliant modules, chatbot guidance, and audit-ready tracking for high-volume hiring compliance.",
+      "applicationCategory": "EducationApplication",
+      "operatingSystem": "Web",
+      "publisher": {
+        "@type": "Organization",
+        "name": "iona.ai",
+        "url": "https://www.iona.ai/"
+      },
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "INR",
+        "url": "https://www.iona.ai/solutions/novatrain"
+      }
+    })
+  }}
+/>
+
       {/* Hero Section */}
       <section className="w-full bg-purple-gradient text-white py-16">
         <div className="max-w-6xl mx-auto px-6 flex flex-col items-center text-center">

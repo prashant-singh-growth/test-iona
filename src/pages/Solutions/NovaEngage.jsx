@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import MobileFeatureCard from "../../components/MobileFeatureCard";
 import SeoHeader from "../../components/utils/SeoHeader";
+import { Helmet } from "react-helmet-async";
 
 const NovaEngage = () => {
   const preloadScheduleDemo = () => {
@@ -55,6 +56,46 @@ const NovaEngage = () => {
       description={"Enhance culture and retention with NovaEngage. Harness AI insights to strengthen communication, motivation, and inclusion across your organization."}
      
       />
+      <Helmet>
+        <meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.iona.ai/solutions/novaengage" />
+<meta property="og:title" content="NovaEngage | Empower Employee Engagement with iona.ai" />
+<meta property="og:description" content="Enhance culture and retention with NovaEngage. Harness AI insights to strengthen communication, motivation, and inclusion across your organization." />
+<meta property="og:image" content="https://www.iona.ai/assets/pages/landingpage/iona-logo.png" />
+
+
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://www.iona.ai/solutions/novaengage" />
+<meta property="twitter:title" content="NovaEngage | Empower Employee Engagement with iona.ai" />
+<meta property="twitter:description" content="Enhance culture and retention with NovaEngage. Harness AI insights to strengthen communication, motivation, and inclusion across your organization." />
+<meta property="twitter:image" content="https://www.iona.ai/assets/pages/landingpage/iona-logo.png" />
+
+      </Helmet>
+      <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "NovaEngage | Empower Employee Engagement with iona.ai",
+      "url": "https://www.iona.ai/solutions/novaengage",
+      "description": "Enhance culture and retention with NovaEngage. Harness AI insights to strengthen communication, motivation, and inclusion across your organization.",
+      "applicationCategory": "HumanResourcesApplication",
+      "operatingSystem": "Web",
+      "publisher": {
+        "@type": "Organization",
+        "name": "iona.ai",
+        "url": "https://www.iona.ai/"
+      },
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "INR",
+        "url": "https://www.iona.ai/solutions/novaengage"
+      }
+    })
+  }}
+/>
+
       {/* Hero Section */}
       <section className="w-full bg-purple-gradient text-white py-16">
         <div className="max-w-6xl mx-auto px-6 flex flex-col items-center text-center">

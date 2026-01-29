@@ -14,6 +14,7 @@ import RedirectHandler from "./components/utils/RedirectHandler";
 import Header from "./components/Layout/Header";
 import Footer from "./components/Layout/Footer";
 import { ToastContainer } from "react-toastify";
+import RemoveTrailingSlash from "./components/utils/RemoveTrailingSlash";
 
 
 // Lazy load components
@@ -468,6 +469,7 @@ function AppContent() {
 
   return (
     <>
+    <RemoveTrailingSlash/>
       <RedirectHandler />
       <ToastContainer position="top-right" autoClose="4000" />
       <ScrollToTop />

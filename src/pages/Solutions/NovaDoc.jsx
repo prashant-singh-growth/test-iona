@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import MobileFeatureCard from "../../components/MobileFeatureCard";
 import SeoHeader from "../../components/utils/SeoHeader";
+import { Helmet } from "react-helmet-async";
 
 const preloadScheduleDemo = () => {
   return import("../ScheduleDemo");
@@ -55,6 +56,46 @@ const NovaDoc = () => {
       description={"Accelerate high-volume onboarding with NovaDoc. AI-powered, mobile-first documentation that ensures accuracy, compliance, and zero paperwork delays."}
      
       />
+      <Helmet>
+        <meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.iona.ai/solutions/novadoc" />
+<meta property="og:title" content="NovaDoc | AI-Powered Onboarding Documentation at Scale" />
+<meta property="og:description" content="Accelerate high-volume onboarding with NovaDoc. AI-powered, mobile-first documentation that ensures accuracy, compliance, and zero paperwork delays." />
+<meta property="og:image" content="https://www.iona.ai/assets/pages/landingpage/iona-logo.png" />
+
+
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://www.iona.ai/solutions/novadoc" />
+<meta property="twitter:title" content="NovaDoc | AI-Powered Onboarding Documentation at Scale" />
+<meta property="twitter:description" content="Accelerate high-volume onboarding with NovaDoc. AI-powered, mobile-first documentation that ensures accuracy, compliance, and zero paperwork delays." />
+<meta property="twitter:image" content="https://www.iona.ai/assets/pages/landingpage/iona-logo.png" />
+
+      </Helmet>
+      <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "NovaDoc | AI-Powered Onboarding Documentation at Scale",
+      "url": "https://www.iona.ai/solutions/novadoc",
+      "description": "Accelerate high-volume onboarding with NovaDoc. AI-powered, mobile-first documentation that ensures accuracy, compliance, and zero paperwork delays.",
+      "applicationCategory": "DocumentManagementSystem",
+      "operatingSystem": "Web",
+      "publisher": {
+        "@type": "Organization",
+        "name": "iona.ai",
+        "url": "https://www.iona.ai/"
+      },
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "INR",
+        "url": "https://www.iona.ai/solutions/novadoc"
+      }
+    })
+  }}
+/>
+
       {/* Hero Section */}
       <section className="w-full bg-purple-gradient text-white py-16">
         <div className="max-w-6xl mx-auto px-6 flex flex-col items-center text-center">
