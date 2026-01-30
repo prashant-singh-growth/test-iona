@@ -92,8 +92,8 @@ export const blogListJson = [
     {
         url:"high-volume-hiring-challenges",
         seo:{
-            title:"High-Volume Hiring Challenges | Iona AI",
-            description:"Uncover the five key challenges in high-volume hiring and how AI solutions from Iona AI simplify and scale recruitment success."
+            title:"High-Volume Hiring Challenges | iona.ai",
+            description:"Uncover the five key challenges in high-volume hiring and how AI solutions from iona.ai simplify and scale recruitment success."
         },
       id: 3,
       title: "The 5 Spheres of Challenges In High-Volume Hiring",
@@ -175,7 +175,7 @@ export const blogListJson = [
         },
       id: 3,
       title: "11+ AI-Powered Hiring Automation Tools for 2026",
-      summary: "In 2026, AI-powered hiring automation tools are revolutionizing recruitment. This blog highlights 11+ top tools, including Iona.ai, that streamline hiring processes, boost efficiency, and improve candidate experience. Discover how these tools can accelerate your hiring efforts while maintaining quality and compliance.",
+      summary: "In 2026, AI-powered hiring automation tools are revolutionizing recruitment. This blog highlights 11+ top tools, including iona.ai, that streamline hiring processes, boost efficiency, and improve candidate experience. Discover how these tools can accelerate your hiring efforts while maintaining quality and compliance.",
       author: "Michael Chen",
       date: "March 10, 2023",
       image: `/assets/pages/blog/jan-2026/iona-tools.webp`,
@@ -200,7 +200,7 @@ export const blogListJson = [
 
 <img src="/assets/pages/blog/jan-2026/iona-pick.webp" alt="AI-Powered Hiring Automation Tools: 11 Best Picks for 2026" class="w-full pt-5 pb-8" loading="lazy" />
 <ul >
-  <li>Iona.ai</li>
+  <li>iona.ai</li>
   <li>PeopleStrong</li>
   <li>DarwinBox</li>
   <li>RapidHR</li>
@@ -213,19 +213,19 @@ export const blogListJson = [
   <li>Jobvite</li>
 </ul>
 
-<h3 >1. Iona.ai: The most advanced suite of hiring automation tools for 2026</h3>
+<h3 >1. iona.ai: The most advanced suite of hiring automation tools for 2026</h3>
 
-<img src="/assets/pages/blog/jan-2026/iona.webp" alt="Homepage of Iona.ai, an Agentic AI Recruiter with 90% faster onboarding and 100% compliance" class="w-full pt-5 pb-8" />
+<img src="/assets/pages/blog/jan-2026/iona.webp" alt="Homepage of iona.ai, an Agentic AI Recruiter with 90% faster onboarding and 100% compliance" class="w-full pt-5 pb-8" />
 
 
 
-<p >Hiring at scale shouldn’t slow down your business or drain your resources. That’s where Iona.ai, the <a href="/">hiring automation software</a>, steps in, transforming your hiring process with Agentic AI combined with human expertise. Iona.ai delivers a truly autonomous hiring journey, ensuring <b>90% faster</b> onboarding and compliance without adding to your overhead.</p>
+<p >Hiring at scale shouldn’t slow down your business or drain your resources. That’s where iona.ai, the <a href="/">hiring automation software</a>, steps in, transforming your hiring process with Agentic AI combined with human expertise. Iona.ai delivers a truly autonomous hiring journey, ensuring <b>90% faster</b> onboarding and compliance without adding to your overhead.</p>
 
-<p >With Iona, businesses no longer need to juggle multiple tools or face the challenges of high-volume recruitment. The platform automates the entire hiring lifecycle, from recruitment to employee engagement, <b>ensuring zero compliance issues</b> and <b>100% data accuracy.</b> Iona helps you streamline every aspect of the hiring process, saving time, reducing errors, and improving the overall candidate experience.</p>
+<p >With Iona, businesses no longer need to juggle multiple tools or face the challenges of high-volume recruitment. The platform automates the entire hiring lifecycle, from recruitment to employee engagement, <b>ensuring zero compliance issues</b> and <b>100% data accuracy.</b> iona.ai helps you streamline every aspect of the hiring process, saving time, reducing errors, and improving the overall candidate experience.</p>
 
-<p >But that’s not all. Iona offers a <b>suite of specialized solutions</b> designed to cater to different needs, ensuring that each aspect of your hiring journey is optimized for precision and efficiency. These solutions work together seamlessly, offering a complete, scalable solution for all your recruitment needs.</p>
+<p >But that’s not all. iona.ai offers a <b>suite of specialized solutions</b> designed to cater to different needs, ensuring that each aspect of your hiring journey is optimized for precision and efficiency. These solutions work together seamlessly, offering a complete, scalable solution for all your recruitment needs.</p>
 
-<h4 class="text-lg font-semibold mb-2 mt-4">Iona’s Powerful Hiring Solutions for Every Need:</h4>
+<h4 class="text-lg font-semibold mb-2 mt-4">iona’s Powerful Hiring Solutions for Every Need:</h4>
 <ul>
   <li><strong>NovaCount – Headcount Planning and Monitoring:</strong> Plan and track your workforce effortlessly with real-time visibility into headcount, budgets, and forecasts.</li>
   <li><strong>NovaAssist – Recruiter Co-Pilot:</strong> Automates candidate sourcing, screening, and shortlisting, saving valuable time and ensuring you never miss top talent.</li>
@@ -238,7 +238,7 @@ export const blogListJson = [
   <li><strong>NovaConnect – Premium WhatsApp-Based Support:</strong> Provides real-time, premium support via WhatsApp, answering questions, resolving issues, and keeping the hiring process smooth.</li>
 </ul>
 
-<h4 class="text-lg font-semibold mb-2 mt-4">Why Iona leads in 2026</h4>
+<h4 class="text-lg font-semibold mb-2 mt-4">Why iona.ai leads in 2026</h4>
 <ul>
 <li>Automates screening, interview coordination, and candidate movement across stages</li>
 <li>Uses AI agents to reduce recruiter follow-ups and manual handoffs</li>
@@ -246,7 +246,7 @@ export const blogListJson = [
 <li>Works across hiring, onboarding, and post-hire engagement</li>
 
 </ul>
-<p>For teams scaling fast or hiring continuously, Iona removes the operational friction that slows hiring down.</p>
+<p>For teams scaling fast or hiring continuously, iona.ai removes the operational friction that slows hiring down.</p>
 <p><b>Best for:</b> Mid-to-large companies, high-volume hiring, teams replacing spreadsheets + ATS chaos</p>
 <h3 >2. PeopleStrong</h3>
 <img src="/assets/pages/blog/jan-2026/peoplestrong.webp" alt="Homepage of Peoplestrong" class="w-full pt-5 pb-8" loading="lazy" />
@@ -274,7 +274,7 @@ However, if you're looking for a <b>more comprehensive, fully autonomous hiring 
 
 <p>However, if you're seeking a <strong>fully autonomous, AI-powered hiring journey</strong>, <strong>Iona</strong> offers a more comprehensive solution that takes hiring automation to the next level.</p>
 
-<p><strong>[Discover Iona as the ideal alternative to <a href="/darwinbox-alternative">DarwinBox</a> and see how it compares here.]</strong></p>
+<p><strong>[Discover iona.ai as the ideal alternative to <a href="/darwinbox-alternative">DarwinBox</a> and see how it compares here.]</strong></p>
 <h3 >4. RapidHR</h3>
 <img src="/assets/pages/blog/jan-2026/rapidhr.webp" alt="Homepage of RapidHR" class="w-full pt-5 pb-8" loading="lazy" />
 
@@ -407,7 +407,7 @@ However, if you're looking for a <b>more comprehensive, fully autonomous hiring 
 
 <p >Ready to experience the power of <b>iona</b>?</p>
 
-<p ><a href="/contact">Book a demo</a> today and see how iona can transform your hiring process for the better.</p>
+<p ><a href="/contact">Book a demo</a> today and see how iona.ai can transform your hiring process for the better.</p>
 
       `,
       blogFAQ: [
@@ -424,12 +424,12 @@ However, if you're looking for a <b>more comprehensive, fully autonomous hiring 
     answer: "AI-driven tools speed up hiring by automating manual tasks such as sorting resumes, scheduling interviews, and communicating with candidates. This reduces the time it takes to fill positions, improving overall recruitment efficiency and getting the right talent in place faster."
   },
   {
-    question: "What is Iona.ai, and how does it stand out among other hiring automation tools?",
-    answer: "Iona.ai is a comprehensive hiring automation tool that offers an autonomous hiring journey powered by Agentic AI. It automates the entire recruitment lifecycle, from sourcing and screening to onboarding and engagement, ensuring 90% faster onboarding and 100% compliance with no additional overhead."
+    question: "What is iona.ai, and how does it stand out among other hiring automation tools?",
+    answer: "iona.ai is a comprehensive hiring automation tool that offers an autonomous hiring journey powered by Agentic AI. It automates the entire recruitment lifecycle, from sourcing and screening to onboarding and engagement, ensuring 90% faster onboarding and 100% compliance with no additional overhead."
   },
   {
     question: "Can AI hiring tools help with candidate engagement?",
-    answer: "Yes, many AI hiring tools, like Iona.ai, use chatbots and automated communication systems to keep candidates engaged throughout the hiring process. These tools can send timely updates, answer candidate queries, and provide a more personalized experience, helping to improve candidate satisfaction."
+    answer: "Yes, many AI hiring tools, like iona.ai, use chatbots and automated communication systems to keep candidates engaged throughout the hiring process. These tools can send timely updates, answer candidate queries, and provide a more personalized experience, helping to improve candidate satisfaction."
   },
   {
     question: "Are AI-powered hiring automation tools suitable for small businesses?",
@@ -437,7 +437,7 @@ However, if you're looking for a <b>more comprehensive, fully autonomous hiring 
   },
   {
     question: "How do I know which AI hiring tool is right for my business?",
-    answer: "When selecting an AI-powered hiring automation tool, consider factors such as your business size, recruitment volume, required features, and integration capabilities with your existing HR systems. For a comprehensive solution, Iona.ai offers end-to-end automation that suits both small and large organizations, ensuring seamless scalability."
+    answer: "When selecting an AI-powered hiring automation tool, consider factors such as your business size, recruitment volume, required features, and integration capabilities with your existing HR systems. For a comprehensive solution, iona.ai offers end-to-end automation that suits both small and large organizations, ensuring seamless scalability."
   }
 ]
 
