@@ -162,18 +162,14 @@ function BlogSinglePages() {
             </div>
           </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            className="rounded-3xl overflow-hidden shadow-2xl aspect-video bg-gray-200"
-          >
+         
             <img
               src={blogData.image}
               alt={blogData.altimg ? blogData.altimg : blogData.title}
-              className="w-full h-full object-cover"
+              className="w-full rounded-lg md:rounded-xl shadow-md object-contain"
               loading="lazy"
             />
-          </motion.div>
+        
         </div>
       </section>
 
