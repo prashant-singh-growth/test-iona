@@ -1,113 +1,281 @@
-import React from "react";
-import { useParams } from "react-router-dom";
-import { motion, useScroll, useSpring } from "framer-motion";
+import React, { useEffect, useState, useMemo } from "react";
+import { useParams, Link } from "react-router-dom";
+import { AnimatePresence, motion, useScroll, useSpring } from "framer-motion";
+import { FiMinus, FiPlus, FiArrowLeft } from "react-icons/fi";
+
+// Internal Components/Data
 import { blogListJson } from "../../components/Data/BlogDynamic";
 import SeoHeader from "../../components/utils/SeoHeader";
 
+/* ------------------ HELPERS ------------------ */
+
+/**
+ * Generates SEO-friendly IDs for headings and returns the modified HTML string.
+ */
+const parseContentWithIds = (html) => {
+  if (!html) return "";
+  const container = document.createElement("div");
+  container.innerHTML = html;
+
+  const headings = container.querySelectorAll("h2, h3");
+  headings.forEach((heading) => {
+    const id = heading.innerText
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/(^-|-$)/g, "");
+    heading.id = id;
+  });
+
+  return container.innerHTML;
+};
+
 function BlogSinglePages() {
   const { blog } = useParams();
+  const [activeIndex, setActiveIndex] = useState(null); // For FAQ
+  const [toc, setToc] = useState([]);
+  const [activeId, setActiveId] = useState("");
+
+  // Find Data
+  const blogData = useMemo(() => {
+    return blogListJson.find((item) => item.url.replace("/blog/", "") === blog);
+  }, [blog]);
+
+  // Framer Motion Scroll Progress
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, { stiffness: 100, damping: 30 });
 
-  const blogData = blogListJson.find(
-    (item) => item.url.replace("/blog/", "") === blog
-  );
+  // Process Content and TOC
+  const processedContent = useMemo(() => {
+    if (!blogData?.content) return "";
+    return parseContentWithIds(blogData.content);
+  }, [blogData]);
 
-  if (!blogData) return null;
+  useEffect(() => {
+    if (!processedContent) return;
+
+    const temp = document.createElement("div");
+    temp.innerHTML = processedContent;
+    const headings = temp.querySelectorAll("h2, h3");
+
+    const items = Array.from(headings).map((el) => ({
+      id: el.id,
+      text: el.innerText,
+      level: el.tagName.toLowerCase(),
+    }));
+
+    setToc(items);
+  }, [processedContent]);
+
+  useEffect(() => {
+    if (!toc.length) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveId(entry.target.id);
+          }
+        });
+      },
+      { rootMargin: "-20% 0px -70% 0px" },
+    );
+
+    toc.forEach((item) => {
+      const el = document.getElementById(item.id);
+      if (el) observer.observe(el);
+    });
+
+    return () => observer.disconnect();
+  }, [toc, processedContent]);
+
+  const handleAnchorClick = (e, id) => {
+    e.preventDefault();
+    const element = document.getElementById(id);
+    if (element) {
+      const offset = 100;
+      const bodyRect = document.body.getBoundingClientRect().top;
+      const elementRect = element.getBoundingClientRect().top;
+      const elementPosition = elementRect - bodyRect;
+      const offsetPosition = elementPosition - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
+  };
+
+  if (!blogData) {
+    return (
+      <div className="min-h-screen flex flex-col items-center justify-center">
+        <h2 className="text-2xl font-bold">Blog post not found</h2>
+        <Link to="/blog" className="mt-4 text-blue-600 flex items-center gap-2">
+          <FiArrowLeft /> Back to Blogs
+        </Link>
+      </div>
+    );
+  }
 
   return (
-    <main className="bg-white min-h-screen  text-[#160E38] font-lora">
-     <SeoHeader
-     title={blogData.seo.title}
-     description={blogData.seo.description}
-     />
+    <main className="bg-white  text-[#160E38] font-lora relative">
+      <SeoHeader
+        title={blogData.seo?.title || blogData.title}
+        description={blogData.seo?.description || blogData.summary}
+      />
+
+      {/* Reading Progress Bar */}
       <motion.div
-        className="fixed top-0 left-0 right-0 h-1 bg-darkVoilet z-50 origin-left"
+        className="fixed top-0 left-0 right-0 h-1 bg-indigo-600 z-[100] origin-left"
         style={{ scaleX }}
       />
 
-      <section className="border-b border-gray-100">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[500px] items-center gap-12 py-12 lg:py-20">
-            
-      
-            <motion.div 
-              initial={{ opacity: 0, x: -30 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6 }}
-              className="space-y-6"
-            >
-              <div className="flex items-center gap-4 text-sm font-bold tracking-widest uppercase text-[#5A4E7A]">
-                <span>{blogData.date}</span>
-                <span className="w-8 h-[1px] bg-gray-300"></span>
-                <span>5 Min Read</span>
+      {/* HERO SECTION */}
+      <section className="border-b border-gray-100 bg-gray-50/50">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16 lg:py-24 grid lg:grid-cols-2 gap-12 items-center">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="space-y-6"
+          >
+            <div className="flex items-center gap-4 text-sm font-bold uppercase tracking-widest text-indigo-600">
+              <span>{blogData.date}</span>
+              <span className="w-8 h-[1px] bg-gray-300" />
+              <span>5 Min Read</span>
+            </div>
+
+            <h1 className="text-4xl lg:text-5xl font-extrabold leading-tight">
+              {blogData.title}
+            </h1>
+
+            <p className="text-lg text-gray-600 leading-relaxed">
+              {blogData.summary}
+            </p>
+
+            <div className="flex items-center gap-4 pt-4">
+              <div className="h-12 w-12 rounded-full bg-indigo-900 text-white flex items-center justify-center text-lg font-bold">
+                {blogData.author?.charAt(0)}
               </div>
-
-              <h1 className="text-4xl font-extrabold leading-[1.1] text-[#160E38]">
-                {blogData.title}
-              </h1>
-
-              <p className="text-lg text-gray-600 leading-relaxed max-w-lg">
-                {blogData.summary}
-              </p>
-
-              <div className="flex items-center gap-4 pt-4">
-                <div className="h-14 w-14 rounded-full bg-[#160E38] flex items-center justify-center text-white text-xl font-bold border-4 border-gray-50">
-                  {blogData.author?.charAt(0)}
-                </div>
-                <div>
-                  <p className="font-bold text-[#160E38] text-lg">{blogData.author}</p>
-                  <p className="text-gray-500 text-sm">Author</p>
-                </div>
+              <div>
+                <p className="font-bold">{blogData.author}</p>
+                <p className="text-sm text-gray-500">Author</p>
               </div>
-            </motion.div>
+            </div>
+          </motion.div>
 
-     
-            <motion.div 
-              initial={{ opacity: 0, scale: 0.95 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="relative w-full  rounded-3xl overflow-hidden shadow-2xl"
-            >
-              <img
-                src={blogData.image}
-                alt={blogData.title}
-                className="w-full h-fit object-contain"
-              />
-          
-              <div className="absolute inset-0 bg-gradient-to-tr from-[#160E38]/20 to-transparent" />
-            </motion.div>
-          </div>
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            className="rounded-3xl overflow-hidden shadow-2xl aspect-video bg-gray-200"
+          >
+            <img
+              src={blogData.image}
+              alt={blogData.altimg ? blogData.altimg : blogData.title}
+              className="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </motion.div>
         </div>
       </section>
 
-   
-      <section className="max-w-7xl mx-auto px-6 lg:px-8 py-20">
-        <div className="flex flex-col lg:flex-row gap-16">
-          
-         
-          <article className="w-full max-w-6xl mx-auto">
-            <div 
-              className="prose prose-lg md:prose-xl max-w-none
-              prose-headings:text-[#160E38] prose-headings:font-bold
-              prose-p:text-gray-700 prose-p:leading-relaxed
-              prose-strong:text-[#5A4E7A]
-              prose-img:rounded-3xl prose-img:shadow-lg"
-              dangerouslySetInnerHTML={{ __html: blogData.content }} 
+      {/* MAIN CONTENT AREA */}
+      <section className="max-w-7xl mx-auto px-6 lg:px-8 py-16">
+        <div className="flex flex-col lg:flex-row gap-16 items-start ">
+          {/* STICKY TABLE OF CONTENTS */}
+          <aside className="hidden lg:block w-1/4 sticky top-28 self-start ">
+            <div className="border-l-2 border-gray-100 pl-6 py-2">
+              <h3 className="text-xs font-black uppercase tracking-widest text-gray-400 mb-6">
+                On this page
+              </h3>
+
+              <ul className="space-y-4 text-[15px] ">
+                {toc.map((item) => (
+                  <li
+                    key={item.id}
+                    className={`transition-all duration-300 ${
+                      activeId === item.id
+                        ? "text-darkVoilet translate-x-1 font-bold"
+                        : "text-gray-500 hover:text-primaryText"
+                    } ${item.level === "h3" ? "ml-5 text-sm" : ""}`}
+                  >
+                    <a
+                      href={`#${item.id}`}
+                      onClick={(e) => handleAnchorClick(e, item.id)}
+                    >
+                      {item.text}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </aside>
+
+          {/* ARTICLE BODY */}
+          <div className="flex-1 max-w-none">
+            <div
+              className="blog-content"
+              dangerouslySetInnerHTML={{ __html: processedContent }}
             />
-            
-          
-            <div className="mt-16 flex flex-wrap gap-3">
-              {blogData.tags?.map((tag, index) => (
-                <span key={index} className="px-5 py-2 rounded-full border border-gray-200 text-sm font-semibold text-darkVoilet hover:bg-darkVoilet hover:text-white transition-all cursor-default">
+
+            {/* TAGS */}
+            <div className="mt-16 flex flex-wrap gap-2">
+              {blogData.tags?.map((tag, i) => (
+                <span
+                  key={i}
+                  className="px-4 py-1.5 rounded-lg bg-gray-100 text-gray-600 text-sm font-medium"
+                >
                   #{tag}
                 </span>
               ))}
             </div>
-          </article>
 
-        
-
+            {/* FAQ SECTION */}
+            {blogData.blogFAQ?.length > 0 && (
+              <div className="mt-20 pt-10 border-t border-gray-100">
+                <h2 className="text-3xl font-bold mb-8">Frequently Asked Questions</h2>
+                <div className="space-y-4">
+                  {blogData.blogFAQ.map((faq, i) => {
+                    const isOpen = activeIndex === i;
+                    return (
+                      <div
+                        key={i}
+                        className={`border rounded-2xl overflow-hidden transition-colors ${
+                          isOpen
+                            ? "bg-indigo-50/30 border-indigo-100"
+                            : "border-gray-100"
+                        }`}
+                      >
+                        <button
+                          onClick={() => setActiveIndex(isOpen ? null : i)}
+                          className="w-full flex justify-between items-center p-6 text-left"
+                        >
+                          <span className="font-bold text-lg">
+                            {faq.question}
+                          </span>
+                          {isOpen ? (
+                            <FiMinus className="text-indigo-600" />
+                          ) : (
+                            <FiPlus />
+                          )}
+                        </button>
+                        <AnimatePresence>
+                          {isOpen && (
+                            <motion.div
+                              initial={{ height: 0, opacity: 0 }}
+                              animate={{ height: "auto", opacity: 1 }}
+                              exit={{ height: 0, opacity: 0 }}
+                              className="px-6 pb-6 text-gray-600 leading-relaxed"
+                            >
+                              {faq.answer}
+                            </motion.div>
+                          )}
+                        </AnimatePresence>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            )}
+          </div>
         </div>
       </section>
     </main>

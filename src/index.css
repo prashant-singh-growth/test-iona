@@ -12,20 +12,20 @@ html {
   scroll-behavior: smooth;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   width: 100%;
 }
 
 body {
   @apply bg-background text-primaryText;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   width: 100%;
   max-width: 100%;
   position: relative;
 }
 
 #root {
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   width: 100%;
   max-width: 100%;
   position: relative;
@@ -211,4 +211,19 @@ color: black;
 }
 .link-wrapper a{
 @apply !underline;
+}
+.blog-content a{
+@apply !underline font-semibold;
+}
+.blog-content ul{
+  @apply flex flex-col gap-4 list-disc pl-5 pb-4;
+}
+.blog-content ul li{
+  @apply font-medium;
+}
+.blog-content p{
+  @apply pb-4;
+}
+.blog-content h3{
+  @apply text-2xl font-bold mb-3 mt-6;
 }

@@ -473,7 +473,7 @@ function AppContent() {
       <RedirectHandler />
       <ToastContainer position="top-right" autoClose="4000" />
       <ScrollToTop />
-      <div className="flex flex-col min-h-screen overflow-hidden">
+      <div className="flex flex-col">
         {!shouldHideNavbar && <Header />}
         <main className="flex-grow pt-12">
           <Suspense fallback={<Loading />}>
