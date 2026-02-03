@@ -19,19 +19,19 @@ const popupData = [
     name: "Amit from Bengaluru",
     timeAgo: "1 min ago",
     delay: 2000,
-    duration: 8000,
+    duration: 3000,
   },
   {
     name: "Sneha from Delhi",
     timeAgo: "3 mins ago",
     delay: 17000,
-    duration: 8000,
+    duration: 4000,
   },
   {
     name: "Rahul from Mumbai",
     timeAgo: "5 mins ago",
     delay: 30000,
-    duration: 8000,
+    duration: 3000,
   },
 ];
 
