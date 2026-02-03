@@ -44,6 +44,7 @@ const Landingpage = lazy(() => import("./pages/Landing/Landingpages"));
 const ThankYouPage = lazy(() => import("./pages/ThankYou"));
 const SolutionPage = lazy(() => import("./pages/SolutionPage"));
 const SecLandingPage = lazy(() => import("./pages/Landing/SecLandingPage"));
+const AdsLandingPage = lazy(() => import("./pages/Landing/AdsLandingPages"));
 const AlternativeDynamicPage = lazy(
   () => import("./pages/Alternative/AlternativeDynamic")
 );
@@ -301,6 +302,14 @@ const AnimatedRoutes = () => {
           element={
             <PageTransition>
               <Landingpage />
+            </PageTransition>
+          }
+        />
+        <Route
+          path="/ads"
+          element={
+            <PageTransition>
+              <AdsLandingPage/>
             </PageTransition>
           }
         />

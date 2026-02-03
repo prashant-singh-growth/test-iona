@@ -187,7 +187,7 @@ export const blogListJson = [
     summary:
       "In 2026, AI-powered hiring automation tools are revolutionizing recruitment. This blog highlights 11+ top tools, including iona.ai, that streamline hiring processes, boost efficiency, and improve candidate experience. Discover how these tools can accelerate your hiring efforts while maintaining quality and compliance.",
     author: "Michael Chen",
-    date: "March 10, 2023",
+    date: "February 2, 2026",
     image: `/assets/pages/blog/jan-2026/iona-tools.webp`,
     altimg: "Hiring Automation Tools 2026",
     tags: ["HR Analytics", "Data-Driven HR", "People Analytics"],
