@@ -20,7 +20,7 @@ const HomePage = memo(() => {
  
 
   return (
-    <div className="bg-white text-primaryText theme-lora-font">
+    <div className="bg-white text-primaryText theme-lora-font overflow-x-hidden max-w-[100vw] ">
       <SeoHeader
         title={" Purposeful Hiring Powered by AI & Human Insight | iona.ai"}
         description={"Discover iona.ai’s intelligent hiring solutions that merge AI brilliance with human wisdom to make hiring seamless, inclusive, and empowering for women leaders."}
