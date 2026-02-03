@@ -7,54 +7,60 @@ const COLORS = {
   darkVoilet: "#160E38",
   violet_1: "#02193B",
   violet_2: "#5A4E7A",
-  accent: "#00F2FF", // Electric Cyan for the "Gloss" pop
+  accent: "#00F2FF",
 };
 
+/**
+ * delay    → when popup appears (ms)
+ * duration → how long popup stays visible (ms)
+ */
 const popupData = [
-  { name: "Amit from Bengaluru", timeAgo: "1 min ago" },
-  { name: "Sneha from Delhi", timeAgo: "3 mins ago" },
-  { name: "Rahul from Mumbai", timeAgo: "5 mins ago" },
+  {
+    name: "Amit from Bengaluru",
+    timeAgo: "1 min ago",
+    delay: 2000,
+    duration: 8000,
+  },
+  {
+    name: "Sneha from Delhi",
+    timeAgo: "3 mins ago",
+    delay: 17000,
+    duration: 8000,
+  },
+  {
+    name: "Rahul from Mumbai",
+    timeAgo: "5 mins ago",
+    delay: 30000,
+    duration: 8000,
+  },
 ];
 
 function PopUpSection() {
   const [currentIndex, setCurrentIndex] = useState(null);
   const [visible, setVisible] = useState(false);
 
-  // useEffect(() => {
-  //   const timers = popupData.map((item, index) =>
-  //     setTimeout(() => {
-  //       setCurrentIndex(index);
-  //       setVisible(true);
-  //       setTimeout(() => setVisible(false), 8000); // Show for 8 seconds
-  //     }, (index + 1) * 12000) 
-  //   );
-  //   return () => timers.forEach(clearTimeout);
-  // }, []);
   useEffect(() => {
-  let index = 0;
+    const timers = [];
 
-  const showPopup = () => {
-    setCurrentIndex(index);
-    setVisible(true);
+    popupData.forEach((item, index) => {
+      // show popup
+      const showTimer = setTimeout(() => {
+        setCurrentIndex(index);
+        setVisible(true);
 
-    // hide after 8s
-    setTimeout(() => {
-      setVisible(false);
-    }, 8000);
+        // hide popup
+        const hideTimer = setTimeout(() => {
+          setVisible(false);
+        }, item.duration);
 
-    // move to next
-    index = (index + 1) % popupData.length;
-  };
+        timers.push(hideTimer);
+      }, item.delay);
 
-  // initial delay
-  const interval = setInterval(showPopup, 12000);
+      timers.push(showTimer);
+    });
 
-  // start first popup
-  showPopup();
-
-  return () => clearInterval(interval);
-}, []);
-
+    return () => timers.forEach(clearTimeout);
+  }, []);
 
   return (
     <div className="fixed inset-x-0 bottom-10 z-[9999] flex justify-center px-6 pointer-events-none">
@@ -62,61 +68,87 @@ function PopUpSection() {
         {visible && currentIndex !== null && (
           <motion.div
             key={currentIndex}
-            initial={{ opacity: 0, y: 40, scale: 0.9, rotateX: 20 }}
-            animate={{ opacity: 1, y: 0, scale: 1, rotateX: 0 }}
-            exit={{ opacity: 0, scale: 0.95, transition: { duration: 0.2 } }}
-            className="pointer-events-auto relative flex items-center gap-4 px-6 py-4 rounded-xl overflow-hidden border border-white/20 shadow-[0_20px_50px_rgba(0,0,0,0.5)]"
+            initial={{
+              opacity: 0,
+              y: 50,
+              scale: 0.9,
+              rotateX: 25,
+            }}
+            animate={{
+              opacity: 1,
+              y: 0,
+              scale: 1,
+              rotateX: 0,
+            }}
+            exit={{
+              opacity: 0,
+              y: 20,
+              scale: 0.95,
+              transition: { duration: 0.25 },
+            }}
+            transition={{
+              type: "spring",
+              stiffness: 140,
+              damping: 18,
+            }}
+            className="pointer-events-auto relative flex items-center gap-4 px-6 py-4 rounded-2xl overflow-hidden border border-white/20 shadow-[0_25px_60px_rgba(0,0,0,0.55)]"
             style={{
-              background: `linear-gradient(135deg, ${COLORS.violet_1}CC 0%, ${COLORS.darkVoilet}EE 100%)`,
-              backdropFilter: "blur(16px) saturate(180%)",
-              WebkitBackdropFilter: "blur(16px) saturate(180%)", // Safari support
+              background: `linear-gradient(135deg, ${COLORS.violet_1}CC 0%, ${COLORS.darkVoilet}F2 100%)`,
+              backdropFilter: "blur(18px) saturate(180%)",
+              WebkitBackdropFilter: "blur(18px) saturate(180%)",
             }}
           >
-            {/* Glossy Reflection Overlay */}
-            <div className="absolute inset-0 pointer-events-none bg-gradient-to-br from-white/10 via-transparent to-transparent" />
-            
-            {/* Inner Shine (Top Border) */}
-            <div className="absolute inset-x-0 top-0 h-[1px] bg-gradient-to-r from-transparent via-white/30 to-transparent" />
+            {/* Glass Gloss Overlay */}
+            <div className="absolute inset-0 bg-gradient-to-br from-white/12 via-transparent to-transparent pointer-events-none" />
 
-            {/* Pulsing Status Icon */}
+            {/* Top shine */}
+            <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/40 to-transparent" />
+
+            {/* Status Dot */}
             <div className="relative flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white/5 border border-white/10">
-              <div 
-                className="h-2 w-2 rounded-full animate-pulse bg-white" 
-                style={{ boxShadow: `0 0 10px ${COLORS.accent}` }}
+              <div
+                className="h-2 w-2 rounded-full animate-pulse bg-white"
+                style={{ boxShadow: `0 0 12px ${COLORS.accent}` }}
               />
-              <motion.div 
-                animate={{ scale: [1, 1.5, 1], opacity: [0.5, 0, 0.5] }}
-                transition={{ repeat: Infinity, duration: 2 }}
+              <motion.div
+                animate={{ scale: [1, 1.6, 1], opacity: [0.6, 0, 0.6] }}
+                transition={{ repeat: Infinity, duration: 2.2 }}
                 className="absolute inset-0 rounded-full border border-white/20"
               />
             </div>
 
-            {/* Text Content */}
+            {/* Text */}
             <div className="flex flex-col z-10">
-              <p className="text-sm font-medium tracking-tight text-white/90">
-                <span className="font-extrabold" style={{ color: COLORS.accent }}>
+              <p className="text-sm font-medium text-white/90">
+                <span
+                  className="font-extrabold"
+                  style={{ color: COLORS.accent }}
+                >
                   {popupData[currentIndex].name}
-                </span>
-                {" "}just reserved their free copy!
+                </span>{" "}
+                just reserved their free copy!
               </p>
-              <div className="flex items-center gap-2 mt-0.5">
-                <span className="text-[10px] font-bold uppercase tracking-widest opacity-60" style={{ color: COLORS.themeGray }}>
+
+              <div className="flex items-center gap-2 mt-1">
+                <span className="text-[10px] uppercase tracking-widest text-white/50">
                   {popupData[currentIndex].timeAgo}
                 </span>
-                <div className="h-1 w-1 rounded-full bg-white/20" />
-                <span className="text-[10px] font-medium text-white/40">Live updates</span>
+                <span className="h-1 w-1 rounded-full bg-white/30" />
+                <span className="text-[10px] text-white/40">
+                  Live activity
+                </span>
               </div>
             </div>
 
-            {/* Subtle light sweep animation */}
-            <motion.div 
-              initial={{ x: "-100%" }}
-              animate={{ x: "200%" }}
-              transition={{ repeat: Infinity, duration: 3, repeatDelay: 4 }}
-              className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent skew-x-12"
+            {/* Light sweep */}
+            <motion.div
+              initial={{ x: "-120%" }}
+              animate={{ x: "220%" }}
+              transition={{ repeat: Infinity, duration: 3.5, repeatDelay: 4 }}
+              className="absolute inset-0 bg-gradient-to-r from-transparent via-white/6 to-transparent skew-x-12"
             />
           </motion.div>
-         )} 
+        )}
       </AnimatePresence>
     </div>
   );

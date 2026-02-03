@@ -472,7 +472,7 @@ function AppContent() {
     "/end-to-end-hiring-solution-for-enterprises",
     "/automated-background-verification",
     "/agentic-ai-recruiters-sheet",
-    // "/signup"
+    "/ads"
   ];
   const shouldHideNavbar = hideNavbarRoutes.includes(location.pathname);
 

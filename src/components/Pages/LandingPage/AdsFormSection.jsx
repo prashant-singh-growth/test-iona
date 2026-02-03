@@ -140,7 +140,7 @@ function AdsFormSection() {
   };
 
   return (
-    <div className="w-full bg-[#FEFEFD] border border-[#C9C9C9] shadow-lg rounded-lg font-lora">
+    <div id="reserve-copy" className="w-full bg-[#FEFEFD] border border-[#C9C9C9] shadow-lg rounded-lg font-lora">
       <form
         onSubmit={handleSubmit}
         className="p-6 md:p-10 flex flex-col space-y-6"
