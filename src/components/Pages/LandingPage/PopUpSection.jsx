@@ -10,143 +10,105 @@ const COLORS = {
   accent: "#00F2FF",
 };
 
-/**
- * delay    → when popup appears (ms)
- * duration → how long popup stays visible (ms)
- */
-const popupData = [
-  {
-    name: "Amit from Bengaluru",
-    timeAgo: "1 min ago",
-    delay: 2000,
-    duration: 3000,
-  },
-  {
-    name: "Sneha from Delhi",
-    timeAgo: "3 mins ago",
-    delay: 17000,
-    duration: 4000,
-  },
-  {
-    name: "Rahul from Mumbai",
-    timeAgo: "5 mins ago",
-    delay: 30000,
-    duration: 3000,
-  },
+/* USERS LIST */
+const users = [
+  { name: "Nitish", city: "Delhi" },
+  { name: "Niharika", city: "Delhi" },
+  { name: "Ganesh", city: "Pune" },
+  { name: "Sheetal", city: "Pune" },
+  { name: "Sharad", city: "Mumbai" },
+  { name: "Supriya", city: "Mumbai" },
+  { name: "Bhavesh", city: "Bengaluru" },
+  { name: "Aparna", city: "Bengaluru" },
+  { name: "Venugopal", city: "Chennai" },
+  { name: "Seetha", city: "Chennai" },
+  { name: "Vishal", city: "Noida" },
+  { name: "Neha", city: "Noida" },
+  { name: "Mohammed", city: "Hyderabad" },
+  { name: "Yasmina", city: "Hyderabad" },
+  { name: "Jose", city: "Kozhikode" },
+  { name: "Jyoti", city: "Kozhikode" },
+  { name: "Mihir", city: "Prayagraj" },
+  { name: "Nisha", city: "Prayagraj" },
+  { name: "Rajdip", city: "Kolkata" },
+  { name: "Divya", city: "Kolkata" },
 ];
 
+/* DELAY LOGIC */
+const INITIAL_DELAYS = [5000, 30000, 90000]; // 5s, 30s, 90s
+const POPUP_DURATION = 3500;
+
 function PopUpSection() {
-  const [currentIndex, setCurrentIndex] = useState(null);
+  const [index, setIndex] = useState(0);
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    const timers = [];
+    let timeout;
 
-    popupData.forEach((item, index) => {
-      // show popup
-      const showTimer = setTimeout(() => {
-        setCurrentIndex(index);
-        setVisible(true);
+    const showPopup = () => {
+      setVisible(true);
 
-        // hide popup
-        const hideTimer = setTimeout(() => {
-          setVisible(false);
-        }, item.duration);
+      setTimeout(() => {
+        setVisible(false);
 
-        timers.push(hideTimer);
-      }, item.delay);
+        timeout = setTimeout(() => {
+          setIndex((prev) => (prev + 1) % users.length);
+        }, getNextDelay(index));
+      }, POPUP_DURATION);
+    };
 
-      timers.push(showTimer);
-    });
+    timeout = setTimeout(showPopup, getNextDelay(index));
 
-    return () => timers.forEach(clearTimeout);
-  }, []);
+    return () => clearTimeout(timeout);
+  }, [index]);
+
+  const getNextDelay = (i) => {
+    if (i < INITIAL_DELAYS.length) return INITIAL_DELAYS[i];
+    return Math.floor(Math.random() * 60000) + 60000; // 60–120s
+  };
+
+  const user = users[index];
 
   return (
     <div className="fixed inset-x-0 bottom-10 z-[9999] flex justify-center px-6 pointer-events-none">
       <AnimatePresence mode="wait">
-        {visible && currentIndex !== null && (
+        {visible && (
           <motion.div
-            key={currentIndex}
-            initial={{
-              opacity: 0,
-              y: 50,
-              scale: 0.9,
-              rotateX: 25,
-            }}
-            animate={{
-              opacity: 1,
-              y: 0,
-              scale: 1,
-              rotateX: 0,
-            }}
-            exit={{
-              opacity: 0,
-              y: 20,
-              scale: 0.95,
-              transition: { duration: 0.25 },
-            }}
-            transition={{
-              type: "spring",
-              stiffness: 140,
-              damping: 18,
-            }}
-            className="pointer-events-auto relative flex items-center gap-4 px-6 py-4 rounded-2xl overflow-hidden border border-white/20 shadow-[0_25px_60px_rgba(0,0,0,0.55)]"
+            key={index}
+            initial={{ opacity: 0, y: 50, scale: 0.9 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, y: 20, scale: 0.95 }}
+            transition={{ type: "spring", stiffness: 140, damping: 18 }}
+            className="pointer-events-auto relative flex items-center gap-4 px-6 py-4 rounded-2xl border border-white/20 shadow-[0_25px_60px_rgba(0,0,0,0.55)]"
             style={{
               background: `linear-gradient(135deg, ${COLORS.violet_1}CC 0%, ${COLORS.darkVoilet}F2 100%)`,
-              backdropFilter: "blur(18px) saturate(180%)",
-              WebkitBackdropFilter: "blur(18px) saturate(180%)",
+              backdropFilter: "blur(18px)",
             }}
           >
-            {/* Glass Gloss Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-br from-white/12 via-transparent to-transparent pointer-events-none" />
-
-            {/* Top shine */}
-            <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/40 to-transparent" />
-
-            {/* Status Dot */}
-            <div className="relative flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white/5 border border-white/10">
-              <div
-                className="h-2 w-2 rounded-full animate-pulse bg-white"
-                style={{ boxShadow: `0 0 12px ${COLORS.accent}` }}
-              />
-              <motion.div
-                animate={{ scale: [1, 1.6, 1], opacity: [0.6, 0, 0.6] }}
-                transition={{ repeat: Infinity, duration: 2.2 }}
-                className="absolute inset-0 rounded-full border border-white/20"
+            {/* Glow dot */}
+            <div className="h-10 w-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center">
+              <span
+                className="h-2 w-2 rounded-full bg-white animate-pulse"
+                style={{ boxShadow: `0 0 10px ${COLORS.accent}` }}
               />
             </div>
 
             {/* Text */}
-            <div className="flex flex-col z-10">
-              <p className="text-sm font-medium text-white/90">
+            <div>
+              <p className="text-sm text-white">
                 <span
-                  className="font-extrabold"
+                  className="font-bold"
                   style={{ color: COLORS.accent }}
                 >
-                  {popupData[currentIndex].name}
+                  {user.name} from {user.city}
                 </span>{" "}
                 just reserved their free copy!
               </p>
 
-              <div className="flex items-center gap-2 mt-1">
-                <span className="text-[10px] uppercase tracking-widest text-white/50">
-                  {popupData[currentIndex].timeAgo}
-                </span>
-                <span className="h-1 w-1 rounded-full bg-white/30" />
-                <span className="text-[10px] text-white/40">
-                  Live activity
-                </span>
-              </div>
+              <p className="text-[10px] mt-1 text-white/50 uppercase tracking-wider">
+                Live activity • moments ago
+              </p>
             </div>
-
-            {/* Light sweep */}
-            <motion.div
-              initial={{ x: "-120%" }}
-              animate={{ x: "220%" }}
-              transition={{ repeat: Infinity, duration: 3.5, repeatDelay: 4 }}
-              className="absolute inset-0 bg-gradient-to-r from-transparent via-white/6 to-transparent skew-x-12"
-            />
           </motion.div>
         )}
       </AnimatePresence>
