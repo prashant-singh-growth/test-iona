@@ -42,81 +42,8 @@ const HomePage = memo(() => {
 <meta property="twitter:image" content="https://iona.ai/assets/pages/homepage/home-banner.webp" />
 
  </Helmet>
-   <script
-    type="application/ld+json"
-    dangerouslySetInnerHTML={{
-      __html: JSON.stringify({
-        "@context": "https://schema.org",
-        "@type": "SoftwareApplication",
-        "@id": "https://www.iona.ai/#software",
-        "name": "iona.ai",
-        "url": "https://www.iona.ai/",
-        "image": "https://www.iona.ai/assets/pages/homepage/home-banner.webp",
-        "applicationCategory": "BusinessApplication",
-        "operatingSystem": "Web",
-        "priceRange": "₹₹₹",
-        "offers": {
-          "@type": "Offer",
-          "priceCurrency": "INR",
-          "availability": "https://schema.org/InStock"
-        },
-        "sameAs": [
-          "https://www.facebook.com/ionaai/",
-          "https://www.linkedin.com/company/iona-ai",
-          "https://www.youtube.com/@ionaai-k5v"
-        ],
-        "publisher": {
-          "@type": "Organization",
-          "name": "iona.ai",
-          "url": "https://www.iona.ai/",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "https://www.iona.ai/assets/logo.png"
-          },
-          "contactPoint": {
-            "@type": "ContactPoint",
-            "telephone": "+91-99990-92887",
-            "contactType": "sales",
-            "email": "amit@iona.ai",
-            "areaServed": {
-              "@type": "Country",
-              "name": "India"
-            }
-          },
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Amazona 36, Top Floor, Eldeco Green Meadows, Sector PI",
-            "addressLocality": "Greater Noida",
-            "addressRegion": "Uttar Pradesh",
-            "postalCode": "201306",
-            "addressCountry": "IN"
-          },
-          "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": 28.4744,
-            "longitude": 77.503
-          },
-          "openingHoursSpecification": [
-            {
-              "@type": "OpeningHoursSpecification",
-              "dayOfWeek": [
-                "Monday",
-                "Tuesday",
-                "Wednesday",
-                "Thursday",
-                "Friday"
-              ],
-              "opens": "09:00",
-              "closes": "19:00"
-            }
-          ]
-        }
-      })
-    }}
-  />
-<Helmet>
-  
-</Helmet>
+   
+
 
 
 
