@@ -3,9 +3,9 @@ import { useParams, Link } from "react-router-dom";
 import { AnimatePresence, motion, useScroll, useSpring } from "framer-motion";
 import { FiMinus, FiPlus, FiArrowLeft } from "react-icons/fi";
 
-// Internal Components/Data
-import { blogListJson } from "../../components/Data/BlogDynamic";
+
 import SeoHeader from "../../components/utils/SeoHeader";
+import { BlogList } from "../../components/Data/blog/BlogList";
 
 /* ------------------ HELPERS ------------------ */
 
@@ -37,7 +37,7 @@ function BlogSinglePages() {
 
   // Find Data
   const blogData = useMemo(() => {
-    return blogListJson.find((item) => item.url.replace("/blog/", "") === blog);
+    return BlogList.find((item) => item.url.replace("/blog/", "") === blog);
   }, [blog]);
 
   // Framer Motion Scroll Progress
@@ -46,8 +46,8 @@ function BlogSinglePages() {
 
   // Process Content and TOC
   const processedContent = useMemo(() => {
-    if (!blogData?.content) return "";
-    return parseContentWithIds(blogData.content);
+    if (!blogData?.content.content) return "";
+    return parseContentWithIds(blogData.content.content);
   }, [blogData]);
 
   useEffect(() => {
@@ -119,8 +119,8 @@ function BlogSinglePages() {
   return (
     <main className="bg-white  text-[#160E38] font-lora relative">
       <SeoHeader
-        title={blogData.seo?.title || blogData.title}
-        description={blogData.seo?.description || blogData.summary}
+        title={blogData.content.seo.title || blogData.content.title}
+        description={blogData.content.seo?.description || blogData.content.summary}
       />
 
       {/* Reading Progress Bar */}
@@ -138,25 +138,25 @@ function BlogSinglePages() {
             className="space-y-6"
           >
             <div className="flex items-center gap-4 text-sm font-bold uppercase tracking-widest text-indigo-600">
-              <span>{blogData.date}</span>
+              <span>{blogData.content.date}</span>
               <span className="w-8 h-[1px] bg-gray-300" />
               <span>5 Min Read</span>
             </div>
 
             <h1 className="text-4xl lg:text-5xl font-extrabold leading-tight">
-              {blogData.title}
+              {blogData.content.title}
             </h1>
 
             <p className="text-lg text-gray-600 leading-relaxed">
-              {blogData.summary}
+              {blogData.content.summary}
             </p>
 
             <div className="flex items-center gap-4 pt-4">
               <div className="h-12 w-12 rounded-full bg-indigo-900 text-white flex items-center justify-center text-lg font-bold">
-                {blogData.author?.charAt(0)}
+                {blogData.content.author?.charAt(0)}
               </div>
               <div>
-                <p className="font-bold">{blogData.author}</p>
+                <p className="font-bold">{blogData.content.author}</p>
                 <p className="text-sm text-gray-500">Author</p>
               </div>
             </div>
@@ -164,8 +164,8 @@ function BlogSinglePages() {
 
          
             <img
-              src={blogData.image}
-              alt={blogData.altimg ? blogData.altimg : blogData.title}
+              src={blogData.content.image}
+              alt={blogData.content.altimg ? blogData.content.altimg : blogData.content.title}
               className="w-full rounded-lg md:rounded-xl shadow-md object-contain"
               loading="lazy"
             />
@@ -214,7 +214,7 @@ function BlogSinglePages() {
 
             {/* TAGS */}
             <div className="mt-16 flex flex-wrap gap-2">
-              {blogData.tags?.map((tag, i) => (
+              {blogData.content.tags?.map((tag, i) => (
                 <span
                   key={i}
                   className="px-4 py-1.5 rounded-lg bg-gray-100 text-gray-600 text-sm font-medium"
@@ -225,11 +225,11 @@ function BlogSinglePages() {
             </div>
 
             {/* FAQ SECTION */}
-            {blogData.blogFAQ?.length > 0 && (
+            {blogData.content.blogFAQ?.length > 0 && (
               <div className="mt-20 pt-10 border-t border-gray-100">
                 <h2 className="text-3xl font-bold mb-8">Frequently Asked Questions</h2>
                 <div className="space-y-4">
-                  {blogData.blogFAQ.map((faq, i) => {
+                  {blogData.content.blogFAQ.map((faq, i) => {
                     const isOpen = activeIndex === i;
                     return (
                       <div

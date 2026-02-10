@@ -1,8 +1,9 @@
 import { motion } from "framer-motion";
 
 
-import { blogListJson } from "../../components/Data/BlogDynamic";
+
 import SeoHeader from "../../components/utils/SeoHeader";
+import { BlogList } from "../../components/Data/blog/BlogList";
 
 
 function BlogLandingPages() {
@@ -68,17 +69,17 @@ function BlogLandingPages() {
           initial="hidden"
           animate="visible"
         >
-          {blogListJson.map((blog) => (
+          {BlogList.map((blog) => (
             <div
-              key={blog.id}
+              key={blog?.content?.id}
             
               className="group bg-white rounded-xl overflow-hidden hover:-translate-y-1 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-200 flex flex-col"
             >
            
               <div className="relative h-56 overflow-hidden">
                 <img 
-                  src={blog.image}
-                  alt={blog.title}
+                  src={blog.content.image}
+                  alt={blog.content.title}
                   className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110"
                   onError={(e) => {
                     e.target.onerror = null;
@@ -91,17 +92,17 @@ function BlogLandingPages() {
               
               <div className="p-8 flex flex-col flex-grow">
                 <div className="flex items-center text-slate-400 text-sm mb-3">
-                   <span>{blog.date || "March 2024"}</span>
+                   <span>{blog.content.date || "March 2024"}</span>
                    <span className="mx-2">•</span>
                    <span>5 min read</span>
                 </div>
                 
                 <h3 className="text-2xl font-bold mb-3 leading-snug text-darkVoilet line-clamp-2  ">
-                  {blog.title}
+                  {blog.content.title}
                 </h3>
                 
                 <p className="text-slate-600 mb-6 line-clamp-3 leading-relaxed">
-                  {blog.summary}
+                  {blog.content.summary}
                 </p>
                 
                 <div className="mt-auto pt-6 border-t border-slate-100">

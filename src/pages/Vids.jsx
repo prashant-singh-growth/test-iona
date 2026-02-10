@@ -1,112 +1,101 @@
-// src/pages/Videos.jsx
 import { useState } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
 import SeoHeader from "../components/utils/SeoHeader";
 
 function Vids() {
   const [selectedVideo, setSelectedVideo] = useState(null);
 
-  // Video data
   const videos = [
     {
       id: 1,
       title: "Do what you love doing! iona.ai chatbot will take care of new hire onboarding",
       summary: "A comprehensive overview of our AI-driven recruitment solution and its benefits.",
       duration: "0:09",
-      thumbnail: "/images/video-1.jpg",
-      videoId: "NO5j7JUhTvk", // Updated YouTube video ID
+      videoId: "NO5j7JUhTvk",
     },
     {
       id: 2,
       title: "iona.ai chatbot proactively engages with new hires",
       summary: "Watch our platform in action as it screens and ranks candidates in real-time.",
       duration: "0:31",
-      thumbnail: "/images/video-2.jpg",
-      videoId: "kR9OEC0SAYA", // Updated YouTube video ID
+      videoId: "kR9OEC0SAYA",
     },
     {
       id: 3,
       title: "Looking for AI chatbot for new hire onboarding?",
       summary: "Expert panel discussion on upcoming trends and innovations in HR technology.",
       duration: "0:09",
-      thumbnail: "/images/video-3.jpg",
-      videoId: "ao82oGSlr-4", // Updated YouTube video ID
+      videoId: "ao82oGSlr-4",
     },
     {
       id: 4,
       title: "Wanna know why I am happy?",
       summary: "Explore the technical architecture behind our AI recruitment platform.",
       duration: "0:18",
-      thumbnail: "/images/video-4.jpg",
-      videoId: "pYQ-tY6vfGs", // New YouTube video ID
+      videoId: "pYQ-tY6vfGs",
     },
     {
       id: 5,
       title: "iona Prime: AI Chabot + integrated Background Verifications",
       summary: "Hear from our enterprise customers about how ionAI has revolutionized their hiring process.",
       duration: "0:19",
-      thumbnail: "/images/video-5.jpg",
-      videoId: "egDPgvLpkPU", // New YouTube video ID
+      videoId: "egDPgvLpkPU",
     },
     {
       id: 6,
       title: "iona.ai is an AI first new hire onboarding service designed for quality hiring at speed and scale",
       summary: "Get an exclusive preview of our upcoming features and enhancements for the year ahead.",
       duration: "3:51",
-      thumbnail: "/images/video-6.jpg",
-      videoId: "V1D6l8KHZDk", // Updated YouTube video ID
+      videoId: "V1D6l8KHZDk",
     }
   ];
 
-  // Animation variants
-  const cardVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
-  };
-
-  const modalVariants = {
-    hidden: { opacity: 0, scale: 0.8 },
-    visible: { opacity: 1, scale: 1, transition: { duration: 0.3 } }
-  };
-
-  // Handle opening a video
-  const openVideo = (id) => {
-    setSelectedVideo(videos.find(video => video.id === id));
-    // Prevent scrolling when modal is open
+  const openVideo = (video) => {
+    if (window.dataLayer) {
+      window.dataLayer.push({
+        event: "video_play",
+        video_title: video.title,
+        video_id: video.videoId,
+      });
+    }
+    setSelectedVideo(video);
     document.body.style.overflow = "hidden";
   };
 
-  // Handle closing a video
   const closeVideo = () => {
     setSelectedVideo(null);
-    // Re-enable scrolling
     document.body.style.overflow = "auto";
   };
 
   return (
-    <div className="bg-background min-h-screen">
+    <div className="bg-[#F9FAFB] min-h-screen font-lora">
       <SeoHeader
-      title={"Videos | Learn How iona.ai Transforms Hiring with AI"}
-      description={"Watch demos, expert talks, and customer success stories. See how iona.ai’s intelligent solutions redefine how businesses hire, onboard, and engage talent."}
-     
+        title={"Videos | Learn How iona.ai Transforms Hiring with AI"}
+        description={"Watch demos, expert talks, and customer success stories. See how iona.ai’s intelligent solutions redefine how businesses hire, onboard, and engage talent."}
       />
-      {/* Hero Section */}
-      <div className="bg-purple-gradient py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+
+      {/* Hero Section with subtle mesh gradient */}
+      <div className="relative bg-darkVoilet py-24 overflow-hidden">
+        <div className="absolute top-0 left-0 w-full h-full opacity-10">
+            <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-white rounded-full blur-[120px]"></div>
+            <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-primary rounded-full blur-[120px]"></div>
+        </div>
+        
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.h1 
-            className="text-4xl md:text-5xl font-bold mb-6 text-white"
-            initial={{ opacity: 0, y: -20 }}
+            className="text-5xl md:text-6xl font-bold mb-6 text-white tracking-tight"
+            initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
           >
             Videos
           </motion.h1>
           <motion.p 
-            className="text-white text-lg max-w-2xl mx-auto"
+            className="text-gray-200 text-xl max-w-2xl mx-auto leading-relaxed"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
           >
             Watch demos, tutorials, and expert discussions about our AI recruiting solutions
           </motion.p>
@@ -114,48 +103,53 @@ function Vids() {
       </div>
 
       {/* Videos Grid */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
           {videos.map((video, index) => (
             <motion.div
               key={video.id}
-              className="bg-white rounded-xl overflow-hidden shadow-custom cursor-pointer transform transition-transform hover:scale-105"
-              onClick={() => openVideo(video.id)}
-              variants={cardVariants}
-              initial="hidden"
-              animate="visible"
+              layoutId={`card-${video.id}`}
+              className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-gray-100"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              whileHover={{ y: -5 }}
+              onClick={() => openVideo(video)}
             >
-              <div className="relative">
+              {/* Thumbnail Container */}
+              <div className="relative overflow-hidden aspect-video">
                 <img 
-                  src={`https://img.youtube.com/vi/${video.videoId}/hqdefault.jpg`}
+                 src={`https://img.youtube.com/vi/${video.videoId}/hqdefault.jpg`}
                   alt={video.title}
-                  className="w-full h-48 object-cover"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   onError={(e) => {
-                    e.target.onerror = null;
-                    e.target.src = `https://placehold.co/600x400/lightgray/darkgray?text=Video+${video.id}`;
+                    e.target.src = `https://img.youtube.com/vi/${video.videoId}/hqdefault.jpg`;
                   }}
                 />
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="bg-primary text-white p-3 rounded-full cursor-pointer hover:bg-opacity-80 transition-all">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors flex items-center justify-center">
+                  <div className="w-16 h-16 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center border border-white/30 transform transition-all duration-300 group-hover:scale-110 group-hover:bg-primary group-hover:border-transparent">
+                    <svg className="w-8 h-8 text-white fill-current" viewBox="0 0 24 24">
+                        <path d="M8 5v14l11-7z" />
                     </svg>
                   </div>
                 </div>
-                <div className="absolute bottom-2 right-2 bg-black bg-opacity-70 text-white text-xs px-2 py-1 rounded">
+                <div className="absolute bottom-3 right-3 bg-black/80 backdrop-blur-sm text-white text-[10px] font-bold px-2 py-1 rounded-md uppercase tracking-wider">
                   {video.duration}
                 </div>
               </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold mb-2 text-primaryText">{video.title}</h3>
-                <p className="text-secondaryText mb-4">{video.summary}</p>
-                <div className="text-primary font-medium flex items-center">
+
+              {/* Content */}
+              <div className="p-8">
+                <h3 className="text-xl font-bold mb-3 text-primaryText leading-snug group-hover:text-primary transition-colors line-clamp-2">
+                  {video.title}
+                </h3>
+                <p className="text-secondaryText text-sm mb-6 line-clamp-3 leading-relaxed">
+                  {video.summary}
+                </p>
+                <div className="flex items-center text-xs font-bold tracking-[0.1em] text-primary group-hover:gap-2 transition-all">
                   WATCH NOW
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
                 </div>
               </div>
@@ -164,60 +158,72 @@ function Vids() {
         </div>
       </div>
 
-      {/* Video Modal */}
-      {selectedVideo && (
-        <div className="fixed inset-0 bg-black bg-opacity-70 z-50 flex items-center justify-center p-4">
-          <motion.div 
-            className="bg-white rounded-xl shadow-lg max-w-5xl w-full overflow-hidden"
-            variants={modalVariants}
-            initial="hidden"
-            animate="visible"
-          >
-            <div className="sticky top-0 bg-white z-10 border-b border-gray-200">
-              <div className="flex justify-between items-center p-6">
-                <h2 className="text-2xl font-bold text-primaryText">{selectedVideo.title}</h2>
-                <button 
-                  onClick={closeVideo}
-                  className="text-secondaryText hover:text-primary p-1"
-                >
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                  </svg>
-                </button>
-              </div>
-            </div>
+      {/* Video Modal with AnimatePresence */}
+      <AnimatePresence>
+        {selectedVideo && (
+          <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 md:p-8">
+            <motion.div 
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              onClick={closeVideo}
+              className="absolute inset-0 bg-black/50 backdrop-blur-sm py-10 overflow-y-auto"
+            />
             
-            <div className="aspect-w-16 aspect-h-9 w-full">
-              <iframe
-                src={`https://www.youtube.com/embed/${selectedVideo.videoId}?autoplay=1&rel=0`}
-                title={selectedVideo.title}
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                className="w-full h-96"
-              ></iframe>
-            </div>
-            
-            <div className="p-6">
-              <div className="flex items-center text-sm text-secondaryText mb-4">
-                <span>{selectedVideo.duration}</span>
+            <motion.div 
+              layoutId={`card-${selectedVideo.id}`}
+              className="bg-white rounded-xl shadow-2xl max-w-3xl w-full overflow-hidden relative z-10"
+              initial={{ scale: 0.9, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.9, opacity: 0 }}
+            >
+              <button 
+                onClick={closeVideo}
+                className="absolute top-4 right-4 z-20 bg-black/60 hover:bg-black/50 p-2 text-white rounded-full transition-colors"
+              >
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+
+              <div className="aspect-video w-full bg-black">
+                <iframe
+                  src={`https://www.youtube.com/embed/${selectedVideo.videoId}?autoplay=1&rel=0&modestbranding=1`}
+                  title={selectedVideo.title}
+                  allow="autoplay; encrypted-media; picture-in-picture"
+                  allowFullScreen
+                  className="w-full h-full"
+                   onEnded={() => closeVideo()}
+                />
               </div>
-              
-              <p className="text-primaryText mb-6">{selectedVideo.summary}</p>
-              
-              <div className="mt-4 border-t border-gray-200 pt-6">
-                <h3 className="text-xl font-bold mb-4">Want to see our platform in action?</h3>
-                <div className="flex space-x-4">
-                  <Link to="/schedule-demo" className="bg-purple-gradient text-white px-6 py-2 rounded-lg">Schedule a Demo</Link>
-                  <Link to="/contact" className="border border-primary text-primary px-6 py-2 rounded-lg">Contact Us</Link>
+
+              <div className="p-8 md:p-10">
+                {/* <div className="flex items-center gap-3 mb-4">
+                    <span className="bg-primary/10 text-primary text-xs font-bold px-3 py-1 rounded-full uppercase tracking-widest">
+                        {selectedVideo.duration}
+                    </span>
+                </div> */}
+                <h2 className="text-2xl font-bold text-primaryText mb-4 leading-tight">{selectedVideo.title}</h2>
+                {/* <p className="text-secondaryText text-lg mb-8 max-w-3xl leading-relaxed">{selectedVideo.summary}</p> */}
+                
+                <div className="border-t border-gray-100 pt-8">
+                  <h3 className="text-lg font-bold mb-5">Want to see our platform in action?</h3>
+                  <div className="flex flex-wrap gap-4">
+                    <Link to="/schedule-demo" className="bg-purple-gradient text-white px-8 py-3 rounded-xl font-bold hover:shadow-lg transition-all active:scale-95">
+                        Schedule a Demo
+                    </Link>
+                    <Link to="/contact" className="border-2 border-primary/20 text-primary hover:border-primary px-8 py-3 rounded-xl font-bold transition-all">
+                        Contact Us
+                    </Link>
+                  </div>
                 </div>
               </div>
-            </div>
-          </motion.div>
-        </div>
-      )}
+            </motion.div>
+          </div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }
 
 export default Vids;
-  

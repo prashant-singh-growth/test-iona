@@ -519,8 +519,8 @@ export const AlternativePagesData = {
   "rapidhr-alternative": {
     slug: "rapidhr-alternative",
     seo: {
-      title: "",
-      description: "",
+      title: "RapidHR Alternative for Teams Hiring at Scale | iona.ai",
+      description: "Looking for a RapidHR alternative? iona.ai automates high-volume hiring with Agentic AI, delivering faster onboarding, guaranteed compliance, and zero HR overhead.",
     },
     cta: {
       title: "Looking for a Better Alternative to RapidHR",
@@ -691,8 +691,8 @@ export const AlternativePagesData = {
   "keka-alternative": {
     slug: "keka-alternative",
     seo: {
-      title: "",
-      description: "",
+      title: "Keka Alternative for Enterprise Hiring Automation | iona.ai",
+      description: "Need more than basic HR tools? iona.ai is a powerful Keka alternative that focuses on recruitment automation, candidate experience, and operational efficiency.",
     },
     cta: {
       title: "Looking for a Better Alternative to Keka",
@@ -862,8 +862,8 @@ export const AlternativePagesData = {
   "greythr-alternative": {
     slug: "greythr-alternative",
     seo: {
-      title: "",
-      description: "",
+      title: "A Better greytHR Alternative for High-Volume Hiring | iona.ai",
+      description: "Looking for a better greytHR alternative? iona.ai helps organisations manage high-volume hiring with faster onboarding, built-in compliance, and minimal HR effort.",
     },
      cta: {
       title: "Looking for a Better Alternative to greytHR",
@@ -1024,8 +1024,8 @@ export const AlternativePagesData = {
   "zinghr-alternative": {
     slug: "zinghr-alternative",
     seo: {
-      title: "",
-      description: "",
+      title: "ZingHR Alternative That Simplifies Hiring Workflows | iona.ai",
+      description: "Need a ZingHR alternative for hiring at scale? iona.ai shifts focus from HR administration to faster onboarding and compliant recruitment.",
     },
      cta: {
       title: "Looking for a Better Alternative to ZingHR",
