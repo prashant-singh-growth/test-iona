@@ -93,6 +93,30 @@ const Contact = () => {
       description={"Get in touch with the iona.ai team to explore solutions, partnerships, or demos. Together, let’s make hiring more purposeful, inclusive, and intelligent."}
      
       />
+        <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org/",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.iona.ai/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Product",
+          "item": "https://www.iona.ai/contact"
+        }
+      ]
+    })
+  }}
+  async
+/>
       {/* Hero Section */}
       <div className="bg-lightGray py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

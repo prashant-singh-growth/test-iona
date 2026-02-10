@@ -74,7 +74,30 @@ function Vids() {
         title={"Videos | Learn How iona.ai Transforms Hiring with AI"}
         description={"Watch demos, expert talks, and customer success stories. See how iona.ai’s intelligent solutions redefine how businesses hire, onboard, and engage talent."}
       />
-
+  <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org/",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.iona.ai/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Product",
+          "item": "https://www.iona.ai/videos"
+        }
+      ]
+    })
+  }}
+  async
+/>
       {/* Hero Section with subtle mesh gradient */}
       <div className="relative bg-darkVoilet py-24 overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full opacity-10">

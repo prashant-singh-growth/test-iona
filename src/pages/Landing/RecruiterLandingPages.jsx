@@ -16,6 +16,30 @@ function RecruiterLandingPages() {
       title={"Agentic AI Recruiter’s Sheet | Smarter Hiring with iona.ai"}
       description={"The Recruiter’s Sheet by iona.ai uses agentic AI to streamline hiring workflows, manage candidates efficiently, and accelerate recruitment decisions."}
       />
+        <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org/",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.iona.ai/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Product",
+          "item": "https://www.iona.ai/agentic-ai-recruiters-sheet"
+        }
+      ]
+    })
+  }}
+  async
+/>
       <LPHeader ctaText={"Get Started its Free"} ctaLink="/signup"/>
     <RecruiterBanner/>
         <ClientBadgeSection/>

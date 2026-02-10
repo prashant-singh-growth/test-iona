@@ -26,7 +26,30 @@ function BlogLandingPages() {
         title={"iona.ai Blog | Insights on AI, Hiring & Inclusion"}
         description={"Read expert perspectives on AI, hiring innovation, and workplace inclusion."}
       />
-
+  <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org/",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.iona.ai/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Product",
+          "item": "https://www.iona.ai/blog"
+        }
+      ]
+    })
+  }}
+  async
+/>
 
       <div className="relative overflow-hidden bg-darkVoilet py-24 mb-12">
         <div className="absolute inset-0 opacity-20">
