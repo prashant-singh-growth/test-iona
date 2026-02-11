@@ -44,7 +44,58 @@ const HomePage = memo(() => {
  </Helmet>
    
 
-
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://www.iona.ai/#organization",
+  "name": "iona.ai",
+  "url": "https://www.iona.ai/",
+  "image": "https://www.iona.ai/assets/pages/homepage/home-banner.webp",
+  "telephone": "+91-99990-92887",
+  "email": "amit@iona.ai",
+  "priceRange": "₹₹₹",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Amazona 36, Top Floor, Eldeco Green Meadows, Sector PI",
+    "addressLocality": "Greater Noida",
+    "addressRegion": "Uttar Pradesh",
+    "postalCode": "201306",
+    "addressCountry": "IN"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 28.4744,
+    "longitude": 77.5030
+  },
+  "areaServed": {
+    "@type": "Country",
+    "name": "IN"
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday"
+    ],
+    "opens": "09:00",
+    "closes": "19:00"
+  },
+  "sameAs": [
+    "https://www.facebook.com/ionaai/",
+    "https://www.linkedin.com/company/iona-ai",
+    "https://www.youtube.com/@ionaai-k5v"
+  ]
+}
+)
+  }}
+  async
+/>
 
 
    
