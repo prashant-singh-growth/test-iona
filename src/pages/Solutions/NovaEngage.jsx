@@ -75,23 +75,23 @@ const NovaEngage = () => {
   type="application/ld+json"
   dangerouslySetInnerHTML={{
     __html: JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      "name": "NovaEngage | Empower Employee Engagement with iona.ai",
-      "url": "https://www.iona.ai/solutions/novaengage",
-      "description": "Enhance culture and retention with NovaEngage. Harness AI insights to strengthen communication, motivation, and inclusion across your organization.",
-      "applicationCategory": "HumanResourcesApplication",
-      "operatingSystem": "Web",
-      "publisher": {
-        "@type": "Organization",
-        "name": "iona.ai",
-        "url": "https://www.iona.ai/"
-      },
-      "offers": {
-        "@type": "Offer",
-        "priceCurrency": "INR",
-        "url": "https://www.iona.ai/solutions/novaengage"
-      }
+    
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "NovaEngage | Empower Employee Engagement with iona.ai",
+  "url": "https://www.iona.ai/solutions/novaengage",
+  "description": "Enhance culture and retention with NovaEngage. Harness AI insights to strengthen communication, motivation, and inclusion across your organization.",
+  "applicationCategory": "HumanResourcesApplication",
+  "operatingSystem": "Web",
+  "publisher": {
+    "@id": "https://www.iona.ai/#organization"
+  },
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "INR",
+    "url": "https://www.iona.ai/solutions/novaengage"
+  }
+
     })
   }}
   async

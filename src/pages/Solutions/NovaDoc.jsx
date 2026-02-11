@@ -75,24 +75,22 @@ const NovaDoc = () => {
   type="application/ld+json"
   dangerouslySetInnerHTML={{
     __html: JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      "name": "NovaDoc | AI-Powered Onboarding Documentation at Scale",
-      "url": "https://www.iona.ai/solutions/novadoc",
-      "description": "Accelerate high-volume onboarding with NovaDoc. AI-powered, mobile-first documentation that ensures accuracy, compliance, and zero paperwork delays.",
-      "applicationCategory": "DocumentManagementSystem",
-      "operatingSystem": "Web",
-      "publisher": {
-        "@type": "Organization",
-        "name": "iona.ai",
-        "url": "https://www.iona.ai/"
-      },
-      "offers": {
-        "@type": "Offer",
-        "priceCurrency": "INR",
-        "url": "https://www.iona.ai/solutions/novadoc"
-      }
-    })
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "NovaDoc | AI-Powered Onboarding Documentation at Scale",
+  "url": "https://www.iona.ai/solutions/novadoc",
+  "description": "Accelerate high-volume onboarding with NovaDoc. AI-powered, mobile-first documentation that ensures accuracy, compliance, and zero paperwork delays.",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Web",
+  "publisher": {
+    "@id": "https://www.iona.ai/#organization"
+  },
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "INR",
+    "url": "https://www.iona.ai/solutions/novadoc"
+  }
+})
   }}
   async
 />

@@ -101,24 +101,23 @@ const NovaCount = () => {
   async
   dangerouslySetInnerHTML={{
     __html: JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      "name": "NovaCount | Smart Headcount Planning by iona.ai",
-      "url": "https://www.iona.ai/solutions/novacount",
-      "description": "Track, analyze, and optimize workforce and headcount planning with NovaCount. Empower HR teams with data-driven insights for transparent, smarter decisions.",
-      "applicationCategory": "BusinessApplication",
-      "operatingSystem": "Web",
-      "publisher": {
-        "@type": "Organization",
-        "name": "iona.ai",
-        "url": "https://www.iona.ai/"
-      },
-      "offers": {
-        "@type": "Offer",
-        "priceCurrency": "INR",
-        "url": "https://www.iona.ai/solutions/novacount"
-      }
-    })
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "NovaCount | Smart Headcount Planning by iona.ai",
+  "url": "https://www.iona.ai/solutions/novacount",
+  "description": "Track, analyze, and optimize workforce and headcount planning with NovaCount. Empower HR teams with data-driven insights for transparent, smarter decisions.",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Web",
+  "publisher": {
+    "@id": "https://www.iona.ai/#organization"
+  },
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "INR",
+    "url": "https://www.iona.ai/solutions/novacount"
+  }
+}
+)
   }}
 />
 

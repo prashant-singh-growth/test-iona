@@ -110,14 +110,14 @@ Speed up the hiring process, reducing time-to-hire.  </li>
 
 <p>While automation presents clear benefits for HR departments, the real challenge lies in choosing the right software solution. Many companies fail to realize that intelligent automation tools are not one-size-fits-all. Using the wrong software or relying on outdated systems can result in fragmented processes and wasted resources.</p>
 <p>To truly benefit from intelligent automation, you need a comprehensive hiring automation software that integrates with your existing systems and addresses your specific HR needs. By leveraging the right tool, you can ensure smooth, seamless automation that enhances efficiency and drives business success.</p>
-<p>A powerful <a href="https://www.iona.ai/"><strong>hiring automation software</strong></a> like <strong>Iona.ai</strong>  can automate a wide range of HR functions, reducing operational costs, improving accuracy, and ensuring compliance. Without the right software, HR departments may miss out on the full potential of automation.</p>
-<h2 id="-introducing-iona-ai-the-best-agentic-ai-recruiter-for-hr-automation-needs-"><strong>Introducing Iona.ai: The Best Agentic AI Recruiter for HR Automation Needs</strong></h2>
-<img alt="Homepage of Iona.ai, an Agentic AI Recruiter with 90% faster onboarding and 100% compliance"  src="/assets/pages/blog/2026/fab/1.webp"  loading="lazy" />
+<p>A powerful <a href="https://www.iona.ai/"><strong>hiring automation software</strong></a> like <strong>iona.ai</strong>  can automate a wide range of HR functions, reducing operational costs, improving accuracy, and ensuring compliance. Without the right software, HR departments may miss out on the full potential of automation.</p>
+<h2 id="-introducing-iona-ai-the-best-agentic-ai-recruiter-for-hr-automation-needs-"><strong>Introducing iona.ai: The Best Agentic AI Recruiter for HR Automation Needs</strong></h2>
+<img alt="Homepage of iona.ai, an Agentic AI Recruiter with 90% faster onboarding and 100% compliance"  src="/assets/pages/blog/2026/fab/1.webp"  loading="lazy" />
 
 <p>As businesses grow, the challenges of recruiting and managing talent at scale become more complex. Legacy hiring processes are often slow and inefficient, creating bottlenecks that hinder growth and drain valuable resources. <strong>iona.ai</strong> is here to change that. Leveraging <strong>intelligent automation</strong>, iona.ai transforms your hiring process, making it faster, more efficient, and error-free.</p>
-<p>Iona.ai combines <strong>Agentic AI</strong> with human expertise to deliver a fully autonomous hiring journey. With Iona.ai, businesses can onboard new hires <strong>90%</strong> faster while ensuring compliance and accuracy—without adding to operational overhead. Gone are the days of juggling multiple tools and dealing with high-volume recruitment inefficiencies.</p>
-<p><strong>Iona.ai’s suite of automation solutions</strong> covers every stage of the hiring process, from recruitment to employee engagement, ensuring a seamless, compliant, and optimized journey for both HR teams and candidates.</p>
-<h3 id="-iona-ai-s-powerful-hiring-solutions-for-every-need-"><strong>Iona.ai’s Powerful Hiring Solutions for Every Need:</strong></h3>
+<p>iona.ai combines <strong>Agentic AI</strong> with human expertise to deliver a fully autonomous hiring journey. With iona.ai, businesses can onboard new hires <strong>90%</strong> faster while ensuring compliance and accuracy—without adding to operational overhead. Gone are the days of juggling multiple tools and dealing with high-volume recruitment inefficiencies.</p>
+<p><strong>iona.ai’s suite of automation solutions</strong> covers every stage of the hiring process, from recruitment to employee engagement, ensuring a seamless, compliant, and optimized journey for both HR teams and candidates.</p>
+<h3 id="-iona-ai-s-powerful-hiring-solutions-for-every-need-"><strong>iona.ai’s Powerful Hiring Solutions for Every Need:</strong></h3>
 <ul>
 <li><p><strong>NovaCount – Headcount Planning and Monitoring:</strong><br>Plan and track your workforce effortlessly, gaining real-time visibility into headcount, budgets, and forecasts. With NovaCount, you can ensure your hiring process is aligned with company goals, staying on top of every recruitment need.</p>
 </li>
@@ -135,10 +135,10 @@ Speed up the hiring process, reducing time-to-hire.  </li>
 </li>
 <li><p><strong>NovaVerify – Background Verifications of New Hires:</strong><br>Speed up background checks with NovaVerify. By automating the verification process, this tool helps HR departments maintain a smooth hiring process without delays, ensuring that all new hires are properly vetted.</p>
 </li>
-<li><p><strong>NovaConnect – Premium WhatsApp-Based Support:</strong><br>Iona&#39;s <strong>NovaConnect</strong> provides real-time, premium support via WhatsApp, offering quick answers to candidate questions and resolving issues promptly to keep the hiring process moving smoothly.</p>
+<li><p><strong>NovaConnect – Premium WhatsApp-Based Support:</strong><br>iona&#39;s <strong>NovaConnect</strong> provides real-time, premium support via WhatsApp, offering quick answers to candidate questions and resolving issues promptly to keep the hiring process moving smoothly.</p>
 </li>
 </ul>
-<h3 id="-real-examples-of-iona-s-impact-in-hr-automation-"><strong>Real Examples of Iona&#39;s Impact in HR Automation</strong></h3>
+<h3 id="-real-examples-of-iona-s-impact-in-hr-automation-"><strong>Real Examples of iona&#39;s Impact in HR Automation</strong></h3>
 <ol class=" list-decimal pl-5 gap-5 mb-5 font-medium flex flex-col ">
 <li><strong>Aditya Birla Group</strong> enhanced their recruitment and onboarding process by automating key HR functions, resulting in reduced time-to-hire and smoother employee integration. <a href="https://www.iona.ai/case-studies/aditya-birla">Read the full case study here</a>.  </li>
 <li><strong>Metropolis Healthcare</strong> improved compliance management and employee engagement, leading to better retention and overall satisfaction by automating HR tasks. <a href="https://www.iona.ai/case-studies/metropolis-healthcare">Read the full case study here</a>.  </li>
@@ -146,7 +146,7 @@ Speed up the hiring process, reducing time-to-hire.  </li>
 </ol>
 <h2 id="-conclusion-">Conclusion</h2>
 <p>As organizations look to stay competitive in 2026, adopting <strong>intelligent automation</strong> in HR has become an essential strategy. From recruiting and onboarding to performance management and compliance, automation is helping businesses streamline their processes, reduce errors, and create a more efficient HR environment.</p>
-<p>While many automation tools can help with specific tasks, <strong>Iona.ai</strong> offers a comprehensive, AI-powered solution that unifies all aspects of HR automation. By automating the entire hiring lifecycle and providing real-time insights, iona.ai  ensures that HR teams can focus on what truly matters—employee experience and strategic growth.</p>
+<p>While many automation tools can help with specific tasks, <strong>iona.ai</strong> offers a comprehensive, AI-powered solution that unifies all aspects of HR automation. By automating the entire hiring lifecycle and providing real-time insights, iona.ai  ensures that HR teams can focus on what truly matters—employee experience and strategic growth.</p>
 <p>Don&#39;t let outdated processes hold your HR department back.</p>
 
       `,
@@ -182,9 +182,9 @@ Speed up the hiring process, reducing time-to-hire.  </li>
       "Yes, intelligent automation helps HR teams stay compliant by automating tasks like document management, policy updates, and employee record tracking. It ensures that all HR processes adhere to relevant laws and regulations, minimizing the risk of human error.",
   },
   {
-    question: "How does Iona.ai enhance HR automation?",
+    question: "How does iona.ai enhance HR automation?",
     answer:
-      "Iona.ai offers a fully integrated suite of intelligent automation tools that streamline the entire hiring lifecycle. It combines AI with human expertise, automating everything from recruitment and onboarding to performance management, ensuring faster and more accurate HR processes.",
+      "iona.ai offers a fully integrated suite of intelligent automation tools that streamline the entire hiring lifecycle. It combines AI with human expertise, automating everything from recruitment and onboarding to performance management, ensuring faster and more accurate HR processes.",
   },
 ]
 

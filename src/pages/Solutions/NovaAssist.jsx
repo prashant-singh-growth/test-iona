@@ -75,24 +75,23 @@ const NovaAssist = () => {
   type="application/ld+json"
   dangerouslySetInnerHTML={{
     __html: JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      "name": "NovaAssist | AI-Powered Recruitment Assistant by iona.ai",
-      "url": "https://www.iona.ai/solutions/novaassist",
-      "description": "Simplify hiring with NovaAssist—your intelligent virtual AI recruiter. Automate tasks, enhance candidate engagement, and focus on meaningful human connections.",
-      "applicationCategory": "HumanResourcesApplication",
-      "operatingSystem": "Web",
-      "publisher": {
-        "@type": "Organization",
-        "name": "iona.ai",
-        "url": "https://www.iona.ai/"
-      },
-      "offers": {
-        "@type": "Offer",
-        "priceCurrency": "INR",
-        "url": "https://www.iona.ai/solutions/novaassist"
-      }
-    })
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "NovaAssist | AI-Powered Recruitment Assistant by iona.ai",
+  "url": "https://www.iona.ai/solutions/novaassist",
+  "description": "Simplify hiring with NovaAssist—your intelligent virtual AI recruiter. Automate tasks, enhance candidate engagement, and focus on meaningful human connections.",
+  "applicationCategory": "HumanResourcesApplication",
+  "operatingSystem": "Web",
+  "publisher": {
+    "@id": "https://www.iona.ai/#organization"
+  },
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "INR",
+    "url": "https://www.iona.ai/solutions/novaassist"
+  }
+}
+)
   }}
   async
 />

@@ -75,24 +75,23 @@ const NovaVerify = () => {
   type="application/ld+json"
   dangerouslySetInnerHTML={{
     __html: JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      "name": "NovaVerify | Smart Candidate Verification by iona.ai",
-      "url": "https://www.iona.ai/solutions/novaverify",
-      "description": "Ensure authenticity and trust in hiring with NovaVerify. Leverage AI-driven verification to validate credentials, background, and candidate integrity.",
-      "applicationCategory": "HumanResourcesApplication",
-      "operatingSystem": "Web",
-      "publisher": {
-        "@type": "Organization",
-        "name": "iona.ai",
-        "url": "https://www.iona.ai/"
-      },
-      "offers": {
-        "@type": "Offer",
-        "priceCurrency": "INR",
-        "url": "https://www.iona.ai/solutions/novaverify"
-      }
-    })
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "NovaVerify | Smart Candidate Verification by iona.ai",
+  "url": "https://www.iona.ai/solutions/novaverify",
+  "description": "Ensure authenticity and trust in hiring with NovaVerify. Leverage AI-driven verification to validate credentials, background, and candidate integrity.",
+  "applicationCategory": "HumanResourcesApplication",
+  "operatingSystem": "Web",
+  "publisher": {
+    "@id": "https://www.iona.ai/#organization"
+  },
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "INR",
+    "url": "https://www.iona.ai/solutions/novaverify"
+  }
+}
+)
   }}
   async
 />

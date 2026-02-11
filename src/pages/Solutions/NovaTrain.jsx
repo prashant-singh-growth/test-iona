@@ -74,24 +74,23 @@ const NovaTrain = () => {
   type="application/ld+json"
   dangerouslySetInnerHTML={{
     __html: JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      "name": "NovaTrain | Pre-Day-One Training & Compliance by iona.ai",
-      "url": "https://www.iona.ai/solutions/novatrain",
-      "description": "Transform pre-day-one learning with NovaTrain. AI-driven, SCORM-compliant modules, chatbot guidance, and audit-ready tracking for high-volume hiring compliance.",
-      "applicationCategory": "EducationApplication",
-      "operatingSystem": "Web",
-      "publisher": {
-        "@type": "Organization",
-        "name": "iona.ai",
-        "url": "https://www.iona.ai/"
-      },
-      "offers": {
-        "@type": "Offer",
-        "priceCurrency": "INR",
-        "url": "https://www.iona.ai/solutions/novatrain"
-      }
-    })
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "NovaTrain | Pre-Day-One Training & Compliance by iona.ai",
+  "url": "https://www.iona.ai/solutions/novatrain",
+  "description": "Transform pre-day-one learning with NovaTrain. AI-driven, SCORM-compliant modules, chatbot guidance, and audit-ready tracking for high-volume hiring compliance.",
+  "applicationCategory": "EducationApplication",
+  "operatingSystem": "Web",
+  "publisher": {
+    "@id": "https://www.iona.ai/#organization"
+  },
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "INR",
+    "url": "https://www.iona.ai/solutions/novatrain"
+  }
+}
+)
   }}
   async
 />

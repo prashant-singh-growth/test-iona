@@ -75,24 +75,23 @@ const NovaStart = () => {
   type="application/ld+json"
   dangerouslySetInnerHTML={{
     __html: JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      "name": "NovaStart | AI Offer Management for High-Volume Hiring",
-      "url": "https://www.iona.ai/solutions/novastart",
-      "description": "Automate high-volume offer management with NovaStart. An intelligent offer workflow software that accelerates approvals, ensures compliance, and secures top talent faster.",
-      "applicationCategory": "HumanResourcesApplication",
-      "operatingSystem": "Web",
-      "publisher": {
-        "@type": "Organization",
-        "name": "iona.ai",
-        "url": "https://www.iona.ai/"
-      },
-      "offers": {
-        "@type": "Offer",
-        "priceCurrency": "INR",
-        "url": "https://www.iona.ai/solutions/novastart"
-      }
-    })
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "NovaStart | AI Offer Management for High-Volume Hiring",
+  "url": "https://www.iona.ai/solutions/novastart",
+  "description": "Automate high-volume offer management with NovaStart. An intelligent offer workflow software that accelerates approvals, ensures compliance, and secures top talent faster.",
+  "applicationCategory": "HumanResourcesApplication",
+  "operatingSystem": "Web",
+  "publisher": {
+    "@id": "https://www.iona.ai/#organization"
+  },
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "INR",
+    "url": "https://www.iona.ai/solutions/novastart"
+  }
+}
+)
   }}
   async
 />

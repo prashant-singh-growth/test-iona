@@ -75,24 +75,23 @@ const NovaTrack = () => {
   type="application/ld+json"
   dangerouslySetInnerHTML={{
     __html: JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      "name": "NovaTrack | Candidate Tracking System for Hiring Teams",
-      "url": "https://www.iona.ai/solutions/novatrack",
-      "description": "Centralize candidate status with NovaTrack. Track applicants across stages and channels, remove spreadsheet chaos, and make faster, data-driven hiring decisions.",
-      "applicationCategory": "ApplicantTrackingSystem",
-      "operatingSystem": "Web",
-      "publisher": {
-        "@type": "Organization",
-        "name": "iona.ai",
-        "url": "https://www.iona.ai/"
-      },
-      "offers": {
-        "@type": "Offer",
-        "priceCurrency": "INR",
-        "url": "https://www.iona.ai/solutions/novatrack"
-      }
-    })
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "NovaTrack | Candidate Tracking System for Hiring Teams",
+  "url": "https://www.iona.ai/solutions/novatrack",
+  "description": "Centralize candidate status with NovaTrack. Track applicants across stages and channels, remove spreadsheet chaos, and make faster, data-driven hiring decisions.",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Web",
+  "publisher": {
+    "@id": "https://www.iona.ai/#organization"
+  },
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "INR",
+    "url": "https://www.iona.ai/solutions/novatrack"
+  }
+}
+)
   }}
   async
 />

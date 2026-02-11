@@ -75,24 +75,22 @@ const NovaConnect = () => {
   type="application/ld+json"
   dangerouslySetInnerHTML={{
     __html: JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      "name": "NovaConnect | AI-Powered HR Support & Automation by iona.ai",
-      "url": "https://www.iona.ai/solutions/novaconnect",
-      "description": "Discover NovaConnect by iona.ai — an AI-driven solution that simplifies, humanizes, and accelerates your talent engagement journey.",
-      "applicationCategory": "IntegrationApplication",
-      "operatingSystem": "Web",
-      "publisher": {
-        "@type": "Organization",
-        "name": "iona.ai",
-        "url": "https://www.iona.ai/"
-      },
-      "offers": {
-        "@type": "Offer",
-        "priceCurrency": "INR",
-        "url": "https://www.iona.ai/solutions/novaconnect"
-      }
-    })
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "NovaConnect | AI-Powered HR Support & Automation by iona.ai",
+  "url": "https://www.iona.ai/solutions/novaconnect",
+  "description": "Discover NovaConnect by iona.ai — an AI-driven solution that simplifies, humanizes, and accelerates your talent engagement journey.",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Web",
+  "publisher": {
+    "@id": "https://www.iona.ai/#organization"
+  },
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "INR",
+    "url": "https://www.iona.ai/solutions/novaconnect"
+  }
+})
   }}
   async
 />
