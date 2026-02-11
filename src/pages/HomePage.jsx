@@ -55,7 +55,7 @@ const HomePage = memo(() => {
   "url": "https://www.iona.ai/",
   "image": "https://www.iona.ai/assets/pages/homepage/home-banner.webp",
   "telephone": "+91-99990-92887",
-  "email": "amit@iona.ai",
+  "email": "sales@iona.ai",
   "priceRange": "₹₹₹",
   "address": {
     "@type": "PostalAddress",
