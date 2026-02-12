@@ -152,12 +152,10 @@ function BlogSinglePages() {
             </p>
 
             <div className="flex items-center gap-4 pt-4">
-              <div className="h-12 w-12 rounded-full bg-indigo-900 text-white flex items-center justify-center text-lg font-bold">
-                {blogData.content.author?.charAt(0)}
-              </div>
+              <img src={blogData.author.AuthorImage} alt={blogData.author.authorName} className="size-14 rounded-full" />
               <div>
-                <p className="font-bold">{blogData.content.author}</p>
-                <p className="text-sm text-gray-500">Author</p>
+                <a href={`/author/${blogData.author.url}`} className="font-bold underline">{blogData.author.authorName}</a>
+                <p className="text-sm text-gray-500">{blogData.author.authorPosition}</p>
               </div>
             </div>
           </motion.div>

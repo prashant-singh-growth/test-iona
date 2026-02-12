@@ -10,7 +10,7 @@ export const Blog5 = {
   summary:
     "Explore 7 intelligent automation use cases in HR and how iona.ai  is transforming HR operations. From recruitment to onboarding, discover how automation improves efficiency and employee satisfaction with real-world case studies.",
   author: "Michael Chen",
-  date: "March 10, 2023",
+  date: "February 12, 2026",
   image: `/assets/pages/blog/2026/fab/2.webp`,
   altimg:"HR Use Cases for Intelligent Automation",
   tags: ["HR Analytics", "Data-Driven HR", "People Analytics"],

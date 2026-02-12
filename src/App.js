@@ -63,6 +63,9 @@ const SignUpPages = lazy(
 const LoginPages = lazy(
   () => import("./pages/Login")
 );
+const AuthorSinglePages = lazy(
+  () => import("./pages/Blog/Author/AuthorSinglePage")
+);
 const BlogLandingPage = lazy(()=> import("./pages/Blog/BlogLandingPages"))
 const BlogSinglePage = lazy(()=> import("./pages/Blog/BlogSinglePages"))
 // Scroll to top on route change
@@ -254,6 +257,14 @@ const AnimatedRoutes = () => {
           element={
             <PageTransition>
               <Vids />
+            </PageTransition>
+          }
+        />
+        <Route
+          path="/author/:author"
+          element={
+            <PageTransition>
+              <AuthorSinglePages />
             </PageTransition>
           }
         />

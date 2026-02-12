@@ -11,7 +11,7 @@ export const Blog6 = {
     summary:
       `Most HR managers are trapped in the "Digital Paradox." They have digital tools, but they are still manually chasing documents, matching budgets, and reacting to turnover after it happens.`,
     author: "Sarah Williams",
-    date: "April 3, 2023",
+    date: "February 11, 2026",
     image: `/assets/pages/blog/2026/fab/4.webp`,
         altimg: "AI-Powered Workforce Planning Strategies for 2026: Scale Your Headcount",
     tags: ["Candidate Experience", "Recruitment", "HR Tips"],
