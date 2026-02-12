@@ -39,7 +39,8 @@ const AuthorSinglePage = () => {
               <img
                 src={AuthorDetails.AuthorImage}
                 alt={AuthorDetails.authorName}
-                className="relative w-64 h-64 object-cover rounded-3xl shadow-2xl"
+                className="relative w-[300px] h-[300px] object-cover rounded-3xl shadow-2xl"
+                loading="lazy"
               />
             </div>
           </div>
@@ -92,6 +93,7 @@ const AuthorSinglePage = () => {
                     src={post.content.image || "/placeholder.jpg"}
                     alt={post.content.title}
                     className="w-full h-52 object-cover transition-transform duration-700 group-hover:scale-110"
+                    loading="lazy"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"></div>
                 </div>

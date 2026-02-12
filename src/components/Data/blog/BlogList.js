@@ -4,14 +4,10 @@ import { Blog3 } from "./high-volume-hiring-challenges";
 import { Blog5 } from "./intelligent-automation-hr-usecases";
 import { Blog1 } from "./prospect-to-productive-journey";
 import { Blog2 } from "./virtual-recruiting-transforming-talent-acquisition";
-import { Blog6 } from "./workforce-planning-strategies";
+
 
 export const BlogList = [
-     {
-        url:"workforce-planning-strategies",
-        content:Blog6,
-        author:AuthorList[1]
-    },
+    
      {
         url:"intelligent-automation-hr-usecases",
         content:Blog5,
