@@ -51,7 +51,21 @@ const AuthorSinglePage = () => {
     />
 
     {/* Image */}
-    <motion.img
+    {AuthorDetails.url === "iona-ai" ? (<motion.img
+      src={AuthorDetails.AuthorImage}
+      alt={AuthorDetails.authorName}
+      loading="lazy"
+      variants={{
+        rest: { scale: 1, rotate: 0, y: 0 },
+        hover: { scale: 1.05, rotate: -2, y: -8 },
+      }}
+      transition={{
+        type: "spring",
+        stiffness: 200,
+        damping: 15,
+      }}
+      className="relative bg-white p-8 sm:p-10 py-16 sm:py-20 w-full max-w-[400px] object-cover rounded-3xl shadow-2xl"
+    />):(<motion.img
       src={AuthorDetails.AuthorImage}
       alt={AuthorDetails.authorName}
       loading="lazy"
@@ -65,7 +79,7 @@ const AuthorSinglePage = () => {
         damping: 15,
       }}
       className="relative w-full max-w-[400px] object-cover rounded-3xl shadow-2xl"
-    />
+    />)}
   </motion.div>
 </div>
 

@@ -14,6 +14,7 @@ export const AuthorList = [
         AuthorImage:"/assets/pages/blog/author/Abhijeet.png",
     },
     {
+        url:"iona-ai",
         authorName:"iona.ai",
         authorPosition:"Admin",
         authorDescription:"iona.ai is a leading AI recruitment platform helping enterprises automate high volume hiring, onboarding, and compliance with intelligent workflows, faster decisions, and scalable talent operations.",
