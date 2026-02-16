@@ -13,6 +13,12 @@ export const AuthorList = [
         authorDescription:"As a visionary and a leader with two decades of experience, Abhijeet orchestrates Agentic AI to transform fragmented enterprise hiring into a unified, audit-ready powerhouse that delivers 90% faster onboarding and guaranteed ROI.",
         AuthorImage:"/assets/pages/blog/author/Abhijeet.png",
     },
+    {
+        authorName:"iona.ai",
+        authorPosition:"Admin",
+        authorDescription:"iona.ai is a leading AI recruitment platform helping enterprises automate high volume hiring, onboarding, and compliance with intelligent workflows, faster decisions, and scalable talent operations.",
+        AuthorImage:"/assets/pages/Alternative/ionaai.png",
+    },
     // {
     //     authorName:"",
     //     authorPosition:"",

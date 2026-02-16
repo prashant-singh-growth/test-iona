@@ -12,7 +12,7 @@ export const BlogList = [
      {
         url:"bulk-headcount-planning-process",
         content:Blog6,
-        author:AuthorList[0]
+        author:AuthorList[2]
     },
      {
         url:"intelligent-automation-hr-usecases",

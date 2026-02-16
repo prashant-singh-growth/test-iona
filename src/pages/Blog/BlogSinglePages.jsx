@@ -152,9 +152,9 @@ function BlogSinglePages() {
             </p>
 
             <div className="flex items-center gap-4 pt-4">
-              <img src={blogData.author.AuthorImage} alt={blogData.author.authorName} className="size-14 rounded-full" />
+              <img src={blogData.author.AuthorImage} alt={blogData.author.authorName} className="size-14 object-contain rounded-full" />
               <div>
-                <a href={`/author/${blogData.author.url}`} className="font-bold underline">{blogData.author.authorName}</a>
+                {blogData.author.url ? (<a href={`/author/${blogData.author.url}`} className="font-bold underline">{blogData.author.authorName}</a>):(<p  className="font-bold ">{blogData.author.authorName}</p>)}
                 <p className="text-sm text-gray-500">{blogData.author.authorPosition}</p>
               </div>
             </div>
