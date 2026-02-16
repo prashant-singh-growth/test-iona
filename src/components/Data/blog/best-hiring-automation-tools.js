@@ -1,5 +1,9 @@
 export const Blog4 =   {
     url: "best-hiring-automation-tools",
+     cta:{
+title:"Ready to experience the power of iona.ai?",
+description:"Book a demo today and see how iona.ai can transform your hiring process for the better."
+    },
     seo: {
       title: "11+ AI-Powered Hiring Automation Tools for 2026",
       description:
@@ -14,6 +18,7 @@ export const Blog4 =   {
     image: `/assets/pages/blog/jan-2026/iona-tools.webp`,
     altimg: "Hiring Automation Tools 2026",
     tags: ["HR Analytics", "Data-Driven HR", "People Analytics"],
+   
     content: `
     <p>The cost of a "slow hire" has never been higher.</p> <p>In a market where <a href="https://www.jobma.com/blog/understanding-candidates-dropping-out-and-strategies-to-reduce-it/" target="_blank" rel="noopener noreferrer">70%</a> of elite candidates drop out of the pipeline if the process exceeds two weeks, speed isn’t just a metric—it’s a survival trait. By the time a traditional recruiter finishes their first round of manual resume screening, their top-tier picks have often already signed with a faster competitor.</p>
 
@@ -186,9 +191,7 @@ export const Blog4 =   {
 
 <p >However, if you’re looking for the best solution that combines AI-powered automation with human expertise, iona.ai stands out as the top choice. iona.aioffers a fully autonomous hiring journey, ensuring 90% faster onboarding and 100% compliance without adding to your recruitment overhead.</p>
 
-<p >Ready to experience the power of <b>iona.ai</b>? </p>
 
-<p ><a href="/contact">Book a demo</a> today and see how iona.ai can transform your hiring process for the better.</p>
 
       `,
     blogFAQ: [

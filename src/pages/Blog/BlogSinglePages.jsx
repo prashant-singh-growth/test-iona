@@ -209,7 +209,51 @@ function BlogSinglePages() {
               className="blog-content"
               dangerouslySetInnerHTML={{ __html: processedContent }}
             />
+{
+  !blogData.content.cta ? (<div className="mt-12 not-prose">
+  <div className="relative overflow-hidden rounded-xl bg-darkVoilet px-5 py-10 shadow-2xl sm:px-12 sm:py-16">
 
+    <div className="relative flex flex-col  items-center text-center  ">
+     
+        <h2 className="text-2xl font-bold tracking-tight text-white sm:text-3xl">
+          Ready to experience how NovaCount can streamline your headcount planning?
+        </h2>
+        <p className="mt-4 text-lg leading-8 text-slate-300">
+          Book a demo today and see how it can help you scale your hiring process to meet future demands.
+        </p>
+      <a
+          href="/contact"
+          className="rounded-full border border-white px-6 py-3 mt-3 text-base font-semibold text-white shadow-sm transition-all  hover:scale-95 "
+        >
+          Book a demo today
+        </a>
+
+      
+    </div>
+  </div>
+</div>):(<div className="mt-12 not-prose">
+  <div className="relative overflow-hidden rounded-xl bg-darkVoilet px-5 py-10 shadow-2xl sm:px-12 sm:py-16">
+
+    <div className="relative flex flex-col  items-center text-center  ">
+     
+        <h2 className="text-2xl font-bold tracking-tight text-white sm:text-3xl">
+        {blogData.content.cta.title}
+        </h2>
+        <p className="mt-4 text-lg leading-8 text-slate-300">
+          {blogData.content.cta.description}
+        </p>
+      <a
+          href="/contact"
+          className="rounded-full border border-white px-6 py-3 mt-3 text-base font-semibold text-white shadow-sm transition-all  hover:scale-95 "
+        >
+          Book a demo today
+        </a>
+
+      
+    </div>
+  </div>
+</div>)
+}
             {/* TAGS */}
             <div className="mt-16 flex flex-wrap gap-2">
               {blogData.content.tags?.map((tag, i) => (

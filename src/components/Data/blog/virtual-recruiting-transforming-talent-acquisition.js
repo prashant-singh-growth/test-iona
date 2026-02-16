@@ -1,5 +1,9 @@
 export const Blog2 =  {
     url: "virtual-recruiting-transforming-talent-acquisition",
+     cta:{
+title:"Ready to experience the power of iona.ai?",
+description:"Book a demo today and see how it can help you scale your hiring process to meet future demands."
+    },
     seo: {
       title: "The Rise of Virtual Recruiting | Iona AI",
       description:

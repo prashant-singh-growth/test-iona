@@ -1,5 +1,9 @@
 export const Blog5 = {
   url: "intelligent-automation-hr-usecases",
+   cta:{
+title:"Ready to experience the power of iona.ai?",
+description:"Book a demo today and see how it can help you scale your hiring process to meet future demands."
+    },
   seo: {
     title: "7 Intelligent Automation Use Cases in HR (Real Examples)",
     description:

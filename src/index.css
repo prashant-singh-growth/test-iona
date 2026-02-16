@@ -216,13 +216,19 @@ color: black;
 @apply !underline font-semibold;
 }
 .blog-content ul{
-  @apply flex flex-col gap-4 list-disc pl-5 pb-4;
+  @apply flex flex-col gap-4 list-disc pl-8 pb-4;
 }
 .blog-content ol{
-  @apply flex flex-col gap-4 list-decimal pl-5 pb-4;
+  @apply flex flex-col gap-4 list-decimal !pl-8 pb-4;
+}
+.blog-content ol li{
+  @apply font-medium;
 }
 .blog-content ul li{
   @apply font-medium;
+}
+.blog-content li h3{
+  @apply !mt-0;
 }
 .blog-content p{
   @apply pb-4;
