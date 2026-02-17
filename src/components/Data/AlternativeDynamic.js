@@ -528,7 +528,7 @@ export const AlternativePagesData = {
         "Unlock the power of iona.ai’s Managed Service. We blend Agentic AI with human expertise to automate high-volume hiring, saving time and cutting costs.",
     },
     banner: {
-      title: "Looking for a Better Alternative to RapidHR?",
+      title: "RapidHR Alternative for Teams Hiring at Scale",
       description:
         "Unlock the power of iona.ai’s Managed Service. We blend Agentic AI with human expertise to automate high-volume hiring, saving time and cutting costs.",
       page: "rapidhr-alternative",
@@ -700,7 +700,7 @@ export const AlternativePagesData = {
         "Unlock the power of iona.ai’s Managed Service. We blend Agentic AI with human expertise to automate high-volume hiring, saving time and cutting costs.",
     },
     banner: {
-      title: "Looking for a Better Alternative to Keka?",
+      title: "Looking for a Better Keka Alternative?",
       description:
         "Unlock the power of iona.ai’s Managed Service. We blend Agentic AI with human expertise to automate high-volume hiring, saving time and cutting costs.",
       page: "keka-alternative",
@@ -871,7 +871,7 @@ export const AlternativePagesData = {
         "Unlock the power of iona.ai’s Managed Service. We blend Agentic AI with human expertise to automate high-volume hiring, saving time and cutting costs.",
     },
     banner: {
-      title: "Looking for a Better Alternative to greytHR?",
+      title: "A Better greytHR Alternative for High-Volume Hiring",
       description: "Unlock the power of iona.ai’s Managed Service. We blend Agentic AI with human expertise to automate high-volume hiring, saving time and cutting costs.",
       page: "greythr-alternative",
     },
@@ -1033,7 +1033,7 @@ export const AlternativePagesData = {
         "Unlock the power of iona.ai’s Managed Service. We blend Agentic AI with human expertise to automate high-volume hiring, saving time and cutting costs.",
     },
     banner: {
-      title: "Looking for a Better Alternative to ZingHR Software?",
+      title: "ZingHR Alternative That Simplifies Hiring Workflows",
       description: "Unlock the power of iona.ai’s Managed Service. We blend Agentic AI with human expertise to automate high-volume hiring, saving time and cutting costs.",
       page: "zinghr-alternative",
     },
