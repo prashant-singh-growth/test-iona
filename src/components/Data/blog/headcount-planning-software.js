@@ -14,7 +14,7 @@ description:"Book a demo today and see how it can help you scale your hiring pro
     summary:
       "This blog explores the best headcount planning software for high-volume hiring in 2026, highlighting tools that streamline recruitment and improve efficiency. iona.ai stands out as the top choice, offering AI-powered automation and an end-to-end solution to simplify the entire hiring process. Whether for a growing business or a large enterprise, these tools help optimize recruitment and keep you ahead of the competition.",
     author: "Michael Chen",
-    date: "February 16, 2026",
+    date: "February 18, 2026",
     image: `/assets/pages/blog/2026/fab/headcount.webp`,
     altimg: "Best Headcount Planning Software for 2026",
     tags: ["HeadcountPlanning", "AIRecruitmen", "HighVolumeHiring","WorkforceAutomation"],
