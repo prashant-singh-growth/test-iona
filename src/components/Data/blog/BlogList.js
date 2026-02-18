@@ -1,6 +1,7 @@
 import { AuthorList } from "./AuthorList";
 import { Blog4 } from "./best-hiring-automation-tools";
 import { Blog6 } from "./bulk-headcount-planning-process";
+import { Blog7 } from "./headcount-planning-software";
 import { Blog3 } from "./high-volume-hiring-challenges";
 import { Blog5 } from "./intelligent-automation-hr-usecases";
 import { Blog1 } from "./prospect-to-productive-journey";
@@ -9,6 +10,11 @@ import { Blog2 } from "./virtual-recruiting-transforming-talent-acquisition";
 
 export const BlogList = [
     
+     {
+        url:"headcount-planning-software",
+        content:Blog7,
+        author:AuthorList[1]
+    },
      {
         url:"bulk-headcount-planning-process",
         content:Blog6,

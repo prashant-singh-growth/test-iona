@@ -245,6 +245,31 @@ color: black;
 .blog-content img{
   @apply w-full pt-5 pb-8;
 }
+ 
+/* Responsive Table Wrapper */
+  .blog-content table {
+    @apply w-full text-left border-collapse my-8 ;
+  }
+
+  /* Header Styling */
+  .blog-content th {
+    @apply bg-slate-50 border-b border-slate-200 p-4 text-sm font-semibold text-slate-700;
+  }
+
+  /* Body Cell Styling */
+  .blog-content td {
+    @apply border-b border-slate-100 p-4 text-sm text-slate-600;
+  }
+
+  /* Zebra Striping (Optional but recommended) */
+  .blog-content tr:nth-child(even) {
+    @apply bg-slate-50/50;
+  }
+
+  /* Hover effect */
+  .blog-content tr:hover {
+    @apply bg-blue-50/30 transition-colors;
+  }
 @keyframes pulse {
   0% { transform: scale(1); opacity: 0.8; }
   100% { transform: scale(3); opacity: 0; }

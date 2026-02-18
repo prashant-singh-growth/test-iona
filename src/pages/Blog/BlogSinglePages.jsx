@@ -276,10 +276,10 @@ function BlogSinglePages() {
                     return (
                       <div
                         key={i}
-                        className={`border rounded-2xl overflow-hidden transition-colors ${
+                        className={`border rounded-xl overflow-hidden transition-colors ${
                           isOpen
                             ? "bg-indigo-50/30 border-indigo-100"
-                            : "border-gray-100"
+                            : "border-gray-200"
                         }`}
                       >
                         <button
