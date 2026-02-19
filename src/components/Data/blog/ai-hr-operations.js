@@ -10,7 +10,7 @@ description:"Book a demo today and see how iona.ai can help you automate routine
         "AI & bots are transforming HR operations in India. Learn how Iona.ai automates tasks, boosts efficiency, & empowers HR teams to focus on strategic growth.",
     },
     id: 8,
-    title: "Strategic Headcount Planning Processes for Enterprise Hiring",
+    title: "Will HR Operations Work Be Taken Over by AI or Bots in India?",
     summary:
       "As AI continues to reshape industries, HR operations in India are also evolving. While AI and bots won’t fully replace HR professionals, they can automate routine tasks like recruitment, payroll, and employee queries, allowing HR teams to focus on strategic decision-making. This blog explores the role of AI in HR, its limitations, and how iona.ai empowers HR departments to streamline operations, enhance efficiency, and improve employee experience.",
     author: "Michael Chen",
