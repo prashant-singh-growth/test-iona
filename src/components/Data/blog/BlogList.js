@@ -12,7 +12,7 @@ import { Blog2 } from "./virtual-recruiting-transforming-talent-acquisition";
 export const BlogList = [
     
      {
-        url:"ai-hr-operations",
+        url:"will-ai-and-bots-take-over-hr-operations",
         content:Blog8,
         author:AuthorList[2]
     },

@@ -1,5 +1,5 @@
 export const Blog8 =   {
-    url: "ai-hr-operations",
+    url: "will-ai-and-bots-take-over-hr-operations",
      cta:{
 title:"Ready to transform your HR operations with AI? ",
 description:"Book a demo today and see how iona.ai can help you automate routine tasks, improve efficiency, and empower your HR team to focus on strategic growth."
