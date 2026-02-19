@@ -1,3 +1,4 @@
+import { Blog8 } from "./ai-hr-operations";
 import { AuthorList } from "./AuthorList";
 import { Blog4 } from "./best-hiring-automation-tools";
 import { Blog6 } from "./bulk-headcount-planning-process";
@@ -10,6 +11,11 @@ import { Blog2 } from "./virtual-recruiting-transforming-talent-acquisition";
 
 export const BlogList = [
     
+     {
+        url:"ai-hr-operations",
+        content:Blog8,
+        author:AuthorList[2]
+    },
      {
         url:"headcount-planning-software",
         content:Blog7,
