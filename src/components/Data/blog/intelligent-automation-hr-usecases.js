@@ -190,6 +190,85 @@ Speed up the hiring process, reducing time-to-hire.  </li>
     answer:
       "iona.ai offers a fully integrated suite of intelligent automation tools that streamline the entire hiring lifecycle. It combines AI with human expertise, automating everything from recruitment and onboarding to performance management, ensuring faster and more accurate HR processes.",
   },
-]
-
+],
+blogSchema:`{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "7 Intelligent Automation Use Cases in HR (Real Examples)",
+  "description": "Explore 7 intelligent automation use cases in HR with real examples. Learn how AI improves hiring, onboarding, compliance, and employee experience.",
+  "image": "https://www.iona.ai/assets/pages/blog/2026/fab/2.webp",
+  "author": {
+    "@type": "Person",
+    "name": "Amit Srivastava",
+    "url": "https://www.iona.ai/author/amit-srivastava"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "iona.ai",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.iona.ai/assets/iona-ai-logo.png"
+    }
+  },
+  "datePublished": "2026-02-12T00:00:00+05:30",
+  "dateModified": "2026-02-12T00:00:00+05:30",
+  "inLanguage": "en",
+  "url": "https://www.iona.ai/blog/intelligent-automation-hr-usecases"
+}
+`,
+    faqSchema:`{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "What is the use case of AI in HR?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "AI in HR is used to automate and optimize various tasks such as recruiting, performance management, employee engagement, and compliance. AI-powered tools like chatbots and predictive analytics enhance decision-making, streamline processes, and improve employee experiences by providing real-time insights."
+    }
+  },{
+    "@type": "Question",
+    "name": "What is automation in HR?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Automation in HR involves using technology to streamline and automate repetitive HR tasks such as payroll processing, candidate screening, employee onboarding, and benefits management. It helps HR departments reduce manual work, increase efficiency, and ensure accuracy in HR functions."
+    }
+  },{
+    "@type": "Question",
+    "name": "How can intelligent automation improve HR efficiency?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Intelligent automation improves HR efficiency by automating manual tasks such as candidate screening, payroll processing, and compliance checks. This reduces errors, speeds up processes, and frees up HR teams to focus on more value-driven activities like employee engagement and talent development."
+    }
+  },{
+    "@type": "Question",
+    "name": "What are some examples of intelligent automation in HR?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Examples include automating recruitment workflows, using AI for candidate screening, automating employee onboarding, tracking performance with AI-driven insights, and using chatbots for employee engagement and support."
+    }
+  },{
+    "@type": "Question",
+    "name": "Why is intelligent automation important for HR departments?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "As businesses grow, HR departments face increasing challenges. Intelligent automation helps HR teams handle larger volumes of work, reduce operational costs, ensure compliance, and deliver better employee experiences by automating routine tasks."
+    }
+  },{
+    "@type": "Question",
+    "name": "Can intelligent automation help with compliance in HR?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes, intelligent automation helps HR teams stay compliant by automating tasks like document management, policy updates, and employee record tracking. It ensures that all HR processes adhere to relevant laws and regulations, minimizing the risk of human error."
+    }
+  },{
+    "@type": "Question",
+    "name": "How does iona.ai enhance HR automation?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "iona.ai offers a fully integrated suite of intelligent automation tools that streamline the entire hiring lifecycle. It combines AI with human expertise, automating everything from recruitment and onboarding to performance management, ensuring faster and more accurate HR processes."
+    }
+  }]
+}
+`
 };

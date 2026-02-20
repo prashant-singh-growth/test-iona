@@ -81,4 +81,29 @@ description:"Book a demo today and see how it can help you scale your hiring pro
         
         <p >One no longer must sift through endless resumes or second-guess your hiring decisions. Working as a recruiter Co-pilot, our AI does the heavy lifting by accurately matching candidates to job descriptions, assessing their skills, and even predicting their growth potential. It means one can make informed hiring decisions faster than ever before, without compromising on quality. Our platform is designed to learn and adapt, ensuring that it only gets better with every hire.</p>
       `,
+      blogSchema:`{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "High-Volume Hiring Challenges",
+  "description": "Uncover the five key challenges in high-volume hiring and how AI solutions from iona.ai simplify and scale recruitment success.",
+  "image": "https://www.iona.ai/assets/ionablog3.jpeg",
+  "author": {
+    "@type": "Person",
+    "name": "Abhijeet Chakravarty",
+    "url": "https://www.iona.ai/author/abhijeet-chakravarty"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "iona.ai",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.iona.ai/assets/iona-ai-logo.png"
+    }
+  },
+  "datePublished": "2023-03-10T00:00:00+05:30",
+  "dateModified": "2026-02-19T00:00:00+05:30",
+  "inLanguage": "en",
+  "url": "https://www.iona.ai/blog/high-volume-hiring-challenges"
+}
+`
   }

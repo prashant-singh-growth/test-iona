@@ -59,4 +59,30 @@ description:"Book a demo today and see how it can help you scale your hiring pro
         
         <p >Embrace virtual recruiting and unlock the full potential of your talent acquisition strategy with iona.ai</p>
       `,
+      blogSchema:`{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "The Rise of Virtual Recruiting",
+  "description": "Explore how virtual recruiting is reshaping talent acquisition with AI-powered tools, remote hiring, and smarter engagement.",
+  "image": "https://www.iona.ai/assets/ionablog2.jpeg",
+  "author": {
+    "@type": "Person",
+    "name": "Amit Srivastava",
+    "url": "https://www.iona.ai/author/amit-srivastava"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "iona.ai",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.iona.ai/assets/iona-ai-logo.png"
+    }
+  },
+  "datePublished": "2023-04-03T00:00:00+05:30",
+  "dateModified": "2026-02-19T00:00:00+05:30",
+  "inLanguage": "en",
+  "url": "https://www.iona.ai/blog/virtual-recruiting-transforming-talent-acquisition"
+}
+`,
+    
   }

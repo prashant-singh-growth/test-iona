@@ -252,4 +252,85 @@ answer:
 },
      
     ],
+    blogSchema:`{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Best 5 Headcount Planning Software for Bulk Hiring",
+  "description": "Explore the best headcount planning software for high-volume hiring in 2026, including iona.ai, to streamline recruitment and boost efficiency at scale.",
+  "image": "https://www.iona.ai/assets/pages/blog/2026/fab/headcount.webp",
+  "author": {
+    "@type": "Person",
+    "name": "Abhijeet Chakravarty",
+    "url": "https://www.iona.ai/author/abhijeet-chakravarty"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "iona.ai",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.iona.ai/assets/iona-ai-logo.png"
+    }
+  },
+  "datePublished": "2026-02-18T00:00:00+05:30",
+  "dateModified": "2026-02-18T00:00:00+05:30",
+  "inLanguage": "en",
+  "url": "https://www.iona.ai/blog/headcount-planning-software"
+}
+`,
+    faqSchema:`{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "What is headcount planning software?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Headcount planning software helps businesses forecast, manage, and track workforce needs, enabling accurate hiring decisions, better resource allocation, and improved recruitment efficiency."
+    }
+  },{
+    "@type": "Question",
+    "name": "Why do I need specialized headcount planning software for high-volume hiring?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Traditional HR tools are not built for large-scale recruitment. Specialized software like iona.ai automates and scales hiring processes, ensuring faster, error-free onboarding and compliance during high demand."
+    }
+  },{
+    "@type": "Question",
+    "name": "How does iona.ai improve high-volume hiring?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "iona.ai uses Agentic AI to automate 70% of the hiring process, from headcount forecasting to onboarding, ensuring faster recruitment cycles, reduced overhead, better candidate experiences, and maintained compliance."
+    }
+  },{
+    "@type": "Question",
+    "name": "What makes iona.ai different from other headcount planning software?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "iona.ai combines AI-powered automation with human expertise, offering an end-to-end solution that automates recruitment, workforce planning, and post-onboarding engagement with real-time insights and predictive analytics."
+    }
+  },{
+    "@type": "Question",
+    "name": "Can iona.ai scale with my business?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes, iona.ai is designed to scale seamlessly for startups and large enterprises, handling high-volume hiring efficiently while adapting to evolving business needs."
+    }
+  },{
+    "@type": "Question",
+    "name": "How does iona.ai ensure compliance during hiring?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "iona.ai integrates compliance features directly into the hiring process, automating tasks and ensuring recruitment activities adhere to relevant regulations, reducing human error and compliance risks."
+    }
+  },{
+    "@type": "Question",
+    "name": "How can I get started with iona.ai?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Book a demo to experience iona.ai and see how its AI-driven automation can transform your high-volume hiring process."
+    }
+  }]
+}
+`
+    
   }

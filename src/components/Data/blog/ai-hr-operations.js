@@ -148,4 +148,77 @@ description:"Book a demo today and see how iona.ai can help you automate routine
 
      
     ],
+    blogSchema:`{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Will AI and Bots Replace HR Operations in India?",
+  "description": "AI & bots are transforming HR operations in India. Learn how Iona.ai automates tasks, boosts efficiency, & empowers HR teams to focus on strategic growth.",
+  "image": "https://www.iona.ai/assets/pages/blog/2026/fab/ai-and-bot-banner.webp",
+  "author": {
+    "@type": "Organization",
+    "name": "iona.ai",
+    "url": "https://www.iona.ai/author/iona-ai"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "iona.ai",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.iona.ai/assets/iona-ai-logo.png"
+    }
+  },
+  "datePublished": "2026-02-19T00:00:00+05:30",
+  "dateModified": "2026-02-19T00:00:00+05:30",
+  "inLanguage": "en",
+  "url": "https://www.iona.ai/blog/will-ai-and-bots-take-over-hr-operations"
+}
+`,
+    faqSchema:`{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "What is HR operation?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "HR operations encompass essential functions such as recruitment, payroll, performance management, and employee queries, ensuring smooth organizational functioning."
+    }
+  },{
+    "@type": "Question",
+    "name": "How can AI improve HR operations?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "AI improves HR operations by automating repetitive tasks, streamlining recruitment, payroll management, and employee queries, reducing errors, and enhancing efficiency."
+    }
+  },{
+    "@type": "Question",
+    "name": "Can AI fully replace HR professionals in India?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "While AI can automate many HR tasks, it cannot replace the human touch required for complex decision-making, employee engagement, and emotional intelligence."
+    }
+  },{
+    "@type": "Question",
+    "name": "What are the benefits of AI in HR operations?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "AI enhances HR operations by improving efficiency, reducing operational costs, automating administrative tasks, and providing data-driven insights to HR teams."
+    }
+  },{
+    "@type": "Question",
+    "name": "What tasks can AI handle in HR operations?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "AI can automate tasks like recruitment screening, payroll processing, employee query management, and performance tracking, reducing manual efforts and enhancing decision-making."
+    }
+  },{
+    "@type": "Question",
+    "name": "What challenges do HR teams face when adopting AI?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "HR teams may face challenges such as data privacy concerns, resistance to change, and initial implementation costs when adopting AI-driven HR solutions."
+    }
+  }]
+}
+`
   }

@@ -3,7 +3,6 @@ import { useParams, Link } from "react-router-dom";
 import { AnimatePresence, motion, useScroll, useSpring } from "framer-motion";
 import { FiMinus, FiPlus, FiArrowLeft } from "react-icons/fi";
 
-
 import SeoHeader from "../../components/utils/SeoHeader";
 import { BlogList } from "../../components/Data/blog/BlogList";
 
@@ -120,9 +119,25 @@ function BlogSinglePages() {
     <main className="bg-white  text-[#160E38] font-lora relative">
       <SeoHeader
         title={blogData.content.seo.title || blogData.content.title}
-        description={blogData.content.seo?.description || blogData.content.summary}
+        description={
+          blogData.content.seo?.description || blogData.content.summary
+        }
       />
-
+      {blogData.content.blogSchema &&  <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify(blogData.content.blogSchema)
+  }}
+  async
+/>}
+ {blogData.content.faqSchema &&  <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify(blogData.content.faqSchema)
+  }}
+  async
+/>}
+ 
       {/* Reading Progress Bar */}
       <motion.div
         className="fixed top-0 left-0 right-0 h-1 bg-indigo-600 z-[100] origin-left"
@@ -152,22 +167,39 @@ function BlogSinglePages() {
             </p>
 
             <div className="flex items-center gap-4 pt-4">
-              <img src={blogData.author.AuthorImage} alt={blogData.author.authorName} className="size-14 object-contain rounded-full" />
+              <img
+                src={blogData.author.AuthorImage}
+                alt={blogData.author.authorName}
+                className="size-14 object-contain rounded-full"
+              />
               <div>
-                {blogData.author.url ? (<a href={`/author/${blogData.author.url}`} className="font-bold underline">{blogData.author.authorName}</a>):(<p  className="font-bold ">{blogData.author.authorName}</p>)}
-                <p className="text-sm text-gray-500">{blogData.author.authorPosition}</p>
+                {blogData.author.url ? (
+                  <a
+                    href={`/author/${blogData.author.url}`}
+                    className="font-bold underline"
+                  >
+                    {blogData.author.authorName}
+                  </a>
+                ) : (
+                  <p className="font-bold ">{blogData.author.authorName}</p>
+                )}
+                <p className="text-sm text-gray-500">
+                  {blogData.author.authorPosition}
+                </p>
               </div>
             </div>
           </motion.div>
 
-         
-            <img
-              src={blogData.content.image}
-              alt={blogData.content.altimg ? blogData.content.altimg : blogData.content.title}
-              className="w-full rounded-lg md:rounded-xl shadow-md object-contain"
-              loading="lazy"
-            />
-        
+          <img
+            src={blogData.content.image}
+            alt={
+              blogData.content.altimg
+                ? blogData.content.altimg
+                : blogData.content.title
+            }
+            className="w-full rounded-lg md:rounded-xl shadow-md object-contain"
+            loading="lazy"
+          />
         </div>
       </section>
 
@@ -209,51 +241,47 @@ function BlogSinglePages() {
               className="blog-content"
               dangerouslySetInnerHTML={{ __html: processedContent }}
             />
-{
-  !blogData.content.cta ? (<div className="mt-12 not-prose">
-  <div className="relative overflow-hidden rounded-xl bg-darkVoilet px-5 py-10 shadow-2xl sm:px-12 sm:py-16">
-
-    <div className="relative flex flex-col  items-center text-center  ">
-     
-        <h2 className="text-2xl font-bold tracking-tight text-white sm:text-3xl">
-          Ready to experience how NovaCount can streamline your headcount planning?
-        </h2>
-        <p className="mt-4 text-lg leading-8 text-slate-300">
-          Book a demo today and see how it can help you scale your hiring process to meet future demands.
-        </p>
-      <a
-          href="/contact"
-          className="rounded-full border border-white px-6 py-3 mt-3 text-base font-semibold text-white shadow-sm transition-all  hover:scale-95 "
-        >
-          Book a demo today
-        </a>
-
-      
-    </div>
-  </div>
-</div>):(<div className="mt-12 not-prose">
-  <div className="relative overflow-hidden rounded-xl bg-darkVoilet px-5 py-10 shadow-2xl sm:px-12 sm:py-16">
-
-    <div className="relative flex flex-col  items-center text-center  ">
-     
-        <h2 className="text-2xl font-bold tracking-tight text-white sm:text-3xl">
-        {blogData.content.cta.title}
-        </h2>
-        <p className="mt-4 text-lg leading-8 text-slate-300">
-          {blogData.content.cta.description}
-        </p>
-      <a
-          href="/contact"
-          className="rounded-full border border-white px-6 py-3 mt-3 text-base font-semibold text-white shadow-sm transition-all  hover:scale-95 "
-        >
-          Book a demo today
-        </a>
-
-      
-    </div>
-  </div>
-</div>)
-}
+            {!blogData.content.cta ? (
+              <div className="mt-12 not-prose">
+                <div className="relative overflow-hidden rounded-xl bg-darkVoilet px-5 py-10 shadow-2xl sm:px-12 sm:py-16">
+                  <div className="relative flex flex-col  items-center text-center  ">
+                    <h2 className="text-2xl font-bold tracking-tight text-white sm:text-3xl">
+                      Ready to experience how NovaCount can streamline your
+                      headcount planning?
+                    </h2>
+                    <p className="mt-4 text-lg leading-8 text-slate-300">
+                      Book a demo today and see how it can help you scale your
+                      hiring process to meet future demands.
+                    </p>
+                    <a
+                      href="/contact"
+                      className="rounded-full border border-white px-6 py-3 mt-3 text-base font-semibold text-white shadow-sm transition-all  hover:scale-95 "
+                    >
+                      Book a demo today
+                    </a>
+                  </div>
+                </div>
+              </div>
+            ) : (
+              <div className="mt-12 not-prose">
+                <div className="relative overflow-hidden rounded-xl bg-darkVoilet px-5 py-10 shadow-2xl sm:px-12 sm:py-16">
+                  <div className="relative flex flex-col  items-center text-center  ">
+                    <h2 className="text-2xl font-bold tracking-tight text-white sm:text-3xl">
+                      {blogData.content.cta.title}
+                    </h2>
+                    <p className="mt-4 text-lg leading-8 text-slate-300">
+                      {blogData.content.cta.description}
+                    </p>
+                    <a
+                      href="/contact"
+                      className="rounded-full border border-white px-6 py-3 mt-3 text-base font-semibold text-white shadow-sm transition-all  hover:scale-95 "
+                    >
+                      Book a demo today
+                    </a>
+                  </div>
+                </div>
+              </div>
+            )}
             {/* TAGS */}
             <div className="mt-16 flex flex-wrap gap-2">
               {blogData.content.tags?.map((tag, i) => (
@@ -269,7 +297,9 @@ function BlogSinglePages() {
             {/* FAQ SECTION */}
             {blogData.content.blogFAQ?.length > 0 && (
               <div className="mt-20 pt-10 border-t border-gray-100">
-                <h2 className="text-3xl font-bold mb-8">Frequently Asked Questions</h2>
+                <h2 className="text-3xl font-bold mb-8">
+                  Frequently Asked Questions
+                </h2>
                 <div className="space-y-4">
                   {blogData.content.blogFAQ.map((faq, i) => {
                     const isOpen = activeIndex === i;

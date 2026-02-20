@@ -209,16 +209,16 @@ function Vids() {
                 </svg>
               </button>
 
-              <div className="aspect-video w-full bg-black">
-                <iframe
-                  src={`https://www.youtube.com/embed/${selectedVideo.videoId}?autoplay=1&rel=0&modestbranding=1`}
-                  title={selectedVideo.title}
-                  allow="autoplay; encrypted-media; picture-in-picture"
-                  allowFullScreen
-                  className="w-full h-full"
-                   onEnded={() => closeVideo()}
-                />
-              </div>
+            <div className="aspect-video w-full bg-black">
+  <iframe
+    src={`https://www.youtube-nocookie.com/embed/${selectedVideo.videoId}?autoplay=1&rel=0&modestbranding=1`}
+    title={selectedVideo.title}
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen
+    referrerPolicy="strict-origin-when-cross-origin"
+    className="w-full h-full"
+  />
+</div>
 
               <div className="p-8 md:p-10">
                 {/* <div className="flex items-center gap-3 mb-4">

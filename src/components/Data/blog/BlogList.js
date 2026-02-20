@@ -4,6 +4,7 @@ import { Blog4 } from "./best-hiring-automation-tools";
 import { Blog6 } from "./bulk-headcount-planning-process";
 import { Blog7 } from "./headcount-planning-software";
 import { Blog3 } from "./high-volume-hiring-challenges";
+import { Blog9 } from "./indian-pre-employment-background-check";
 import { Blog5 } from "./intelligent-automation-hr-usecases";
 import { Blog1 } from "./prospect-to-productive-journey";
 import { Blog2 } from "./virtual-recruiting-transforming-talent-acquisition";
@@ -11,6 +12,11 @@ import { Blog2 } from "./virtual-recruiting-transforming-talent-acquisition";
 
 export const BlogList = [
     
+     {
+        url:"indian-pre-employment-background-check",
+        content:Blog9,
+        author:AuthorList[2],
+    },
      {
         url:"will-ai-and-bots-take-over-hr-operations",
         content:Blog8,
