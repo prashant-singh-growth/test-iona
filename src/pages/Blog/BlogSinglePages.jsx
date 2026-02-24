@@ -127,7 +127,7 @@ function BlogSinglePages() {
   <script
     type="application/ld+json"
     dangerouslySetInnerHTML={{
-      __html: JSON.stringify(blogData.content.blogSchema)
+      __html:blogData.content.blogSchema
     }}
   />
 )}
@@ -136,7 +136,7 @@ function BlogSinglePages() {
   <script
     type="application/ld+json"
     dangerouslySetInnerHTML={{
-      __html: JSON.stringify(blogData.content.faqSchema)
+      __html: blogData.content.faqSchema
     }}
   />
 )}
