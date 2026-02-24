@@ -123,20 +123,23 @@ function BlogSinglePages() {
           blogData.content.seo?.description || blogData.content.summary
         }
       />
-      {blogData.content.blogSchema &&  <script
-  type="application/ld+json"
-  dangerouslySetInnerHTML={{
-    __html: JSON.stringify(blogData.content.blogSchema)
-  }}
-  async
-/>}
- {blogData.content.faqSchema &&  <script
-  type="application/ld+json"
-  dangerouslySetInnerHTML={{
-    __html: JSON.stringify(blogData.content.faqSchema)
-  }}
-  async
-/>}
+      {blogData.content.blogSchema && (
+  <script
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{
+      __html: JSON.stringify(blogData.content.blogSchema)
+    }}
+  />
+)}
+
+{blogData.content.faqSchema && (
+  <script
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{
+      __html: JSON.stringify(blogData.content.faqSchema)
+    }}
+  />
+)}
  
       {/* Reading Progress Bar */}
       <motion.div
