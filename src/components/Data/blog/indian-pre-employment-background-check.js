@@ -164,5 +164,88 @@ description:"Book a demo today and discover how iona.ai can make your hiring pro
 
      
     ],
-   
+   blogSchema :`
+    {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Pre-Employment Background Check in India: Process & Rules",
+  "description": "Learn about the pre-employment background check process in India, legal requirements, and how automating it with Iona.ai ensures faster, compliant hires.",
+  "image": "https://www.iona.ai/assets/pages/blog/2026/fab/rules-of-pre-employment.webp",
+  "author": {
+    "@type": "Organization",
+    "name": "iona.ai",
+    "url": "https://www.iona.ai/author/iona-ai"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "iona.ai",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.iona.ai/assets/iona-ai-logo.png"
+    }
+  },
+  "datePublished": "2026-02-23T00:00:00+05:30",
+  "dateModified": "2026-02-23T00:00:00+05:30",
+  "inLanguage": "en",
+  "url": "https://www.iona.ai/blog/indian-pre-employment-background-check"
+}
+`
+  ,
+  faqSchema:`
+  {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "What is a pre-employment background check?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Pre-employment background check is the process of verifying a candidate's information, such as criminal history, employment history, and educational qualifications, before hiring."
+    }
+  },{
+    "@type": "Question",
+    "name": "Why is background verification check progress in India is important?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It ensures that the information provided by candidates is accurate, reduces the risk of hiring individuals with criminal backgrounds, and helps employers remain compliant with legal regulations."
+    }
+  },{
+    "@type": "Question",
+    "name": "What types of checks are included in a background verification process?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Background checks typically include criminal checks, educational verification, employment history, reference checks, and identity verification."
+    }
+  },{
+    "@type": "Question",
+    "name": "What legal requirements govern background verification in India?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Employers must comply with privacy laws like the IT Act and the DPDP Act, ensuring consent, secure data handling, and purpose-limited data collection during background verification."
+    }
+  },{
+    "@type": "Question",
+    "name": "How can I ensure compliance during background checks?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "By obtaining explicit consent from candidates, choosing reputable verification agencies, and adhering to legal data security and privacy guidelines."
+    }
+  },{
+    "@type": "Question",
+    "name": "What mistakes should employers avoid during background checks?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Common mistakes include failing to obtain written consent, inadequate documentation, and not verifying all aspects of a candidate's background."
+    }
+  },{
+    "@type": "Question",
+    "name": "How can I automate background verification?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "iona.ai’s NovaVerify solution automates the entire background verification process, ensuring faster, more accurate, and compliant checks, reducing manual effort and errors."
+    }
+  }]
+}
+
+  ` 
   }

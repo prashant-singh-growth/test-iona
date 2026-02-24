@@ -233,7 +233,7 @@ description:"Book a demo today and see how it can help you scale your hiring pro
     "name": "How can I manage turnover in real-time?",
     "acceptedAnswer": {
       "@type": "Answer",
-      "text": "By implementing \"Evergreen Requisitions\" for high-turnover departments, NovaCount ensures talent gaps are filled promptly, allowing you to manage attrition and keep operations running smoothly."
+      "text": "By implementing Evergreen Requisitions for high-turnover departments, NovaCount ensures talent gaps are filled promptly, allowing you to manage attrition and keep operations running smoothly."
     }
   },{
     "@type": "Question",
