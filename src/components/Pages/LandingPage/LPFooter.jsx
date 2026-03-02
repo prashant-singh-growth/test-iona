@@ -12,6 +12,7 @@ function LPFooter() {
                 src="/assets/pages/landingpage/iona-logo.png"
                 className="w-28"
                 alt="iona-logo"
+                 loading='lazy'
               />
               <p className="text-base text-primary font-lora">
                 "Trusted by enterprises for scalable, high-volume hiring.<br></br>iona.ai is a full-service AI-powered recruitment platform that automates the entire hiring process—saving time, reducing costs, and ensuring 100% data accuracy."

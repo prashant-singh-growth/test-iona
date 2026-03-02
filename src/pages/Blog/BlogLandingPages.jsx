@@ -103,6 +103,7 @@ function BlogLandingPages() {
                 <img 
                   src={blog.content.image}
                   alt={blog.content.title}
+                   loading='lazy'
                   className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110"
                   onError={(e) => {
                     e.target.onerror = null;

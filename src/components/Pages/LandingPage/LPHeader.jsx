@@ -8,6 +8,7 @@ function LPHeader({ctaText,ctaLink}) {
               src="/assets/pages/landingpage/iona-logo.png"
               className="w-28"
               alt="iona-logo"
+               loading='lazy'
             />
             <a
               href={ctaLink ? ctaLink : "#form"}

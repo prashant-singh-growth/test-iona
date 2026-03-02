@@ -40,21 +40,25 @@ function CertificationSection() {
               src="/assets/pages/landingpage/iso.png"
               alt="iso"
               className="w-16 sm:w-[110px]  object-contain"
+               loading='lazy'
             />
             <img
               src="/assets/pages/landingpage/gdpr.png"
               alt="gdpr"
               className="w-20 sm:w-[150px]  h-auto object-contain"
+               loading='lazy'
             />
             <img
               src="/assets/pages/landingpage/iso1.png"
               alt="iso"
               className="w-16 sm:w-[110px] object-contain"
+               loading='lazy'
             />
             <img
               src="/assets/pages/landingpage/hmgov.png"
               alt="hmgov"
               className="w-40 sm:w-48 md:w-56 lg:w-64 h-auto object-contain mt-3 md:mt-0"
+               loading='lazy'
             />
           </div>
         </div>

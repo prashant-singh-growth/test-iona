@@ -188,6 +188,7 @@ function CompleteSolutionSection() {
                       src={`/assets/pages/solutionpage/${item.image}`}
                       alt={item.tabName}
                       className="w-full max-w-[400px]  block lg:hidden pt-6"
+                       loading='lazy'
                     />
                     <p className="font-lora text-[#FBFBFB] text-base pt-5 pb-4">
                       {item.description}
@@ -224,6 +225,7 @@ function CompleteSolutionSection() {
                     src={`/assets/pages/solutionpage/${item.image}`}
                     alt={item.tabName}
                     className="w-full max-w-[471px] object-contain hidden lg:block"
+                     loading='lazy'
                   />
                 </div>
               ))}
@@ -260,6 +262,7 @@ function CompleteSolutionSection() {
                          src={`/assets/pages/solutionpage/${item.image}`}
                         alt={item.tabName}
                         className="w-full max-w-[400px] object-contain block lg:hidden pt-4"
+                         loading='lazy'
                       />
                       <p className="font-lora text-[#FBFBFB] text-base pt-3 pb-2">
                         {item.description}

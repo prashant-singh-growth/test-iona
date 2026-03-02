@@ -73,6 +73,7 @@ const AuthorSinglePage = () => {
         rest: { scale: 1, rotate: 0, y: 0 },
         hover: { scale: 1.05, rotate: -2, y: -8 },
       }}
+      
       transition={{
         type: "spring",
         stiffness: 200,

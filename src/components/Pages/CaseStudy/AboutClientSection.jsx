@@ -270,6 +270,7 @@ function AboutClientSection({ about }) {
             src={about?.innerImage}
             alt={about?.altText || "iona.ai"}
             className="w-full lg:col-span-4 object-contain rounded-[20px]"
+             loading='lazy'
           />
         </div>
       </div>

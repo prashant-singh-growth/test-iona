@@ -83,6 +83,7 @@ function SolutionSection({ctatext,ctaurl,isLinkActive,bgcolor}) {
                       src={`/assets/pages/landingpage/${item.imgurl}.svg`}
                       alt={item.imgurl}
                       className="h-28  ml-auto"
+                       loading='lazy'
                     />
                   </div>
                   <p className="text-base text-black">{item.description}</p>

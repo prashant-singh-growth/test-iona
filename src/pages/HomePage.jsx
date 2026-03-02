@@ -116,6 +116,7 @@ const HomePage = memo(() => {
           <img
             src="/assets/pages/landingpage/bg-cta-1.png"
             alt=""
+            loading="lazy"
             className="absolute inset-0 min-w-[1200px] lg:min-w-full lg:max-w-full"
           />
           <div className="w-full flex flex-col gap-7 lg:flex-row justify-between items-center relative z-10 max-w-[1440px] ">

@@ -17,6 +17,7 @@ function WorkingWay() {
             alt="iona-way"
             title="iona-way"
             className="w-full max-w-[1100px]"
+            loading='lazy'
           />
         </div>
       </section>

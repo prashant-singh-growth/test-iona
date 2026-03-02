@@ -31,6 +31,7 @@ export default function LogoSlider() {
               key={i}
               src={logo}
               alt={`logo-${i}`}
+               loading='lazy'
               className="h-8 md:h-10  transition-all flex-none"
             />
           ))}

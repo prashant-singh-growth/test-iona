@@ -145,6 +145,7 @@ function Vids() {
                  src={`https://img.youtube.com/vi/${video.videoId}/hqdefault.jpg`}
                   alt={video.title}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                   loading='lazy'
                   onError={(e) => {
                     e.target.src = `https://img.youtube.com/vi/${video.videoId}/hqdefault.jpg`;
                   }}

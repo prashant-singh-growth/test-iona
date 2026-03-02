@@ -12,7 +12,7 @@ function DetailSectionDynamic({title,description,imageURL,altText}) {
                {description}
               </p>
             </div>
-    {imageURL && <img src={imageURL} alt={altText ? altText : 'Agentic AI Recruiter’s Sheet'} className='w-full object-contain ' loading='lazy'/>}
+    {imageURL && <img   src={imageURL} alt={altText ? altText : 'Agentic AI Recruiter’s Sheet'} className='w-full object-contain ' loading='lazy'/>}
             
           </div>
         </section>

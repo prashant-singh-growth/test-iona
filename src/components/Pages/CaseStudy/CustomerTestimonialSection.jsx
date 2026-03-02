@@ -19,11 +19,13 @@ function CustomerTestimonialSection({testimony}) {
                 <div className="w-10 h-10 rounded-full grid place-items-center bg-[#D91E29]"><img
                     src={testimony?.logo}
                     alt= {testimony?.company}
+                     loading='lazy'
                     className={`w-8 h-fit  object-contain  `}
                   /></div>
               ): <img
                     src={testimony?.logo}
                     alt= {testimony?.company}
+                     loading='lazy'
                     className={`w-10 h-10 rounded-full object-cover  `}
                   />
              }

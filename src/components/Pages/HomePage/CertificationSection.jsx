@@ -25,21 +25,25 @@ function CertificationSection() {
             src="/assets/pages/landingpage/iso.png"
             alt="iso"
             className="w-20 sm:w-24 md:w-28 lg:w-36 h-auto object-contain"
+             loading='lazy'
           />
           <img
             src="/assets/pages/landingpage/gdpr.png"
             alt="gdpr"
             className="w-28 sm:w-36 md:w-44 lg:w-52 h-auto object-contain"
+             loading='lazy'
           />
           <img
             src="/assets/pages/landingpage/iso1.png"
             alt="iso"
             className="w-20 sm:w-24 md:w-28 lg:w-36 h-auto object-contain"
+             loading='lazy'
           />
           <img
             src="/assets/pages/landingpage/hmgov.png"
             alt="hmgov"
             className="w-40 sm:w-48 md:w-56 lg:w-64 h-auto object-contain mt-3 md:mt-0"
+             loading='lazy'
           />
         </div>
       </div>

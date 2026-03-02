@@ -20,6 +20,7 @@ function ClientBadgeSection() {
   key={i}
   src={logo}
   alt={`logo-${i}`}
+  loading='lazy'
   className="
     transition-all
     h-10 sm:h-10 md:h-14 lg:h-16

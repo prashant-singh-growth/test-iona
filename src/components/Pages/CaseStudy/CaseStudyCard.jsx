@@ -15,6 +15,7 @@ function CaseStudyCard() {
                 src={item.image}
                 alt={item.title}
                 className="w-full object-contain"
+                 loading='lazy'
               />
 
               <p className="text-black text-xl font-lora font-normal line-clamp-3">

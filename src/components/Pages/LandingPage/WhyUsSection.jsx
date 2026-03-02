@@ -68,6 +68,7 @@ function WhyUsSection({ ctaText, ctaUrl }) {
                   src={`/assets/pages/landingpage/${item.image}.svg`}
                   alt={item.title}
                   className="w-8"
+                   loading='lazy'
                 />
               </div>
               <p
