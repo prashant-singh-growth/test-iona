@@ -14,7 +14,7 @@ description:"Book a demo today and see how Iona’s solutions can revolutionize 
     summary:
       "Managing offers efficiently is key to securing top talent in high-volume hiring. This blog explains how AI solutions like NovaTrack can optimize the offer management process, from automating offer creation to ensuring quick approvals and seamless candidate communication. By streamlining workflows, NovaTrack enhances speed, accuracy, and the overall candidate experience.",
     author: "Michael Chen",
-    date: "February 19, 2026",
+    date: "March 2, 2026",
     image: `/assets/pages/blog/2026/march/offer-management-process.webp`,
     altimg: "Are AI and Bots Set to Overhaul HR Operations in India?",
     tags: ["offermanagement","hiringsolutions","joiningprocess","hiringautomation"],
