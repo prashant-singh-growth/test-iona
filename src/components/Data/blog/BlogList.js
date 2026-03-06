@@ -4,6 +4,7 @@ import { Blog4 } from "./best-hiring-automation-tools";
 import { Blog6 } from "./bulk-headcount-planning-process";
 import { Blog7 } from "./headcount-planning-software";
 import { Blog3 } from "./high-volume-hiring-challenges";
+import { Blog12 } from "./hr-automation-trends";
 import { Blog9 } from "./indian-pre-employment-background-check";
 import { Blog5 } from "./intelligent-automation-hr-usecases";
 import { Blog10 } from "./offer-management-process";
@@ -14,6 +15,11 @@ import { Blog2 } from "./virtual-recruiting-transforming-talent-acquisition";
 
 export const BlogList = [
     
+     {
+        url:"hr-automation-trends",
+        content:Blog12,
+        author:AuthorList[2],
+    },
      {
         url:"sourcing-strategy-in-recruitment",
         content:Blog11,
