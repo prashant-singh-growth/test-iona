@@ -144,7 +144,7 @@ const NovaCount = () => {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.7, delay: 0.4 }}
             >
-              Say goodbye to spreadsheets and guesswork. NovaCount is a headcount planning software that delivers real-time clarity and data-driven insights through AI-powered workforce analytics.
+              NovaCount is a headcount planning software that tracks open requisitions and delivers real-time clarity and data-driven insights through AI-powered workforce analytics.
             </motion.p>
             <motion.div 
               className="flex flex-col sm:flex-row gap-4 justify-center"
@@ -217,7 +217,7 @@ const NovaCount = () => {
               <ul className="space-y-3">
                 {[
                   "Break free from manual processes and uncertainty.",
-                  "Empower teams with data-driven headcount planning.",
+                  "Empower teams with dynamic, data-driven headcount planning.",
                   "Seamlessly involve hiring managers and finance teams in planning workflows",
                   "Track open requisitions and candidate pipeline movement in real time",
                   "AI-powered alerts to identify and resolve bottlenecks early"
@@ -252,7 +252,7 @@ const NovaCount = () => {
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Capabilities that Drive Hiring Excellence</h2>
             <p className="text-secondaryText max-w-3xl mx-auto">
-              Streamlined tools to transform your headcount planning process
+              Streamlined tools from iona.ai designed to transform your headcount planning process.
             </p>
           </motion.div>
 

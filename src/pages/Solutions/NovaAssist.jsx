@@ -206,7 +206,7 @@ const NovaAssist = () => {
             >
               <ul className="space-y-3">
                 {[
-                  "Nova Assist isn't just a chatbot. It's your AI-powered, insight-driven teammate, designed to guide you from requisition to onboarding, and every moment in between.",
+                  "NovaAssist isn't just a chatbot. It's your AI-powered, insight-driven assistant designed to guide you from requisition to onboarding and every moment in between.",
                   "Nova Assist blends natural language intelligence with deep HR context, delivering real-time support, insights, and decisions, no search bars, no delays.",
                   "Whether you're recruiting, onboarding, or tracking strategy; just ask.",
                   "Nova Assist is woven into your Nova Suite, ready to guide every stakeholder: recruiters, HR teams, new hires, and leaders."
@@ -269,7 +269,7 @@ const NovaAssist = () => {
               <MobileFeatureCard 
                 emoji="📱"
                 title="Your Co-Pilot Across the Talent Lifecycle"
-                description="From requisition to onboarding, Nova Assist is your silent partner in every HR moment. It anticipates needs, removes friction, and keeps your hiring journey on course."
+                description="From requisition to onboarding, NovaAssist is your AI onboarding assistant for every HR moment. It anticipates needs, removes friction, and keeps your hiring journey on course."
                 delay={0.4}
               />
               <MobileFeatureCard 

@@ -52,7 +52,7 @@ const NovaDoc = () => {
   return (
     <div className="flex flex-col items-center overflow-x-hidden">
         <SeoHeader
-      title={"NovaDoc | AI-Powered Onboarding Documentation at Scale"}
+      title={"NovaDoc | AI-Powered Onboarding Documentation at Scale | iona.ai"}
       description={"Accelerate high-volume onboarding with NovaDoc. AI-powered, mobile-first documentation that ensures accuracy, compliance, and zero paperwork delays."}
      
       />
@@ -215,7 +215,7 @@ const NovaDoc = () => {
               <ul className="space-y-3">
                 {[
                   "Nova Doc transforms new hire documentation from a painful bottleneck into a seamless, lightning-fast digital onboarding experience for HR and new hires alike.",
-                  "Built on First Principles, powered by intelligent automation, and designed with human clarity, it's the only solution that bends to your onboarding needs without breaking a sweat.",
+                  "Built on First Principles, powered by iona.ai’s intelligent automation, and designed with human clarity, it's the only solution that bends to your onboarding needs without breaking a sweat.",
                   "No downloads. No confusion.",
                   "Mobile-first, ultra-fast documentation",
                   "Human-backed, <a href='/solutions/novaconnect' className='underline'>AI-driven support</a> at scale"
@@ -437,7 +437,7 @@ const NovaDoc = () => {
             >
               <h3 className="text-xl font-bold mb-4"> Smart AI + Human Backup</h3>
               <p className="text-secondaryText">
-                AI handles accuracy and speed, while our real onboarding experts support edge cases and queries in real-time.
+               AI handles accuracy and speed, while our real onboarding services experts support edge cases and queries in real-time.
               </p>
             </motion.div>
 

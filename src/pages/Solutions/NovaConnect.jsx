@@ -450,7 +450,7 @@ const NovaConnect = () => {
               },
               {
                 title: "Instant AI-Powered Assistance",
-                description: "Our intelligent AI system, available 24/7, provides quick answers to common queries, reducing delays in the onboarding process. It handles basic questions while ensuring that your new hires always have the support they need."
+                description: "Our intelligent AI system, powered by iona.ai, available 24/7, provides quick answers to common queries, reducing delays in the onboarding process."
               },
               {
                 title: "Human Expertise When Needed",
