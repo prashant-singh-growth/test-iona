@@ -15,8 +15,8 @@ description:"Book a demo today and see how iona.ai can streamline your hiring pr
       "Recruitment in 2026 is no longer about filling roles quickly — it’s about driving measurable business impact. This blog explores the most critical recruitment problems, from low talent yield and declining hiring quality to DEI visibility gaps and workforce forecasting challenges. It outlines data-driven solutions and a maturity model that helps HR leaders move from reactive hiring to intelligence-led workforce planning.",
     author: "Michael Chen",
     date: "March 10, 2026",
-    image: `/assets/pages/blog/2026/march/recruitment-sourcing.webp`,
-    altimg: "Recruitment Sourcing Strategy",
+    image: `/assets/pages/blog/2026/march/recuitment-problem.webp`,
+    altimg: "2026 Recruitment Problems & Solution Guide for HR",
     tags:  [
   "hiringchallenges",
   "recruitment",
