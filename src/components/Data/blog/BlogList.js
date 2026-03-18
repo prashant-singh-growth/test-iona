@@ -2,6 +2,7 @@ import { Blog8 } from "./ai-hr-operations";
 import { AuthorList } from "./AuthorList";
 import { Blog4 } from "./best-hiring-automation-tools";
 import { Blog6 } from "./bulk-headcount-planning-process";
+import { Blog14 } from "./guide-to-hr-software-india";
 import { Blog7 } from "./headcount-planning-software";
 import { Blog3 } from "./high-volume-hiring-challenges";
 import { Blog12 } from "./hr-automation-trends";
@@ -16,6 +17,11 @@ import { Blog2 } from "./virtual-recruiting-transforming-talent-acquisition";
 
 export const BlogList = [
     
+     {
+        url:"guide-to-hr-software-india",
+        content:Blog14,
+        author:AuthorList[0],
+    },
      {
         url:"recruitment-problems-and-solution",
         content:Blog13,
