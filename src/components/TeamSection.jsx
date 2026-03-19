@@ -7,7 +7,7 @@ const TeamSection = memo(() => {
     {
       name: "Amit Srivastava",
       position: "Business & Technology",
-      image: `${process.env.PUBLIC_URL}/assets/Amit.png`,
+      image: `${process.env.PUBLIC_URL}/assets/pages/blog/author/amit.webp`,
       linkedin: "https://www.linkedin.com/in/amitsriva/"
     },
     {
@@ -16,12 +16,7 @@ const TeamSection = memo(() => {
       image: `${process.env.PUBLIC_URL}/assets/ooj.png`,
       linkedin: "https://www.linkedin.com/in/ooj/"
     },
-    {
-      name: "Abhijeet Chakravarty",
-      position: "Product & Technology",
-      image: `${process.env.PUBLIC_URL}/assets/Abhijeet.png`,
-      linkedin: "https://www.linkedin.com/in/abhijeet-chakravarty/"
-    }
+   
   ];
 
   return (
@@ -40,7 +35,7 @@ const TeamSection = memo(() => {
           </p>
         </motion.div>
         
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 max-w-3xl mx-auto">
           {teamMembers.map((member, index) => (
             <div key={member.name} className="relative p-1 rounded-3xl bg-gradient-to-br from-blue-50/50 via-white to-purple-50/50">
               <motion.div 

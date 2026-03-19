@@ -4,7 +4,7 @@ export const AuthorList = [
         authorName:"Amit Srivastava",
         authorPosition:"Co-Founder, iona.ai",
         authorDescription:"A founder and architect of Agentic AI, Amit leverages two decades of global consulting expertise and a proven track record to transform intractable HR challenges into autonomous, result-driven systems.",
-        AuthorImage:"/assets/pages/blog/author/Amit.png",
+        AuthorImage:"/assets/pages/blog/author/amit.webp",
     },
     {
         url:"abhijeet-chakravarty",
