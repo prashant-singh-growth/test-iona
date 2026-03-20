@@ -18,10 +18,11 @@ description:"Book a demo today and see how iona.ai can streamline your hiring pr
     image: `/assets/pages/blog/2026/march/ultimate-guide-banner.webp`,
     altimg: "Ultimate HR Software Guide 2026",
     tags:  [
-  "hiringchallenges",
-  "recruitment",
-  "hiringsolutions",
-  "hiringautomation"
+  
+  "HRSoftware",
+  "HRMS",
+  "HRInnovation",
+  "AIinHR"
 ],
     content: `
 <p><strong>Let’s be honest:</strong> Managing a growing team on spreadsheets is a ticking time bomb. </p>
