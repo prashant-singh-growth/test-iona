@@ -159,7 +159,88 @@ description:"Book a demo today and see how iona.ai can streamline your hiring pr
     question: "How can iona.ai enhance my recruitment sourcing strategy?",
     answer: "iona.ai optimizes your sourcing strategy in recruitment by automating candidate sourcing, screening, and engagement. With AI-driven tools like NovaAssist, NovaTrack, and NovaCount, Iona.ai ensures faster, more accurate recruitment processes for both high-volume and niche roles, improving efficiency, reducing costs, and enhancing the overall hiring experience."
   }
-]
+],
  
+ blogSchema:`{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Sourcing Strategy in Recruitment: Volume vs Niche",
+  "description": "Learn how sourcing strategy in recruitment differs for high-volume and niche roles, and how AI helps hire faster, smarter, and at lower cost.",
+  "image": "https://www.iona.ai/assets/pages/blog/2026/march/recruitment-sourcing.webp",
+  "author": {
+    "@type": "Organization",
+    "name": "iona.ai",
+    "url": "https://www.iona.ai/author/iona-ai"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "iona.ai",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.iona.ai/assets/iona-ai-logo.png"
+    }
+  },
+  "datePublished": "2026-03-03T00:00:00+05:30",
+  "dateModified": "2026-03-16T00:00:00+05:30",
+  "inLanguage": "en",
+  "url": "https://www.iona.ai/blog/sourcing-strategy-in-recruitment"
+}
+`,
+    faqSchema:`<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "What is a sourcing strategy in recruitment?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "A sourcing strategy in recruitment refers to the methods and processes used by HR teams to identify, attract, and engage potential candidates for open positions. It includes tactics like job postings, social media outreach, employee referrals, and more. A well-defined sourcing strategy in recruitment ensures that businesses find the right talent efficiently, whether for high-volume hiring or niche roles."
+    }
+  },{
+    "@type": "Question",
+    "name": "Why is a sourcing strategy important in recruitment?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "A strong sourcing strategy in recruitment is critical for building a talent pipeline, reducing hiring costs, and improving the quality of hires. By targeting the right candidates and leveraging the right tools, businesses can fill positions faster while maintaining quality, making recruitment more effective and less expensive."
+    }
+  },{
+    "@type": "Question",
+    "name": "How does a high-volume hiring strategy differ from a niche role recruitment strategy?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The sourcing strategy in recruitment for high-volume hiring focuses on speed, filtering large applicant pools efficiently, and filling positions quickly. In contrast, niche roles require a sourcing strategy in recruitment that focuses on precision, targeting passive candidates, and finding specialized skills, often through headhunting or targeted outreach."
+    }
+  },{
+    "@type": "Question",
+    "name": "What are the key challenges in high-volume recruitment sourcing strategies?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Challenges in high-volume recruitment sourcing strategies include managing large candidate pools, maintaining engagement across many applicants, and ensuring timely hiring. These challenges require efficient automation tools, such as AI-powered software, to streamline screening and reduce manual effort, enabling HR teams to meet tight hiring deadlines without sacrificing quality."
+    }
+  },{
+    "@type": "Question",
+    "name": "How can AI improve a sourcing strategy in recruitment?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "AI can greatly enhance a sourcing strategy in recruitment by automating tasks like resume screening, candidate engagement, and predictive sourcing. AI tools can quickly filter out unqualified candidates, engage with high-quality candidates at scale, and help HR teams focus on the most promising prospects, saving time and reducing hiring costs."
+    }
+  },{
+    "@type": "Question",
+    "name": "What are the best practices for a sourcing strategy in recruitment for niche roles?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "For niche roles, the sourcing strategy in recruitment should include leveraging specialized job boards, professional networks, and employee referrals. Engaging passive candidates, using advanced AI tools to predict candidate success, and maintaining continuous engagement through personalized communication are also key practices for sourcing specialized talent."
+    }
+  },{
+    "@type": "Question",
+    "name": "How can iona.ai enhance my recruitment sourcing strategy?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "iona.ai optimizes your sourcing strategy in recruitment by automating candidate sourcing, screening, and engagement. With AI-driven tools like NovaAssist, NovaTrack, and NovaCount, Iona.ai ensures faster, more accurate recruitment processes for both high-volume and niche roles, improving efficiency, reducing costs, and enhancing the overall hiring experience."
+    }
+  }]
+}
+`,
 
   }

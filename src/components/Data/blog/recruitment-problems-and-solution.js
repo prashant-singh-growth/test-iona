@@ -259,7 +259,88 @@ description:"Book a demo today and see how iona.ai can streamline your hiring pr
   }
  
  
-]
+],
+  blogSchema:`{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Recruitment Problems & Solutions in 2026: Guide for HR",
+  "description": "Explore recruitment problems in 2026 and proven HR solutions to reduce time-to-hire, improve candidate quality, and deliver measurable hiring ROI.",
+  "image": "https://www.iona.ai/assets/pages/blog/2026/march/recuitment-problem.webp",
+  "author": {
+    "@type": "Organization",
+    "name": "iona.ai",
+    "url": "https://www.iona.ai/author/iona-ai"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "iona.ai",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.iona.ai/assets/iona-ai-logo.png"
+    }
+  },
+  "datePublished": "2026-03-10T00:00:00+05:30",
+  "dateModified": "2026-03-17T00:00:00+05:30",
+  "inLanguage": "en",
+  "url": "https://www.iona.ai/blog/recruitment-problems-and-solution"
+}
+`,
+    faqSchema:`{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "What are the biggest recruitment problems in 2026?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The biggest recruitment problems in 2026 include low qualified talent yield, declining quality of hire despite faster cycles, limited DEI process visibility, recruiter burnout, and poor alignment between hiring data and business outcomes."
+    }
+  },{
+    "@type": "Question",
+    "name": "Why does high application volume not guarantee better hiring results?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "High application volume often includes unqualified candidates due to one-click applications and AI-generated resumes. Without structured screening and skill validation, inflated pipelines reduce hiring accuracy instead of improving it."
+    }
+  },{
+    "@type": "Question",
+    "name": "How can HR leaders measure quality of hire effectively?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Quality of hire can be measured by linking recruitment data to 6-month and 12-month performance reviews, retention rates, productivity metrics, and structured competency evaluations rather than relying only on time-to-hire."
+    }
+  },{
+    "@type": "Question",
+    "name": "What is intelligence-led workforce planning?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Intelligence-led workforce planning uses predictive analytics, hiring data, and labor market insights to forecast skill gaps and align recruitment with future business needs instead of reacting to open vacancies."
+    }
+  },{
+    "@type": "Question",
+    "name": "How can organizations improve their Qualified Pipeline Ratio (QPR)?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Organizations can improve QPR by using structured skill assessments, analyzing source-to-performance data, and prioritizing validated qualification signals instead of relying solely on resume keyword matching."
+    }
+  },{
+    "@type": "Question",
+    "name": "How can AI improve recruitment decision-making?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "AI can improve recruitment by identifying predictive success indicators, reducing screening bias, automating administrative tasks, and connecting hiring inputs to measurable performance outcomes."
+    }
+  },{
+    "@type": "Question",
+    "name": "What is a recruitment maturity model?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "A recruitment maturity model defines stages of hiring capability, from reactive hiring to intelligence-led workforce planning. It helps organizations assess their current state and implement structured, data-driven improvements."
+    }
+  }]
+}
+`,
+     
  
 
   }

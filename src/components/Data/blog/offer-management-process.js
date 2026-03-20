@@ -126,5 +126,86 @@ description:"Book a demo today and see how Iona’s solutions can revolutionize 
 
      
     ],
+    blogSchema:`{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Offer Management Process: From Approval to Joining",
+  "description": "Understand the offer management process from approval to joining. Streamline hiring & ensure smooth transitions with effective offer management strategies.",
+  "image": "https://www.iona.ai/assets/pages/blog/2026/march/offer-management-process.webp",
+  "author": {
+    "@type": "Organization",
+    "name": "iona.ai",
+    "url": "https://www.iona.ai/author/iona-ai"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "iona.ai",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.iona.ai/assets/iona-ai-logo.png"
+    }
+  },
+  "datePublished": "2026-03-02T00:00:00+05:30",
+  "dateModified": "2026-03-16T00:00:00+05:30",
+  "inLanguage": "en",
+  "url": "https://www.iona.ai/blog/offer-management-process"
+}
+`,
+    faqSchema:`{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "What is the offer management process in recruitment?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The offer management process involves creating, approving, presenting, and finalizing job offers to candidates, ensuring a seamless experience from offer creation to acceptance and onboarding."
+    }
+  },{
+    "@type": "Question",
+    "name": "How can AI improve the offer management process?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "AI-powered solutions streamline the offer management process by automating tasks like offer creation, approval workflows, and candidate communication, reducing delays and human errors, while enhancing decision-making."
+    }
+  },{
+    "@type": "Question",
+    "name": "What are the benefits of automating offer management?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Automating offer management speeds up the hiring cycle, ensures accuracy, reduces manual work, and creates a smoother, faster experience for both HR teams and candidates."
+    }
+  },{
+    "@type": "Question",
+    "name": "How does NovaStart optimize the offer management process?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "NovaStart automates key steps in the offer management process, from offer creation and approval workflows to candidate communications, helping HR teams manage offers more efficiently and ensure a seamless experience."
+    }
+  },{
+    "@type": "Question",
+    "name": "Can AI solutions handle high-volume hiring effectively?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes, AI solutions like NovaStart are designed to manage bulk hiring efficiently by automating repetitive tasks, ensuring timely offer approvals, and keeping candidates engaged throughout the offer process."
+    }
+  },{
+    "@type": "Question",
+    "name": "How does AI help with candidate engagement during the offer process?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "AI tools ensure personalized and timely communication with candidates at scale, automating follow-ups, offer adjustments, and updates to keep candidates informed and engaged throughout the offer process."
+    }
+  },{
+    "@type": "Question",
+    "name": "What features make NovaStart ideal for bulk hiring?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "NovaStart is ideal for bulk hiring because it automates offer creation, approvals, and candidate communication, tracks progress in real-time, and ensures compliance, making the entire process faster, more accurate, and scalable."
+    }
+  }]
+}
+`,
+   
    
   }
