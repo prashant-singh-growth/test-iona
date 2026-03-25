@@ -14,7 +14,7 @@ description:"Book a demo with iona.ai today and see how AI-powered hiring can re
     summary:
       "This blog explains what HRIS software is, how it works, and why it’s essential for modern HR teams. It covers the three types of HRIS, key features, top HRIS systems, and the benefits of implementing one. You’ll also learn how to choose the right HRIS using a simple 4-step framework. Finally, it introduces how AI-powered solutions like iona.ai go beyond traditional HRIS by improving recruitment efficiency and decision-making.",
     author: "Michael Chen",
-    date: "March 19, 2026",
+    date: "March 25, 2026",
     image: `/assets/pages/blog/2026/march/what-is-hris.webp`,
     altimg: "What is HRIS in HR? (Human Resource Information System)",
     tags:  [
