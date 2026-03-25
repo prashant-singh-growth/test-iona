@@ -78,6 +78,7 @@ description:"Book a demo with iona.ai today and see how AI-powered hiring can re
 </ul>
 <h2 id="-what-are-the-top-5-hris-systems-"><strong>What Are the Top 5 HRIS Systems?</strong></h2>
 <p>There are many HRIS solutions on the market, but here are the top 5 <strong>HRIS software</strong> systems to consider:</p>
+<div class="overflow-x-auto !max-w-[90vw]">
 <table>
 <thead>
 <tr>
@@ -120,6 +121,7 @@ description:"Book a demo with iona.ai today and see how AI-powered hiring can re
 </tr>
 </tbody>
 </table>
+</div>
 <h3 id="-mini-descriptions-for-each-platform-"><strong>Mini-Descriptions for Each Platform</strong></h3>
 <ol>
 <li><p><strong>Gusto</strong>: Best for small businesses, Gusto offers a robust all-in-one payroll and compliance platform. Ideal for businesses with up to 200 employees, it simplifies HR tasks while ensuring compliance.</p>
@@ -146,6 +148,7 @@ description:"Book a demo with iona.ai today and see how AI-powered hiring can re
 </ol>
 <h2 id="what-is-the-difference-between-hris-hrms-and-hcm-">What is the difference between HRIS, HRMS, and HCM?</h2>
 <p>Many people often confuse HRIS with <strong>HRMS</strong> (Human Resource Management System) or <strong>HCM</strong> (Human Capital Management). While these systems may seem similar, they have different functionalities:</p>
+<div class="overflow-x-auto !max-w-[90vw]">
 <table>
 <thead>
 <tr>
@@ -172,6 +175,7 @@ description:"Book a demo with iona.ai today and see how AI-powered hiring can re
 </tr>
 </tbody>
 </table>
+</div>
 <p>An HRMS and HCM extend beyond the scope of HRIS, including functions like recruitment, learning and development, and workforce planning, while HRIS software primarily focuses on automating administrative tasks.</p>
 <h2 id="-how-to-choose-the-right-hris-for-your-organization-"><strong>How to Choose the Right HRIS for Your Organization</strong></h2>
 <p>Selecting the right <strong>HRIS software</strong> is crucial for streamlining HR processes and supporting business growth. Here’s a 4-step selection framework you must follow to ensure you choose the best system tailored to your organization’s needs.</p>

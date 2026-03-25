@@ -147,6 +147,7 @@ description:"Book a demo today and see how iona.ai can transform your hiring pro
 
 </ol>
 <h2 id="-comparison-of-top-cloud-hr-software-solutions-"><strong>Comparison of Top Cloud HR Software Solutions</strong></h2>
+<div class="overflow-x-auto !max-w-[90vw]">
 <table>
 <thead>
 <tr>
@@ -195,6 +196,7 @@ description:"Book a demo today and see how iona.ai can transform your hiring pro
 </tr>
 </tbody>
 </table>
+</div>
 <p>Among these platforms, iona.ai stands out as the most advanced cloud HR software because it combines AI automation with modular HR workflows.</p>
 <h2 id="-how-to-choose-the-right-cloud-hr-software-"><strong>How to Choose the Right Cloud HR Software</strong></h2>
 <p>Selecting the right cloud HR software depends on your organization&#39;s needs.</p>
