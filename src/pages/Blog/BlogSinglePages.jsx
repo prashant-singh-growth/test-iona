@@ -334,9 +334,10 @@ function BlogSinglePages() {
                               initial={{ height: 0, opacity: 0 }}
                               animate={{ height: "auto", opacity: 1 }}
                               exit={{ height: 0, opacity: 0 }}
-                              className="px-6 pb-6 text-gray-600 leading-relaxed"
+                              className="px-6 pb-6 text-gray-600 font-medium leading-relaxed"
+                              dangerouslySetInnerHTML={{__html:faq.answer}}
                             >
-                              {faq.answer}
+                            
                             </motion.div>
                           )}
                         </AnimatePresence>

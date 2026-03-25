@@ -14,10 +14,16 @@ import { Blog1 } from "./prospect-to-productive-journey";
 import { Blog13 } from "./recruitment-problems-and-solution";
 import { Blog11 } from "./sourcing-strategy-in-recruitment";
 import { Blog2 } from "./virtual-recruiting-transforming-talent-acquisition";
+import { Blog16 } from "./what-is-hris";
 
 
 export const BlogList = [
     
+     {
+        url:"what-is-hris",
+        content:Blog16,
+        author:AuthorList[0],
+    },
      {
         url:"cloud-hr-software",
         content:Blog15,
