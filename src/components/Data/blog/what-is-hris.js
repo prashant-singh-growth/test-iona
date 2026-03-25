@@ -266,87 +266,8 @@ description:"Book a demo with iona.ai today and see how AI-powered hiring can re
   }
 ]
  
-,
-  blogSchema:`{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Top Free Cloud-Based HR Software for Small Businesses",
-  "description": "Discover the best free cloud-based HR software solutions for small businesses. Streamline HR tasks like payroll, recruitment, and performance management.",
-  "image": "https://www.iona.ai/assets/pages/blog/2026/march/free-cloud.webp",
-  "author": {
-    "@type": "Person",
-    "name": "Amit Srivastava",
-    "url": "https://www.iona.ai/author/amit-srivastava"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "iona.ai",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://www.iona.ai/assets/iona-ai-logo.png"
-    }
-  },
-  "datePublished": "2026-03-19T00:00:00+05:30",
-  "dateModified": "2026-03-20T00:00:00+05:30",
-  "inLanguage": "en",
-  "url": "https://www.iona.ai/blog/cloud-hr-software"
-}
-`,
-    faqSchema:`{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [{
-    "@type": "Question",
-    "name": "What is cloud-based HR software, and how is it different from traditional HR systems?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Cloud-based HR software is hosted on remote servers and accessible from any device with an internet connection, unlike traditional on-premise systems that require local installation and dedicated infrastructure. This makes cloud HR software more flexible, cost-effective, and easier to maintain, especially for small businesses without large IT teams."
-    }
-  },{
-    "@type": "Question",
-    "name": "Is cloud HR software safe for storing sensitive employee data?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Yes. Reputable cloud HR software platforms use data encryption, role-based access controls, and comply with data protection regulations such as GDPR. These security measures often exceed what small businesses could implement on their own with manual or on-premise systems."
-    }
-  },{
-    "@type": "Question",
-    "name": "Can small businesses with limited budgets afford cloud HR software?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Absolutely. Many cloud HR software platforms, including Zoho People, Bitrix24, Freshteam, and SutiHR, offer free plans suitable for small teams. Even paid tiers are significantly more affordable than traditional HR systems since there are no infrastructure or maintenance costs involved."
-    }
-  },{
-    "@type": "Question",
-    "name": "What HR tasks can be automated using cloud-based HR software?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Cloud HR software can automate a wide range of tasks, including payroll processing, leave approvals, employee onboarding, document collection, attendance tracking, compliance checks, and candidate communication during recruitment. This significantly reduces manual workload for HR teams."
-    }
-  },{
-    "@type": "Question",
-    "name": "Do employees need technical expertise to use online HR management software?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "No. Most modern cloud HR software platforms are designed with simple, intuitive interfaces. Employees can easily use self-service portals to apply for leave, download payslips, update personal information, and complete onboarding tasks without any technical training."
-    }
-  },{
-    "@type": "Question",
-    "name": "How do I know which cloud HR software is the right fit for my business?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "The right choice depends on your specific needs. Consider factors like the size of your team, whether you prioritize recruitment, payroll, or collaboration, your budget, and how much you expect to grow. For example, Freshteam suits hiring-focused companies, while iona.ai is ideal for businesses that want AI-powered automation across the full HR lifecycle."
-    }
-  },{
-    "@type": "Question",
-    "name": "Can cloud HR software scale as my business grows?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Yes. One of the biggest advantages of cloud-based HR software is its scalability. Platforms like iona.ai are built with modular systems that allow businesses to add capabilities such as workforce analytics, advanced onboarding, and documentation management as their teams and operations expand, without switching to an entirely new system."
-    }
-  }]
-}
-`,
+
+ 
  
  
 
