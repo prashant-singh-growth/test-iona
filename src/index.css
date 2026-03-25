@@ -255,6 +255,12 @@ color: black;
   .blog-content th {
     @apply bg-slate-50 border-b border-slate-200 p-4 text-sm font-semibold text-slate-700;
   }
+  .blog-content thead tr{
+@apply bg-darkVoilet text-white font-bold;
+  }
+  .blog-content thead tr th{
+@apply bg-darkVoilet text-white font-bold;
+  }
 
   /* Body Cell Styling */
   .blog-content td {
