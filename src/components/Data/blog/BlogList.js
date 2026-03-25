@@ -22,7 +22,7 @@ export const BlogList = [
      {
         url:"what-is-hris",
         content:Blog16,
-        author:AuthorList[0],
+        author:AuthorList[2],
     },
      {
         url:"cloud-hr-software",
