@@ -148,7 +148,7 @@ const [formData, setFormData] = useState({
       >
         <div className="flex flex-col gap-2">
             <h2 className="text-2xl md:text-3xl font-lora font-medium text-darkVoilet">
-          Claim Your Free Hardcopy
+          Claim your author copy
         </h2>
         <p className="text-sm text-[#2A2564]">Get the Most Highly Anticipated Book, “The AI-FIRST CHRO”</p>
         </div>
