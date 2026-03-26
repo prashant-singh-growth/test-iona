@@ -25,7 +25,7 @@ function HowtoGetCopy() {
                         },
 
                     ].map((item, ind) => (
-                        <div key={ind} className="flex flex-col p-5 justify-center items-center w-full rounded-xl bg-[linear-gradient(15.8deg,_#6492EE_21.51%,_#637CEB_28.33%,_#6276E5_35.69%,_#5A5EDA_43.6%,_#3D52CA_52.05%,_#1820B7_64.6%,_#091CAF_78.23%)]">
+                        <div key={ind} className="flex flex-col p-5 justify-center items-center w-full rounded-xl bg-[linear-gradient(15.8deg,_#6492EE_21.51%,_#637CEB_28.33%,_#6276E5_35.69%,_#5A5EDA_43.6%,_#3D52CA_52.05%,_#1820B7_64.6%,_#091CAF_78.23%)] hover:scale-95 ease-in-out duration-200 hover:shadow-lg hover:-translate-y-1">
                             <h3 className='text-white text-5xl w-full text-center pb-2 font-bold border-b border-white'>{item.count}</h3>
                             <p className='text-base text-white text-center font-medium mt-3'>{item.text}</p>
                         </div>
@@ -47,10 +47,10 @@ function HowtoGetCopy() {
                                 Reserve Your Free Copy
                                 <FaArrowRight />
                             </a>
-                            <div className="flex flex-col pl-5 gap-4 mt-14 border-l-[1.6px] border-[#160E3899]">
-                                <p className='text-sm text-[#160E38] italic'>“Enthusiasm got you started. Budget got you vendors. Neither will get you to the boardroom. This is the missing playbook for becoming the AI-First CHRO.”
+                            <div className="flex flex-col pl-5 font-lora gap-4 mt-14 border-l-[1.6px] border-[#160E3899]">
+                                <p className='text-sm font-lora text-[#160E38] italic'>“Enthusiasm got you started. Budget got you vendors. Neither will get you to the boardroom. This is the missing playbook for becoming the AI-First CHRO.”
                                     "</p>
-                                <p className='text-xs text-[#7B879D]'>— Amit Srivastava, Author · Founder, iona.ai</p>
+                                <p className='text-xs font-lora text-[#7B879D]'>— Amit Srivastava, Author · Founder, iona.ai</p>
                             </div>
                         </div>
 

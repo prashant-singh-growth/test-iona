@@ -26,10 +26,10 @@ function AdslandingBanner() {
                         75 senior HR leaders in India will receive signed author copies before anyone else. No purchase. No strings. Just the book — because the content earns its own advocacy.
                     </p>
                     <div className="flex flex-col pl-5 gap-4 mt-8 mf:mt-14 border-l-[1.6px] border-[#160E3899]">
-                        <p className='text-sm text-[#160E38] italic'>A narrative-driven playbook for HR leaders navigating AI transformation. Built from
+                        <p className='text-sm font-lora text-[#160E38] italic'>A narrative-driven playbook for HR leaders navigating AI transformation. Built from
                             Indian ground realities. Frameworks forged through operational experience, not borrowed
                             from textbooks.</p>
-                        <p className='text-xs text-[#7B879D]'>— Amit Srivastava, Author · Founder, iona.ai</p>
+                        <p className='text-xs font-lora text-[#7B879D]'>— Amit Srivastava, Author · Founder, iona.ai</p>
                     </div>
                 </div>
                 <AdsFormEventCopy />
