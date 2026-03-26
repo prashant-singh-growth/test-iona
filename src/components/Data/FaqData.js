@@ -83,3 +83,31 @@ export const solutionFaqList = [
       "Yes, iona.ai supports global background checks, ensuring that all international hires are thoroughly vetted according to the compliance standards of their respective countries, streamlining cross-border recruitment."
   }
 ];
+
+export const landingpagefaqads = [
+  {
+    question: "How are the 75 recipients selected?",
+    answer:
+      "Every application is reviewed personally by the author. The criteria: you lead or co-lead HR at a 1,000+ employee organisation in India, and you are navigating AI in your function. No algorithm. Just judgment."
+  },
+  {
+    question: "Is there any obligation?",
+    answer:
+      "None whatsoever. No review. No social posts. No follow-up pitch. The book is sent because the frameworks were designed for people in your position."
+  },
+  {
+    question: "What if all 75 copies are claimed?",
+    answer:
+      "You stay on the waitlist for priority launch notification and early platform access. The waitlist has value even after the 75 copies are gone."
+  },
+  {
+    question: "When can I purchase the book?",
+    answer:
+      "The book is in print. Public availability will be announced to the waitlist before any other channel."
+  },
+  {
+    question: "What is AIFirstCHRO.com?",
+    answer:
+      "The companion platform. Interactive assessments, diagnostic tools, team variance analysis, downloadable resources, all grounded in the book's six frameworks. First 75 readers receive priority beta access."
+  }
+]

@@ -45,6 +45,7 @@ const ThankYouPage = lazy(() => import("./pages/ThankYou"));
 const SolutionPage = lazy(() => import("./pages/SolutionPage"));
 const SecLandingPage = lazy(() => import("./pages/Landing/SecLandingPage"));
 const AdsLandingPage = lazy(() => import("./pages/Landing/AdsLandingPages"));
+const LpLandingPagesec = lazy(() => import("./pages/Landing/AdsLandingPageSec"));
 const AlternativeDynamicPage = lazy(
   () => import("./pages/Alternative/AlternativeDynamic")
 );
@@ -193,6 +194,14 @@ const AnimatedRoutes = () => {
           element={
             <PageTransition>
               <NovaStart />
+            </PageTransition>
+          }
+        />
+        <Route
+          path="/lp"
+          element={
+            <PageTransition>
+              <LpLandingPagesec/>
             </PageTransition>
           }
         />
@@ -483,7 +492,8 @@ function AppContent() {
     "/end-to-end-hiring-solution-for-enterprises",
     "/automated-background-verification",
     "/agentic-ai-recruiters-sheet",
-    "/ads"
+    "/ads",
+    "/lp"
   ];
   const shouldHideNavbar = hideNavbarRoutes.includes(location.pathname);
 
