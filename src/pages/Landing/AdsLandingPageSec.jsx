@@ -8,11 +8,13 @@ import { landingpagefaqads } from '../../components/Data/FaqData'
 import SeoHeader from '../../components/utils/SeoHeader'
 import LPFooter from '../../components/Pages/LandingPage/LPFooter'
 import LPHeader from '../../components/Pages/LandingPage/LPHeader'
+import PopUpSection from '../../components/Pages/LandingPage/PopUpSection'
 
 function AdsLandingPageSec() {
   return (
     <div className='font-lora'>
         <SeoHeader/>
+        <PopUpSection/>
         <LPHeader ctaText={"Reserve Your Free Copy"}/>
         <AdslandingBanner/>
         <InsideBook/>

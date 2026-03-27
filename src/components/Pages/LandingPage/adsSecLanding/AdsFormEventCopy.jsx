@@ -159,8 +159,8 @@ const [formData, setFormData] = useState({
           { name: "phone", placeholder: "Phone (for shipping)", type: "tel" },
           { name: "company", placeholder: "Company Original Name" },
           { name: "seniority", placeholder: "Job Title" },
-          { name: "employee_count", placeholder: "Employee Count", type: "number"  },
-          { name: "address", placeholder: "Shipping Address" },
+          // { name: "employee_count", placeholder: "Employee Count", type: "number"  },
+          // { name: "address", placeholder: "Shipping Address" },
     
         ].map((field) => (
           <input
@@ -173,7 +173,26 @@ const [formData, setFormData] = useState({
             className="border rounded-lg px-4 font-normal placeholder:font-normal py-2 text-sm"
           />
         ))}
-
+<select
+  name="employee_count"
+  value={formData.employee_count}
+  onChange={handleChange}
+  className="border rounded-lg px-4 py-2 text-sm bg-white"
+>
+  <option value="">Select Employee Count</option>
+  <option value="1-250">1-250</option>
+  <option value="251-1000">251-1000</option>
+  <option value="1001-5000">1001-5000</option>
+  <option value="5000+">5000+</option>
+</select>
+<input
+  type="text"
+  name="address"
+  placeholder="Shipping Address"
+  value={formData.address}
+  onChange={handleChange}
+  className="border rounded-lg px-4 py-2 text-sm"
+/>
         <button
           type="submit"
           disabled={status.loading}

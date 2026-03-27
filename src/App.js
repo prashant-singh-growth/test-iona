@@ -198,7 +198,7 @@ const AnimatedRoutes = () => {
           }
         />
         <Route
-          path="/lp"
+          path="/ai-first-chro"
           element={
             <PageTransition>
               <LpLandingPagesec/>
@@ -493,7 +493,7 @@ function AppContent() {
     "/automated-background-verification",
     "/agentic-ai-recruiters-sheet",
     "/ads",
-    "/lp"
+    "/ai-first-chro"
   ];
   const shouldHideNavbar = hideNavbarRoutes.includes(location.pathname);
 

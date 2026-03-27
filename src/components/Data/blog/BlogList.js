@@ -3,6 +3,7 @@ import { AuthorList } from "./AuthorList";
 import { Blog4 } from "./best-hiring-automation-tools";
 import { Blog6 } from "./bulk-headcount-planning-process";
 import { Blog15 } from "./cloud-hr-software";
+import { Blog17 } from "./employee-onboarding-process";
 import { Blog14 } from "./guide-to-hr-software-india";
 import { Blog7 } from "./headcount-planning-software";
 import { Blog3 } from "./high-volume-hiring-challenges";
@@ -19,6 +20,11 @@ import { Blog16 } from "./what-is-hris";
 
 export const BlogList = [
     
+     {
+        url:"employee-onboarding-process",
+        content:Blog17,
+        author:AuthorList[2],
+    },
      {
         url:"what-is-hris",
         content:Blog16,

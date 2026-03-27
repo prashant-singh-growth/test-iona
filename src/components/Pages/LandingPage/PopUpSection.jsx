@@ -12,30 +12,17 @@ const COLORS = {
 
 /* USERS LIST */
 const users = [
-  { name: "Nitish", city: "Delhi" },
-  { name: "Niharika", city: "Delhi" },
-  { name: "Ganesh", city: "Pune" },
-  { name: "Sheetal", city: "Pune" },
-  { name: "Sharad", city: "Mumbai" },
-  { name: "Supriya", city: "Mumbai" },
-  { name: "Bhavesh", city: "Bengaluru" },
-  { name: "Aparna", city: "Bengaluru" },
-  { name: "Venugopal", city: "Chennai" },
-  { name: "Seetha", city: "Chennai" },
-  { name: "Vishal", city: "Noida" },
-  { name: "Neha", city: "Noida" },
-  { name: "Mohammed", city: "Hyderabad" },
-  { name: "Yasmina", city: "Hyderabad" },
-  { name: "Jose", city: "Kozhikode" },
-  { name: "Jyoti", city: "Kozhikode" },
-  { name: "Mihir", city: "Prayagraj" },
-  { name: "Nisha", city: "Prayagraj" },
-  { name: "Rajdip", city: "Kolkata" },
-  { name: "Divya", city: "Kolkata" },
+  { name: "Vikash", city: "Axis Bank" },
+  { name: "Hemant", city: "Barclays" },
+  { name: "Ranabir", city: "TATA Power" },
+  { name: "Meera", city: "Bajaj Life" },
+  { name: "Prabal", city: "Apple" },
+ 
+ 
 ];
 
 /* DELAY LOGIC */
-const INITIAL_DELAYS = [5000, 30000, 90000]; // 5s, 30s, 90s
+const INITIAL_DELAYS = [5,60,120,240,300]; // 5s, 30s, 90s
 const POPUP_DURATION = 3500;
 
 function PopUpSection() {
@@ -63,7 +50,7 @@ function PopUpSection() {
   }, [index]);
 
   const getNextDelay = (i) => {
-    if (i < INITIAL_DELAYS.length) return INITIAL_DELAYS[i];
+    if (i < INITIAL_DELAYS.length) return INITIAL_DELAYS[i] * 1000;
     return Math.floor(Math.random() * 60000) + 60000; // 60–120s
   };
 
@@ -86,14 +73,16 @@ function PopUpSection() {
             }}
           >
             {/* Glow dot */}
-            <div className="h-10 w-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center">
+            {/* <div className="h-10 w-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center">
               <span
                 className="h-2 w-2 rounded-full bg-white animate-pulse"
                 style={{ boxShadow: `0 0 10px ${COLORS.accent}` }}
               />
-            </div>
+            </div> */}
+
 
             {/* Text */}
+            <img src="/assets/pages/landingpage/popup-free-copy.png" alt="" className="w-10"/>
             <div>
               <p className="text-sm text-white">
                 <span

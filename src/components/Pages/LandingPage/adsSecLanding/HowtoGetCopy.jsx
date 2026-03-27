@@ -57,7 +57,7 @@ function HowtoGetCopy() {
                     </div>
                     <div className="w-full">
                        
-                        <img src="/assets/pages/landingpage/ads-landing.webp" alt="" className='w-full h-fit rounded-xl shadow-xl'/>
+                        <img src="/assets/pages/landingpage/free-copy.webp" alt="" className='w-full h-fit rounded-xl shadow-xl'/>
 
                     </div>
                 </div>
