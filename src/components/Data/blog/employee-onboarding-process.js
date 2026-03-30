@@ -302,7 +302,66 @@ description:"Book a demo with iona.ai today and see how AI-powered hiring can re
     question: "What are the most common onboarding mistakes companies make?",
     answer: "Many companies stop onboarding after the first week. Some overload new hires with too much information early. Others leave managers out of the process, ignore cultural integration, or skip collecting feedback."
   }
-]
+],
+blogSchema:`{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Employee Onboarding Process: Best Practices & Mistakes",
+  "description": "Explore the step-by-step employee onboarding process with checklists, best practices, and mistakes to avoid, ensuring every new hire stays and thrives.",
+  "image": "https://www.iona.ai/assets/pages/blog/2026/march/onboarding-process.webp",
+  "author": {
+    "@type": "Organization",
+    "name": "iona.ai",
+    "url": "https://www.iona.ai/author/iona-ai"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "iona.ai",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.iona.ai/assets/iona-ai-logo.png"
+    }
+  },
+  "datePublished": "2026-03-27T00:00:00+05:30",
+  "dateModified": "2026-03-27T00:00:00+05:30",
+  "inLanguage": "en",
+  "url": "https://www.iona.ai/blog/employee-onboarding-process"
+}
+`,
+faqSchema:`{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "What does the onboarding process mean in HR?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "In HR, the onboarding process is the structured method used to help a new employee join the organization. It includes role clarity, cultural alignment, administrative setup, training, and relationship building."
+    }
+  },{
+    "@type": "Question",
+    "name": "How long should the new employee onboarding process take?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "A typical new employee onboarding process lasts at least 90 days. Some roles need more time for full integration. Senior, specialist, or complex roles may require a structured onboarding program that lasts up to a full year."
+    }
+  },{
+    "@type": "Question",
+    "name": "What should an employee onboarding process template include?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "A strong onboarding template should include five phases. These phases include pre-boarding, day one orientation, week one role integration, 30 to 90 day milestones, and long-term development. Each phase should include clear checklist items and assigned responsibilities."
+    }
+  },{
+    "@type": "Question",
+    "name": "What are the most common onboarding mistakes companies make?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Many companies stop onboarding after the first week. Some overload new hires with too much information early. Others leave managers out of the process, ignore cultural integration, or skip collecting feedback."
+    }
+  }]
+}
+`
  
 
  
