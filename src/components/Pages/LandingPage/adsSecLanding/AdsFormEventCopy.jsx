@@ -134,7 +134,7 @@ const [formData, setFormData] = useState({
       if (!response.ok) throw new Error("HubSpot submission failed");
 
       window.location.href =
-        "/thank-you";
+        "/ai-first-chro/free-copy-reserved";
     } catch (err) {
       setStatus({ loading: false, success: null, error: err.message });
     }
