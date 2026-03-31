@@ -24,7 +24,7 @@ export const BlogList = [
      {
         url:"hrms-software",
         content:Blog18,
-        author:AuthorList[2],
+        author:AuthorList[0],
     },
      {
         url:"employee-onboarding-process",
