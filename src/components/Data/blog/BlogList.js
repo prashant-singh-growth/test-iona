@@ -8,6 +8,7 @@ import { Blog14 } from "./guide-to-hr-software-india";
 import { Blog7 } from "./headcount-planning-software";
 import { Blog3 } from "./high-volume-hiring-challenges";
 import { Blog12 } from "./hr-automation-trends";
+import { Blog18 } from "./hrms-software";
 import { Blog9 } from "./indian-pre-employment-background-check";
 import { Blog5 } from "./intelligent-automation-hr-usecases";
 import { Blog10 } from "./offer-management-process";
@@ -20,6 +21,11 @@ import { Blog16 } from "./what-is-hris";
 
 export const BlogList = [
     
+     {
+        url:"hrms-software",
+        content:Blog18,
+        author:AuthorList[2],
+    },
      {
         url:"employee-onboarding-process",
         content:Blog17,
