@@ -113,6 +113,13 @@ const [formData, setFormData] = useState({
     setStatus({ loading: true, success: null, error: null });
 
     try {
+      localStorage.setItem(
+  "adsFormData",
+  JSON.stringify({
+    full_name: formData.full_name,
+    email: formData.email,
+  })
+);
       const response = await fetch(
         `https://api.hsforms.com/submissions/v3/integration/submit/${portalId}/${formId}`,
         {
