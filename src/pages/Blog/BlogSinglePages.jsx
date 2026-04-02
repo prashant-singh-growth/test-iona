@@ -349,7 +349,7 @@ function BlogSinglePages() {
       className="w-full relative z-10" 
     />
 <div className="w-32 h-32 bg-[#5A55E8] opacity-90 blur-3xl absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
-<div className="w-20 h-32 bg-[#5A55E8] opacity-90 blur-3xl absolute -top-1/2 -left-10  "></div>
+{/* <div className="w-20 h-32 bg-[#5A55E8] opacity-90 blur-3xl absolute -top-1/2 -left-10  "></div> */}
   </div>
 </div>
 
