@@ -161,7 +161,7 @@ const [formData, setFormData] = useState({
         </div>
 
         {[
-          { name: "full_name", placeholder: "Full Name As Per On LinkedIn" },
+          { name: "full_name", placeholder: "Full Name" },
           { name: "email", placeholder: "Enter your Work Email ", type: "email" },
           { name: "phone", placeholder: "Phone (for shipping)", type: "tel" },
           { name: "company", placeholder: "Company Original Name" },

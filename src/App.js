@@ -70,6 +70,7 @@ const AuthorSinglePages = lazy(
 );
 const BlogLandingPage = lazy(()=> import("./pages/Blog/BlogLandingPages"))
 const BlogSinglePage = lazy(()=> import("./pages/Blog/BlogSinglePages"))
+const TestSolution = lazy(()=> import("./pages/Solutions/SingleSolutionPage"))
 // Scroll to top on route change
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -132,6 +133,14 @@ const AnimatedRoutes = () => {
             </PageTransition>
           }
         />
+        {/* <Route
+          path="/test"
+          element={
+            <PageTransition>
+              <TestSolution/>
+            </PageTransition>
+          }
+        /> */}
         <Route
           path="/ai-first-chro/free-copy-reserved"
           element={
@@ -344,6 +353,14 @@ const AnimatedRoutes = () => {
         />
         <Route
           path="/thank-you"
+          element={
+            <PageTransition>
+              <ThankYouPage />
+            </PageTransition>
+          }
+        />
+        <Route
+          path="/ai-first-chro/discovery-call-booked"
           element={
             <PageTransition>
               <ThankYouPage />

@@ -156,7 +156,7 @@ const submitDiscoveryForm = async (e) => {
     });
 
        window.location.href =
-        "/thank-you";
+        "/ai-first-chro/discovery-call-booked";
 
   } catch (error) {
     console.error(error);

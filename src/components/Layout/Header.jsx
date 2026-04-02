@@ -48,14 +48,14 @@ function Header() {
     <header className="w-full font-lora bg-white/80 backdrop-blur-md fixed  top-0 z-50  border-b border-gray-100 shadow-sm">
       {location.pathname === "/" ? (<div className="w-full   bg-gradient-to-r from-slate-900 to-blue-900  py-2 px-6 flex flex-row justify-center items-center gap-4 shadow-lg">
         <p className="text-sm  font-medium text-blue-50/90 tracking-wide">
-          Lorem ipsum dolor sit amet, consectetur adipiscing.
+          75 free e-books for Indian HRs to solve the 74% AI failure rate.
         </p>
 
         <a
-          href="/#"
+          href="/ai-first-chro"
           className="bg-white/10 flex-none hover:bg-white/20 text-white text-xs md:text-sm py-1 px-4 rounded-full border border-white/20 transition-all duration-300 ease-in-out backdrop-blur-sm"
         >
-          Learn More
+        Claim Yours
         </a>
       </div>):null}
 

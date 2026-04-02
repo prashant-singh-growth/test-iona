@@ -34,7 +34,7 @@ function BlogSinglePages() {
   const [activeIndex, setActiveIndex] = useState(null); // For FAQ
   const [toc, setToc] = useState([]);
   const [activeId, setActiveId] = useState("");
-  const [isTocOpen, setIsTocOpen] = useState(true); // Default to open or closed
+  const [isTocOpen, setIsTocOpen] = useState(false); // Default to open or closed
 
   // Find Data
   const blogData = useMemo(() => {
@@ -269,7 +269,7 @@ function BlogSinglePages() {
                 className="w-full flex items-center justify-between px-6 py-4 bg-white hover:bg-[#f3f3f5] transition-colors border-b border-gray-100"
               >
                 <h3 className="text-[11px] font-black uppercase tracking-[0.2em] text-[#5A4E7A]">
-                  On this page
+                  Table of Content
                 </h3>
                 {isTocOpen ? (
                   <FiMinus className="text-[#2A2564]" />
@@ -312,20 +312,69 @@ function BlogSinglePages() {
             </div>
 
             {/* SIDEBAR CTA */}
-            <div className="mt-6 p-6 rounded-2xl bg-[#160E38] text-white shadow-xl shadow-gray-200">
-              <h4 className="font-bold text-lg mb-2 text-[#f3f3f5]">
-                Ready to scale?
-              </h4>
-              <p className="text-gray-400 text-sm mb-5 leading-relaxed">
-                Discover how NovaCount simplifies complex headcount planning.
-              </p>
-              <a
-                href="/contact"
-                className="inline-block w-full text-center py-2.5 px-4 bg-[#2A2564] border border-[#5A4E7A] text-white rounded-lg font-bold text-sm hover:bg-[#02193B] transition-all duration-300"
-              >
-                Book a Demo
-              </a>
-            </div>
+          <div className="mt-10 flex flex-col rounded-2xl border border-gray-100 overflow-hidden shadow-sm">
+  {/* Top Half: Image */}
+  {/* <div className="bg-[#f3f3f5]  flex justify-center border-b border-gray-200">
+    <img 
+      src="/assets/pages/landingpage/free-copy.webp" 
+      alt="Book" 
+      className="w-full " 
+    />
+  </div> */}
+  
+  {/* Bottom Half: Info */}
+  <div className="bg-white p-6">
+    {/* <h4 className="text-[#160E38] font-extrabold text-md mb-2">NovaCount Planner</h4> */}
+    <p className="text-[#5A4E7A] text-base mb-5 font-medium leading-relaxed">
+      How 150,000+ Successful Hires Reveal the Secret to Beat 74% AI Failure in HR
+    </p>
+     <a
+                      href="/ai-first-chro"
+                      className="bg-primary px-4 py-2.5 font-bold leading-5 md:px-5 md:py-3 w-fit text-[14px] text-white flex flex-row space-x-2 rounded hover:scale-95 ease-in-out duration-150"
+                    >
+                      <span>Claim Your Free Copy</span>{" "}
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M4.16669 10H15.8334M15.8334 10L10.8334 5M15.8334 10L10.8334 15"
+                          stroke="#FCFCFC"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                    </a>
+    
+    {/* <a 
+      href="/contact" 
+      className="group flex items-center justify-between w-full p-4 rounded-xl bg-[#f3f3f5] hover:bg-[#160E38] transition-all duration-300 transition-colors"
+    >
+      <span className="text-[#2A2564] group-hover:text-white font-black text-xs uppercase tracking-tight">
+        Get the Free Guide
+      </span>
+      <div className="bg-white/80 group-hover:bg-white p-1 rounded-md shadow-sm">
+        <svg className="w-4 h-4 text-[#160E38]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M9 5l7 7-7 7" />
+        </svg>
+      </div>
+    </a> */}
+  </div>
+   <div className="bg-white/5 relative z-10  flex justify-center border-b border-gray-200">
+    <img 
+      src="/assets/pages/landingpage/free-copy-remove.png" 
+      alt="Book" 
+      className="w-full relative z-10" 
+    />
+<div className="w-32 h-32 bg-[#5A55E8] opacity-90 blur-3xl absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
+  </div>
+</div>
+
+
           </aside>
 
           {/* ARTICLE BODY */}
