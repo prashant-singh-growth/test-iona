@@ -1,13 +1,14 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { IoChevronDown, IoMenu, IoClose } from "react-icons/io5";
 import { useLocation } from "react-router-dom";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, useScroll } from "framer-motion";
 
 function Header() {
   const [activeDropdown, setActiveDropdown] = useState(null);
   const [menuOpen, setMenuOpen] = useState(false);
  const location = useLocation();
-
+const { scrollY } = useScroll();
+const [isHidden, setIsHidden] = useState(false);
  
 
   const currentPath = location.pathname;
@@ -44,20 +45,67 @@ function Header() {
     { type: "link", name: "Contact Us", url: "/contact" },
   ];
 
+
+useEffect(() => {
+  // Use the .onChange method available in older versions
+  const unsubscribe = scrollY.onChange((latest) => {
+    if (latest > 100) {
+      setIsHidden(true);
+    } else {
+      setIsHidden(false);
+    }
+  });
+
+  // Clean up the listener when the component unmounts
+  return () => unsubscribe();
+}, [scrollY]);
   return (
     <header className="w-full font-lora bg-white/80 backdrop-blur-md fixed  top-0 z-50  border-b border-gray-100 shadow-sm">
-      {location.pathname === "/" ? (<div className="w-full   bg-gradient-to-r from-slate-900 to-blue-900  py-2 px-6 flex flex-row justify-center items-center gap-4 shadow-lg">
-        <p className="text-sm  font-medium text-blue-50/90 tracking-wide">
-          75 free e-books for Indian HRs to solve the 74% AI failure rate.
+   <AnimatePresence>
+  {location.pathname === "/" && !isHidden && (
+    <motion.div
+      // 1. Initial/Exit state uses -100% Y to prevent layout flickering
+      initial={{ height: 0, opacity: 0 }}
+      animate={{ 
+        height: "auto", 
+        opacity: 1,
+        transition: {
+          height: { duration: 0.4, ease: [0.04, 0.62, 0.23, 0.98] }, // Custom bezier for smoothness
+          opacity: { duration: 0.25, delay: 0.1 }
+        }
+      }}
+      exit={{ 
+        height: 0, 
+        opacity: 0,
+        transition: {
+          height: { duration: 0.3, ease: [0.04, 0.62, 0.23, 0.98] },
+          opacity: { duration: 0.2 }
+        }
+      }}
+      // 2. Added overflow-hidden to clip content during height change
+      className="w-full  bg-gradient-to-r from-[#160E38] via-[#2A2564] to-[#160E38] shadow-lg overflow-hidden relative z-[99]"
+    >
+      {/* 3. Wrap content in a fixed-height container to avoid text re-flow */}
+      <div className="py-2.5 px-6 flex flex-row justify-center items-center gap-4">
+        <p className="text-sm font-medium text-blue-50/90 tracking-wide ">
+       75 free e-books for Indian HRs to solve the 74% AI failure rate. 
         </p>
 
         <a
           href="/ai-first-chro"
-          className="bg-white/10 flex-none hover:bg-white/20 text-white text-xs md:text-sm py-1 px-4 rounded-full border border-white/20 transition-all duration-300 ease-in-out backdrop-blur-sm"
+          className="bg-white/10 flex-none flex flex-row items-center gap-2 hover:bg-white/20 text-white text-xs md:text-sm py-1.5 px-4 rounded-full border border-white/20 transition-all duration-300 backdrop-blur-sm"
         >
-        Claim Yours
+          Claim Yours
+          <svg width="18" height="18" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4.16669 10H15.8334M15.8334 10L10.8334 5M15.8334 10L10.8334 15" stroke="#FCFCFC" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
         </a>
-      </div>):null}
+      </div>
+    </motion.div>
+  )}
+</AnimatePresence>
+ 
+
 
 
       {/* <div className="max-w-4xl mx-auto mt-2 bg-indigo-50 rounded-full py-2 px-6 flex flex-row justify-between items-center border border-indigo-100">

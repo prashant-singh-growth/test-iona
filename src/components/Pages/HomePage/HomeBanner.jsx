@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 function HomeBanner() {
   return (
-     <section className="w-full h-fit relative px-5 md:px-10 slg:px-[60px] lg:px-[90px] pt-10 pb-16 md:py-16 lg:py-20 flex flex-col justify-center items-center">
+     <section className="w-full h-fit relative px-5 md:px-10 slg:px-[60px] lg:px-[90px] pt-24 pb-16 md:py-16 lg:py-20 flex flex-col justify-center items-center">
         <ResponsiveGridLines gradientReplacement={[10, 37, 50, 47, 93, 70, 100, 90, 50, 40]} />
         <div className="w-full max-w-[100vw] lg:max-w-[1440px] grid lg:grid-cols-2 place-items-center relative z-10 gap-10">
           <div className="w-full max-w-[100vw]">

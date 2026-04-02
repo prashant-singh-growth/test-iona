@@ -57,7 +57,7 @@ function HowtoGetCopy() {
                     </div>
                     <div className="w-full">
                        
-                        <img src="/assets/pages/landingpage/free-copy.webp" alt="" className='w-full h-fit rounded-xl shadow-xl'/>
+                        <img src="/assets/pages/landingpage/free-copy.webp" alt="AI-First CHRO, the missing HR playbook built on 150,000+ AI driven hires" className='w-full h-fit rounded-xl shadow-xl'/>
 
                     </div>
                 </div>

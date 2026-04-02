@@ -313,20 +313,13 @@ function BlogSinglePages() {
 
             {/* SIDEBAR CTA */}
           <div className="mt-10 flex flex-col rounded-2xl border border-gray-100 overflow-hidden shadow-sm">
-  {/* Top Half: Image */}
-  {/* <div className="bg-[#f3f3f5]  flex justify-center border-b border-gray-200">
-    <img 
-      src="/assets/pages/landingpage/free-copy.webp" 
-      alt="Book" 
-      className="w-full " 
-    />
-  </div> */}
+ 
   
   {/* Bottom Half: Info */}
   <div className="bg-white p-6">
     {/* <h4 className="text-[#160E38] font-extrabold text-md mb-2">NovaCount Planner</h4> */}
-    <p className="text-[#5A4E7A] text-base mb-5 font-medium leading-relaxed">
-      How 150,000+ Successful Hires Reveal the Secret to Beat 74% AI Failure in HR
+    <p className="text-primary text-base mb-5 font-bold leading-relaxed">
+      How 150,000+ Successful Hires Reveal the Secret to Beat 74% AI Failure in HR?
     </p>
      <a
                       href="/ai-first-chro"
