@@ -1,14 +1,15 @@
 import React, { useState } from "react";
 import { IoChevronDown, IoMenu, IoClose } from "react-icons/io5";
-import {  useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 
 function Header() {
   const [activeDropdown, setActiveDropdown] = useState(null);
   const [menuOpen, setMenuOpen] = useState(false);
+ const location = useLocation();
 
-  // Detect current route for active class
-  const location = useLocation();
+ 
+
   const currentPath = location.pathname;
 
   // Navigation links
@@ -45,21 +46,21 @@ function Header() {
 
   return (
     <header className="w-full font-lora bg-white/80 backdrop-blur-md fixed  top-0 z-50  border-b border-gray-100 shadow-sm">
-      <div className="w-full   bg-gradient-to-r from-slate-900 to-blue-900  py-2 px-6 flex flex-row justify-center items-center gap-4 shadow-lg">
-  <p className="text-sm  font-medium text-blue-50/90 tracking-wide">
-  Lorem ipsum dolor sit amet, consectetur adipiscing.
-  </p>
-  
-  <a 
-    href="/#" 
-    className="bg-white/10 hover:bg-white/20 text-white text-xs md:text-sm py-1 px-4 rounded-full border border-white/20 transition-all duration-300 ease-in-out backdrop-blur-sm"
-  >
-    Learn More
-  </a>
-</div>
+      {location.pathname === "/" ? (<div className="w-full   bg-gradient-to-r from-slate-900 to-blue-900  py-2 px-6 flex flex-row justify-center items-center gap-4 shadow-lg">
+        <p className="text-sm  font-medium text-blue-50/90 tracking-wide">
+          Lorem ipsum dolor sit amet, consectetur adipiscing.
+        </p>
+
+        <a
+          href="/#"
+          className="bg-white/10 flex-none hover:bg-white/20 text-white text-xs md:text-sm py-1 px-4 rounded-full border border-white/20 transition-all duration-300 ease-in-out backdrop-blur-sm"
+        >
+          Learn More
+        </a>
+      </div>):null}
 
 
-{/* <div className="max-w-4xl mx-auto mt-2 bg-indigo-50 rounded-full py-2 px-6 flex flex-row justify-between items-center border border-indigo-100">
+      {/* <div className="max-w-4xl mx-auto mt-2 bg-indigo-50 rounded-full py-2 px-6 flex flex-row justify-between items-center border border-indigo-100">
   <div className="flex items-center gap-2">
     <span className="text-lg">🎉</span>
     <p className="text-sm font-medium text-indigo-900">
@@ -73,162 +74,55 @@ function Header() {
       <div className="w-full grid place-items-center px-5 md:px-10 slg:px-[60px] lg:px-[90px]">
         <div className="w-full max-w-[1440px] flex justify-between gap-5 items-center py-3">
 
-        {/* Logo */}
-        <a href="/" className="w-fit">
-          <img
-            src={`${process.env.PUBLIC_URL}/assets/iona-ai-logo.png`}
-            alt="iona.ai Logo"
-            className="h-14"
-          />
-        </a>
+          {/* Logo */}
+          <a href="/" className="w-fit">
+            <img
+              src={`${process.env.PUBLIC_URL}/assets/iona-ai-logo.png`}
+              alt="iona.ai Logo"
+              className="h-14"
+            />
+          </a>
 
-        {/* Desktop Navigation */}
-        <div className="hidden lg:flex flex-row items-center gap-8">
-          {navLinks.map((item) =>
-            item.type === "dropdown" ? (
-              <div
-                key={item.key}
-                className="relative flex items-center gap-1 font-lora font-medium text-base text-black cursor-pointer border-b-2 border-transparent hover:border-primary"
-                onMouseEnter={() => setActiveDropdown(item.key)}
-                onMouseLeave={() => setActiveDropdown(null)}
-              >
-                {item.name}
-
-                <motion.span
-                  animate={{ rotate: activeDropdown === item.key ? 180 : 0 }}
-                  transition={{ duration: 0.2 }}
-                >
-                  <IoChevronDown className="text-lg" />
-                </motion.span>
-
-                {/* Dropdown Menu */}
-                <AnimatePresence>
-                  {activeDropdown === item.key && (
-                    <motion.div
-                      initial={{ opacity: 0, y: 15 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      exit={{ opacity: 0, y: 15 }}
-                      transition={{ duration: 0.25 }}
-                      className={`absolute top-10 left-0 bg-white shadow-xl border border-gray-100 rounded-xl p-5 ${
-                        item.key === "product"
-                          ? "grid grid-cols-2 w-[320px] gap-4"
-                          : "grid grid-cols-1 w-[220px] gap-3"
-                      } z-30`}
-                    >
-                      {item.links.map((link) => (
-                        <a
-                          key={link.url}
-                          href={link.url}
-                          className={`text-base font-lora font-medium transition-all duration-200 border-l-2 pl-2 hover:text-primary hover:translate-x-1 ${
-                            currentPath === link.url
-                              ? "text-primary translate-x-1 border-primary"
-                              : "text-black border-transparent"
-                          }`}
-                        >
-                          {link.label}
-                        </a>
-                      ))}
-                    </motion.div>
-                  )}
-                </AnimatePresence>
-              </div>
-            ) : (
-              <a
-                key={item.url}
-                href={item.url}
-                className={`text-base font-lora border-b-2 font-medium hover:text-primary hover:border-primary transition-all duration-150 ${
-                  currentPath === item.url
-                    ? "text-primary border-primary"
-                    : "text-black border-transparent"
-                }`}
-              >
-                {item.name}
-              </a>
-            )
-          )}
-            <a
-          href="/agentic-ai-recruiters-sheet"
-          className="hidden lg:flex  flex-none  px-5 py-2 font-bold leading-5  font-lora text-[14px] text-primary border border-primary rounded-lg shadow hover:shadow-md hover:scale-95 transition-transform duration-200"
-        >
-          <span>Agentic AI Recruiter</span>
-          <span className="text-[10px] leading-[10px] h-fit  font-lora  font-bold ml-1 rounded-sm -translate-y-[2px]">Beta</span>
-        </a>
-        </div>
-
-        {/* CTA Button */}
-        <a
-          href="/contact"
-          className="hidden lg:flex flex-none bg-primary px-5 py-3 font-bold leading-5 space-x-2 font-lora text-[14px] text-white rounded-lg shadow hover:shadow-md hover:scale-95 transition-transform duration-200"
-        >
-          <span>Schedule a Demo</span>
-        </a>
-
-        {/* Mobile Menu Button */}
-        <div className="lg:hidden">
-          <button
-            onClick={() => setMenuOpen(!menuOpen)}
-            className="p-2 rounded-md bg-gray-100 hover:bg-gray-200 transition-all duration-200"
-          >
-            {menuOpen ? (
-              <IoClose className="text-2xl text-gray-700" />
-            ) : (
-              <IoMenu className="text-2xl text-gray-700" />
-            )}
-          </button>
-        </div>
-      </div>
-
-      {/* Mobile Menu */}
-      <AnimatePresence>
-        {menuOpen && (
-          <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            transition={{ duration: 0.3 }}
-            className="lg:hidden w-full bg-white border-t border-gray-100 shadow-md rounded-b-2xl px-5 py-6 space-y-6 mb-10"
-          >
+          {/* Desktop Navigation */}
+          <div className="hidden lg:flex flex-row items-center gap-8">
             {navLinks.map((item) =>
               item.type === "dropdown" ? (
-                <div key={item.key}>
-                  <button
-                    className="flex justify-between font-medium w-full text-base font-lora text-black border-b border-gray-200 pb-2"
-                    onClick={() =>
-                      setActiveDropdown(
-                        activeDropdown === item.key ? null : item.key
-                      )
-                    }
-                  >
-                    <span>{item.name}</span>
-                    <motion.span
-                      animate={{
-                        rotate: activeDropdown === item.key ? 180 : 0,
-                      }}
-                      transition={{ duration: 0.2 }}
-                    >
-                      <IoChevronDown />
-                    </motion.span>
-                  </button>
+                <div
+                  key={item.key}
+                  className="relative flex items-center gap-1 font-lora font-medium text-base text-black cursor-pointer border-b-2 border-transparent hover:border-primary"
+                  onMouseEnter={() => setActiveDropdown(item.key)}
+                  onMouseLeave={() => setActiveDropdown(null)}
+                >
+                  {item.name}
 
+                  <motion.span
+                    animate={{ rotate: activeDropdown === item.key ? 180 : 0 }}
+                    transition={{ duration: 0.2 }}
+                  >
+                    <IoChevronDown className="text-lg" />
+                  </motion.span>
+
+                  {/* Dropdown Menu */}
                   <AnimatePresence>
                     {activeDropdown === item.key && (
                       <motion.div
-                        initial={{ height: 0, opacity: 0 }}
-                        animate={{ height: "auto", opacity: 1 }}
-                        exit={{ height: 0, opacity: 0 }}
+                        initial={{ opacity: 0, y: 15 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: 15 }}
                         transition={{ duration: 0.25 }}
-                        className="mt-3 grid grid-cols-1 sm:grid-cols-2 gap-2 pl-2"
+                        className={`absolute top-10 left-0 bg-white shadow-xl border border-gray-100 rounded-xl p-5 ${item.key === "product"
+                            ? "grid grid-cols-2 w-[320px] gap-4"
+                            : "grid grid-cols-1 w-[220px] gap-3"
+                          } z-30`}
                       >
                         {item.links.map((link) => (
                           <a
                             key={link.url}
                             href={link.url}
-                            onClick={() => setMenuOpen(false)}
-                            className={`text-[15px] font-medium font-lora transition-all ${
-                              currentPath === link.url
-                                ? "text-primary"
-                                : "text-black hover:text-primary"
-                            }`}
+                            className={`text-base font-lora font-medium transition-all duration-200 border-l-2 pl-2 hover:text-primary hover:translate-x-1 ${currentPath === link.url
+                                ? "text-primary translate-x-1 border-primary"
+                                : "text-black border-transparent"
+                              }`}
                           >
                             {link.label}
                           </a>
@@ -241,33 +135,135 @@ function Header() {
                 <a
                   key={item.url}
                   href={item.url}
-                  className={`block text-base font-lora font-medium transition-all ${
-                    currentPath === item.url
-                      ? "text-primary"
-                      : "text-black hover:text-primary"
-                  }`}
+                  className={`text-base font-lora border-b-2 font-medium hover:text-primary hover:border-primary transition-all duration-150 ${currentPath === item.url
+                      ? "text-primary border-primary"
+                      : "text-black border-transparent"
+                    }`}
                 >
                   {item.name}
                 </a>
               )
             )}
-   <a
-          href="/agentic-ai-recruiters-sheet"
-          className="flex  flex-none  px-5 py-2 font-bold leading-5  font-lora text-[14px] text-primary border border-primary rounded-lg shadow hover:shadow-md hover:scale-95 transition-transform duration-200"
-        >
-          <span>Agentic AI Recruiter</span>
-          <span className="text-[10px] leading-[10px] h-fit  font-lora  font-bold ml-1 rounded-sm -translate-y-[2px]">Beta</span>
-        </a>
-            {/* CTA in Mobile */}
             <a
-              href="/contact"
-              className="bg-primary flex font-lora flex-none space-x-2 flex-row px-4 font-bold leading-5 w-fit gap-2 text-white text-center py-3 rounded-lg text-[14px] shadow hover:shadow-md hover:scale-[0.98] transition-all duration-200"
+              href="/agentic-ai-recruiters-sheet"
+              className="hidden lg:flex  flex-none  px-5 py-2 font-bold leading-5  font-lora text-[14px] text-primary border border-primary rounded-lg shadow hover:shadow-md hover:scale-95 transition-transform duration-200"
             >
-              <span>Schedule a Demo</span>
+              <span>Agentic AI Recruiter</span>
+              <span className="text-[10px] leading-[10px] h-fit  font-lora  font-bold ml-1 rounded-sm -translate-y-[2px]">Beta</span>
             </a>
-          </motion.div>
-        )}
-      </AnimatePresence>
+          </div>
+
+          {/* CTA Button */}
+          <a
+            href="/contact"
+            className="hidden lg:flex flex-none bg-primary px-5 py-3 font-bold leading-5 space-x-2 font-lora text-[14px] text-white rounded-lg shadow hover:shadow-md hover:scale-95 transition-transform duration-200"
+          >
+            <span>Schedule a Demo</span>
+          </a>
+
+          {/* Mobile Menu Button */}
+          <div className="lg:hidden">
+            <button
+              onClick={() => setMenuOpen(!menuOpen)}
+              className="p-2 rounded-md bg-gray-100 hover:bg-gray-200 transition-all duration-200"
+            >
+              {menuOpen ? (
+                <IoClose className="text-2xl text-gray-700" />
+              ) : (
+                <IoMenu className="text-2xl text-gray-700" />
+              )}
+            </button>
+          </div>
+        </div>
+
+        {/* Mobile Menu */}
+        <AnimatePresence>
+          {menuOpen && (
+            <motion.div
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ duration: 0.3 }}
+              className="lg:hidden w-full bg-white border-t border-gray-100 shadow-md rounded-b-2xl px-5 py-6 space-y-6 mb-10"
+            >
+              {navLinks.map((item) =>
+                item.type === "dropdown" ? (
+                  <div key={item.key}>
+                    <button
+                      className="flex justify-between font-medium w-full text-base font-lora text-black border-b border-gray-200 pb-2"
+                      onClick={() =>
+                        setActiveDropdown(
+                          activeDropdown === item.key ? null : item.key
+                        )
+                      }
+                    >
+                      <span>{item.name}</span>
+                      <motion.span
+                        animate={{
+                          rotate: activeDropdown === item.key ? 180 : 0,
+                        }}
+                        transition={{ duration: 0.2 }}
+                      >
+                        <IoChevronDown />
+                      </motion.span>
+                    </button>
+
+                    <AnimatePresence>
+                      {activeDropdown === item.key && (
+                        <motion.div
+                          initial={{ height: 0, opacity: 0 }}
+                          animate={{ height: "auto", opacity: 1 }}
+                          exit={{ height: 0, opacity: 0 }}
+                          transition={{ duration: 0.25 }}
+                          className="mt-3 grid grid-cols-1 sm:grid-cols-2 gap-2 pl-2"
+                        >
+                          {item.links.map((link) => (
+                            <a
+                              key={link.url}
+                              href={link.url}
+                              onClick={() => setMenuOpen(false)}
+                              className={`text-[15px] font-medium font-lora transition-all ${currentPath === link.url
+                                  ? "text-primary"
+                                  : "text-black hover:text-primary"
+                                }`}
+                            >
+                              {link.label}
+                            </a>
+                          ))}
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
+                  </div>
+                ) : (
+                  <a
+                    key={item.url}
+                    href={item.url}
+                    className={`block text-base font-lora font-medium transition-all ${currentPath === item.url
+                        ? "text-primary"
+                        : "text-black hover:text-primary"
+                      }`}
+                  >
+                    {item.name}
+                  </a>
+                )
+              )}
+              <a
+                href="/agentic-ai-recruiters-sheet"
+                className="flex  flex-none  px-5 py-2 font-bold leading-5  font-lora text-[14px] text-primary border border-primary rounded-lg shadow hover:shadow-md hover:scale-95 transition-transform duration-200"
+              >
+                <span>Agentic AI Recruiter</span>
+                <span className="text-[10px] leading-[10px] h-fit  font-lora  font-bold ml-1 rounded-sm -translate-y-[2px]">Beta</span>
+              </a>
+              {/* CTA in Mobile */}
+              <a
+                href="/contact"
+                className="bg-primary flex font-lora flex-none space-x-2 flex-row px-4 font-bold leading-5 w-fit gap-2 text-white text-center py-3 rounded-lg text-[14px] shadow hover:shadow-md hover:scale-[0.98] transition-all duration-200"
+              >
+                <span>Schedule a Demo</span>
+              </a>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
     </header>
   );

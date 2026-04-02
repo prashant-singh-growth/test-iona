@@ -194,7 +194,7 @@ function BlogSinglePages() {
               </div>
             </div>
             <div className="flex w-full flex-col justify-start items-start gap-5">
-          <p className="text-base text-primary font-semibold border-b-2 border-primary pb-1 w-full ">Share</p>
+          {/* <p className="text-base text-primary font-semibold w-full ">Share</p> */}
           
 
 

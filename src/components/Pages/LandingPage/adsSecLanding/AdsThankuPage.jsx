@@ -167,7 +167,7 @@ const submitDiscoveryForm = async (e) => {
 };
 useEffect(() => {
     const timer = setTimeout(() => {
-      const section = document.getElementById("scroll-form");
+      const section = document.getElementById("scroll-case-study");
       if (section) {
         section.scrollIntoView({ behavior: "smooth" });
       }
@@ -230,7 +230,7 @@ useEffect(() => {
 
       </div>
     </div>
-      <div className="w-full pb-20 px-5 flex flex-col justify-center items-center max-w-7xl mx-auto">
+      <div id='scroll-case-study' className="w-full pb-20 px-5 flex flex-col justify-center items-center max-w-7xl mx-auto">
         <h2 className='text-4xl leading-[48px] text-darkBlue max-w-3xl text-center'> How India’s Leading Enterprises Are Winning Hiring with AI</h2>
         <div className="w-full mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
          {Object.values(CaseStudyJson).map((item, index) => (
