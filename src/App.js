@@ -70,7 +70,7 @@ const AuthorSinglePages = lazy(
 );
 const BlogLandingPage = lazy(()=> import("./pages/Blog/BlogLandingPages"))
 const BlogSinglePage = lazy(()=> import("./pages/Blog/BlogSinglePages"))
-const TestSolution = lazy(()=> import("./pages/Solutions/SingleSolutionPage"))
+// const TestSolution = lazy(()=> import("./pages/Solutions/SingleSolutionPage"))
 // Scroll to top on route change
 const ScrollToTop = () => {
   const { pathname } = useLocation();
