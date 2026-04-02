@@ -165,6 +165,16 @@ const submitDiscoveryForm = async (e) => {
     setLoading(false)
   }
 };
+useEffect(() => {
+    const timer = setTimeout(() => {
+      const section = document.getElementById("scroll-form");
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 2000); // 3 seconds
+
+    return () => clearTimeout(timer);
+  }, []);
   return (
    
     <div className="w-full font-lora bg-white">
@@ -250,7 +260,7 @@ const submitDiscoveryForm = async (e) => {
 ))}
         </div>
       </div>
-      <div className="w-full bg-themeGray py-16 px-6">
+      <div id='scroll-form' className="w-full bg-themeGray py-16 px-6">
   <div className="max-w-5xl mx-auto text-center">
 
     {/* Heading */}

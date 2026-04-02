@@ -44,8 +44,34 @@ function Header() {
   ];
 
   return (
-    <header className="w-full bg-white/80 backdrop-blur-md fixed  top-0 z-50 grid place-items-center px-5 md:px-10 slg:px-[60px] lg:px-[90px] border-b border-gray-100 shadow-sm">
-      <div className="w-full max-w-[1440px] flex justify-between gap-5 items-center py-3">
+    <header className="w-full font-lora bg-white/80 backdrop-blur-md fixed  top-0 z-50  border-b border-gray-100 shadow-sm">
+      <div className="w-full   bg-gradient-to-r from-slate-900 to-blue-900  py-2 px-6 flex flex-row justify-center items-center gap-4 shadow-lg">
+  <p className="text-sm  font-medium text-blue-50/90 tracking-wide">
+  Lorem ipsum dolor sit amet, consectetur adipiscing.
+  </p>
+  
+  <a 
+    href="/#" 
+    className="bg-white/10 hover:bg-white/20 text-white text-xs md:text-sm py-1 px-4 rounded-full border border-white/20 transition-all duration-300 ease-in-out backdrop-blur-sm"
+  >
+    Learn More
+  </a>
+</div>
+
+
+{/* <div className="max-w-4xl mx-auto mt-2 bg-indigo-50 rounded-full py-2 px-6 flex flex-row justify-between items-center border border-indigo-100">
+  <div className="flex items-center gap-2">
+    <span className="text-lg">🎉</span>
+    <p className="text-sm font-medium text-indigo-900">
+      We just raised our seed round! Come join the team.
+    </p>
+  </div>
+  <a href="#" className="text-sm font-semibold text-indigo-600 hover:underline">
+    We're hiring
+  </a>
+</div> */}
+      <div className="w-full grid place-items-center px-5 md:px-10 slg:px-[60px] lg:px-[90px]">
+        <div className="w-full max-w-[1440px] flex justify-between gap-5 items-center py-3">
 
         {/* Logo */}
         <a href="/" className="w-fit">
@@ -242,6 +268,7 @@ function Header() {
           </motion.div>
         )}
       </AnimatePresence>
+      </div>
     </header>
   );
 }

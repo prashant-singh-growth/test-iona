@@ -5,6 +5,7 @@ import { FiMinus, FiPlus, FiArrowLeft } from "react-icons/fi";
 
 import SeoHeader from "../../components/utils/SeoHeader";
 import { BlogList } from "../../components/Data/blog/BlogList";
+import { FaFacebookF, FaLink, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 
 /* ------------------ HELPERS ------------------ */
 
@@ -33,6 +34,7 @@ function BlogSinglePages() {
   const [activeIndex, setActiveIndex] = useState(null); // For FAQ
   const [toc, setToc] = useState([]);
   const [activeId, setActiveId] = useState("");
+  const [isTocOpen, setIsTocOpen] = useState(true); // Default to open or closed
 
   // Find Data
   const blogData = useMemo(() => {
@@ -124,23 +126,23 @@ function BlogSinglePages() {
         }
       />
       {blogData.content.blogSchema && (
-  <script
-    type="application/ld+json"
-    dangerouslySetInnerHTML={{
-      __html:blogData.content.blogSchema
-    }}
-  />
-)}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: blogData.content.blogSchema
+          }}
+        />
+      )}
 
-{blogData.content.faqSchema && (
-  <script
-    type="application/ld+json"
-    dangerouslySetInnerHTML={{
-      __html: blogData.content.faqSchema
-    }}
-  />
-)}
- 
+      {blogData.content.faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: blogData.content.faqSchema
+          }}
+        />
+      )}
+
       {/* Reading Progress Bar */}
       <motion.div
         className="fixed top-0 left-0 right-0 h-1 bg-indigo-600 z-[100] origin-left"
@@ -149,7 +151,7 @@ function BlogSinglePages() {
 
       {/* HERO SECTION */}
       <section className="border-b border-gray-100 bg-gray-50/50">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16 lg:py-24 grid lg:grid-cols-2 gap-12 items-center">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 py-24 pb-16 lg:py-28 lg:pb-24 grid lg:grid-cols-2 gap-12 items-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -191,6 +193,54 @@ function BlogSinglePages() {
                 </p>
               </div>
             </div>
+            <div className="flex w-full flex-col justify-start items-start gap-5">
+          <p className="text-base text-primary font-semibold border-b-2 border-primary pb-1 w-full ">Share</p>
+          
+
+
+<div className="w-full flex flex-row gap-5">
+  <a 
+  href={`https://www.linkedin.com/sharing/share-offsite/?url=https://www.iona.ai/${blogData.url}`} 
+  target="_blank" 
+  rel="noopener noreferrer"
+  className="p-3 rounded-full bg-white border border-gray-200 text-[#160E38] hover:bg-[#2A2564] hover:text-white transition-all shadow-sm"
+>
+  <FaLinkedinIn size={14} />
+</a>
+
+<a 
+  href={`https://twitter.com/intent/tweet?url=https://www.iona.ai/${blogData.url}&text=${blogData.content.seo.title}`} 
+  target="_blank" 
+  rel="noopener noreferrer"
+  className="p-3 rounded-full bg-white border border-gray-200 text-[#160E38] hover:bg-[#2A2564] hover:text-white transition-all shadow-sm"
+>
+  <FaTwitter size={14} />
+</a>
+
+{/* ✅ Facebook */}
+<a 
+  href={`https://www.facebook.com/sharer/sharer.php?u=https://www.iona.ai/${blogData.url}`} 
+  target="_blank" 
+  rel="noopener noreferrer"
+  className="p-3 rounded-full bg-white border border-gray-200 text-[#160E38] hover:bg-[#2A2564] hover:text-white transition-all shadow-sm"
+>
+  <FaFacebookF size={14} />
+</a>
+
+{/* Copy Link */}
+<button 
+  onClick={() => {
+    navigator.clipboard.writeText(window.location.href);
+    // replace alert with better UX if possible
+    console.log("Link copied!");
+  }}
+  className="p-3 rounded-full bg-white border border-gray-200 text-[#160E38] hover:bg-[#f3f3f5] transition-all shadow-sm"
+  title="Copy Link"
+>
+  <FaLink size={14} />
+</button>
+</div>
+        </div>
           </motion.div>
 
           <img
@@ -210,31 +260,71 @@ function BlogSinglePages() {
       <section className="max-w-7xl mx-auto px-6 lg:px-8 py-16">
         <div className="flex flex-col lg:flex-row gap-16 items-start ">
           {/* STICKY TABLE OF CONTENTS */}
-          <aside className="hidden lg:block w-1/4 sticky top-28 self-start ">
-            <div className="border-l-2 border-gray-100 pl-6 py-2">
-              <h3 className="text-xs font-black uppercase tracking-widest text-gray-400 mb-6">
-                On this page
-              </h3>
+          <aside className="hidden lg:block w-1/4 sticky top-32 self-start">
+            {/* TOC CONTAINER */}
+            <div className="bg-[#f3f3f5]  rounded-lg border border-gray-200 overflow-hidden shadow-sm">
+              {/* TOGGLE HEADER */}
+              <button
+                onClick={() => setIsTocOpen(!isTocOpen)}
+                className="w-full flex items-center justify-between px-6 py-4 bg-white hover:bg-[#f3f3f5] transition-colors border-b border-gray-100"
+              >
+                <h3 className="text-[11px] font-black uppercase tracking-[0.2em] text-[#5A4E7A]">
+                  On this page
+                </h3>
+                {isTocOpen ? (
+                  <FiMinus className="text-[#2A2564]" />
+                ) : (
+                  <FiPlus className="text-[#2A2564]" />
+                )}
+              </button>
 
-              <ul className="space-y-4 text-[15px] ">
-                {toc.map((item) => (
-                  <li
-                    key={item.id}
-                    className={`transition-all duration-300 ${
-                      activeId === item.id
-                        ? "text-darkVoilet translate-x-1 font-bold"
-                        : "text-gray-500 hover:text-primaryText"
-                    } ${item.level === "h3" ? "ml-5 text-sm" : ""}`}
+              {/* ANIMATED DROPDOWN CONTENT */}
+              <AnimatePresence>
+                {isTocOpen && (
+                  <motion.div
+                    initial={{ height: 0, opacity: 0 }}
+                    animate={{ height: "auto", opacity: 1 }}
+                    exit={{ height: 0, opacity: 0 }}
+                    className="overflow-hidden"
                   >
-                    <a
-                      href={`#${item.id}`}
-                      onClick={(e) => handleAnchorClick(e, item.id)}
-                    >
-                      {item.text}
-                    </a>
-                  </li>
-                ))}
-              </ul>
+                    <ul className="px-6 pb-6 space-y-4 text-[15px] pt-4">
+                      {toc.map((item) => (
+                        <li
+                          key={item.id}
+                          className={`transition-all duration-300 border-l-2 pl-3 ${activeId === item.id
+                              ? "border-[#2A2564] text-[#160E38] font-bold translate-x-1"
+                              : "border-transparent text-[#5A4E7A] hover:text-[#2A2564] hover:border-gray-300"
+                            } ${item.level === "h3" ? "ml-4 text-sm" : ""}`}
+                        >
+                          <a
+                            href={`#${item.id}`}
+                            onClick={(e) => handleAnchorClick(e, item.id)}
+                            className="block"
+                          >
+                            {item.text}
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
+
+            {/* SIDEBAR CTA */}
+            <div className="mt-6 p-6 rounded-2xl bg-[#160E38] text-white shadow-xl shadow-gray-200">
+              <h4 className="font-bold text-lg mb-2 text-[#f3f3f5]">
+                Ready to scale?
+              </h4>
+              <p className="text-gray-400 text-sm mb-5 leading-relaxed">
+                Discover how NovaCount simplifies complex headcount planning.
+              </p>
+              <a
+                href="/contact"
+                className="inline-block w-full text-center py-2.5 px-4 bg-[#2A2564] border border-[#5A4E7A] text-white rounded-lg font-bold text-sm hover:bg-[#02193B] transition-all duration-300"
+              >
+                Book a Demo
+              </a>
             </div>
           </aside>
 
@@ -309,11 +399,10 @@ function BlogSinglePages() {
                     return (
                       <div
                         key={i}
-                        className={`border rounded-xl overflow-hidden transition-colors ${
-                          isOpen
+                        className={`border rounded-xl overflow-hidden transition-colors ${isOpen
                             ? "bg-indigo-50/30 border-indigo-100"
                             : "border-gray-200"
-                        }`}
+                          }`}
                       >
                         <button
                           onClick={() => setActiveIndex(isOpen ? null : i)}
@@ -335,9 +424,9 @@ function BlogSinglePages() {
                               animate={{ height: "auto", opacity: 1 }}
                               exit={{ height: 0, opacity: 0 }}
                               className="px-6 pb-6 text-gray-600 font-medium leading-relaxed"
-                              dangerouslySetInnerHTML={{__html:faq.answer}}
+                              dangerouslySetInnerHTML={{ __html: faq.answer }}
                             >
-                            
+
                             </motion.div>
                           )}
                         </AnimatePresence>
