@@ -59,10 +59,11 @@ useEffect(() => {
   // Clean up the listener when the component unmounts
   return () => unsubscribe();
 }, [scrollY]);
+// const isPageShow = "/blog/:blog" && "/case-studies/:casestudy"
   return (
     <header className="w-full font-lora bg-white/80 backdrop-blur-md fixed  top-0 z-50  border-b border-gray-100 shadow-sm">
    <AnimatePresence>
-  {location.pathname === "/" && !isHidden && (
+  {!location.pathname.startsWith("/blog/") && !isHidden && (
     <motion.div
       // 1. Initial/Exit state uses -100% Y to prevent layout flickering
       initial={{ height: 0, opacity: 0 }}
@@ -87,8 +88,8 @@ useEffect(() => {
     >
       {/* 3. Wrap content in a fixed-height container to avoid text re-flow */}
       <div className="py-2.5 px-6 flex flex-row justify-center items-center gap-4">
-        <p className="text-sm font-medium text-blue-50/90 tracking-wide ">
-       75 free e-books for Indian HRs to solve the 74% AI failure rate. 
+        <p className="text-sm capitalize md:text-base font-medium text-blue-50/90 tracking-wide ">
+       75 Free E-books for Indian HRs to solve the 74% AI failure rate. 
         </p>
 
         <a

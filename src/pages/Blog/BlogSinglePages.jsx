@@ -312,11 +312,10 @@ function BlogSinglePages() {
             </div>
 
             {/* SIDEBAR CTA */}
-          <div className="mt-10 flex flex-col rounded-2xl border border-gray-100 overflow-hidden shadow-sm">
- 
-  
+          <div className="mt-10 flex flex-col rounded-2xl border border-gray-100 overflow-hidden shadow-sm"> 
+            
   {/* Bottom Half: Info */}
-  <div className="bg-white p-6">
+  <div className="bg-white/5 backdrop-blur-md p-6 relative z-20">
     {/* <h4 className="text-[#160E38] font-extrabold text-md mb-2">NovaCount Planner</h4> */}
     <p className="text-primary text-base mb-5 font-bold leading-relaxed">
       How 150,000+ Successful Hires Reveal the Secret to Beat 74% AI Failure in HR?
@@ -341,21 +340,7 @@ function BlogSinglePages() {
                           strokeLinejoin="round"
                         />
                       </svg>
-                    </a>
-    
-    {/* <a 
-      href="/contact" 
-      className="group flex items-center justify-between w-full p-4 rounded-xl bg-[#f3f3f5] hover:bg-[#160E38] transition-all duration-300 transition-colors"
-    >
-      <span className="text-[#2A2564] group-hover:text-white font-black text-xs uppercase tracking-tight">
-        Get the Free Guide
-      </span>
-      <div className="bg-white/80 group-hover:bg-white p-1 rounded-md shadow-sm">
-        <svg className="w-4 h-4 text-[#160E38]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M9 5l7 7-7 7" />
-        </svg>
-      </div>
-    </a> */}
+                    </a> 
   </div>
    <div className="bg-white/5 relative z-10  flex justify-center border-b border-gray-200">
     <img 
@@ -364,6 +349,7 @@ function BlogSinglePages() {
       className="w-full relative z-10" 
     />
 <div className="w-32 h-32 bg-[#5A55E8] opacity-90 blur-3xl absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
+<div className="w-20 h-32 bg-[#5A55E8] opacity-90 blur-3xl absolute -top-1/2 -left-10  "></div>
   </div>
 </div>
 
