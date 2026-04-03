@@ -15,6 +15,7 @@ import Header from "./components/Layout/Header";
 import Footer from "./components/Layout/Footer";
 import { ToastContainer } from "react-toastify";
 import RemoveTrailingSlash from "./components/utils/RemoveTrailingSlash";
+import { AlternativePagesData } from "./components/Data/AlternativeDynamic";
 
 
 // Lazy load components
@@ -24,7 +25,7 @@ const AboutSection = lazy(() => import("./pages/AboutSection"));
 const Highlights = lazy(() => import("./components/Highlights"));
 const CTA = lazy(() => import("./components/CTA"));
 const Contact = lazy(() => import("./pages/Contact"));
-const NovaCount = lazy(() => import("./pages/Solutions/NovaCount"));
+// const NovaCount = lazy(() => import("./pages/Solutions/NovaCount"));
 const NovaAssist = lazy(() => import("./pages/Solutions/NovaAssist"));
 const NovaTrack = lazy(() => import("./pages/Solutions/NovaTrack"));
 const NovaStart = lazy(() => import("./pages/Solutions/NovaStart"));
@@ -68,9 +69,9 @@ const LoginPages = lazy(
 const AuthorSinglePages = lazy(
   () => import("./pages/Blog/Author/AuthorSinglePage")
 );
-const BlogLandingPage = lazy(()=> import("./pages/Blog/BlogLandingPages"))
-const BlogSinglePage = lazy(()=> import("./pages/Blog/BlogSinglePages"))
-// const TestSolution = lazy(()=> import("./pages/Solutions/SingleSolutionPage"))
+const BlogLandingPage = lazy(() => import("./pages/Blog/BlogLandingPages"))
+const BlogSinglePage = lazy(() => import("./pages/Blog/BlogSinglePages"))
+const TestSolution = lazy(() => import("./pages/Solutions/SingleSolutionPage"))
 // Scroll to top on route change
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -133,14 +134,14 @@ const AnimatedRoutes = () => {
             </PageTransition>
           }
         />
-        {/* <Route
-          path="/test"
+        <Route
+          path="/solutions/:solutions"
           element={
             <PageTransition>
-              <TestSolution/>
+              <TestSolution />
             </PageTransition>
           }
-        /> */}
+        />
         <Route
           path="/ai-first-chro/free-copy-reserved"
           element={
@@ -175,14 +176,14 @@ const AnimatedRoutes = () => {
             </PageTransition>
           }
         />
-        <Route
+        {/* <Route
           path="/solutions/novacount"
           element={
             <PageTransition>
               <NovaCount />
             </PageTransition>
           }
-        />
+        /> */}
         <Route
           path="/solutions/novaassist"
           element={
@@ -219,7 +220,7 @@ const AnimatedRoutes = () => {
           path="/ai-first-chro"
           element={
             <PageTransition>
-              <LpLandingPagesec/>
+              <LpLandingPagesec />
             </PageTransition>
           }
         />
@@ -275,7 +276,7 @@ const AnimatedRoutes = () => {
           path="/blog/:blog"
           element={
             <PageTransition>
-              <BlogSinglePage/>
+              <BlogSinglePage />
             </PageTransition>
           }
         />
@@ -347,7 +348,7 @@ const AnimatedRoutes = () => {
           path="/ads"
           element={
             <PageTransition>
-              <AdsLandingPage/>
+              <AdsLandingPage />
             </PageTransition>
           }
         />
@@ -407,15 +408,24 @@ const AnimatedRoutes = () => {
             </PageTransition>
           }
         />
+        {
+          Object.keys(AlternativePagesData).map((key) => {
 
-        <Route
-          path="/:Alternative"
-          element={
-            <PageTransition>
-              <AlternativeDynamicPage />
-            </PageTransition>
-          }
-        />
+
+            return (
+              <Route
+                key={key}
+                path={key}
+                element={
+                  <PageTransition>
+                    <AlternativeDynamicPage alternativePage={key} />
+                  </PageTransition>
+                }
+              />
+            )
+          })
+        }
+
         <Route
           path="/agentic-ai-recruiters-sheet"
           element={
@@ -424,7 +434,7 @@ const AnimatedRoutes = () => {
             </PageTransition>
           }
         />
-          <Route
+        <Route
           path="/agentic-ai-recruiters-sheet/thank-you"
           element={
             <PageTransition>
@@ -432,7 +442,7 @@ const AnimatedRoutes = () => {
             </PageTransition>
           }
         />
-          <Route
+        <Route
           path="/signup"
           element={
             <PageTransition>
@@ -440,11 +450,11 @@ const AnimatedRoutes = () => {
             </PageTransition>
           }
         />
-          <Route
+        <Route
           path="/login"
           element={
             <PageTransition>
-              <LoginPages/>
+              <LoginPages />
             </PageTransition>
           }
         />
@@ -525,13 +535,13 @@ function AppContent() {
 
   return (
     <>
-    <RemoveTrailingSlash/>
+      <RemoveTrailingSlash />
       <RedirectHandler />
       <ToastContainer position="top-right" autoClose="4000" />
       <ScrollToTop />
       <div className="flex flex-col">
         {!shouldHideNavbar && <Header />}
-        <main className="flex-grow pt-12">
+        <main className="flex-grow pt-16 lg:pt-12">
           <Suspense fallback={<Loading />}>
             <AnimatedRoutes />
           </Suspense>

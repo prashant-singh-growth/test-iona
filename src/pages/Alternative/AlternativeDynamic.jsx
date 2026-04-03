@@ -1,5 +1,5 @@
-import React from "react";
-import { useParams } from "react-router-dom";
+// import React from "react";
+// import { useParams } from "react-router-dom";
 import { AlternativePagesData } from "../../components/Data/AlternativeDynamic";
 
 import SectionDetails from "../../components/Pages/Alternative/SectionDetails";
@@ -15,9 +15,9 @@ import FAQComponent from "../../components/utils/FAQComponent";
 import SeoHeader from "../../components/utils/SeoHeader";
 import AlternativeBanner from "../../components/Pages/Alternative/AlternativeBanner";
 
-function AlternativeDynamic() {
-  const { Alternative } = useParams();
-  const AlternativeData = AlternativePagesData[Alternative];
+function AlternativeDynamic({alternativePage}) {
+  // const { Alternative } = useParams();
+  const AlternativeData = AlternativePagesData[alternativePage];
 
   if (!AlternativeData) return ;
 

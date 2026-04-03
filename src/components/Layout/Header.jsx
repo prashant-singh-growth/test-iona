@@ -89,16 +89,16 @@ useEffect(() => {
       className="w-full  bg-gradient-to-r from-[#160E38] via-[#2A2564] to-[#160E38] shadow-lg overflow-hidden relative z-[99]"
     >
       {/* 3. Wrap content in a fixed-height container to avoid text re-flow */}
-      <div className="py-2.5 px-6 flex flex-row justify-center items-center gap-4">
+      <div className="py-2.5 px-5 flex flex-row justify-center items-center gap-2 sm:gap-4">
         <p className="text-sm capitalize md:text-base font-medium text-blue-50/90 tracking-wide ">
-      The AI-First CHRO: The Missing Playbook – From AI Promise to Boardroom Results
+     The AI-First CHRO: The Missing Playbook – From AI Promise to Boardroom Results
         </p>
 
         <a
           href="/ai-first-chro"
-          className="bg-white/10 flex-none flex flex-row items-center gap-2 hover:bg-white/20 text-white text-xs md:text-sm py-1.5 px-4 rounded-full border border-white/20 transition-all duration-300 backdrop-blur-sm"
+          className="bg-white/10 flex-none flex flex-row items-center gap-2 hover:bg-white/20 text-white text-xs md:text-sm py-1.5 px-2 sm:px-4 rounded-full border border-white/20 transition-all duration-300 backdrop-blur-sm"
         >
-          Claim For Free
+          Claim Your Copy
           <svg width="18" height="18" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M4.16669 10H15.8334M15.8334 10L10.8334 5M15.8334 10L10.8334 15" stroke="#FCFCFC" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
@@ -108,20 +108,6 @@ useEffect(() => {
   )}
 </AnimatePresence>
  
-
-
-
-      {/* <div className="max-w-4xl mx-auto mt-2 bg-indigo-50 rounded-full py-2 px-6 flex flex-row justify-between items-center border border-indigo-100">
-  <div className="flex items-center gap-2">
-    <span className="text-lg">🎉</span>
-    <p className="text-sm font-medium text-indigo-900">
-      We just raised our seed round! Come join the team.
-    </p>
-  </div>
-  <a href="#" className="text-sm font-semibold text-indigo-600 hover:underline">
-    We're hiring
-  </a>
-</div> */}
       <div className="w-full grid place-items-center px-5 md:px-10 slg:px-[60px] lg:px-[90px]">
         <div className="w-full max-w-[1440px] flex justify-between gap-5 items-center py-3">
 

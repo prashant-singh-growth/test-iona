@@ -171,7 +171,7 @@ useEffect(() => {
       if (section) {
         section.scrollIntoView({ behavior: "smooth" });
       }
-    }, 2000); // 3 seconds
+    }, 500); // 3 seconds
 
     return () => clearTimeout(timer);
   }, []);
