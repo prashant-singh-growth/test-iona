@@ -40,39 +40,7 @@ function AdsLandingPageSec() {
         <HowtoGetCopy/>
         <AdsCta/>
         <FAQComponent FAQList={landingpagefaqads}/>
-        <LPFooter/>
-           
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: `{
-  "@context": "https://schema.org",
-  "@type": ["Book", "Product"],
-  "name": "The AI-FIRST CHRO",
-  "description": "The AI-First CHRO is the missing playbook for HR leaders navigating AI. Built on 150,000+ AI-driven hires, not textbook theory. 75 free hardcopies. India only.",
-  "image": "https://www.iona.ai/assets/pages/landingpage/free-copy.webp",
-  "author": {
-    "@type": "Person",
-    "name": "Amit Srivastava"
-  },
-  "brand": {
-    "@type": "Organization",
-    "name": "iona.ai"
-  },
-  "offers": {
-    "@type": "Offer",
-    "url": "https://www.iona.ai/ai-first-chro",
-    "price": "1599",
-    "priceCurrency": "INR",
-    "availability": "https://schema.org/LimitedAvailability"
-  }
-}
-`
-          }}
-        />
-      
-
-     
+        <LPFooter/>    
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

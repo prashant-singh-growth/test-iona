@@ -18,7 +18,7 @@ function SingleSolutionPage() {
   return (
 <div className='bg-white flex flex-col font-lora !pt-10'>
 <SingleSolutionBanner banner={solutionPageData.page.banner}/>
-<StateCard state={solutionPageData.page.state}/>
+{/* <StateCard state={solutionPageData.page.state}/> */}
 <SolutionDetailsCard detail={solutionPageData.page.detailSection}/>
 <PlatformCapabilitiesSection plateform={solutionPageData.page.platformCapabilities}/>
 <CTASection
