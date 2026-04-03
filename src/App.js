@@ -27,7 +27,7 @@ const CTA = lazy(() => import("./components/CTA"));
 const Contact = lazy(() => import("./pages/Contact"));
 // const NovaCount = lazy(() => import("./pages/Solutions/NovaCount"));
 const NovaAssist = lazy(() => import("./pages/Solutions/NovaAssist"));
-const NovaTrack = lazy(() => import("./pages/Solutions/NovaTrack"));
+// const NovaTrack = lazy(() => import("./pages/Solutions/NovaTrack"));
 const NovaStart = lazy(() => import("./pages/Solutions/NovaStart"));
 const NovaDoc = lazy(() => import("./pages/Solutions/NovaDoc"));
 const NovaTrain = lazy(() => import("./pages/Solutions/NovaTrain"));
@@ -200,14 +200,14 @@ const AnimatedRoutes = () => {
             </PageTransition>
           }
         /> */}
-        <Route
+        {/* <Route
           path="/solutions/novatrack"
           element={
             <PageTransition>
               <NovaTrack />
             </PageTransition>
           }
-        />
+        /> */}
         <Route
           path="/solutions/novastart"
           element={

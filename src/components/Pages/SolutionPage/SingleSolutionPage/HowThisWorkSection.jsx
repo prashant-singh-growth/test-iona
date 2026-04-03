@@ -18,9 +18,12 @@ function HowThisWorkSection({ howwork }) {
             <div key={ind} className="w-full  bg-[#FFFFFF] flex flex-col gap-3 border border-[#EAEAEA] py-[22px] rounded-[12px] px-5 md:px-8">
               <p className='text-lg font-medium text-primary'>{card.headshot}</p>
               <h3 className='text-2xl font-semibold text-primary leading-[24px]'>{card.title}</h3>
-              <ul className='text-base pl-2 mt-4 lg:mt-7 text-primary font-normal singleSolutionList'>
+             {card.list &&  <ul className='text-base pl-2 mt-4 lg:mt-7 text-primary font-normal singleSolutionList'>
                 {card.list.map((list, ind) => <li key={ind}>{list}</li>)}
-              </ul>
+              </ul>}
+             {card.description &&  <p className='text-base mt-2 text-primary font-normal '>
+               {card.description}
+              </p>}
             </div>
           ))}
         </div>

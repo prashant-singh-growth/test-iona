@@ -1,7 +1,7 @@
 
 
 import SingleSolutionBanner from '../../components/Pages/SolutionPage/SingleSolutionPage/SingleSolutionBanner'
-import StateCard from '../../components/Pages/SolutionPage/SingleSolutionPage/StateCard'
+// import StateCard from '../../components/Pages/SolutionPage/SingleSolutionPage/StateCard'
 import SolutionDetailsCard from '../../components/Pages/SolutionPage/SingleSolutionPage/SolutionDetailsCard'
 import PlatformCapabilitiesSection from '../../components/Pages/SolutionPage/SingleSolutionPage/PlatformCapabilitiesSection'
 import HowThisWorkSection from '../../components/Pages/SolutionPage/SingleSolutionPage/HowThisWorkSection'
@@ -31,8 +31,8 @@ ctaUrl={"/schedule-demo"}
 <CTASection
 title={solutionPageData.page.cta.ctafirst.title}
 description={solutionPageData.page.cta.ctafirst.description}
-ctaText={solutionPageData.page.cta.ctafirst.urlText}
-ctaUrl={solutionPageData.page.cta.ctafirst.url}
+ctaText={solutionPageData.page.cta.ctafirst.urlText ? solutionPageData.page.cta.ctafirst.urlText : "Request a Demo" }
+ctaUrl={solutionPageData.page.cta.ctafirst.url ? solutionPageData.page.cta.ctafirst.url:  "schedule-demo"}
 />
 </div>
   )
