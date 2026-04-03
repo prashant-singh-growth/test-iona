@@ -91,7 +91,7 @@ useEffect(() => {
       {/* 3. Wrap content in a fixed-height container to avoid text re-flow */}
       <div className="py-2.5 px-6 flex flex-row justify-center items-center gap-4">
         <p className="text-sm capitalize md:text-base font-medium text-blue-50/90 tracking-wide ">
-      AI-First CHRO Playbook. Built on 150,000+ AI-Driven Hires.
+      The AI-First CHRO: The Missing Playbook – From AI Promise to Boardroom Results
         </p>
 
         <a
