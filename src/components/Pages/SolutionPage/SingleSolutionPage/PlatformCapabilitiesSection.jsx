@@ -13,10 +13,10 @@ function PlatformCapabilitiesSection({plateform}) {
           </h2>
        
         </div>
-        <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-[50px] gap-5">
+        <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 mt-[50px] gap-5">
             {plateform.card.map((item,ind)=>(
                 <div key={ind} className="w-full  bg-[#FFFFFF] flex flex-col gap-3 border-2 border-[#160E381A] hover:border-primaryText/30 ease-linear duration-150 hover:-translate-y-1 py-[22px] rounded-[12px] px-5 md:px-8">
-                <div className="w-full pb-2 flex flex-row justify-start items-center gap-3 border-b border-[#160E381A]">
+                <div className="w-full pb-2 flex flex-col    justify-start items-start gap-3 border-b border-[#160E381A]">
                     <svg className='w-10 h-10 flex-none' viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M0 8C0 3.58172 3.58172 0 8 0H32C36.4183 0 40 3.58172 40 8V32C40 36.4183 36.4183 40 32 40H8C3.58172 40 0 36.4183 0 32V8Z" fill="url(#paint0_linear_1505_765)"/>
 <path d="M14.9997 28.3334C14.5576 28.3334 14.1337 28.1578 13.8212 27.8453C13.5086 27.5327 13.333 27.1088 13.333 26.6668V13.3334C13.333 12.8914 13.5086 12.4675 13.8212 12.1549C14.1337 11.8423 14.5576 11.6668 14.9997 11.6668H21.6663C21.9301 11.6663 22.1914 11.7181 22.4351 11.8191C22.6788 11.92 22.9001 12.0682 23.0863 12.2551L26.0763 15.2451C26.2637 15.4313 26.4123 15.6529 26.5136 15.8969C26.6149 16.1409 26.6668 16.4026 26.6663 16.6668V26.6668C26.6663 27.1088 26.4907 27.5327 26.1782 27.8453C25.8656 28.1578 25.4417 28.3334 24.9997 28.3334H14.9997Z" stroke="white" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
@@ -31,7 +31,7 @@ function PlatformCapabilitiesSection({plateform}) {
 </linearGradient>
 </defs>
 </svg>
-<h3 className='text-lg font-semibold text-primary leading-[30px]'>{item.title}</h3>
+<h3 className='text-lg font-semibold text-primary leading-[30px] ' dangerouslySetInnerHTML={{__html:item.title}}></h3>
                 </div>
                 <p className='text-[#677D64] text-sm leading-6'>{item.description}</p>
             </div>

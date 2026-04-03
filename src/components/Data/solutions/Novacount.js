@@ -143,7 +143,7 @@ export const NovaCountSolution = {
         title: "Everything your HR and Finance team asked for — finally, together.",
         card: [
             {
-                title: "Collaborative Planning",
+                title: `Collaborative <span class="md:block">Planning</span> `,
                 description: "Involve hiring managers and finance teams in planning process"
             },
             {
@@ -155,11 +155,11 @@ export const NovaCountSolution = {
                 description: "AI-powered alerts flag potential delays before they impact goals"
             },
             {
-                title: "Real-Time Analytics",
+                title: `Real-Time <span class="md:block">Analytics</span>`,
                 description: "Get instant insights into your hiring pipeline and make data-driven decisions"
             },
             {
-                title: "Hiring Goal Tracking",
+                title: 'Hiring Goal <span class="md:block">Tracking</span>',
                 description: "Monitor progress against hiring targets and adjust strategies in real-time"
             }
         ]
