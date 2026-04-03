@@ -13,7 +13,7 @@ function PlatformCapabilitiesSection({plateform}) {
           </h2>
        
         </div>
-        <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-[50px] gap-5">
+        <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-[50px] gap-5">
             {plateform.card.map((item,ind)=>(
                 <div key={ind} className="w-full  bg-[#FFFFFF] flex flex-col gap-3 border-2 border-[#160E381A] hover:border-primaryText/30 ease-linear duration-150 hover:-translate-y-1 py-[22px] rounded-[12px] px-5 md:px-8">
                 <div className="w-full pb-2 flex flex-row justify-start items-center gap-3 border-b border-[#160E381A]">
