@@ -202,7 +202,7 @@ export const NovaTrackSolution = {
     },
     howWork: {
         title: "How does it work?",
-        description: "NovaTrack isn’t a passive database. It’s an agentic hiring engine built to predict, plan, and execute at scale — without adding headcount.",
+        description: "NovaTrack isn’t a passive database. It’s an agentic hiring engine built to predict, plan, and execute at scale, without adding headcount.",
         card: [
             {
                 headshot: "Step 1:",
