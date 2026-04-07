@@ -20,12 +20,13 @@ function SingleSolutionPage() {
 <SingleSolutionBanner banner={solutionPageData.page.banner}/>
 {/* <StateCard state={solutionPageData.page.state}/> */}
 <SolutionDetailsCard detail={solutionPageData.page.detailSection}/>
-<PlatformCapabilitiesSection plateform={solutionPageData.page.platformCapabilities}/>
+<PlatformCapabilitiesSection plateform={solutionPageData.page.platformCapabilities} url={solutionPageData.url}/>
 <CTASection
-title={"Upscale Your Hiring to the Next Level"}
-description={"Transform your workforce planning and analytics using AI-driven intelligence."}
-ctaText={"Request Your Personalized Demo"}
-ctaUrl={"/schedule-demo"}
+title={solutionPageData.page.cta.ctaSec.title ? solutionPageData.page.cta.ctaSec.title :"Upscale Your Hiring to the Next Level"}
+description={solutionPageData.page.cta.ctaSec.description ? solutionPageData.page.cta.ctaSec.description :"Transform your workforce planning and analytics using AI-driven intelligence."}
+ctaText={solutionPageData.page.cta.ctaSec.urlText ? solutionPageData.page.cta.ctaSec.urlText : "Request Your Personalized Demo" }
+ctaUrl={solutionPageData.page.cta.ctaSec.url ? solutionPageData.page.cta.ctaSec.url:  "schedule-demo"}
+
 />
 <HowThisWorkSection howwork={solutionPageData.page.howWork}/>
 <CTASection

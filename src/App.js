@@ -26,14 +26,14 @@ const Highlights = lazy(() => import("./components/Highlights"));
 const CTA = lazy(() => import("./components/CTA"));
 const Contact = lazy(() => import("./pages/Contact"));
 // const NovaCount = lazy(() => import("./pages/Solutions/NovaCount"));
-const NovaAssist = lazy(() => import("./pages/Solutions/NovaAssist"));
+// const NovaAssist = lazy(() => import("./pages/Solutions/NovaAssist"));
 // const NovaTrack = lazy(() => import("./pages/Solutions/NovaTrack"));
-const NovaStart = lazy(() => import("./pages/Solutions/NovaStart"));
-const NovaDoc = lazy(() => import("./pages/Solutions/NovaDoc"));
-const NovaTrain = lazy(() => import("./pages/Solutions/NovaTrain"));
-const NovaEngage = lazy(() => import("./pages/Solutions/NovaEngage"));
-const NovaVerify = lazy(() => import("./pages/Solutions/NovaVerify"));
-const NovaConnect = lazy(() => import("./pages/Solutions/NovaConnect"));
+// const NovaStart = lazy(() => import("./pages/Solutions/NovaStart"));
+// const NovaDoc = lazy(() => import("./pages/Solutions/NovaDoc"));
+// const NovaTrain = lazy(() => import("./pages/Solutions/NovaTrain"));
+// const NovaEngage = lazy(() => import("./pages/Solutions/NovaEngage"));
+// const NovaVerify = lazy(() => import("./pages/Solutions/NovaVerify"));
+// const NovaConnect = lazy(() => import("./pages/Solutions/NovaConnect"));
 // const Blogs = lazy(() => import("./pages/Blogs"));
 // const CaseStudies = lazy(() => import("./pages/CaseStudies"));
 const Vids = lazy(() => import("./pages/Vids"));
@@ -184,14 +184,14 @@ const AnimatedRoutes = () => {
             </PageTransition>
           }
         /> */}
-        <Route
+        {/* <Route
           path="/solutions/novaassist"
           element={
             <PageTransition>
               <NovaAssist />
             </PageTransition>
           }
-        />
+        /> */}
         {/* <Route
           path="/solutions/speedboard"
           element={
@@ -208,14 +208,14 @@ const AnimatedRoutes = () => {
             </PageTransition>
           }
         /> */}
-        <Route
+        {/* <Route
           path="/solutions/novastart"
           element={
             <PageTransition>
               <NovaStart />
             </PageTransition>
           }
-        />
+        /> */}
         <Route
           path="/ai-first-chro"
           element={
@@ -224,31 +224,31 @@ const AnimatedRoutes = () => {
             </PageTransition>
           }
         />
-        <Route
+        {/* <Route
           path="/solutions/novadoc"
           element={
             <PageTransition>
               <NovaDoc />
             </PageTransition>
           }
-        />
-        <Route
+        /> */}
+        {/* <Route
           path="/solutions/novatrain"
           element={
             <PageTransition>
               <NovaTrain />
             </PageTransition>
           }
-        />
-        <Route
+        /> */}
+        {/* <Route
           path="/solutions/novaengage"
           element={
             <PageTransition>
               <NovaEngage />
             </PageTransition>
           }
-        />
-        <Route
+        /> */}
+        {/* <Route
           path="/solutions/novaverify"
           element={
             <PageTransition>
@@ -263,7 +263,7 @@ const AnimatedRoutes = () => {
               <NovaConnect />
             </PageTransition>
           }
-        />
+        /> */}
         <Route
           path="/blog"
           element={
