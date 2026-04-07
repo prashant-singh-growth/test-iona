@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import { CaseStudyJson } from '../../../Data/CaseStudyDynamic';
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { CaseStudyPopup } from './CaseStudyPopup';
 
 function AdsThankuPage() {
   const [formData, setFormData] = useState()
@@ -345,6 +346,7 @@ useEffect(() => {
     </form>
   </div>
 </div>
+<CaseStudyPopup/>
     </div>
   )
 }
