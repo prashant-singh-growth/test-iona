@@ -4,12 +4,12 @@ function HowThisWorkSection({ howwork }) {
   return (
     <div className='h-fit relative px-5 md:px-10 slg:px-[60px] lg:px-[90px] py-14 md:py-16 lg:py-[90px]  flex flex-col justify-center items-center'>
       <div className="w-full lg:max-w-[1440px] flex flex-col justify-center items-center">
-        <div className="flex flex-col max-w-[849px] justify-center items-center ">
+        <div className="flex flex-col max-w-[693px] justify-center items-center ">
 
           <h2 className="text-3xl md:text-4xl lg:text-[40px] lg:leading-[50px] text-[#2A2564] font-bold md:font-semibold text-center ">
             How does it work?
           </h2>
-          <p className="text-base text-center font-lora text-primary font-normal mt-5">
+          <p className="text-base text-center  font-lora text-primary font-normal mt-5">
             {howwork.description}
           </p>
         </div>
