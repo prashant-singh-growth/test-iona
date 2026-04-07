@@ -12,12 +12,7 @@ export const NovaTrack = {
             altText: ""
         }
     },
-    state: [
-        {
-            name: "",
-            value: ""
-        }
-    ],
+  
     detailSection: {
         title: "",
         description: "",
