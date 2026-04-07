@@ -8,8 +8,8 @@ import { NovaTrackSolution } from "./Novatrack";
 import { NovaTrain } from "./NovaTrain";
 import { Novaverify } from "./Novaverify";
 
-{/* <script src="https://js-eu1.hsforms.net/forms/embed/146385824.js" defer></script>
-<div class="hs-form-frame" data-region="eu1" data-form-id="f5f72187-e5a2-46ec-ae51-a1a043b67e07" data-portal-id="146385824"></div> */}
+
+// const gForm= "f5f72187-e5a2-46ec-ae51-a1a043b67e07"
 export const solutionPageList = [
     {
         url:"novacount",
