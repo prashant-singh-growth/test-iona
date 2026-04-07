@@ -39,12 +39,12 @@ export const solutionPageList = [
         url:"novatrain",
         page:NovaTrain
     },
-    // {
-    //     url:"novaverify",
-    //     page:Novaverify
-    // },
-    // {
-    //     url:"novaconnect",
-    //     page:Novaconnect
-    // },
+    {
+        url:"novaverify",
+        page:Novaverify
+    },
+    {
+        url:"novaconnect",
+        page:Novaconnect
+    },
 ]

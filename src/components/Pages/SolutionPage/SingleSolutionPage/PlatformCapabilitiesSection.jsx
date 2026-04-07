@@ -18,7 +18,7 @@ function PlatformCapabilitiesSection({ plateform,url }) {
                 </div>
                 <div className={`w-full grid grid-cols-1 md:grid-cols-2 ${url === "novatrain" ? "lg:grid-cols-3":"lg:grid-cols-5"} mt-[50px] gap-5`}>
                     {plateform.card.map((item, ind) => (
-                        <div key={ind} className="w-full  bg-[#FFFFFF] flex flex-col gap-3 border-2 border-[#160E381A] hover:border-primaryText/30 ease-linear duration-150 hover:-translate-y-1 py-[22px] rounded-[12px] px-5 ">
+                        <div key={ind} className="w-full  bg-[#FFFFFF] flex flex-col gap-3 border-2 border-[#160E381A] hover:border-primaryText/30 hover:shadow-lg ease-linear duration-150 hover:-translate-y-1 py-[22px] rounded-[12px] px-5 ">
                             <div className="w-full pb-2 flex flex-col    justify-start items-start gap-3 border-b border-[#160E381A]">
                                 <svg className='w-10 h-10 flex-none' viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M0 8C0 3.58172 3.58172 0 8 0H32C36.4183 0 40 3.58172 40 8V32C40 36.4183 36.4183 40 32 40H8C3.58172 40 0 36.4183 0 32V8Z" fill="url(#paint0_linear_1505_765)" />

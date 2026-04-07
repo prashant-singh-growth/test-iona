@@ -70,6 +70,7 @@ const AuthorSinglePages = lazy(
   () => import("./pages/Blog/Author/AuthorSinglePage")
 );
 const BlogLandingPage = lazy(() => import("./pages/Blog/BlogLandingPages"))
+const ErrorPage = lazy(() => import("./pages/ErrorPage"))
 const BlogSinglePage = lazy(() => import("./pages/Blog/BlogSinglePages"))
 const TestSolution = lazy(() => import("./pages/Solutions/SingleSolutionPage"))
 // Scroll to top on route change
@@ -462,6 +463,14 @@ const AnimatedRoutes = () => {
           path="*"
           element={
             <PageTransition>
+              <ErrorPage />
+            </PageTransition>
+          }
+        />
+        {/* <Route
+          path="*"
+          element={
+            <PageTransition>
               <div className="flex flex-col items-center justify-center min-h-[60vh]">
                 <h1 className="text-4xl font-bold mb-4">
                   404 - Page Not Found
@@ -475,7 +484,7 @@ const AnimatedRoutes = () => {
               </div>
             </PageTransition>
           }
-        />
+        /> */}
       </Routes>
     </AnimatePresence>
   );
