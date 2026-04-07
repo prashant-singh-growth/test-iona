@@ -1,42 +1,44 @@
 import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-const COLORS = {
-  primary: "#2A2564",
-  themeGray: "#f3f3f5",
-  darkVoilet: "#160E38",
-  violet_1: "#02193B",
-  violet_2: "#5A4E7A",
-  accent: "#00F2FF",
-};
+
 
 /* USERS LIST */
 const users = [
   { 
-    name: "Vikash", 
-    city: "Axis Bank",
+    name: "Hemant", 
+    city: "Barclays",
     casestudy: "Aditya Birla",
-    // bgColor: "bg-gradient-to-tr from-[#AD1D23] via-[#F58220] to-[#FFD200]",
     img: "/assets/pages/casestudy/aditya.webp" 
   },
   { 
-    name: "Hemant", 
-    city: "Barclays",
-    casestudy: "HDFC EGRO",
-    // bgColor: "bg-[#D81F27]",
+    name: "Saurav", 
+    city: "poonawalla fincorp",
+    casestudy: "HDFC Ergo",
     img: "/assets/pages/casestudy/hdfc.webp" 
   },
   { 
-    name: "Ranabir", 
-    city: "TATA Power",
-    casestudy: "Metropolis HealthCare",
-    // bgColor: "bg-[#139849]",
+    name: "Debasis", 
+    city: "HCL Tech",
+    casestudy: "HDFC Ergo",
+    img: "/assets/pages/casestudy/hdfc.webp" 
+  },
+  { 
+    name: "Tarun", 
+    city: "Niva Bupa",
+    casestudy: "Metropolis Healthcare",
+    img: "/assets/pages/casestudy/client-3.webp" 
+  },
+  { 
+    name: "Anubhav", 
+    city: "Max Life Insurance",
+    casestudy: "Metropolis Healthcare",
     img: "/assets/pages/casestudy/client-3.webp" 
   }
 ];
 
 /* DELAY LOGIC */
-const INITIAL_DELAYS = [5,10,15]; // 5s, 30s, 90s
+const INITIAL_DELAYS = [1,60,120,150,200]; // 5s, 30s, 90s
 const POPUP_DURATION = 3500;
 
 export const  CaseStudyPopup = () => {
