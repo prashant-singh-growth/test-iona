@@ -209,8 +209,88 @@ description:"Ready to see how iona.ai supports large-scale hiring from screening
     answer: "A company should invest in HR onboarding software like iona.ai when manual processes become too slow or error-prone. As companies grow or begin hiring more frequently, using automated solutions like iona.ai becomes essential to maintain efficiency, compliance, and a positive new hire experience."
   }
 ],
-  // blogSchema:``,
-    // faqSchema:``,
+  blogSchema:`{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "How to Do Bulk Hiring with AI: A Recruiter's Guide",
+  "description": "Looking for efficient bulk hiring solutions? Learn how AI tools can help you streamline recruiting with proven strategies. Click to read more!",
+  "image": "https://www.iona.ai/assets/pages/blog/2026/april/bulk-hiring-tools.webp",
+  "author": {
+    "@type": "Person",
+    "name": "Amit Srivastava",
+    "url": "https://www.iona.ai/author/amit-srivastava"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "iona.ai",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.iona.ai/assets/iona-ai-logo.png"
+    }
+  },
+  "datePublished": "2024-04-08T00:00:00+05:30",
+  "dateModified": "2026-04-08T00:00:00+05:30",
+  "inLanguage": "en",
+  "url": "https://www.iona.ai/blog/bulk-hiring-ai-tools-strategies-recruiters"
+}
+`,
+    faqSchema:`
+    
+    {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "What is HR onboarding software?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "HR onboarding software is a tool that automates and streamlines the onboarding process for new employees. It helps with tasks like document collection, e-signatures, policy sharing, training, and task management, ensuring a smoother and more organized experience for new hires."
+    }
+  },{
+    "@type": "Question",
+    "name": "How does HR onboarding software improve the new employee experience?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "HR onboarding software like iona.ai enhances the new employee experience by eliminating confusion, speeding up documentation, and providing structured communication. It ensures new hires receive all necessary information on time, helping them feel prepared and confident from day one."
+    }
+  },{
+    "@type": "Question",
+    "name": "Why is HR onboarding software important for HR teams?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "HR onboarding software like iona.ai reduces manual work and administrative overload, allowing HR teams to manage onboarding efficiently. It ensures a consistent, error-free experience for new hires and frees up HR professionals to focus on higher-value tasks."
+    }
+  },{
+    "@type": "Question",
+    "name": "What features should businesses look for in HR onboarding software?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Businesses should look for features such as automated workflows, document management, e-signatures, task checklists, and employee progress tracking. iona.ai offers these features and more, providing HR teams with everything they need to streamline the onboarding process and improve new hire retention."
+    }
+  },{
+    "@type": "Question",
+    "name": "Can HR onboarding software help with remote and hybrid onboarding?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes, HR onboarding software like iona.ai is ideal for remote and hybrid onboarding. It enables HR teams to onboard employees from anywhere by managing documents, training, and communication all digitally, ensuring a seamless experience for both in-office and remote hires."
+    }
+  },{
+    "@type": "Question",
+    "name": "How does HR onboarding software help with compliance?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "HR onboarding software like iona.ai ensures compliance by automating the collection of essential documents and signatures, tracking policy acknowledgments, and maintaining a digital audit trail. This reduces compliance risk and ensures all required paperwork is completed on time."
+    }
+  },{
+    "@type": "Question",
+    "name": "When should a company invest in HR onboarding software?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "A company should invest in HR onboarding software like iona.ai when manual processes become too slow or error-prone. As companies grow or begin hiring more frequently, using automated solutions like iona.ai becomes essential to maintain efficiency, compliance, and a positive new hire experience."
+    }
+  }]
+}
+`,
      
  
 

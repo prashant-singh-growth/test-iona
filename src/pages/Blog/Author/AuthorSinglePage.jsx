@@ -3,6 +3,7 @@ import { useParams} from "react-router-dom";
 import { AuthorList } from "../../../components/Data/blog/AuthorList";
 import { BlogList } from "../../../components/Data/blog/BlogList";
 import { motion } from "framer-motion";
+import SeoHeader from "../../../components/utils/SeoHeader";
 const AuthorSinglePage = () => {
   const { author } = useParams();
 
@@ -27,12 +28,17 @@ const AuthorSinglePage = () => {
 
   return (
     <div className="min-h-screen bg-[#f6f7fb] font-lora">
+      <SeoHeader
+      title={AuthorDetails.seo.title}
+      description={AuthorDetails.seo.description}
+      />
+
       
-      {/* ================= HERO ================= */}
+  
       <section className="pt-28 pb-24 px-6 bg-[#160E38]">
         <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
           
-          {/* Author Image */}
+    
 <div className="flex justify-center lg:justify-start">
   <motion.div
     className="relative"
@@ -40,7 +46,7 @@ const AuthorSinglePage = () => {
     whileHover="hover"
     animate="rest"
   >
-    {/* Glow Background */}
+  
     <motion.div
       variants={{
         rest: { opacity: 0.6, scale: 1 },
