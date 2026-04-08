@@ -1,8 +1,8 @@
 
 export const NovaTrain = {
     seo: {
-        title: "",
-        description: ""
+        title: "NovaTrain | Pre-Day-One Training & Compliance by iona.ai",
+        description: "Transform pre-day-one learning with NovaTrain. AI-driven, SCORM-compliant modules, chatbot guidance, and audit-ready tracking for high-volume hiring compliance."
     },
     banner: {
         title: "No More Unprepared Hires on Day One.",

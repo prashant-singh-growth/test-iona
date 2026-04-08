@@ -1,7 +1,7 @@
 export const NovaCountSolution = {
     seo: {
-        title: "",
-        description: ""
+        title: "NovaCount | Smart Workforce Analytics by iona.ai",
+        description: "Track, analyze, and optimize workforce efficiency with NovaCount. Empower HR teams with data-driven insights for transparent and smarter decision-making."
     },
     banner: {
         title: "Your Headcount Plan Shouldn't Live in a Spreadsheet.",

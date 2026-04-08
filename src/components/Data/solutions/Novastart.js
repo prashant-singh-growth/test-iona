@@ -1,8 +1,8 @@
 
 export const NovaStart = {
     seo: {
-        title: "",
-        description: ""
+        title: "NovaStart | AI Offer Management for High-Volume Hiring",
+        description: "Automate high-volume offer management with NovaStart. An intelligent offer workflow software that accelerates approvals, ensures compliance, and secures top talent faster."
     },
     banner: {
         title: "Your Offer Pipeline Is a Black Box. NovaStart Changes That.",

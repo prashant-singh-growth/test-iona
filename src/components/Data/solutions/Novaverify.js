@@ -1,8 +1,8 @@
 
 export const Novaverify = {
     seo: {
-        title: "",
-        description: ""
+        title: "NovaVerify | Smart Candidate Verification by iona.ai",
+        description: "Ensure authenticity and trust in hiring with NovaVerify. Leverage AI-driven verification to validate credentials, background, and candidate integrity."
     },
     banner: {
         title: "Eliminate the verification bottleneck & Close the Gaps",

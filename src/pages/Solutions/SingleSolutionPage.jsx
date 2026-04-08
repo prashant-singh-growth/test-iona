@@ -8,6 +8,8 @@ import HowThisWorkSection from '../../components/Pages/SolutionPage/SingleSoluti
 import CTASection from '../../components/Pages/HomePage/CTASection'
 import { Navigate, useParams } from 'react-router-dom'
 import { solutionPageList } from '../../components/Data/solutions/SolutionPageList'
+import SeoHeader from '../../components/utils/SeoHeader'
+import { Helmet } from 'react-helmet-async'
 
 function SingleSolutionPage() {
   const { solutions } = useParams();
@@ -17,6 +19,73 @@ function SingleSolutionPage() {
  
   return (
 <div className='bg-white flex flex-col font-lora !pt-10'>
+  <SeoHeader
+  title={solutionPageData.page.seo.title}
+  description={solutionPageData.page.seo.description}
+  />
+  <Helmet>
+          <meta property="og:type" content="website" />
+  <meta property="og:url" content={`https://www.iona.ai/solutions/${solutionPageData.url}`} />
+  <meta property="og:title" content={solutionPageData.page.seo.title} />
+  <meta property="og:description" content={solutionPageData.page.seo.description} />
+  <meta property="og:image" content={`https://www.iona.ai/solutions/${solutionPageData.page.banner.bannerImage}`} />
+  
+  
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content={`https://www.iona.ai/solutions/${solutionPageData.url}`} />
+  <meta property="twitter:title" content={solutionPageData.page.seo.title} />
+  <meta property="twitter:description" content={solutionPageData.page.seo.description} />
+  <meta property="twitter:image" content={`https://www.iona.ai/solutions/${solutionPageData.page.banner.bannerImage}`} />
+  
+        </Helmet>
+         <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": `${solutionPageData.page.seo.title}`,
+  "url": `https://www.iona.ai/solutions/${solutionPageData.url}`,
+  "description": `${solutionPageData.page.seo.description}`,
+  "applicationCategory": "HumanResourcesApplication",
+  "operatingSystem": "Web",
+  "publisher": {
+    "@id": "https://www.iona.ai/#organization"
+  },
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "INR",
+    "url": `https://www.iona.ai/solutions/${solutionPageData.url}`
+  }
+}
+)
+  }}
+  async
+/>
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org/",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.iona.ai/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Product",
+          "item": `https://www.iona.ai/solutions/${solutionPageData.url}`
+        }
+      ]
+    })
+  }}
+  async
+/>
 <SingleSolutionBanner banner={solutionPageData.page.banner}/>
 {/* <StateCard state={solutionPageData.page.state}/> */}
 <SolutionDetailsCard detail={solutionPageData.page.detailSection}/>

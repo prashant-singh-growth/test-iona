@@ -1,7 +1,7 @@
 export const NovaTrackSolution = {
     seo: {
-        title: "",
-        description: ""
+        title: "NovaTrack | Candidate Tracking System for Hiring Teams",
+        description: "Centralize candidate status with NovaTrack. Track applicants across stages and channels, remove spreadsheet chaos, and make faster, data-driven hiring decisions."
     },
     banner: {
         title: "Stop losing hired talent before Day One.",

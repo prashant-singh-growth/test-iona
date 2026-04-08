@@ -45,7 +45,7 @@ const Landingpage = lazy(() => import("./pages/Landing/Landingpages"));
 const ThankYouPage = lazy(() => import("./pages/ThankYou"));
 const SolutionPage = lazy(() => import("./pages/SolutionPage"));
 const SecLandingPage = lazy(() => import("./pages/Landing/SecLandingPage"));
-const AdsLandingPage = lazy(() => import("./pages/Landing/AdsLandingPages"));
+// const AdsLandingPage = lazy(() => import("./pages/Landing/AdsLandingPages"));
 const LpLandingPagesec = lazy(() => import("./pages/Landing/AdsLandingPageSec"));
 const LpthankYou = lazy(() => import("./components/Pages/LandingPage/adsSecLanding/AdsThankuPage"));
 const AlternativeDynamicPage = lazy(
@@ -345,14 +345,14 @@ const AnimatedRoutes = () => {
             </PageTransition>
           }
         />
-        <Route
+        {/* <Route
           path="/ads"
           element={
             <PageTransition>
               <AdsLandingPage />
             </PageTransition>
           }
-        />
+        /> */}
         <Route
           path="/thank-you"
           element={

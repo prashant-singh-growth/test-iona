@@ -1,8 +1,8 @@
 
 export const NovaEngage = {
     seo: {
-        title: "",
-        description: ""
+        title: "NovaEngage | Empower Employee Engagement with iona.ai",
+        description: "Enhance culture and retention with NovaEngage. Harness AI insights to strengthen communication, motivation, and inclusion across your organization."
     },
     banner: {
         title: "Stop Losing Candidates Between Hiring Stages.",

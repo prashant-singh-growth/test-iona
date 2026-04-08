@@ -1,8 +1,8 @@
 
 export const Novaconnect = {
     seo: {
-        title: "",
-        description: ""
+        title: "NovaConnect | AI-Powered Hiring by iona.ai",
+        description: "Discover NovaConnect by iona.ai — an AI-driven solution that simplifies, humanizes, and accelerates your talent engagement journey."
     },
     banner: {
         title: "Experience AI-Powered Support at the Speed of Thought",

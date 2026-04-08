@@ -1,8 +1,8 @@
 
 export const NovaDoc = {
     seo: {
-        title: "",
-        description: ""
+        title: "NovaDoc | AI-Powered Onboarding Documentation at Scale | iona.ai",
+        description: "Accelerate high-volume onboarding with NovaDoc. AI-powered, mobile-first documentation that ensures accuracy, compliance, and zero paperwork delays."
     },
     banner: {
         title: "AI-Powered Onboarding Process Built for Bulk Hiring.",

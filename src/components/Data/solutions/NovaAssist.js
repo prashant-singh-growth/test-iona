@@ -1,8 +1,8 @@
 
 export const NovaAssist = {
     seo: {
-        title: "",
-        description: ""
+        title: "NovaAssist | AI-Powered Recruitment Assistant by iona.ai",
+        description: "Simplify hiring with NovaAssist—your intelligent virtual recruiter. Automate tasks, enhance candidate engagement, and focus on meaningful human connections."
     },
     banner: {
         title: "Don't let one missed question ruin your next hire.",
@@ -176,6 +176,8 @@ export const NovaAssist = {
     description: "Your copilot learns your hiring patterns and team preferences in real time, surfacing deep insights and getting sharper with every interaction."
   }
 ]
-    }
+    },
+  
+
 
 }
