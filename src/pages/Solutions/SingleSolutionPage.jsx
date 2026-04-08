@@ -28,14 +28,14 @@ function SingleSolutionPage() {
   <meta property="og:url" content={`https://www.iona.ai/solutions/${solutionPageData.url}`} />
   <meta property="og:title" content={solutionPageData.page.seo.title} />
   <meta property="og:description" content={solutionPageData.page.seo.description} />
-  <meta property="og:image" content={`https://www.iona.ai/solutions/${solutionPageData.page.banner.bannerImage.imgurl}`} />
+  <meta property="og:image" content={`https://www.iona.ai/solutions${solutionPageData.page.banner.bannerImage.imgurl}`} />
   
   
   <meta property="twitter:card" content="summary_large_image" />
   <meta property="twitter:url" content={`https://www.iona.ai/solutions/${solutionPageData.url}`} />
   <meta property="twitter:title" content={solutionPageData.page.seo.title} />
   <meta property="twitter:description" content={solutionPageData.page.seo.description} />
-  <meta property="twitter:image" content={`https://www.iona.ai/solutions/${solutionPageData.page.banner.bannerImage.imgurl}`} />
+  <meta property="twitter:image" content={`https://www.iona.ai/solutions${solutionPageData.page.banner.bannerImage.imgurl}`} />
   
         </Helmet>
          <script
