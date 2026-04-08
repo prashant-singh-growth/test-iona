@@ -15,12 +15,18 @@ import { Blog10 } from "./offer-management-process";
 import { Blog1 } from "./prospect-to-productive-journey";
 import { Blog13 } from "./recruitment-problems-and-solution";
 import { Blog11 } from "./sourcing-strategy-in-recruitment";
+import { Blog19 } from "./bulk-hiring-ai-tools-strategies-recruiters";
 import { Blog2 } from "./virtual-recruiting-transforming-talent-acquisition";
 import { Blog16 } from "./what-is-hris";
 
 
 export const BlogList = [
     
+     {
+        url:"bulk-hiring-ai-tools-strategies-recruiters",
+        content:Blog19,
+        author:AuthorList[0],
+    },
      {
         url:"hrms-software",
         content:Blog18,

@@ -404,7 +404,7 @@ function BlogSinglePages() {
               </div>
             )}
             {/* TAGS */}
-            <div className="mt-16 flex flex-wrap gap-2">
+            {blogData.content.tags &&  <div className="mt-16 flex flex-wrap gap-2">
               {blogData.content.tags?.map((tag, i) => (
                 <span
                   key={i}
@@ -413,7 +413,8 @@ function BlogSinglePages() {
                   #{tag}
                 </span>
               ))}
-            </div>
+            </div>}
+           
 
             {/* FAQ SECTION */}
             {blogData.content.blogFAQ?.length > 0 && (
