@@ -9,7 +9,7 @@ import { NovaTrain } from "./NovaTrain";
 import { Novaverify } from "./Novaverify";
 
 
-// const gForm= "f5f72187-e5a2-46ec-ae51-a1a043b67e07"
+
 export const solutionPageList = [
     {
         url:"novacount",

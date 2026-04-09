@@ -21,9 +21,9 @@ import { AlternativePagesData } from "./components/Data/AlternativeDynamic";
 // Lazy load components
 // const Home = lazy(() => import("./pages/Home"));
 const Home = lazy(() => import("./pages/HomePage"));
-const AboutSection = lazy(() => import("./pages/AboutSection"));
-const Highlights = lazy(() => import("./components/Highlights"));
-const CTA = lazy(() => import("./components/CTA"));
+// const AboutSection = lazy(() => import("./pages/AboutSection"));
+// const Highlights = lazy(() => import("./components/Highlights"));
+// const CTA = lazy(() => import("./components/CTA"));
 const Contact = lazy(() => import("./pages/Contact"));
 // const NovaCount = lazy(() => import("./pages/Solutions/NovaCount"));
 // const NovaAssist = lazy(() => import("./pages/Solutions/NovaAssist"));
@@ -45,6 +45,7 @@ const Landingpage = lazy(() => import("./pages/Landing/Landingpages"));
 const ThankYouPage = lazy(() => import("./pages/ThankYou"));
 const SolutionPage = lazy(() => import("./pages/SolutionPage"));
 const SecLandingPage = lazy(() => import("./pages/Landing/SecLandingPage"));
+const GLandingPage = lazy(() => import("./pages/Landing/GAdsLandingPage"));
 // const AdsLandingPage = lazy(() => import("./pages/Landing/AdsLandingPages"));
 const LpLandingPagesec = lazy(() => import("./pages/Landing/AdsLandingPageSec"));
 const LpthankYou = lazy(() => import("./components/Pages/LandingPage/adsSecLanding/AdsThankuPage"));
@@ -73,6 +74,7 @@ const BlogLandingPage = lazy(() => import("./pages/Blog/BlogLandingPages"))
 const ErrorPage = lazy(() => import("./pages/ErrorPage"))
 const BlogSinglePage = lazy(() => import("./pages/Blog/BlogSinglePages"))
 const TestSolution = lazy(() => import("./pages/Solutions/SingleSolutionPage"))
+const AboutPage = lazy(() => import("./pages/About/AboutPage"))
 // Scroll to top on route change
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -152,12 +154,20 @@ const AnimatedRoutes = () => {
           }
         />
         <Route
+          path="/ai-first-chro-g/free-copy-reserved"
+          element={
+            <PageTransition>
+              <LpthankYou />
+            </PageTransition>
+          }
+        />
+        <Route
           path="/about"
           element={
             <PageTransition>
-              <AboutSection />
-              <Highlights />
-              <CTA />
+              <AboutPage />
+              {/* <Highlights />
+              <CTA /> */}
             </PageTransition>
           }
         />
@@ -177,46 +187,6 @@ const AnimatedRoutes = () => {
             </PageTransition>
           }
         />
-        {/* <Route
-          path="/solutions/novacount"
-          element={
-            <PageTransition>
-              <NovaCount />
-            </PageTransition>
-          }
-        /> */}
-        {/* <Route
-          path="/solutions/novaassist"
-          element={
-            <PageTransition>
-              <NovaAssist />
-            </PageTransition>
-          }
-        /> */}
-        {/* <Route
-          path="/solutions/speedboard"
-          element={
-            <PageTransition>
-              <NovaTrack />
-            </PageTransition>
-          }
-        /> */}
-        {/* <Route
-          path="/solutions/novatrack"
-          element={
-            <PageTransition>
-              <NovaTrack />
-            </PageTransition>
-          }
-        /> */}
-        {/* <Route
-          path="/solutions/novastart"
-          element={
-            <PageTransition>
-              <NovaStart />
-            </PageTransition>
-          }
-        /> */}
         <Route
           path="/ai-first-chro"
           element={
@@ -225,46 +195,16 @@ const AnimatedRoutes = () => {
             </PageTransition>
           }
         />
-        {/* <Route
-          path="/solutions/novadoc"
+        <Route
+          path="/ai-first-chro-g"
           element={
             <PageTransition>
-              <NovaDoc />
-            </PageTransition>
-          }
-        /> */}
-        {/* <Route
-          path="/solutions/novatrain"
-          element={
-            <PageTransition>
-              <NovaTrain />
-            </PageTransition>
-          }
-        /> */}
-        {/* <Route
-          path="/solutions/novaengage"
-          element={
-            <PageTransition>
-              <NovaEngage />
-            </PageTransition>
-          }
-        /> */}
-        {/* <Route
-          path="/solutions/novaverify"
-          element={
-            <PageTransition>
-              <NovaVerify />
+              <GLandingPage />
             </PageTransition>
           }
         />
-        <Route
-          path="/solutions/novaconnect"
-          element={
-            <PageTransition>
-              <NovaConnect />
-            </PageTransition>
-          }
-        /> */}
+     
+     
         <Route
           path="/blog"
           element={
@@ -345,14 +285,7 @@ const AnimatedRoutes = () => {
             </PageTransition>
           }
         />
-        {/* <Route
-          path="/ads"
-          element={
-            <PageTransition>
-              <AdsLandingPage />
-            </PageTransition>
-          }
-        /> */}
+       
         <Route
           path="/thank-you"
           element={
@@ -538,7 +471,8 @@ function AppContent() {
     "/automated-background-verification",
     "/agentic-ai-recruiters-sheet",
     "/ads",
-    "/ai-first-chro"
+    "/ai-first-chro",
+    "/ai-first-chro-g"
   ];
   const shouldHideNavbar = hideNavbarRoutes.includes(location.pathname);
 
