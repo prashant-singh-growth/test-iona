@@ -4,6 +4,7 @@ import AboutMissionSection from '../../components/Pages/About/AboutMissionSectio
 import ValueSection from '../../components/Pages/About/ValueSection'
 import IonaMind from '../../components/Pages/About/IonaMind'
 import CTASection from '../../components/Layout/CTASection'
+import SeoHeader from '../../components/utils/SeoHeader'
 
 
 function AboutPage() {
@@ -140,6 +141,35 @@ function AboutPage() {
           description={"Experience the precision, intelligence, and scale of iona.ai — the agentic AI platform built to grow with your enterprise, at every stage of the hiring journey."}
           isCTAHidden={false}
           />
+           <SeoHeader
+      title={"About iona.ai | Redefining Purposeful, Equitable Hiring"}
+      description={"Learn how iona.ai blends First Principles thinking and AI innovation to simplify hiring, foster inclusion, and empower organizations to discover true potential."}
+     
+      />
+        <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org/",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.iona.ai/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Product",
+          "item": "https://www.iona.ai/solutions/about"
+        }
+      ]
+    })
+  }}
+  async
+/>
         </div>
     )
 }
