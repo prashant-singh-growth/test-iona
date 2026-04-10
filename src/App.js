@@ -24,7 +24,7 @@ const Home = lazy(() => import("./pages/HomePage"));
 // const AboutSection = lazy(() => import("./pages/AboutSection"));
 // const Highlights = lazy(() => import("./components/Highlights"));
 // const CTA = lazy(() => import("./components/CTA"));
-const Contact = lazy(() => import("./pages/Contact"));
+// const Contact = lazy(() => import("./pages/Contact"));
 // const NovaCount = lazy(() => import("./pages/Solutions/NovaCount"));
 // const NovaAssist = lazy(() => import("./pages/Solutions/NovaAssist"));
 // const NovaTrack = lazy(() => import("./pages/Solutions/NovaTrack"));
@@ -75,6 +75,7 @@ const ErrorPage = lazy(() => import("./pages/ErrorPage"))
 const BlogSinglePage = lazy(() => import("./pages/Blog/BlogSinglePages"))
 const TestSolution = lazy(() => import("./pages/Solutions/SingleSolutionPage"))
 const AboutPage = lazy(() => import("./pages/About/AboutPage"))
+const ConatctNew = lazy(() => import("./pages/contact/ContactPage"))
 // Scroll to top on route change
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -145,6 +146,7 @@ const AnimatedRoutes = () => {
             </PageTransition>
           }
         />
+      
         <Route
           path="/ai-first-chro/free-copy-reserved"
           element={
@@ -175,7 +177,7 @@ const AnimatedRoutes = () => {
           path="/contact"
           element={
             <PageTransition>
-              <Contact />
+               <ConatctNew/>
             </PageTransition>
           }
         />

@@ -18,7 +18,7 @@ function SingleSolutionPage() {
     if (!solutionPageData) return <Navigate to="/404" replace />
  
   return (
-<div className='bg-white flex flex-col font-lora !pt-10'>
+<div className='bg-white flex flex-col theme-lora-font !pt-10'>
   <SeoHeader
   title={solutionPageData.page.seo.title}
   description={solutionPageData.page.seo.description}
