@@ -90,6 +90,30 @@ function ContactPage() {
                 description={"Get in touch with the iona.ai team to explore solutions, partnerships, or demos. Together, let’s make hiring more purposeful, inclusive, and intelligent."}
 
             />
+                <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org/",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.iona.ai/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Product",
+          "item": "https://www.iona.ai/contact"
+        }
+      ]
+    })
+  }}
+  async
+/>
             <ContactBanner/>
             <div className='h-fit bg-white relative px-5 md:px-10 slg:px-[60px] lg:px-[90px] py-14 md:py-16 lg:py-[90px]  flex flex-col justify-center items-center'>
                 <div className="w-full lg:max-w-[1440px] flex flex-col justify-center items-center gap-10">

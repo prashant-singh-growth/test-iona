@@ -53,7 +53,7 @@ function ContactForm() {
   
     if (name === "phone") {
         value = value.replace(/\D/g, ""); // remove non-numbers
-        if (value.length > 10) return; // stop after 10 digits
+        if (value.length > 13) return; // stop after 10 digits
     }
 
     setFormData((prev) => ({
@@ -155,10 +155,10 @@ function ContactForm() {
     placeholder="Phone Number (Optional)"
     value={formData.phone}
     onChange={handleChange}
-    maxLength={10}
+    maxLength={13}
     inputMode="numeric"
-    pattern="[0-9]{10}"
-    className="border rounded-lg px-4 py-2 text-sm"
+    pattern="[0-9]{13}"
+    className="border rounded-lg px-4 font-normal placeholder:font-normal py-2 text-sm"
 />
                 <textarea name='message' className="border rounded-lg px-4 font-normal placeholder:font-normal py-2 text-sm"  rows={6}
                         placeholder="Your message"

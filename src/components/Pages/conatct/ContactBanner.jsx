@@ -6,8 +6,8 @@ function ContactBanner() {
   return (
   <section className="w-full bg-[#faf7fb] h-fit relative px-5 md:px-10 slg:px-[60px] lg:px-[90px]  pb-16 md:py-16 lg:py-20 flex flex-col justify-center items-center pt-24">
         <ResponsiveGridLines
-          lineShow={false}
-          gradientReplacement={[10, 37, 50, 47, 93, 70, 100, 90, 50, 96]}
+          // lineShow={false}
+          gradientReplacement={[10, -4, 50, 47, -3, 70, 100, 90, 50, -2]}
         />
         <div className="w-full max-w-[100vw] lg:max-w-[1440px] grid lg:grid-cols-2 place-items-center relative z-10 gap-10">
           <div className="w-full max-w-[100vw]">
