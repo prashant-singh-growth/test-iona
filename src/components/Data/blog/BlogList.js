@@ -26,7 +26,7 @@ export const BlogList = [
      {
         url:"ai-first-chro-in-hr",
         content:Blog20,
-        author:AuthorList[0],
+        author:AuthorList[2],
     },
      {
         url:"bulk-hiring-ai-tools-strategies-recruiters",
