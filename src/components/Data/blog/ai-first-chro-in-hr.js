@@ -18,7 +18,7 @@ export const Blog20 = {
   date: "April 15, 2026",
   image: `/assets/pages/blog/2026/april/chro.webp`,
   altimg: "The AI-First CHRO: The Missing Playbook - From Promise to Boardroom Results",
-  tags: ["AIinHR", "HRInvovation", "HR"],
+ tags: ["AIinHR","AIFirstCHRO", "HRInvovation", "HR"],
   content: `
      <div class="flex flex-col border border-darkBlue/10 bg-darkBlue/5  p-5 py-8 rounded-2xl mb-5">
     <p class="text-3xl">TL;DR</p>
