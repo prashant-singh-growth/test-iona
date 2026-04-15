@@ -1,25 +1,25 @@
-export const Blog20 =   {
-    url: "ai-first-chro-in-hr",
-     cta:{
-title:"Ready to transform your HR operations with AI? ",
-description:"Book a demo today and see how iona.ai can streamline your hiring process!",
-hide:true
-    },
-    seo: {
-      title: "The AI-First CHRO in HR: What It Means & Why It Matters",
-      description:
-        "Discover what an AI-first CHRO means, why it matters today, and how HR leaders can drive real business impact with AI. Read the playbook.",
-    },
-    id: 20,
+export const Blog20 = {
+  url: "ai-first-chro-in-hr",
+  cta: {
+    title: "Ready to transform your HR operations with AI? ",
+    description: "Book a demo today and see how iona.ai can streamline your hiring process!",
+    hide: true
+  },
+  seo: {
     title: "The AI-First CHRO in HR: What It Means & Why It Matters",
-    summary:
-      "Boards are asking tougher questions. CEOs want workforce decisions backed by data, not instinct. That is why the role of the CHRO in HR is changing fast from process owner to business leader.b",
-    author: "Michael Chen",
-    date: "April 14, 2026",
-    image: `/assets/pages/blog/2026/april/chro.webp`,
-    altimg: "The AI-First CHRO: The Missing Playbook - From Promise to Boardroom Results",
-    tags:["AIinHR", "HRInvovation", "HR"],
-    content: `
+    description:
+      "Discover what an AI-first CHRO means, why it matters today, and how HR leaders can drive real business impact with AI. Read the playbook.",
+  },
+  id: 20,
+  title: "The AI-First CHRO in HR: What It Means & Why It Matters",
+  summary:
+    "Boards are asking tougher questions. CEOs want workforce decisions backed by data, not instinct. That is why the role of the CHRO in HR is changing fast from process owner to business leader.b",
+  author: "Michael Chen",
+  date: "April 14, 2026",
+  image: `/assets/pages/blog/2026/april/chro.webp`,
+  altimg: "The AI-First CHRO: The Missing Playbook - From Promise to Boardroom Results",
+  tags: ["AIinHR", "HRInvovation", "HR"],
+  content: `
      <div class="flex flex-col border border-darkBlue/10 bg-darkBlue/5  p-5 py-8 rounded-2xl mb-5">
     <p class="text-3xl">TL;DR</p>
     <ul>
@@ -34,19 +34,11 @@ hide:true
  <p>But most teams are not ready. Gartner says <a href="https://www.gartner.com/en/newsroom/press-releases/2025-10-08-gartner-research-finds-only-8-percent-of-hr-leaders-believe-their-managers-have-the-skills-to-effectively-use-ai#:~:text=Gartner%20Research%20Finds%20Only%208,Skills%20to%20Effectively%20Use%20AI"><strong>80%</strong></a> of HR leaders believe AI will reshape HR within three years, yet almost none feel truly confident about implementing it well. That hesitation is showing in the results, too. BCG reports that 70% of AI transformation efforts fail to produce measurable outcomes.</p>
 <p>The problem is not AI itself. It is the lack of a clear strategy. Many companies are still treating AI in HR as a set of small automations like screening, scheduling, or surveys. Useful, yes. But not enough.</p>
 <p>The bigger shift is this: the modern <strong>CHRO in HR</strong> is no longer just improving workflows. They are expected to redesign how workforce decisions get made, with intelligence at the center.</p>
-<p>The core insight</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left"><em>&quot;The role of AI in HR is not to automate tasks. It is to improve the quality of decisions across the entire employee lifecycle.&quot;</em></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left"></td>
-</tr>
-</tbody>
-</table>
+<div class="flex flex-col bg-darkVoilet/5 p-4 rounded-md !gap-2">
+<span class=" !text-darkBlue/50 !font-normal">The core insight</span>
+
+<em class="!font-medium !text-lg !pt-0">&quot;The role of AI in HR is not to automate tasks. It is to improve the quality of decisions across the entire employee lifecycle.&quot;</em></div>
+
 <h2 id="-what-the-ai-first-chro-actually-does-differently-"><strong>What the AI-First CHRO Actually Does Differently</strong></h2>
 <p>This isn&#39;t a role defined by which platforms sit in your HR tech stack. It&#39;s defined by a fundamentally different operating model, one built on four principles.</p>
 <ol>
@@ -109,13 +101,19 @@ hide:true
 <li>ISBN:9789376313716  </li>
 <li>Publisher: White Falcon Publishing</li>
 </ul>
-<div class="w-full flex flex-col p-4 rounded-xl border border-darkVoilet">
-<h3 class="!text-lg !font-bold">About the Author</h3>
-<p class="font-bold  !text-xl">Amit Srivastava</p>
-<p>
- Amit Srivastava has combined deep strategic experience with hands-on execution in AI-led HR transformation. After spending a decade in management consulting advising FTSE 100 companies on digital transformation, he moved into building and leading AI-driven initiatives across hiring, workforce planning, and people operations. His work across India, the UK, and the Middle East, in both public and private sector settings, gives him a grounded view of what actually makes HR transformation succeed. His perspective is shaped not just by theory, but by real-world experience in closing the gap between AI potential and business outcomes.
-</p>
-</div>
+<div class="w-full !flex !flex-col mt-5 gap-4 p-4 rounded-xl bg-darkVoilet/[0.02]">
+              <div class="flex flex-col md:!flex-row justify-start !items-start md:!items-center gap-3">
+                <img src="/assets/pages/blog/author/amit.webp" alt="amit" class="!size-24 !pt-0 !pb-0 rounded-md sm:!rounded-full" />
+               <div class="flex-col flex">
+                 <span class="!text-sm !font-medium">About the Author</span>
+              <span class="font-bold pt-2 !text-xl">Amit Srivastava</span>
+              <span class="!text-sm !font-normal !text-darkVoilet/50">Co-Founder, iona.ai | FTSE 100 Advisor</span>
+               </div>
+              </div>
+              <span class="!text-base  !font-normal !text-darkVoilet/80">
+                Amit Srivastava has combined deep strategic experience with hands-on execution in AI-led HR transformation. After spending a decade in management consulting advising FTSE 100 companies on digital transformation, he moved into building and leading AI-driven initiatives across hiring, workforce planning, and people operations. His work across India, the UK, and the Middle East, in both public and private sector settings, gives him a grounded view of what actually makes HR transformation succeed. His perspective is shaped not just by theory, but by real-world experience in closing the gap between AI potential and business outcomes.
+              </span>
+            </div>
 
 <h2 id="-what-the-book-is-really-about-"><strong>What the Book Is Really About?</strong></h2>
 <p>The book opens with a scene that many CHROs in HR will recognize instantly: a boardroom where the CHRO is quoting her vendor&#39;s success metrics because she doesn&#39;t have her own. That moment of exposure, and the fifteen-month journey out of it, frames everything that follows.</p>
@@ -149,39 +147,39 @@ hide:true
 <a href="/ai-first-chro "><img alt="Bulk Hiring Strategies" loading="lazy" class="w-full" src="/assets/pages/blog/2026/april/cta-2.webp"/></a>
 
       `,
-    blogFAQ: [
-  {
-    question: "What is an AI-first CHRO in HR?",
-    answer: "An AI-first CHRO is an HR leader who uses AI to improve decision-making across hiring, performance, and workforce planning, focusing on measurable business outcomes."
-  },
-  {
-    question: "Why is the role of the CHRO changing?",
-    answer: "The CHRO role is changing because businesses now expect HR to drive revenue impact, workforce efficiency, and data-backed decisions, not just manage processes."
-  },
-  {
-    question: "How is AI used in HR today?",
-    answer: "AI in HR is used for predictive hiring, attrition analysis, workforce planning, employee engagement insights, and automating tasks like screening and scheduling."
-  },
-  {
-    question: "Why do most AI initiatives in HR fail?",
-    answer: "Most AI initiatives fail due to a lack of strategy, fragmented data systems, unclear ROI measurement, and low adoption across teams."
-  },
-  {
-    question: "What is “The AI-First CHRO: The Missing Playbook”?",
-    answer: "It is a practical book that helps HR leaders move from AI experiments to measurable business impact using real-world frameworks and transformation strategies."
-  },
-  {
-    question: "What will HR leaders learn from this book?",
-    answer: "HR leaders will learn how to measure ROI, align HR with business goals, manage AI failures, and build scalable, outcome-driven HR systems."
-  },
-  {
-    question: "Who should read The AI-First CHRO book?",
-    answer: "The book is ideal for CHROs, HR leaders, and transformation heads who want a clear, structured approach to using AI for real business results."
-  }
-],
- 
+  blogFAQ: [
+    {
+      question: "What is an AI-first CHRO in HR?",
+      answer: "An AI-first CHRO is an HR leader who uses AI to improve decision-making across hiring, performance, and workforce planning, focusing on measurable business outcomes."
+    },
+    {
+      question: "Why is the role of the CHRO changing?",
+      answer: "The CHRO role is changing because businesses now expect HR to drive revenue impact, workforce efficiency, and data-backed decisions, not just manage processes."
+    },
+    {
+      question: "How is AI used in HR today?",
+      answer: "AI in HR is used for predictive hiring, attrition analysis, workforce planning, employee engagement insights, and automating tasks like screening and scheduling."
+    },
+    {
+      question: "Why do most AI initiatives in HR fail?",
+      answer: "Most AI initiatives fail due to a lack of strategy, fragmented data systems, unclear ROI measurement, and low adoption across teams."
+    },
+    {
+      question: "What is “The AI-First CHRO: The Missing Playbook”?",
+      answer: "It is a practical book that helps HR leaders move from AI experiments to measurable business impact using real-world frameworks and transformation strategies."
+    },
+    {
+      question: "What will HR leaders learn from this book?",
+      answer: "HR leaders will learn how to measure ROI, align HR with business goals, manage AI failures, and build scalable, outcome-driven HR systems."
+    },
+    {
+      question: "Who should read The AI-First CHRO book?",
+      answer: "The book is ideal for CHROs, HR leaders, and transformation heads who want a clear, structured approach to using AI for real business results."
+    }
+  ],
 
-   
- 
 
-  }
+
+
+
+}
