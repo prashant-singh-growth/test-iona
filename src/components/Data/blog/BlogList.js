@@ -18,10 +18,16 @@ import { Blog11 } from "./sourcing-strategy-in-recruitment";
 import { Blog19 } from "./bulk-hiring-ai-tools-strategies-recruiters";
 import { Blog2 } from "./virtual-recruiting-transforming-talent-acquisition";
 import { Blog16 } from "./what-is-hris";
+import { Blog20 } from "./ai-first-chro-in-hr";
 
 
 export const BlogList = [
     
+     {
+        url:"ai-first-chro-in-hr",
+        content:Blog20,
+        author:AuthorList[0],
+    },
      {
         url:"bulk-hiring-ai-tools-strategies-recruiters",
         content:Blog19,

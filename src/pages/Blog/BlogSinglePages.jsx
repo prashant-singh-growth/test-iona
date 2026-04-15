@@ -362,6 +362,7 @@ function BlogSinglePages() {
               className="blog-content"
               dangerouslySetInnerHTML={{ __html: processedContent }}
             />
+           
             {!blogData.content.cta ? (
               <div className="mt-12 not-prose">
                 <div className="relative overflow-hidden rounded-xl bg-darkVoilet px-5 py-10 shadow-2xl sm:px-12 sm:py-16">
@@ -384,7 +385,7 @@ function BlogSinglePages() {
                 </div>
               </div>
             ) : (
-              <div className="mt-12 not-prose">
+              <div className={`mt-12 not-prose ${blogData.content.cta.hide ? "hidden": null}`}>
                 <div className="relative overflow-hidden rounded-xl bg-darkVoilet px-5 py-10 shadow-2xl sm:px-12 sm:py-16">
                   <div className="relative flex flex-col  items-center text-center  ">
                     <h2 className="text-2xl font-bold tracking-tight text-white sm:text-3xl">
