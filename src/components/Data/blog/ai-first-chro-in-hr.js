@@ -177,8 +177,90 @@ export const Blog20 = {
       answer: "The book is ideal for CHROs, HR leaders, and transformation heads who want a clear, structured approach to using AI for real business results."
     }
   ],
+  blogSchema:`
+  {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "The AI-First CHRO in HR: What It Means & Why It Matters",
+  "description": "Discover what an AI-first CHRO means, why it matters today, and how HR leaders can drive real business impact with AI. Read the playbook.",
+  "image": "https://www.iona.ai/assets/pages/blog/2026/april/chro.webp",
+  "author": {
+    "@type": "Organization",
+    "name": "iona.ai",
+    "url": "https://www.iona.ai/author/iona-ai"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "iona.ai",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.iona.ai/assets/iona-ai-logo.png"
+    }
+  },
+  "datePublished": "2024-04-15T00:00:00+05:30",
+  "dateModified": "2026-04-15T00:00:00+05:30",
+  "inLanguage": "en",
+  "url": "https://www.iona.ai/blog/ai-first-chro-in-hr
+"
+}
+`,
 
+faqSchema:`{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "What is an AI-first CHRO in HR?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "An AI-first CHRO is an HR leader who uses AI to improve decision-making across hiring, performance, and workforce planning, focusing on measurable business outcomes."
+    }
+  },{
+    "@type": "Question",
+    "name": "Why is the role of the CHRO changing?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The CHRO role is changing because businesses now expect HR to drive revenue impact, workforce efficiency, and data-backed decisions, not just manage processes."
+    }
+  },{
+    "@type": "Question",
+    "name": "How is AI used in HR today?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "AI in HR is used for predictive hiring, attrition analysis, workforce planning, employee engagement insights, and automating tasks like screening and scheduling."
+    }
+  },{
+    "@type": "Question",
+    "name": "Why do most AI initiatives in HR fail?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Most AI initiatives fail due to a lack of strategy, fragmented data systems, unclear ROI measurement, and low adoption across teams."
+    }
+  },{
+    "@type": "Question",
+    "name": "What is “The AI-First CHRO: The Missing Playbook”?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It is a practical book that helps HR leaders move from AI experiments to measurable business impact using real-world frameworks and transformation strategies."
+    }
+  },{
+    "@type": "Question",
+    "name": "What will HR leaders learn from this book?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "HR leaders will learn how to measure ROI, align HR with business goals, manage AI failures, and build scalable, outcome-driven HR systems."
+    }
+  },{
+    "@type": "Question",
+    "name": "Who should read The AI-First CHRO book?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The book is ideal for CHROs, HR leaders, and transformation heads who want a clear, structured approach to using AI for real business results."
+    }
+  }]
+}
 
+`
 
 
 
