@@ -15,11 +15,21 @@ export const Blog21 = {
   summary:
     "A Recruitment Management System (RMS) is a software platform that centralizes and automates the entire hiring lifecycle, from job requisition and candidate sourcing to interview scheduling, offer management, and onboarding.",
   author: "Michael Chen",
-  date: "April 15, 2026",
+  date: "April 17, 2026",
   image: `/assets/pages/blog/2026/april/rms.webp`,
   altimg: "Transform Hiring with a Recruitment Management System",
  tags: ["RecruitmentManagementSystem","HiringAutomation", "AIRecruitment"],
   content: `
+   <div class="flex flex-col border border-darkBlue/10 bg-darkBlue/5  p-5 py-8 rounded-2xl mb-5">
+    <p class="text-3xl">TL;DR: The 30-Second Takeaway</p>
+    <ul>
+<li><strong>The Problem:</strong> Manual hiring is too slow. Fragmented workflows cause top talent to drop out, leaving 60% of roles unfilled by quality candidates.</li>
+  <li><strong>The Shift:</strong> Stop chasing resumes. Use an RMS to centralize sourcing, scheduling, and onboarding into one automated, data-driven pipeline.</li>
+  <li><strong>The Fix:</strong> Automate the "admin drudge work" to slash time-to-hire and ensure no high-value candidate falls through the cracks.</li>
+  <li><strong>Keep reading to:</strong> Access our RMS feature guide and see how teams are cutting hiring cycles by 40% using this framework.</li>
+    </ul>
+    
+    </div>
   <p>According to the <a href="https://goodtime.io/resources/report-hiring-insights-2025/">GoodTime Hiring Insights Report</a>, of companies an increase in their time-to-hire, while only 6% managed to reduce it. Let that sink in for a moment.</p>
 <p>At the same time, <a href="https://www.shrm.org/in/topics-tools/research/2025-talent-trends">SHRM&#39;s Talent Trends Report</a> reveals that organizations still face serious challenges in recruiting full-time positions, while talent acquisition leaders report their teams are dealing with unmanageable workloads. </p>
 <p>The hiring pipeline is under unprecedented strain. Recent industry data highlights the crisis:</p>
@@ -129,6 +139,7 @@ export const Blog21 = {
 <p><strong>8. Onboarding Handoff:</strong> New hire data flows directly into the HRMS or payroll system. Background verification is triggered automatically. Onboarding checklists, document collection, and induction workflows kick off without manual intervention.</p>
 <h2 id="-recruitment-management-system-vs-applicant-tracking-system-ats-what-s-the-difference-"><strong>Recruitment Management System vs. Applicant Tracking System (ATS): What&#39;s the Difference?</strong></h2>
 <p>This is one of the most common points of confusion in HR technology, and it matters because choosing an ATS when you need an RMS is like buying a filing cabinet when you need a full operations center.</p>
+<div class="overflow-x-auto !max-w-[90vw]">
 <table>
 <thead>
 <tr>
@@ -185,6 +196,7 @@ export const Blog21 = {
 </tr>
 </tbody>
 </table>
+</div>
 <p>An ATS tracks applicants, and it tells you where a candidate is in the pipeline. An RMS manages the entire talent acquisition strategy; it tells you how to move faster, make better decisions, and deliver a better experience for both recruiter and candidate.</p>
 <p>Think of ATS as a component inside a well-built RMS, not a replacement for it.</p>
 <h2 id="-types-of-recruitment-managed-by-an-rms-"><strong>Types of Recruitment Managed by an RMS</strong></h2>
