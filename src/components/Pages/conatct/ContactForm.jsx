@@ -2,9 +2,10 @@ import React, { useState } from 'react'
 import { FaArrowRight } from 'react-icons/fa6';
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-const FormUrl =  'https://ab-uat-dbmodel.az.iona.ai/dbmodel/organizations/send-email?key=ionheadUiuae238Haeu1DSahuw&source=contact-form';
+
+
 function ContactForm() {
-     const [formData, setFormData] = useState({
+    const [formData, setFormData] = useState({
         name: "",
         email: "",
         phone: "",
@@ -46,65 +47,63 @@ function ContactForm() {
         return errs;
     };
 
-  
-   const handleChange = (e) => {
-    let { name, value } = e.target;
 
-  
-    if (name === "phone") {
-        value = value.replace(/\D/g, ""); // remove non-numbers
-        if (value.length > 13) return; // stop after 10 digits
-    }
+    const handleChange = (e) => {
+        let { name, value } = e.target;
 
-    setFormData((prev) => ({
-        ...prev,
-        [name]: value,
-    }));
 
-    // setErrors((prev) => ({
-    //     ...prev,
-    //     [name]: "",
-    // }));
-};
+        if (name === "phone") {
+            value = value.replace(/\D/g, ""); // remove non-numbers
+            if (value.length > 13) return; // stop after 10 digits
+        }
+
+        setFormData((prev) => ({
+            ...prev,
+            [name]: value,
+        }));
+
+    };
 
     // ✅ Submit
     const handleSubmit = async (e) => {
         e.preventDefault();
 
         const validationErrors = validate();
-        if (Object.keys(validationErrors).length > 0) {
-            // setErrors(validationErrors);
-            return;
-        }
-        // console.table(formData)
-// return
+        if (Object.keys(validationErrors).length > 0) return;
+
         setIsSubmitting(true);
 
         try {
-            const response = await fetch(FormUrl, {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                    origin: "https://ionauat.iona.ai",
-                },
-                body: JSON.stringify({
-                    emailData: {
-                        email: formData.email,
-                        name: formData.name,
-                        jobtitle: formData.source || "N/A",
-                        phoneno: formData.phone,
-                        Subject: formData.message,
+            const response = await fetch(
+                "https://api.hsforms.com/submissions/v3/integration/submit/146385824/facd4b09-832e-4cc6-b760-447aff59df54",
+                {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
                     },
-                }),
-            });
+                    body: JSON.stringify({
+                        fields: [
+                            { name: "email", value: formData.email },
+                            { name: "firstname", value: formData.name },
+                            { name: "phone", value: formData.phone },
+                            { name: "message", value: formData.message },
+                            { name: "leadsource", value: formData.source }, // custom field
+                        ],
+                        context: {
+                            pageUri: window.location.href,
+                            pageName: document.title,
+                        },
+                    }),
+                }
+            );
 
             if (!response.ok) {
-                throw new Error("Server responded with error");
+                throw new Error("HubSpot submission failed");
             }
-           window.location.href = "/thank-you";
-            toast.success("Message sent successfully!");
 
-            // setIsSubmitted(true);
+            toast.success("Message sent successfully!");
+            window.location.href = "/thank-you";
+
             setFormData({
                 name: "",
                 email: "",
@@ -149,21 +148,21 @@ function ContactForm() {
                         className="border rounded-lg px-4 font-normal placeholder:font-normal py-2 text-sm"
                     />
                 ))}
-                <input
-    type="tel"
-    name="phone"
-    placeholder="Phone Number (Optional)"
-    value={formData.phone}
-    onChange={handleChange}
-    maxLength={13}
-    inputMode="numeric"
-    pattern="[0-9]{13}"
-    className="border rounded-lg px-4 font-normal placeholder:font-normal py-2 text-sm"
+               <input
+  type="tel"
+  name="phone"
+  placeholder="Phone Number (Optional)"
+  value={formData.phone}
+  onChange={handleChange}
+  maxLength={13}
+  inputMode="numeric"
+  pattern="[0-9]{10,13}" 
+  className="border rounded-lg px-4 font-normal placeholder:font-normal py-2 text-sm"
 />
-                <textarea name='message' className="border rounded-lg px-4 font-normal placeholder:font-normal py-2 text-sm"  rows={6}
-                        placeholder="Your message"
-                        value={formData.message}
-                        onChange={handleChange}>
+                <textarea name='message' className="border rounded-lg px-4 font-normal placeholder:font-normal py-2 text-sm" rows={6}
+                    placeholder="Your message"
+                    value={formData.message}
+                    onChange={handleChange}>
 
 
                 </textarea>

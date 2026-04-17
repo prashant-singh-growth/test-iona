@@ -19,10 +19,16 @@ import { Blog19 } from "./bulk-hiring-ai-tools-strategies-recruiters";
 import { Blog2 } from "./virtual-recruiting-transforming-talent-acquisition";
 import { Blog16 } from "./what-is-hris";
 import { Blog20 } from "./ai-first-chro-in-hr";
+import { Blog21 } from "./what-is-recruitment-management-system-rms";
 
 
 export const BlogList = [
     
+     {
+        url:"what-is-recruitment-management-system-rms",
+        content:Blog21,
+        author:AuthorList[2],
+    },
      {
         url:"ai-first-chro-in-hr",
         content:Blog20,

@@ -116,6 +116,57 @@ function BlogSinglePages() {
       </div>
     );
   }
+  const stripHTML = (html) => {
+  if (!html) return "";
+
+  return html
+    .replace(/<[^>]*>/g, "")   
+    .replace(/\s+/g, " ")       
+    .trim();
+};
+  const createBlogSchema = (blog,author) => {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: blog.seo.title,
+    description: blog.seo.description,
+    image: `https://www.iona.ai${blog.image}`,
+   "author": {
+    "@type": "Organization",
+    "name": `${author.authorName}`,
+    "url": `${author.AuthorImage}`
+  },
+    publisher: {
+      "@type": "Organization",
+      name: "iona.ai",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://www.iona.ai/assets/iona-ai-logo.png",
+      },
+    },
+    datePublished: new Date(blog.date).toISOString(),
+    dateModified: new Date(blog.date).toISOString(),
+    inLanguage: "en",
+    url: `https://www.iona.ai/blog/${blog.url}`,
+  };
+};
+const createFAQSchema = (faqs) => {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: stripHTML(item.answer),
+      },
+    })),
+  };
+};
+const blogSchema = createBlogSchema(blogData.content,blogData.author)
+const faqschema = createFAQSchema(blogData.content.blogFAQ)
+
 
   return (
     <main className="bg-white  text-[#160E38] font-lora relative">
@@ -125,23 +176,38 @@ function BlogSinglePages() {
           blogData.content.seo?.description || blogData.content.summary
         }
       />
-      {blogData.content.blogSchema && (
+      {/* {blogData.content.blogSchema && (
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: blogData.content.blogSchema
           }}
         />
-      )}
-
-      {blogData.content.faqSchema && (
+      )} */}
+{blogSchema && (
+  <script
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{
+      __html: JSON.stringify(blogSchema),
+    }}
+  />
+)}
+{faqschema && (
+  <script
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{
+      __html: JSON.stringify(faqschema),
+    }}
+  />
+)}
+      {/* {blogData.content.faqSchema && (
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: blogData.content.faqSchema
           }}
         />
-      )}
+      )} */}
 
       {/* Reading Progress Bar */}
       <motion.div

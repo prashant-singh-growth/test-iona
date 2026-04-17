@@ -105,7 +105,7 @@ description:"Book a demo today and discover how iona.ai can make your hiring pro
 <h3 id="-next-move-moving-beyond-manual-background-checks-"><strong>Next Move: Moving Beyond Manual Background Checks</strong></h3>
 <p>To stay competitive and ensure a seamless hiring process, employers should move beyond traditional HR methods and adopt AI-powered background verification solutions. <strong>iona.ai</strong> offers a smarter approach, streamlining the verification process, ensuring faster, more accurate results, and maintaining legal compliance. Save time, reduce errors, and make better hiring decisions with iona.ai’s advanced AI-driven platform.</p>
 <h2 id="-introducing-iona-ai-the-ai-powered-hiring-automation-platform-"><strong>Introducing iona.ai: The AI-Powered Hiring Automation Platform</strong></h2>
-<img src="/assets/pages/blog/2026/fab/1.webp" loading="lazy" alt="Homepage of iona.ai, an Agentic AI Recruiter with 90% faster onboarding and 100% compliance<" />
+<img src="/assets/pages/blog/2026/fab/1.webp" loading="lazy" alt="Homepage of iona.ai, an Agentic AI Recruiter with 90% faster onboarding and 100% compliance" />
 
 <p><strong>iona.ai</strong> is an <a href="https://www.iona.ai/"><strong>AI-powered hiring</strong></a> automation platform designed to simplify and accelerate the hiring process while ensuring full compliance. With its combination of Agentic AI and human expertise, iona.ai transforms every stage of recruitment, including the crucial step of pre-employment background checks.</p>
 <h3 id="-how-iona-ai-can-help-with-pre-employment-background-checks-"><strong>How iona.ai Can Help with Pre-Employment Background Checks</strong></h3>
