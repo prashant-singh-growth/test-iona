@@ -6,6 +6,7 @@ import { FiMinus, FiPlus, FiArrowLeft } from "react-icons/fi";
 import SeoHeader from "../../components/utils/SeoHeader";
 import { BlogList } from "../../components/Data/blog/BlogList";
 import { FaFacebookF, FaLink, FaLinkedinIn, FaTwitter } from "react-icons/fa";
+import { Helmet } from "react-helmet-async";
 
 /* ------------------ HELPERS ------------------ */
 
@@ -184,6 +185,21 @@ const faqschema = createFAQSchema(blogData.content.blogFAQ)
           }}
         />
       )} */}
+     {/* {blogData.url === "ai-first-chro-in-hr" ?  : null}
+      */}
+      <Helmet>
+        <meta property="og:type" content="website" />
+<meta property="og:url" content={`https://www.iona.ai/blog/${blogData.url}`} />
+<meta property="og:title" content={blogData.content.seo.title} />
+<meta property="og:description" content={blogData.content.seo.description} />
+<meta property="og:image" content={`https://www.iona.ai/${blogData.content.image}`} />
+
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content={`https://www.iona.ai/blog/${blogData.url}`} />
+<meta property="twitter:title" content={blogData.content.seo.title} />
+<meta property="twitter:description" content={blogData.content.seo.description} />
+<meta property="og:image" content={`https://www.iona.ai/${blogData.content.image}`} />
+      </Helmet>
 {blogSchema && (
   <script
     type="application/ld+json"

@@ -20,10 +20,16 @@ import { Blog2 } from "./virtual-recruiting-transforming-talent-acquisition";
 import { Blog16 } from "./what-is-hris";
 import { Blog20 } from "./ai-first-chro-in-hr";
 import { Blog21 } from "./what-is-recruitment-management-system-rms";
+import { Blog22 } from "./top-employee-engagement-strategies";
 
 
 export const BlogList = [
     
+     {
+        url:"top-employee-engagement-strategies",
+        content:Blog22,
+        author:AuthorList[2],
+    },
      {
         url:"what-is-recruitment-management-system-rms",
         content:Blog21,

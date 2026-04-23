@@ -13,7 +13,7 @@ export const Blog20 = {
   id: 20,
   title: "The AI-First CHRO in HR: What It Means & Why It Matters",
   summary:
-    "Boards are asking tougher questions. CEOs want workforce decisions backed by data, not instinct. That is why the role of the CHRO in HR is changing fast from process owner to business leader.b",
+    "Boards are asking tougher questions. CEOs want workforce decisions backed by data, not instinct. That is why the role of the CHRO in HR is changing fast from process owner to business leader.",
   author: "Michael Chen",
   date: "April 15, 2026",
   image: `/assets/pages/blog/2026/april/chro.webp`,
