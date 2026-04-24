@@ -18,24 +18,9 @@ import RemoveTrailingSlash from "./components/utils/RemoveTrailingSlash";
 import { AlternativePagesData } from "./components/Data/AlternativeDynamic";
 
 
-// Lazy load components
-// const Home = lazy(() => import("./pages/Home"));
+
 const Home = lazy(() => import("./pages/HomePage"));
-// const AboutSection = lazy(() => import("./pages/AboutSection"));
-// const Highlights = lazy(() => import("./components/Highlights"));
-// const CTA = lazy(() => import("./components/CTA"));
-// const Contact = lazy(() => import("./pages/Contact"));
-// const NovaCount = lazy(() => import("./pages/Solutions/NovaCount"));
-// const NovaAssist = lazy(() => import("./pages/Solutions/NovaAssist"));
-// const NovaTrack = lazy(() => import("./pages/Solutions/NovaTrack"));
-// const NovaStart = lazy(() => import("./pages/Solutions/NovaStart"));
-// const NovaDoc = lazy(() => import("./pages/Solutions/NovaDoc"));
-// const NovaTrain = lazy(() => import("./pages/Solutions/NovaTrain"));
-// const NovaEngage = lazy(() => import("./pages/Solutions/NovaEngage"));
-// const NovaVerify = lazy(() => import("./pages/Solutions/NovaVerify"));
-// const NovaConnect = lazy(() => import("./pages/Solutions/NovaConnect"));
-// const Blogs = lazy(() => import("./pages/Blogs"));
-// const CaseStudies = lazy(() => import("./pages/CaseStudies"));
+
 const Vids = lazy(() => import("./pages/Vids"));
 const ScheduleDemo = lazy(() => import("./pages/ScheduleDemo"));
 const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
@@ -402,24 +387,7 @@ const AnimatedRoutes = () => {
             </PageTransition>
           }
         />
-        {/* <Route
-          path="*"
-          element={
-            <PageTransition>
-              <div className="flex flex-col items-center justify-center min-h-[60vh]">
-                <h1 className="text-4xl font-bold mb-4">
-                  404 - Page Not Found
-                </h1>
-                <p className="text-lg mb-8">
-                  The page you're looking for doesn't exist.
-                </p>
-                <a href="/" className="btn-primary">
-                  Go Home
-                </a>
-              </div>
-            </PageTransition>
-          }
-        /> */}
+      
       </Routes>
     </AnimatePresence>
   );

@@ -185,10 +185,22 @@ const faqschema = createFAQSchema(blogData.content.blogFAQ)
           }}
         />
       )} */}
-     {/* {blogData.url === "ai-first-chro-in-hr" ?  : null}
-      */}
-      <Helmet>
+     {blogData.url === "ai-first-chro-in-hr" ? <Helmet>
         <meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.iona.ai/blog/ai-first-chro-in-hr" />
+<meta property="og:title" content="The AI-First CHRO in HR: What It Means & Why It Matters" />
+<meta property="og:description" content="Discover what an AI-first CHRO means, why it matters today, and how HR leaders can drive real business impact with AI. Read the playbook." />
+<meta property="og:image" content="https://www.iona.ai/assets/pages/blog/2026/april/chro.webp" />
+
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://www.iona.ai/blog/ai-first-chro-in-hr" />
+<meta property="twitter:title" content="The AI-First CHRO in HR: What It Means & Why It Matters" />
+<meta property="twitter:description" content="Discover what an AI-first CHRO means, why it matters today, and how HR leaders can drive real business impact with AI. Read the playbook." />
+<meta property="twitter:image" content="https://www.iona.ai/assets/pages/blog/2026/april/chro.webp" />
+    
+      </Helmet> 
+      : <Helmet>
+            <meta property="og:type" content="website" />
 <meta property="og:url" content={`https://www.iona.ai/blog/${blogData.url}`} />
 <meta property="og:title" content={blogData.content.seo.title} />
 <meta property="og:description" content={blogData.content.seo.description} />
@@ -199,7 +211,9 @@ const faqschema = createFAQSchema(blogData.content.blogFAQ)
 <meta property="twitter:title" content={blogData.content.seo.title} />
 <meta property="twitter:description" content={blogData.content.seo.description} />
 <meta property="og:image" content={`https://www.iona.ai/${blogData.content.image}`} />
-      </Helmet>
+        </Helmet>}
+     
+      
 {blogSchema && (
   <script
     type="application/ld+json"

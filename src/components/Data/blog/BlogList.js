@@ -21,10 +21,16 @@ import { Blog16 } from "./what-is-hris";
 import { Blog20 } from "./ai-first-chro-in-hr";
 import { Blog21 } from "./what-is-recruitment-management-system-rms";
 import { Blog22 } from "./top-employee-engagement-strategies";
+import { Blog23 } from "./ai-prompt-for-hr-teams";
 
 
 export const BlogList = [
     
+     {
+        url:"ai-prompt-for-hr-teams",
+        content:Blog23,
+        author:AuthorList[2],
+    },
      {
         url:"top-employee-engagement-strategies",
         content:Blog22,
