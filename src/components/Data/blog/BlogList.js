@@ -29,7 +29,7 @@ export const BlogList = [
      {
         url:"ai-prompt-for-hr-teams",
         content:Blog23,
-        author:AuthorList[2],
+        author:AuthorList[0],
     },
      {
         url:"top-employee-engagement-strategies",
