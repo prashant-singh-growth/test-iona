@@ -1,19 +1,19 @@
 const solutionListJson = [
   {
     "imgurl": "NovaCount",
-    "title": "NovaCount – </br> Headcount Planning and Monitoring",
+    "title": "NovaCount – </br> Headcount Planning </br> and Monitoring",
     "description": "Plan and track your workforce effortlessly, with real-time visibility into headcount, budgets, and forecasts.",
     "url": "/solutions/novacount"
   },
   {
     "imgurl": "NovaAssist",
-    "title": "NovaAssist – </br> AI Recruitment Assistant",
+    "title": "NovaAssist – </br> AI Recruitment </br> Assistant",
     "description": "Automates candidate sourcing, screening, and shortlisting, which saves time and ensures you never miss top talent.",
     "url": "/solutions/novaassist"
   },
   {
     "imgurl": "NovaTrack",
-    "title": "NovaTrack – </br> NextGen Application Tracking System",
+    "title": "NovaTrack – </br> NextGen Application  Tracking System",
     "description": "Seamlessly track and manage candidates through their journey with a state-of-the-art ATS from application to hire.",
     "url": "/solutions/novatrack"
   },
@@ -49,7 +49,7 @@ const solutionListJson = [
   },
   {
     "imgurl": "NovaConnect",
-    "title": "NovaConnect – </br> Premium WhatsApp-Based Support",
+    "title": "NovaConnect – </br> Premium WhatsApp-Based </br> Support",
     "description": "Provides real-time, premium support via WhatsApp, answering questions, resolving issues, and keeping the hiring process smooth.",
     "url": "/solutions/novaconnect"
   }

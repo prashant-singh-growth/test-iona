@@ -8,7 +8,7 @@ function HomeBanner() {
         <ResponsiveGridLines gradientReplacement={[10, 37, 50, 47, 93, 70, 100, 90, 50, 40]} />
         <div className="w-full max-w-[100vw] lg:max-w-[1440px] grid lg:grid-cols-2 place-items-center relative z-10 gap-10">
           <div className="w-full max-w-[100vw]">
-            <h1 className="text-4xl font-bold md:text-5xl leading-tight slg:text-5xl lg:text-[58px] lg:leading-[64px] text-black/80 flex flex-col text-left ">
+            <h1 className="text-4xl font-bold md:text-5xl leading-tight slg:text-5xl  text-black/80 flex flex-col text-left ">
             Enterprise AI Recruiting Automation for Bulk Hiring at Scale
 
             </h1>

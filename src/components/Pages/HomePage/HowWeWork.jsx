@@ -15,7 +15,7 @@ function HowWeWork() {
 
         {/* Image */}
         <img
-          src="/assets/pages/homepage/banner-3.png"
+          src="/assets/pages/homepage/home-design.webp"
           alt="how iona work"
           title="how iona work"
           className="w-full max-w-[1440px] object-contain fade-in-delay"
