@@ -6,7 +6,7 @@ import WorkingWay from "../components/Pages/HomePage/WorkingWay";
 import SolutionSection from "../components/Pages/HomePage/SolutionSection";
 import WhyUsSection from "../components/Pages/LandingPage/WhyUsSection";
 import ResultSection from "../components/Pages/LandingPage/ResultSection";
-import CertificationSection from "../components/Pages/HomePage/CertificationSection";
+
 import TestimonialSlider from "../components/utils/TestimonialSlider";
 import CTASection from "../components/Pages/HomePage/CTASection";
 
@@ -16,29 +16,30 @@ import { homeFaqList } from "../components/Data/FaqData";
 import FAQComponent from "../components/utils/FAQComponent";
 import ClientBadgeSection from "../components/Pages/HomePage/ClientBadgeSection";
 import { Helmet } from "react-helmet-async";
+import CertificationSection from "../components/sections/CertificationSection";
 const HomePage = memo(() => {
  
 
   return (
     <div className="bg-white text-primaryText theme-lora-font overflow-x-hidden max-w-[100vw] ">
       <SeoHeader
-        title={" Purposeful Hiring Powered by AI & Human Insight | iona.ai"}
-        description={"Discover iona.ai’s intelligent hiring solutions that merge AI brilliance with human wisdom to make hiring seamless, inclusive, and empowering for women leaders."}
+        title={"iona.ai - AI Recruiting Automation for Bulk Hiring"}
+        description={"Trusted by enterprises to scale bulk hiring. iona.ai automates your end-to-end recruitment: ATS, onboarding, & background verification in one AI platform."}
         canonical={"/"}
       />
  <Helmet>
  
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://www.iona.ai/" />
-<meta property="og:title" content="Purposeful Hiring Powered by AI & Human Insight | iona.ai" />
-<meta property="og:description" content="Discover iona.ai's intelligent hiring solutions that merge AI brilliance with human wisdom to make hiring seamless, inclusive, and empowering for women leaders." />
+<meta property="og:title" content="iona.ai - AI Recruiting Automation for Bulk Hiring" />
+<meta property="og:description" content="Trusted by enterprises to scale bulk hiring. iona.ai automates your end-to-end recruitment: ATS, onboarding, & background verification in one AI platform." />
 <meta property="og:image" content="https://iona.ai/assets/pages/homepage/home-banner.webp" />
 
 
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:url" content="https://www.iona.ai/" />
-<meta property="twitter:title" content="Purposeful Hiring Powered by AI & Human Insight | iona.ai" />
-<meta property="twitter:description" content="Discover iona.ai's intelligent hiring solutions that merge AI brilliance with human wisdom to make hiring seamless, inclusive, and empowering for women leaders." />
+<meta property="twitter:title" content="iona.ai - AI Recruiting Automation for Bulk Hiring" />
+<meta property="twitter:description" content="Trusted by enterprises to scale bulk hiring. iona.ai automates your end-to-end recruitment: ATS, onboarding, & background verification in one AI platform." />
 <meta property="twitter:image" content="https://iona.ai/assets/pages/homepage/home-banner.webp" />
 
  </Helmet>

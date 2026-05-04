@@ -183,6 +183,7 @@ function Footer() {
           <p className="text-xs text-black font-lora">
             Copyright © {new Date().getFullYear()} | All rights reserved.
           </p>
+          <p className="text-xs text-black font-lora">AKSS Consulting Services Pvt Ltd</p>
           <p className="text-xs text-black font-lora">
             <a href="/privacy" className={currentPath === "/privacy" ? "text-primary" : ""}>Privacy policy</a> |
             <a href="/terms" className={currentPath === "/terms" ? "text-primary" : ""}> Terms & conditions</a> |
