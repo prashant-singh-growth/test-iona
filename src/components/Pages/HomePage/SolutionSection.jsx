@@ -141,7 +141,7 @@ function SolutionSection({ ctatext, ctaurl, isLinkActive, bgcolor }) {
                     dangerouslySetInnerHTML={{ __html: item.title }}
                   />
 
-                  <p className="text-gray-600 text-[15px] leading-relaxed mb-6">
+                  <p className="text-gray-600 text-[15px] leading-relaxed mb-2">
                     {item.description}
                   </p>
 

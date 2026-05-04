@@ -27,36 +27,65 @@ function CertificationSection() {
         </div>
 
         {/* Certificate Grid - Large Scale */}
-        <div className="w-full grid grid-cols-1 md:grid-cols-4 items-center gap-10 md:gap-4 p-10 bg-white rounded-2xl shadow-[0_50px_100px_-20px_rgba(0,0,0,0.06)] border border-primaryText/20">
-          <div className="flex justify-center px-4">
-            <img
-              src="/assets/pages/landingpage/iso.png"
-              alt="ISO"
-              className="h-24 md:h-32 lg:h-36 w-auto object-contain transition-all duration-500 hover:scale-110"
-            />
-          </div>
-          <div className="flex justify-center px-4">
-            <img
-              src="/assets/pages/landingpage/gdpr.png"
-              alt="GDPR"
-              className="h-24 md:h-32 lg:h-36 w-auto object-contain transition-all duration-500 hover:scale-110"
-            />
-          </div>
-          <div className="flex justify-center px-4">
-            <img
-              src="/assets/pages/landingpage/iso1.png"
-              alt="ISO 9001"
-              className="h-24 md:h-32 lg:h-36 w-auto object-contain transition-all duration-500 hover:scale-110"
-            />
-          </div>
-          <div className="flex justify-center px-4">
-            <img
-              src="/assets/pages/landingpage/hmgov.png"
-              alt="HM Government"
-              className="h-32 md:h-44 lg:h-52 w-auto object-contain transition-all duration-500 hover:scale-110"
-            />
-          </div>
-        </div>
+       <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 p-12 bg-white/80 backdrop-blur-sm rounded-3xl shadow-[0_32px_64px_-15px_rgba(0,0,0,0.08)] border border-slate-100">
+  
+  {/* Card Item */}
+  <div className="group flex flex-col items-center text-center space-y-4">
+    <div className="h-24 flex items-center justify-center">
+      <img
+        src="/assets/pages/landingpage/iso.png"
+        alt="ISO"
+        className="h-full w-auto object-contain transition-transform duration-500 group-hover:scale-110"
+      />
+    </div>
+    <p className="text-sm font-semibold text-slate-600 tracking-tight uppercase">
+      ISO 9001:2015 <span className="block font-normal normal-case opacity-70">Certified</span>
+    </p>
+  </div>
+
+  {/* Card Item */}
+  <div className="group flex flex-col items-center text-center space-y-4">
+    <div className="h-24 flex items-center justify-center">
+      <img
+        src="/assets/pages/landingpage/gdpr.png"
+        alt="GDPR"
+        className="h-full w-auto object-contain transition-transform duration-500 group-hover:scale-110"
+      />
+    </div>
+    <p className="text-sm font-semibold text-slate-600 tracking-tight uppercase">
+      GDPR <span className="block font-normal normal-case opacity-70">Compliance Certified</span>
+    </p>
+  </div>
+
+  {/* Card Item */}
+  <div className="group flex flex-col items-center text-center space-y-4">
+    <div className="h-24 flex items-center justify-center">
+      <img
+        src="/assets/pages/landingpage/iso1.png"
+        alt="ISO 27001"
+        className="h-full w-auto object-contain transition-transform duration-500 group-hover:scale-110"
+      />
+    </div>
+    <p className="text-sm font-semibold text-slate-600 tracking-tight uppercase">
+      ISO 27001 <span className="block font-normal normal-case opacity-70">Certified</span>
+    </p>
+  </div>
+
+  {/* Card Item */}
+  <div className="group flex flex-col items-center text-center space-y-4">
+    <div className="h-24 flex items-center justify-center">
+      <img
+        src="/assets/pages/landingpage/hmgov.png"
+        alt="HM Government"
+        className="h-full w-auto max-w-[200px] object-contain transition-transform duration-500 group-hover:scale-110"
+      />
+    </div>
+    <p className="text-sm font-semibold text-slate-600 tracking-tight uppercase">
+      G-Cloud <span className="block font-normal normal-case opacity-70">HM Gov Supplier</span>
+    </p>
+  </div>
+
+</div>
         
       
       </div>
