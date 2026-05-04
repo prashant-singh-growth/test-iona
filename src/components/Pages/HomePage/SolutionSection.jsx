@@ -122,26 +122,27 @@ function SolutionSection({ ctatext, ctaurl, isLinkActive, bgcolor }) {
                 key={i}
                 className="group relative flex flex-col h-full px-5 py-7 md:p-8 bg-lightGray/50 rounded-xl border border-gray-100  hover:border-darkVoilet/15
                    shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgba(0,0,0,0.08)] 
-                   transition-all duration-300 ease-out hover:-translate-y-2"
+                   transition-all duration-300 ease-out hover:-translate-y-2 gap-y-4"
               >
 
                 {/* <div className="mb-6 flex items-center justify-center w-10 h-10 rounded-xl bg-darkVoilet "> */}
-                <img
-                  src={`/assets/pages/landingpage/${item.imgurl}.svg`}
-                  alt={item.imgurl}
-                  className=" h-10 object-contain mr-auto mb-3"
-                  loading="lazy"
-                />
+               
                 {/* </div> */}
 
                 {/* Text Content */}
                 <div className="flex flex-col gap-y-4 h-full">
+                   <img
+                  src={`/assets/pages/landingpage/${item.imgurl}.svg`}
+                  alt={item.imgurl}
+                  className=" h-10 object-contain mr-auto "
+                  loading="lazy"
+                />
                   <h3
                     className="text-xl font-bold text-gray-900 font-lora leading-tight"
                     dangerouslySetInnerHTML={{ __html: item.title }}
                   />
 
-                  <p className="text-gray-600 text-[15px] leading-relaxed mb-2">
+                  <p className="text-gray-600 text-[15px] leading-relaxed ">
                     {item.description}
                   </p>
 
