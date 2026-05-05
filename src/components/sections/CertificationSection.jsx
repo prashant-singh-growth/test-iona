@@ -2,7 +2,7 @@ import React from 'react'
 
 function CertificationSection() {
   return (
-    <section className="w-full bg-[#FBFBFC] py-24 lg:py-36 px-6">
+    <section className="w-full bg-[#FBFBFC] py-20 lg:py-24 px-6">
       <div className="max-w-[1200px] mx-auto flex flex-col items-center text-center">
         
         {/* Animated Badge */}
