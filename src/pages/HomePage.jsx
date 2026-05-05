@@ -110,7 +110,8 @@ const HomePage = memo(() => {
       <WorkingWay />
       {/* complate solution section */}
       <SolutionSection ctaurl="/contact" isLinkActive={true}/>
-
+  {/* certification section */}
+      <CertificationSection/>
       {/* cta */}
       <section className="w-full bg-[#150D37] overflow-hidden">
         <div className="w-full relative py-16 grid place-items-center px-5 md:px-8 slg:px-[60px] lg:px-[90px]">
@@ -154,8 +155,7 @@ const HomePage = memo(() => {
       <WhyUsSection ctaText="Book a Demo" ctaUrl="/contact"/>
       {/* result Section */}
       <ResultSection/>
-      {/* certification section */}
-      <CertificationSection/>
+    
       {/* testimonial section */}
       <TestimonialSlider/>
       {/* cta section */}
