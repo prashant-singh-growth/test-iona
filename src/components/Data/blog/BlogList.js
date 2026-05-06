@@ -109,7 +109,7 @@ export const BlogList = [
      {
         url:"headcount-planning-software",
         content:Blog7,
-        author:AuthorList[1]
+        author:AuthorList[0]
     },
      {
         url:"bulk-headcount-planning-process",
@@ -124,7 +124,7 @@ export const BlogList = [
      {
         url:"best-hiring-automation-tools",
         content:Blog4,
-        author:AuthorList[1]
+        author:AuthorList[2]
     },
      {
        url:"prospect-to-productive-journey",
@@ -139,7 +139,7 @@ export const BlogList = [
      {
         url:"high-volume-hiring-challenges",
         content:Blog3,
-        author:AuthorList[1]
+        author:AuthorList[2]
     },
     
    
