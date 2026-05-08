@@ -146,7 +146,7 @@ function BlogSinglePages() {
       },
     },
     datePublished: new Date(blog.date).toISOString(),
-    dateModified: new Date(blog.date).toISOString(),
+    dateModified: blog.modifiedDate ? new Date(blog.modifiedDate).toISOString() : new Date(blog.date).toISOString(),
     inLanguage: "en",
     url: `https://www.iona.ai/blog/${blog.url}`,
   };

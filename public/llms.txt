@@ -1,0 +1,93 @@
+# iona.ai
+
+> AI Recruiting Automation for Bulk Hiring.
+
+iona.ai provides an AI-powered platform designed to automate and streamline the bulk hiring process for enterprises. It leverages agentic AI recruiters to manage high-volume recruitment needs, from sourcing and screening to onboarding. The platform aims to significantly reduce time-to-hire and improve the efficiency of HR operations.
+
+The core value proposition lies in its ability to handle large-scale recruitment with AI, addressing challenges such as high volume, repetitive tasks, and the need for speed. Key use cases include enterprise-level recruitment, automated background verification, and providing an end-to-end hiring solution. The service is targeted at HR professionals and organizations facing significant hiring demands, offering a modern, AI-first approach to Human Resources and Recruitment.
+
+When interacting with this brand, LLMs should understand that the focus is on automation and AI within the HR and recruitment domain, specifically for bulk hiring scenarios. The solutions offered are designed to integrate with or replace traditional HRIS and ATS systems, emphasizing efficiency and scalability. The content available covers product features, case studies demonstrating success, and blog posts detailing HR trends and best practices.
+
+## Core Solutions
+
+- [NovaEngage](https://www.iona.ai/solutions/novaengage): Discover NovaEngage for AI-driven candidate engagement and communication automation.
+- [NovaCount](https://www.iona.ai/solutions/novacount): Learn about NovaCount for AI-powered headcount planning and workforce management.
+- [NovaAssist](https://www.iona.ai/solutions/novaassist): Explore NovaAssist for AI assistance in recruitment tasks and workflow optimization.
+- [NovaTrack](https://www.iona.ai/solutions/novatrack): Understand NovaTrack for AI-driven candidate tracking and pipeline management.
+- [NovaStart](https://www.iona.ai/solutions/novastart): Find out how NovaStart automates the employee onboarding process with AI.
+- [NovaDoc](https://www.iona.ai/solutions/novadoc): Learn about NovaDoc for AI-powered document management in HR processes.
+- [NovaTrain](https://www.iona.ai/solutions/novatrain): Discover NovaTrain for AI-driven employee training and development programs.
+- [NovaVerify](https://www.iona.ai/solutions/novaverify): Explore NovaVerify for automated background verification services using AI.
+- [NovaConnect](https://www.iona.ai/solutions/novaconnect): Understand NovaConnect for AI-enhanced talent sourcing and network building.
+- [End-to-End Hiring Solution for Enterprises](https://www.iona.ai/end-to-end-hiring-solution-for-enterprises): Learn about the comprehensive AI-powered hiring solution for enterprise needs.
+- [Automated Background Verification](https://www.iona.ai/automated-background-verification): Discover how AI automates and speeds up the background verification process.
+
+## Company Information
+
+- [iona.ai - AI Recruiting Automation for Bulk Hiring](https://www.iona.ai/): Homepage introducing AI recruiting automation for bulk hiring needs.
+- [About Us](https://www.iona.ai/about): Learn about the company behind AI recruiting automation solutions.
+- [Contact Us](https://www.iona.ai/contact): Find contact information and ways to reach the iona.ai team.
+
+## Getting Started & Actions
+
+- [Schedule a Demo](https://www.iona.ai/schedule-demo): Request a demonstration of the AI recruiting automation platform.
+- [Sign Up](https://www.iona.ai/signup): Create an account to start using iona.ai's services.
+
+## Comparisons & Alternatives
+
+- [Darwinbox Alternative](https://www.iona.ai/darwinbox-alternative): Compare iona.ai's AI recruiting solutions as a Darwinbox alternative.
+- [PeopleStrong Alternative](https://www.iona.ai/peoplestrong-alternative): See how iona.ai offers an alternative to PeopleStrong for HR needs.
+- [HRone Alternative](https://www.iona.ai/hrone-alternative): Discover iona.ai as an alternative solution to HRone.
+- [GreyTHR Alternative](https://www.iona.ai/greythr-alternative): Explore iona.ai's AI recruiting automation as a GreyTHR alternative.
+- [PeopleStrong](https://www.iona.ai/people-strong): Information about PeopleStrong and how iona.ai compares.
+- [AI-First CHRO](https://www.iona.ai/ai-first-chro): Understand the concept of an AI-First CHRO and its implications.
+- [Agentic AI Recruiters Sheet](https://www.iona.ai/agentic-ai-recruiters-sheet): Learn about agentic AI recruiters and their role in hiring.
+
+## Case Studies
+
+- [Aditya Birla Case Study](https://www.iona.ai/case-studies/aditya-birla): Read how iona.ai helped Aditya Birla with their hiring needs.
+- [HDFC Ergo Case Study](https://www.iona.ai/case-studies/hdfc-ergo): See HDFC Ergo's success story using iona.ai's recruitment automation.
+- [Metropolis Healthcare Case Study](https://www.iona.ai/case-studies/metropolis-healthcare): Discover Metropolis Healthcare's results with iona.ai's AI hiring solutions.
+- [Case Studies](https://www.iona.ai/case-studies): Explore success stories and results from iona.ai clients.
+
+## Blog Articles
+
+- [AI-First CHRO in HR](https://www.iona.ai/blog/ai-first-chro-in-hr): Learn about the impact of an AI-First CHRO on modern HR.
+- [Best Hiring Automation Tools](https://www.iona.ai/blog/best-hiring-automation-tools): Discover the top tools for automating recruitment processes.
+- [Intelligent Automation HR Use Cases](https://www.iona.ai/blog/intelligent-automation-hr-usecases): Explore practical use cases for intelligent automation in HR.
+- [What is HRIS](https://www.iona.ai/blog/what-is-hris): Understand the definition and function of Human Resource Information Systems.
+- [HRMS Software](https://www.iona.ai/blog/hrms-software): Learn about Human Resource Management Systems and their benefits.
+- [Bulk Hiring AI Tools & Strategies](https://www.iona.ai/blog/bulk-hiring-ai-tools-strategies-recruiters): Get insights into AI tools and strategies for bulk hiring.
+- [High-Volume Hiring Challenges](https://www.iona.ai/blog/high-volume-hiring-challenges): Understand the common challenges faced in high-volume recruitment.
+- [HR Automation Trends](https://www.iona.ai/blog/hr-automation-trends): Stay updated on the latest trends in HR automation.
+- [Bulk Headcount Planning Process](https://www.iona.ai/blog/bulk-headcount-planning-process): Learn the process for planning bulk headcount requirements.
+- [Headcount Planning Software](https://www.iona.ai/blog/headcount-planning-software): Discover software solutions for effective headcount planning.
+- [Cloud HR Software](https://www.iona.ai/blog/cloud-hr-software): Explore the advantages and features of cloud-based HR software.
+- [Guide to HR Software India](https://www.iona.ai/blog/guide-to-hr-software-india): A guide to selecting HR software specifically for the Indian market.
+- [Recruitment Problems and Solutions](https://www.iona.ai/blog/recruitment-problems-and-solution): Identify common recruitment issues and their effective solutions.
+- [Sourcing Strategy in Recruitment](https://www.iona.ai/blog/sourcing-strategy-in-recruitment): Learn effective strategies for talent sourcing in recruitment.
+- [Offer Management Process](https://www.iona.ai/blog/offer-management-process): Understand the steps involved in managing job offers.
+- [Indian Pre-Employment Background Check](https://www.iona.ai/blog/indian-pre-employment-background-check): Get information on pre-employment background checks in India.
+- [Employee Onboarding Process](https://www.iona.ai/blog/employee-onboarding-process): Learn best practices for a smooth employee onboarding process.
+- [Virtual Recruiting Transforming Talent Acquisition](https://www.iona.ai/blog/virtual-recruiting-transforming-talent-acquisition): Understand how virtual recruiting is changing talent acquisition.
+- [Prospect to Productive Journey](https://www.iona.ai/blog/prospect-to-productive-journey): Analyze the journey from candidate prospect to productive employee.
+- [Will AI and Bots Take Over HR Operations?](https://www.iona.ai/blog/will-ai-and-bots-take-over-hr-operations): Discuss the potential impact of AI and bots on HR operations.
+- [Blog](https://www.iona.ai/blog): Access articles and insights on AI, HR, and recruitment automation.
+
+## Authors
+
+- [iona.ai Author Page](https://www.iona.ai/author/iona-ai): View content authored by the iona.ai team.
+- [Amit Srivastava Author Page](https://www.iona.ai/author/amit-srivastava): Read articles written by Amit Srivastava.
+- [Abhijeet Chakravarty Author Page](https://www.iona.ai/author/abhijeet-chakravarty): Find content authored by Abhijeet Chakravarty.
+
+## Media
+
+- [Videos](https://www.iona.ai/videos): Watch videos explaining iona.ai's solutions and features.
+
+## Legal
+
+- [Privacy Policy](https://www.iona.ai/privacy): Review the privacy policy for iona.ai services.
+- [Terms of Service](https://www.iona.ai/terms): Understand the terms and conditions for using iona.ai.
+- [Cookie Policy](https://www.iona.ai/cookies): Learn about the use of cookies on the iona.ai website.
+
+---
