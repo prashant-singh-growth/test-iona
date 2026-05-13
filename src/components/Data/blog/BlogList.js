@@ -22,10 +22,16 @@ import { Blog20 } from "./ai-first-chro-in-hr";
 import { Blog21 } from "./what-is-recruitment-management-system-rms";
 import { Blog22 } from "./top-employee-engagement-strategies";
 import { Blog23 } from "./ai-prompt-for-hr-teams";
+import { Blog24 } from "./what-is-payroll-software";
 
 
 export const BlogList = [
     
+     {
+        url:"what-is-payroll-software",
+        content:Blog24,
+        author:AuthorList[0],
+    },
      {
         url:"ai-prompt-for-hr-teams",
         content:Blog23,
