@@ -1,6 +1,6 @@
 
 export const Blog25 =   {
-    url: "what-is-payroll-software",
+    url: "resume-screening-complete-guide",
      cta:{
 title:"Ready to see how this works in practice?",
 description:"Book a demo and experience what a smarter screening process looks like for your team. "
@@ -10,7 +10,7 @@ description:"Book a demo and experience what a smarter screening process looks l
       description:
         "Learn what resume screening is, how it works, and how to improve hiring. Read the complete guide and streamline your recruitment today.",
     },
-    id: 8,
+    id: 25,
     title: "What Is Resume Screening? Process, Methods, and Key Insights",
     summary:
       "Resume screening is quick, until it isn't. For a handful of applications, a recruiter can scan, evaluate, and shortlist in minutes. But what happens when that handful becomes thousands? Imagine sifting through 2,000 resumes for a single role, each one demanding attention, judgment, and consistency. That is not a screening process anymore; that is a bottleneck.",
