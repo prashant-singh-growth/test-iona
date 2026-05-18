@@ -23,10 +23,16 @@ import { Blog21 } from "./what-is-recruitment-management-system-rms";
 import { Blog22 } from "./top-employee-engagement-strategies";
 import { Blog23 } from "./ai-prompt-for-hr-teams";
 import { Blog24 } from "./what-is-payroll-software";
+import { Blog25 } from "./resume-screening-complete-guide";
 
 
 export const BlogList = [
     
+     {
+        url:"resume-screening-complete-guide",
+        content:Blog25,
+        author:AuthorList[2],
+    },
      {
         url:"what-is-payroll-software",
         content:Blog24,
