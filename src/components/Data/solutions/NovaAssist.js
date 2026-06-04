@@ -92,7 +92,7 @@ export const NovaAssist = {
 </svg>
 `,
     title: "Day 1 confidence, not confusion",
-    description: "New employees self-serve from the moment they join; leave policies, org charts, reporting lines, and cutting HR helpdesk load without cutting the quality of the onboarding experience."
+    description: "New employees self-serve from the moment they join; leave policies, org charts, reporting lines, and cutting <a href='/solutions/novaconnect'>HR helpdesk</a> load without cutting the quality of the onboarding experience."
   },
   {
      svg:`<svg  viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">

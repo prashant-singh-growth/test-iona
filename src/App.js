@@ -306,7 +306,7 @@ const AnimatedRoutes = () => {
           }
         />
         <Route
-          path="/automated-background-verification"
+          path="/automated-employee-background-verification"
           element={
             <PageTransition>
               <SecLandingPage />
@@ -314,7 +314,7 @@ const AnimatedRoutes = () => {
           }
         />
         <Route
-          path="/automated-background-verification/thank-you"
+          path="/automated-employee-background-verification/thank-you"
           element={
             <PageTransition>
               <ThankYouPage />
@@ -442,7 +442,8 @@ function AppContent() {
     "/agentic-ai-recruiters-sheet",
     "/ads",
     "/ai-first-chro",
-    "/ai-first-chro-g"
+    "/ai-first-chro-g",
+    "/automated-employee-background-verification"
   ];
   const shouldHideNavbar = hideNavbarRoutes.includes(location.pathname);
 

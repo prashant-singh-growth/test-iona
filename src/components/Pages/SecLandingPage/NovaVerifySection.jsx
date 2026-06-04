@@ -75,7 +75,7 @@ function NovaVerifySection() {
       <div className="w-full max-w-[1440px] flex flex-col  justify-center items-center space-y-10">
         <div className="flex flex-col max-w-[1074px] justify-center items-center gap-5">
           <h2 className="text-3xl md:text-4xl lg:text-[40px] lg:leading-[50px] text-[#2A2564] font-bold md:font-semibold text-center font-lora">
-            Nova Verify: The Fully Managed BGV Powerhouse, Engineered by iona.ai
+            NovaVerify: The Fully Managed BGV Platform, Engineered by iona.ai
           </h2>
           <p className="text-base text-[#2A2564] text-center font-lora">
             Inspired by unwavering clarity and powered by intelligent AI

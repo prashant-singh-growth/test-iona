@@ -9,10 +9,10 @@ function LandingPageBanner() {
             <div className="w-full max-w-[100vw] lg:max-w-[1440px] grid lg:grid-cols-[60%_40%] place-items-center relative z-10 gap-10">
               <div className="w-full max-w-[100vw]">
                 <h1 className="text-4xl font-semibold font-lora md:text-5xl leading-tight slg:text-5xl lg:text-[58px] lg:leading-[64px] text-[#2A2564] flex flex-col text-left ">
-                  Fully Managed Onboarding And Background Checks for High-Volume Hiring
+                AI-Powered Employee Background Verification for Faster Enterprise Hiring
                 </h1>
                 <p className="text-base font-lora text-primary font-normal mt-5">
-                 Eliminate 100% of the background verification headaches and administration, cut operational costs, and onboard verified talent faster than ever before.
+         Eliminate 100% of employee background verification headaches and administrative overhead, cut operational costs, and onboard verified talent faster than ever before. 
                 </p>
                 <div className="w-full flex flex-col sm:flex-row justify-between md:justify-start gap-5 mt-8 md:mt-12 lg:mt-12 slg:mt-10 ">
                   <a

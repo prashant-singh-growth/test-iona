@@ -145,7 +145,7 @@ export const NovaTrain = {
 </svg>
 `,
     title: "L&D and TA stop duplicating effort across platforms",
-    description: "NovaTrain connects to your existing HRMS and ATS so completion data, training records, and candidate progress live in one place — not split across three platforms and a shared drive that nobody updates between intake cycles"
+    description: "NovaTrain connects to your existing HRMS and <a href='/solutions/novatrack'>ATS</a> so completion data, training records, and candidate progress live in one place — not split across three platforms and a shared drive that nobody updates between intake cycles"
   }
 ]
 

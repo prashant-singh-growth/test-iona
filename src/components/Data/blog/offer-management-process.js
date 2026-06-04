@@ -26,7 +26,7 @@ description:"Book a demo today and see how Iona’s solutions can revolutionize 
 <li>Is your &quot;document management&quot; just a folder of confusing versions?  </li>
 <li>Are your best candidates &quot;ghosting&quot; because a competitor moved faster?</li>
 </ul>
-<p>If you felt a pang of guilt reading that, you’re not alone—but you <em>are</em> at risk. Let’s dive into how AI-driven solutions like <strong>NovaStart</strong> are turning the chaotic offer scramble into a streamlined, high-speed machine.</p>
+<p>If you felt a pang of guilt reading that, you’re not alone—but you <em>are</em> at risk. Let’s dive into how AI-driven solutions like <a href='/solutions/novastart'>NovaStart</a> are turning the chaotic offer scramble into a streamlined, high-speed machine.</p>
 <h3 id="-role-of-ai-in-bulk-hiring-why-you-need-an-ai-powered-hiring-solution-"><strong>Role of AI in Bulk Hiring: Why You Need an AI-Powered Hiring Solution</strong></h3>
 <p>For companies handling a high volume of recruitment—whether for seasonal hiring, large-scale projects, or expanding teams—managing offers can quickly become overwhelming. Here’s how AI-powered solutions can help streamline the process:</p>
 <ul>

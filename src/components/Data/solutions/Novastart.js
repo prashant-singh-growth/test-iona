@@ -143,7 +143,7 @@ export const NovaStart = {
     },
     platformCapabilities: {
         title: "Unmatched Features for Winning High-Volume Talent Fast",
-        description:"Nova Start brings intelligent offer management to every stage of your hiring process",
+        description:"Nova Start brings intelligent <a href='/blog/offer-management-process'>offer management</a> to every stage of your hiring process",
         card: [
   {
     title: "Smart, Streamlined Negotiations",

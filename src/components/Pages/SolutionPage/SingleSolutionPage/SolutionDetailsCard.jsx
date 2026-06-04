@@ -36,7 +36,7 @@ function SolutionDetailsCard({detail}) {
                             <h3 className='text-xl font-semibold text-primary'>{card.title}</h3>
 
                         </div>
-                        <p className='text-base text-[#63696F]'>{card.description}</p>
+                        <p className='text-base linking text-[#63696F]' dangerouslySetInnerHTML={{__html:card.description}}></p>
 
                     </div>
                         ))

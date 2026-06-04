@@ -93,7 +93,7 @@ export const NovaEngage = {
 </svg>
 `,
     title: "Reclaim Recruiter Bandwidth",
-    description: "Automate the entire pre-boarding journey and 24/7 candidate support. Shift your team's focus from manual nudges back to sourcing and closing high-value talent."
+    description: "Automate the entire pre-boarding journey and 24/7 <a href='/solutions/novaassist'>candidate support</a>. Shift your team's focus from manual nudges back to sourcing and closing high-value talent."
   },
   {
     svg:`<svg  viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">

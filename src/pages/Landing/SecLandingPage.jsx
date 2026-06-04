@@ -16,8 +16,8 @@ function SecLandingPage() {
   return (
    <div className="bg-white theme-lora-font">
     <SeoHeader
-    title={"Automated Employee Background Verification | iona.ai"}
-    description={"Automate employee background verification with iona.ai. Faster checks, higher accuracy, and enterprise-grade compliance for high-volume hiring."}
+    title={"Automated Employee Background Verification India | iona.ai"}
+    description={"Automate employee background verification in India with faster onboarding, lower costs and 100% accuracy. Book a demo with iona.ai today."}
 
     />
     <LPHeader/>

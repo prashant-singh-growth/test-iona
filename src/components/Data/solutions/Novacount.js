@@ -145,7 +145,7 @@ export const NovaCountSolution = {
         card: [
             {
                 title: `Collaborative <span class="md:block">Planning</span> `,
-                description: "Involve hiring managers and finance teams in planning process"
+                description: "Involve hiring managers and finance teams in <a href='/blog/bulk-headcount-planning-process'>planning process</a> "
             },
             {
                 title: "Dynamic Requisition Monitoring",

@@ -11,8 +11,8 @@ function PlatformCapabilitiesSection({ plateform,url }) {
                     <h2 className="text-3xl md:text-4xl max-w-[849px] lg:text-[40px] lg:leading-[50px] text-[#2A2564] font-bold md:font-semibold text-center ">
                         {plateform.title}
                     </h2>
-                    {plateform.description && <p className="text-base text-[#2A2564] max-w-[759px] text-center pt-4">
-                        {plateform.description}
+                    {plateform.description && <p className="text-base text-[#2A2564] max-w-[759px] linking text-center pt-4" dangerouslySetInnerHTML={{__html:plateform.description}}>
+                        
                     </p>}
 
                 </div>
@@ -36,7 +36,7 @@ function PlatformCapabilitiesSection({ plateform,url }) {
                                 </svg>
                                 <h3 className='text-lg font-semibold text-primary leading-[30px] ' dangerouslySetInnerHTML={{ __html: item.title }}></h3>
                             </div>
-                            <p className='text-[#677D64] text-sm leading-6'>{item.description}</p>
+                            <p className='text-[#677D64] text-sm leading-6 linking' dangerouslySetInnerHTML={{__html: item.description}} />
                         </div>
                     ))}
                 </div>

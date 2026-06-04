@@ -157,7 +157,7 @@ export const NovaTrackSolution = {
 </svg>
 `,
                 title: "Seamless Handoff to Onboarding",
-                description: "Accepted offers trigger onboarding workflows instantly—including background checks, document collection, and Day 1 readiness. No manual handoffs."
+                description: "Accepted offers trigger onboarding workflows instantly—including <a href='/automated-employee-background-verification'>background checks</a> , document collection, and Day 1 readiness. No manual handoffs."
             }
         ]
 

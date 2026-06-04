@@ -93,6 +93,36 @@ function AdsLandingPageSec() {
 `
           }}
         />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: `{
+  "@context": "https://schema.org",
+  "@type": "Book",
+  "name": "The AI-FIRST CHRO",
+  "alternateName": "The AI-First CHRO: The Missing Playbook – From AI Promise to Boardroom Results",
+  "author": {
+    "@type": "Person",
+    "name": "Amit Srivastava"
+  },
+  "bookFormat": "https://schema.org/Hardcover",
+  "publisher": {
+    "@type": "Organization",
+    "name": "iona.ai"
+  },
+  "inLanguage": "en",
+  "url": "https://www.iona.ai/ai-first-chro",
+  "offers": {
+    "@type": "Offer",
+    "price": "1599",
+    "priceCurrency": "INR",
+    "availability": "https://schema.org/InStock"
+  }
+}
+
+`
+          }}
+        />
      
     </div>
   )

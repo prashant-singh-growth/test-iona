@@ -59,9 +59,8 @@ function SectionComparison({ comparison }) {
                     fill="#4C4C4C"
                   />
                 </svg>
-                <p className="text-base font-lora text-[#16181D]">
-                  {" "}
-                  {row.competitor}
+                <p className="text-base font-lora text-[#16181D]" dangerouslySetInnerHTML={{__html:row.competitor}}>
+                  
                 </p>
               </div>
               <div className="w-full bg-[#2A2564]  border-b border-[#B9B8B8] pt-8 pb-6 lg:pt-12 lg:pb-10 px-5 lg:px-12 flex flex-row justify-start gap-1.5 shadow-[0_0_40px_0_#00000059] ">
@@ -82,7 +81,7 @@ function SectionComparison({ comparison }) {
                     strokeLinejoin="round"
                   />
                 </svg>
-                <p className="font-lora text-base text-white">{row.iona}</p>
+                <p className="font-lora text-base linking text-white" dangerouslySetInnerHTML={{__html:row.iona}}></p>
               </div>
             </React.Fragment>
           ))}

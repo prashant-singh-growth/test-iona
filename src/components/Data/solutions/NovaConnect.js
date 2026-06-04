@@ -98,7 +98,7 @@ export const Novaconnect = {
   {
     
     title: "Real-Time <span class='lg:block'>Analytics</span>",
-    description: "Comprehensive dashboards and insights to track candidate engagement and optimize your hiring process"
+    description: "Comprehensive dashboards and insights to <a href='/solutions/novaengage'>track candidate engagement</a>  and optimize your hiring process"
   },
   {
     

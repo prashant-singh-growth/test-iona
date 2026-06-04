@@ -246,8 +246,7 @@ function NovaFixesSection() {
       <div className="w-full max-w-[1440px] flex flex-col  justify-center items-center space-y-10">
         <div className="flex flex-col max-w-[1074px] justify-center items-center space-y-4">
           <h2 className="text-3xl md:text-4xl lg:text-[40px] lg:leading-[50px] text-[#2A2564] font-bold md:font-semibold text-center font-lora">
-            Why Enterprises Struggle with Onboarding And Background Verification
-            & How Nova Verify Fixes Them
+           Common Employee Background Verification Challenges for Enterprises & How Nova Verify Solves Them
           </h2>
         </div>
         <div className="w-full grid grid-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-5">
@@ -336,7 +335,7 @@ function NovaFixesSection() {
           <div className="w-full gap-6 max-w-[1032px] flex flex-col justify-center items-center">
               <div className="flex flex-col max-w-[692px] justify-center items-center gap-3">
                 <h3 className="font-lora text-2xl text-white text-center">Results that Empower Businesses</h3>
-                <p className="text-base font-lora text-white text-center">Nova Verify powers high-volume hiring for enterprises that process thousands of verifications every month — without increasing headcount or complexity.</p>
+                <p className="text-base font-lora text-white text-center">NovaVerify powers high-volume hiring for enterprises that manage thousands of verification processes every month without increasing headcount or complexity.</p>
             </div>
             <div className="w-full grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-6 gap-6 ">
                 

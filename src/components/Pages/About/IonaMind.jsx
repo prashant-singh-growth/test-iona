@@ -64,7 +64,7 @@ function IonaMind() {
                         {
 
                             title: "Seamless Onboarding",
-                            descrption: "Every new hire arrives prepared, welcomed, and ready to contribute. Our end-to-end onboarding workflows ensure 100% data accuracy and a structured path to Day 1 productivity — regardless of hiring volume."
+                            descrption: "Every new hire arrives prepared, welcomed, and ready to contribute. Our  <a href='/solutions/novadoc'>end-to-end onboarding</a>  workflows ensure 100% data accuracy and a structured path to Day 1 productivity — regardless of hiring volume."
                         },
                         ].map((item, val) => (
                             <div className="w-full flex flex-col">
@@ -85,7 +85,7 @@ function IonaMind() {
                                     <path d="M22.5 12H13.5C12.6716 12 12 12.6716 12 13.5V22.5C12 23.3284 12.6716 24 13.5 24H22.5C23.3284 24 24 23.3284 24 22.5V13.5C24 12.6716 23.3284 12 22.5 12Z" stroke="#2A2564" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
                                 <h4 className='text-[22px] leading-[30px] text-primary font-semibold mt-5 mb-3 lg:mt-8 lg:mb-5'>{item.title}</h4>
-                                <p className='text-base text-[#677D64]'>{item.descrption}</p>
+                                <p className='text-base text-[#677D64] linking'  dangerouslySetInnerHTML={{__html:item.descrption}} ></p>
                             </div>
                         ))}
 

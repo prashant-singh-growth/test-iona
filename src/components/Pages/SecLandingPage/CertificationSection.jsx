@@ -8,7 +8,7 @@ function CertificationSection() {
       <div className="w-full max-w-[1440px] bg-white border-2 border-[#180F3D14] rounded-lg p-5 sm:p-8 lg:p-[50px] grid grid-cols-1 lg:grid-cols-2 gap-20 ">
         <div className="w-full flex flex-col gap-4">
           <div className="flex flex-col sm:flex-row gap-3">
-            <svg
+            {/* <svg
               className="w-10  sm:h-[30px] object-contain lg:w-[37px] lg:h-[47px]"
               viewBox="0 0 37 47"
               fill="none"
@@ -21,7 +21,7 @@ function CertificationSection() {
                 strokeLinecap="round"
                 strokeLinejoin="round"
               />
-            </svg>
+            </svg> */}
             <h2 className="text-[#2A2564] font-semibold text-3xl lg:text-[40px] leading-tight">
               Certified for Your Trust and Security
             </h2>

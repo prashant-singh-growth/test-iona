@@ -52,7 +52,7 @@ export const AlternativePagesData = {
           feature: "Core Focus",
           competitor:
             "HR suite with separate recruitment, onboarding, and HR modules",
-          iona: "End-to-end hiring (Headcount Planning & Monitoring → ATS → Screening → Onboarding → Background Verification → Training)",
+          iona: "End-to-end hiring (<a href='/solutions/novacount'>Headcount Planning & Monitoring</a> → ATS → Screening → Onboarding → Background Verification → Training)",
         },
         {
           feature: "Implementation Time",

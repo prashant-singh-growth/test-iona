@@ -24,10 +24,16 @@ import { Blog22 } from "./top-employee-engagement-strategies";
 import { Blog23 } from "./ai-prompt-for-hr-teams";
 import { Blog24 } from "./what-is-payroll-software";
 import { Blog25 } from "./resume-screening-complete-guide";
+import { Blog26 } from "./what-is-attendance-management-system";
 
 
 export const BlogList = [
     
+     {
+        url:"what-is-attendance-management-system",
+        content:Blog26,
+        author:AuthorList[2],
+    },
      {
         url:"resume-screening-complete-guide",
         content:Blog25,
@@ -109,7 +115,7 @@ export const BlogList = [
         author:AuthorList[2],
     },
      {
-        url:"indian-pre-employment-background-check",
+        url:"pre-employment-background-check-india",
         content:Blog9,
         author:AuthorList[2],
     },

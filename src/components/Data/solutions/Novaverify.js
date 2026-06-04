@@ -108,7 +108,7 @@ export const Novaverify = {
   {
     
     title: "Document <span class='lg:block'>Verification</span>",
-    description: "AI-powered document analysis to verify identity documents, certifications, and professional licenses"
+    description: "AI-powered  <a href='/solutions/novadoc'>document analysis</a> to verify identity documents, certifications, and professional licenses"
   },
   {
     
