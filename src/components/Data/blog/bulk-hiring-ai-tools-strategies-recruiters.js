@@ -15,7 +15,7 @@ description:"Ready to see how iona.ai supports large-scale hiring from screening
       "Hiring 50, 100, or even 500 people in a short time is when bulk hiring stops looking simple and becomes a serious execution challenge. Recruiters have to screen fast, respond fast, schedule fast, and still keep hiring quality under control. ",
     author: "Michael Chen",
     date: "April 08, 2026",
-    image: `/assets/pages/blog/2026/april/bulk-hiring-tools.webp`,
+    image: `/assets/pages/blog/2026/april/bulk-hiring-strategies-ai-tools.webp`,
     altimg: "Bulk Hiring Strategies & AI Tools ",
 //     tags:  [
 //   "hiringchallenges",
@@ -151,7 +151,7 @@ description:"Ready to see how iona.ai supports large-scale hiring from screening
 </li>
 </ol>
 <h2 id="-bulk-hiring-strategies-6-rules-recruiters-should-follow-"><strong>Bulk Hiring Strategies: 6 Rules Recruiters Should Follow</strong></h2>
-<img alt="Bulk Hiring Strategies" loading="lazy" src="/assets/pages/blog/2026/march/step-of-recruitment-sourcing.webp"/>
+<img alt="Bulk Hiring Strategies" loading="lazy" src="/assets/pages/blog/2026/april/bulk-hiring-strategies.webp"/>
 
 <p>Bulk hiring works when the process is built for speed, consistency, and follow-through. The more structured the workflow is, the easier it becomes to hire at volume without overwhelming the recruitment team.</p>
 <h3 id="-rule-1-standardize-before-you-scale-"><strong>Rule 1: Standardize before you scale</strong></h3>

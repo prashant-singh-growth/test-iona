@@ -16,7 +16,7 @@ description:"Book a demo today and see how Iona’s solutions can revolutionize 
     author: "Michael Chen",
     date: "March 2, 2026",
     image: `/assets/pages/blog/2026/march/offer-management-process.webp`,
-    altimg: "Are AI and Bots Set to Overhaul HR Operations in India?",
+    altimg: "Offer Management Process ",
     tags: ["offermanagement","hiringsolutions","joiningprocess","hiringautomation"],
     content: `
    <p>Did you know that <strong>top candidates are off the market in as little as 10 days?</strong> In the world of high-volume hiring, speed isn&#39;t just an advantage—it’s your only lifeline. If your offer process feels like a game of &quot;phone tag&quot; or a manual paper chase, you aren&#39;t just losing time; you’re losing the very talent you worked so hard to find.</p>
@@ -46,14 +46,14 @@ description:"Book a demo today and see how Iona’s solutions can revolutionize 
 <h3 id="-next-move-optimizing-the-offer-management-process-with-iona-ai-"><strong>Next Move: Optimizing the Offer Management Process with iona.ai</strong></h3>
 <p>To improve efficiency and streamline hiring, <strong>iona.ai</strong> offers powerful <a href="https://iona.ai/"><strong>AI-powered hiring</strong></a> solutions, including <strong>NovaStart</strong>. This solution automates offer creation, approvals, and candidate communication, reducing delays and errors. With NovaStart, HR teams can simplify the offer management process, saving time and ensuring greater accuracy.</p>
 <h3 id="-introducing-iona-ai-the-ai-powered-hiring-automation-platform-"><strong>Introducing iona.ai: The AI-Powered Hiring Automation Platform</strong></h3>
-<img alt="Homepage of iona.ai, an Agentic AI Recruiter with 90% faster onboarding and 100% compliance" loading="lazy" src="/assets/pages/blog/2026/fab/1.webp"/>
+<img src="/assets/pages/blog/2026/june/homepage-of-entriperise-ai-recruiting-automation-for-bulk-hiring.webp" alt="Homepage of Entriperise AI Recruiting Automation for Bulk Hiring" loading="lazy"/>
 <p><strong>iona.ai</strong> is an AI-powered platform designed to optimize every stage of the hiring process. From candidate sourcing to final onboarding, Iona.ai automates critical HR tasks, helping teams save time, reduce errors, and improve overall efficiency. By leveraging data-driven insights and AI technology, <strong>iona.ai</strong> ensures a seamless, faster recruitment journey for both hiring teams and candidates.</p>
 <p>One of Iona.ai’s standout tools is <strong>NovaStart</strong>, an <a href="https://iona.ai/solutions/novastart"><strong>offer management automation tool</strong></a> designed specifically to streamline and optimize the offer management process, especially in high-volume hiring scenarios. NovaStart is built to eliminate delays, automate complex workflows, and ensure a smooth and efficient offer process that keeps candidates engaged and helps HR teams stay on top of tasks.</p>
 <h3 id="-why-choose-novastart-for-the-offer-management-process-"><strong>Why Choose NovaStart for the Offer Management Process?</strong></h3>
 <p>iona.ai is a cutting-edge, AI-powered recruitment platform designed to streamline and automate every stage of the hiring process. From sourcing and screening candidates to finalizing offers and onboarding, Iona’s suite of tools is designed to help HR teams save time, reduce manual effort, and improve candidate engagement. With AI-driven automation and real-time insights, Iona enhances recruitment workflows, making the process faster, more efficient, and highly scalable.</p>
 <p>NovaStart, a key solution from iona.ai, is built to transform the offer management process, especially in high-volume hiring scenarios. While traditional offer management can be slow and cumbersome, NovaStart uses AI-enhanced workflows to ensure that offers are handled efficiently, quickly, and accurately—leading to faster hires and a better candidate experience.</p>
 <h3 id="-how-novastart-can-be-used-in-the-offer-management-process-"><strong>How NovaStart Can Be Used in the Offer Management Process:</strong></h3>
-<img alt="Step-by-Step Offer Management Process with NovaStart" loading="lazy" src="/assets/pages/blog/2026/march/step-of-offer-management-process.webp"/>
+<img alt="Step-by-Step Offer Management Process with NovaStart" loading="lazy" src="/assets/pages/blog/2026/march/step-by-step-offer-management-process-with-novastart.webp"/>
 
 <p>With NovaStart, the offer management process becomes faster, more efficient, and more transparent. Here’s how it can be utilized at each step:</p>
 <h4 id="-step-1-automating-offer-creation-"><strong>Step 1: Automating Offer Creation</strong></h4>

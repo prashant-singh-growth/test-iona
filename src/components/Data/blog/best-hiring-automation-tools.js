@@ -16,7 +16,7 @@ description:"Book a demo today and see how iona.ai can transform your hiring pro
     author: "Michael Chen",
     date: "February 2, 2026",
      modifiedDate:"May 08, 2026",
-    image: `/assets/pages/blog/jan-2026/iona-tools.webp`,
+    image: `/assets/pages/blog/2026/jan/hiring-automation-tools-2026.webp`,
     altimg: "Hiring Automation Tools 2026",
     tags: ["HR Analytics", "Data-Driven HR", "People Analytics"],
    
@@ -44,14 +44,14 @@ description:"Book a demo today and see how iona.ai can transform your hiring pro
 <h2 class="text-2xl font-bold mb-4">Top 11 AI-Powered Hiring Automation Tools</h2>
 
 
-<img src="/assets/pages/blog/jan-2026/iona-pick.webp" alt="AI-Powered Hiring Automation Tools: 11 Best Picks for 2026" class="w-full pt-5 pb-8" loading="lazy" />
+<img src="/assets/pages/blog/2026/jan/ai-powered-hiring-automation-tools-11-best-picks-for-2026.webp" alt="AI-Powered Hiring Automation Tools: 11 Best Picks for 2026" class="w-full pt-5 pb-8" loading="lazy" />
 <ul >
 <li>iona.ai</li> <li>PeopleStrong</li> <li>DarwinBox</li> <li>RapidHR</li> <li>ZingHR</li> <li>Unstop</li> <li>HireVue</li> <li>SmartRecruiters</li> <li>Workable</li> <li>Greenhouse</li> <li>Jobvite</li>
 </ul>
 
 <h3 >1. iona.ai: The most advanced suite of Hiring Automation Tools for 2026</h3>
+<img src="/assets/pages/blog/2026/june/homepage-of-entriperise-ai-recruiting-automation-for-bulk-hiring.webp" alt="Homepage of Entriperise AI Recruiting Automation for Bulk Hiring" loading="lazy"/>
 
-<img src="/assets/pages/blog/jan-2026/iona.webp" alt="Homepage of iona.ai, an Agentic AI Recruiter with 90% faster onboarding and 100% compliance" class="w-full pt-5 pb-8" />
 
 
 
@@ -80,7 +80,7 @@ description:"Book a demo today and see how iona.ai can transform your hiring pro
    <p>For teams scaling fast or hiring continuously, iona.airemoves the operational friction that slows hiring down.</p> 
    <p><b>Best for:</b> Mid-to-large companies, high-volume hiring, teams replacing spreadsheets + ATS chaos</p>
 <h3 >2. PeopleStrong</h3>
-<img src="/assets/pages/blog/jan-2026/peoplestrong.webp" alt="Homepage of Peoplestrong" class="w-full pt-5 pb-8" loading="lazy" />
+<img src="/assets/pages/blog/2026/june/peoplestrong-home-page.webp" alt="PeopleStrong home page" loading="lazy"/>
 
 <p><b>PeopleStrong</b> is one of the most prominent hiring automation tools providers  in the HR tech space, offering an end-to-end solution for talent acquisition, onboarding, and employee engagement. PeopleStrong's automated hiring platform integrates AI to optimize hiring, making it more efficient and scalable.
 </p>
@@ -94,7 +94,7 @@ description:"Book a demo today and see how iona.ai can transform your hiring pro
      <p ><b>[Learn more about Iona, the best <a href="/people-strong">PeopleStrong alternative</a>, and how it compares here.]</b></p>
 
 <h3 >3. DarwinBox</h3>
-<img src="/assets/pages/blog/jan-2026/darwinbox.webp" alt="Homepage of DrawinBox" class="w-full pt-5 pb-8" loading="lazy" />
+<img src="/assets/pages/blog/2026/june/darwinbox-home-page.webp" alt="Darwinbox home page" loading="lazy"/>
 
 
 <p><b>DarwinBox</b> is a hiring automation tool that focuses on delivering a seamless recruitment experience from sourcing to onboarding. With its data-driven approach and AI capabilities, DarwinBox automates the hiring lifecycle and integrates various HR functions to ensure smooth transitions across teams.</p>
@@ -105,7 +105,7 @@ description:"Book a demo today and see how iona.ai can transform your hiring pro
 
 <p><b>[Discover iona.ai as the ideal alternative to <a href="/darwinbox-alternative">DarwinBox</a> and see how it compares here.]</b></p>
 <h3 >4. RapidHR</h3>
-<img src="/assets/pages/blog/jan-2026/rapidhr.webp" alt="Homepage of RapidHR" class="w-full pt-5 pb-8" loading="lazy" />
+<img src="/assets/pages/blog/2026/jan/homepage-of-rapidhr.webp" alt="Homepage of RapidHR" class="w-full pt-5 pb-8" loading="lazy" />
 
 <p><b>RapidHR</b> brings hiring automation tools and HR management into a single automated hiring platform, offering complete automation across recruitment, onboarding, and employee data management. Its flexibility makes it a great choice for companies seeking a straightforward, easy-to-implement ai recruitment automation software.</p> <p><b>Key Features:</b></p> <ul> <li>Automated candidate sourcing and screening.</li> <li>Onboarding automation to reduce manual entry and improve compliance.</li> <li>Cloud-based HRMS for centralized recruitment and employee management.</li>
 
@@ -113,7 +113,7 @@ description:"Book a demo today and see how iona.ai can transform your hiring pro
 <li>Custom workflows to adapt to unique business needs.</li> </ul>
 <h3 >5. ZingHR</h3>
 
-<img src="/assets/pages/blog/jan-2026/zinghr.webp" alt="Homepage of ZingHR" class="w-full pt-5 pb-8" loading="lazy" />
+<img src="/assets/pages/blog/2026/june/zinghr-home-page.webp" alt="ZingHR home page" loading="lazy"/>
 
 <p><b>ZingHR</b> offers a suite of recruitment automation tools designed to automate recruitment processes while ensuring compliance and improving candidate engagement. The platform's AI capabilities help HR teams save time and resources, making it ideal for fast-growing organizations.</p>
 
@@ -124,7 +124,7 @@ description:"Book a demo today and see how iona.ai can transform your hiring pro
 
 <h3 >6. Unstop</h3>
 
-<img src="/assets/pages/blog/jan-2026/unstop.webp" alt="Homepage of Unstop" class="w-full pt-5 pb-8" loading="lazy" />
+<img src="/assets/pages/blog/2026/jan/homepage-of-unstop.webp" alt="Homepage of Unstop" class="w-full pt-5 pb-8" loading="lazy" />
 
 <p ><b>Unstop</b> is an AI-driven job automation tool that focuses on automating candidate sourcing and engagement, particularly for organizations with large-scale hiring requirements. It helps recruiters source, evaluate, and engage candidates automatically, ensuring no top talent is missed.</p>
 
@@ -135,7 +135,7 @@ description:"Book a demo today and see how iona.ai can transform your hiring pro
 
 <h3 >7. HireVue</h3>
 
-<img src="/assets/pages/blog/jan-2026/hirevue.webp" alt="Homepage of HireVue" class="w-full pt-5 pb-8" loading="lazy" />
+<img src="/assets/pages/blog/2026/june/hirevue-home-page.webp" alt="HireVue home page" loading="lazy"/>
 
 <p ><b>HireVue</b> is an AI-powered hiring automation tool that streamlines the interviewing process through video interviews and automated assessments. This solution is ideal for businesses that need to hire efficiently while ensuring candidate quality remains high.</p>
 
@@ -145,7 +145,7 @@ description:"Book a demo today and see how iona.ai can transform your hiring pro
 <li>Integrated scheduling to reduce manual coordination.</li> </ul>
 
 <h3 >8. SmartRecruiters</h3>
-<img src="/assets/pages/blog/jan-2026/smartrecruit.webp" alt="Homepage of SmartRecruiters" class="w-full pt-5 pb-8" loading="lazy" />
+<img src="/assets/pages/blog/2026/june/smartrecruiters-home-page.webp" alt="SmartRecruiters home page" loading="lazy"/>
 
 
 <p ><b>SmartRecruiters</b> provides an all-in-one automated hiring software that helps manage the recruitment process from job posting to hiring. This solution focuses on simplifying recruitment while providing the tools needed to engage candidates and make data-driven hiring decisions.</p>
@@ -157,7 +157,7 @@ description:"Book a demo today and see how iona.ai can transform your hiring pro
 
 <h3 >9. Workable</h3>
 
-<img src="/assets/pages/blog/jan-2026/workable.webp" alt="Homepage of Workable" class="w-full pt-5 pb-8" loading="lazy" />
+<img src="/assets/pages/blog/2026/june/workable-home-page.webp" alt="Workable home page" loading="lazy"/>
 
 <p ><b>Workable</b> is a popular hiring automation tool designed to help small to medium-sized businesses streamline their recruitment process. With features for job posting, resume screening, and interview scheduling, Workable makes hiring simple and effective.</p>
 
@@ -167,7 +167,7 @@ description:"Book a demo today and see how iona.ai can transform your hiring pro
 <li>Mobile app for recruitment management on the go.</li> </ul>
 <h3 >10. Greenhouse</h3>
 
-<img src="/assets/pages/blog/jan-2026/greenhouse.webp" alt="Homepage of Greenhouse" class="w-full pt-5 pb-8" loading="lazy" />
+<img src="/assets/pages/blog/2026/june/greenhouse-home-page.webp" alt="Greenhouse home page" loading="lazy"/>
 
 <p ><b>Greenhouse</b> provides a hiring automation solution designed for companies that need a structured approach to recruitment. Greenhouse offers comprehensive tools for sourcing, screening, interviewing, and hiring top candidates with a focus on data-driven decision-making.</p>
 
@@ -178,7 +178,7 @@ description:"Book a demo today and see how iona.ai can transform your hiring pro
 
 <h3 >11. Jobvite</h3>
 
-<img src="/assets/pages/blog/jan-2026/jobvite.webp" alt="Homepage of Jobvite" class="w-full pt-5 pb-8" loading="lazy" />
+<img src="/assets/pages/blog/2026/june/jobvite-home-page.webp" alt="Jobvite home page" loading="lazy"/>
 
 <p ><b>Jobvite</b> combines AI-powered recruitment automation tools with employee engagement to create a comprehensive hiring solution. It’s designed for larger organizations that need scalable solutions for high-volume hiring.</p>
 

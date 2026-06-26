@@ -15,7 +15,7 @@ description:"Book a demo today and see how it can help you scale your hiring pro
       "Effective headcount planning is crucial for scaling businesses quickly. Traditional methods, such as spreadsheets, can’t keep up with the demands of high-volume hiring, leading to costly delays and errors. This blog outlines the strategic processes for enterprise bulk hiring and explores how NovaCount by iona.ai can optimize the entire process. With real-time tracking, predictive insights, and AI-powered automation, NovaCount ensures businesses can scale efficiently while staying aligned with company goals.",
     author: "Michael Chen",
     date: "February 16, 2026",
-    image: `/assets/pages/blog/2026/fab/bulk-hiring-playbook.webp`,
+    image: `/assets/pages/blog/2026/fab/strategic-headcount-planning-processes-for-enterprise-hiring.webp`,
     altimg: "Strategic Headcount Planning Processes for Enterprise Hiring",
     tags: ["HeadcountPlanning", "EnterpriseHiring", "WorkforceStrategy","TalentAcquisition"],
     content: `
@@ -52,7 +52,7 @@ description:"Book a demo today and see how it can help you scale your hiring pro
 </ul>
 <p>By treating these as separate yet connected processes, you ensure that immediate hiring doesn&#39;t get &quot;clouded&quot; by long-term theory.</p>
 <h2 id="-5-step-headcount-planning-process-for-enterprise-bulk-hiring-"><strong>5-Step Headcount Planning Process for Enterprise Bulk Hiring</strong></h2>
-<img src="/assets/pages/blog/2026/fab/bulk-hiring-step.webp" alt="Headcount Planning Process: 5 Bulk Hiring Steps" loading="lazy"/>
+<img src="/assets/pages/blog/2026/fab/5-bulk-hiring-steps.webp" alt="Headcount Planning Process: 5 Bulk Hiring Steps" loading="lazy"/>
 
 <p>For enterprise companies facing the challenge of scaling quickly, manual headcount planning just doesn’t cut it. Instead of relying on outdated systems, here’s a more strategic approach to headcount planning that sets up enterprises for success.</p>
 <ol>
@@ -86,7 +86,7 @@ description:"Book a demo today and see how it can help you scale your hiring pro
 <p>A strategy that relies on stale data is a recipe for failure. In fast-growing enterprises, outdated headcount data is a huge risk. The greatest headcount planning fails if the data is two weeks old.</p>
 <p><strong>The Strategy</strong>: Move to a &quot;Live Ledger&quot; system. This ensures that both Finance and HR are always working with the most up-to-date information, and discrepancies are flagged and resolved in real-time.</p></li></ol>
 <h2 id="-novacount-the-headcount-planning-process-partner-by-iona-ai-"><strong>NovaCount: The Headcount Planning Process Partner by iona.ai</strong></h2>
-<img src="/assets/pages/blog/2026/fab/1.webp" alt="Homepage of Iona.ai, an Agentic AI Recruiter with 90% faster onboarding and 100% compliance" loading="lazy"/>
+<img src="/assets/pages/blog/2026/june/homepage-of-entriperise-ai-recruiting-automation-for-bulk-hiring.webp" alt="Homepage of Entriperise AI Recruiting Automation for Bulk Hiring" loading="lazy"/>
 
 <p>As businesses scale, the challenges of recruiting and managing talent become more complex. <strong>iona.ai</strong> is revolutionizing the hiring process with its suite of <a href="https://www.iona.ai/"><strong>AI-powered hiring tools</strong></a>, making it faster, more efficient, and error-free.</p>
 <p>Combining <strong>Agentic AI</strong> with human expertise, iona.ai streamlines every stage of hiring, from recruitment to employee engagement, helping businesses onboard new hires <strong>90% faster</strong> while ensuring compliance and accuracy.</p>

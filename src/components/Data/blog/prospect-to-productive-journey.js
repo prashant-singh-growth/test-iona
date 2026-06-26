@@ -17,6 +17,7 @@ description:"Book a demo today and see how it can help you scale your hiring pro
     author: "Admin",
     date: "Jul 18, 2024",
     image: `${process.env.PUBLIC_URL}/assets/ionablog1.png`,
+      altimg: "Hiring Automation Tools 2026",
     tags: ["AI", "Recruitment", "Future of Work"],
     content: `
         <h2 class="text-2xl font-bold mb-4">The First Spark – Engaging the Prospect</h2>
@@ -39,30 +40,6 @@ description:"Book a demo today and see how it can help you scale your hiring pro
         <p ><strong>(2) Nova Track</strong> not only transforms your onboarding processes at a fraction of time with 100% data accuracy all the while transforming the experiences your team has. With iona.ai Speed Board you can handle Offer Letter Management, Conversational and Engaging communication, Streamlined & Automated Data collection & verification, Workflow Approvals, Integrated Background Verification and Customizable Journeys</p>
         <p ><strong>(3) Nova Board</strong> is designed to enhance the new hire journey by providing customised and compliant Microlearning approach with training content in digestible increments. Its efficiency, easy-to-use interface and customisable approach ensure that the new hire is ready and productive from Day 1.</p>
       `,
-      blogSchema:`{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Prospect to Productive Journey",
-  "description": "Discover how iona.ai transforms the hiring journey from prospect to productive through AI-driven insight, purpose, and performance.",
-  "image": "https://www.iona.ai/assets/ionablog1.png",
-  "author": {
-    "@type": "Person",
-    "name": "Amit Srivastava",
-    "url": "https://www.iona.ai/author/amit-srivastava"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "iona.ai",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://www.iona.ai/assets/iona-ai-logo.png"
-    }
-  },
-  "datePublished": "2024-07-18T00:00:00+05:30",
-  "dateModified": "2026-02-19T00:00:00+05:30",
-  "inLanguage": "en",
-  "url": "https://www.iona.ai/blog/prospect-to-productive-journey"
-}
-`,
+      
     
   }

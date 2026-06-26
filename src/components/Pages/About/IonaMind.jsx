@@ -7,25 +7,26 @@ function IonaMind() {
 
                 <div className="flex flex-col max-w-[826px] justify-center items-center space-y-4">
                     <h2 className="text-3xl md:text-4xl lg:text-[40px] lg:leading-[50px] text-[#2A2564] font-bold md:font-semibold text-center  ">
-                        The Minds Behind iona.ai
+                        The Mind Behind iona.ai
                     </h2>
                     <p className="text-base text-[#2A2564] text-center font-lora">
-                        A team of passionate innovators, dedicated to transforming hiring with purpose and impact.
+                        Built by a hiring expert determined to eliminate the inefficiencies that slow down modern recruitment.
                     </p>
                 </div>
-                <div className="w-full grid md:grid-cols-2 max-w-[1100px] gap-8">
+                <div className="w-full grid md:grid-cols-1 max-w-[500px] gap-8">
                     {[{
                         name: "Amit Srivastava",
-                        position: "Business & Technology",
+                        position: "Founder & CEO",
                         url: "https://www.linkedin.com/in/amitsriva/",
                         img: "/assets/pages/about/amit.png",
                     },
-                    {
-                        name: "Ooj Amit Srivastava",
-                        position: "Engineering & Technology",
-                        url: "https://www.linkedin.com/in/ooj/",
-                        img: "/assets/pages/about/ooj.png",
-                    }].map((item, val) => (
+                    // {
+                    //     name: "Ooj Amit Srivastava",
+                    //     position: "Engineering & Technology",
+                    //     url: "https://www.linkedin.com/in/ooj/",
+                    //     img: "/assets/pages/about/ooj.png",
+                    // }
+                ].map((item, val) => (
                         <div key={val} className="w-full rounded-[14px] bg-[#F3F3F5] p-5 py-8 lg:p-10">
                             <div className="w-full overflow-hidden bg-[linear-gradient(19.48deg,_#004BD4_6.09%,_#3C55ED_43.59%,_#9A45FA_88.81%)] rounded-[12px]">
                                 <img src={item.img} alt={item.name} className='w-full bg-black/20' />

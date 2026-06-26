@@ -25,7 +25,7 @@ export const AlternativePagesData = {
       description: ` Hiring at scale doesn’t have to slow you down or burn your
             resources. While PeopleStrong manages HR, iona.ai automates the
             entire hiring lifecycle —  <b>iona.ai</b> delivers a truly
-            autonomous hiring journey, powered by <b>Agentic AI</b> and guided
+            autonomous hiring journey, powered by <a href="/agentic-ai-recruiters-sheet" class="underline font-bold hover:no-underline">Agentic AI</a> and guided
             by <b>Human Expertise</b>
             as a <b>Managed Service</b>. We guarantee
             <b>90% faster onboarding</b> and <b>100% compliance</b> without

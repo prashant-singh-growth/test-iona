@@ -16,7 +16,7 @@ description:"Book a demo today and see how iona.ai can help you automate routine
       "Picture this: your payroll is due Friday. Your HR executive is still cross-checking attendance, your finance team is calculating TDS for 80 employees, and someone just flagged a PF discrepancy from last month. It is Wednesday afternoon, and everyone is stretched thin, not because your team is inefficient, but because the process itself is broken.",
     author: "Michael Chen",
     date: "May 13, 2026",
-    image: `/assets/pages/blog/2026/may/payroll-banner.webp`,
+    image: `/assets/pages/blog/2026/may/payroll-software-of-modern-systems-explained.webp`,
     altimg: "Payroll Software of Modern Systems Explained",
    
     tags: ["PayrollSoftware","Payroll","HRSoftware","HRTech","PayrollManagement"],
@@ -41,7 +41,7 @@ description:"Book a demo today and see how iona.ai can help you automate routine
 </li>
 </ol>
 <h2 id="-5-types-of-payroll-software-which-one-fits-your-business-"><strong>5 Types of Payroll Software, Which One Fits Your Business?</strong></h2>
-<img src="/assets/pages/blog/2026/may/payroll-software.webp" alt="Payroll Software Types to Simplify Your Choice" />
+<img src="/assets/pages/blog/2026/may/payroll-software-types-to-simplify-your-choice.webp" alt="Payroll Software Types to Simplify Your Choice" />
 
 <p>It is the section most payroll guides skip or treat in a single paragraph. The type of payroll software you need depends on your company size, how complex your pay structures are, whether you operate across multiple jurisdictions, and how much internal capacity you have to manage the system. Here is a breakdown of the five main types.</p>
 <h3 id="-type-1-cloud-based-saas-payroll-software-"><strong>Type 1: Cloud-based SaaS payroll software</strong></h3>

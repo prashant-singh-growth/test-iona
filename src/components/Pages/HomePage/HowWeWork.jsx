@@ -18,7 +18,14 @@ function HowWeWork() {
           src="/assets/pages/homepage/home-design.webp"
           alt="how iona work"
           title="how iona work"
-          className="w-full mx-auto max-w-[1440px] pt-10 pb-8 object-contain fade-in-delay"
+          className="w-full hidden md:block mx-auto max-w-[1440px] pt-10 pb-8 object-contain fade-in-delay"
+          loading="lazy"
+        />
+        <img
+          src="/assets/pages/homepage/home-design-2.webp"
+          alt="how iona work"
+          title="how iona work"
+          className="w-full md:hidden mx-auto max-w-[1440px] pt-10 pb-8 object-contain fade-in-delay"
           loading="lazy"
         />
 

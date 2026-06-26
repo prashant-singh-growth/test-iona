@@ -16,7 +16,7 @@ description:"Book a demo and experience what a smarter screening process looks l
       "In India, the EY report shows that over 60% of Indian employers are integrating AI into payroll, compensation analysis, and workforce automation workflows. ",
     author: "Michael Chen",
     date: "June 04, 2026",
-    image: `/assets/pages/blog/2026/june/ams-banner.webp`,
+    image: `/assets/pages/blog/2026/june/attendance-management-system-explained.webp`,
     altimg: " Attendance Management System Explained ",
 
     tags: [ "AttendanceManagement",
@@ -58,7 +58,7 @@ description:"Book a demo and experience what a smarter screening process looks l
 <h3><strong>Stage 4: Insights, Alerts, and Manager Dashboards</strong></h3>
 <p>Managers receive dashboards, exception reports, and real-time alerts. Absenteeism patterns, regularisation requests, and overtime accumulation are all visible without having to pull a report manually.</p>
 <h2><strong>Types of Attendance Management Systems Used in India</strong></h2>
-<img src="/assets/pages/blog/2026/june/type-ams.webp" alt="Attendance Management System Options for Indian Organizations" class="w-full pt-5 pb-8" loading="lazy" />
+<img src="/assets/pages/blog/2026/june/attendance-management-system-options-for-indian-organizations.webp" alt="Attendance Management System Options for Indian Organizations" class="w-full pt-5 pb-8" loading="lazy" />
 
 <p>There is no single system that fits every business. The right type depends on your workforce composition, infrastructure, and compliance needs.</p>
 <ul>

@@ -3,8 +3,8 @@ export const CaseStudyJson = {
         slug:"aditya-birla",
         grid:true,
         seo:{
-            title:"Aditya Birla Case Study | Enterprise Hiring with iona.ai",
-            description:"See how Aditya Birla Group streamlined enterprise hiring and background verification using iona.ais agentic hiring platform."
+            title:"How Aditya Birla Sun Life Insurance Hires 90% Faster | iona.ai",
+            description:"This case study highlights how Aditya Birla Sun Life Insurance scaled hiring across 500+ cities with iona.ai, achieving 90% faster onboarding and 0% downtime."
         },
         PDFurl:`/assets/pages/casestudy/pdf/aditya-birla.pdf`,
         image:"/assets/pages/casestudy/1.webp",
@@ -48,8 +48,8 @@ export const CaseStudyJson = {
     "hdfc-ergo":{
         slug:"hdfc-ergo",
         seo:{
-            title:"HDFC ERGO Case Study | AI-Powered Hiring by iona.ai",
-            description:"Learn how HDFC ERGO optimized recruitment speed and accuracy using iona.ai’s automated, AI-driven hiring solutions."
+            title:"HDFC Ergo General Insurance Case Study | iona.ai",
+            description:"This HDFC Ergo General Insurance case study shows how the company streamlined hiring with iona.ai, achieving 4X faster JD turnaround and 100% automated BGV."
         },
         PDFurl:`/assets/pages/casestudy/pdf/hdfc-ergo.pdf`,
         headshot:"From Manual Chaos to Automated Hiring",
@@ -93,8 +93,8 @@ export const CaseStudyJson = {
     "metropolis-healthcare":{
         slug:"metropolis-healthcare",
         seo:{
-            title:"Metropolis Healthcare Case Study | Hiring Automation with iona.ai",
-            description:"Discover how Metropolis Healthcare improved hiring efficiency and compliance using iona.ai’s enterprise recruitment automation."
+            title:"How Metropolis Healthcare Saved $2.1M with iona.ai",
+            description:"Explore the Metropolis Healthcare case study and see how we helped achieve 83% faster onboarding, 95% documentation accuracy, and $2.1M in annual savings."
         },
         image:"/assets/pages/casestudy/3.webp",
          innerImage:"/assets/pages/casestudy/case-study-2.webp",

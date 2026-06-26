@@ -15,7 +15,7 @@ description:"Book a demo today and see how iona.ai can streamline your hiring pr
       "High-volume hiring and niche recruitment demand very different sourcing strategies. This blog breaks down how HR teams and agencies can balance speed, scale, and precision using tailored sourcing approaches. It covers proven tactics—from automation and AI-driven screening to predictive sourcing and passive candidate engagement—and explains how platforms like iona.ai unify these workflows. The result: faster hiring, lower costs, better candidate experience, and smarter talent decisions across both bulk and specialized roles.",
     author: "Michael Chen",
     date: "March 3, 2026",
-    image: `/assets/pages/blog/2026/march/recruitment-sourcing.webp`,
+    image: `/assets/pages/blog/2026/march/recruitment-sourcing-strategy.webp`,
     altimg: "Recruitment Sourcing Strategy",
     tags: [
   "Recruitment",
@@ -53,7 +53,7 @@ description:"Book a demo today and see how iona.ai can streamline your hiring pr
 <li><strong>Higher Cost Per Hire</strong>: Specialized recruitment often requires more effort and higher investment in sourcing and headhunting.</li>
 </ul>
 <h2 id="-7-proven-sourcing-strategies-for-bulk-hiring-and-niche-roles-"><strong>7 Proven Sourcing Strategies for Bulk Hiring and Niche Roles</strong></h2>
-<img alt="Sourcing Strategies: Top 7 for Bulk Hiring &amp; Niche Roles" loading="lazy" src="/assets/pages/blog/2026/march/step-of-recruitment-sourcing.webp"/>
+<img alt="Sourcing Strategies: Top 7 for Bulk Hiring &amp; Niche Roles" loading="lazy" src="/assets/pages/blog/2026/march/sourcing-strategies-top-7-for-bulk-hiring-niche-roles.webp"/>
 
 <p>When it comes to building an effective sourcing strategy in recruitment, both high-volume hiring and niche roles demand tailored approaches. Below are 7 proven recruitment sourcing strategies that can help HR teams manage both types of hiring efficiently.</p>
 <ol class="!gap-0">
@@ -100,7 +100,7 @@ description:"Book a demo today and see how iona.ai can streamline your hiring pr
 </li>
 </ol>
 <h2 id="-iona-ai-transforming-the-sourcing-strategy-in-recruitment-"><strong>iona.ai: Transforming the Sourcing Strategy in Recruitment</strong></h2>
-<img alt="Homepage of iona.ai, an Agentic AI Recruiter with 90% faster onboarding and 100% compliance" loading="lazy" src="/assets/pages/blog/2026/fab/1.webp"/>
+<img src="/assets/pages/blog/2026/june/homepage-of-entriperise-ai-recruiting-automation-for-bulk-hiring.webp" alt="Homepage of Entriperise AI Recruiting Automation for Bulk Hiring" loading="lazy"/>
 <p>When it comes to hiring at scale, many businesses struggle with inefficiencies, long timelines, and complex workflows. iona.ai, the <a href="https://www.iona.ai/"><strong>AI-powered hiring</strong></a> automation software, is here to streamline and revolutionize the entire recruitment lifecycle. By combining Agentic AI with human expertise, iona.ai ensures a faster, more efficient, and error-free hiring process, all while maintaining 100% compliance and data accuracy.</p>
 <p>For both high-volume hiring and niche recruitment, iona.ai addresses key challenges such as screening large numbers of candidates, engaging with top talent, and maintaining consistent communication across all stages. The platform’s automation features eliminate manual tasks, allowing HR teams to focus on more strategic decisions. Iona.ai ensures a truly autonomous hiring journey, which accelerates onboarding by 90%, saving time and significantly improving the overall candidate experience.</p>
 <p>Let’s explore how iona.ai’s specialized solutions help optimize the sourcing strategy in recruitment for high-volume hiring and niche roles:</p>

@@ -15,7 +15,7 @@ description:"Book a demo today and see how iona.ai helps enterprise teams onboar
       "Are you confusing HRIS, HCM, and HRMS software? Or worse, are you about to invest in the wrong one?",
     author: "Michael Chen",
     date: "March 31, 2026",
-    image: `/assets/pages/blog/2026/march/hris.webp`,
+    image: `/assets/pages/blog/2026/march/hris-vs-hcm-vs-hrms-2026.webp`,
     altimg: "HRIS vs HCM vs HRMS 2026",
     tags: ["hrms","hris","hrsoftware"],
     content: `

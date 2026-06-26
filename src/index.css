@@ -245,6 +245,9 @@ color: black;
 .blog-content img{
   @apply w-full pt-5 pb-8;
 }
+.blog-content .table-wrapper{
+  @apply overflow-x-auto !max-w-[90vw];
+}
  
 /* Responsive Table Wrapper */
   .blog-content table {

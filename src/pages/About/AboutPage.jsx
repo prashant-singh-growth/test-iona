@@ -5,6 +5,7 @@ import ValueSection from '../../components/Pages/About/ValueSection'
 import IonaMind from '../../components/Pages/About/IonaMind'
 import CTASection from '../../components/Layout/CTASection'
 import SeoHeader from '../../components/utils/SeoHeader'
+import BookSection from '../../components/Pages/About/BookSection'
 
 
 function AboutPage() {
@@ -133,7 +134,9 @@ function AboutPage() {
             <AboutBanner />
             <AboutMissionSection />
             <ValueSection data={ValueSectionData}/>
+            
             <IonaMind />
+            <BookSection/>
              <ValueSection data={WhatMakeDiffSectionData}/>
           <CTASection
           

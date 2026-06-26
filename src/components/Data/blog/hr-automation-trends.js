@@ -15,7 +15,7 @@ description:"Book a demo today and see how iona.ai can streamline your hiring pr
       "HR automation trends in 2026 are shifting from experimentation to measurable business impact. This blog explores how leading organizations are using structured automation to reduce time-to-hire, improve retention, strengthen compliance, and deliver executive-level workforce insights. It also outlines a practical implementation playbook and explains how modern HR management software like iona.ai helps transform automation into a scalable, ROI-driven workforce strategy.",
     author: "Michael Chen",
     date: "March 6, 2026",
-    image: `/assets/pages/blog/2026/march/hr-trands.webp`,
+    image: `/assets/pages/blog/2026/march/2026-hr-automation-trends.webp`,
     altimg: "2026 HR Automation Trends",
     tags:["hrautomation", "hrtrends", "hiringautomation", "airecruitment"],
     content: `
@@ -32,7 +32,7 @@ description:"Book a demo today and see how iona.ai can streamline your hiring pr
 <p>AI hype is no longer enough.</p>
 <p>Here’s how forward-thinking HR leaders are turning today’s HR automation trends into measurable business impact, reducing time-to-hire, improving retention, strengthening compliance, and transforming HR from an administrative function into a strategic growth engine.</p>
 <h2 id="-top-hr-automation-trends-in-2026-that-actually-deliver-roi-"><strong>Top HR Automation Trends in 2026 (That Actually Deliver ROI)</strong></h2>
-<img alt="Top 6 HR Automation Trends" loading="lazy" src="/assets/pages/blog/2026/march/step-of-hr-trands.webp"/>
+<img alt="Top 6 HR Automation Trends" loading="lazy" src="/assets/pages/blog/2026/march/top-6-hr-automation-trends.webp"/>
 
 <ol>
 <li><h3 id="-autonomous-recruitment-workflows-"><strong>Autonomous Recruitment Workflows</strong></h3>
@@ -132,7 +132,7 @@ description:"Book a demo today and see how iona.ai can streamline your hiring pr
 <p>Before automation becomes strategic, it must become structured. Many HR teams experiment with isolated tools but struggle to unify hiring workflows, approvals, compliance tracking, and reporting into one cohesive system. That gap limits measurable ROI.</p>
 <p>This is where an <a href="https://www.iona.ai/"><strong>AI-powered hiring</strong></a> solution like iona.ai creates impact. By automating recruitment workflows, reducing manual coordination, and delivering real-time hiring intelligence, iona.ai helps HR leaders move from fragmented processes to scalable, data-driven hiring operations.</p>
 <h3 id="-why-leading-hr-teams-are-choosing-iona-to-power-automation-in-2026-"><strong>Why Leading HR Teams Are Choosing Iona to Power Automation in 2026</strong></h3>
-<img alt="Homepage of iona.ai, an Agentic AI Recruiter with 90% faster onboarding and 100% compliance" loading="lazy" src="/assets/pages/blog/2026/fab/1.webp"/>
+<img src="/assets/pages/blog/2026/june/homepage-of-entriperise-ai-recruiting-automation-for-bulk-hiring.webp" alt="Homepage of Entriperise AI Recruiting Automation for Bulk Hiring" loading="lazy"/>
 <p>iona.ai is an AI-powered <a href="https://www.iona.ai/"><strong>HR management software</strong></a> designed to automate and orchestrate the complete employee lifecycle — from recruitment and offer management to onboarding, compliance, and retention analytics.</p>
 <p>Unlike fragmented HR tools that operate in silos, iona.ai functions as a unified system. It combines structured workflow automation, real-time workforce analytics, and enterprise-grade governance into one connected platform. The focus is not just task automation, but measurable operational impact.</p>
 <h3 id="-how-iona-ai-delivers-measurable-impact-"><strong>How iona.ai Delivers Measurable Impact</strong></h3>

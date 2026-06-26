@@ -16,7 +16,7 @@ export const Blog21 = {
     "A Recruitment Management System (RMS) is a software platform that centralizes and automates the entire hiring lifecycle, from job requisition and candidate sourcing to interview scheduling, offer management, and onboarding.",
   author: "Michael Chen",
   date: "April 17, 2026",
-  image: `/assets/pages/blog/2026/april/rms.webp`,
+  image: `/assets/pages/blog/2026/april/transform-hiring-with-a-recruitment-management-system.webp`,
   altimg: "Transform Hiring with a Recruitment Management System",
  tags: ["RecruitmentManagementSystem","HiringAutomation", "AIRecruitment"],
   content: `
@@ -63,7 +63,7 @@ export const Blog21 = {
 <p><strong>The RMS Hiring Lifecycle:</strong></p>
 <p>Job Requisition → Job Posting &amp; Distribution → Candidate Sourcing → Resume Screening → Interview Scheduling → Feedback &amp; Collaboration → Offer Management → Onboarding</p>
 <h2 id="-core-features-of-a-recruitment-management-system-"><strong>Core Features of a Recruitment Management System</strong></h2>
-<img src="/assets/pages/blog/2026/april/key-rms.webp" loading="lazy" alt="Features of a Recruitment Management System" />
+<img src="/assets/pages/blog/2026/april/features-of-a-recruitment-management-system.webp" loading="lazy" alt="Features of a Recruitment Management System" />
 
 <p>Not all RMS platforms are built the same. Here are the non-negotiable features to look for when evaluating your options:</p>
 <ol>
@@ -237,7 +237,7 @@ export const Blog21 = {
 <p>While traditional HRIS software simplifies HR tasks, iona.ai elevates the recruitment process with its AI-powered capabilities. Unlike standard HRIS platforms, which primarily focus on administrative functions, iona.ai enhances candidate sourcing, screening, and matching using data-driven insights. </p>
 <p>This AI-powered recruitment management system helps businesses identify the best candidates more accurately and quickly, improving hiring efficiency and precision. For organizations aiming to optimize their recruitment strategy, iona.ai offers a cutting-edge, smarter solution to streamline the entire hiring process.</p>
 <p><strong>How AI-Powered Solutions Transform Your Recruitment Process With  iona.ai</strong></p>
-<img src="/assets/pages/blog/2026/fab/1.webp" loading="lazy" alt="Homepage of iona.ai, an Agentic AI Recruiter with 90% faster onboarding and 100% compliance" />
+<img src="/assets/pages/blog/2026/june/homepage-of-entriperise-ai-recruiting-automation-for-bulk-hiring.webp" alt="Homepage of Entriperise AI Recruiting Automation for Bulk Hiring" loading="lazy"/>
 <p>AI-powered recruitment solutions are changing the game by automating time-consuming tasks, improving candidate matching, and offering insights at every stage of the hiring lifecycle. </p>
 <p>By leveraging AI, organizations can quickly screen resumes, automate interview scheduling, and engage candidates with personalized communication, all of which dramatically reduce time-to-hire and enhance hiring quality.</p>
 <p>AI systems continuously learn from data, refining their processes to ensure more effective hiring. They streamline candidate sourcing, ensure more precise resume parsing, and create a personalized, efficient candidate experience. This results in faster hiring and better talent acquisition.</p>

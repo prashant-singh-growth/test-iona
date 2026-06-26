@@ -69,7 +69,7 @@ function SectionChoose() {
             </div>
             <div className="w-fit flex flex-col sm:flex-row gap-5 pt-14">
              <a
-              href={"#form"}
+              href={"/contact"}
               className="bg-white px-5 py-3 flex-none  font-bold leading-5 text-[14px] text-primary flex flex-row space-x-2 rounded hover:scale-95 ease-in-out duration-150"
             >
               <span>Book a Demo</span>
@@ -90,7 +90,7 @@ function SectionChoose() {
               </svg>
             </a>
             <a
-              href={"#form"}
+              href={"/#solution"}
               className="bg-primary  px-5 py-3 flex-none border-2 border-white font-bold leading-5 text-[14px] text-white flex flex-row space-x-2 rounded hover:scale-95 ease-in-out duration-150"
             >
               <span>Explore Modules</span>

@@ -15,7 +15,7 @@ description:"Book a demo today and see how iona.ai can streamline your hiring pr
       "This guide helps you choose the right HR software in India for 2026, focusing on essential features like payroll, compliance, and recruitment automation. It highlights top options, including iona.ai, an AI-powered platform that automates the hiring process and ensures compliance. The blog provides a step-by-step approach to selecting software that suits your business needs, ensuring efficiency and scalability.",
     author: "Michael Chen",
     date: "March 18, 2026",
-    image: `/assets/pages/blog/2026/march/ultimate-guide-banner.webp`,
+    image: `/assets/pages/blog/2026/march/ultimate-hr-software-guide-2026.webp`,
     altimg: "Ultimate HR Software Guide 2026",
     tags:  [
   
@@ -49,7 +49,7 @@ description:"Book a demo today and see how iona.ai can streamline your hiring pr
 </ol>
 <h2 id="-choosing-the-right-hr-software-in-india-key-features-to-look-for-"><strong>Choosing the Right HR Software in India: Key Features to Look For</strong></h2>
 
-<img src="/assets/pages/blog/2026/march/while-selecting-hr-software.webp" alt="Functions that one Should Consider while selecting HR Software" loading="lazy"/>
+<img src="/assets/pages/blog/2026/march/functions-that-one-should-consider-while-selecting-hr-software.webp" alt="Functions that one Should Consider while selecting HR Software" loading="lazy"/>
 <p>When evaluating HR software in India, it’s essential to keep a few core features in mind. Below are the most important functionalities you should consider:</p>
 <ol>
 <li><h3 id="-core-hr-management-features-"><strong>Core HR Management Features</strong></h3>
@@ -155,7 +155,7 @@ description:"Book a demo today and see how iona.ai can streamline your hiring pr
 <ol>
 <li><h3 id="-iona-ai-"><strong>iona.ai</strong></h3>
 
-<img src="/assets/pages/blog/2026/fab/1.webp" alt="Homepage of Iona.ai, an Agentic AI Recruiter with 90% faster onboarding and 100% compliance" loading="lazy"/>
+<img src="/assets/pages/blog/2026/june/homepage-of-entriperise-ai-recruiting-automation-for-bulk-hiring.webp" alt="Homepage of Entriperise AI Recruiting Automation for Bulk Hiring" loading="lazy"/>
 <p>Hiring at scale shouldn’t slow down your business. iona.ai, an <a href="https://www.iona.ai/"><strong>AI-powered hiring</strong></a> automation software, combines Agentic AI with human expertise to automate the entire hiring lifecycle. This results in 90% faster onboarding, full compliance, and zero overhead.</p>
 <p>iona.ai eliminates the need for multiple tools, automating recruitment, employee engagement, and compliance management. It ensures 100% data accuracy and error-free processes, improving both the efficiency and experience of hiring.</p>
 <h3 id="-iona-ai-key-hiring-solutions-"><strong>iona.ai Key Hiring Solutions</strong></h3>

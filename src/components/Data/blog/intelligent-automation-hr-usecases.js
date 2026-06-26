@@ -15,7 +15,7 @@ description:"Book a demo today and see how it can help you scale your hiring pro
     "Explore 7 intelligent automation use cases in HR and how iona.ai  is transforming HR operations. From recruitment to onboarding, discover how automation improves efficiency and employee satisfaction with real-world case studies.",
   author: "Michael Chen",
   date: "February 12, 2026",
-  image: `/assets/pages/blog/2026/fab/2.webp`,
+  image: `/assets/pages/blog/2026/fab/hr-use-cases-for-intelligent-automation.webp`,
   altimg:"HR Use Cases for Intelligent Automation",
   tags: ["HR Analytics", "Data-Driven HR", "People Analytics"],
   content: `
@@ -32,7 +32,7 @@ description:"Book a demo today and see how it can help you scale your hiring pro
 <p>Solution? The right <strong>intelligent automation tool</strong> is the bridge between being reactive and being strategic. It doesn&#39;t just &#39;bot&#39; your tasks; it synthesizes AI and automation to predict turnover, streamline complex global payroll, and deliver a frictionless journey from day one to departure.</p>
 <p>In this guide, we break down <strong>7 high-impact Intelligent Automation use cases</strong> that are redefining the modern workplace. It’s time to stop managing spreadsheets and start engineering the future of work—before your competition automates past you.</p>
 <h2 id="-intelligent-automation-use-cases-in-hr-"><strong>Intelligent Automation Use Cases in HR</strong></h2>
-<img alt="7 HR Use Cases of Intelligent Automations "  src="/assets/pages/blog/2026/fab/3.webp"  loading="lazy" />
+<img alt="7 HR Use Cases of Intelligent Automations "  src="/assets/pages/blog/2026/fab/7-hr-use-cases-of-intelligent-automation.webp"  loading="lazy" />
 <p>Moving from theory to practice, this section applies the principles of Intelligent Automation to the specific challenges of Human Resources. </p>
 <p>The following use cases demonstrate how merging AI with automation optimizes key workflows, transforming how teams recruit, onboard, and retain talent while eliminating administrative bottlenecks.</p>
 <h3 id="-recruiting-and-candidate-screening-automation-"><strong>Recruiting and Candidate Screening Automation</strong></h3>
@@ -116,7 +116,7 @@ Speed up the hiring process, reducing time-to-hire.  </li>
 <p>To truly benefit from intelligent automation, you need a comprehensive hiring automation software that integrates with your existing systems and addresses your specific HR needs. By leveraging the right tool, you can ensure smooth, seamless automation that enhances efficiency and drives business success.</p>
 <p>A powerful <a href="https://www.iona.ai/"><strong>hiring automation software</strong></a> like <strong>iona.ai</strong>  can automate a wide range of HR functions, reducing operational costs, improving accuracy, and ensuring compliance. Without the right software, HR departments may miss out on the full potential of automation.</p>
 <h2 id="-introducing-iona-ai-the-best-agentic-ai-recruiter-for-hr-automation-needs-"><strong>Introducing iona.ai: The Best Agentic AI Recruiter for HR Automation Needs</strong></h2>
-<img alt="Homepage of iona.ai, an Agentic AI Recruiter with 90% faster onboarding and 100% compliance"  src="/assets/pages/blog/2026/fab/1.webp"  loading="lazy" />
+<img src="/assets/pages/blog/2026/june/homepage-of-entriperise-ai-recruiting-automation-for-bulk-hiring.webp" alt="Homepage of Entriperise AI Recruiting Automation for Bulk Hiring" loading="lazy"/>
 
 <p>As businesses grow, the challenges of recruiting and managing talent at scale become more complex. Legacy hiring processes are often slow and inefficient, creating bottlenecks that hinder growth and drain valuable resources. <strong>iona.ai</strong> is here to change that. Leveraging <strong>intelligent automation</strong>, iona.ai transforms your hiring process, making it faster, more efficient, and error-free.</p>
 <p>iona.ai combines <strong>Agentic AI</strong> with human expertise to deliver a fully autonomous hiring journey. With iona.ai, businesses can onboard new hires <strong>90%</strong> faster while ensuring compliance and accuracy—without adding to operational overhead. Gone are the days of juggling multiple tools and dealing with high-volume recruitment inefficiencies.</p>

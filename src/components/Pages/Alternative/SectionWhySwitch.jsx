@@ -52,7 +52,7 @@ function SectionWhySwitch({switchData}) {
          
         </div>
          <a
-          href={"#form"}
+          href={"/"}
           className="bg-white px-5 py-3 text-[14px] text-primary flex flex-row space-x-2 rounded hover:scale-95 ease-in-out duration-150"
         >
           <span> See How iona.ai Works</span>{" "}

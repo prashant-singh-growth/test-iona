@@ -16,7 +16,7 @@ export const Blog22 = {
     "Employee disengagement remains a serious business problem, but many companies are still using outdated tactics that barely scratch the surface. Annual surveys and generic wellness initiatives may check a box, yet they often fail to address what employees actually need from work today.",
   author: "Michael Chen",
   date: "April 23, 2026",
-  image: `/assets/pages/blog/2026/april/best-employee-engagement-banner.webp`,
+  image: `/assets/pages/blog/2026/april/best-employee-engagement-strategies-to-boost-morale-and-productivity.webp`,
   altimg: "Best Employee Engagement Strategies To Boost Morale And Productivity",
  tags: ["EmployeeEngagement","EmployeeExperience", "WorkplaceCulture" ],
   content: `
@@ -86,7 +86,7 @@ export const Blog22 = {
 <li><strong>Executive Buy-In</strong>: HR leaders who frame engagement in financial terms rather than just culture are more successful in securing the budget and headcount required for large-scale initiatives.</li>
 </ol>
 <h2 id="-top-10-employee-engagement-strategies-for-2026-"><strong>Top 10 Employee Engagement Strategies for 2026</strong></h2>
-<img alt="Innovative Employee Engagement Strategies" loading="lazy" class="w-full" src="/assets/pages/blog/2026/april/top-10-best-ees.webp"/>
+<img alt="Innovative Employee Engagement Strategies" loading="lazy" class="w-full" src="/assets/pages/blog/2026/april/innovative-employee-engagement-strategies.webp"/>
 
 <p>These strategies are grounded in current research and built for HR professionals at organizations with 100+ employees who need measurable outcomes, not inspiration posters.</p>
 <h3 id="-1-establish-clarity-of-expectations-at-every-layer-"><strong>1. Establish Clarity of Expectations at Every Layer</strong></h3>
@@ -178,7 +178,7 @@ export const Blog22 = {
 <p>This is where an <a href="https://iona.ai/solutions/novaengage">AI candidate engagement platform</a> like <strong>NovaEngage</strong> becomes genuinely valuable to HR teams. Rather than building engagement programs as one-size-fits-all initiatives, iona.ai helps HR and People Operations teams operationalize personalized candidate experience. </p>
 <h2 id="-boost-your-employee-engagement-strategies-with-novaengage-"><strong>Boost your Employee Engagement Strategies with NovaEngage</strong></h2>
 
-<img alt="screenshot of NovaEngage page" loading="lazy" class="w-full" src="/assets/pages/blog/2026/april/home-iona.webp"/>
+<img alt="screenshot of NovaEngage page" loading="lazy" class="w-full" src="/assets/pages/blog/2026/april/screenshot-of-novaengage-page.webp"/>
 <p>NovaEngage is an AI-powered employee engagement solution by <strong>iona.ai</strong>  that helps organizations improve and manage employee engagement more effectively. </p>
 <p>iona.ai is an AI powered <a href="https://www.iona.ai/">HR management software</a> that offers a suite of solutions for HR teams, enabling them to streamline processes, gain deeper workforce insights, and enhance the experiences of both employees and candidates throughout the entire lifecycle. </p>
 <p>At the center of this approach is <strong>NovaEngage</strong>, a dedicated engagement solution that helps HR teams move from reactive feedback collection to proactive, real-time engagement management.</p>

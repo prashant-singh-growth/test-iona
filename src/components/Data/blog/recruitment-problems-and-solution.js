@@ -15,7 +15,7 @@ description:"Book a demo today and see how iona.ai can streamline your hiring pr
       "Recruitment in 2026 is no longer about filling roles quickly — it’s about driving measurable business impact. This blog explores the most critical recruitment problems, from low talent yield and declining hiring quality to DEI visibility gaps and workforce forecasting challenges. It outlines data-driven solutions and a maturity model that helps HR leaders move from reactive hiring to intelligence-led workforce planning.",
     author: "Michael Chen",
     date: "March 10, 2026",
-    image: `/assets/pages/blog/2026/march/recuitment-problem.webp`,
+    image: `/assets/pages/blog/2026/march/2026-recuitment-problem-solution-guide-for-hr.webp`,
     altimg: "2026 Recruitment Problems & Solution Guide for HR",
     tags:  [
   "hiringchallenges",
@@ -122,7 +122,7 @@ description:"Book a demo today and see how iona.ai can streamline your hiring pr
 </ul>
 <p>When systems reduce friction, recruitment problems and solutions become more predictable.</p>
 <h2 id="-recruitment-maturity-model-for-2026-"><strong>Recruitment Maturity Model for 2026</strong></h2>
-<img alt="Recruitment Maturity Model for 2026" loading="lazy" src="/assets/pages/blog/2026/march/recuitment-maturity.webp"/>
+<img alt="Recruitment Maturity Model for 2026" loading="lazy" src="/assets/pages/blog/2026/march/recuitment-maturity-model-for-2026.webp"/>
 
 <p>To solve recruitment problems effectively, HR leaders must first diagnose their current maturity level. In 2026, the gap between &quot;Reactive&quot; and &quot;Intelligence-Led&quot; organizations is no longer just a matter of efficiency—it’s a matter of market survival.</p>
 <h3 id="-level-1-reactive-hiring-"><strong>Level 1: Reactive Hiring</strong></h3>
@@ -150,7 +150,7 @@ description:"Book a demo today and see how iona.ai can streamline your hiring pr
 <li><strong>The 2026 Benchmark:</strong> TA is no longer a support function; it is a revenue-enabling partner that predicts talent gaps 18–24 months in advance.</li>
 </ul>
 <h2 id="-a-practical-enabler-leveraging-ai-with-iona-ai-http-iona-ai-"><strong>A Practical Enabler: Leveraging AI with <a href="http://iona.ai">iona.ai</a></strong></h2>
-<img alt="Homepage of iona.ai, an Agentic AI Recruiter with 90% faster onboarding and 100% compliance" loading="lazy" src="/assets/pages/blog/2026/fab/1.webp"/>
+<img src="/assets/pages/blog/2026/june/homepage-of-entriperise-ai-recruiting-automation-for-bulk-hiring.webp" alt="Homepage of Entriperise AI Recruiting Automation for Bulk Hiring" loading="lazy"/>
 <p>iona.ai is an <a href="https://www.iona.ai/"><strong>AI recruitment solution</strong></a> built to help organizations shift from reactive recruitment to intelligence-led workforce planning. It centralizes screening, assessments, offer management, compliance, and onboarding into a unified, data-driven system.</p>
 <p>Rather than functioning as just another ATS, iona.ai connects hiring activity to measurable performance outcomes — enabling HR leaders to make decisions based on predictive indicators, not surface-level metrics.</p>
 <p>Here is how it aligns with modern recruitment problems and solutions priorities:</p>

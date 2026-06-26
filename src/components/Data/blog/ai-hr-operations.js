@@ -15,7 +15,7 @@ description:"Book a demo today and see how iona.ai can help you automate routine
       "As AI continues to reshape industries, HR operations in India are also evolving. While AI and bots won’t fully replace HR professionals, they can automate routine tasks like recruitment, payroll, and employee queries, allowing HR teams to focus on strategic decision-making. This blog explores the role of AI in HR, its limitations, and how iona.ai empowers HR departments to streamline operations, enhance efficiency, and improve employee experience.",
     author: "Michael Chen",
     date: "February 19, 2026",
-    image: `/assets/pages/blog/2026/fab/ai-and-bot-banner.webp`,
+    image: `/assets/pages/blog/2026/fab/are-ai-and-bot-set-to-overhaul-hr-operations-in-india.webp`,
     altimg: "Are AI and Bots Set to Overhaul HR Operations in India?",
     tags: ["HROperations","HRTech","HRTransformation","HRAutomation"],
     content: `
@@ -33,7 +33,7 @@ description:"Book a demo today and see how iona.ai can help you automate routine
 <p>As businesses scale and the demand for talent grows, HR professionals are increasingly leveraging AI and bots to enhance efficiency, reduce costs, and ensure better hiring outcomes.</p>
 <p>The rise of AI in HR operations is not about replacing people, but about <strong>augmenting their abilities</strong>, helping HR teams achieve better outcomes through smarter, more efficient processes. AI and bots help HR professionals focus on strategic, human-centered aspects of their role, like leadership, culture, and employee engagement, while automating the tedious tasks that used to consume their time.</p>
 <h3 id="-how-ai-and-bots-are-revolutionizing-hr-operations-and-helping-companies-scale-"><strong>How AI and Bots are Revolutionizing HR Operations and Helping Companies Scale</strong></h3>
-<img alt="AI and Bots in HR Operations" loading="lazy" src="/assets/pages/blog/2026/fab/ai-and-bot.webp"/>
+<img alt="AI and Bots in HR Operations" loading="lazy" src="/assets/pages/blog/2026/fab/ai-and-bot-in-hr-operations.webp"/>
 
 <ol class="!gap-0">
 <li><h4 id="-speed-and-accuracy-processing-data-faster-than-ever-"><strong>Speed and Accuracy: Processing Data Faster than Ever</strong></h4>
@@ -87,7 +87,7 @@ description:"Book a demo today and see how iona.ai can help you automate routine
 <h3 id="-future-of-hr-operations-ai-and-bots-in-india-"><strong>Future of HR Operations: AI and Bots in India</strong></h3>
 <p>As AI and bots transform industries, HR operations are no exception. <strong>iona.ai</strong> offers a smarter way to automate routine tasks like recruitment, payroll, and employee queries, empowering HR teams to focus on strategic decision-making. While AI won’t replace the human touch, <strong>iona.ai</strong> enhances efficiency, reduces costs, and improves compliance, making HR operations smarter and more streamlined.</p>
 <h2 id="-how-iona-ai-can-help-hr-operations-thrive-"><strong>How iona.ai Can Help HR Operations Thrive</strong></h2>
-<img alt="Homepage of iona.ai, an Agentic AI Recruiter with 90% faster onboarding and 100% compliance" loading="lazy" src="/assets/pages/blog/2026/fab/1.webp"/>
+<img src="/assets/pages/blog/2026/june/homepage-of-entriperise-ai-recruiting-automation-for-bulk-hiring.webp" alt="Homepage of Entriperise AI Recruiting Automation for Bulk Hiring" loading="lazy"/>
 
 <p>iona.ai is an <a href="https://www.iona.ai/"><strong>AI-powered hiring</strong></a> solution designed to make HR operations, particularly bulk hiring, more efficient, accurate, and scalable. By leveraging AI technology, iona.ai streamlines multiple stages of the recruitment process, allowing HR teams to focus on strategic tasks that add value to the organization.</p>
 <ol>

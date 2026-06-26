@@ -16,7 +16,7 @@ description:"Book a demo today and see how it can help you scale your hiring pro
     author: "Michael Chen",
     date: "February 18, 2026",
     modifiedDate:"May 08, 2026",
-    image: `/assets/pages/blog/2026/fab/headcount.webp`,
+    image: `/assets/pages/blog/2026/fab/best-headcount-planning-software-for-2026.webp`,
     altimg: "Best Headcount Planning Software for 2026",
     tags: ["HeadcountPlanning", "AIRecruitmen", "HighVolumeHiring","WorkforceAutomation"],
     content: `
@@ -50,10 +50,10 @@ description:"Book a demo today and see how it can help you scale your hiring pro
 </ul>
 <p>The tools that answer yes to all three of these questions are built on fundamentally different architectures. They treat your ATS and HRIS as live data sources, not periodic exports. This means that every change, whether it’s a role being opened, a candidate dropping out, or an offer being accepted, updates your headcount plan automatically, without the need for manual intervention.</p>
 <h2 id="-best-headcount-planning-software-top-5-picks-"><strong>Best Headcount Planning Software for Growth: Top 5 Picks</strong></h2>
-<img src="/assets/pages/blog/2026/fab/headcount-planing.webp" alt="Top 5 Headcount Planning Softwares" loading="lazy"/>
+<img src="/assets/pages/blog/2026/fab/top-5-headcount-planing-softwares.webp" alt="Top 5 Headcount Planning Softwares" loading="lazy"/>
 
 <h3 id="-1-iona-ai-the-ai-powered-solution-for-high-volume-hiring-"><strong>#1. iona.ai: The AI-Powered Solution for High-Volume Hiring</strong></h3>
-<img src="/assets/pages/blog/2026/fab/1.webp" loading="lazy" alt="Homepage of iona.ai, an Agentic AI Recruiter with 90% faster onboarding and 100% compliance"/>
+<img src="/assets/pages/blog/2026/june/homepage-of-entriperise-ai-recruiting-automation-for-bulk-hiring.webp" alt="Homepage of Entriperise AI Recruiting Automation for Bulk Hiring" loading="lazy"/>
 
 <p><strong>iona.ai</strong> is a <a href="https://www.iona.ai/"><strong>hiring automation software</strong></a> that transforms high-volume hiring with <strong>Agentic AI</strong> and human expertise, automating the entire process. It accelerates onboarding by <strong>90%</strong>, ensures <strong>zero compliance issues</strong>, and guarantees <strong>100% data accuracy</strong>—all without adding to your overhead. With <strong>iona.ai</strong>, businesses can streamline recruitment, reduce errors, and improve the candidate experience effortlessly.</p>
 <p><strong>NovaCount</strong> by iona.ai is an AI-powered <a href="https://www.iona.ai/solutions/novacount"><strong>headcount planning software</strong></a> that eliminates the inefficiencies of traditional methods. Say goodbye to spreadsheets, guesswork, and slow processes. With NovaCount, businesses gain real-time clarity and data-driven insights, empowering teams to make smarter, faster hiring decisions.</p>
@@ -67,7 +67,7 @@ description:"Book a demo today and see how it can help you scale your hiring pro
 </li>
 </ul>
 <h3 id="-2-drawinbox-"><strong>2. DrawinBox</strong></h3>
-<img loading="lazy" src="/assets/pages/blog/jan-2026/darwinbox.webp" alt="Homepage screenshot of DrawinBox"/>
+<img src="/assets/pages/blog/2026/june/darwinbox-home-page.webp" alt="Darwinbox home page" loading="lazy"/>
 
 <p><strong>DrawinBox</strong> is another top contender in the best headcount planning software category, offering a unique visual approach to workforce management. This platform is ideal for companies that want a collaborative, user-friendly solution to manage their workforce and hiring strategies.</p>
 <p><strong>Key Features of DrawinBox:</strong></p>
@@ -83,7 +83,7 @@ description:"Book a demo today and see how it can help you scale your hiring pro
 </ul>
 <p>[<strong>Discover iona.ai as the ideal <a href="https://www.iona.ai/darwinbox-alternative">alternative to DarwinBox</a> and see how it compares here.</strong>]</p>
 <h3 id="-3-greythr-"><strong>3. greytHR</strong></h3>
-<img loading="lazy" src="/assets/pages/blog/2026/fab/graythr.webp" alt="homepage of greytHR"/>
+<img loading="lazy" src="/assets/pages/blog/2026/fab/homepage-of-graythr.webp" alt="homepage of greytHR"/>
 
 <p><strong>greytHR</strong> is an affordable yet powerful workforce planning software designed to streamline HR operations for small to medium-sized businesses. It offers a wide range of features that help businesses manage their workforce while ensuring compliance with local labor laws.</p>
 <p><strong>Key Features of greytHR:</strong></p>
@@ -99,7 +99,7 @@ description:"Book a demo today and see how it can help you scale your hiring pro
 </ul>
 <p>[<strong>Discover iona.ai as the ideal <a href="https://www.iona.ai/greythr-alternative">GreytHR alternative</a> and see how it compares here.</strong>]</p>
 <h3 id="-4-workday-"><strong>4. Workday</strong></h3>
-<img loading="lazy" src="/assets/pages/blog/2026/fab/workday.webp" alt="Homepage screenshot of Workday"/>
+<img loading="lazy" src="/assets/pages/blog/2026/fab/homepage-screenshot-of-workday.webp" alt="Homepage screenshot of Workday"/>
 
 <p><strong>Workday</strong> is a well-established name in HR and financial management software, and its headcount planning features are among the most advanced in the industry. Workday’s platform is designed for large enterprises that need a comprehensive solution for workforce planning, payroll, recruitment, and more.</p>
 <p><strong>Key Features of Workday:</strong></p>
@@ -114,7 +114,7 @@ description:"Book a demo today and see how it can help you scale your hiring pro
 </li>
 </ul>
 <h3 id="-5-adp-workforce-now-"><strong>5. ADP Workforce Now</strong></h3>
-<img loading="lazy" src="/assets/pages/blog/2026/fab/adp.webp" alt="Screenshot of ADP Workforce Now homepage"/>
+<img loading="lazy" src="/assets/pages/blog/2026/fab/screenshot-of-adp-workforce-now-homepage.webp" alt="Screenshot of ADP Workforce Now homepage"/>
 
 <p><strong>ADP Workforce Now</strong> is a trusted name in workforce management, and its software offers a scalable solution for businesses that need a reliable tool to handle high-volume hiring. ADP has long been known for its payroll processing capabilities, but its headcount planning features make it an attractive option for HR managers.</p>
 <p><strong>Key Features of ADP Workforce Now:</strong></p>

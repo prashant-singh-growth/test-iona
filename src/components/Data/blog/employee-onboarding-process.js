@@ -15,7 +15,7 @@ description:"Book a demo with iona.ai today and see how AI-powered hiring can re
       "A new hire shows up on Monday. The laptop isn't ready. The manager wasn't told. By noon, policy dump. No context.",
     author: "Michael Chen",
     date: "March 27, 2026",
-    image: `/assets/pages/blog/2026/march/onboarding-process.webp`,
+    image: `/assets/pages/blog/2026/march/employee-onboarding-process-2026.webp`,
     altimg: "Employee Onboarding Process 2026",
     tags:  [
      
@@ -262,7 +262,7 @@ description:"Book a demo with iona.ai today and see how AI-powered hiring can re
 </li>
 </ol>
 <h2 id="-make-your-onboarding-process-effortless-with-iona-ai-novatrain-"><strong>Make Your Onboarding Process Effortless with iona.ai  NovaTrain</strong></h2>
-<img src="/assets/pages/blog/2026/fab/1.webp" alt="Homepage of Iona.ai, an Agentic AI Recruiter with 90% faster onboarding and 100% compliance" loading="lazy"/>
+<img src="/assets/pages/blog/2026/june/homepage-of-entriperise-ai-recruiting-automation-for-bulk-hiring.webp" alt="Homepage of Entriperise AI Recruiting Automation for Bulk Hiring" loading="lazy"/>
 <p>Many onboarding processes struggle because teams rely on scattered tools, manual work, and no clear structure. NovaTrain from iona.ai solves this challenge. It acts as a <a href="https://www.iona.ai/solutions/novatrain">pre-onboarding training software</a> that prepares new hires before day one.</p>
 <ul>
 <li>Role-based onboarding journeys designed for each new hire based on position and level

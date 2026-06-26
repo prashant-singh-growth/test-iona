@@ -93,10 +93,10 @@ function AdsLandingPageSec() {
 `
           }}
         />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: `{
+       <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: `{
   "@context": "https://schema.org",
   "@type": "Book",
   "name": "The AI-FIRST CHRO",
@@ -105,24 +105,23 @@ function AdsLandingPageSec() {
     "@type": "Person",
     "name": "Amit Srivastava"
   },
-  "bookFormat": "https://schema.org/Hardcover",
+  "bookFormat": "Hardcover",
   "publisher": {
     "@type": "Organization",
-    "name": "iona.ai"
+    "name": "iona.ai",
+    "url": "https://www.iona.ai"
   },
   "inLanguage": "en",
   "url": "https://www.iona.ai/ai-first-chro",
   "offers": {
     "@type": "Offer",
-    "price": "1599",
+    "price": "1599.00",
     "priceCurrency": "INR",
     "availability": "https://schema.org/InStock"
   }
-}
-
-`
-          }}
-        />
+}`
+  }}
+/>
      
     </div>
   )

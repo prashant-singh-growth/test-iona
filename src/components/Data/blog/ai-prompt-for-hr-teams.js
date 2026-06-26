@@ -16,7 +16,7 @@ export const Blog23 = {
     "HR teams in large multinationals are under pressure to move faster, stay compliant, and communicate clearly at scale. But a big share of their time still goes into repeat writing tasks like drafting emails, creating policy documents, preparing reports, and responding to common internal requests.",
   author: "Michael Chen",
   date: "April 24, 2026",
-  image: `/assets/pages/blog/2026/april/prompt.webp`,
+  image: `/assets/pages/blog/2026/april/ai-prompt-examples-for-hr-success.webp`,
   altimg: "AI Prompt Examples for HR Success",
  tags: ["HRPrompts","AIinHR", "HiringAutomation"],
   content: `
@@ -50,7 +50,7 @@ export const Blog23 = {
 <p>✅ <em>&quot;Act as a senior talent acquisition specialist (Persona). We are hiring a Finance Manager for our Singapore entity, a 3,000-person MNC in the FMCG sector (Context). Write a job description that includes responsibilities, qualifications, and a brief company overview (Task). Keep it under 400 words, use headings, and avoid jargon (Format).&quot;</em></p>
 <p>The second prompt takes 30 more seconds to write. The output requires 30 minutes less editing.</p>
 <h2 id="-50-ai-prompts-for-hr-teams-at-mncs-by-use-case-"><strong>50+ AI Prompts for HR Teams at MNCs, By Use Case</strong></h2>
-<img alt="AI Prompt Examples for HR Leaders" loading="lazy" class="w-full" src="/assets/pages/blog/2026/april/prompt-list.webp"/>
+<img alt="AI Prompt Examples for HR Leaders" loading="lazy" class="w-full" src="/assets/pages/blog/2026/april/ai-prompt-examples-for-hr-leaders.webp"/>
 
 <p>Below are eight categories covering the full HR workflow. Each prompt follows the P-C-T-F principle and includes MNC-specific variables in brackets for you to customize.</p>
 <h3 id="-1-talent-acquisition-job-descriptions-"><strong>1. Talent Acquisition &amp; Job Descriptions</strong></h3>

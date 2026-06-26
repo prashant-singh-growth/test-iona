@@ -44,7 +44,7 @@ function Footer() {
     {
       title: "Usecases",
       links: [
-        { placeHolder: "Backrground Verification", url: "/automated-background-verification" },
+        { placeHolder: "Backrground Verification", url: "/automated-employee-background-verification" },
         { placeHolder: "Hiring Solution", url: "/end-to-end-hiring-solution-for-enterprises" },
       ],
     },

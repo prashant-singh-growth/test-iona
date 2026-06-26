@@ -24,7 +24,30 @@ if(!detail) return
           </h4>
           <p className="text-base text-white font-lora text-center"dangerouslySetInnerHTML={{__html:detail.cta.sub_description}}/>
           <div className="w-fit flex flex-col sm:flex-row gap-5 pt-8 lg:pt-14">
-             <a
+             
+            {detail?.headshot === "Best PeopleStrong alternative"?
+                 <a
+              href={"/case-studies"}
+              className="bg-white px-5 py-3 flex-none  font-bold leading-5 text-[14px] text-primary flex flex-row space-x-2 rounded hover:scale-95 ease-in-out duration-150"
+            >
+              <span>Customer Stories</span>
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4.16669 10H15.8334M15.8334 10L10.8334 5M15.8334 10L10.8334 15"
+                  stroke="#2a2564"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </a> : <>
+            <a
               href={"#form"}
               className="bg-white px-5 py-3 flex-none  font-bold leading-5 text-[14px] text-primary flex flex-row space-x-2 rounded hover:scale-95 ease-in-out duration-150"
             >
@@ -66,6 +89,8 @@ if(!detail) return
                 />
               </svg>
             </a>
+            </>
+            }
            
           </div>
         </div>

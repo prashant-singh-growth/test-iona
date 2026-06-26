@@ -16,7 +16,7 @@ description:"Book a demo and experience what a smarter screening process looks l
       "Resume screening is quick, until it isn't. For a handful of applications, a recruiter can scan, evaluate, and shortlist in minutes. But what happens when that handful becomes thousands? Imagine sifting through 2,000 resumes for a single role, each one demanding attention, judgment, and consistency. That is not a screening process anymore; that is a bottleneck.",
     author: "Michael Chen",
     date: "May 18, 2026",
-    image: `/assets/pages/blog/2026/may/resume-screening-banner.webp`,
+    image: `/assets/pages/blog/2026/may/resume-screening-guide-for-better-hiring.webp`,
     altimg: "Resume Screening Guide for Better Hiring",
 
     tags: [ "ResumeScreening",
@@ -40,7 +40,7 @@ description:"Book a demo and experience what a smarter screening process looks l
 <p>Resume screening is the process of evaluating job applications to determine which candidates meet the minimum qualifications for a role. It is the first filter in the hiring pipeline, the step that separates applicants worth interviewing from those who do not meet the requirements.</p>
 <p>In simple terms, resume screening means reviewing submitted resumes against a defined set of criteria, such as skills, experience, education, certifications, or other role-specific requirements. The goal is not to find the perfect candidate at this stage. It is to eliminate unqualified applications quickly and accurately, so recruiters can focus their time on candidates who have a real shot at the role.</p>
 <h2 id="-how-ai-accelerates-resume-screening-"><strong>How AI Accelerates Resume Screening</strong></h2>
-<img src="/assets/pages/blog/2026/may/benefits-of-ai-screening.webp" alt="Benefits of AI in Resume Screening" />
+<img src="/assets/pages/blog/2026/may/benefits-of-ai-in-resume-screening.webp" alt="Benefits of AI in Resume Screening" />
 
 <p>Screening resumes has always been the most time-consuming and error-prone part of hiring. With an AI-powered hiring solution, the bottleneck starts to disappear. AI does not just speed up screening. It fundamentally changes what your team is capable of.</p>
 <ol>
@@ -69,7 +69,7 @@ description:"Book a demo and experience what a smarter screening process looks l
 </li>
 </ol>
 <h3 id="-types-of-ai-used-in-resume-screening-"><strong>Types of AI Used in Resume Screening</strong></h3>
-<img src="/assets/pages/blog/2026/may/ai-used-in-screening.webp" alt="Types of Resume Screening" />
+<img src="/assets/pages/blog/2026/may/types-of-resume-screening.webp" alt="Types of Resume Screening" />
 
 <p>If you are leading hiring at scale, you already know the basics of resume screening. What matters now is understanding <em>how</em> AI handles it, because not all AI is built the same, and the type of AI your platform uses directly affects the quality of candidates who make it through.</p>
 <ol>

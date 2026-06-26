@@ -25,10 +25,35 @@ import { Blog23 } from "./ai-prompt-for-hr-teams";
 import { Blog24 } from "./what-is-payroll-software";
 import { Blog25 } from "./resume-screening-complete-guide";
 import { Blog26 } from "./what-is-attendance-management-system";
+import { Blog27 } from "./employment-verification-services-india ";
+import { Blog28 } from "./darwinbox-vs-iona-ai";
+import { Blog29 } from "./ai-hiring-explained";
+import { Blog30 } from "./conversational-ai-bfsi-hiring";
 
 
 export const BlogList = [
     
+    
+     {
+        url:"conversational-ai-bfsi-hiring",
+        content:Blog30,
+        author:AuthorList[2],
+    },
+     {
+        url:"ai-hiring-explained",
+        content:Blog29,
+        author:AuthorList[2],
+    },
+     {
+        url:"darwinbox-vs-iona-ai",
+        content:Blog28,
+        author:AuthorList[2],
+    },
+     {
+        url:"employment-verification-services-india",
+        content:Blog27,
+        author:AuthorList[2],
+    },
      {
         url:"what-is-attendance-management-system",
         content:Blog26,

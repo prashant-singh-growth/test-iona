@@ -33,6 +33,28 @@ function ContactForm() {
             errs.email = "Invalid email";
             toast.error("Email is invalid");
         }
+       const personalDomains = [
+  "gmail.com",
+  "yahoo.com",
+  "hotmail.com",
+  "outlook.com",
+  "live.com",
+  "icloud.com",
+  "aol.com",
+  "proton.me",
+  "protonmail.com",
+  "yandex.com"
+];
+
+const emailDomain = formData.email.split("@")[1]?.toLowerCase();
+
+if (personalDomains.includes(emailDomain)) {
+  toast.error(
+    "Please use your company email address (not a personal email)."
+  );
+
+  errs.email = "Company email required";
+}
 
         if (!formData.message.trim()) {
             errs.message = "Message is required";

@@ -16,7 +16,7 @@ export const Blog20 = {
     "Boards are asking tougher questions. CEOs want workforce decisions backed by data, not instinct. That is why the role of the CHRO in HR is changing fast from process owner to business leader.",
   author: "Michael Chen",
   date: "April 15, 2026",
-  image: `/assets/pages/blog/2026/april/chro.webp`,
+  image: `/assets/pages/blog/2026/april/the-ai-first-chro-the-missing-playbook-from-promise-to-boardroom-results.webp`,
   altimg: "The AI-First CHRO: The Missing Playbook - From Promise to Boardroom Results",
  tags: ["AIinHR","AIFirstCHRO", "HRInvovation", "HR"],
   content: `

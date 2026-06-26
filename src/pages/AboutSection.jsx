@@ -7,6 +7,7 @@ import ValuesSection from "../components/ValuesSection";
 import TeamSection from "../components/TeamSection";
 import DifferenceSection from "../components/DifferenceSection";
 import SeoHeader from "../components/utils/SeoHeader";
+import BookSection from "../components/Pages/About/BookSection";
 
 const AboutSection = memo(() => {
   return (
@@ -48,7 +49,7 @@ const AboutSection = memo(() => {
 
       {/* Values Section */}
       <ValuesSection />
-
+<BookSection/>
       {/* Team Members Section */}
       <TeamSection />
 

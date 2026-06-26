@@ -16,8 +16,8 @@ description:"Book a demo today and see how iona.ai can transform your hiring pro
     author: "Michael Chen",
     date: "March 19, 2026",
     modifiedDate:"May 11, 2026",
-    image: `/assets/pages/blog/2026/march/free-cloud.webp`,
-    altimg: "Ultimate HR Software Guide 2026",
+    image: `/assets/pages/blog/2026/march/best-free-cloud-based-hr-softwares-in-2026.webp`,
+    altimg: "Best Free & Cloud Based HR Softwares in 2026",
     tags:  [
 "CloudHR",
 "HRManagementSoftware",
@@ -68,13 +68,13 @@ description:"Book a demo today and see how iona.ai can transform your hiring pro
 <li><strong>HR Analytics:</strong> Reporting and workforce insights are another advantage of cloud HR software, helping organizations make data-driven HR decisions.</li>
 </ol>
 <h2 ><strong>Top Free Cloud-based HR Software Solutions for Small Businesses in 2026</strong></h2>
-<img src="/assets/pages/blog/2026/march/top-cloud-hr.webp" alt="Top Cloud HR Software for Small Businesses" loading="lazy"/>
+<img src="/assets/pages/blog/2026/march/top-cloud-hr-software-for-small-businesses.webp" alt="Top Cloud HR Software for Small Businesses" loading="lazy"/>
 
 <p>Below are five reliable <strong>cloud HR software</strong> platforms for small businesses. </p>
 <ol>
 <li><h3 id="-iona-ai-"><strong>iona.ai</strong></h3>
 
-<img src="/assets/pages/blog/2026/fab/1.webp" alt="Homepage of Iona.ai, an Agentic AI Recruiter with 90% faster onboarding and 100% compliance" loading="lazy"/>
+<img src="/assets/pages/blog/2026/june/homepage-of-entriperise-ai-recruiting-automation-for-bulk-hiring.webp" alt="Homepage of Entriperise AI Recruiting Automation for Bulk Hiring" loading="lazy"/>
 <p>iona.ai is an <a href="https://www.iona.ai/"><strong>AI-powered hiring</strong></a> cloud HR software platform designed to automate the entire hiring and employee management process. Unlike traditional online HR software, iona.ai focuses heavily on intelligent automation across recruitment, onboarding, documentation, and workforce management.</p>
 <p>This makes it one of the most powerful cloud-based HR software solutions for companies looking to scale hiring without increasing HR workload.</p>
 <h4 id="-key-modules-in-iona-ai-"><strong>Key Modules in iona.ai</strong></h4>
