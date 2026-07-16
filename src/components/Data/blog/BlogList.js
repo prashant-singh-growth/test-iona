@@ -29,11 +29,17 @@ import { Blog27 } from "./employment-verification-services-india ";
 import { Blog28 } from "./darwinbox-vs-iona-ai";
 import { Blog29 } from "./ai-hiring-explained";
 import { Blog30 } from "./conversational-ai-bfsi-hiring";
+import { Blog31 } from "./best-headcount-planning-software ";
 
 
 export const BlogList = [
     
     
+     {
+        url:"best-headcount-planning-software",
+        content:Blog31,
+        author:AuthorList[2],
+    },
      {
         url:"conversational-ai-bfsi-hiring",
         content:Blog30,
