@@ -8,11 +8,16 @@ import Platform from '../../components/Pages/LandingPage/adslandingthird/Platfor
 import LPThirdBanner from '../../components/Pages/LandingPage/adslandingthird/LPThirdBanner'
 import LPHeader from '../../components/Pages/LandingPage/LPHeader'
 import LPFooter from '../../components/Pages/LandingPage/LPFooter'
+import SeoHeader from '../../components/utils/SeoHeader'
 
 function AdsLandingPagesThird() {
   return (
     <div>
-      <LPHeader ctaLink={"#form"}/>
+      <SeoHeader
+      title={"People Matters TechHR India 2026 | iona.ai "}
+      description={"Visit Booth E31 at People Matters TechHR India to see agentic AI hiring in action. Register today and collect your complimentary copy. "}
+      />
+      <LPHeader ctaLink={"#form"} ctaText={"Book Your Meeting Slot"}/>
       <LPThirdBanner/>
         <Platform/>
         <Stage/>
@@ -26,12 +31,12 @@ function AdsLandingPagesThird() {
     <div className="w-full flex flex-col justify-center items-center relative z-10 max-w-4xl ">
       <h2 className="text-3xl md:text-4xl lg:text-[40px] lg:leading-[50px] text-white font-lora font-bold md:font-semibold text-center ">Ready to reimagine 
 enterprise hiring?</h2>
-      <p className="text-base text-white font-lora text-center pt-6 pb-12">Meet us at People Matters TechHR India 2026 · 6–7 August 2026 · Yashobhoomi Convention Center, Dwarka, New Delhi.</p>
+      <p className="text-base text-white font-lora text-center pt-6 pb-12">Meet the iona.ai Team at Booth E31 on 6–7 August, People Matters TechHR India 2026· Yashobhoomi Convention Centre, Dwarka, New Delhi </p>
          <a
           href={"#form"}
           className="bg-white px-5 py-3 text-[14px] text-primary flex flex-row space-x-2 rounded hover:scale-95 ease-in-out duration-150"
         >
-          <span>Book your slot & claim your copy</span>{" "}
+          <span>Book your slot</span>{" "}
           <svg
             width="20"
             height="20"

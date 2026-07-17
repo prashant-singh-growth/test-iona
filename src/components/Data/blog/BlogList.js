@@ -30,11 +30,17 @@ import { Blog28 } from "./darwinbox-vs-iona-ai";
 import { Blog29 } from "./ai-hiring-explained";
 import { Blog30 } from "./conversational-ai-bfsi-hiring";
 import { Blog31 } from "./best-headcount-planning-software ";
+import { Blog32 } from "./hrone-alternatives-ai-hiring-solutions";
 
 
 export const BlogList = [
     
     
+     {
+        url:"hrone-alternatives-ai-hiring-solutions",
+        content:Blog32,
+        author:AuthorList[2],
+    },
      {
         url:"best-headcount-planning-software",
         content:Blog31,

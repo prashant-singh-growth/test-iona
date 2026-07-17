@@ -46,7 +46,7 @@ function OurBooth() {
 <path d="M10.5009 18.1658C12.0509 16.8275 16.6667 12.4942 16.6667 8.33332C16.6667 6.56521 15.9643 4.86952 14.7141 3.61928C13.4638 2.36904 11.7682 1.66666 10 1.66666C8.23193 1.66666 6.53624 2.36904 5.286 3.61928C4.03575 4.86952 3.33337 6.56521 3.33337 8.33332C3.33337 12.4942 7.94921 16.8275 9.49921 18.1658C9.6436 18.2744 9.81938 18.3331 10 18.3331C10.1807 18.3331 10.3565 18.2744 10.5009 18.1658Z" stroke="#5445ED" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M10 10.8333C11.3807 10.8333 12.5 9.71406 12.5 8.33334C12.5 6.95263 11.3807 5.83334 10 5.83334C8.61929 5.83334 7.5 6.95263 7.5 8.33334C7.5 9.71406 8.61929 10.8333 10 10.8333Z" stroke="#5445ED" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
-<p className='text-sm text-[#0B0D2B]'><strong>Booth location:</strong> Let's meet on 6-7 August in New Delhi, walk-ins welcome, but registered meetings get priority slots.</p>
+<p className='text-sm text-[#0B0D2B]'><strong>Booth location:</strong> Booth E31 — walk-ins welcome, but registered meetings get priority slots.</p>
                 </div>
             </div>
         </section>
