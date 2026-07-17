@@ -6,11 +6,18 @@ function MeetFounder() {
             <div className="w-full max-w-[1280px] grid lg:grid-cols-2 gap-10">
                 <div className="flex flex-col gap-2">
                     <p className="text-3 leading-4 text-[#454B69] uppercase">Meet the Founder</p>
-                    <h2 className="text-[40px] md:text-[48px] leading-[55px] mt-4 md:leading-[60px] text-[#0D0D0D] font-lora font-medium">
-                        Meet Amit Srivastava
-                    </h2>
-                    <p className='text-sm text-[#5445ED] font-medium'>Founder, iona.ai</p>
-                    <p className='text-xl text-[#454B69] mt-4'>Amit has spent his career helping enterprises turn AI into measurable business outcomes. After advising FTSE 100 companies at IBM UK and building three tech startups (with two successful exits), he founded <strong>iona.ai</strong>, which has powered <strong>150,000+ AI-driven hires</strong>. Drawing on that experience, he wrote The AI-First CHRO — a practical guide that helps HR leaders move beyond AI hype and build AI-first talent operations.</p>
+                    <div className="flex flex-col md:flex-row gap-5 md:gap-8 mt-4">
+                        <img alt='Amit Srivastava - Founder, iona.ai' className='size-[200px] rounded-md' src='/assets/pages/blog/author/amit.webp' />
+                        <div className="flex flex-col gap-2">
+                            <h2 className="text-[36px] md:text-[42px] leading-[55px] md:leading-[60px] text-[#0D0D0D] font-lora font-medium">
+                                Meet Amit Srivastava
+                            </h2>
+
+                            <p className='text-sm text-[#5445ED] font-medium'>Founder, iona.ai</p>
+                        </div>
+                    </div>
+
+                    <p className='text-xl text-[#454B69] mt-4'>Amit Srivastava has spent his career helping enterprises turn AI into measurable business outcomes. After advising FTSE 100 companies at IBM UK and building three tech startups (including two successful exits), he founded iona.ai, which has powered 150,000+ AI-driven hires. Drawing on this experience, he wrote The AI-First CHRO, a practical guide that helps HR leaders move beyond AI hype and build AI-first talent operations. </p>
                 </div>
 
                 <div className="w-full rounded-[24px] relative p-8 border border-[#E2E4EB] gap-5 grid md:grid-cols-[40%_60%] shadow-[0px_20px_60px_-20px_#5445ED73]">
