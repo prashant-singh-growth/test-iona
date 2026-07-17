@@ -29,14 +29,14 @@ function Trusted() {
                             list: ["83% Faster Onboarding", "95% Documentation Accuracy", "$2.1M Annual Savings"],
                             url: "/case-studies/metropolis-healthcare"
                         }
-                    ].map((item, i) => (<div key={i} className="w-full bg-[#FCFCFC] border border-[#0B0D2B] rounded-[20px] p-6">
+                    ].map((item, i) => (<div key={i} className="w-full bg-[#FCFCFC] border border-[#0B0D2B] rounded-[20px] flex flex-col h-full  p-6">
                         <h3 className='text-[#0B0D2B] text-lg font-lora font-semibold'>
                             {item.title}
                         </h3>
-                        <ul className='text-sm text-[#0B0D2B] flex flex-col gap-3 py-3 font-normal list-disc pl-4 border-b border-[#B5B5B5] mb-3'>
+                        <ul className='text-sm text-[#0B0D2B] flex flex-col gap-3 py-3 font-normal list-disc pl-4 pb-3 '>
                             {item.list.map((itemlist, num) => <li key={num}>{itemlist}</li>)}
                         </ul>
-                        <a href={item.url} className='text-sm gap-2 flex flex-row items-center font-medium text-[#0B0D2B]'>Read case study <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <a href={item.url} className='text-sm gap-2 mt-auto flex flex-row items-center border-t pt-3  border-[#B5B5B5] font-medium text-[#0B0D2B]'>Read case study <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M2.91663 7H11.0833" stroke="#0B0D2B" stroke-width="1.16667" stroke-linecap="round" stroke-linejoin="round" />
                             <path d="M7 2.91669L11.0833 7.00002L7 11.0834" stroke="#0B0D2B" stroke-width="1.16667" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
