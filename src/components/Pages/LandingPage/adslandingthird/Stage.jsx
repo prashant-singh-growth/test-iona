@@ -5,7 +5,7 @@ function Stage() {
         <section className="w-full bg-[#1B1967] border-t border-[#F3F5FC66] grid place-items-center px-5 md:px-10  py-24 relative overflow-hidden">
             <div className="absolute w-[500px] h-[500px] bg-[#8771FF] blur-3xl rounded-full -bottom-[200px] -right-[200px] opacity-30"></div>
             <div className="w-full max-w-[1280px] flex flex-col gap-10 relative z-10">
-                <div className="w-full flex flex-col gap-5 lg:flex-row justify-between">
+                <div className="w-full flex flex-col gap-5 lg:flex-row lg:items-end justify-between">
                     <div className="flex flex-col gap-2 max-w-[672px]">
                         <p className="text-3 leading-4 text-[#FFFFFF99] uppercase">Six stages. One agentic engine.</p>
                         <h2 className="text-[40px] md:text-[48px] leading-[55px] mt-4 md:leading-[60px] text-[#FCFCFC] font-lora font-medium">
