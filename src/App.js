@@ -33,6 +33,7 @@ const SecLandingPage = lazy(() => import("./pages/Landing/SecLandingPage"));
 const GLandingPage = lazy(() => import("./pages/Landing/GAdsLandingPage"));
 // const AdsLandingPage = lazy(() => import("./pages/Landing/AdsLandingPages"));
 const LpLandingPagesec = lazy(() => import("./pages/Landing/AdsLandingPageSec"));
+const LpLandingPageThird = lazy(() => import("./pages/Landing/AdsLandingPagesThird"));
 const LpthankYou = lazy(() => import("./components/Pages/LandingPage/adsSecLanding/AdsThankuPage"));
 const AlternativeDynamicPage = lazy(
   () => import("./pages/Alternative/AlternativeDynamic")
@@ -290,6 +291,22 @@ const AnimatedRoutes = () => {
           }
         />
         <Route
+          path="/people-matters-techhr-india"
+          element={
+            <PageTransition>
+              <LpLandingPageThird/>
+            </PageTransition>
+          }
+        />
+        <Route
+          path="/people-matters-techhr-india/thank-you"
+          element={
+            <PageTransition>
+              <ThankYouPage />
+            </PageTransition>
+          }
+        />
+        <Route
           path="/end-to-end-hiring-solution-for-enterprises/thank-you"
           element={
             <PageTransition>
@@ -443,7 +460,8 @@ function AppContent() {
     "/ads",
     "/ai-first-chro",
     "/ai-first-chro-g",
-    "/automated-employee-background-verification"
+    "/automated-employee-background-verification",
+    "/people-matters-techhr-india"
   ];
   const shouldHideNavbar = hideNavbarRoutes.includes(location.pathname);
 
