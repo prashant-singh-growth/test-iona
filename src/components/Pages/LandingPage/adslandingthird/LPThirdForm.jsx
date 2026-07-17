@@ -231,7 +231,7 @@ function LPThirdForm() {
           </svg>
         </div>
 
-        <div className="w-full grid grid-cols-2 gap-4">
+        <div className="w-full grid md:grid-cols-2 gap-4">
           {[
             { name: "full_name", placeholder: "Full name", label: "Full name*", col: 2 },
             { name: "email", placeholder: "Enter your Work Email", type: "email", label: "Work email*" },
@@ -241,7 +241,7 @@ function LPThirdForm() {
           ].map((field) => (
             <div
               key={field.name}
-              className={`flex flex-col gap-2 ${field.col ? "col-span-2" : "col-span-1"}`}
+              className={`flex flex-col gap-2 ${field.col ? "md:col-span-2" : "md:col-span-1"}`}
             >
               <label
                 className="text-xs font-secondary font-medium text-[#454B69]"
@@ -262,17 +262,25 @@ function LPThirdForm() {
           ))}
         </div>
 
-        {/* Preferred Day */}
-        <select
+        <div className="flex flex-col items-start gap-2">
+              <label
+                className="text-xs font-secondary font-medium text-[#454B69]"
+             
+              >
+             How would you like to claim your free AI-First CHRO book?
+              </label>
+           <select
           name="book_claim_method"
           value={formData.book_claim_method}
           onChange={handleChange}
           className="border rounded-lg px-4 py-2 text-sm font-medium border-[#E2E4EB] w-full"
         >
           <option value="">Select an option</option>
-          <option value="Pick up at the booth">Pick up at the booth</option>
-          <option value="Ship after the event">Ship after the event</option>
+          <option value="Collect at TechHR India (iona.ai Booth)">Collect at TechHR India (iona.ai Booth)</option>
+          <option value="Courier to My Address">Courier to My Address</option>
         </select>
+        </div>
+       
 
         {/* Consent */}
         <div className="flex items-start gap-3">
