@@ -45,7 +45,7 @@ function MeetFounder() {
                             </svg> <p className='text-sm text-[#454B69]'><strong>Exclusive Access</strong> — First 75 readers get beta access to the AIFirstCHR platform.</p>
                             </li>
                         </ul>
-                        <a class="bg-primary px-4 mt-3 py-2.5 font-bold leading-5 md:px-5 md:py-3 w-fit text-[14px] text-white flex flex-row space-x-2 rounded hover:scale-95 ease-in-out duration-150" href="#form"><span>Reserve your free copy</span> <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.16669 10H15.8334M15.8334 10L10.8334 5M15.8334 10L10.8334 15" stroke="#FCFCFC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+                        <a class="bg-primary px-4 mt-3 py-2.5 font-bold leading-5 md:px-5 md:py-3 w-fit text-[14px] text-white flex flex-row space-x-2 rounded hover:scale-95 ease-in-out duration-150" href="/ai-first-chro"><span>Reserve your free copy</span> <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.16669 10H15.8334M15.8334 10L10.8334 5M15.8334 10L10.8334 15" stroke="#FCFCFC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
                     </div>
                 </div>
 

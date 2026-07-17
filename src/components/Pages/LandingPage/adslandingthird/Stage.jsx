@@ -58,7 +58,7 @@ function Stage() {
                         <p className='text-sm leading-[22px] text-[#FFFFFFB2]'>{item.desc}</p>
                     </div>))}
                 </div>
-                <a class="bg-white mx-auto px-4 mt-3 py-2.5 font-bold leading-5 md:px-5 md:py-3 w-fit text-[14px] text-darkBlue flex flex-row space-x-2 rounded hover:scale-95 ease-in-out duration-150" href="#form"><span>Reserve your free copy</span> <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.16669 10H15.8334M15.8334 10L10.8334 5M15.8334 10L10.8334 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+                <a class="bg-white mx-auto px-4 mt-3 py-2.5 font-bold leading-5 md:px-5 md:py-3 w-fit text-[14px] text-darkBlue flex flex-row space-x-2 rounded hover:scale-95 ease-in-out duration-150" href="/solutions"><span>See Agentic AI in Action </span> <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.16669 10H15.8334M15.8334 10L10.8334 5M15.8334 10L10.8334 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
 
             </div>
         </section>
