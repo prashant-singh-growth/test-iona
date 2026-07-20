@@ -187,7 +187,7 @@ function LPThirdForm() {
     >
       <form onSubmit={handleSubmit} className="p-6 md:p-10 flex flex-col space-y-6">
         <div className="w-full flex flex-row justify-between items-start">
-          <h2 className="text-base leading-4 uppercase font-secondary text-[#5445ED]">
+          <h2 className="text-base leading-4 uppercase font-lora text-[#5445ED]">
             Booth Meeting
           </h2>
           <svg
@@ -244,7 +244,7 @@ function LPThirdForm() {
               className={`flex flex-col gap-2 ${field.col ? "md:col-span-2" : "md:col-span-1"}`}
             >
               <label
-                className="text-xs font-secondary font-medium text-[#454B69]"
+                className="text-xs font-lora font-medium text-[#454B69]"
                 htmlFor={field.name}
               >
                 {field.label}
@@ -264,7 +264,7 @@ function LPThirdForm() {
 
         <div className="flex flex-col items-start gap-2">
               <label
-                className="text-xs font-secondary font-medium text-[#454B69]"
+                className="text-xs font-lora font-medium text-[#454B69]"
              
               >
              How would you like to claim your free AI-First CHRO book?
@@ -291,7 +291,7 @@ function LPThirdForm() {
             onChange={handleChange}
             className="mt-0.5 h-5 w-5 rounded border-gray-300 accent-primary"
           />
-          <p className="text-xs font-secondary font-medium text-[#454B69]">
+          <p className="text-xs font-lora font-medium text-[#454B69]">
             I agree to the privacy policy and consent to be contacted about my booth
             meeting and complimentary book pickup.
           </p>
@@ -305,7 +305,7 @@ function LPThirdForm() {
           {status.loading ? "Submitting..." : "Reserve your meeting slot"}
           <FaArrowRight />
         </button>
-        <p className="text-xs mt-2 text-[#0B0D2B]">
+        <p className="text-xs mt-2 text-[#0B0D2B] font-lora">
           <strong>Limited slots per day.</strong> Booking confirms your priority time and
           reserves your book copy.
         </p>

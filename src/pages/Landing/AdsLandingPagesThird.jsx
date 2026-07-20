@@ -12,7 +12,7 @@ import SeoHeader from '../../components/utils/SeoHeader'
 
 function AdsLandingPagesThird() {
   return (
-    <div>
+    <div className="!font-lora theme-lora-font">
       <SeoHeader
       title={"People Matters TechHR India 2026 | iona.ai "}
       description={"Visit Booth E31 at People Matters TechHR India to see agentic AI hiring in action. Register today and collect your complimentary copy. "}
