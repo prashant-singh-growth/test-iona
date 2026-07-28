@@ -46,7 +46,19 @@ p, .secondary-text {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
 }
+.theme-lora-font h1,
+.theme-lora-font h2,
+.theme-lora-font h3,
+.theme-lora-font h4,
+.theme-lora-font h5,
+.theme-lora-font h6,
+.theme-lora-font p,
+.theme-lora-font a,
+.theme-lora-font button {
 
+ font-family: "Lora", serif !important;
+
+}
 /* Performance optimized animations 
  * Use transform and opacity for better GPU acceleration
  */
@@ -192,17 +204,7 @@ p, .secondary-text {
   animation-play-state: paused;
 }
 
-.theme-lora-font h1,
-.theme-lora-font h2,
-.theme-lora-font h3,
-.theme-lora-font h4,
-.theme-lora-font h5,
-.theme-lora-font h6,
-.theme-lora-font p,
-.theme-lora-font a,
-.theme-lora-font button {
-  @apply !font-lora;
-}
+
 *{
   scroll-margin-top: 80px;
 }

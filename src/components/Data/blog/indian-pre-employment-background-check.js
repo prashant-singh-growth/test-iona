@@ -15,7 +15,7 @@ description:"Book a demo today and discover how iona.ai can make your hiring pro
       "This blog outlines the process and legal requirements of pre-employment background checks in India, emphasizing the risks of bad hires and compliance. It introduces iona.ai as an AI-powered solution that automates background checks for faster, accurate, and compliant hiring.",
     author: "Michael Chen",
     date: "February 20, 2026",
-     modifiedDate:"July 13, 2026",
+    //  modifiedDate:"July 13, 2026",
     image: `/assets/pages/blog/2026/fab/rules-process-of-pre-employment-background-check-in-india.webp`,
     altimg: " Rules & Process of Pre-Employment Background Check in India",
     tags: ["BackgroundVerification", "PreEmploymentCheck", "HiringCompliance"],

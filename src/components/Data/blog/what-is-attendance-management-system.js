@@ -12,7 +12,7 @@ description:"Book a demo and experience what a smarter screening process looks l
     },
     id: 25,
     title: "What is an Attendance Management System? A Complete Guide for Indian Businesses",
-    modifiedDate:"July 13, 2026",
+    // modifiedDate:"July 13, 2026",
     summary:
       "In India, the EY report shows that over 60% of Indian employers are integrating AI into payroll, compensation analysis, and workforce automation workflows. ",
     author: "Michael Chen",

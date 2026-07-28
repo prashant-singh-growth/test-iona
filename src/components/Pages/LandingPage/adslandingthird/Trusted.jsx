@@ -36,7 +36,8 @@ function Trusted() {
                         <ul className='text-sm text-[#0B0D2B] flex flex-col gap-3 py-3 font-normal list-disc pl-4 pb-3 '>
                             {item.list.map((itemlist, num) => <li key={num}>{itemlist}</li>)}
                         </ul>
-                        <a href={item.url} className='text-sm gap-2 mt-auto flex flex-row items-center border-t pt-3  border-[#B5B5B5] font-medium text-[#0B0D2B]'>Read case study <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <a target="_blank"
+  rel="noopener noreferrer" href={item.url} className='text-sm gap-2 mt-auto flex flex-row items-center border-t pt-3  border-[#B5B5B5] font-medium text-[#0B0D2B]'>Read case study <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M2.91663 7H11.0833" stroke="#0B0D2B" stroke-width="1.16667" stroke-linecap="round" stroke-linejoin="round" />
                             <path d="M7 2.91669L11.0833 7.00002L7 11.0834" stroke="#0B0D2B" stroke-width="1.16667" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>

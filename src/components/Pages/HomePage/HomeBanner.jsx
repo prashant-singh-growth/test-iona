@@ -9,7 +9,7 @@ function HomeBanner() {
         <div className="w-full max-w-[100vw] lg:max-w-[1440px] grid lg:grid-cols-2 place-items-center relative z-10 gap-10 xl:gap-28">
           <div className="w-full max-w-[100vw]">
             <h1 className="text-4xl font-bold md:text-5xl leading-tight slg:text-5xl  text-black/80 flex flex-col text-left ">
-            Enterprise AI Recruiting Automation for Bulk Hiring at Scale
+          Enterprise Agentic AI Recruiting Automation for Hiring at Scale
 
             </h1>
             <p className="text-base font-lora text-primary font-normal mt-5">

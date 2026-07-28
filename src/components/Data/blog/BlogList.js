@@ -31,11 +31,17 @@ import { Blog29 } from "./ai-hiring-explained";
 import { Blog30 } from "./conversational-ai-bfsi-hiring";
 import { Blog31 } from "./best-headcount-planning-software ";
 import { Blog32 } from "./hrone-alternatives-ai-hiring-solutions";
+import { Blog33 } from "./2026/07/workforce-planning-guide";
 
 
 export const BlogList = [
     
     
+     {
+        url:"workforce-planning-guide",
+        content:Blog33,
+        author:AuthorList[2],
+    },
      {
         url:"hrone-alternatives-ai-hiring-solutions",
         content:Blog32,

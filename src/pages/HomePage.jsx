@@ -17,29 +17,30 @@ import FAQComponent from "../components/utils/FAQComponent";
 import ClientBadgeSection from "../components/Pages/HomePage/ClientBadgeSection";
 import { Helmet } from "react-helmet-async";
 import CertificationSection from "../components/sections/CertificationSection";
+import HomePopup from "../components/popup/HomePopup";
 const HomePage = memo(() => {
  
 
   return (
     <div className="bg-white text-primaryText theme-lora-font overflow-x-hidden max-w-[100vw] ">
       <SeoHeader
-        title={"iona.ai - AI Recruiting Automation for Bulk Hiring"}
-        description={"Trusted by enterprises to scale bulk hiring. iona.ai automates your end-to-end recruitment: ATS, onboarding, & background verification in one AI platform."}
+        title={"iona.ai – Agentic AI Recruiting Automation Platform in India"}
+        description={"Trusted by enterprises for fast hiring, iona.ai is an Agentic AI recruiting automation platform for onboarding, background verification, and hiring at scale."}
         canonical={"/"}
       />
  <Helmet>
  
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://www.iona.ai/" />
-<meta property="og:title" content="iona.ai - AI Recruiting Automation for Bulk Hiring" />
-<meta property="og:description" content="Trusted by enterprises to scale bulk hiring. iona.ai automates your end-to-end recruitment: ATS, onboarding, & background verification in one AI platform." />
+<meta property="og:title" content="iona.ai – Agentic AI Recruiting Automation Platform in India" />
+<meta property="og:description" content="Trusted by enterprises for fast hiring, iona.ai is an Agentic AI recruiting automation platform for onboarding, background verification, and hiring at scale." />
 <meta property="og:image" content="https://iona.ai/assets/pages/homepage/home-banner.webp" />
 
 
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:url" content="https://www.iona.ai/" />
-<meta property="twitter:title" content="iona.ai - AI Recruiting Automation for Bulk Hiring" />
-<meta property="twitter:description" content="Trusted by enterprises to scale bulk hiring. iona.ai automates your end-to-end recruitment: ATS, onboarding, & background verification in one AI platform." />
+<meta property="twitter:title" content="iona.ai – Agentic AI Recruiting Automation Platform in India" />
+<meta property="twitter:description" content="Trusted by enterprises for fast hiring, iona.ai is an Agentic AI recruiting automation platform for onboarding, background verification, and hiring at scale." />
 <meta property="twitter:image" content="https://iona.ai/assets/pages/homepage/home-banner.webp" />
 
  </Helmet>
@@ -167,7 +168,7 @@ const HomePage = memo(() => {
   async
 />
 
-
+<HomePopup/>
    
       {/* banner */}
       <HomeBanner />
