@@ -22,22 +22,22 @@ function HomePopup() {
         
 
           {/* Glassmorphic Capsule Body */}
-          <div className="relative flex flex-col sm:flex-row items-center justify-between gap-4 rounded-lg  border border-darkVoilet/20 bg-white/30 p-3 pl-6 pr-4 shadow-xl backdrop-blur-sm">
+          <div className="relative flex flex-col sm:flex-row items-center justify-between gap-4 rounded-lg  border border-darkVoilet/20 bg-white/50 p-3 pl-6 pr-4 shadow-xl backdrop-blur-sm">
           
 
             {/* Content Text */}
-            <p className="z-10 text-center sm:text-left text-lg sm:text-lg font-bold text-[#160E38] pr-6 sm:pr-0">
+            <p className="z-10 text-center sm:text-left !text-xl sm:text-lg font-bold text-[#160E38] pr-6 sm:pr-0">
               See how enterprises completed 150,000+ hires using Agentic AI at Booth E31, TechHR 2026.
             </p>
 
             {/* CTA Button & Dismiss */}
             <div className="z-10 flex items-center gap-2 shrink-0">
-              <button
-                onClick={() => setOpen(false)}
+              <a
+                href="/"
                 className="whitespace-nowrap rounded-full bg-[#2A2564] px-5 py-2.5 text-xs font-semibold text-white shadow-md transition-all hover:bg-[#160E38] hover:scale-105 active:scale-95"
               >
                 Book My Demo
-              </button>
+              </a>
 
               <button
                 onClick={() => setOpen(false)}
