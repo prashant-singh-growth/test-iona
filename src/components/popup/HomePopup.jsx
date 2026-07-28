@@ -22,7 +22,7 @@ function HomePopup() {
         
 
           {/* Glassmorphic Capsule Body */}
-          <div className="relative flex flex-col sm:flex-row items-center justify-between gap-4 rounded-lg  border border-darkVoilet bg-white p-3 pl-6 pr-4 shadow-xl backdrop-blur-md">
+          <div className="relative flex flex-col sm:flex-row items-center justify-between gap-4 rounded-lg  border border-darkVoilet/20 bg-white/30 p-3 pl-6 pr-4 shadow-xl backdrop-blur-sm">
           
 
             {/* Content Text */}
