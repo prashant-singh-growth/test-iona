@@ -314,3 +314,6 @@ color: black;
 .linking a{
   @apply underline font-semibold hover:no-underline;
 }
+p.popup-font-inter{
+      font-family: Inter, sans-serif !important;
+}

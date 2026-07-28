@@ -17,16 +17,16 @@ function HomePopup() {
           animate={{ opacity: 1, y: 0, scale: 1 }}
           exit={{ opacity: 0, y: 30, scale: 0.95 }}
           transition={{ type: "spring", damping: 25, stiffness: 300 }}
-          className="fixed bottom-6 left-1/2  z-[9999] w-[calc(100%-2rem)] max-w-3xl !-translate-x-1/2"
+          className="fixed bottom-6 left-1/2  z-[9999] w-[calc(100%-2rem)] max-w-[1140px] !-translate-x-1/2"
         >
         
 
           {/* Glassmorphic Capsule Body */}
-          <div className="relative flex flex-col sm:flex-row items-center justify-between gap-4 rounded-lg  border border-darkVoilet/20 bg-white/50 p-3 pl-6 pr-4 shadow-xl backdrop-blur-sm">
+          <div className="relative flex flex-col sm:flex-row items-center justify-between gap-4 lg:gap-2 rounded-lg  border border-darkVoilet/20 bg-white/50 p-3 pl-6 pr-4 shadow-xl !backdrop-blur-[4px]">
           
 
             {/* Content Text */}
-            <p className="z-10 text-center sm:text-left !text-xl sm:text-lg font-bold text-[#160E38] pr-6 sm:pr-0">
+            <p className="z-10 text-center sm:text-left !text-xl sm:text-lg font-bold text-[#160E38] pr-6 sm:pr-0 popup-font-inter">
               See how enterprises completed 150,000+ hires using Agentic AI at Booth E31, TechHR 2026.
             </p>
 
@@ -34,7 +34,7 @@ function HomePopup() {
             <div className="z-10 flex items-center gap-2 shrink-0">
               <a
                 href="/"
-                className="whitespace-nowrap rounded-full bg-[#2A2564] px-5 py-2.5 text-xs font-semibold text-white shadow-md transition-all hover:bg-[#160E38] hover:scale-105 active:scale-95"
+                className="whitespace-nowrap rounded-full bg-[#2A2564] px-6 py-3 text-sm font-semibold text-white shadow-md transition-all hover:bg-[#160E38] hover:scale-105 active:scale-95"
               >
                 Book My Demo
               </a>
