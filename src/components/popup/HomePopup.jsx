@@ -45,7 +45,7 @@ function HomePopup() {
             href="/people-matters-techhr-india"
             className="whitespace-nowrap rounded-full bg-[#2A2564] px-6 py-3 text-sm font-semibold text-white shadow-md transition-all duration-200 hover:scale-105 hover:bg-[#160E38] active:scale-95"
           >
-            Book My Demo
+           Book your meeting slot
           </a>
 
           <button
