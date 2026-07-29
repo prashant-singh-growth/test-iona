@@ -22,7 +22,7 @@ function HomePopup() {
         
 
           {/* Glassmorphic Capsule Body */}
-          <div className="relative flex flex-col sm:flex-row items-center justify-between gap-4 lg:gap-2 rounded-lg  border border-darkVoilet/20 bg-white/50 p-3 pl-6 pr-4 shadow-xl !backdrop-blur-[4px]">
+          <div className="relative flex flex-col sm:flex-row items-center justify-between gap-4 lg:gap-2 rounded-lg  border !border-darkVoilet/20 !bg-white/50 p-3 pl-6 pr-4 shadow-xl !backdrop-blur-[4px]">
           
 
             {/* Content Text */}
@@ -33,7 +33,7 @@ function HomePopup() {
             {/* CTA Button & Dismiss */}
             <div className="z-10 flex items-center gap-2 shrink-0">
               <a
-                href="/"
+                href="/people-matters-techhr-india"
                 className="whitespace-nowrap rounded-full bg-[#2A2564] px-6 py-3 text-sm font-semibold text-white shadow-md transition-all hover:bg-[#160E38] hover:scale-105 active:scale-95"
               >
                 Book My Demo
