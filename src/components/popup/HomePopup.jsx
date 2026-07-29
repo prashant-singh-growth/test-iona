@@ -28,7 +28,7 @@ function HomePopup() {
 
   return (
     <div
-      className={`fixed bottom-6 left-1/2 z-[9999] w-[calc(100%-2rem)] max-w-[956px] -translate-x-1/2 transition-all duration-300 ease-out ${
+      className={`fixed bottom-6 left-1/2 z-[9999] w-[calc(100%-2rem)] max-w-[1009px] -translate-x-1/2 transition-all duration-300 ease-out ${
         visible
           ? "translate-y-0 opacity-100 scale-100"
           : "translate-y-8 opacity-0 scale-95"
