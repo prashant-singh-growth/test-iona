@@ -36,7 +36,7 @@ function HomePopup() {
         >
           {/* 3. Wrap content in a fixed-height container to avoid text re-flow */}
           <div className="py-4 px-5 flex flex-col md:flex-row justify-center items-center gap-2 sm:gap-4">
-            <p className="text-sm capitalize md:text-base font-medium text-blue-50/90 tracking-wide ">
+            <p className="text-sm  md:text-base font-medium text-blue-50/90 tracking-wide popup-font-inter ">
         See how enterprises completed 150,000+ hires using Agentic AI at Booth E31, TechHR 2026.
             </p>
     <div className=" flex flex-row gap-2 justify-center items-center">
